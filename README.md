@@ -9,3 +9,5 @@ Our proposal: **adapt BJC and create community supporting it**.
 *Need for community building*: The above differences in the Dutch and US system make the translation of BJC a starting point for a broader discussion of diversity in CS and secondary school CS education. We need a multidisciplinary community of researchers on software engineering, education and gender & IT, as well as practitioners: teachers and software developers. Experts in teaching CS, i.e., software engineering researchers, will lead the multidisciplinary community: indeed input of IT-researchers in developing this high school material is crucial, and universities of technology are well positioned to address this challenge. In particular, researchers of 4TU take the lead of this project.
 
 We will create a roadmap for translation, adaptation and evaluation of BJC in Dutch supported by a multidisciplinary community. The roadmap will be accompanied by documents (e.g., glossary, adapted examples, translated chapters) embodying our vision of BJC in Dutch.
+
+**BJC** https://bjc.edc.org/bjc-r/course/bjc4nyc.html
