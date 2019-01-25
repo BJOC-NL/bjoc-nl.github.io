@@ -9,7 +9,7 @@ Over globale variabele heb je geleerd in Deel 2 les 1 pagina 3: De score bijhoud
 
 Elke sprite moet zijn eigen positie weten op het bord, zodat we het “Item of” blok kunnen gebruiken om het vakje te vullen met een X of O. Dus we maken een “sprite-local variabele”, “position number”, en elke kloon zijn eigen versie heeft van deze variabele.
 
-Wat je moet doen:
+## Wat je moet doen:
 Open jouw: “U2L4-TicTacToe” project, en sla het op als: “U3L2-TicTacToe” zodat je je oude versie bewaard voordat je deze aan gaat passen.
 Maak een globale variabele aan, die je: “board” noemt, die aan het begin van het spel een lijst van 9 punten met het woord: “empty” bevat.
 Creëer een  (…)    : “Position number” 
