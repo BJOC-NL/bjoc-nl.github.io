@@ -1,17 +1,17 @@
 # Engels - Nederlands
 
 ## Algemene termen
-unit - hoofdstuk
+computer science - informatica
+
+for you to do - wat moet je doen
 
 lab - les
 
-computer science - informatica
+unit - hoofdstuk
 
-file - bestand
+take it further - ga een stapje verder
 
-## Niet te vertalen
-HTML
+## Hoofdstuk specifieke termen
+artificial intelligence (AI) - Kunstmatige intelligentie (KI)
 
-URL
-
-app 
+image recognition - beeldherkenning
