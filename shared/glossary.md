@@ -15,7 +15,7 @@ page - pagina
 
 number guessing game - raadt-het-getal spel
 
-Tic-Tac-Toe - kaas, spek en eieren
+Tic-Tac-Toe - boter, kaas en eieren
 
 ## Niet te vertalen
 HTML
