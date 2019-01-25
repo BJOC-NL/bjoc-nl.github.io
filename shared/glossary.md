@@ -15,3 +15,11 @@ HTML
 URL
 
 app 
+
+Content met <div class="todo"></div> wordt niet op webpagina getoond, is in feite commentaar van ontwikkelaars/gebruikers en hoeft niet vertaald
+
+account
+
+sprite
+
+
