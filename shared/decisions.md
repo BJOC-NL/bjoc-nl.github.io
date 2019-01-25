@@ -4,4 +4,9 @@
 
 * **Video**: proberen samen te vatten, we zien later wel wat we hiermee doen 
 
-* Oorspronkelijke tekst bekommentarieren 
+* Oorspronkelijke (Engelse) tekst bekommentarieren 
+
+* Vertaling "lab" als "les" creërt een indruk dat het één lesuur betreft.  
+
+* Bestaandsnamen moeten eventueel ook vertaald worden
+
