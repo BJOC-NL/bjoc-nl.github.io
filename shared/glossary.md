@@ -11,6 +11,8 @@ page - pagina
 
 Internet - internet
 
+course - lessen (In this course - In deze lessen)
+
 ## Snap *!*
 
 to snap - plakken
