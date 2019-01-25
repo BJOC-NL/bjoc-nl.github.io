@@ -12,6 +12,4 @@ We will create a roadmap for translation, adaptation and evaluation of BJC in Du
 
 **BJC** https://bjc.edc.org/bjc-r/course/bjc4nyc.html
 
-The **text** we are going to translate: https://github.com/bjc-edc/bjc-r/tree/main-branch/cur/programming
-
 HTML to Markdown **converter**: https://www.browserling.com/tools/html-to-markdown
