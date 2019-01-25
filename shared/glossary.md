@@ -11,7 +11,7 @@ page - pagina
 
 Internet - internet
 
-course - lessen (In this course - In deze lessen)
+course - lessen (Throught the course - Tijdens de lessen)
 
 ## Snap *!*
 
