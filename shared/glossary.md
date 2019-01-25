@@ -9,6 +9,14 @@ computer science - informatica
 
 file - bestand
 
+page - pagina
+
+## Voorbeelden
+
+number guessing game - raadt-het-getal spel
+
+Tic-Tac-Toe - kaas, spek en eieren
+
 ## Niet te vertalen
 HTML
 
