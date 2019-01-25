@@ -21,11 +21,13 @@ palette - palet
 
 sprite - sprite (niet te vertalen)
 
-hat blocks - kopblokken
+hat blocks - hoedblokken
 
 - staartblokken
 
 reporter - resultaatblok
+
+scripting area - werkblad
 
 ## Voorbeelden
 
