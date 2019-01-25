@@ -1,5 +1,6 @@
 # Engels - Nederlands
 
-unit - deel
+unit - hoofdstuk
 
 lab - les
+
