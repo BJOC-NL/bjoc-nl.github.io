@@ -35,11 +35,13 @@ artificial intelligence (AI) - Kunstmatige intelligentie (KI)
 
 image recognition - beeldherkenning
 
-## Div class
+## Div class / zinnen
 
 For you to do - Wat je moet doen
 
 Take it further - Ga een stapje verder
+
+In this lesson you will - In deze les ga je
 
 ## Namen
 Alphie - Alex
