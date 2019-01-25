@@ -11,9 +11,11 @@ page - pagina
 
 ## Snap *!*
 
-snap - plakken
+to snap - plakken
 
 palette - palet
+
+sprite - sprite (niet te vertalen)
 
 ## Voorbeelden
 
