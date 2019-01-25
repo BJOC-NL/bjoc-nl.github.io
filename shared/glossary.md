@@ -9,6 +9,8 @@ computer science - informatica
 
 file - bestand
 
+stage - podium
+
 ## Niet te vertalen
 HTML
 
