@@ -11,6 +11,10 @@ unit - hoofdstuk
 
 page - pagina
 
+## Snap*!*
+
+snap - plakken
+
 ## Voorbeelden
 
 number guessing game - raadt-het-getal spel
@@ -23,6 +27,8 @@ HTML
 URL 
 
 app 
+
+bug
 
 ## Hoofdstuk specifieke termen
 artificial intelligence (AI) - Kunstmatige intelligentie (KI)
