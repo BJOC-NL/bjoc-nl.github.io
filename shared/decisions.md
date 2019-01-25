@@ -18,4 +18,6 @@
 
 * Inhoudsopgave
 
+* Namen van Snap *!* blokken
+
 
