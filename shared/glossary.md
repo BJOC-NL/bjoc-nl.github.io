@@ -9,6 +9,8 @@ unit - hoofdstuk
 
 page - pagina
 
+Internet - internet
+
 ## Snap *!*
 
 to snap - plakken
