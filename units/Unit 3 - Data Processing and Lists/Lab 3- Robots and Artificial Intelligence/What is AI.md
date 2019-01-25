@@ -1,10 +1,12 @@
 # Wat is kunstmatige intelligentie? 
 
 In deze les ga je leren over de voordelen van kunstmatige intelligentie. Ook leer je over de risico’s van kunstmatige intelligentie en robots. 
-
+ 
 Op deze pagina ga je online onderzoek doen naar beeldherkenning. 
 
-Kunstmatige intelligentie (KI) is een gebied binnen de informatica met de vage definitie van ‘proberen computers te laten denken’. Deze definitie heeft geleid tot allerlei discussies over of een computer ooit echt zelf kan denken. John McCarthy, een van de bedenkers van KI, definieerde KI als ‘zorgen dat computers dingen doen, wanneer mensen het doen, waarbij je intelligentie nodig hebt’. Deze definitie zorgt ervoor dat KI onderzoekers aan de slag kunnen zonder tijd kwijt te zijn aan het bedenken wat ‘denken’ eigen betekent. 
+***
+
+Kunstmatige intelligentie (KI) is een gebied binnen de informatica die wordt beschreven als ‘proberen computers te laten denken’. Maar kunnen we een computer ooit zelf laten nadenken? Omdat er veel discussie is geweest over deze vraag heeft John McCarthy, een van de bedenkers van KI, definieerde KI als ‘zorgen dat computers dingen doen, wanneer mensen het doen, waarbij je intelligentie nodig hebt’. Deze definitie zorgt ervoor dat KI onderzoekers aan de slag kunnen zonder tijd kwijt te zijn aan het bedenken wat ‘denken’ eigen betekent. 
 
 Interessant is dat taken die mensen moeilijk vinden, zoals schaken, veel makkelijker voor computers zijn dan taken die mensen makkelijk vinden, taken die we doen zonder te denken zoals lopen. Een ander voorbeeld is zien dat het herkennen van afbeeldingen, wat een groot deel is van het onderzoek in KI. 
 
