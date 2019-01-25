@@ -22,4 +22,5 @@ account
 
 sprite
 
+script
 
