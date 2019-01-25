@@ -11,7 +11,7 @@ unit - hoofdstuk
 
 page - pagina
 
-## Snap*!*
+## Snap *!*
 
 snap - plakken
 
