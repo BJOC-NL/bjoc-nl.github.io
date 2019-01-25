@@ -19,6 +19,10 @@ palette - palet
 
 sprite - sprite (niet te vertalen)
 
+hat blocks - kop-blokken
+
+- staart-blokken
+
 ## Voorbeelden
 
 number guessing game - raadt-het-getal spel
