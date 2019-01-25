@@ -1,13 +1,13 @@
 # Engels - Nederlands
 
 ## Algemene termen
-unit - hoofdstuk
+computer science - informatica
+
+for you to do - wat moet je doen
 
 lab - les
 
-computer science - informatica
-
-file - bestand
+unit - hoofdstuk
 
 page - pagina
 
@@ -20,12 +20,18 @@ Tic-Tac-Toe - boter, kaas en eieren
 ## Niet te vertalen
 HTML
 
-URL
+URL 
 
 app 
+
+## Hoofdstuk specifieke termen
+artificial intelligence (AI) - Kunstmatige intelligentie (KI)
+
+image recognition - beeldherkenning
 
 ## Div class
 
 For you to do - Wat je moet doen
 
 Take it further - Ga een stapje verder
+
