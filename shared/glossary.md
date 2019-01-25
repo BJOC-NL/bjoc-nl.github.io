@@ -45,6 +45,9 @@ bug
 ## Hoofdstuk specifieke termen
 artificial intelligence (AI) - Kunstmatige intelligentie (KI)
 
+## Informaticabegrippen
+(list) item - element
+
 image recognition - beeldherkenning
 
 ## Div class / zinnen
