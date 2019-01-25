@@ -11,3 +11,5 @@ Our proposal: **adapt BJC and create community supporting it**.
 We will create a roadmap for translation, adaptation and evaluation of BJC in Dutch supported by a multidisciplinary community. The roadmap will be accompanied by documents (e.g., glossary, adapted examples, translated chapters) embodying our vision of BJC in Dutch.
 
 **BJC** https://bjc.edc.org/bjc-r/course/bjc4nyc.html
+The **text** we are going to translate: https://github.com/bjc-edc/bjc-r/tree/main-branch/cur/programming
+HTML to Markdown **converter**: https://www.browserling.com/tools/html-to-markdown
