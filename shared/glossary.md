@@ -29,6 +29,8 @@ reporter - resultaatblok
 
 scripting area - werkblad
 
+project file - bestand (Snap heeft niet echt het concept van meerdere bestanden in een project)
+
 ## Voorbeelden
 
 number guessing game - raadt-het-getal spel
