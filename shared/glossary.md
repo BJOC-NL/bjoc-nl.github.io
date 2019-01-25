@@ -3,8 +3,6 @@
 ## Algemene termen
 computer science - informatica
 
-for you to do - wat moet je doen
-
 lab - les
 
 unit - hoofdstuk
@@ -14,6 +12,8 @@ page - pagina
 ## Snap *!*
 
 snap - plakken
+
+palette - palet
 
 ## Voorbeelden
 
@@ -41,3 +41,9 @@ For you to do - Wat je moet doen
 
 Take it further - Ga een stapje verder
 
+## Namen
+Alphie - Alex
+
+Betsy - Robin
+
+Gamal - Yasmine
