@@ -19,9 +19,11 @@ palette - palet
 
 sprite - sprite (niet te vertalen)
 
-hat blocks - kop-blokken
+hat blocks - kopblokken
 
-- staart-blokken
+- staartblokken
+
+reporter - resultaatblok
 
 ## Voorbeelden
 
