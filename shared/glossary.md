@@ -13,6 +13,8 @@ Internet - internet
 
 course - lessen (Throught the course - Tijdens de lessen)
 
+Input - invoer
+
 ## Snap *!*
 
 to snap - plakken
