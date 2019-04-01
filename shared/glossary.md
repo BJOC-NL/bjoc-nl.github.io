@@ -72,7 +72,7 @@ bug
 ## Hoofdstuk specifieke termen
 artificial intelligence (AI) - Kunstmatige intelligentie (KI)
 
-(list) item - element
+(list) item - item
 
 image recognition - beeldherkenning
 
