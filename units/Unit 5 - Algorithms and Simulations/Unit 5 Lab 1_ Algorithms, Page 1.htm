@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!-- saved from url=(0168)https://bjc.edc.org/bjc-r/cur/programming/5-algorithms/1-searching-lists/1-sorted-lists.html?topic=nyc_bjc%2F5-algorithms.topic&course=bjc4nyc.html&novideo&noassignment -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <script async="" src="./Unit 5 Lab 1_ Algorithms, Page 1_files/analytics.js"></script>
+    <script type="text/javascript" src="./Unit 5 Lab 1_ Algorithms, Page 1_files/loader.js"></script>
+    <link href="./Unit 5 Lab 1_ Algorithms, Page 1_files/bootstrap-compiled.min.css" type="text/css" rel="stylesheet">
+    <script src="./Unit 5 Lab 1_ Algorithms, Page 1_files/llab.js" type="text/javascript"></script>
+    <script src="./Unit 5 Lab 1_ Algorithms, Page 1_files/jquery.min.js" type="text/javascript"></script>
+    <script src="./Unit 5 Lab 1_ Algorithms, Page 1_files/library.js" type="text/javascript"></script>
+    <script src="./Unit 5 Lab 1_ Algorithms, Page 1_files/multiplechoice.js" type="text/javascript"></script>
+    <title>Unit 5 Lab 1: Algorithms, Page 1</title>
+    <script type="text/javascript" src="./Unit 5 Lab 1_ Algorithms, Page 1_files/gifffer.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            Gifffer();
+        }
+
+    </script>
+    <link rel="stylesheet" type="text/css" href="./Unit 5 Lab 1_ Algorithms, Page 1_files/bjc-gifffer.css">
+    <link href="./Unit 5 Lab 1_ Algorithms, Page 1_files/default.css" type="text/css" rel="stylesheet">
+    <link href="./Unit 5 Lab 1_ Algorithms, Page 1_files/bjc.css" type="text/css" rel="stylesheet">
+    <script src="./Unit 5 Lab 1_ Algorithms, Page 1_files/bootstrap.min.js" type="text/javascript"></script>
+    <script src="./Unit 5 Lab 1_ Algorithms, Page 1_files/curriculum.js" type="text/javascript"></script>
+    <script src="./Unit 5 Lab 1_ Algorithms, Page 1_files/course.js" type="text/javascript"></script>
+    <script src="./Unit 5 Lab 1_ Algorithms, Page 1_files/topic.js" type="text/javascript"></script>
+    <script src="./Unit 5 Lab 1_ Algorithms, Page 1_files/quiz.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./Unit 5 Lab 1_ Algorithms, Page 1_files/tomorrow-night-blue.css" type="text/css" rel="stylesheet">
+    <script src="./Unit 5 Lab 1_ Algorithms, Page 1_files/highlight.min.js" type="text/javascript" onload="llab.highlightSyntax()"></script>
+    <link href="./Unit 5 Lab 1_ Algorithms, Page 1_files/katex.min.css" type="text/css" rel="stylesheet">
+    <script src="./Unit 5 Lab 1_ Algorithms, Page 1_files/katex.min.js" type="text/javascript" onload="llab.displayMathDivs()"></script>
+</head>
+
+<body style="padding-top: 43px;">
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title">Unit 5 Lab 1: Algorithms, Page 1</div>
+        <div class="nav navbar-nav navbar-right">
+            <ul class="nav-btns btn-group"><a class="btn btn-default backbutton arrow disabled" href="https://bjc.edc.org/bjc-r/cur/programming/5-algorithms/1-searching-lists/1-sorted-lists.html?topic=nyc_bjc%2F5-algorithms.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment#">back</a>
+                <div class="dropdown inline"><button class="navbar-toggle btn btn-default dropdown-toggle list_header" type="button" data-toggle="dropdown"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                    <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labeledby="Topic-Navigation-Menu" style="max-height: 436px; max-width: 450px;">
+                        <li class="list_item" role="presentation"><a href="https://bjc.edc.org/bjc-r/course/bjc4nyc.html" role="menuitem"><span class="course-link-list">Go to Table of Contents</span></a></li>
+                        <li class="list_item" role="presentation"><a href="https://bjc.edc.org/bjc-r/llab/html/topic.html?topic=nyc_bjc%2F5-algorithms.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" role="menuitem"><span class="main-topic-link">Unit 5: Algorithms and Simulations</span></a></li>
+                        <li class="divider list_item" role="presentation"></li>
+                        <li class="list_item dropdown-header" role="presentation">Lab 1: Search Algorithms</li>
+                        <li class="list_item" role="presentation"><a href="https://bjc.edc.org/bjc-r/cur/programming/5-algorithms/1-searching-lists/1-sorted-lists.html?topic=nyc_bjc%2F5-algorithms.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" role="menuitem"><span class="current-page-arrow">Searching a Sorted List</span></a></li>
+                        <li class="list_item" role="presentation"><a href="https://bjc.edc.org/bjc-r/cur/programming/5-algorithms/1-searching-lists/2-improving-search.html?topic=nyc_bjc%2F5-algorithms.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" role="menuitem">Analyzing and Improving Searches</a></li>
+                        <li class="list_item" role="presentation"><a href="https://bjc.edc.org/bjc-r/cur/programming/5-algorithms/1-searching-lists/3-comparing-search-algorithms.html?topic=nyc_bjc%2F5-algorithms.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" role="menuitem">List Processing Algorithms</a></li>
+                        <li class="list_item dropdown-header" role="presentation">Lab 2: Models and Simulations</li>
+                        <li class="list_item" role="presentation"><a href="https://bjc.edc.org/bjc-r/cur/programming/5-algorithms/2-simulation/1-intro-to-simulations.html?topic=nyc_bjc%2F5-algorithms.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" role="menuitem">Why Use Models and Simulations?</a></li>
+                        <li class="list_item" role="presentation"><a href="https://bjc.edc.org/bjc-r/cur/programming/5-algorithms/2-simulation/2-flipping-a-coin.html?topic=nyc_bjc%2F5-algorithms.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" role="menuitem">Flipping a Coin Project</a></li>
+                        <li class="list_item" role="presentation"><a href="https://bjc.edc.org/bjc-r/cur/programming/5-algorithms/2-simulation/3-disease-spread.html?topic=nyc_bjc%2F5-algorithms.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" role="menuitem">Disease Spread Project</a></li>
+                        <li class="list_item dropdown-header" role="presentation">Lab 3: Timing Experiments</li>
+                        <li class="list_item" role="presentation"><a href="https://bjc.edc.org/bjc-r/cur/programming/5-algorithms/3-timing-experiments/1-comparing-algorithms.html?topic=nyc_bjc%2F5-algorithms.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" role="menuitem">Comparing Algorithms</a></li>
+                        <li class="list_item" role="presentation"><a href="https://bjc.edc.org/bjc-r/cur/programming/5-algorithms/3-timing-experiments/2-timing-reporters.html?topic=nyc_bjc%2F5-algorithms.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" role="menuitem">Timing Reporters</a></li>
+                        <li class="list_item" role="presentation"><a href="https://bjc.edc.org/bjc-r/cur/programming/5-algorithms/3-timing-experiments/3-classifying-algorithms.html?topic=nyc_bjc%2F5-algorithms.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" role="menuitem">Classifying Algorithms</a></li>
+                        <li class="list_item dropdown-header" role="presentation">Lab 4: Unsolvable and Undecidable Problems</li>
+                        <li class="list_item" role="presentation"><a href="https://bjc.edc.org/bjc-r/cur/programming/5-algorithms/4-unsolvable-undecidable/1-logical-inconsistency.html?topic=nyc_bjc%2F5-algorithms.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" role="menuitem">Logical Inconsistency</a></li>
+                        <li class="list_item" role="presentation"><a href="https://bjc.edc.org/bjc-r/cur/programming/5-algorithms/4-unsolvable-undecidable/2-halting-problem.html?topic=nyc_bjc%2F5-algorithms.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" role="menuitem">An Undecidable Problem</a></li>
+                        <li class="list_item dropdown-header" role="presentation">Lab 5: Computing in War</li>
+                        <li class="list_item" role="presentation"><a href="https://bjc.edc.org/bjc-r/cur/programming/5-algorithms/5-war/1-war-and-technology.html?topic=nyc_bjc%2F5-algorithms.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" role="menuitem">War and Technology</a></li>
+                        <li class="list_item" role="presentation"><a href="https://bjc.edc.org/bjc-r/cur/programming/5-algorithms/5-war/2-machines-and-lives.html?topic=nyc_bjc%2F5-algorithms.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" role="menuitem">Computers and War</a></li>
+                        <li class="list_item" role="presentation"><a href="https://bjc.edc.org/bjc-r/cur/programming/5-algorithms/5-war/3-everyday-life.html?topic=nyc_bjc%2F5-algorithms.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" role="menuitem">Military Technology in Everyday Life</a></li>
+                        <li class="list_item dropdown-header" role="presentation">Optional Project: Tic Tac Toe</li>
+                        <li class="list_item" role="presentation"><a href="https://bjc.edc.org/bjc-r/cur/programming/5-algorithms/tic-tac-toe/1-review.html?topic=nyc_bjc%2F5-algorithms.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" role="menuitem">Review Your Tic-Tac-Toe Project</a></li>
+                        <li class="list_item" role="presentation"><a href="https://bjc.edc.org/bjc-r/cur/programming/5-algorithms/tic-tac-toe/2-creating-computer-player.html?topic=nyc_bjc%2F5-algorithms.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" role="menuitem">Creating a Computer Player</a></li>
+                        <li class="list_item" role="presentation"><a href="https://bjc.edc.org/bjc-r/cur/programming/5-algorithms/tic-tac-toe/3-developing-strategy.html?topic=nyc_bjc%2F5-algorithms.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" role="menuitem">Developing a Gameplay Strategy</a></li>
+                        <li class="list_item" role="presentation"><a href="https://bjc.edc.org/bjc-r/cur/programming/5-algorithms/tic-tac-toe/4-making-computer-player-strategic.html?topic=nyc_bjc%2F5-algorithms.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment" role="menuitem">Making the Computer Play Strategically</a></li>
+                    </ul>
+                </div><a class="btn btn-default forwardbutton arrow" href="https://bjc.edc.org/bjc-r/cur/programming/5-algorithms/1-searching-lists/2-improving-search.html?topic=nyc_bjc%2F5-algorithms.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment">next</a>
+            </ul>
+        </div>
+    </nav>
+    <div class="title-small-screen">Unit 5 Lab 1: Algorithms, Page 1</div>
+    <div class="full">
+        <!--h2>Searching a Sorted List</h2-->
+        <h2>Een geordende lijst doorzoeken</h2>
+        <div class="todo">
+            <div class="sidenote">LO 1.2.3 by whole page.</div>
+            <li><strong>LO 1.2.3</strong> Create a new computational artifact by combining or modifying existing artifacts. [P2]</li>
+        </div>
+        <div class="todo">
+            <p>Brian doesn't like this title. He suggests: "Computer, Guess My Number"</p>
+            <p>
+                Piazza comments from Tim Matthies that have not been addressed yet:
+                <a href="https://piazza.com/class/h8yx482idav52y?cid=1725">post1</a>
+                <a href="https://piazza.com/class/h8yx482idav52y?cid=1726">post2</a>
+            </p>
+        </div>
+
+        <!--<div class="sidenoteBig">This introductory box is a new design feature that the BJC development team is considering using throughout the student lab pages. It's goal is to help students anticipate what they will be working on.<br />Is it helpful to you? How could we make it better? Please use the blue feedback button at the bottom to support BJC with your ideas!</div>-->
+        <div class="learn">
+            <!--p><strong>In this lab</strong>, you will explore various algorithms for searching a list.</p-->
+            <p><strong>In deze les</strong> ga je verschillende algoritmes bekijken voor het zoeken in een lijst.
+            </p>
+
+        <!--p><strong>On this page</strong>, you will revise your number guessing game from Unit 2 to make the computer guess your number.</p-->
+            <p><strong>Op deze pagina</strong> ga je het raadt-het-getalspel van Hoofdstuk 2 aanpassen, zodat de computer jouw getal raadt.</p>
+    </div>
+    <div class="forYouToDo" id="first">
+        <ol>
+            <!--div class="sidenote">You build a number guessing game in <a href="http://localhost/bjc-r/cur/programming/2-complexity/1-variables-games/1-number-guessing-game.html" title="Unit 2, Lab 2: Developing a Number Guessing Game with Script Variables">Unit 2, Lab 2: Developing a Number Guessing Game with Script Variables</a>.</div-->
+            <div class="sidenote">Je hebt al een raadt-het-getalspel geschreven in <a href="http://localhost/bjc-r/cur/programming/2-complexity/1-variables-games/1-number-guessing-game.html" title="Unit 2, Lab 2: Developing a Number Guessing Game with Script Variables">Hoofdstuk 2, Les 2: Developing a Number Guessing Game with Script Variables</a>.</div>
+
+                <!--li>
+                    One simple version of the Unit 2 number guessing game is in the project link below; click the picture to open it.<br>
+                    <a class="run" href="http://snap.berkeley.edu/snapsource/snap.html#open:https://bjc.edc.org/bjc-r/prog/5-algorithms/U5L1-GuessNumber.xml" target="_blank"> <img class="indent" src="./Unit 5 Lab 1_ Algorithms, Page 1_files/U5L1-guessNumber.png" alt="starting script for a number guessing game" title="starting script for a number guessing game"> </a>
+                </li-->
+            <li>
+                Een simpele versie van het raadt-het-getalspel uit Hoofdstuk 2 vindt je in de link hier beneden, klik op het plaatje om het te openen..<br>
+                <a class="run" href="http://snap.berkeley.edu/snapsource/snap.html#open:https://bjc.edc.org/bjc-r/prog/5-algorithms/U5L1-GuessNumber.xml" target="_blank"> <img class="indent" src="./Unit 5 Lab 1_ Algorithms, Page 1_files/U5L1-guessNumber.png" alt="starting script for a number guessing game" title="starting script for a number guessing game"> </a>
+            </li>
+
+            <!--li>Play the game a few times and keep track of how many guesses you made to identify the computer's secret number.</li-->
+            <li>Speel het spelletje een paar keer en hou bij in hoe vaak je moest raden om het getal te vinden.</li>
+
+        </ol>
+    </div>
+
+    <!--div class="dialogue">
+            <div><span>Alphie: </span> The best I did was 12 guesses.</div>
+            <div><span>Betsy: </span> I got it in 4 guesses once. I think that's the best you can do.</div>
+            <div><span>Gamal: </span> If you were <em>really</em> lucky, you could have gotten it in one guess.</div>
+            <div><span>Betsy: </span> But I have a strategy that isn't just luck.</div>
+            <div><span>Gamal: </span> You have a strategy that will always work in 4 guesses?!</div>
+            <div><span>Betsy: </span> Not always 4, but  always a lot less than 12.</div>
+        </div-->
+
+    <div class="dialogue">
+        <div><span>Alex: </span> Mijn beste score is 12.</div>
+        <div><span>Robin: </span>Het is me een keer gelukt in 4 keer raden en ik denk dat het niet sneller kan.</div>
+        <div><span>Yasmine: </span> Als je <em>echt</em> geluk hebt, kan je het raden in 1 keer.</div>
+        <div><span>Robin: </span>Maar ik heb een strategie wat niks met geluk te maken heeft.</div>
+        <div><span>Yasmine: </span> Heb jij een strategie waarmee jij het getal in 4 keer kan raden?!</div>
+        <div><span>Robin: </span> Niet altijd 4, maar altijd minder dan 12.</div>
+    </div>
+
+    <div class="forYouToDo">
+        <ol start="3">
+
+            <!--li><img class="imageRight" src="./Unit 5 Lab 1_ Algorithms, Page 1_files/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner">What strategy could be used to reliably guess a number in much fewer than 12 tries? Describe your strategy clearly enough for others to use to play the game.</li-->
+
+            <li><img class="imageRight" src="./Unit 5 Lab 1_ Algorithms, Page 1_files/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner">Welke strategie zou je kunnen gebruiken om het getal altijd te raden in minder dan 12 pogingen. Beschrijf jouw strategie duidelijk genoeg zodat anderen die ook kunnen gebruiken om het spel te spelen.</li>
+
+            <!-- <div class="todo">This following problem's example and graphic should use the same parameters as the game above. Using 1 to 60 would inspire students to recognize they need to round when calculating the middle number.<br />SELIM, can you please handle this? --MF, 2/19/18</div>-->
+
+            <li>
+                Met je partner schrijf je een programma dat jouw strategie gebruikt om het getal te raden. Als het getal 19 is dan zou het programma zo horen te werken:<br>
+                <div style="position:relative;cursor:pointer;width:689px;height:225px;">
+                    <div class="gifffer-play-button" style="width: 60px; height: 60px; border-radius: 30px; background: rgba(0, 0, 0, 0.3); position: absolute; top: 82.5px; left: 314.5px;">
+                        <div style="width:0;height: 0;border-top:14px solid transparent;border-bottom:14px solid transparent;border-left:14px solid rgba(0, 0, 0, 0.5);position:absolute;left:26px;top:16px;"></div>
+                    </div><canvas width="689" height="225"></canvas>
+                </div>
+                <div class="endnote">Er zijn drie verborgen sprites met het uiterlijk ("too small, "just right," and "too big") in jouw project file. Gebruik blok <code>verschijn</code> uit menu "Uiterlijk" om ze zichtbaar te maken.</div>
+            </li>
+
+            <!--li>
+                    With your partner, build a program that uses your strategy to guess someone's secret number. If your secret number is 19, the program should work something like this:<br>
+
+                 <div style="position:relative;cursor:pointer;width:689px;height:225px;"><div class="gifffer-play-button" style="width: 60px; height: 60px; border-radius: 30px; background: rgba(0, 0, 0, 0.3); position: absolute; top: 82.5px; left: 314.5px;"><div style="width:0;height: 0;border-top:14px solid transparent;border-bottom:14px solid transparent;border-left:14px solid rgba(0, 0, 0, 0.5);position:absolute;left:26px;top:16px;"></div></div><canvas width="689" height="225"></canvas></div>
+
+                 <div class="endnote">There are three sprites with costumes ("too small, "just right," and "too big") that are hidden in your project file. Use the <code>show</code> block in the "Looks" menu to see them.</div>
+
+            </li-->
+
+        </ol>
+    </div>
+
+
+
+    <div class="full-bottom-bar" style="background-position: 4.93046% 3px;">
+        <div class="bottom-nav btn-group"><a class="btn btn-default backbutton arrow disabled" href="https://bjc.edc.org/bjc-r/cur/programming/5-algorithms/1-searching-lists/1-sorted-lists.html?topic=nyc_bjc%2F5-algorithms.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment#">back</a><a class="btn btn-default forwardbutton arrow" href="https://bjc.edc.org/bjc-r/cur/programming/5-algorithms/1-searching-lists/2-improving-search.html?topic=nyc_bjc%2F5-algorithms.topic&amp;course=bjc4nyc.html&amp;novideo&amp;noassignment">next</a></div>
+    </div>
+    <div class="footer" style="position:relative;"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img class="imageLeft" alt="Creative Commons License" style="border-width:0" src="./Unit 5 Lab 1_ Algorithms, Page 1_files/88x31.png"></a>
+        <div style="position:absolute;left: 135px; margin-bottom: 20px;"><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><em>Beauty and Joy of Computing</em></span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">University of California, Berkeley and Education Development Center, Inc.</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. The development of this site is funded by the National Science Foundation under grant number 1441075. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.</div>
+    </div>
+</body>
+
+</html>
