@@ -1,0 +1,18 @@
+De mappenstructuur:
+
+Per unit (hoofdstuk) een speciale map. Daarin géén subfolders meer voor wat wij 'Lab' of 'Les' noemen. 
+
+Note: alles wat in de subfolder van unit1 staat ( 1-building an app) moet geknipt & geplakt worden in de 'hoofd'folder van unit1. 
+Alle andere subfolders moeten nog worden verwijderd. (Joep vragen dit te doen, daar waar hij maker is van deze mappen). 
+
+Opbouw van een doc. naam: 
+
+Voorbeeld
+H1L2P2 = 
+Hoofdstuk 1 (Unit 1) 
+Les 2 (Lab 2)
+Pagina 2 (Page 2)
+
+Alléén units krijgen (voor nu) een aparte subfolder in deze Git.
+
+Vragen? Mail sabine.verdult@gmail.com
