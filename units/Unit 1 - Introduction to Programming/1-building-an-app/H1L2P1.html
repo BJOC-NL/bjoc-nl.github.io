@@ -32,7 +32,7 @@
         <h3>Maak je eigen blokken</h3>
         <div class="forYouToDo" id="first">  
             <ol>
-                <li><a href="/bjc-r/prog/1-introduction/U1L2-Gossip.xml" class="run"><img class="inline" src="/bjc-r/img/icons/load-save.png" alt="Klik om te openen. Sla hem op op je Snap! account." title="Klik om te openen. Sla hem op op je Snap! account."></a></li>
+                <li><a href="/bjc-r/prog/1-introduction/U1L2-Gossip.xml" class="run"><img class="inline" src="/bjc-r/img/icons/load-save.png" alt="Klik hier om dit bestand te openen. Bewaar het vervolgens in je Snap! account." title="Klik hier om dit bestand te openen. Bewaar het vervolgens in je Snap! account."></a></li>
                 <div class="endnote">Je moet ingelogd zijn om een project te bewaren in je account. Als je nog even wil zien hoe je moet inloggen, kijk dan hier<a href="/bjc-r/cur/programming/1-introduction/1-building-an-app/1-creating-a-snap-account.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment#login" title="Beginnen met Snap<em>!</em>">Hoofdstuk 1 Les 1 Pagina 1: Beginnen met Snap<em>!</em></a> </div>
                 <li>Doe alle experimenten (A-D) een paar keer.
                     <img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Overleg met je partner" title="Overleg met je partner" />
@@ -67,17 +67,17 @@
             </ol>
         </div>
         
-        <div class="takeNote">
+      <div class="takeNote">
             <div class="sidenote">
-            <p>Het <code>zeg</code> blok zegt iets tegen de gebruiker.</p>
+                <p>Het <code>zeg</code> blok zegt iets tegen de gebruiker.</p>
             <p>Het <code>rapporteer</code> blok rapporteert iets aan de computer dat op een andere plek in het programma gebruikt kan worden.</p></div>
-            Hier is de volledige definitie van de <code>wie</code> <em>functie</em>: <br />
-            <img class="indent" src="/bjc-r/img/1-introduction/who-block-definition.png" alt="who reporter block definition: report (item (random) van (lijst (Ma’am) (Mvr. C) (mijn kat) (Anna) (Jan)))" title="who reporter block definition: report (item (random) van (list (Ma’am) (Mvr. C) (mijn kat) (Anna) (Jan)))" /><br />
-            Waarom gebruiken we niet een <code>zeg</code> in plaats van een <code>rapporteer</code> blok?<br />
-            <img class="indent" src="/bjc-r/img/1-introduction/say-version-of-who.png" alt="who command block definition: zeg (item (random) van (lijst (Ma’am) (Mvr. C) (mijn kat) (Anna) (Jan)))" title="who command block definition: zeg (item (random) van (list (Ma’am) (Mvr. C) (mijn kat) (Anna) (Jan)))" /><br />
-            Als je dat doet kun je <code>who</code> niet als invoer gebruiken voor bijvoorbeeld het <code>voeg samen</code> in <code>gossip</code>. We moeten van <code>who</code> een <em>functie</em> maken zodat het gebruikt kan worden in <code>gossip</code>:<br />
+            Hier is de volledige definitie van de <code>wie</code> <em>resultaatblok</em>: <br />
+            <img class="indent" src="/bjc-r/img/1-introduction/who-block-definition.png" alt="resultaatblok 'wie' definitie: rapporteer (item (random) van (lijst (Señora) (Ms. C) (my cat) (Hannah) (Jake)))" title="resultaatblok 'wie' definitie: rapporteer (item (random) van (lijst (Señora) (Ms. C) (my cat) (Hannah) (Jake)))" /><br />
+            Waarom gebruiken we niet <code>zeg</code> in plaats van <code>rapporteer</code>?<br />
+            <img class="indent" src="/bjc-r/img/1-introduction/say-version-of-who.png" alt="who command block definition: say (item (random) of (list (Señora) (Ms. C) (my cat) (Hannah) (Jake)))" title="who command block definition: say (item (random) of (list (Señora) (Ms. C) (my cat) (Hannah) (Jake)))" /><br />
+            Als je dat doet, kan je niet <code>wie</code> gebruiken als invoer voor een ander blok als de <code>voeg toe</code> in <code>gossip</code>. Dus we moeten <code>wie</code> een <em>rapporteer</em> maken, om het te gebruiken in <code>gossip</code>:<br />
             <img class="indent" src="/bjc-r/img/1-introduction/gossip-definition.png" alt="gossip: (report (join (who) ( ) (does what) ( ) (who)))" title="gossip: (report (join (who) ( ) (does what) ( ) (who)))" />
-        </div>
+        </div> 
         
 		<div class="ifTime">
 			<ol start="4">
@@ -119,4 +119,4 @@
 	</body>
 </html>
 
-
+// De meeste alt=".." en title=".." zijn al vertaald naar het Nederlands
