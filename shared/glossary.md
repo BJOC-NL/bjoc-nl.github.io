@@ -33,6 +33,12 @@ scripting area - werkblad
 
 project file - bestand (Snap heeft niet echt het concept van meerdere bestanden in een project)
 
+report - rapporteer
+
+broadcast - zend signaal
+
+list - lijst
+
 ## Voorbeelden
 
 number guessing game - raadt-het-getal spel
