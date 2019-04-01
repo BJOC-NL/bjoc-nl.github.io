@@ -76,6 +76,10 @@ Take it further - Ga een stapje verder
 
 In this lesson you will - In deze les ga je
 
+(Knop tekst)
+Click here to load this file. Then save it to your Snap! account. - 
+Klik hier om dit bestand te openen. Bewaar het vervolgens in je Snap! account.
+
 ## Namen
 Alphie - Alex
 
