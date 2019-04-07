@@ -29,6 +29,10 @@ hat blocks - hoedblokken
 
 reporter - resultaatblok
 
+command(block) - opdracht(blok)
+
+C-shapedblock - hapblok
+
 scripting area - werkblad
 
 project file - bestand (Snap heeft niet echt het concept van meerdere bestanden in een project)
@@ -68,7 +72,7 @@ bug
 ## Hoofdstuk specifieke termen
 artificial intelligence (AI) - Kunstmatige intelligentie (KI)
 
-(list) item - element
+(list) item - item
 
 image recognition - beeldherkenning
 
