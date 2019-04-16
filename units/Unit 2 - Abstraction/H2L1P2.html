@@ -4,7 +4,7 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
-	    <title>Unit 2 Lab 1: Improving Games by Using Variables, Page 2</title>
+	    <title>Unit 2 Les 1: Verbeter spellen met variabelen, Pagina 2</title>
 		<script type="text/javascript" src="/bjc-r/utilities/gifffer.min.js"></script>
         <script type="text/javascript">window.onload = function() {Gifffer();};</script>
         <link rel="stylesheet" type="text/css" href="/bjc-r/css/bjc-gifffer.css">
@@ -18,24 +18,24 @@
        5.4.1E Locating and correcting errors in a program is called debugging the program.<br />
        5.4.1F Knowledge of what a program is supposed to do is required in order to find most program errors. 
         </div>
-    	<h2>Debugging and Extending Your Number Guessing Game</h2>
+    	<h2>Debugging en verlengen van je Raad-het-getal spel</h2>
         <div class="learn">
-            <p><strong>On this page,</strong> you will debug a Number Guessing game script, and you will make the computer tell  players whether their guesses are too big or too small.</p>
+            <p><strong>Op deze pagina,</strong> ga je een Raad-het-getal spel debuggen, en je gaat de getallen die de spelers hebben geraden de computer laten zeggen of ze te groot of te klein zijn.</p>
         </div>
         
         <div class="forYouToDo" id="first">
 			<ol>
 				<li>
-                    <strong>Analyze and Debug.</strong> This definition for a <code>Number guessing game</code> block has  a <strong>bug</strong>&mdash;an error in the code that makes the program behave differently than expected. This code, if you keep playing over and over,  will mostly work, but <em>sometimes</em> (not often) it will congratulate you  <em>before you even guess</em>. <br />
+                    <strong>Analyseer en Debug.</strong> De definitie van een <code>Raad-het-getal-spel</code> blok heeft een <strong>bug</strong>&mdash;een error / fout in de code dat het programma anders doet gedragen dan dat jij zou willen. Deze code, zou je het constant spelen,  zal in de meeste gevallen wel werken, maar <em>soms</em> (niet altijd) zal het je feliciteren  <em>voordat je het getal hebt geraden</em>. <br />
                     <div class="sidenote"><div class="todo">This is a kind of debugging strategy (perhaps: "narrowing the possibilities"?). Do we want to say anything more about it? --MF, 3/21/18</div>
-		If you build this to try it out, have it pick its random number just from 1 to 3 to make the bug occur more often.</div>
+		Als je dit bouwt om uit te proberen, zorg dat het random nummers selecteert van 1 tot 3 om de bug vaker voor te laten komen.</div>
                     <img class="indent" src="/bjc-r/img/2-complexity/number-guessing-game-definition.png" alt="Number guessing game{script variables(secret number); set(secret number) to (pick random(1) to (10)); repeat until(answer=secret number){ask(Guess my secret number) and wait} say(You guessed it!) for (2) secs}" title="Number guessing game{script variables(secret number); set(secret number) to (pick random(1) to (10)); repeat until(answer=secret number){ask(Guess my secret number) and wait} say(You guessed it!) for (2) secs}" /><br />
-                    <img class="inline" src="/bjc-r/img/icons/talk-with-another-pair.png" alt="Talk with Another Pair" title="Talk with Another Pair" /> Analyze the code, or experiment with it, and explain how this can happen. 
+                    <img class="inline" src="/bjc-r/img/icons/talk-with-another-pair.png" alt="Talk with Another Pair" title="Talk with Another Pair" /> Analyseer de  code, of experimenteer met het, en leg uit hoe dit kan gebeuren. 
                     
                 </li>
-            	<li>If it isn't open already, open your U2L1-NumberGuessing project.</li>
+            	<li>Als je het nog niet geopend hebt, open je H2L1-Raadhetgetal project.</li>
 				<li>
-                	There are a few different ways to fix the bug. 
+                	Er zijn een paar verschillende manieren om de bug te fixen. 
                     <div class="todo">
                         	<p>At first, I wondered if this might be something that should  be included in the debugging tip, but then I realized that I'm not sure what it means. Can someone who understands the intended meaning please look at this and explain it to me so we can work to clarify it? --MF, 3/21/18</p>
                         </div>
