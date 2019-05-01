@@ -16,11 +16,11 @@
 			<br />
 			5.2.1C Program instructions may involve variables that are initialized and updated, read, and written.<br />
         </div>
-		<h2>Keeping Score with Global Variables</h2>		
+		<h2>Keeping Score with Global Variables</h2>
 		<div class="learn">
             <p><strong>Op deze pagina,</strong> ga je een <em>globale variabele</em> gebruiken om je score in het Alonzo spel bij te houden.</p>
         </div>
-        
+
         <p>In je Raad-het-getal spel, heb je een <em>script variabele</em> gebruikt om informatie in op te slaan (de waarde van het <var>geheime getal</var>) die maar bij één script van toepassing was. Om de score bij te houden in het Alonzo spel, meer dan één scripts zullen dan nodig zijn om toegang te krijgen tot bepaalde informatie, dus gebruik je een <em>globale variabele</em>.</p>
         <div class="vocabFullWidth">
             <p>Een <var>globale variabele</var> is een variabele die bruikbaar is door alle scripts in het programma.</p>
@@ -29,10 +29,10 @@
             <h4><strong>Wanneer gebruik je globale variabelen?</strong></h4>
             <p>In de meeste gevallen, zijn script variabelen een betere keuze omdat ze niet veranderd kunnen worden door een andere gedeelte van het programma. Op deze manier verkleinen ze de kans op bugs. Maar als <strong>meerdere scripts toegang nodig hebben</strong> tot een variabele of <strong>als informatie uit een variabele opgeslagen moet worden</strong> met je document, gebruik dan een globale variabele.</p>
         </div>
-        
+
         <div class="forYouToDo" id="first">
 			<ol>
-				<li>Open je H1L1-Alonzo project, speel het spel en bekijk de code net zo lang totdat je weer zeker weet hoe alles werkt.</li>	
+				<li>Open je H1L1-Alonzo project, speel het spel en bekijk de code net zo lang totdat je weer zeker weet hoe alles werkt.</li>
                 <li><div class="saveAs"><span class="text">"U2L1-ClickAlonzo"</span><img src="/bjc-r/img/icons/save-this-as.png" alt="Save your work as U2L1-ClickAlonzo" title="Sla op als H2L1-Alonzo" /></div></li>
                 <div class="takeNote">Zorg dat je je project <strong>opnieuw opslaat onder een andere naam</strong> met "H2" in het documentnaam. Als je dit werk opslaat onder je oude naam, zal Snap<em>!</em> je project overschrijven. Gebruik  &quot;Opslaan als...&quot;  om het nieuwe bestand op te slaan onder een nieuwe naam. Als je een ouder project laadt en op het punt staat een grote verandering door te voeren, probeer er dan een gewoonte van te maken het <em>eerst op te slaan, voordat je iets verandert</em>. </div>
                 <li>Create a global variable named <var>score</var>. Here's how.</li>
@@ -58,16 +58,16 @@
             </ol>
 		</div>
         <img class="inline" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" />
-        
+
 		<!-- I STILL LIKE THIS SECTION --MF       <div class="endnote">
 	        <div class="comment">Brian, I'm curious about your thoughts here too. --MF<br />I'm not sure we need this box at all, but if we want it, here's what it should say. --bh</div>
             <p>The orange oval blocks that name variables are reporters, like other oval blocks.  But <em>most</em> reporters implement <em>functions,</em> which means that when you call the same block with the same inputs, you always get the same value. <code>2+3</code> is always 5. The <code>random</code> block, and reporters you write using <code>random</code>, are different; calling them twice with the same inputs may report different answers.</p>
             <p>Variable blocks are one step further away from functions; a program can choose to change the value that a variable block will report by using <code>set</code> or <code>change</code> to give the variable a new value.</p>
             <img src="/bjc-r/img/2-complexity/score-variable-reporting-7.png" alt="score reporting 7"><br />
             <img src="/bjc-r/img/2-complexity/change-score-by-1.png" alt="change score by 1"><br />
-      <img src="/bjc-r/img/2-complexity/score-variable-reporting-8.png" alt="score reporting 8">      
+      <img src="/bjc-r/img/2-complexity/score-variable-reporting-8.png" alt="score reporting 8">
             <p> It turns out that any program that changes the values of variables can be rewritten in a way that doesn't <code>set</code> or otherwise change the values of variables. There are advantages to this <em>functional programming</em> style, which avoids certain kinds of otherwise-common bugs, but some kinds of programs are hard to write functionally. You aren't really ready to think about this yet, but we'll come back to functional programming later in the year.</p>
-            
+
         </div>
             <div class="todo">ST_This is greatly confusing.  We need to stop telling kids things like "you are not really ready for this but here it is".</div>
             -->
@@ -78,7 +78,7 @@
                 <li>
                 	Gebruik een conditionele om te besluiten of de speler die score heeft bereikt. Als dit het geval is:
                       <ol>
-                        
+
                         <li>Zorg dat Alonzo stopt met rondspringen.</li>
                     	<li>Zorg dat Alonzo weer tevoorschijn komt. (Je moet dan het ghost effect resetten.)</li>
                         <li>Feliciteer de speler voor een paar seconden.</li>
@@ -97,16 +97,16 @@
                 </li>
             </ol>
 		</div>
-        
-            
+
+
         <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
             <ol type="A">
                 <li>Wanneer de sprite beweegt zonder aangeklikt te worden, zorg dat je score met 1 omlaag gaat.</li>
             </ol>
 		</div>
-        
-        
-        
-                
+
+
+
+
 	</body>
 </html>
