@@ -7,8 +7,8 @@
 		<script type="text/javascript" src="/bjc-r/utilities/gifffer.min.js"></script>
         <script type="text/javascript">window.onload = function() {Gifffer();}</script>
         <link rel="stylesheet" type="text/css" href="/bjc-r/css/bjc-gifffer.css">
-		<title>Unit 2 Lab 2: Making Art by Using Data Structures, Page 3</title>
-    </head> 
+		<title>Hoofdstuk 2 Les 2: Kunst maken met het gebruik van datastructuren, Pagina 3</title>
+    </head>
 
 	<body>
     <div class="todo">
@@ -17,120 +17,120 @@
        4.1.1H Different algorithms can be developed to solve the same problem. <br />
        5.5.1H Computational methods may use lists and collections to solve problems.
         </div>
-        <h2>Capturing Clicks as Points</h2>
+        <h2>Klikken gebruiken als punten</h2>
         <div class="todo">Page name here does not match topic page. Need to check TG too. --MF, 6/27/18</div>
-		
+
   <!--      <div class="todo">ST-I don't think this page belongs here.  This will not help the students for the task they need to prepare for, the Mandala.  It may belong to U3 if we end up doing the "simple studio" project (my interview submission) for which this could be a prelude.  Also looking at your solution, I see some non-trivial steps, -not just the recursive "all of" predicate, but overall subtle sequencing of code-  I don't see how the kids will succeed with this little help.</div>   -->
         <div class="learn">
-        	On the previous page, you drew a shape based on a list of points you were given.  <strong>On this page,</strong> you will automate the process of getting coordinates by clicking on the desired points on the screen.
+        	Op de vorige pagina, heb je een vorm getekend gebaseerd op een lijst van punten die je hebt gekregen.  <strong>Op deze pagina,</strong> ga je het process van het verkrijgen van coördinaten automatiseren door op de gewenste punten op je scherm te klikken.
         </div>
-        
-         
+
+
         <div class="dialogue">
             <!--<div class="todo">
             <p>ST-Suggested replacement:".....Why can't we just draw a letter on the screen by clicking on the corner points that define the letter?"</p>
             <p>Again, I don't think it's realistic to click on the screen freehand. On the previous page they drew their A on graph paper first. --bh</p>
             </div>-->
-            <div class="stagedir">Betsy and Alphie are still using coordinate lists to draw letters.</div>
+            <div class="stagedir">Betsie en Alfie gebruiken nog steeds de coördinaten lijst om letters te tekenen.</div>
             <img class="imageRight" src="/bjc-r/img/icons/take-turns-speaking-mini.gif" alt="Take turns speaking" title="Take turns speaking">
-            <div><span>Alphie:</span> Typing in all these coordinates is a pain.  Let's write a program so that if we have a picture, we can click on the corners and let the program collect the coordinates?</div>
+            <div><span>Alfie:</span> Het intypen van deze coördinaten is echt lastig. Laten we een programma schrijven dat als we een afbeelding hebben, we op de hoekjes kunnen klikken en het programma de coördinaten verzamelt?</div>
             <!--<div class="todo">
-            <p>ST-This next comment by Betsy feels a bit unrealistic, no one will try to draw on a screen or use tracing paper on a screen.<br />Suggestion: Betsy: "Great idea, how could we do that?"</p>
+            <p>ST-This next comment by Betsie feels a bit unrealistic, no one will try to draw on a screen or use tracing paper on a screen.<br />Suggestion: Betsie: "Great idea, how could we do that?"</p>
             <p>Selim: If you look at my ugly, ragged E, it's that way because I just eyeballed the vertices instead of having an actual printed E to work from. On the previous page, they draw an A on graph paper before entering the coordinates. I think it's absolutely realistic that kids would hold that graph in front of the screen to get the vertices right! --bh</p>
             </div>-->
-            <div><span>Betsy:</span> Great idea. And I know that we can   import  images as a stage background, so all we have to do is....</div>
+            <div><span>Betsie:</span> Fantastisch idee! Ik weet dat we afbeeldingen kunnen importeren als achtergrond, dus het enige wat we hoeven te doen is....</div>
         </div>
-        
-        
+
+
         <div class="forYouToDo" id="first">
         <!--<p>You will have to combine parts of two projects: your work from the <strong>U2L2-DrawShape</strong> project you saved on the previous page, and a starter project for this page.</p>-->
             <ol>
                 <li>
-                     <a class="run" href="/bjc-r/prog/2-complexity/U2L2-Capturing-Points.xml"><img class="inline" src="/bjc-r/img/icons/load-save.png" alt="Click here to load this file. Then save it to your Snap! account." title="Click here to load this file. Then save it to your Snap! account."></a><br /> 
+                     <a class="run" href="/bjc-r/prog/2-complexity/U2L2-Capturing-Points.xml"><img class="inline" src="/bjc-r/img/icons/load-save.png" alt="Click here to load this file. Then save it to your Snap! account." title="Click here to load this file. Then save it to your Snap! account."></a><br />
                      <img class="imageRight" src="/bjc-r/img/icons/save-mini.png" alt="Save Your Work" title="Save Your Work" />
-                     Export your new drawing blocks and abstract data type from your "U2L2-DrawShape" project, import them into this new project and save it again.
+                     Exporteer je nieuwe tekenblokken en abstracte datatypes van je "H2L2-DrawShape" project, importeer deze in een nieuwe project en sla het opnieuw op.
                      <div class="todo">Clarify these intructions (about importing and exporting), and include the necessary content cut from "Importing <code>Greet Player</code> into Another Program." --MF, 6/18/18</div>
-		
-                 <!--   <div class="sidenote">Your <code>draw shape</code> block uses <code>go to point</code> and <code>for each</code>, which uses <code>empty?</code>. If you forget to export these dependent blocks and import <code>draw shape</code> into a project that doesn't already have some needed blocks, you'll see an <code>obsolete</code> block in their place. This will soon be changed in Snap<em>!</em> (any dependent blocks will export automatically), but dependencies can happen other programming situations too (like with <a href="/bjc-r/cur/programming/2-complexity/1-variables-games/4-importing-exporting.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment">global variables</a>).</div> 
+
+                 <!--   <div class="sidenote">Your <code>draw shape</code> block uses <code>go to point</code> and <code>for each</code>, which uses <code>empty?</code>. If you forget to export these dependent blocks and import <code>draw shape</code> into a project that doesn't already have some needed blocks, you'll see an <code>obsolete</code> block in their place. This will soon be changed in Snap<em>!</em> (any dependent blocks will export automatically), but dependencies can happen other programming situations too (like with <a href="/bjc-r/cur/programming/2-complexity/1-variables-games/4-importing-exporting.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment">global variables</a>).</div>
                     <img class="indent" src="/bjc-r/img/2-complexity/export-draw-shape-blocks.png" alt="Exporting blocks from U2L2-DrawShape" title="Exporting blocks from U2L2-DrawShape" /> -->
                 </li>
                 <li>
-                    Select a stage background of your choice.
+                    Selecteer een achtergrond naar keuze.
                     <div class="narrower">
-                        <h4><strong>Setting the Stage Background</strong></h4>
+                        <h4><strong>Je achtergrond klaar zetten</strong></h4>
                         <ol type="a">
-                            <li> 
-								<strong>Click the Stage button</strong> below the actual stage. <br />
+                            <li>
+								<strong>Klik op de 'speelveld' knop</strong> onder het werkelijke speelveld. <br />
                                 <img class="indent" src="/bjc-r/img/2-complexity/stage-button.png" height="200" alt="stage button in sprite corral" title="stage button in sprite corral">
                             </li>
                             <li>
-                                <strong>Click the "Backgrounds" tab</strong> near the top of the window.<br />
+                                <strong>Klik op het "Uiterlijken" tabje</strong> bovenin je scherm.<br />
                                 <img class="indent" src="/bjc-r/img/2-complexity/backgrounds.png" height="300" alt="backgrounds tab" title="backgrounds tab">  <br />
                             </li>
                             <li>
-                                <strong>Select or import a stage background.</strong> In this project, you will find two imported backgrounds:
+                                <strong>Selecteer of importeer een speelveld.</strong> In dit project, ga je twee geïmporteerde speelvelden vinden:
                                 <ul>
-                                    <li>A graph of median U.S. household income by year (source: Federal Reserve Bank of St. Louis) </li>
-                                    <li>A capital "E" (font: Century Gothic Bold).</li>
-                                    The graph is typical of data processing, which is one topic of Unit 3.  The E continues the activity from the previous page. Choose either background by clicking on it.
+                                    <li>Een grafiek van het gemiddelde inkomen van Amerikaanse huishoudens per jaar (Bron: Federal Reserve Bank of St. Louis) </li>
+                                    <li>Een hoofdletter "E" (font: Century Gothic Bold).</li>
+                                    De grafiek is typisch binnen dataverwerking, wat een onderdeel is in hoofdstuk 3. De "E" borduurt voort op wat we op de vorige pagina hebben gedaan. Kies een van de achtergronden door er op te klikken.
                                 </ul>
                             </li>
                         </ol>
                     </div>
                 </li>
 			</ol>
-		</div>         
- 
-    
+		</div>
+
+
         <div class="dialogue">
             <!--              <p> We'll have to write a block that keeps waiting for a mouse click, and then adds those mouse coordinates to a list.  When all the points have been entered, the block should report the list of points.<br />
             <img class="indent" src="/bjc-r/img/2-complexity/e-from-points.png" alt="set (E) to (list of points)" title="set (E) to (list of points)" /> -->
-            <div><span>Alphie:</span> We'll have to initialize the <var>point list</var> variable to an empty list first.</div>
-            <div><span>Betsy:</span> And we know how to make the sprite follow the mouse; we did it in <a href="/bjc-r/cur/programming/1-introduction/5-follow-the-leader/1-following-sprites.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Sprite Following the Mouse">Unit 1</a>.</div> 
-            <div><span>Gamal:</span> Yes, and every time we click, we want to add the position to a list as we did in <a href="/bjc-r/cur/programming/1-introduction/2-gossip-and-greet/4-learning-names.html" title="Learning Player Names">the Unit 1 "Greet Player" project</a>.</div>
-            <div><span>Gamal:</span> When we click, we should give the user some feedback that the click has been processed.</div>
-            <div><span>Alphie:</span> What do you mean? Like a sound?</div>
-            <div><span>Gamal:</span> Maybe, but I was thinking we should mark each point somehow so we feel confident the computer is recording our clicks.</div>
-            <div><span>Alphie:</span> I have an idea!  There's a <img src="/bjc-r/img/2-complexity/stamp.png" alt="stamp block (in Pen)" title="stamp block (in Pen)"> block that stamps a picture of the sprite right where it is on the stage.</div>
-            <div><span>Gamal:</span> Great. And the Turtle sprite will leave stamps pointing right where the user clicks.</div>
+            <div><span>Alfie:</span> We moeten de <var>punt lijst</var> variabele initiëren voor eerst een lege lijst.</div>
+            <div><span>Betsie:</span> En we weten hoe we een sprite de muis kunnen laten volgen; dit deden we in <a href="/bjc-r/cur/programming/1-introduction/5-follow-the-leader/1-following-sprites.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Sprite Following the Mouse">Hoofdstuk 1</a>.</div>
+            <div><span>Gamal:</span> Ja, en elke keer wanneer we klikken, willen we dat de positie aan een lijst wordt toegevoegd, zoals we deden in <a href="/bjc-r/cur/programming/1-introduction/2-gossip-and-greet/4-learning-names.html" title="Learning Player Names">Hoofdstuk 1 "Groet Spelers" project</a>.</div>
+            <div><span>Gamal:</span> Als we klikken, moeten we de gebruiker wat feedback geven dat de klik is verwerkt.</div>
+            <div><span>Alfie:</span> Hoe bedoel je? Iets van een geluidje ofzo?</div>
+            <div><span>Gamal:</span> Misschien, maar ik dacht meer aan dat we elk punt kunnen markeren op de een of andere manier, zodat we zeker weten dat de computer onze kliks opneemt en verwerkt.</div>
+            <div><span>Alfie:</span> Ik heb een idee!  Er is een <img src="/bjc-r/img/2-complexity/stamp.png" alt="stamp block (in Pen)" title="stamp block (in Pen)"> blok dat een afbeelding stempelt van de sprite, precies waar die sprite zich dan bevindt op het speelveld.</div>
+            <div><span>Gamal:</span> Cool! En de Schildpad sprite zal stempels achterlaten, precies wijzend naar waar de speler klikt.</div>
             <div class="stagedir">
-                Alphie, Betsy, and Gamal develop code to implement their ideas.<br />
+                Alfie, Betsie, en Gamal bouwen aan een code om hun ideeën te implementeren.<br />
 
                 <img class="center" data-gifffer="/bjc-r/img/2-complexity/U2ImageVideoAddendum_img/drawEAnimation.gif" height="350" alt="Entering points for E" title="Entering points for E" />
             </div>
         </div>
-        
+
         <div class="forYouToDo">
             <ol start="3">
                 <li>
-                    The project file you loaded contains three unfinished scripts, one for each of these steps. Finish all of these scripts.
-					  <div class="narrower">If you haven't already, you'll need to go back to the Scripts tab and choose the "Sprite" button under the stage to get back to the sprite's scripts.</div>
+                    Het project bestand dat je hebt geladen bevat drie onafgemaakte scripten, eentje voor elk van deze stappen. Maak al deze scripten af.
+					  <div class="narrower">Als je dit nog niet gedaan hebt, moet je terug gaan naar het Scripts tabje en kies de "Sprite" knop onder het speelveld om terug te gaan naar de sprite's scripten.</div>
                     <ol>
-                        <li>First, give an appropriate initial value to the  <var>point list</var> variable.</li>
-                        <li>In the second script, you need a way to tell the sprite to stop following the mouse. Replace the <code>forever</code> block with one that will loop only until the user presses the space key.</li>
-                        <li> In the third script, the <code>stamp</code> block is already in place, but you have to write the code that will add the mouse's position to the list of points. Use your abstract data type.
+                        <li>Eerst, geef je een passende initiale waarde aan de  <var>punten lijst</var> variabele.</li>
+                        <li>In het tweede script, heb je een manier nodig om tegen de sprite te zeggen dat hij moet stoppen met het volgen van de muis. Vervang het <code>herhaal</code> blok met een blok die net zolang herhaald totdat de speler op de spatiebalk drukt.</li>
+                        <li>In het derde script, staat het <code>stempel</code> blok al goed, maar je zult dan code moeten schrijven die de positie van de muis toevoegt aan de lijst met punten. Gebruik je abstracte data type hiervoor.
                     <img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" /> </li>
                     </ol>
                 </li>
-				
+
             </ol>
         </div>
 
         <div class="takeItFurther"> <br />
 
-          
-    For the purpose of entering points interactively, the approach on this page is all you need. But if you wanted to create a more robust point-gathering program, this approach has a couple of weaknesses:
+
+    Om punten interactief in te voeren, is de methode hieronder het enige wat je hiervoor nodig. Maar, als je een robuuster punten-verzamel programme wilt maken, heeft deze methode enkele zwaktes:
     <ul>
-                    <li>Even after you tell the sprite to stop following the mouse, the "when I am clicked" script is still ready to run,  so if you click directly on the sprite, it will still add points to the list. You may not want that.</li>
-                    <li>The list of points is always kept in the same global variable. So it's messy to create lists for several different letters.</li>
+                    <li>Zelfs nadat je de sprite hebt verteld te stoppen met het volgen van de muis, het "Wanneer ik ben aangeklikt" script is nog steeds klaar om te worden gerund, dus als je direct op de sprite klikt, zal het vooralsnog punten toevoegen aan de lijst. Dat wil je misschien niet.</li>
+                    <li>De lijst met punten staat altijd in dezelfde globale variabele. Dus wordt het rommelig om lijsten te maken voor verschillende letters.</li>
                 </ul>
-	
+
 		    <ol type="A">
-            	<li>Think, and see if you can find your own way to solve one or both of these problems.</li>
-                <li>Here is <a href="/bjc-r/cur/programming/2-complexity/old/5-click-points.html" title="Alternative: Clicking Points to Capture Coordinates">an alternative approach</a> that contains a new idea that you might like. There are simpler solutions than this, but the idea behind this slightly more complicated code is a useful one. 
+            	<li>Denk na, en kijk of je een eigen oplossing kunt bedenken om één of beide problemen op te lossen.</li>
+                <li>Hier vind je een <a href="/bjc-r/cur/programming/2-complexity/old/5-click-points.html" title="Alternative: Clicking Points to Capture Coordinates">alternatieve manier</a> die een nieuw idee heeft die je misschien interessant vindt. Er zijn eenvoudigere oplossingen dan deze, maar het idee hierachter is dat een beetje een lastigere code vaak een bruikbaardere is.
                 </li>
             </ol>
         </div>
-    
+
     </body>
 </html>
