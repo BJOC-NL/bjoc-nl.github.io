@@ -21,3 +21,4 @@
 
 ##14/05 SVT
 * In U2L2P4 wordt er over een 'For each' code gepraat, maar die vind ik niet noch in de Eng noch in NL
+* Link veranderen in H2L3P1
