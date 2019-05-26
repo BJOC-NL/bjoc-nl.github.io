@@ -7,7 +7,9 @@
 		<script type="text/javascript" src="/bjc-r/utilities/gifffer.min.js"></script>
         <script type="text/javascript">window.onload = function() {Gifffer();}</script>
         <link rel="stylesheet" type="text/css" href="/bjc-r/css/bjc-gifffer.css">
-		<title>Unit 2 Lab 3: Making Decisions by Using Predicates, Page 2</title>
+
+		<title>Hoofdstuk 2 Les 3: Keuzes maken met predikaten, Pagina 2</title>
+
 	</head>
 
 	<body>
@@ -22,18 +24,18 @@
 		</div>
 
 		<p>As you know, predicates can be used with conditionals to decide when to <em>do</em> something; they can also be used with <code>keep</code> to decide which things to <em>keep</em>. The <img class="inline" src="/bjc-r/img/blocks/keep.png" alt="keep items such that () from ()" title="keep items such that () from ()" /> block takes a list and a predicate <!--with a <em>blank input slot</em> (shown below)--> as input, and it reports a new list keeping only the items from the list that make the condition described by the predicate true.</p>
-		
+
         <p>
             For example, the following expression will find words from the <var>words list</var> <strong>whose first letter is v</strong>. The <em>blank input slot</em> is where each item of the list goes to decide if it will be kept.<br>
 			<img class="indent" src="/bjc-r/img/2-complexity/keep-example-6.png" alt="keep items such that ((letter(1) of ( )) = (v)) from (words list)" title="keep items such that ((letter(1) of ( )) = (v)) from (words list)">
             <!--<img class="indent" src="/bjc-r/img/2-complexity/does-have-6-letters-and-letter-5-is-g.png" alt="(does () have (6) letters?) and (letter (5) of () is (g)?)" title="(does () have (6) letters?) and (letter (5) of () is (g)?)" />-->
 		</p>
-        
+
         <div class="takeNote">
             <p>You write the predicate that does the checking, and <strong><code>keep</code> applies the predicate to each item in the input list and then reports the list of items that make your predicate <code>true</code></strong>.</p>
 			<p>Note that the blank input slot in the predicate is <em>required</em> when using <code>keep</code>. This is where the item from the list goes each time the question is asked.</p>
 		</div>
-        
+
         <div class="forYouToDo" id="first">
 			<ol>
                 <li>
@@ -43,11 +45,12 @@
                     <img class="indent" src="/bjc-r/img/2-complexity/keep-example-4.png" alt="keep items such that ((length of ( )) = (5)) from {apple, banana, orange, grape, kiwi, mango, watermelon} reporting {apple, grape, mango}" title="keep items such that ((length of ( )) = (5)) from {apple, banana, orange, grape, kiwi, mango, watermelon} reporting {apple, grape, mango}"><br />
                     <img class="indent" src="/bjc-r/img/2-complexity/keep-example-7.png" alt="keep items such that (not(is () a (number)?)) from {5, :), six, 7, elephant, 3} reporting {5,7,3}" title="keep items such that (not(is () a (number)?)) from {5, :), six, 7, elephant, 3} reporting {5,7,3}">
                 </li>
-                
+
 				<!--<p>
 					Here, every word in the list is asked whether the first letter is <var>a</var>:<br />
 					<img class="indent" src="/bjc-r/img/aprilpd/keep-example-4.png" alt="keep items such that ((letter (1) of ()) = (a)) from {Ann, Olivia, Jamal, Karl, A.J., Tara} reporting {Ann, A.J.}" title="keep items such that ((letter (1) of ()) = (a)) from {Ann, Olivia, Jamal, Karl, A.J., Tara} reporting {Ann, A.J.}" />
 				</p>-->
+
 				
 				<div class="endnote">
                     <img class="imageRight" src="/bjc-r/img/icons/import-tools-mini.png" alt="Import Tools" title="Import Tools" />
@@ -60,7 +63,7 @@
         
         <div class="forYouToDo">
 			<ol start="3">
-        		
+ 
 		  <li>
 					Run <code>initialize lists</code>, and then use your new predicates together with <code>keep</code> to answer these questions:
                     <ol>
@@ -79,7 +82,7 @@
                 </li>
             </ol>
         </div>
-        
+
         <div class="ifTime">
 			<ol start="4">
 				<li>
@@ -90,10 +93,12 @@
                         <li>Not integers?</li>
 						<li>Odd integers?</li>
                     </ol>
+
                 </li>				   
 			</ol>
 		</div>
               
+
 
 	</body>
 </html>

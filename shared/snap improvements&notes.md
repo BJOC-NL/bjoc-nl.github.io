@@ -18,3 +18,7 @@
 * In H2L2P2 hebben ze het over een 'point'  blok, maar in de NL Snap! versie zie ik niks wat daar op lijkt.
 
 * "Backgrounds" is het "Uiterlijken" tab en de knop ("stage background") is "speelveld"
+
+##14/05 SVT
+* In U2L2P4 wordt er over een 'For each' code gepraat, maar die vind ik niet noch in de Eng noch in NL
+* Link veranderen in H2L3P1
