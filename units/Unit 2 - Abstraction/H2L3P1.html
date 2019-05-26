@@ -45,7 +45,6 @@
             <a href="/bjc-r/cur/programming/1-introduction/2-gossip-and-greet/4-learning-names.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment"><img class="indent" src="/bjc-r/img/1-introduction/greet-player-skeleton.png" alt="greet player skeleton" title="greet player skeleton" /></a>
             <a href="/bjc-r/cur/programming/1-introduction/5-follow-the-leader/2-sprite-interaction.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment"><img class="indent" src="/bjc-r/img/1-introduction/move-tiny-no-comment.png" alt="sprite following sprite code" title="sprite following sprite code" /></a>
         </p>
-
 		<div class="forYouToDo" id="first">
             <ol>
                 <li><div class="newProject"><span class="text">"U2L3-Predicates"</span><img src="/bjc-r/img/icons/new-project-called.png" alt="Create a new project called U2L3-Predicates" title="Create a new project called U2L3-Predicates" /></div></li>
@@ -143,6 +142,7 @@
                     <img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />
                     <div class="endnote">
                         In dit plaatje, zijn de even en oneven genummerde rijen verschillend. In de volgende les, ga je het <code>even?</code> blok gebruiken om een muur van baksteen te tekenen <a href="/bjc-r/cur/programming/2-complexity/4-abstraction/3-brick-wall.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="Brick Wall">brick wall</a>.<br />
+
 						<img class="indent" src="/bjc-r/img/abstraction/new-brickwall/wall.png" alt="Sample image of brick wall" title="Sample image of brick wall" />
                     </div>
 
@@ -161,7 +161,6 @@
 		</div>
         <!--<div class="endnote">You can <a href="/bjc-r/cur/programming/2-complexity/1-variables-games/3-importing-exporting.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment">import</a> your <code>integer?</code>, <code>between?</code>, and <code>even?</code> predicates into other projects when you need them.</div>-->
 
-
         <h3>Zelf-Check: Predikaten</h3>
         <div class="forYouToDo">
 			<ol start="9">
@@ -170,7 +169,7 @@
                     <div class="assessment-data" type="multiplechoice" identifier="What's equivalent to num less than or equal to 23?"
                         hasinlinefeedback="true" maxchoices="2" responseIdentifier="ri1" shuffle="false">
                         <div class="prompt">
-                            Er is geen standaard ≤ blok in Snap<em>!</em>.  Stel, we willen er zo eentje bouwen. Welke <em><strong>twee</strong></em> van de volgende Boolean expressies zijn gelijk aan de expressie <img class="inline" src="/bjc-r/img/2-complexity/num-le-23.png" alt="num less than or equal to 23 predicate" title="num less than or equal to 23 predicate" />?
+           Er is geen standaard ≤ blok in Snap<em>!</em>.  Stel, we willen er zo eentje bouwen. Welke <em><strong>twee</strong></em> van de volgende Boolean expressies zijn gelijk aan de expressie <img class="inline" src="/bjc-r/img/2-complexity/num-le-23.png" alt="num less than or equal to 23 predicate" title="num less than or equal to 23 predicate" />?
                         </div>
                         <div class="choice" identifier="c1">
                             <div class="text"><img class="inline" src="/bjc-r/img/2-complexity/num-le-23-opt-1.png" alt="(num < 23) and (num = 23)" title="(num < 23) and (num = 23)" /></div>
@@ -181,19 +180,25 @@
                         <div class="choice" identifier="c2">
                             <div class="text"><img class="inline" src="/bjc-r/img/2-complexity/num-le-23-opt-2.png" alt="(num < 23) or (num = 23)" title="(num < 23) or (num = 23)" /></div>
                             <div class="feedback">
+
                                 Heel goed! Deze afbeelding laat een expressie zien die <code>waar</code> meldt als <var>num</var> minder or gelijk is aan 23.
+
                             </div>
                         </div>
                         <div class="choice" identifier="c3">
                             <div class="text"><img class="inline" src="/bjc-r/img/2-complexity/num-le-23-opt-3.png" alt="not (num > 23)" title="not (num > 23)" /></div>
                             <div class="feedback">
+
                                 Heel goed! Als <var>num</var> <strong>niet</strong> groter dan 23 is, dan is het of kleiner dan 23 of gelijk aan 23.
+
                             </div>
                         </div>
                         <div class="choice" identifier="c4">
                             <div class="text"><img class="inline" src="/bjc-r/img/2-complexity/num-le-23-opt-4.png" alt="not (num > 22)" title="not (num > 22)" /></div>
                             <div class="feedback">
+
                                 Stel dat de waarde van <var>num</var> 22.5 is. Zou dan deze expressie en de expressie gegeven in de vraag dezelfde reactie geven?
+
                             </div>
                         </div>
                         <div class="responseDeclaration" identifier="ri1">
@@ -206,6 +211,7 @@
                     <div class="assessment-data" type="multiplechoice" identifier="What's the missing condition for an ODD? predicate?"
                         hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri2" shuffle="false">
                         <div class="prompt">
+
                             Het volgende code fragment was ontworpen om <var>getal</var> te testen op een oneven nummer:<br />
           <div class="AP-only">
                             <pre>ALS (MISSING CONDITION)
@@ -216,30 +222,40 @@
 <div class="non-AP-only">
 <img src="/bjc-r/img/2-complexity/missing-condition.png" alt="if (missing condition) say [This number is odd.]">
 </div>
+
                             Welke van de volgende opties kan gebruikt worden op de plaats van de MISSENDE CONDITIE?
+
                         </div>
                         <div class="choice" identifier="c1">
                             <div class="text"><img class="inline" src="/bjc-r/img/2-complexity/quiz-mod-1.png" alt="((number) mod (1)) = (0)" title="((number) mod (1)) = (0)" /></div>
                             <div class="feedback">
+
                                 Het <code>modulo</code> blok rapporteert het overgeblevene wanneer het eerste getal wordt gedeeld door het tweede getal. Of een nummer even of oneven is, hangt af of het gedeeld kan worden door 2.
+
                             </div>
                         </div>
                         <div class="choice" identifier="c2">
                             <div class="text"><img class="inline" src="/bjc-r/img/2-complexity/quiz-mod-2.png" alt="((number) mod (1)) = (1)" title="((number) mod (1)) = (1)" /></div>
                             <div class="feedback">
+
                                 Het <code>modulo</code> blok rapporteert het overgeblevene wanneer het eerste getal wordt gedeeld door het tweede getal. Of een nummer even of oneven is, hangt af of het gedeeld kan worden door 2.
+
                             </div>
                         </div>
                         <div class="choice" identifier="c3">
                             <div class="text"><img class="inline" src="/bjc-r/img/2-complexity/quiz-mod-3.png" alt="((number) mod (2)) = (0)" title="((number) mod (2)) = (0)" /></div>
                             <div class="feedback">
+
                                 (<var>getal</var> modulo 2) produceert het overgeblevene nadat het <var>getal</var> gedeeld is door 2. Als het overblijfsel 0 is, is het nummer dan even of oneven?
+
                             </div>
                         </div>
                         <div class="choice" identifier="c4">
                             <div class="text"><img class="inline" src="/bjc-r/img/2-complexity/quiz-mod-4.png" alt="((number) mod (2)) = (1)" title="((number) mod (2)) = (1)" /></div>
                             <div class="feedback">
+
                                 Heel goed! (<var>getal</var> mod 2) produceert het overgeblevene nadat het <var>number</var> gedeeld is door 2.  Als (<var>getal</var> mod 2) = 1, dan is het getal oneven.
+
                             </div>
                         </div>
                         <div class="responseDeclaration" identifier="ri2">
@@ -249,7 +265,6 @@
                 </li>
             </ol>
         </div>
-
 
 	</body>
 </html>
