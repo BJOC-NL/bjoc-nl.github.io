@@ -15,10 +15,15 @@
 * vertalen we data type 'numbers' als 'nummers' , of als 'getallen'  ?
 * Belangrijke to-do: waar ik (Sabine) mogelijk niet meer bij kan zijn is het nalopen en verwisselen van afbeeldingen. Er worden vaak blokken als voorbeelden gegeven, maar dit is allemaal nog vanuit de Engelse Snap! versie.
 * eigenlijk altijd 'input' gelaten en nooit 'invoer' van gemaakt. Omdat 'input' wel erg gebruikelijk is, toch?
-* In H2L2P2 hebben ze het over een 'point'  blok, maar in de NL Snap! versie zie ik niks wat daar op lijkt.
+
 
 * "Backgrounds" is het "Uiterlijken" tab en de knop ("stage background") is "speelveld"
 
 ##14/05 SVT
 * In U2L2P4 wordt er over een 'For each' code gepraat, maar die vind ik niet noch in de Eng noch in NL
 * Link veranderen in H2L3P1
+
+##30/05 SVT
+* H2L3P2 --> Er wordt over een "keep" block gesproken maar dat blok kan ik nergens vinden in Snap!. Is dit iets wat ze eerder hebben moeten bouwen? (wat ik dan niet heb vertaald)
+* Predikaten een goede vertaling voor 'predikaat'  ?
+* Steeds vaker komt het AP CSP exam terug, dit liet ik dan weg ipv het te vertalen. Lijkt me een examen wat binnen US bekent is maar wij waarschijnlijk niet hebben
