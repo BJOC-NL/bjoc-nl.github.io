@@ -27,4 +27,8 @@
 * H2L3P2 --> Er wordt over een "keep" block gesproken maar dat blok kan ik nergens vinden in Snap!. Is dit iets wat ze eerder hebben moeten bouwen? (wat ik dan niet heb vertaald)
 * Predikaten een goede vertaling voor 'predikaat'  ?
 * Steeds vaker komt het AP CSP exam terug, dit liet ik dan weg ipv het te vertalen. Lijkt me een examen wat binnen US bekent is maar wij waarschijnlijk niet hebben
-* H2L3P3 heeft een heel blok (in grijs) wat gaat over dat Examen. Kan helemaal weg. 
+* H2L3P3 heeft een heel blok (in grijs) wat gaat over dat Examen. Kan helemaal weg.
+
+##1-06-2019
+* Weer een notificatie over AP CSP Exam in H2L4P1
+* Ook in H2L4P1 staat een soort simulatie van een code snippet. Dit ook vertalen? 

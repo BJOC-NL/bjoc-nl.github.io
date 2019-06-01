@@ -4,10 +4,10 @@
     <head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
-        <title>Unit 2 Lab 4: Dealing with Complexity, Page 4</title>
+        <title>Hoofdstuk 2 Les 4: Omgaan met complexiteit, Pagina 4</title>
     </head>
 
-    <body> 
+    <body>
         <div class="todo">
             ST EK List:<br />
             No EK's found
@@ -30,17 +30,17 @@
                 </ul>
             </p>
         </div>
-		
+
         <div class="learn">
             <p><strong>In this <em>yearlong</em> project,</strong> you will  develop a program that plays Tic-Tac-Toe as well as you do.</p>
             <p><strong>On this first page,</strong> you display a Tic-Tac-Toe board and let two human players enter moves.</p>
             <img class="indent" src="/bjc-r/img/2-complexity/TTT1_img/Three States of TTT.png" width="550"  alt="Three states of Tic-Tac-Toe: in progress, win, tie" title="Three states of Tic-Tac-Toe: in progress, win, tie"/>
         </div>
 		<p>One approach to building this game is to use <em>multiple sprites</em>; each square of the board is a separate sprite. Each sprite knows where it is on the board, and, once positioned, the sprites never move. The player clicks one of the nine squares, and that sprite changes its costume to display the move.</p>
-        
+
         <div class="forYouToDo" id="first">
             <ol>
-            	
+
                 <li><a class="run" href="/bjc-r/prog/2-complexity/U2L4-Tic-Tac-Toe.xml" target="_blank"><img class="inline" src="/bjc-r/img/icons/load-save.png" alt="Click here to load this file. Then save it to your Snap! account." title="Click here to load this file. Then save it to your Snap! account." /></a></li>
                 <li>
                 	The first sprite has already been set up for you. It has three costumes: Empty, X, and O. Click <img class="inline" src="/bjc-r/img/blocks/next-costume.png" alt="next costume" title="next costume" /> a few times to see all of them.<br />
@@ -48,7 +48,7 @@
 				</li>
             </ol>
         </div>
-        
+
         <p>You will use <em>clones</em> to create the 3&times;3 Tic-Tac-Toe board.<a name="clones" class="anchor">&nbsp;</a></p>
         <div class="vocabFullWidth">
             <p>A <strong>clone</strong> is a copy of a sprite that <em>shares information</em> with its parent sprite (the original sprite). For example, clones have copies of any scripts from the parent, and if the parent's script is changed, then the clones' scripts change too. However, changes you make to a clone are <em>not</em> shared with the parent, so you can do things like move each clone to a different position.</p>
@@ -67,7 +67,7 @@
                 <img class="indent" src="/bjc-r/img/blocks/when-i-start-as-clone.png" alt="When I start as a clone" title="When I start as a clone" />
             </div>
         </p>
-        
+
         <div class="forYouToDo">
 			<ol start="3">
 	            <li>
@@ -77,26 +77,26 @@
                 </li>
                 <li>
                 	Then click the sprite on the stage, and compare what happens with what you expected.
-                    <div class="narrower">				
+                    <div class="narrower">
                     	<ul>
-                        	
+
 							<li>Notice that the parent sprite (not the clone) moves to the new random position after cloning itself. Look back at the code; why does this make sense?</li>
                     		<li>Note that <em>both</em> the clones and the parent <em>are sprites</em>. Both are clickable (try it) and draggable (try that too). This is different from the effects of the <code>stamp</code> Pen block, which just leaves a picture of the sprite on the stage.</li>
                             <li>The <code>create a clone</code> block takes an input because it can copy <em>any</em> sprite. In this project, there's only one sprite at the beginning, so your choices are either <var>myself</var> or <var>Square</var> (the sprite's name), which in this case, means the same thing.</li>
 						</ul>
-					</div>           
+					</div>
                 </li>
             </ol>
         </div>
-        
+
         <p>
             The next script in the project is:<br />
             <img class="indent" src="/bjc-r/img/2-complexity/TTT1_img/delete-clone.png" alt="when flag clicked{delete this clone}" title="when flag clicked{delete this clone}"><br />
             The block is called <code>delete this clone</code> rather than <code>delete this sprite</code> because it only works for clones. When you click <img class="inline" src="/bjc-r/img/1-introduction/green-flag_button.png" alt="green-flag button" title="green-flag button"/>, the parent sprite and all its clones will run this script, but only the clones will be deleted, leaving just the parent on the stage.
         </p>
-        
+
 		<div class="endnote">Clicking <img class="inline" src="/bjc-r/img/1-introduction/stop_button.png" alt="stop button" title="stop button" /> automatically deletes clones, but this script is insurance in case you run the program multiple times without clicking stop.</div>
-        
+
         <div class="forYouToDo">
     		<ol start="5">
               <li>
@@ -106,16 +106,16 @@
                         <li>
                             Connect the additional <code>when</code> <span style="color:green">⚑</span> <code>clicked</code> block toward the bottom of the scripting area to the script just below it.<br />
                             <img class="indent" src="/bjc-r/img/2-complexity/TTT1_img/make-board-script.png" height="150" alt="when green flag clicked, wait (.1) secs [comment: Wait for old clones to be deleted.], makeBoard, set (X's turn?) to (true) [Comment: X plays first.]" title="when green flag clicked, wait (.1) secs [comment: Wait for old clones to be deleted.], makeBoard, set (X's turn?) to (true) [Comment: X plays first.]" />
-                        </li> 
-                    	
+                        </li>
+
 						<li>
-                            Read that script and notice...             
+                            Read that script and notice...
                             <div class="narrower">
                                 <ul type="circle">
                                     <li>The <code>wait</code> block ensures that the <em>other</em> <code>when</code> <span style="color:green">⚑</span> <code>clicked</code> script has time to delete old clones before we make new ones.</li>
                                     <li>The <code>makeBoard</code> block is empty. You'll write it in the next problem.</li>
                                     <li>
-                                        The variable <var>X's turn?</var> will be <code>true</code> when it's X's turn to play or <code>false</code> when it's O's turn. 
+                                        The variable <var>X's turn?</var> will be <code>true</code> when it's X's turn to play or <code>false</code> when it's O's turn.
                                         <div class="endnote">
                                             When alternating between two values, it's convenient to use Booleans because you can use <code>not</code> to switch between them and you can use <code>if</code> to <em>test</em> the variable. (Recall that <code>if</code> requires a <code>true</code>/<code>false</code> input.)<br />
                                             <img class="indent" src="/bjc-r/img/2-complexity/TTT1_img/setXsturn.png" height="50" alt="set (X's turn?) to (not (X's turn?))" title="set (X's turn?) to (not (X's turn?))" />
@@ -125,7 +125,7 @@
                                 </ul>
                             </div>
                         </li>
-					</ol>            
+					</ol>
 				</li>
                 <li>
                     Edit the block <code>makeBoard</code> to set up nine clones in three rows of three.<br />
@@ -165,8 +165,8 @@
                 </div>
                 <li><img class="inline" src="/bjc-r/img/icons/save-use-later.png" alt="Save. You will use this later." title="Save. You will use this later." /></li>
             </ol>
-		</div>		
-		
-    
+		</div>
+
+
     </body>
 </html>
