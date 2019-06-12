@@ -22,3 +22,7 @@
 ##14/05 SVT
 * In U2L2P4 wordt er over een 'For each' code gepraat, maar die vind ik niet noch in de Eng noch in NL
 * Link veranderen in H2L3P1
+
+##12/06 SVT
+* Mappen hoofdstuk 1 & 3 goed doorkijken en goed zetten
+* workflow van nakijken uitleggen
