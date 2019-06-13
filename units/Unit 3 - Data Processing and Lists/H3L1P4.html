@@ -4,7 +4,7 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
-		<title>Unit 3 Lab 1: Contact List, Page 4</title>
+		<title>hoofdstuk3 les1: pagina 4</title>
 	</head>
 
     <body>
@@ -17,28 +17,28 @@
         <div class="todo">While working on the SIGCSE paper, Paul and I agreed that this is still a complicated way to introduce <code>map</code> (namely, in the context of ADTs in a project that's already known to be difficult). I think we need a simpler introduction--perhaps in <a href="https://docs.google.com/document/d/1il5OFuTDg2tVt3pAocsVH7DKifXHzORjp7cx3odloV4/edit" target="_blank">the Sentence Builder content that will be added to the Gossip lab</a> (e.g., plurals using <code>map</code>). (If we do this, <a href="/bjc-r/cur/programming/3-lists/2-tic-tac-toe/2-find-wins.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc.html&novideo&noassignment">the reference on 3.2.2</a> needs an edit.) --MF, 8/31/18</div>
 		
         <div class="learn">
-        	<p><strong>On this page,</strong> you will use your ADTs with the <code>map</code> block to display all the names in your <var>contact list</var>.</p>
+        	<p><strong>Op deze pagina</strong> gebruik je je ATD's met het <code>map</code> blok om alle namen in je <var>contact lijst</var> weer te geven.</p>
         </div>
         
         <p>
-            As you know, the <code>keep</code> block allows you to check every item in a list using a predicate, and it reports only the items that make the predicate true. The <img class="inline" src="/bjc-r/img/blocks/map.png" alt="map() over ()" title="map() over ()" /> block also lets you work across a whole list at once. <code>Map</code> allows you to perform the same function on every item of a list. <code>Map</code> takes two inputs: a function (a reporter with a blank input slot) and a list, and it reports a new list. Every item in this new list is the result of calling the function with an item from the original list as input. For example:<br />
+            zoals je weet, het <code>keep</code> blok steld jou in staat alle items door te nemen met gebruik van een predicaat, en het geeft alleen de items door die het predicaat waar maken. Het <img class="inline" src="/bjc-r/img/blocks/map.png" alt="map() over ()" title="map() over ()" /> blok steld je ook in staat om door een hele lijst in een keer te werken. <code>Map</code> zorgt ervoor dat je dezelfde functie uit kan voeren op ieder item in een lijst. <code>Map</code> ontvangt twee inputs: een functie (een reporter met een leeg invoer vak) en een lijst, en het rapporteerd een nieuwe lijst. Elk item in deze nieuwe lijst is het resultaat van het oproepen van de functie met een item van de originele lijst als input. Bijvoorbeeld:<br />
             <!--<img class="indent" src="/bjc-r/img/3-lists/map-example-1.png" alt="map (( )-(1)) over (list (96) (-100) (4.7)) reporting" title="map (( )-(1)) over (list (96) (-100) (4.7)) reporting" /><br />-->
             <img class="indent" src="/bjc-r/img/3-lists/map-example-2.png" alt="map (join( )(s)) over (list {cat, dog, bird}) reporting {cats, dogs, birds}" title="map (join( )(s)) over (list {cat, dog, bird}) reporting {cats, dogs, birds}" /><br />
             <img class="indent" src="/bjc-r/img/3-lists/map-example-3.png" alt="map (round ( )) over (list{3.14159, 87, 5.4}) reporting {3, 87, 5}" title="map (round ( )) over (list{3.14159, 87, 5.4}) reporting {3, 87, 5}" />
 		</p>
 		
 		<div class="takeNote">
-            <p>You write the function that describes the change, and <code>map</code> applies that function to each item in the input list and then reports the list of values reported by the function.</p>
-            <p>Notice that the function mapped over the list always has a blank input slot. With both <code>map</code> and <code>keep</code> that blank is required. This blank is where the list item goes each time the function is performed.</p>
+            <p>Je schrijft de functie die de verandering beschrijft, en <code>map</code> past die functie toe op elk item in de input lijst, en rapporteerd daarna de lijst met waardes die doorgegeven zijn door de functie.</p>
+            <p>zie je dat de functie om de lijst altijd een leeg input vak heeft? Voor zowel <code>map</code> als de <code>keep</code> is die leegte nodig. Deze leegte is waar een item uit de lijst wordt ingevoegd, elke keer dat de functie wordt uitgevoerd.</p>
         </div>
 
 		<div class="forYouToDo" id="first">
 			<ol>
-				<li>If it isn't open already, open your U3L1-ContactList project.</li>
+				<li>Als het niet al open staat, open je U3L1-ContactList project.</li>
 				<li>
                     <div class="sidenote">
                         <img class="imageRight" src="/bjc-r/img/icons/import-tools-mini.png" alt="Import Tools" title="Import Tools" />
-                        Like the <code>keep</code> block, <code>map</code> isn't installed automatically. It has already been added to this project, but in other projects, you'll need to select "Import tools" from the File menu to access the <code>map</code> block. <br />
+                        Net als het <code>keep</code> blok, word <code>map</code> niet automatisch geïnstalleerd. It has already been added to this project, but in other projects, you'll need to select "Import tools" from the File menu to access the <code>map</code> block. <br />
                     </div>
                     <img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Experiment with these examples of <code>map</code>. Discuss and then explain in writing what these expressions are doing.<br />
                     <img class="indent" src="/bjc-r/img/3-lists/map-join-s.png" alt="map (join( )(s)) over (list{block, script, Boolean})" title="map (join( )(s)) over (list{block, script, Boolean})" /><br />
