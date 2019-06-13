@@ -3,6 +3,14 @@
 ## Algemene termen
 computer science - informatica
 
+Unit - hoofdstuk
+
+predicate - predikaat
+
+sites - websites
+
+dataset - dataset
+
 lab - les
 
 unit - hoofdstuk
@@ -49,10 +57,12 @@ number guessing game - raadt-het-getal spel
 
 Tic-Tac-Toe - boter, kaas en eieren
 
-stage - podium
+stage - speelveld
 
 ## Niet te vertalen
 HTML
+
+dataset
 
 URL 
 
@@ -65,6 +75,10 @@ account
 sprite
 
 script
+
+tool
+
+Machine- Deep learning
 
 =======
 bug
@@ -98,8 +112,8 @@ Pair Programming Swap - Draai de rollen om
 This question is similar to those you will see on the AP CSP exam - Met deze vraag kun jij je kennis testen.
 
 ## Namen
-Alphie - Alex
+Alphie - Alphie
 
-Betsy - Robin
+Betsy - Betsie
 
-Gamal - Yasmine
+Gamal - Gamal
