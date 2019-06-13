@@ -8,6 +8,8 @@
 
 * Bestaandsnamen moeten eventueel ook vertaald worden
 
+* In de Engelse versie worden veel hoofdletters gebruikt en ook komma's. Maak dit zo Nederlands mogelijk in de vertaalde versie.
+
 # Voorlopig niet te vertalen
 
 * Div class maar zie glossary voor voorbeelden

@@ -3,6 +3,12 @@
 ## Algemene termen
 computer science - informatica
 
+predicate - predikaat
+
+sites - websites
+
+dataset - dataset
+
 lab - les
 
 unit - hoofdstuk
@@ -14,6 +20,14 @@ Internet - internet
 course - lessen (Throught the course - Tijdens de lessen)
 
 Input - invoer
+
+(stage) background - speelveld
+
+stage - speelveld
+
+loop - lus
+
+condition - conditie
 
 ## Snap *!*
 
@@ -43,16 +57,20 @@ broadcast - zend signaal
 
 list - lijst
 
+initialize - initialiseren
+
 ## Voorbeelden
 
 number guessing game - raadt-het-getal spel
 
 Tic-Tac-Toe - boter, kaas en eieren
 
-stage - podium
+stage - speelveld
 
 ## Niet te vertalen
 HTML
+
+dataset
 
 URL 
 
@@ -65,6 +83,10 @@ account
 sprite
 
 script
+
+tool
+
+Machine- Deep learning
 
 =======
 bug
@@ -94,6 +116,8 @@ Klik hier om dit bestand te openen. Bewaar het vervolgens in je Snap! account.
 
 (knop tekst)
 Pair Programming Swap - Draai de rollen om
+
+This question is similar to those you will see on the AP CSP exam - Met deze vraag kun jij je kennis testen.
 
 ## Namen
 Alphie - Alex
