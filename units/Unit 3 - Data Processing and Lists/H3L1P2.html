@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+		<title>Unit 3 Lab 1: Contact List, Page 2</title>
+        <script type="text/javascript">
+			window.hinttext='<br /><img class="indent" src="/bjc-r/img/3-lists/ask-name-definition.png" alt="ask name block definition" title="ask name block definition" />';
+        </script>
+    </head> 
+    
+    <body>
+    	<div class="todo">
+        ST EK List:
+       <br />
+       5.3.1K Lists and list operations, such as add, remove, and search, are common in many programs.<br />
+       5.5.1J Basic operations on collections include adding elements, removing elements, iterating over all elements, and determining whether an element is in a collection. 
+       </div>
+        <h2>Adding Contact Data</h2>
+		<div class="todo"><strong>Purpose (do/learn; why this/here):</strong> Develop the user interface for adding list items and clearing (re-initializing) the list, which is helpful for debugging.</div>
+		<div class="learn">
+        	<p>
+                <strong>On this page,</strong> you will develop code for  "Add Contact" and "Clear List" buttons in your contact list program. <!--develop:
+                <ul>
+                    <li>An <strong>"Add Contact" button</strong> for adding each new contact using the <code>contact</code> constructor</li>
+                    <li>A <strong>"Clear List" button</strong> for emptying the <var>contact list</var> while debugging</li>
+                </ul>-->
+            </p>
+        </div>
+        
+        
+        <div class="forYouToDo" id="first">
+			<ol>
+				<li>If it isn't open already, open your U3L1-ContactList project.</li>
+                <li>
+                    Develop the "Add Contact" button for the user.
+                    <ol>
+                        <li>Make the script ask the user for contact data and then add that data to the <var>contact list</var> using the <code>contact</code> constructor.</li>
+                        <div class="narrower">
+                            <h4><strong>Collecting Data from the User</strong></h4>
+                            <p>
+                                You'll want to ask the user for each piece of data (contact name, address, and phone number) separately.
+								<ul>
+                                    <li>
+                                        <strong>You <em>could</em> use several <code>ask</code> and <code>answer</code> blocks together with script variables</strong> to request and then store each piece of user input until you are ready to report them all together using <code>contact</code>.<br />
+                                        <img class="indent" src="/bjc-r/img/3-lists/contact-constructor-with-variables.png" alt="contact with name: (name) address: (address) phone: (phone)" title="contact with name: (name) address: (address) phone: (phone)" />
+                                    </li>
+                                    <li>
+                                        <strong><em>Another way</em> that makes for cleaner code is to use <em>abstraction</em>: create helper blocks</strong> (such as <img src="/bjc-r/img/3-lists/ask-name.png" alt="ask name" title="ask name" /> and <img src="/bjc-r/img/3-lists/ask-phone.png" alt="ask phone" title="ask phone" />) that each ask the user for one piece of data and report their answer to the <code>contact</code> constructor.<br />
+                                        <img class="indent" src="/bjc-r/img/3-lists/contact-constructor-with-helpers.png" alt="contact with name: (ask name) address: (ask address) phone: (ask phone)" title="contact with name: (ask name) address: (ask address) phone: (ask phone)" /><br />
+                                        Each of these helper blocks will <code>ask</code> the user a specific question (like, "What is the contact's address?") and then report the user's <code>answer</code>.
+                                    </li>
+								</ul>
+                                <div class="endnote">
+                                    <p>
+                                    	You could first build a more general <img class="" src="/bjc-r/img/3-lists/answer-to-prompt.png" alt="answer to prompt ()" title="answer to prompt ()" /> helper block (yet another abstraction) to use in the other helper blocks instead of rewriting the <code>ask</code> and <code>answer</code> script every time. <!--<br />
+                                    	<a href="#hint-1" data-toggle="collapse" class="collapsed">Click here for a hint.</a>-->
+                                    </p>
+                                    <!--<div id="hint-1" class="collapse">
+                                    	<img class="indent" src="/bjc-r/img/3-lists/ask-name-definition.png" alt="ask name block definition" title="ask name block definition" />
+                                    </div>-->
+                                </div>
+                            </p>
+                        </div>
+		                <li><strong>Test and debug. </strong>Add a few made-up people to your <var>contact list</var>. Make sure everything works.</li>
+                  </ol>
+              </li>
+                <div class="endnote">
+					<p>
+						You can use these examples or make up your own:
+						<table class="bordered" summary="three example contacts">
+                        	<tr>
+                            	<th scope="col">name</th>
+                            	<th scope="col">address</th>
+                            	<th scope="col">phone</th>
+                            </tr>
+                        	<tr>
+                            	<td style="white-space: nowrap;">Betsy Anderson</td>
+								<td style="white-space: nowrap;">123 Main St. #4, New York, NY 10001</td>
+                            	<td style="white-space: nowrap;">212-555-1234</td>
+                            </tr>
+                        	<tr>
+                            	<td style="white-space: nowrap;">Alphie Preston</td>
+                            	<td style="white-space: nowrap;">149 E. 16th Ave., Sunnyvale, CA 94089</td>
+                            	<td style="white-space: nowrap;">208-555-6789</td>
+                            </tr>
+                        	<tr>
+                            	<td style="white-space: nowrap;">Gamal Abdel</td>
+                            	<td style="white-space: nowrap;">369 Center St., Boston, MA 02130</td>
+                            	<td style="white-space: nowrap;">617-555-1098</td>
+                            </tr>
+                        </table>
+					</p>
+				</div>
+				<li>
+                    Develop a "Clear List" button that resets the <var>contact list</var> to an empty list. 
+                    <ol>
+                        <li>
+                            Make the script ask the user for confirmation (so the user won't accidentally delete their list).
+                            <div class="endnote">For example, clicking, "Clear List" might <code>ask</code> the user, "Enter c to clear the list, or enter anything else to cancel."</div>
+                        </li>
+                        <li><strong>Debug.</strong> Make sure this feature behaves as expected for either user choice.</li>
+                    </ol>
+                </li>
+                <img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />
+            </ol>
+        </div>
+
+		<div class="ifTime">
+			<ol start="4">
+				<li>The sprites' questions might be covered up by the <var>contact list</var> watcher on the stage. Use <code>hide variable</code> and <code>show variable</code> to hide the <var>contact list</var> watcher until the end of each sprite's script.</li>
+			</ol>
+		</div>
+		
+    </body>
+</html>

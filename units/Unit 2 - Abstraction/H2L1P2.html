@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+	    <title>Hoofdstuk 2 Les 1: Verbeter spellen met variabelen, Pagina 2</title>
+		<script type="text/javascript" src="/bjc-r/utilities/gifffer.min.js"></script>
+        <script type="text/javascript">window.onload = function() {Gifffer();};</script>
+        <link rel="stylesheet" type="text/css" href="/bjc-r/css/bjc-gifffer.css">
+	</head>
+
+	<body>
+    	<div class="todo">
+        ST EK List:
+       <br />
+       5.4.1 Evaluate the correctness of a program. [P4]<br />
+       5.4.1E Locating and correcting errors in a program is called debugging the program.<br />
+       5.4.1F Knowledge of what a program is supposed to do is required in order to find most program errors.
+        </div>
+    	<h2>Debugging en verlengen van je Raad-het-getal spel</h2>
+        <div class="learn">
+            <p><strong>Op deze pagina,</strong> ga je een Raad-het-getal spel debuggen, en je gaat de getallen die de spelers hebben geraden de computer laten zeggen of ze te groot of te klein zijn.</p>
+        </div>
+
+        <div class="forYouToDo" id="first">
+			<ol>
+				<li>
+                    <strong>Analyseer en Debug.</strong> De definitie van een <code>Raad-het-getal-spel</code> blok heeft een <strong>bug</strong>&mdash;een error / fout in de code dat het programma anders doet gedragen dan dat jij zou willen. Deze code, zou je het constant spelen,  zal in de meeste gevallen wel werken, maar <em>soms</em> (niet altijd) zal het je feliciteren  <em>voordat je het getal hebt geraden</em>. <br />
+                    <div class="sidenote"><div class="todo">This is a kind of debugging strategy (perhaps: "narrowing the possibilities"?). Do we want to say anything more about it? --MF, 3/21/18</div>
+		Als je dit bouwt om uit te proberen, zorg dat het random nummers selecteert van 1 tot 3 om de bug vaker voor te laten komen.</div>
+                    <img class="indent" src="/bjc-r/img/2-complexity/number-guessing-game-definition.png" alt="Number guessing game{script variables(secret number); set(secret number) to (pick random(1) to (10)); repeat until(answer=secret number){ask(Guess my secret number) and wait} say(You guessed it!) for (2) secs}" title="Number guessing game{script variables(secret number); set(secret number) to (pick random(1) to (10)); repeat until(answer=secret number){ask(Guess my secret number) and wait} say(You guessed it!) for (2) secs}" /><br />
+                    <img class="inline" src="/bjc-r/img/icons/talk-with-another-pair.png" alt="Talk with Another Pair" title="Talk with Another Pair" /> Analyseer de  code, of experimenteer met het, en leg uit hoe dit kan gebeuren.
+
+                </li>
+            	<li>Als je het nog niet geopend hebt, open je H2L1-Raadhetgetal project.</li>
+				<li>
+                	Er zijn een paar verschillende manieren om de bug te fixen.
+                    <div class="todo">
+                        	<p>Aller eerst, I wondered if this might be something that should  be included in the debugging tip, but then I realized that I'm not sure what it means. Can someone who understands the intended meaning please look at this and explain it to me so we can work to clarify it? --MF, 3/21/18</p>
+                        </div>
+                    <div class="endnote">
+
+                        <a href="#hint-2" data-toggle="collapse" class="collapsed" title="A possible solution">Nadat je er zelf over hebt nagedacht, bekijk deze manier om het te doen:</a>
+                        <div id="hint-2" class="collapse">
+                            Een manier zou kunnen zijn, dat je een tweede script variabelen gebruikt om informatie in op te slaan en de antwoorden te checken. Het kan zijn dat je een andere manier handiger vindt.
+                        </div>
+                    </div>
+
+                    <div class="endnote">
+                        Als je meer scripts variabelen toe wilt voegen, gebruikt de rechts-wijzende driehoek. (De linkse driehoek zal het verwijderen.)<br />
+
+                        <img class="indent" data-gifffer="/bjc-r/img/2-complexity/script-variables-adding.gif" alt="clicking triangles to add and remove script variables" title="clicking triangles to add and remove script variables" height="70"/>
+                    </div>
+
+                    <div class="takeNote">
+                      <h4><strong>Debugging Tip: Weergeven van variabelen</strong></h4>
+
+                      <p>
+                            Wanneer je je code aan het debugging bent, kan het helpen om de waarde hiervan op verschillende momenten in je programma te bekijken. Dit kun je op verschillende manieren doen:
+                            <ul>
+                                <li>Je kunt <strong>klikken op het variabele blok</strong> (zoals <img src="/bjc-r/img/2-complexity/secret-number.png" alt="secret number">) meldt af en toe de huidige waarde.</li>
+                                <li>Als het een <em>globale</em> variabele is, kun je deze <strong>markeren met de check-box</strong> ernaast in de palette (<img src="/bjc-r/img/2-complexity/secret-number-check.png" width="120" alt="checkbox next to secret number">) om een <em>watcher</em> display te krijgen. (Dit werkt soms ook voor sommige andere informatie die geen variabelen zijn, zoals te zien op het plaatje beneden.)</li>
+                                <li>Als het een <em>lokale</em> (script) variabele is, kun je het <strong>gebruik de <code>show variabele</code> blok</strong> om een 'kijker' te laten zien (en gebruik <code>verberg variabele</code> om het weer te verbergen). (Ook weer te zien op het plaatje hieronder.)</li>
+                            </ul>
+                        </p>
+
+                        <img class="indent" data-gifffer="/bjc-r/img/2-complexity/Debugging/answer-script-variable-display.gif" height="375" alt="Animation showing how to display answer and script variables" title="Animation showing how to display answer and script variables"/>
+                  </div>
+                </li>
+                <li><strong>Test en debug</strong> je code.</li>
+            </ol>
+		</div>
+
+        <h3>Breid het programma uit met meer specifieke reacties</h3>
+        <div class="forYouToDo">
+            <ol start="5">
+                <li>Gebruik meer conditionele blokken en predikaten om de computer te laten zeggen of het gerade getal te groot of the klein is: "Dat is te groot. Probeer het nog eens." <br /><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Waar in de code horen deze conditionelen?</li>
+                <li>
+                    <strong>Test en debug.</strong> Speel het spel net zo lang totdat je zeker weet dat alles het doet, en de manier waarop jij wilt dat het spel het doet. Het zou moeten:
+                    <ul>
+                        <li>vragen aan de speler om het geheime getal te raden;</li>
+                        <li>zeggen of het gerade getal foutief is én te groot of te klein is, en dan nog eens vragen te raden;</li>
+                        <li>feliciteren wanneer de speler het juiste getal heeft geraden.</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+		<p>Script variabelen bestaan alleen wanneer het script draait, dus het <var>geheime getal number</var> variabele zal <em>niet bestaan</em> nadat <code>Raad-het-getal</code> afgelopen is. Als het weer opnieuw wordt gespeeld, zal het programma een nieuwe <var>geheime getal</var> variabele maken en <em>initieeren</em> bij een random nummer.</p>
+		<img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />
+		<p>In een later hoofdstuk, ga je leren hoe de computer een geheim getal zal raden die <em>jij</em> hebt gekozen.</p>
+
+        <div class="ifTime">
+			<ol start="7">
+				<li>Op dit moment, kiest het script altijd een nummer tussen de 1 en 10. Bij het begin van het spel, vraag de speler wat het maximum zal zijn en maak vervolgens je programma zodanig dat het een getal kiest tussen de 1 en <var>maximum</var>.</li>
+            </ol>
+        </div>
+
+        <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
+            <ol type="A">
+				<li>Gebruik een andere script variabele om bij te houden hoevaak de speler al heeft geprobeerd het getal te raden, voordat hij/zij het juiste antwoord had. Wanneer de speler het raadt, zeg dan hoeveel pogingen hij/zij heeft gedaan.</li>
+                <li>Vind een manier om verschillende antwoorden te geven of dingen te zeggen, zodat de computer niet constant hetzelfde zegt in eenzelfde situatie.  Bijvoorbeeld, als een speler twee keer achter elkaar te hoog raadt, kan het programma zeggen  "Dat is te groot. Probeer een ander getal."</li>
+            </ol>
+        </div>
+
+
+	</body>
+</html>
