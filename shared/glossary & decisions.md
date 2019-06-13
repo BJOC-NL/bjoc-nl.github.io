@@ -3,8 +3,6 @@
 ## Algemene termen
 computer science - informatica
 
-Unit - hoofdstuk
-
 predicate - predikaat
 
 sites - websites
@@ -22,6 +20,14 @@ Internet - internet
 course - lessen (Throught the course - Tijdens de lessen)
 
 Input - invoer
+
+(stage) background - speelveld
+
+stage - speelveld
+
+loop - lus
+
+condition - conditie
 
 ## Snap *!*
 
@@ -50,6 +56,8 @@ report - rapporteer
 broadcast - zend signaal
 
 list - lijst
+
+initialize - initialiseren
 
 ## Voorbeelden
 
@@ -100,6 +108,8 @@ For you to do - Wat je moet doen
 
 Take it further - Ga een stapje verder
 
+If there is time - Als er nog tijd over is 
+
 In this lesson you will - In deze les ga je
 
 (Knop tekst)
@@ -117,3 +127,30 @@ Alphie - Alex
 Betsy - Robin
 
 Gamal - Yasmine
+
+* Namen en plaatsnamen: zoveel mogelijk Nederlandse tegenhangers vinden. Voorbeelden Alphie/Alex, Betsy/Robin, Gamal/Yasmine
+
+* **Video**: proberen samen te vatten, we zien later wel wat we hiermee doen 
+
+* Oorspronkelijke (Engelse) tekst bekommentarieren 
+
+* Vertaling "lab" als "les" creërt een indruk dat het één lesuur betreft.  
+
+* Bestaandsnamen moeten eventueel ook vertaald worden
+
+* In de Engelse versie worden veel hoofdletters gebruikt en ook komma's. Maak dit zo Nederlands mogelijk in de vertaalde versie.
+
+# Voorlopig niet te vertalen
+
+* Div class maar zie glossary voor voorbeelden
+
+* Alt teksten
+
+* Mappen structuur
+
+* Inhoudsopgave
+
+* Namen van Snap *!* blokken
+
+
+

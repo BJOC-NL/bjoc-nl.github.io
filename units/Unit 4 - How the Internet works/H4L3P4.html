@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+		<title>Unit 4 Lab 3: Cybersecurity, Page 4</title>
+	</head>
+
+	<body>
+    	<h2>Public Key Encryption</h2>
+        <div class="todo">
+            <ul>
+                <li><strong>EK 6.2.2H</strong> Standards for sharing information and communicating between browsers and servers on the Web include HTTP and secure sockets layer/transport layer security (SSL/TLS).</li>
+                <li><strong>EK 6.3.1A</strong> The trust model of the Internet involves trade-offs.</li>
+                <li><strong>EK 6.3.1H</strong> Cryptography is essential to many models of cybersecurity.</li>
+                <li><strong>EK 6.3.1I</strong> Cryptography has a mathematical foundation.</li>
+                <li><strong>EK 6.3.1J</strong> Open standards help ensure cryptography is secure.</li>
+                <li><strong>EK 6.3.1L</strong> Public key encryption, which is not symmetric, is an encryption method that is widely used because of the enhanced security associated with its use.</li>
+                <li><strong>EK 6.3.1M</strong> Certificate authorities (CAs) issue digital certificates that validate the ownership of encrypted keys used in secured communications and are based on a trust model.</li>
+            </ul>
+		</div>
+		
+		<div class="learn">
+            <p><strong>On this page,</strong> you will learn about a commonly used method of cryptography that is more secure.</p>
+        </div>
+        
+        <p>The fundamental problem that cryptography is trying to solve is how to get a message to your friend that can't be intercepted by your enemies. Symmetric encryption has a fundamental weakness: the encryption key is itself a message that needs to be send to your friend but not intercepted by your enemy.</p>
+        <div class="sidenoteBig">
+            <div class="todo">Paul's going to be the decider on whether to keep this box.</div>
+            The public key idea was invented and first published by Whitfield Diffie and Martin Hellman in 1976.  It turns out that it had been invented earlier but kept secret by governments.
+        </div>
+        <p><em>Public key cryptography</em> is a mathematical technique to avoid the need to communicate a secret key from one person to another. Instead, each person has <em>two</em> keys: a private key known only to that person and a public key that everyone in the world is allowed to know. If Bob wants to send Alice a secret message, he encrypts it with Alice's public key. Then no one but Alice can decrypt it. Only her private key can undo the encryption, and no one <em>can figure out</em> the private key from the public key.</p>
+ 		<img class="imageRight" src="/bjc-r/img/icons/headphones-mini.png" alt="Set Up Your Headphones or Speakers" title="Set Up Your Headphones or Speakers" />
+        <div class="sidenote">If your connection blocks YouTube, <a href="http://scratch.mit.edu/discuss/youtube/YEBfamv-_do" target="_blank" title="Public key cryptography - Diffie-Hellman Key Exchange">watch the video here</a>, but start it at 2:25. </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YEBfamv-_do?start=145&rel=0" frameborder="0" allowfullscreen class="indent"></iframe>	
+            
+		<div class="ifTime">
+			<ol>
+                <li>It may seem incredible that Alice can make her encryption key public and still no one except her can decrypt her message.  The public key method relies on some mathematics and on some limitations on the speed of current computers.  Read "Secrecy Changes Forever" (<a href="http://www.bitsbook.com/wp-content/uploads/2008/12/B2B_3.pdf#page=196" target="_blank" title="Blown to Bits: Secrecy Changes Forever"><em>Blown to Bits</em> pages 178-181</a>) to understand some of how this works.</li>
+			</ol>
+		</div>
+        
+        Here is a model of public key encryption (from <a href="https://commons.wikimedia.org/wiki/File:Public_key_encryption.svg" target="blank" title="Public key encryption">wikimedia.org</a>)
+        <div class="indent"><img class="noshadow" border="0" src="/bjc-r/img/3-lists/525px-Public_key_encryption.png" alt="Diagram of public key encryption" title="Diagram of public key encryption" /></div>
+
+		<!--This is a picture of shared secret, maybe not as relevant? img saved as: 536px-Public_key_shared_secret.png  source: https://commons.wikimedia.org/wiki/File:Public_key_shared_secret.svg (PUBLIC DOMAIN)-->
+        
+        <div class="forYouToDo" id="third">
+        	<ol start="2">
+            	<li>With a partner, discuss how this method is different from symmetric cryptography described on previous pages.  Would you trust this method to work to send a credit card number?</li>
+            </ol>
+        </div>
+		<div class="endnote">
+            <a href="#hint-digital-signatures" data-toggle="collapse" title="It's also possible to use the private key for encryption and the public key for decryption...">It's also possible to use the <em>private</em> key for encryption and the <em>public</em> key for decryption...</a>
+            <div id="hint-digital-signatures" class="collapse">That's no good for secret messages (why not?), but it's useful for <strong>digital signatures</strong>.  I use my private key to encrypt a message; you use my public key to decrypt it.  If you get a meaningful message as the result, that proves that the message was encrypted with my private key.  (If I want both secrecy and digital signing, I encrypt the message with my private key to sign it, then encrypt the encrypted result <em>again</em> with your public key to keep it secret. You decrypt it twice, first with your private key and then with my public key.) This is a nice example of <em>composition of functions:</em> the output from the first encryption is the input to the second encryption.</div>
+        </div>
+        
+        <h3>Secure HTTP</h3>
+        <p>Secure HTTP connections (those that use <strong>https://</strong> instead of <strong>http://</strong>) use a protocol called <em>Transport Layer Security</em> (TLS) or maybe an older version called <em>Secure Sockets Layer</em> (SSL). Both are based on public key cryptography. With SSL/TLS, the site you are visiting sends its public key, and your browser uses it to encrypt the information you send.</p>
+        <div class="vocabFullWidth">
+        	<p><strong>SSL/TLS</strong> (secure sockets layer/transport layer security) is the standard used for cryptographically secured information transfer on the Internet.</p>
+        </div>
+        <br clear="all" />
+        
+        <div class="sidenote">If your connection blocks YouTube, <a href="http://scratch.mit.edu/discuss/youtube/kBXQZMmiA4s" target="_blank" title="The Internet: HTTP & HTML">watch the video here</a>, but start it at 4:40. </div>
+		<img class="imageRight" src="/bjc-r/img/icons/headphones-mini.png" alt="Set Up Your Headphones or Speakers" title="Set Up Your Headphones or Speakers" />
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kBXQZMmiA4s?start=280&rel=0" frameborder="0" allowfullscreen class="indent"></iframe>
+        
+        <div class="endnote">
+            <a href="#hint-open-standards" data-toggle="collapse" title="Open Standards Help Security">Open standards help security...</a>
+    		<div id="hint-open-standards" class="collapse">
+                <p>In order to work properly, a cryptographic function has to be easy for the private key holder to invert, but hard for anyone else to invert. How do we know what "hard" means? For example, current cryptographic methods rely on the difficulty of finding prime factors of very large numbers. There's no <em>proof</em> that someone won't come up with a fast way to do that, but people are pretty confident about it because the problem has been well studied by many mathematicians. (On the other hand, when <em>quantum computers</em> become practical, factorization <em>will</em> be easy, and new cryptographic methods will be needed.)</p>
+                <p>What makes it possible for mathematicians to study the difficulty of breaking Internet cryptography is that the method used&mdash;the cryptographic function&mdash;is openly published. This may seem strange; if you want to keep secrets, shouldn't you keep the technique secret, too? But secret algorithms can have weaknesses that go undiscovered until some bad guy exploits them. Open standards allow an algorithm to be studied <em>before</em> it is used in practice.</p>
+            </div>
+        </div>
+        
+        
+        <h3>Certificate Authorities</h3>
+        <div class="vocabBig">
+        	<p><strong>Certificate authorities</strong> issue digital certificates that verify who owns the encryption keys used for secured communications.</p>
+        </div>
+        <p>Public key cryptography doesn't solve all the problems, because an eavesdropper (say, Eve) might publish a fake public key pretending to be Alice. Then Bob might accidentally encrypt their message for Alice using the Eve's fake key, and then the Eve can read the message.  In practice, this is partly fixed by relying on trusted third parties, called <em>Certificate Authorities</em>, to certify public keys. In your browser's security options you can see all of the Certificate Authorities that it trusts.</p>
+		<div class="endnote">But this just pushes the problem back a layer. How does the Certificate Authorities know that you are who you say you are? The problem is a little bit like how your bank knows that you who you say you are when you call them on the phone. Namely, they ask you questions for which they hope only you know the answer.</div>
+        
+        <div class="takeItFurther">
+        	<ol type="A">
+            	<li>Read "The Key Agreement Protocol" and "Public Keys for Private Messages" (<a href="http://www.bitsbook.com/wp-content/uploads/2008/12/B2B_3.pdf#page=199" target="_blank" title="Blown to Bits: The Key Agreement Protocol"><em>Blown to Bits</em> pages 181-183</a>) for more details on Public Key Encryption.</li>
+                <li>Do some research about modern encryption systems such as the RSA cryptosystem, which is used to do secure transactions on the Internet.</li>
+            </ol>
+        </div>
+                      
+	</body>
+</html>
