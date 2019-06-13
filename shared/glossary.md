@@ -95,6 +95,8 @@ Klik hier om dit bestand te openen. Bewaar het vervolgens in je Snap! account.
 (knop tekst)
 Pair Programming Swap - Draai de rollen om
 
+This question is similar to those you will see on the AP CSP exam - Met deze vraag kun jij je kennis testen.
+
 ## Namen
 Alphie - Alex
 
