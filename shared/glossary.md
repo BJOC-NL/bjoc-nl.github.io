@@ -3,8 +3,6 @@
 ## Algemene termen
 computer science - informatica
 
-Unit - hoofdstuk
-
 predicate - predikaat
 
 sites - websites
@@ -22,6 +20,14 @@ Internet - internet
 course - lessen (Throught the course - Tijdens de lessen)
 
 Input - invoer
+
+(stage) background - speelveld
+
+stage - speelveld
+
+loop - lus
+
+condition - conditie
 
 ## Snap *!*
 
@@ -50,6 +56,8 @@ report - rapporteer
 broadcast - zend signaal
 
 list - lijst
+
+initialize - initialiseren
 
 ## Voorbeelden
 
