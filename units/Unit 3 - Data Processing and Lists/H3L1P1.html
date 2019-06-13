@@ -94,18 +94,18 @@
             <div><span>Robin:</span> We hebben een manier nodig om een contact toe te voegen aan onze <var>contactenlijst</var>.</div>
             <div><span>Yasmine:</span> Elk contact zal een lijst worden met iemands naam, telefoonnummer, adres en email.</div>
             <div><span>Robin:</span> In hoofdstuk 2 hebben we een <a href="/bjc-r/cur/programming/2-complexity/2-data-structures-art/2-data-types.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="Abstracte Datatypes"><code>punt</code> abstracte datatype</a> om de coordinaten van ieder punt in een lijst van punten op te slaan. Hier kunnen we een <code>contact</code> abstracte datatype maken om de data voor ieder contact in onze contactenlijst in op te slaan.</div>
-            <div><span>Yasmine:</span> Ja! <em>(Yasmine opent haar oude project, maar dat hoef jij niet te doen.)</em> We hebben eerder een <code>punt</code> maker om een lijst van coordinaten te maken.</div>
+            <div><span>Yasmine:</span> Ja! <em>(Yasmine opent haar oude project, maar dat hoef jij niet te doen.)</em> We hebben eerder een <code>punt</code> constructor om een lijst van coordinaten te maken.</div>
             <div class="stagedir">
-            	Yasmine wijst naar de code voor de <code>punt</code> maker:<br />     
+            	Yasmine wijst naar de code voor de <code>punt</code> constructor:<br />     
                 <img class="indent" src="/bjc-r/img/3-lists/point.png" alt="point(X#)(Y#){report(list(X)(Y)}" title="point(X#)(Y#){report(list(X)(Y)}"/>
             </div>
-            <div><span>Robin:</span> We hebben vervolgens een kiezer gebruikt om een <em>x</em> of <em>y</em> coordinaat te kiezen.</div>
+            <div><span>Robin:</span> We hebben vervolgens een selector gebruikt om een <em>x</em> of <em>y</em> coordinaat te kiezen.</div>
             <div class="stagedir">
-            	robin wijst naar de code voor de <code>coordinaten</code> kiezer:<br />     
+            	robin wijst naar de code voor de <code>coordinaten</code> selector:<br />     
                 <img class="indent" src="/bjc-r/img/2-complexity/xcor.png" alt="x coordinate of (point){report item (1) of (point)}" title="x coordinate of (point){report item (1) of (point)}"> en 
                 <img src="/bjc-r/img/2-complexity/ycor.png" alt="y coordinate of (point){ report item (2) of (point)}" title="y coordinate of (point){ report item (2) of (point)}">
 			</div>
-            <div><span>Yasmine:</span> In dit project hebben we een <code>contact</code> maker en kiezers nodig om toegang te krijgen tot de naam, het adres en telefoonnummer van een contact.</div>
+            <div><span>Yasmine:</span> In dit project hebben we een <code>contact</code> constructor en selectors nodig om toegang te krijgen tot de naam, het adres en telefoonnummer van een contact.</div>
 		</div>
         
         <div class="forYouToDo">
@@ -116,19 +116,19 @@
                         <p style="margin-left:25px;"><code>contact met naam: %name adres: %adres nummer: %nummer</code></p>
                         De %-tekens zorgen ervoor dat de woorden variabelen worden.
                     </div>
-                    Maak een <code>contact</code> <em>maker</em> die drie variabelen accepteert als invoer: de <var>naam</var>, het <var>telefoonnummer</var> en het <var>adres</var> van een contact. <br />
+                    Maak een <code>contact</code> <em>constructor</em> die drie variabelen accepteert als invoer: de <var>naam</var>, het <var>telefoonnummer</var> en het <var>adres</var> van een contact. <br />
                     <img class="indent" src="/bjc-r/img/3-lists/contact-constructor-untyped.png" alt="contact with name: () address: () phone: ()" title="contact with name: () address: () phone: ()" /><br />
-                    De maker zal een contact terugrapporteren (een lijst van de drie variabelen):<br />
+                    De constructor zal een contact terugrapporteren (een lijst van de drie variabelen):<br />
 					<img class="indent" src="/bjc-r/img/3-lists/contact-constructor-reporting.png" alt="contact with name: (robin) address: (123 Main St. #4, New York, NY 10001) phone: (212-555-1234) reporting {Betsy Anderson; 123 Main St. #4, New York, NY 10001; 212-555-1234}" title="contact with name: (Betsy Anderson) address: (123 Main St. #4, New York, NY 10001) phone: (212-555-1234) reporting {Betsy Anderson; 123 Main St. #4, New York, NY 10001; 212-555-1234}" /><br />
                 </li>
                 <li>
-                    Schrijf de <em>kiezer</em> blokken om de <code>naam van een contact</code>, <code>adres van een contact</code>, of <code>telefoonnummer van een contact</code> terug te kunnen vinden:	<br />
+                    Schrijf de <em>selector</em> blokken om de <code>naam van een contact</code>, <code>adres van een contact</code>, of <code>telefoonnummer van een contact</code> terug te kunnen vinden:	<br />
                     <img class="indent" src="/bjc-r/img/3-lists/contact-constructor-in-name-selector.png" alt="contact name (contact block with inputs) reporting " title="contact name (contact block with inputs) reporting "><br />
                     <img class="indent" src="/bjc-r/img/3-lists/contact-constructor-in-address-selector.png" alt="contact address (contact block with inputs) reporting " title="contact address (contact block with inputs) reporting "><br />
                     <img class="indent" src="/bjc-r/img/3-lists/contact-constructor-in-phone-selector.png" alt="contact phone (contact block with inputs) reporting " title="contact phone (contact block with inputs) reporting ">
                 </li>
                 <div class="endnote">
-                    <p>Het is onnatuurlijk om de maker als een invoer van de kiezer te gebruiken, deze afbeeldingen zijn voorbeelden om te laten zien wat de kiezers zouden moeten kunnen als er een contact gegeven word als invoer. In <em>jouw</em> programma zullen de kiezers een item van de lijst als invoer gebruiken om het goede gedeelte van een contact terug te geven, zoals hier:<br />
+                    <p>Het is onnatuurlijk om de constructor als een invoer van de selector te gebruiken, deze afbeeldingen zijn voorbeelden om te laten zien wat de selectors zouden moeten kunnen als er een contact gegeven word als invoer. In <em>jouw</em> programma zullen de selectors een item van de lijst als invoer gebruiken om het goede gedeelte van een contact terug te geven, zoals hier:<br />
                         <img class="indent" src="/bjc-r/img/3-lists/address-from-contact-item-1-of-contact-list-reporting.png" alt="address from contact (item (1) of (contact list)) reporting '123 Main St. #4, New York, NY 10001'" title="address from contact (item (1) of (contact list)) reporting '123 Main St. #4, New York, NY 10001'" />
                     </p>
                 </div>
@@ -148,7 +148,7 @@
                     </div>
                 </div>
 		        <li>
-                    Verklaar de invoer types voor iedere kiezer zodat het duidelijk is dat ze een lijst (een heel contact) als invoer.<br />
+                    Verklaar de invoer types voor iedere selector zodat het duidelijk is dat ze een lijst (een heel contact) als invoer.<br />
                     <img class="indent" src="/bjc-r/img/3-lists/name-selector.png" alt="name from contact: ()" title="name from contact: ()" />
                     <img class="indent" src="/bjc-r/img/3-lists/address-selector.png" alt="address from contact: ()" title="address from contact: ()" />
                     <img class="indent" src="/bjc-r/img/3-lists/phone-selector.png" alt="phone from contact: ()" title="phone from contact: ()" />
@@ -165,9 +165,9 @@
                 <li>
                     Kijk of je blokken samen kunnen werken, debug de bugs die je vindt.
                     <ol>
-                        <li>Als eerste maak je een maker (met invoerwaardes) in iedere kiezer (zoals hierboven) om te kijken of ze het goede stukje van een contact terugrapporteren.</li>
+                        <li>Als eerste maak je een constructor (met invoerwaardes) in iedere selector (zoals hierboven) om te kijken of ze het goede stukje van een contact terugrapporteren.</li>
                         <li>
-                            Vervolgens gebruik je je <code>contact</code> maker om een paar contacten <code>toe te voegen</code> aan je contactenlijst toe te voegen.
+                            Vervolgens gebruik je je <code>contact</code> constructor om een paar contacten <code>toe te voegen</code> aan je contactenlijst toe te voegen.
                             <div class="endnote">
                                 Je kan de volgende voorbeelden gebruiken of je eigen informatie verzinnen.
                                 <table class="bordered" summary="three example contacts">
