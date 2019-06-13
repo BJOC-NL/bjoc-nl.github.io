@@ -108,6 +108,8 @@ For you to do - Wat je moet doen
 
 Take it further - Ga een stapje verder
 
+If there is time - Als er nog tijd over is 
+
 In this lesson you will - In deze les ga je
 
 (Knop tekst)
