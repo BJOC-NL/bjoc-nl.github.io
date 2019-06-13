@@ -13,7 +13,7 @@
             <br />
             No EK's found
         </div>
-		<h2>Transforming Every List Item</h2>
+		<h2>Transformeren van alle items in een lijst</h2>
         <div class="todo">While working on the SIGCSE paper, Paul and I agreed that this is still a complicated way to introduce <code>map</code> (namely, in the context of ADTs in a project that's already known to be difficult). I think we need a simpler introduction--perhaps in <a href="https://docs.google.com/document/d/1il5OFuTDg2tVt3pAocsVH7DKifXHzORjp7cx3odloV4/edit" target="_blank">the Sentence Builder content that will be added to the Gossip lab</a> (e.g., plurals using <code>map</code>). (If we do this, <a href="/bjc-r/cur/programming/3-lists/2-tic-tac-toe/2-find-wins.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc.html&novideo&noassignment">the reference on 3.2.2</a> needs an edit.) --MF, 8/31/18</div>
 		
         <div class="learn">
@@ -38,18 +38,18 @@
 				<li>
                     <div class="sidenote">
                         <img class="imageRight" src="/bjc-r/img/icons/import-tools-mini.png" alt="Import Tools" title="Import Tools" />
-                        Net als het <code>keep</code> blok, word <code>map</code> niet automatisch geïnstalleerd. It has already been added to this project, but in other projects, you'll need to select "Import tools" from the File menu to access the <code>map</code> block. <br />
+                        Net als het <code>keep</code> blok, word <code>map</code> niet automatisch geïnstalleerd. Het is al toegevoegd in dit project, maar in andere projecten zul je "Import tools" moeten selecteren in het File menu om bij het <code>map</code> blok. <br />
                     </div>
-                    <img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Experiment with these examples of <code>map</code>. Discuss and then explain in writing what these expressions are doing.<br />
+                    <img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Experimenteer met deze voorbeelden van <code>map</code>. overleg en leg daarna uit in je eigen woorden wat deze opstellingen doen.<br />
                     <img class="indent" src="/bjc-r/img/3-lists/map-join-s.png" alt="map (join( )(s)) over (list{block, script, Boolean})" title="map (join( )(s)) over (list{block, script, Boolean})" /><br />
                     <img class="indent" src="/bjc-r/img/3-lists/map-3x.png" alt="map ((3) * ( )) over (list{7, 8, 1})" title="map ((3) * ( )) over (list{7, 8, 1})"  /><br />
                     <img class="indent" src="/bjc-r/img/3-lists/map-letter-1.png" alt="map (letter (1) of ( )) over (list{bounce, join, clear})" title="map (letter (1) of ( )) over (list{bounce, join, clear})" />
                 </li>
-                <li>Use the <code>map</code> block together with your selectors to report a list of only the names of all contacts.</li>
+                <li>gebruik het <code>map</code> blok samen met jouw kiezers om een lijst met alleen de namen van alle contacten te reporteren.</li>
             </ol>
         </div>
         
-        <h3>Self-Check: <code>Map</code> Block</h3>
+        <h3>Controle vraag: <code>Map</code> Blok</h3>
         <div class="forYouToDo">
 			<ol start="4">
 				<li>
@@ -60,17 +60,17 @@
                     responseIdentifier="resp4" shuffle="true">
                         <div class="prompt">
                             <p>
-                                This question refers to these two lists:<br /> 
+                                Deze vraag refereerd naar deze twee lijsten:<br /> 
                                 <img class="indent" src="/bjc-r/img/3-lists/words_numbers.png" alt="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" title="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" /><br />
                                 <img class="indent" src="/bjc-r/img/3-lists/check1capitals.png" alt="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" title="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" /><br />
-                                Which of these statements are <strong>true</strong>?<br />
-                                Choose <strong>all</strong> that apply.
+                                Welke van deze statements is <strong>waar</strong>?<br />
+                                Kies <strong>alle</strong> opties waarvan je denkt dat ze waar zijn.
                             </p>
                         </div>
             
                         <div class="choice" identifier="c1">
                             <div class="text">
-                                <img border="0" src="/bjc-r/img/3-lists/check2mapc1.png" alt="map (letter (1) of ()) over (words and numbers)" title="map (letter (1) of ()) over (words and numbers)" /> reports the list <var>{r, 5, b, i, 3, k, 2, 3, t, 6}</var>.
+                                <img border="0" src="/bjc-r/img/3-lists/check2mapc1.png" alt="map (letter (1) of ()) over (words and numbers)" title="map (letter (1) of ()) over (words and numbers)" /> rapporteerd deze lijst<var>{r, 5, b, i, 3, k, 2, 3, t, 6}</var>.
                             </div>
                             <div class="feedback">
                                 Correct.
@@ -78,15 +78,15 @@
                         </div>
                         <div class="choice" identifier="c2">
                             <div class="text">
-                                <img border="0" src="/bjc-r/img/3-lists/check2mapc2.png" alt="map (item (1) of ()) over (words and numbers)" title="map (item (1) of ()) over (words and numbers)"> reports the list <var>{rabbit}</var>.
+                                <img border="0" src="/bjc-r/img/3-lists/check2mapc2.png" alt="map (item (1) of ()) over (words and numbers)" title="map (item (1) of ()) over (words and numbers)"> rapporteerd deze lijst <var>{rabbit}</var>.
                             </div>
                             <div class="feedback">
-                                No. The blank space is expecting a <strong>list</strong> as its input, but <code>map</code> puts a single item from <code>words and numbers</code> into that slot.
+                                Nee. Het lege vakje verwacht een <strong>lijst</strong> als input, maar <code>map</code> voegd 1 item <code>woorden en nummers</code> per keer in.
                             </div>
                         </div>
                         <div class="choice" identifier="c1">
                             <div class="text">
-                                <img border="0" src="/bjc-r/img/3-lists/check2mapc3.png" alt="map (item (1) of ()) over (capitals)" title="map (item (1) of ()) over (capitals)"> reports the list <var>{Augusta, Boise, Columbia, Des Moines}</var>.
+                                <img border="0" src="/bjc-r/img/3-lists/check2mapc3.png" alt="map (item (1) of ()) over (capitals)" title="map (item (1) of ()) over (capitals)"> rapporteerd deze lijst <var>{Augusta, Boise, Columbia, Des Moines}</var>.
                             </div>
                             <div class="feedback">
                                 Correct. 
@@ -94,10 +94,10 @@
                         </div>
                         <div class="choice" identifier="c3">
                             <div class="text">
-                                <img border="0" src="/bjc-r/img/3-lists/check2mapc4.png" alt="map (letter (1) of ()) over (capitals)" title="map (letter (1) of ()) over (capitals)"> reports the list <var>{A, B, C, D}</var>.
+                                <img border="0" src="/bjc-r/img/3-lists/check2mapc4.png" alt="map (letter (1) of ()) over (capitals)" title="map (letter (1) of ()) over (capitals)"> rapporteerd deze lijst <var>{A, B, C, D}</var>.
                             </div>
                             <div class="feedback">
-                                No. You can find the first letter of a word, but not the first letter of a list.
+                                Nee. Je kan de eerste letter van een woord vinden, maar niet de eerste letter van een lijst.
                             </div>
                         </div>
                         <div class="choice" identifier="c4">
@@ -105,7 +105,7 @@
                                 <img border="0" src="/bjc-r/img/3-lists/check2mapc5.png" alt="map (all but first of ()) over (capitals)" title="map (all but first of ()) over (capitals)"> reports the list <var>{Maine, Idaho, South Carolina, Iowa}</var>.
                             </div>
                             <div class="feedback">
-                                No. This is kind of a trick question. What gets reported is actually a list of lists. The output is: <var>{{Maine}, {Idaho}, {South Carolina}, {Iowa}}</var>. 
+                                Nee. dit is een strikvraag. Wat eigenlijk wordt gerapporteerd is een lijst van lijsten. De output is: <var>{{Maine}, {Idaho}, {South Carolina}, {Iowa}}</var>. 
                             </div>
                         </div>
                         
