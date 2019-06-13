@@ -12,19 +12,19 @@
             ST EK List:<br />
             No EK's found
         </div>
-    	<h2>Detecting  Wins and Ties</h2>
+    	<h2>Herkennen van gewonnen- en gelijkspel.</h2>
         <div class="todo">
 	        <p>I made some edits to include the word "possible" more. I'm not sure I didn't make it more confusing. Need to look again another day. --MF, 6/13/18</p>
         </div>
 		
 		
         <div class="learn">
-            <p><strong>On this page</strong>, you'll program your Tic Tac Toe project to detect and report wins and ties.</p>
+		<p><strong>Op deze pagina</strong> ga je je Boter-Kaas en Eieren project programmeren dat hij gewonnen en gelijkspel herkent.</p>
         </div>
         
-        <h3>Storing All the Ways to Win</h3>
+        <h3>Het opslaan van alle manieren om te winnen</h3>
 		<p>
-            To program a way to detect a win, we need to determine what counts as a win. We'll store each possible winning triple as a list of three position numbers (a <em>triple</em>).  For example, this winning triple could be represented as <img src="/bjc-r/img/3-lists/{3,5,7}.png" alt="list{3, 5, 7}" title="list{3, 5, 7}"> because the win is in the 3<sup>rd</sup>, 5<sup>th</sup>, and 7<sup>th</sup> positions:<br />
+            Een manier om een gewonnen spel te herkennen, moeten we eerst vaststellen wat telt als een win. We slaan elke mogelijkheid voor een gewonnen spel op door middel van een lijst van drie positie getallen (een <em>triplet</em>).  Bijvoorbeeld, deze gewonnen triplet kan er uit zien als <img src="/bjc-r/img/3-lists/{3,5,7}.png" alt="list{3, 5, 7}" title="list{3, 5, 7}"> want het gewonnen triplet is in de 3<sup>e</sup>, 5<sup>e</sup>, en 7<sup>e</sup> positie:<br />
             <img class="indent noshadow" src="/bjc-r/img/3-lists/winning-combo-357.png" alt="diagonal win bottom left to top right" title="diagonal win bottom left to top right"><br />
         </p>
         
@@ -32,21 +32,21 @@
 			<ol>
                 <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
                     <ol>
-                        <li>How many winning triples are possible? </li>
-                        <li>Write down each of the possible winning triples.</li>
+                        <li>Hoeveel gewonnen spellen zijn mogelijk? </li>
+                        <li>Schrijf alle mogelijkheden uit.</li>
                     </ol>
                 </li>
             </ol>
         </div>
         
-        <p>Next we'll create a list to store all of the possible winning triples so we can check it against the current state of the game stored by <var>board</var>.</p>
+        <p>We gaan nu een lijst maken waarin we alle mogelijkheden in zetten hoe je kan winnen. Dit vergelijken we met het <var>bord</var>.</p>
         
         <div class="forYouToDo">
 			<ol start="2">
-	            <li>Open your project <strong>U3L2-TicTacToe</strong> if it isn't open already.</li>
+	            <li>Open je project <strong>H3L2-BoterKaasEieren</strong>.</li>
                 <img class="imageRight" src="/bjc-r/img/icons/save-mini.png" alt="Save Your Work" title="Save Your Work" />
                 <li>
-                    Create a reporter that outputs a list of all possible winning triples. It will look something like this:<br />
+                    Maak een resultaatblok dat alle win tripletten in een output zet. Het ziet er ongeveer zo uit:<br />
                     <img class="indent" src="/bjc-r/img/3-lists/winning-triples.png" alt="winning triples partial block definition showing a list with at least two lists inside it: {1,2,3} and {2,5,8}" title="winning triples partial block definition showing a list with at least two lists inside it: {1,2,3} and {2,5,8}"/>
                 </li>
             </ol>
