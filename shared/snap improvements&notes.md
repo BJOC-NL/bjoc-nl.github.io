@@ -8,7 +8,7 @@
 * In H2L1P3 <a href="http://snap.berkeley.edu/snapsource/help/SnapManual.pdf"   Manual vertalen?
 
 * Tools gewoon 'tools' laten in NL?
-* AP CSP exam, wat is dat? In Hoofdstuk 1 tot en met 3 is dit al helemaal aangepast, de andere hoofdstukken moeten nog.
+* AP CSP exam, wat is dat? In Hoofdstuk 1 tot en met 3 is dit al helemaal aangepast, de andere hoofdstukken moeten nog (AP voor Renske)
 
 
 ##13/05 SVT
