@@ -46,37 +46,37 @@
 	            <li>Open je project <strong>H3L2-BoterKaasEieren</strong>.</li>
                 <img class="imageRight" src="/bjc-r/img/icons/save-mini.png" alt="Save Your Work" title="Save Your Work" />
                 <li>
-                    Maak een resultaatblok dat alle win tripletten in een output zet. Het ziet er ongeveer zo uit:<br />
+                    Maak een resultaatblok aan dat alle gewonnen tripletten in een output zet. Het ziet er ongeveer zo uit:<br />
                     <img class="indent" src="/bjc-r/img/3-lists/winning-triples.png" alt="winning triples partial block definition showing a list with at least two lists inside it: {1,2,3} and {2,5,8}" title="winning triples partial block definition showing a list with at least two lists inside it: {1,2,3} and {2,5,8}"/>
                 </li>
             </ol>
         </div>
         
-        <h3>Checking One Way to Win</h3>
-        <p>We need a way to find out if a winning triple has actually happened. We can use <code>map</code> to check each position in one triple to see if either player has won with that triple. </p>
+        <h3>Checking one way to win</h3>
+        <p>We hebben een manier nodig om te achterhalen of er werkelijk een gewonnen triplet is. We gebruiken <code>map</code> om iedere positie te checken in een triplet om te kijken of er een gewonnen triplet is.</p>
         
         <div class="endnote">
-            <p>You learned about <code>map</code> in <a href="/bjc-r/cur/programming/3-lists/1-introduction-to-lists/4-mapping-over-list.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 3 Lab 1 Page 4: Transforming Every List Item">Unit 3 Lab 1 Page 4: Transforming Every List Item</a>.</p>
+            <p>Je hebt geleerd over <code>map</code> in <a href="/bjc-r/cur/programming/3-lists/1-introduction-to-lists/4-mapping-over-list.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc.html&novideo&noassignment" title="Hoofdstuk 3 Les 1 Pagina 4: Transformeren van alle items in een lijst ">Hoofdstuk 3 Les 1 Pagina 4: Transformeren van alle items in een lijst</a>.</p>
             <p>
-                <code>Map</code> applies the function in the gray ring to each item in the input list, and it reports a list of all the results.<br />
+                <code>Map</code> past de functie in de grijze ring toe op elk item in de invoer lijst, en rapporteert een lijst met alle resultaten.<br />
                 <img class="indent" src="/bjc-r/img/3-lists/map-example-2.png" alt="map (join( )(s)) over (list {cat, dog, bird}) reporting {cats, dogs, birds}" title="map (join( )(s)) over (list {cat, dog, bird}) reporting {cats, dogs, birds}" />
             </p>
-            <p>Recall that the blank input slot in the function inside the gray ring is where one list item goes every time the function is performed.</p>
+            <p>Bedenk dat het lege invoervak van de functie in de grijze ring de plek is waar een lijst item komt als de functie wordt uitgevoerd</p>
         </div>
         
         <div class="forYouToDo">
 			<ol start="4">
-                <li>Click <img src="/bjc-r/img/1-introduction/green-flag_button.png" alt="green flag button" title="green flag button" /> to start a new game. Play one game, <em>deliberately letting <strong>x</strong>  win</em>. </li>
+                <li>Klik op <img src="/bjc-r/img/1-introduction/green-flag_button.png" alt="green flag button" title="green flag button" /> om een nieuw spel te starten. Speel een spel, <em>Laat <strong>x</strong> expres winnen</em>. </li>
                 <li>
-                    Then build this expression, and see what it reports:<br />
+                    Maak dit na, en kijk naar wat het rapporteert.<br />
                     <img class="indent" src="/bjc-r/img/3-lists/map-item-board.png" alt="map (item ( ) of (board)) over (list{1, 2, 3})" title="map (item ( ) of (board)) over (list{1, 2, 3})"><br />
                     <div class="endnote">
-                        <a href="#hint-map-item" data-toggle="collapse" title="How does map work here?">How does <code>map</code> work here?</a>
+                        <a href="#hint-map-item" data-toggle="collapse" title="How does map work here?">Hoe werkt<code>map</code> hier?</a>
                         <div id="hint-map-item" class="collapse">
-                            <p>This <code>map</code> expression works the same way as the <code>join</code> example above, but it's a little more complex to think about. As before, <code>map</code> inserts each list item into the blank space in the function inside the gray ring, and it reports a list of the results.</p>
-                            <p>But here, the function in the gray ring is <code>item ( ) of (</code><var>board</var><code>)</code>, so <code>map</code> checks items 1, 2, and 3 of the list stored in the <var>board</var> variable, and it reports a list of what is in those three positions (X, O, or Empty).</p>
+                            <p>Deze <code>map</code> werkt hetzelfde als de <code>voeg samen</code> voorbeeld hierboven, maar het is wat ingewikkelder als je erover nadenkt. Net als voorheen, <code>map</code> voert elk lijst item in het lege vakje van de functie in de grijze ring en rapporteert een lijst met de resultaten.</p>
+                            <p>Maar hier is de functie in de grijze ring<code>item ( ) of (</code><var>bord</var><code>)</code>, dus <code>map</code> checkt de items 1, 2, en 3 van de lijst en rapporteert een lijst met wat er in de drie posities staan.</p>
                             <p>
-                            	If you can't see what's inside the <var>board</var> variable, be sure its box is checked in the Variables palette and expand its watcher to see its list items as in the picture below.<br />
+                            	Als je niet kan zien wat er in het <var>board</var> variabele staat. Wees er zeker van de box is aangevinkt in het variabele palet. Breid het kijkslot uit zodat je elke lijst items kan zien, evenals het plaatje hieronder.<br />
                                 <img class="indent noshadow" src="/bjc-r/img/3-lists/ttt-board-var.png" alt="picture of: watcher of board variable showing {X, O, Empty, Empty, X, Empty, Empty, Empty, O}; and Tic Tac Toe game with X in upper left and center and O in upper middle and lower right" title="picture of: watcher of board variable showing {X, O, Empty, Empty, X, Empty, Empty, Empty, O}; and Tic Tac Toe game with X in upper left and center and O in upper middle and lower right" />
                                 <img class="indent" src="/bjc-r/img/3-lists/map-item-board-reporting.png" alt="map (item ( ) of (board)) over (list{1, 2, 3}) reporting {X, Empty, Empty}" title="map (item ( ) of (board)) over (list{1, 2, 3}) reporting {X, Empty, Empty}"><br />
 							</p>
