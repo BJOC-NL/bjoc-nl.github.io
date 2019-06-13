@@ -36,7 +36,7 @@
                 <li>
                     Maak een "Voeg niew contact toe" voor je gebruikers.
                     <ol>
-                        <li>Zorg dat het script aan de user vraagt welke informatie hij in de <var>contactenlijst</var> moet stoppen met behulp van de <code>contact</code> maker.</li>
+                        <li>Zorg dat het script aan de user vraagt welke informatie hij in de <var>contactenlijst</var> moet stoppen met behulp van de <code>contact</code> constructor.</li>
                         <div class="narrower">
                             <h4><strong>Informatie verzamelen van de gebruiker.</strong></h4>
                             <p>
@@ -47,7 +47,7 @@
                                         <img class="indent" src="/bjc-r/img/3-lists/contact-constructor-with-variables.png" alt="contact with name: (name) address: (address) phone: (phone)" title="contact with name: (name) address: (address) phone: (phone)" />
                                     </li>
                                     <li>
-                                        <strong><em>Een andere manier</em> die ervoor zorgt dat je script overzichtelijker word is <em>abstractie</em>: Maak hulpblokken</strong> (zoals <img src="/bjc-r/img/3-lists/ask-name.png" alt="ask name" title="ask name" /> en <img src="/bjc-r/img/3-lists/ask-phone.png" alt="ask phone" title="ask phone" />) die ieder de gebruiker om een stukje informatie vragen en het andwoord doorgeven naar de <code>contact</code> maker.<br />
+                                        <strong><em>Een andere manier</em> die ervoor zorgt dat je script overzichtelijker word is <em>abstractie</em>: Maak hulpblokken</strong> (zoals <img src="/bjc-r/img/3-lists/ask-name.png" alt="ask name" title="ask name" /> en <img src="/bjc-r/img/3-lists/ask-phone.png" alt="ask phone" title="ask phone" />) die ieder de gebruiker om een stukje informatie vragen en het andwoord doorgeven naar de <code>contact</code> constructor.<br />
                                         <img class="indent" src="/bjc-r/img/3-lists/contact-constructor-with-helpers.png" alt="contact with name: (ask name) address: (ask address) phone: (ask phone)" title="contact with name: (ask name) address: (ask address) phone: (ask phone)" /><br />
                                         Ieder van deze hulpblokken <code>vragen</code> de gebruiker een specifieke vraag (bijvoorbeeld: "Wat is het adres van dit contact?") en vervolgens het gegeven <code>antwoord</code> rapporteren <code>answer.
                                     </li>
