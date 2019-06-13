@@ -112,8 +112,8 @@ Pair Programming Swap - Draai de rollen om
 This question is similar to those you will see on the AP CSP exam - Met deze vraag kun jij je kennis testen.
 
 ## Namen
-Alphie - Alphie
+Alphie - Alex
 
-Betsy - Betsie
+Betsy - Robin
 
-Gamal - Gamal
+Gamal - Yasmine
