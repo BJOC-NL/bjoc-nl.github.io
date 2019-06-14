@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+        <script type="text/javascript" src="/bjc-r/utilities/gifffer.min.js"></script>
+        <script type="text/javascript">window.onload = function() {Gifffer();}</script>
+        <link rel="stylesheet" type="text/css" href="/bjc-r/css/bjc-gifffer.css">
+		<title>Hoofdstuk 2 Les 2: Kunst maken met het gebruik van datastructuren, Pagina 1</title>
+    </head>
+
+	<body>
+    <div class="todo">
+        ST EK List:
+       <br />
+       5.2.1E Program execution automates processes. <br />
+       5.5.1H Computational methods may use lists and collections to solve problems.
+        </div>
+        <h2>Verwerken van elk item in een lijst</h2>
+        <div class="todo">
+            <h3>Ruthless Suggestions from Al</h3>
+            <ul>
+                <li>The [lab] title: “Using Variables and Data Structures to Make Art”—Data Structures are all over this, but I see no use of “variable.” Radical suggestion: Maybe this won’t work, but can we save “variable” for things that get assigned and use “input” for things that get passed in when a command or reporter is called?</li>
+                <ul>
+                  <li>The title has already been changed, but I kept the comment because of the question. Thoughts, Brian? --MF, 5/16/18</li></ul>
+                <li>Radical suggestion: Do we need to declare data types? It’s just one more thing for the user to track.</li>
+                <ul><li>No, but we do it in our blocks, so we thought we should show how it's done. I think it should be in a yellow box. Brian, why did you opt for green? --MF, 5/16/18</li></ul>
+                <li># 1: What does it mean: “Load and build their go to point block.” And when I load it, I see a list.</li>
+                <ul><li>I think this just needs some clarification. --MF, 5/16/18</li></ul>
+            </ul>
+        </div>
+
+        <div class="todo">This project has <code>for each</code> already imported. The page should be clear that students will have to import tools if they want to use <code>for each</code> in their own projects. --MF, 11/15/17</div>
+
+        <img class="imageRight"  src="/bjc-r/img/2-complexity/decagon-mandala-ring-and-outline-of-letter-A.png" height="180" alt="decagon-mandala-ring-and-outline-of-letter-A" title="decagon mandala ring and letter A"/>
+        <div class="learn">
+            <p><strong>In deze les,</strong> ga je tools maken voor het tekenen van complexe ontwerpen van een lijst met punten. Om dit te doen, ga je probleem decomposition gebruiken&mdash; het probleem in kleine stukjes breken. </p>
+            <p><strong>Op deze pagina,</strong> ga je een script schrijven die ervoor zorgt dat de puntjes met elkaar worden verbonden (gegeven door een lijst met punten) die de letter A tekenen. </p>
+        </div>
+
+        <div class="dialogue"> <a name="seta" class="anchor">&nbsp;</a>
+            <div class="stagedir">
+                <p>Alfie en Robin maken een programma dat van een lijst van punten aanneemt (elk van waar de lijst met <em>x</em> en <em>y</em> coördinaten) als input en de punten met elkaar zal verbinden. Ze kwamen erachter dat ze dit kunnen gebruiken om foto's of grafieken met data te tekenen:</p>
+                <p>
+      Om een setje startdata te maken, schetste ze de letter A op een ruitjes papiertje. Ze kozen een <em>schaal</em> waarvan ze dachten dat het de foto er goed uit zou komen te laten zien.<br />
+                    <div class="todo">
+                    ST-Many NYC teachers were confused and thought they are creating the list A themselves whereas we give it to them in the starter file.
+                    </div>
+
+                    <img src="/bjc-r/img/2-complexity/U2ImageVideoAddendum_img/AonGraphPaper2.PNG"  height="300" alt="Letter A drawn of graph paper with corner coordinates" title="Letter A drawn of graph paper with corner coordinates"/><img src="/bjc-r/img/2-complexity/U2ImageVideoAddendum_img/AonGraphPaper3.PNG"  height="300" alt="Corner coordinates (-50, 20) (-10,120), ... (-30,20)" title="Corner coordinates (-50, 20) (-10,120), ... (-30,20)"/>
+                   <br />
+  Daarna noteerde ze de coördinaten van elke vertex, beginnend bij het pijltje en met de klok mee rond het figuur. Het eerste punt is bij (-50, 20), de tweede bij (-10, 120), enzovoort. Daarna bouwde ze deze lijst in Snap<em>!</em> op deze manier:<br />
+                    <img src="/bjc-r/img/3-lists/coordinate-list-for-A.png" alt="coordinate-list-for-A" title="coordinate-list-for-A"><br />
+                    Nu hebben ze een script nodig die die lijst gebruikt om de tekening te maken, op deze manier:<br />
+                    <img border="2" class="center" data-gifffer="/bjc-r/img/3-lists/drawA.gif" alt="sprite drawing letter A by going to each set of coordinates" title="sprite drawing letter A by going to each set of coordinates" />
+                </p>
+            </div>
+            <div><span>Robin:</span> Deze lijst van coördinaten, omlijnd een A, dus laten we hem A noemen.</div>
+            <div class="stagedir">
+                <p>Robin klikt op <code>Maak een variabele</code>, noemt hem <code>A</code>,  en bouwt <img  src="/bjc-r/img/3-lists/A.png" alt="set A to {{-50,20}, {-10,120}, {10,120}, {50,20}, {30,20}, {20,50}, {-20,50}, {-30,20}}" title="set A to {{-50,20}, {-10,120}, {10,120}, {50,20}, {30,20}, {20,50}, {-20,50}, {-30,20}}" />. </p>
+                <p>Dan, klikt ze op het <code>zet</code> blok om de code te runnen.</p>
+            </div>
+            <div>
+                <span>Alex:</span> Dus, voor elk van die 8 punten, willen we dat de sprite er naartoe beweegt. Hmmm... <img src="/bjc-r/img/2-complexity/go-to-x()-y().png" height="41" alt="go to x:() y:()" title="go to x:() y:()" />  gaat niet werken, want het moet inputs onderscheiden. We hebben een blok nodig dat <em>één</em> input aanneemt, een punt als <img src="/bjc-r/img/2-complexity/list(-50)(20).png" height="37" alt="list(-50)(20)" title="list(-50)(20)" />.
+				<!-- <img  src="/bjc-r/img/3-lists/A_foreach.png" alt="script with for each (item) of (A) {glide 1 secs to x:(blank) y:(blank)} then glide to (0, 0)" title="script with for each (item) of (A) {glide 1 secs to x:(blank) y:(blank)} then glide to (0, 0)" /> -->
+			</div>
+            <div><span>Robin:</span> Dus we maken een <em>nieuw </em>blok. Laten we die <code>ga naar punt</code>. Dat werkt zo: <img src="/bjc-r/img/2-complexity/go-to-point(list(-50)(20)).png" alt="go to point (list (-50) (20))" title="go to point (list (-50) (20))" />. We gebruiken  <img src="/bjc-r/img/2-complexity/go-to-x()-y().png" height="41" alt="go to x:() y:()" title="go to x:() y:()" /> of <img src="/bjc-r/img/2-complexity/glide(.5)secs-to-x()-y().png" height="41" alt="glide (.5) secs to x:() y:()" title="glide (.5) secs to x:() y:()" /> <em>binnen</em>, maar we zullen de input moeten verwerken, <img src="/bjc-r/img/2-complexity/list(-50)(20).png" height="37" alt="list(-50)(20)" title="list(-50)(20)" />, om <code>x:</code> en <code>y:</code> apart te voeden. Hmmm... </div>
+            <div><span>Yasmine:</span>  Oh! Ik weet het! Volgens mij kunnen we <img src="/bjc-r/img/2-complexity/item()of(list).png" height="35" alt="item()of(list)" title="item()of(list)"> gebruiken. Geef het een nummer als eerste input. Ik denk dat de <img class="inline" src="/bjc-r/img/3-lists/list_input_slot.png" alt="rectangle with two smaller orange rectangles inside" title="rectangle with two smaller orange rectangles inside" /> gewoon aangeeft dat het een lijst als tweede input verwacht.</div>
+            <div><span>Alex:</span> Ik vraag me af of we <em>ons</em> <code>ga naar punt</code> blok kunnen laten zien dat het een lijst als input verwacht....</div>
+        </div>
+
+        <p>Ja, <em>jij</em>kunt <em>jouw</em> blokken laten zien welk type data ze verwachten als input: een nummer, een lijst, of een ander type. Sommige talen <em>vereisen</em> dat het data type aangegeven moet zijn. In Snap<em>!</em> is dit een optie. Het is niet perse nodig, maar, net als dat je een kleur toewijst aan een blok, kan het een handige herinnering zijn van wat het blok nu eigenlijk doet en welk type input het verwacht. Je hebt al input ingangen gezien van verschillende vormen en soorten, die elk verschillende datatypen verwachten. </p>
+
+        <div class="forYouToDo" id="first">
+            <div class="sidenote">
+                Heb je in de video gezien dat je veel verschillende input typen kunt specificeren? (Tekst, nummers, Boolean, etc.)  De <strong>lijst</strong> input typen is gekozen omdat een <code>punt</code> een <em>lijst</em> is bestaande uit twee coördinaten.<br />
+                <img src="/bjc-r/img/2-complexity/U2ImageVideoAddendum_img/inputTypes.png"  height="150" alt="Input types, list type selected" title="Input types, list type selected"/>
+            </div>
+            <ol>
+                <!--<img class="imageRight" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> -->
+                <li><a class="run" href="/bjc-r/prog/2-complexity/U2L2-DrawShape.xml"><img class="inline" src="/bjc-r/img/icons/load-save.png" alt="Click here to load this file. Then save it to your Snap! account." title="Click here to load this file. Then save it to your Snap! account."></a><br />
+                Het beschikt over de lijst van punten, maar je moet hun <img src="/bjc-r/img/2-complexity/go-to-point-point.png" alt="go to point (point) block with list type input named point" title="go to point (point) block with list type input named point"> blok bouwen.</li>
+                <div class="narrower">
+                    <h4><strong>Specificeer je input type</strong></h4>
+                    Deze animatie laat zien hoe je het input typen van de lijst kunt specifieren. Andere input types worden op dezelfde manier gespecificeerd. <img class="inline" src="/bjc-r/img/3-lists/list_input_slot.png" alt="list input type: rectangle with two smaller orange rectangles inside" title="list input type: rectangle with two smaller orange rectangles inside"><br />
+                    <img data-gifffer="/bjc-r/img/2-complexity/U2ImageVideoAddendum_img/gotopointAnimation.gif" height="400" alt="List input type selection" title="List input type selection" /> <br />
+                    Nadat je het een titel hebt gegeven en de input hebt benoemd:
+                    <ul>
+                        <li>
+                            Klik op de rechter pijl van de input naam:<br />
+                            <img class="indent" src="/bjc-r/img/2-complexity/create-input-name-right_arrow.png" height="125" alt="create input name right arrow" title="create input name right arrow" />
+                        </li>
+                        <li>Kies het data type dat je wilt voor de input.</li>
+                        <li>Klik OK.</li>
+                    </ul>
+                    <!--<img data-gifffer="/bjc-r/img/3-lists/draw_shape_list_input.gif" alt="script with for each (item) of (A) {glide 1 secs to x:(blank) y:(blank)} then glide to (0, 0)" title="script with for each (item) of (A) {glide 1 secs to x:(blank) y:(blank)} then glide to (0, 0)" />-->
+                    <!--<div class="todo">ST-This video starts with an empty frame which doesn't look well and is too fast to see what is happenning, especially in the treatment of list input type.<p>I find the empty frame especially problematic. A few frames could hold still for a little longer. Perhaps Selim can fix? --MF, 5/17/17</p></div>-->
+                </div>
+                <li>Rond het bouwen van je <code>ga naar punt</code> blok en <strong>test</strong> je blok met een paar punten als input om er zeker van te zijn dat het doet wat jij wilt.</li>
+            </ol>
+        </div>
+
+        <div class="dialogue"> <a name="seta" class="anchor">&nbsp;</a>
+            <div><span> Alex:</span> Top! Nu kunnen we ons <code>ga naar punt</code> blok gebruiken voor elk punt in onze lijst.</div>
+            <div><span>Robin:</span> Ik weet zeker dat we <img src="/bjc-r/img/2-complexity/for-each-(item)-of().png" height="68" alt="for-each-(item)-of(){}" title="for-each-(item)-of(){}"> kunnen gebruiken. </div>
+            <div class="stagedir">
+                <p>Alex and Robin design this new script to automate the process of going to each point. </p>
+                <p><img src="/bjc-r/img/2-complexity/new-for-each-point-script.png"  alt="pen down;for each(item) of (A){go to point(item)}" title="pen down;for each(item) of (A){go to point(item)}"> </p>
+                <p>Dan proberen ze het uit.</p>
+            </div>
+            <div><span> Alex:</span> Yes! <code>voor elke</code> doet precies wat we willen. Maar we hebben een paar bugs die we moeten fixen.</div>
+
+        </div>
+
+        <div class="forYouToDo">
+            <ol start="3">
+                <!--<img class="imageRight" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> -->
+                <li>Bouw en test het script dat ze gebruikt hebben.</li>
+                <li>Fix de twee bugs die Alex vond.</li>
+                <li><div class="saveAs"><span class="text">"U2L2-DrawShape"</span><img src="/bjc-r/img/icons/save-this-as.png" alt="Save your work as U2L2-DrawShape" title="Save your work as U2L2-DrawShape" /></div></li>
+                <li>
+                    <strong>Denk en schrijf: </strong>
+                    <ul>
+                        <li> Voor welke reden zou je het eerste en laatste punt <em>niet</em> met elkaar willen verbinden?</li>
+                        <li> Voor welke reden zou je de pen naar beneden willen <em>enkel</em> wanneer de sprite elk punt raakt, maar nooit wanneer de sprite beweegt van het ene punt naar het andere?</li>
+                        <li> Voor welke reden zou je voorkeur geven aan <code>ga naar</code> in plaats van <code>glij</code>?</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
+            <ol type="A">
+                <li>
+                    Creëer drie nieuwe punten en een script dat het tekenen van de letter A afmaakt. Je moet een manier ontwerpen die binnen een lijst aangeeft dat alle punten nog niet met elkaar verbonden zijn.<br />
+                    <div class="sidenote">Kies de nieuwe coördinaten zelf.</div>
+                    <img class="indent" src="/bjc-r/img/2-complexity/complete-drawing-of-letter-a.png"  alt="complete-drawing-of-letter-A" title="complete-drawing-of-letter-A">
+                </li>
+                <!-- <li>The legs of the A aren't quite the same thickness all the way up. Find a way to fix the coordinates so that all the bars of the A are the same thickness throughout.</li>-->
+            </ol>
+        </div>
+
+<div class="AP-only">
+        <h3>Self-Check: <code>For Each</code></h3>
+        <div class="forYouToDo">
+			<ol start="7">
+                <li>Met deze vraag kun jij je kennis testen.
+                    <!-- Question 1 -->
+                    <div class="assessment-data" type="multiplechoice" identifier="FOR EACH positive and square over 4"
+                        hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri1" shuffle="false">
+                        <div class="prompt">
+
+                            <pre>inputList ← [3, -1, 2, 10, -5]
+
+FOR EACH item IN inputList
+{
+  IF ( (item &gt; 0)  AND  (item * item &gt; 4) )
+  {
+    DISPLAY item
+  }
+}
+</pre><br />
+                            Wat zal er worden weergegeven als het resultaat van de code hierboven?
+                        </div>
+                        <div class="choice" identifier="c1">
+                            <div class="text">9, 1, 4, 100, 25</div>
+                            <div class="feedback">
+                                These are not items from the <var>inputList</var>. What does the <em>conditional</em> in the procedure do?
+                            </div>
+                        </div>
+                        <div class="choice" identifier="c2">
+                            <div class="text">9, 100</div>
+                            <div class="feedback">
+                                These are not items from the <var>inputList</var>. What does the <em>conditional</em> in the procedure do?
+                            </div>
+                        </div>
+                        <div class="choice" identifier="c3">
+                            <div class="text">3, 2, 10</div>
+                            <div class="feedback">
+                                Is 2 * 2 &gt; 4 ?
+                            </div>
+                        </div>
+                        <div class="choice" identifier="c4">
+                            <div class="text">3, 10</div>
+                            <div class="feedback">
+                                Correct!
+                            </div>
+                        </div>
+                        <div class="responseDeclaration" identifier="ri1">
+                            <div class="correctResponse" identifier="c4"></div>
+                        </div>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="assessment-data" type="multiplechoice" identifier="Mystery Procedure"
+                        hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri2" shuffle="true">
+                        <div class="prompt">
+                            <pre>PROCEDURE Mystery (numberList, targetNumber)
+{
+  counter ← 0
+  FOR EACH number IN numberList
+  {
+    IF (number &gt; targetNumber)
+    {
+      counter ← counter + 1
+    }
+  }
+  RETURN (counter)
+}
+myMathGrades ← [100, 80, 90, 80, 60, 100, 50, 100]
+Mystery(myMathGrades, 60)
+</pre><br /> Wat wordt er teruggegeven als de code hierboven wordt gerund?
+                        </div>
+                        <div class="choice" identifier="c1">
+                            <div class="text">[100, 80, 90, 80, 100, 100]</div>
+                            <div class="feedback">
+                                What <em>kind</em> of value does the procedure return?
+                            </div>
+                        </div>
+                        <div class="choice" identifier="c2">
+                            <div class="text">7</div>
+                            <div class="feedback">
+                                Is 60 &gt; 60 ?
+                            </div>
+                        </div>
+                        <div class="choice" identifier="c3">
+                            <div class="text">6</div>
+                            <div class="feedback">
+                                Correct!
+                            </div>
+                        </div>
+                        <div class="choice" identifier="c4">
+                            <div class="text">60</div>
+                            <div class="feedback">
+                                What is the procedure doing?
+                            </div>
+                        </div>
+                        <div class="responseDeclaration" identifier="ri2">
+                            <div class="correctResponse" identifier="c3"></div>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </div>
+</div>
+
+	</body>
+</html>

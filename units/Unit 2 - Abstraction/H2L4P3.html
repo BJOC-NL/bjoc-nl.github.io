@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+		<script type="text/javascript" src="/bjc-r/utilities/gifffer.min.js"></script>
+        <script type="text/javascript">window.onload = function() {Gifffer();}</script>
+        <link rel="stylesheet" type="text/css" href="/bjc-r/css/bjc-gifffer.css">
+        <title>Hoofdstuk 2 Les 4: Omgaan met complexiteit, Pagina 3</title>
+    </head>
+
+    <body>
+    <div class="todo">
+        ST EK List:
+       <br />
+       2.2.1A The process of developing an abstraction involves removing detail and generalizing functionality. <br />
+       2.2.1B An abstraction extracts common features from specific examples in order to generalize concepts. <br />
+       2.2.1C An abstraction generalizes functionality with input parameters that allow software reuse.<br />
+       2.2.2B Being aware of and using multiple levels of abstraction in developing programs helps to more effectively apply available resources and tools to solve problems.<br />
+       5.1.2B Developing correct program components and then combining them helps in creating correct programs.<br />
+       5.3.1E Parameterization can generalize a specific solution.<br />
+       5.3.1F Parameters generalize a solution by allowing a function to be used instead of duplicated code.<br />
+       5.3.1G Parameters provide different values as input to procedures when they are called in a program. <br />
+       5.3.1L Using lists and procedures as abstractions in programming can result in programs that are easier to develop and maintain.<br />
+       5.4.1C Meaningful names for variables and procedures help people better understand programs.
+       </div>
+        <h2>Brick Wall</h2>
+        <div class="todo">
+            <h3>Ruthless Suggestions from Al</h3>
+            <ul>
+                <li>We can introduce even? here. That means fixing the “Debugging dependencies” orange bit.</li>
+                <ul><li>We used to, but now they see it sooner so it wouldn't make sense to see it here again. Can you say more? I do think that orange section should include a link to <a href="/bjc-r/cur/programming/2-complexity/3-predicates/1-adding-questions.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 2 Lab 3 Page 1: What's a Predicate?">Unit 2 Lab 3 Page 1: What's a Predicate?</a> though.  --MF, 5/16/18</li></ul>
+            </ul>
+        </div>
+                <!--<div class="todo">Please replace all the camel code with multi-word names with spaces. --bh</div>-->
+
+        <div class="learn">
+        	<!--<div class="sidenote">Designing a program to draw a brick wall (which you might later use as a stage background) is good practice in <em>analyzing structure</em>.</div>-->
+            <img class="imageRight" src="/bjc-r/img/2-complexity/humpty-dumpty-tenniel.png" alt="Humpty Dumpty on brick wall" title="Humpty Dumpty on brick wall">
+            <p><strong>In this project,</strong> you will use abstraction to draw a brick wall<!-- by first building  <img src="/bjc-r/img/2-complexity/U2ImageVideoAddendum_img/drawBrick.png" alt="draw brick length:() width:() block" title="draw brick length:() width:() block"/>, then using it to write blocks for drawing different rows, and ultimately creating <img src="/bjc-r/img/2-complexity/U2ImageVideoAddendum_img/draw-brick-wall-7.png" alt="draw a Brick Wall with (7) Rows block" title="draw a Brick Wall with (7) Rows block" />-->.</p>
+			<img border="0" class="indent" title="Sample image of brick wall" alt="Sample image of brick wall" src="/bjc-r/img/abstraction/new-brickwall/wall.png" />
+        </div>
+
+
+        <div class="takeNote">
+            <h4><strong>Abstraction</strong></h4>
+            <p>Any good programming language might have many tools for drawing and moving, but it wouldn't make sense to have special tools for drawing bricks because most programs don't involve bricks. That's the sort of tool you make yourself when you need it.</p>
+            <p>Creating a special <img class="nopadtb" src="/bjc-r/img/2-complexity/U2ImageVideoAddendum_img/drawBrick.png" alt="draw brick, length:() width:()" title="draw brick, length:() width:()"/> block lets you use procedure names related to the problem you are solving (like <code>draw brick</code>), rather than the general-purpose procedures  (like <code>move</code>) that the computer uses for all kinds of tasks. <!--The process of moving from what the programming language gives you to a natural language (one that humans speak) is a key part of good abstraction.--></p>
+		</div>
+
+		<h3>Drawing One Brick</h3>
+        <p>
+            A picture of a brick is just a rectangle with a brick red color. However, there's no <code>draw rectangle</code> block in <span class="snap">snap</span>. One way to draw one is by thinking of a rectangle as a very thick line. Here's the idea:<br />
+            <img class="indent" src="/bjc-r/img/2-complexity/U2ImageVideoAddendum_img/simpleBrickCode.png" alt="draw brick, length:(length) width:(width){set pen size to(width); move(length) steps}" title="draw brick, length:(length) width:(width){set pen size to(width); move(length) steps}"/>
+        </p>
+        <div class="forYouToDo" id="first">
+				<div class="sidenoteBig">
+                    <p>The <img src="/bjc-r/img/2-complexity/U2ImageVideoAddendum_img/setFlat.png"  alt="set flat line ends to &lt; &gt;" title="set flat line ends to &lt; &gt;"> block isn't built into Snap<em>!</em>. In projects without it, you can set the "Flat line ends" in the <img src="/bjc-r/img/sys/settings.png" alt="Settings" title="Settings" /> menu.</p>
+                    <p>Ordinarily, Snap<em>!</em> draws thick lines with rounded ends: <img class="nopadtb" src="/bjc-r/img/2-complexity/U2ImageVideoAddendum_img/round-ends.png" alt="line with round ends" title="line with round ends">.  That's often the best choice, and you can see why below. But for bricks, we want flat line ends: <img class="nopadtb" src="/bjc-r/img/2-complexity/U2ImageVideoAddendum_img/flat-ends.png" alt="flat line ends" title="flat line ends">.</p>
+                    <p class="center"><img src="/bjc-r/img/2-complexity/flat-line-ends-why.jpg" alt="Square with flat line ends versus square with round line ends" title="Square with flat line ends versus square with round line ends" /><br /><strong>flat</strong> vs. <strong>rounded</strong> line ends</p>
+                </div>
+        	<ol>
+                <li><a class="run" href="/bjc-r/prog/2-complexity/U2L4-brickwall.xml"><img class="inline" src="/bjc-r/img/icons/load-save.png" width="550" alt="Click here to load this file. Then save it to your Snap! account." title="Click here to load this file. Then save it to your Snap! account."></a><br />It includes the complete <code>draw brick</code> block shown below. Read the code; then try it out.<br />
+                    <img src="/bjc-r/img/2-complexity/U2ImageVideoAddendum_img/drawBrickCode.png"  alt="draw brick, length:(length#) width:(width#){set pen color to (red); set flat line ends to (true); set pen size to (width); pen down; move(length) steps; pen up}" title="draw brick, length:(length#) width:(width#){set pen color to (red); set flat line ends to (true); set pen size to (width); pen down; move(length) steps; pen up}"/>
+				</li>
+            </ol>
+        </div>
+
+        <h3>Using Problem Decomposition</h3>
+		<p>
+        	You'd like the "top level" block to be something like this:<br />
+			<img class="indent" src="/bjc-r/img/2-complexity/U2ImageVideoAddendum_img/draw-brick-wall-7.png" alt="draw Brick Wall with (7) rows" title="draw Brick Wall with (7) rows"/><br />
+            Getting there involves <strong>problem decomposition</strong>: breaking the problem into smaller pieces.
+        </p>
+		<p>
+        	There are two kinds of rows, so we make blocks that specialize in each:
+            <ul>
+                <li><strong>Row A</strong>: <img class="noshadow" border="0" title="Row A" alt="Row A" src="/bjc-r/img/abstraction/new-brickwall/row-a.png" /></li>
+                <li><strong>Row B</strong>: <img class="noshadow" border="0" title="Row B" alt="Row B" src="/bjc-r/img/abstraction/new-brickwall/row-b.png" /></li>
+            </ul>
+        </p>
+        <div class="forYouToDo" id="second">
+        	<ol start="2">
+            	<li>Use <code>draw brick</code> to make blocks <img src="/bjc-r/img/abstraction/new-brickwall/rowa-block.png" alt="block rowA" title="block rowA"/> and <img src="/bjc-r/img/abstraction/new-brickwall/rowb-block.png" alt="block rowB" title="block rowB"/>.</li>
+            	<!--<li>Think about what helper blocks besides <img src="/bjc-r/img/abstraction/new-brickwall/draw-brick.png" alt="Draw Brick" /> you might want.</li>-->
+
+        <!--<div class="takeNote">
+          <p><strong>Too much abstraction? </strong>It's possible to go overboard on abstraction and build so many blocks that your program is just as cluttered as it would be without the special blocks. </p>
+          <p>But it can also be useful to make a special block even when its definition is just one built-in block. For example, to draw the mortar (the cement between bricks, shown  as white space), you can just use <img src="/bjc-r/img/abstraction/new-brickwall/move4.png" alt="Move 4 Steps">, but it might make sense to define a <code>draw mortar</code> block. </p>
+          <p>Why? You might later decide that 4 steps is the wrong thickness for mortar, and you'd rather have 5. Or you might want the mortar to be  cement-colored, slightly gray. And your complete project might have <img src="/bjc-r/img/abstraction/new-brickwall/move4.png" alt="Move 4 Steps"> blocks that <em>aren't</em> about mortar. With many <code>move</code> blocks scattered through your program, you would have to find and change each one, and keep putting in <code>set pen color</code> blocks. With a <code>draw mortar</code> block, you can just change its definition, and all the mortar in your picture will be changed.</p>
+        </div>-->
+            	<li>
+                    <!--Mortar is not a word we need studetns to learn. Using "gap" instead. --MF <div class="sidenote">Mortar is a kind of cement that bricklayers use to hold the bricks together.</div>-->
+                	The two kinds of rows should be exactly the same length.  Your first try at drawing Row B is probably a little too long. <strong>Debug it.</strong>
+                    <ul>
+                    	<li>Should Row B have different-size bricks, different-size gaps, or just different-size bricks on the end?</li>
+                        <li>If you're not sure, try all the possibilities and see which looks right in the finished wall.</li>
+                        <li>Or think "What would <em>make the most sense</em> in a <em>real</em> brick wall?"</li>
+
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <p>Once you have rows A and B the same length, you are ready to write the <img class="nopadtb" src="/bjc-r/img/2-complexity/U2ImageVideoAddendum_img/draw-brick-wall-7.png" alt="draw Brick Wall with (7) rows" title="draw Brick Wall with (7) rows"/> block. </p>
+
+        <div class="forYouToDo">
+			<ol start="4">
+                <li>
+                    Import your <code>even?</code> block and use it to write the <img class="nopadtb" src="/bjc-r/img/2-complexity/U2ImageVideoAddendum_img/draw-brick-wall-7.png" alt="draw Brick Wall with (7) rows" title="draw Brick Wall with (7) rows"/> block. You may wish to revisit <a href="/bjc-r/cur/programming/2-complexity/1-variables-games/4-importing-exporting.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="Importing Greet Player into Another Program">Unit 2 Lab 1 Page 4: Importing Greet Player into Another Program</a> to review importing of blocks and <a href="/bjc-r/cur/programming/2-complexity/3-predicates/1-adding-questions.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="What's a Predicate?"> Unit 2 Lab 3 Page 1: What's a Predicate?</a> for the <code>even?</code>block. Read the Debugging Dependencies section below and <strong>test</strong> your new block to make sure it works properly.
+                    <div class="takeNote">
+                        <h4><strong>Debugging Dependencies</strong></h4>
+                            <img class="imageRight" src="/bjc-r/img/2-complexity/even-obsolete.png" alt="even? (number#){report(Obsolete!)}" title="even? (number#){report(Obsolete!)}" />
+                        <p>You created your <code>even?</code> block using another custom block, <code>divisible by?</code>. You must export <em>both</em> blocks in order for <code>even?</code> to work properly when you import it into your Brick Wall project.</p>
+                        <p>
+                            If you ever see this red <code>Obsolete!</code> block in code you have imported, it means that a required block was not exported. You'll want to go back to the original project and export again being sure to select all of the blocks needed by your custom blocks.<br />
+                        </p>
+                    </div>
+                </li>
+                <img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />
+    		</ol>
+		</div>
+
+
+        <div class="ifTime">
+			<ol start="5">
+                <li>Use your brick wall in another project by <em>exporting</em> and <em>importing</em> your brick wall blocks.  You may wish to review <a href="/bjc-r/cur/programming/2-complexity/1-variables-games/4-importing-exporting.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="Importing Greet Player into Another Program"> Unit 2 Lab 1 Page 4: Importing Greet Player into Another Program</a>.</li>
+          </ol>
+        </div>
+
+
+        <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
+            <ol type="A">
+                <li>
+                	Add more inputs to <code>draw Brick Wall</code> (and as needed to <code>row A</code> and <code>row B</code>) for:<br />
+        			<ol style="list-style:lower-roman;">
+                    	<li>Number of <var>bricks per row</var></li>
+				        <li><var>length</var> and <var>width</var> of a brick</li>
+				        <li>Gap <var>thickness</var></li>
+                    </ol>
+					<img class="indent" src="/bjc-r/img/2-complexity/U2ImageVideoAddendum_img/drawBrickWallwithManyInputs.png"  height="60" alt="draw a Brick Wall with (8) Rows with Bricks per Row: (7) of Brick Length: (40) Width: (20) Gap Thickness: (5)" title="draw a Brick Wall with (8) Rows with Bricks per Row: (7) of Brick Length: (40) Width: (20) Gap Thickness: (5)"/><br />
+                    <div class="endnote">Add these one at a time, not all at once!  When you modify the length of a brick, that should also change the length of a row B end brick. When you modify the gap thickness, that should also change the distance between the rows.</div>
+                </li>
+            </ol>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+		<script type="text/javascript" src="/bjc-r/utilities/gifffer.min.js"></script>
+        <script type="text/javascript">window.onload = function() {Gifffer();}</script>
+        <link rel="stylesheet" type="text/css" href="/bjc-r/css/bjc-gifffer.css">
+	<title>Hoofdstuk 1 Les 3: Moderne kunst met veelhoeken, Pagina 3</title>
+	</head>
+    
+	<body>
+    <div class="todo">
+        ST EK List:<br />
+        
+        2.2.1 Develop an abstraction when writing a program or creating other computational artifacts. [P2]<br />
+        2.2.1A The process of developing an abstraction involves removing detail and generalizing functionality.<br />
+        2.2.1B An abstraction extracts common features from specific examples in order to generalize concepts. <br />
+        2.2.1C An abstraction generalizes functionality with input parameters that allow software reuse.<br />
+        5.3.1D Procedures have names and may have parameters and return values.<br />
+        5.4.1G Examples of intended behavior on specific inputs help people understand what a program is supposed to do. <br />
+        
+        MF: 1.2.4 Collaborate in the creation of computational artifacts. [P6]<br />
+		
+        5.1.2D Program documentation helps programmers develop and maintain correct programs to efficiently solve problems. (with documentation)	<br />
+		5.1.2E Documentation about program components, such as segments and procedures, helps in developing and maintaining programs. (with documentation)<br />
+		5.1.2F Documentation helps in developing and maintaining programs when working individually or in collaborative programming environments. (with documentation)<br />
+        
+        </div>
+        <h2>Blokken met invoer</h2>
+        <div class="todo">
+            <h3>Ruthless Suggestions from Al</h3>
+            <ul>
+                <li>In # 2, a: “Type the block name and the label for your variable”. As far as I can see, this is the first use of the word “variable.” Can we just use “input?”</li>
+                <ul>
+                  <li>Good catch! This should be carefully resolved. --MF, 5/16/18</li></ul>
+                <li>In # 2, a: The two bullets below the figs can be [← One way to save time is to texture the emphases; a good way to do this is to demote matters of convention.] demoted to sidenotes.</li>
+                <ul><li>Agreed, though I'd prefer one sidenote (singular). --MF, 5/16/18</li></ul>
+                <li>Before we said that a TiF is hard. We should discuss what “hard” means. But this one seems like a ITT to me.</li>
+                <ul><li>Again, this is on our list for 6/5/18 discussion. --MF, 5/16/18</li></ul>
+            </ul>
+        </div>
+        <div class="learn">
+            <img class="indent" src="/bjc-r/img/1-introduction/Blockswith-Inputs_img/branchesCycle.gif"  height="200" alt="Branch Cycle Animation" title="Branch Cycle Animation"/>
+            <p><strong>Op deze pagina,</strong> ga je verschillende plaatjes maken (zoals hierboven) met een enkel blok met een <em>invoerveld</em>: <img src="/bjc-r/img/1-introduction/pinwheel-block.png" height="40" alt="pinwheel, branches:()" title="pinwheel, branches:()">. Met invoervelden kun je een blok heel verschillende dingen laten doen.</p>
+        </div>
+
+        <div class="forYouToDo" id="first">  
+            <ol>
+                <li> 
+                    <a href="/bjc-r/prog/1-introduction/U1L3-Pinwheel.xml" class="run"><img class="inline" src="/bjc-r/img/icons/load-save.png" alt="Klik hier om dit bestand te openen. Bewaar het vervolgens in je Snap! account." title="Klik hier om dit bestand te openen. Bewaar het vervolgens in je Snap! account."></a><br /> Maak 5 kopieën van dit script en pas ze zo aan dat de molentjes 3, 4, 5, 6, and 12 wieken krijgen.<br />
+                    <img src="/bjc-r/img/1-introduction/Blockswith-Inputs_img/3.png"  height="120" alt="pinwheel with 3 branches" title="pinwheel with 3 branches" />
+                    <img src="/bjc-r/img/1-introduction/Blockswith-Inputs_img/4.png"  height="120" alt="pinwheel with 4 branches" title="pinwheel with 4 branches" />
+                    <img src="/bjc-r/img/1-introduction/Blockswith-Inputs_img/5.png"  height="120" alt="pinwheel with 5 branches" title="pinwheel with 5 branches" />
+                    <img src="/bjc-r/img/1-introduction/Blockswith-Inputs_img/6.png"  height="120" alt="pinwheel with 6 branches" title="pinwheel with 6 branches" />
+                    <img src="/bjc-r/img/1-introduction/Blockswith-Inputs_img/12.png" height="120" alt="pinwheel with 12 branches" title="pinwheel with 12 branches" />
+                </li>
+            </ol>
+        </div>
+
+		<p>De scripts zijn eigenlijk allemaal hetzelfde: alleen de <em>invoerwaarde</em> is anders. In plaats van veel verschillende scripts, kun je een algemener script maken die ze allemaal kan tekenen. Je <code>molentje</code> heeft een invoerveld nodig  om aan te geven hoeveel wieken je wil, <img src="/bjc-r/img/1-introduction/pinwheel-block.png" height="40" alt="pinwheel, branches:()" title="pinwheel, branches:()"> net zo als het <code>go naar</code> blok invoervelden heeft voor x en y waarden <img src="/bjc-r/img/1-introduction/go-to-empty-inputs.png" height="40" alt="go to x:() y:()" title="go to x:() y:()">.</p>
+        <img class="inline" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Draai de rollen om" title="Draai de rollen om" /> 
+
+		<div class="takeNote">
+            <h4><strong>Debugging Tip: Opmerkingen bij je code</strong></h4>
+            <div class="todo">
+                <h4>From Brian:</h4>
+                <p>Oh, about the orange box on 1.3.3, I think the comment on the hat block is okay, but the comment on the turn is exactly the sort of thing I wouldn't do.  In fact I might make a point of saying that when you're /teaching/ someone, you (we) put in comments that you wouldn't use if you were just programming for yourself.</p>
+                <p>But the hat block comment in the movie isn't very good documentation.  It should say "Draws a REGULAR five-sided polygon, with SIDE LENGTH set by the input."  (Not really capitalized; I just did that to emphasize to you what's missing.)</p>
+                <p>Really it's hard to give an example of useful commenting that doesn't look stupid unless you have a big project.  Then, for example, when some global variable is used without being set, you might want to attach a comment "FOO is set in procedure BAR that's called in the initialization."</p>
+            </div>
+		
+            <p>Door opmerkingen bij je code toe te voegen herinner je je makkelijker hoe je code werkt, het helpt anderen je code te begrijpen. En het helpt je bugs te voorkomen doordat je je code ermee verduidelijkt. Dit filmpje laat zien hoe je opmerkingen in Snap<em>!</em> toevoegt met een rechts-klik (of control-klik) op het scripts werkvlak, waarna je kunt kiezen voor " opmerking toevoegen".</p>
+            <p>Merk op dat een opmerking die je toevoegt aan een hoed blok ook wordt gebruikt voor de helptekst van zo'n zelfgemaakt blok.</p>
+            <img class="indent" data-gifffer="/bjc-r/img/2-complexity/Debugging/commenting.gif"  height="400" alt="Animation on how to  add a comment to a block and how a comment added to a hat block becomes that custom block's help message." title="Animation on how to add a comment to a block and how a comment added to a hat block becomes that custom block's help message."/>
+        </div>
+        
+		<div class="forYouToDo">
+            <ol start="2">
+                <li> 
+                    Maak een <code>molentje</code> blok met een invoerveld voor het aantal <var>wieken</var>. De uitleg staat hieronder en na de uitleg zie je ook een korte video die laat zien hoe je het doet. 
+                    <div class="narrower">
+                        <h4><strong>Maak een blok met invoerveld</strong></h4>
+                        <ol type="a">
+                            <li>
+                                <strong>Typ de naam van het blok en de naam van de invoer  </strong> in het dialoogvenster van "Maak een blok…", en klik OK. In dit project, typ <code>molentje, wieken:</code><br />
+                                
+                                <img class="indent" src="/bjc-r/img/1-introduction/Blockswith-Inputs_img/category.png" height="300" alt="Make a block" title="Make a block"/>
+                                <ul>
+                                    <li>Dit blok gaat over het <em>bewegen</em> van je sprite, je kunt kiezen voor het blauwe Bewegen palet. Of kies niets dan wordt je blok grijs.</li>
+                                    <li>Het gebruik van komma's en dubbele punten is niet verplicht; ze staan hier om het duidelijker te maken.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Klik op + (plus teken) achter de naam van je invoer, typ de naam van je invoer</strong>, en klik OK om een variabele invoer aan te amken. Voor <code>molentje</code>, klik de + na "wieken:" en typ <var>aantal wieken</var> als de naam van je invoer variabele.<br />
+                                <img class="indent" src="/bjc-r/img/1-introduction/Blockswith-Inputs_img/plusSign.png" height="75" alt="Plus sign" title="Plus sign" />
+                                <img class="indent" src="/bjc-r/img/1-introduction/Blockswith-Inputs_img/inputName.png" height="175" alt="Creat input name" title="Create input name" />
+                            </li>
+                            <li>
+                                <strong>Sleep de blokken die je nodig hebt, en gebruik je nieuwe invoerveld.</strong>
+                                <ul>
+                                    <li>Hier kun je een van je eerdere molentjes scripts naar het venster te slepen waar je je blok maakt, en klik het vast aan je  <code>molentje</code> blok.</li>
+                                    <div class="vocabBig">
+                                        <p>We gebruiken het woord "invoer" voor twee verschillende maar verwante ideeën:
+                                            <ol>
+                                                <li>De <em>naam</em> van de invoer zoals <var>aantal wieken</var>, die je bij de aanmaak van je blok maakt. Dit heet een  <strong>parameter</strong> (of formele parameter).</li>
+                                                <li>De <em>waarde</em> van de invoer zoals  6 voor een zeshoekig molentje, die bij ieder gebruik van het blok gevarieerd kan worden. Dit noemen we een <em>argument</em> (of actueel argument).</li>
+                                            </ol>
+                                        </p>
+                                        
+                                        <p>De informatica eindtermen gebruiken het woord parameter overigens in beide betekenissen!</p>
+                                    </div>
+                                    <li>Vervolgens, sleep het nieuwe invoerveld <var>aantal wieken</var> om de getallen te vervangen zodat het script meer algemeen gebruikt kan worden.</li>
+                                </ul>
+                                <img class="indent" src="/bjc-r/img/1-introduction/Blockswith-Inputs_img/blockwith21.png" alt="pinwheel, branches:(number of branches){repeat(21){move(100) steps; wait(0.1) secs; move(-70) steps; wait(0.1) secs; turn clockwise(360/21) degrees}}" title="pinwheel, branches:(number of branches){repeat(21){move(100) steps; wait(0.1) secs; move(-70) steps; wait(0.1) secs; turn clockwise(360/21) degrees}}" />
+                                <img class="indent" src="/bjc-r/img/1-introduction/Blockswith-Inputs_img/numberofbranches.png" alt="pinwheel, branches:(number of branches){repeat(number of branches){move(100) steps; wait(0.1) secs; move(-70) steps; wait(0.1) secs; turn clockwise(360/number of branches) degrees}}" title="pinwheel, branches:(number of branches){repeat(number of branches){move(100) steps; wait(0.1) secs; move(-70) steps; wait(0.1) secs; turn clockwise(360/number of branches) degrees}}" />
+                            </li>
+                        </ol>
+                        Het hele proces wordt nog eens getoond in de video hieronder.<br />
+                        <img class="indent" data-gifffer="/bjc-r/img/1-introduction/Blockswith-Inputs_img/blocks-with-inputs.gif" height="500" alt="Animation summarizing how to create a block with input." title="Animation summarizing how to create a block with input."/>
+					</div>
+                </li>
+                <li>Voeg opmerkingen aan de code toe zoals je boven leerde bij de Debugging Tip.</li>
+                <li><img class="inline" src="/bjc-r/img/icons/save-mini.png" alt="Save Your Work" title="Save Your Work" />Bewaar je werk als H1L3-Molentje.</li>
+            </ol>
+        </div>
+
+
+        
+            
+            
+        <div class="takeItFurther">
+            <ol type="A">
+                <li>
+                    Deze plaatjes zijn gemaakt met het <code>molentje</code> blok en <code>maak penkleur</code>. Maak je eigen kunst.<br />
+                    <img src="/bjc-r/img/1-introduction/Blockswith-Inputs_img/Wreath3.png" height="200" alt="wreath of rainbow colored pinwheels" title="wreath of rainbow colored pinwheels"/>
+                    <img src="/bjc-r/img/1-introduction/Blockswith-Inputs_img/Wreath1.png" height="200" alt="wreath of rainbow colored pinwheels" title="wreath of rainbow colored pinwheels"/>
+                    <img src="/bjc-r/img/1-introduction/Blockswith-Inputs_img/Wreath2.png" height="200" alt="wreath of rainbow colored pinwheels" title="wreath of rainbow colored pinwheels"/>
+                </li>
+                <li>Maak de animatie zoals boven aan deze pagina te zien is.</li>
+            </ol>
+        </div>
+
+
+	</body>
+</html>
+

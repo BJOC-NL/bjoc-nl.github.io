@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+        <title>Hoofdstuk 2 Les 4: Omgaan met complexiteit, Pagina 1</title>
+    </head>
+
+    <body>
+    <div class="todo">
+        ST EK List:
+       <br />
+       1.2.2A Computing tools and techniques can enhance the process of finding a solution to a problem. <br />
+       4.1.1H Different algorithms can be developed to solve the same problem. <br />
+       4.1.1I Developing a new algorithm to solve a problem can yield insight into the problem.<br />
+       </div>
+		<h2>Robot in a Maze</h2>
+
+
+
+		<div class="learn">
+            <strong>In dit project,</strong> ga je een robot programmeren om door verschillende doolhoven heen te komen. <br />
+
+            <img class="indent" src="/bjc-r/img/2-complexity/Robot_img/RobotinaMazeTitle2.png" height="250"  alt="Robot in A Simple Maze" title="Robot in A Simple Maze"/>
+
+
+        </div>
+
+
+        <p>
+        	Er zijn 5 doolhoven voor je gemaakt. De code die je gaat schrijven om te ontsnappen uit deze doolhoven moet zo <em>simpel</em>, <em>beknopt</em>, en <em>elegant</em> mogelijk zijn. </p>
+            <p>Bijvoorbeeld, deze oplossing zou werken voor doolhof 1:<br />
+            <img class="indent" src="/bjc-r/img/2-complexity/Robot_img/1c_escapeMaze1Code1.png" width="173"  alt="Escape Maze 1{Rotate Left; repeat(7){Move Forward}; Rotate Right;repeat(7){Move Forward};}" title="Escape Maze 1{Rotate Left; repeat(7){Move Forward}; Rotate Right;repeat(7){Move Forward};}"/>
+            <img src="/bjc-r/img/2-complexity/Robot_img/1b_Maze1Path.png" height="200" alt="Maze 1 path" title="Maze 1 path"/>
+        </p>
+        <p>
+       	  Maar een <code>herhaal</code> blok nesten binnenin een andere, zorgt ervoor dat de code beknopter wordt en, zoals de meeste programmeurs zouden vinden, ook eleganter:<br />
+            <div class="sidenote">Dit werkt omdat wanneer de robot zijn bestemming bereikt, het ons niet uitmaakt naar welke kant hij kijkt.</div>
+            <img class="indent" src="/bjc-r/img/2-complexity/Robot_img/1c_escapeMaze1Code2.png" alt="Rotate Left; repeat(2){repeat(7){Move Forward}; Rotate Right}" title="Rotate Left; repeat(2){repeat(7){Move Forward}; Rotate Right}"/>
+		</p>
+
+
+    	<div class="forYouToDo" id="first">
+            <div class="sidenote">
+            	<p>In pseudocode zou je dit kunnen weergeven met MOVE_FORWARD(), ROTATE_RIGHT() and ROTATE_LEFT(). </p>
+            </div>
+            <ol>
+                <li>
+				<a class="run" href="/bjc-r/prog/2-complexity/U2L4-RobotMaze.xml" target="_blank"><img class="inline" src="/bjc-r/img/icons/load-save.png" alt="Click here to load this file. Then save it to your Snap! account." title="Click here to load this file. Then save it to your Snap! account."></a><br />Bestudeer beide de <code>robot</code> en de <code>bord</code> sprites. Schrijf voor elk gegeven doolhoven, de <em>kortste</em> en <em>meest elegante</em> code om de robot te helpen ontsnappen. Gebruik enkel deze 4 speciale Beweging blokken (naast welke Controle blokken dan ook die je nodig hebt):<br /><br />
+
+                    <img class="indent" src="/bjc-r/img/2-complexity/Robot_img/0_NewMotionBlocks.png" width="500"  alt="Go To Start, Move Forward, Rotate Right, Rotate Left" title="Go To Start, Move Forward, Rotate Right, Rotate Left"/> <br /><br /><br />
+                    <img src="/bjc-r/img/2-complexity/Robot_img/1b_Maze1Path.png"  height="150" alt="Maze 1 path" title="Maze 1 path"/>
+                    <img src="/bjc-r/img/2-complexity/Robot_img/2b_Maze2Path.png"  height="150" alt="Maze 2 path" title="Maze 2 path"/>
+                    <img  src="/bjc-r/img/2-complexity/Robot_img/3b_Maze3Path.png" height="150" alt="Maze 3 path" title="Maze 3 path"/>
+                    <img src="/bjc-r/img/2-complexity/Robot_img/4b_Maze4Path.png"  height="150" alt="Maze 4 path" title="Maze 4 path"/>
+                    <img src="/bjc-r/img/2-complexity/Robot_img/5b_Maze5Path.png"  height="150" alt="Maze 5 path" title="Maze 5 path"/>
+
+                </li>
+
+                <li>
+                    <strong>Analyseer de code.</strong> Op blokjes papier, teken het doolhof waarvoor deze code bedoelt was. Gebruik Snap<em>!</em> niet.<br />
+
+                    <img class="indent" src="/bjc-r/img/2-complexity/Robot_img/EscapeCodeFindMaze1.png"  height="400" alt="Escape Your Maze{repeat(2){repeat(7){Move Forward};Rotate Left; Move Forward; Move Forward; Rotate Left; repeat(7){Move Forward};Rotate Right; Move Forward; Move Forward; Rotate Right}}" title="Escape Your Maze{repeat(2){repeat(7){Move Forward};Rotate Left; Move Forward; Move Forward; Rotate Left; repeat(7){Move Forward};Rotate Right; Move Forward; Move Forward; Rotate Right}}" />
+                </li>
+                <li>
+                    <img class="inline" src="/bjc-r/img/icons/talk-with-another-pair.png" alt="Talk with Another Pair" title="Talk with Another Pair" />
+                	Deel je tekening met andere studenten, en bespreek hoe je dit gemaakt hebt.<br />
+                </li>
+                <img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />
+            </ol>
+        </div>
+
+        <h3>Zelf check: Robot</h3>
+    	<div class="forYouToDo">
+        	<ol start="4">
+
+            	<li>Deze vraag is vergelijkbaar met degene die je zult zien op het eindexamen.
+
+                    <!-- Question 1 -->
+                    <div class="assessment-data" type="multiplechoice" identifier="Robot in a Maze"
+                        hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri1" shuffle="true">
+                        <div class="prompt">
+                            De robot in de afbeelding hieronder kan naar binnen een wit vierkant bewegen en moet eindigen bij het grijze vierkant. Het mag niet naar binnen het zwart gedeelte bewegen.<br />
+                            <img class="indent" src="/bjc-r/img/2-complexity/robot-quiz-image.png" alt="image of robot in a maze" title="image of robot in a maze" /><br />
+                            Hieronder staat een procedure <code>DraaiEnGaan</code>:<br />
+                            <pre>PROCEDURE TurnAndMove (numberOfTurns, numberOfMoves)
+  {
+    REPEAT numberOfTurns TIMES
+    {
+      ROTATE_LEFT ()
+    }
+    REPEAT numberOfMoves TIMES
+    {
+      MOVE_FORWARD ()
+    }
+  }</pre><br />
+  							Welke van de onderstaande code zal de robot in het grijze vak doen eindigen?
+
+                        </div>
+                        <div class="choice" identifier="c1">
+                            <div class="text">
+                            	<pre>TurnAndMove(1,3)
+TurnAndMove(1,5)
+TurnAndMove(1,2)</pre>
+                            </div>
+                            <div class="feedback">
+                                Do you ever need more than one left turn?
+                            </div>
+                        </div>
+                        <div class="choice" identifier="c2">
+                            <div class="text">
+                            	<pre>TurnAndMove(1,3)
+TurnAndMove(3,5)
+TurnAndMove(1,2)</pre>
+                            </div>
+                            <div class="feedback">
+                                Correct!
+                            </div>
+                        </div>
+                        <div class="choice" identifier="c3">
+                            <div class="text">
+                            	<pre>TurnAndMove(3,1)
+TurnAndMove(5,3)
+TurnAndMove(2,1)</pre>
+                            </div>
+                            <div class="feedback">
+                                Wekle input komt eerst in de procedure definitie?
+                            </div>
+                        </div>
+                        <div class="choice" identifier="c4">
+                            <div class="text">
+                            	<pre>TurnAndMove(1,4)
+TurnAndMove(3,6)
+TurnAndMove(1,3)</pre>
+                            </div>
+                            <div class="feedback">
+                                Als de robot één vierkantje beweegt, hoeveel vierkanten zijn er dan betrokken, van het begin tot einde?
+                            </div>
+                        </div>
+                        <div class="responseDeclaration" identifier="ri1">
+                            <div class="correctResponse" identifier="c2"></div>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </div>
+
+        <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
+            <ol type="A">
+                <li>
+                    Bouw je eigen doolhof en robot ontsnappingscode voor dat doolhof.
+                    <ul>
+                    	<li><strong>Analyseer</strong> de <code>Teken je Doolhof</code> code in de Bord sprite (zie hieronder).</li>
+                        <li><strong>Experiment.</strong> Als je sommige nullen in ééntjes verandert, kun je een pad maken voor de robot om te bewegen.</li>
+                        <div class="takeNote">De <var>bord matrix</var> variabele bezit een <strong>lijst van lijsten</strong>. Elke aparte lijst van nullen en éénen corresponderen met een rij van vierkanten in het doolhof.</div>
+                        <li>Bewerk <var>bord matrix</var> om een doolhof te maken die je leuk vindt, schrijf dan de <code>Ontsnap Je Doolhof</code> code voor de robot.</li>
+                    </ul>
+                    <img class="indent" src="/bjc-r/img/2-complexity/Robot_img/6_YourMazeCode.png"  height="450" alt="Draw Your Maze code" title="Draw Your Maze code"/>
+				</li>
+
+		    </ol>
+        </div>
+
+
+    </body>
+</html>

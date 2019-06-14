@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+		<title>Hoofdstuk 3 Les 1: Contactenlijst, Pagina 2</title>
+        <script type="text/javascript">
+			window.hinttext='<br /><img class="indent" src="/bjc-r/img/3-lists/ask-name-definition.png" alt="ask name block definition" title="ask name block definition" />';
+        </script>
+    </head> 
+    
+    <body>
+    	<div class="todo">
+        ST EK List:
+       <br />
+       5.3.1K Lists and list operations, such as add, remove, and search, are common in many programs.<br />
+       5.5.1J Basic operations on collections include adding elements, removing elements, iterating over all elements, and determining whether an element is in a collection. 
+       </div>
+        <h2>Adding Contact Data</h2>
+		<div class="todo"><strong>Purpose (do/learn; why this/here):</strong> Develop the user interface for adding list items and clearing (re-initializing) the list, which is helpful for debugging.</div>
+		<div class="learn">
+        	<p>
+                <strong>On this page,</strong> you will develop code for  "Add Contact" and "Clear List" buttons in your contact list program. <!--develop:
+                <ul>
+                    <li>An <strong>"Add Contact" button</strong> for adding each new contact using the <code>contact</code> constructor</li>
+                    <li>A <strong>"Clear List" button</strong> for emptying the <var>contact list</var> while debugging</li>
+                </ul>-->
+            </p>
+        </div>
+        
+        
+        <div class="forYouToDo" id="first">
+			<ol>
+				<li>Als het nog niet open staat, open je H3L1-Contactenlijst project.</li>
+                <li>
+                    Maak een "Voeg niew contact toe" voor je gebruikers.
+                    <ol>
+
+                        <li>Zorg dat het script aan de user vraagt welke informatie hij in de <var>contactenlijst</var> moet stoppen met behulp van de <code>contact</code> constructor.</li>
+
+                        <div class="narrower">
+                            <h4><strong>Informatie verzamelen van de gebruiker.</strong></h4>
+                            <p>
+                                Je zult aan ge gebruiker ieder stukje informatie apart moeten vragen (naam, adres, en telefoonnummer).
+								<ul>
+                                    <li>
+                                        <strong>Je <em>kan</em> verschillende <code>vraag</code> en <code>antwoord</code> blokken gebruken samen met script variabelen</strong> Om te vragen naar ieder stukje informatie en op te slaan tot je alle informatie samen hebt om een <code>contact</code> te maken.<br />
+                                        <img class="indent" src="/bjc-r/img/3-lists/contact-constructor-with-variables.png" alt="contact with name: (name) address: (address) phone: (phone)" title="contact with name: (name) address: (address) phone: (phone)" />
+                                    </li>
+                                    <li>
+                                        <strong><em>Een andere manier</em> die ervoor zorgt dat je script overzichtelijker word is <em>abstractie</em>: Maak hulpblokken</strong> (zoals <img src="/bjc-r/img/3-lists/ask-name.png" alt="ask name" title="ask name" /> en <img src="/bjc-r/img/3-lists/ask-phone.png" alt="ask phone" title="ask phone" />) die ieder de gebruiker om een stukje informatie vragen en het andwoord doorgeven naar de <code>contact</code> constructor.<br />
+
+                                        <img class="indent" src="/bjc-r/img/3-lists/contact-constructor-with-helpers.png" alt="contact with name: (ask name) address: (ask address) phone: (ask phone)" title="contact with name: (ask name) address: (ask address) phone: (ask phone)" /><br />
+                                        Ieder van deze hulpblokken <code>vragen</code> de gebruiker een specifieke vraag (bijvoorbeeld: "Wat is het adres van dit contact?") en vervolgens het gegeven <code>antwoord</code> rapporteren <code>answer.
+                                    </li>
+								</ul>
+                                <div class="endnote">
+                                    <p>
+                                    	Je zou een meer algemeen <img class="" src="/bjc-r/img/3-lists/answer-to-prompt.png" alt="answer to prompt ()" title="answer to prompt ()" /> hulpblok kunnen maken (nog een abstractie) om in de andere hulpblokken te gebruiken in plaats van iedere keer het <code>vraag</code> en <code>antwoord</code> script opnieuw te schrijven. <!--<br />
+                                    	<a href="#hint-1" data-toggle="collapse" class="collapsed">Click here for a hint.</a>-->
+                                    </p>
+                                    <!--<div id="hint-1" class="collapse">
+                                    	<img class="indent" src="/bjc-r/img/3-lists/ask-name-definition.png" alt="ask name block definition" title="ask name block definition" />
+                                    </div>-->
+                                </div>
+                            </p>
+                        </div>
+		                <li><strong>Test en debug. </strong>Voeg een paar zelfverzonnen mensen toe aan je <var>contactenlijst</var>. Zorg dat alles zoals verwacht werkt.</li>
+                  </ol>
+              </li>
+                <div class="endnote">
+					<p>
+						Je kan deze voorbeelden gebruiken of je eigen informatie verzinnen.
+						<table class="bordered" summary="three example contacts">
+                        	<tr>
+                            	<th scope="col">naam</th>
+                            	<th scope="col">adres</th>
+                            	<th scope="col">telefoonnummer</th>
+                            </tr>
+                        	<tr>
+                            	<td style="white-space: nowrap;">Betsie Anderson</td>
+								<td style="white-space: nowrap;">123 Main St. #4, New York, NY 10001</td>
+                            	<td style="white-space: nowrap;">212-555-1234</td>
+                            </tr>
+                        	<tr>
+                            	<td style="white-space: nowrap;">Alphie Preston</td>
+                            	<td style="white-space: nowrap;">149 E. 16th Ave., Sunnyvale, CA 94089</td>
+                            	<td style="white-space: nowrap;">208-555-6789</td>
+                            </tr>
+                        	<tr>
+                            	<td style="white-space: nowrap;">Gamal Abdel</td>
+                            	<td style="white-space: nowrap;">369 Center St., Boston, MA 02130</td>
+                            	<td style="white-space: nowrap;">617-555-1098</td>
+                            </tr>
+                        </table>
+					</p>
+				</div>
+				<li>
+                    Maak een "maak lijst leeg" knop die van je <var>contactenlijst</var> weer een lege lijst kan maken. 
+                    <ol>
+                        <li>
+                            Zorg dat het script vraagt of de gebruiker zeker weet of ze de lijst willen verwijderen.
+                            <div class="endnote">Bijvoorbeeld: door "Maak lijst leeg" aan te klikken zou aan de gebruiker kunnen <code>vragen</code> "Typ c om de lijst te legen, klik op elke andere knop om terug te gaan."</div>
+                        </li>
+                        <li><strong>Debug.</strong> Zorg dat de knop reageert zoals verwacht bij beide keuzes.</li>
+                    </ol>
+                </li>
+                <img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />
+            </ol>
+        </div>
+
+		<div class="ifTime">
+			<ol start="4">
+				<li>De sprites' vragen zullen misschien verstopt zitten achter jouw <var>contactenlijst</var>, gebruik de <code>verstop variabel</code> en <code>laat variabel zien</code> knoppen om de <var>contactenlijst</var> te verstoppen tot het einde van ieder sprite's script.</li>
+			</ol>
+		</div>
+		
+    </body>
+</html>

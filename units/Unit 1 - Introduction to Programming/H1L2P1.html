@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+		<script type="text/javascript" src="/bjc-r/utilities/gifffer.min.js"></script>
+        <script type="text/javascript">window.onload = function() {Gifffer();}</script>
+        <link rel="stylesheet" type="text/css" href="/bjc-r/css/bjc-gifffer.css">
+		<title>Hoofdstuk 1 Les 2: Kletsen en coderen, Pagina 1</title>
+	</head>
+
+	<body>
+    	<div class="todo">ST EK List<br />No Ek's found</div>
+		<h2>Kletspraat programmeren</h2>
+        <div class="todo">
+            <h3>Ruthless Suggestions from Al</h3>
+            <ul>
+                <li>I know it’s an ITT, and it’s fun, but kids will want to play with costumes, and this is a time sink. Keep the use of costumes to a minimum.</li>
+                <ul><li>That's not a good reason not to have it as far as I'm concerned. That's for the teacher to manage. I'd be ok to put a note in the TG saying that this might engage students and they might want to manage how much students engage with this (like any) particular idea that interests them. How's that instead? --MF, 5/16/18</li></ul>
+            </ul>
+        </div>
+		
+        <div class="learn">
+            <p>
+                <strong>In deze les,</strong> bouw je een programma waarin twee sprites met elkaar gaan kletsen.<br />
+                <img class="indent" data-gifffer="/bjc-r/img/1-introduction/U1ImageVideoAddendum_img/U1L2-Gossip.gif"  height="300" alt="Gossip" title="Gossip"/>
+            </p>
+            <p><strong>Op deze pagina,</strong> ga je experimenteren met een bestaand programma als start van het project.</p>
+        </div>
+        
+        
+        <h3>Maak je eigen blokken</h3>
+        <div class="forYouToDo" id="first">  
+            <ol>
+                <li><a href="/bjc-r/prog/1-introduction/U1L2-Gossip.xml" class="run"><img class="inline" src="/bjc-r/img/icons/load-save.png" alt="Klik hier om dit bestand te openen. Bewaar het vervolgens in je Snap! account." title="Klik hier om dit bestand te openen. Bewaar het vervolgens in je Snap! account."></a></li>
+                <div class="endnote">Je moet ingelogd zijn om een project te bewaren in je account. Als je nog even wil zien hoe je moet inloggen, kijk dan hier<a href="/bjc-r/cur/programming/1-introduction/1-building-an-app/1-creating-a-snap-account.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment#login" title="Beginnen met Snap<em>!</em>">Hoofdstuk 1 Les 1 Pagina 1: Beginnen met Snap<em>!</em></a> </div>
+                <li>Doe alle experimenten (A-D) een paar keer.
+                    <img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Overleg met je partner" title="Overleg met je partner" />
+                    <ul>
+                    	<li>
+                            Wat wordt er door de verschillende <em>functie</em> blokken gerapporteerd?<br />
+                            <img class="indent" src="/bjc-r/img/1-introduction/who.png" alt="Wie blok" title="Wie blok" />
+                            <img class="inline" src="/bjc-r/img/1-introduction/does-what.png" alt="doet wat blok" title="doet wat blok" />
+                            <img class="inline" src="/bjc-r/img/1-introduction/gossip.png" alt="klets blok" title="klets blok" />
+                        </li>
+						<div class="vocabFullWidth">
+                        	<ul>
+                                <li>Deze afgeronde blokken heten <strong>functies</strong>. Functies rapporteren een waarde.</li>
+                                <li>
+                                	Als je het resultaat van een functie gebruikt als invoer van een andere functie noemen we dat <strong>compositie</strong>. Bijvoorbeeld; hier is een deel van het  <code>wie</code> blok:<br />
+                                	<img class="indent" src="/bjc-r/img/1-introduction/composition.png" alt="item (random) of (list{Ma’am, Mvr. C, mijn kat, Anna, Jan})" title="item (random) of (list{Ma’am, Mvr. C, mijn kat, Anna, Jan})"><br />
+                                    In deze expressie, wordt de waarde die het <code>lijst</code> blok teruggeeft gebruikt als invoer voor het <code>item</code> blok.
+                                </li>
+                            </ul>
+                        </div>
+                        <li>
+                            Wat gebeurt er als je klikt op dit script (D)?<br />
+                            <img class="indent" src="/bjc-r/img/1-introduction/say-broadcast.png" alt="zeg (klets) zend signaal (jouw beurt)" title="zeg (klets) zend signaal (jouw beurt)" />
+                            <div class="vocabFullWidth">
+                                <ul>
+                                    <li><code>Zeg</code> en <code>zend signaal</code> zijn <strong>commando</strong> blokken; ze dragen de computer op iets te doen zonder een waarde te rapporteren.</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        
+      <div class="takeNote">
+            <div class="sidenote">
+                <p>Het <code>zeg</code> blok zegt iets tegen de gebruiker.</p>
+            <p>Het <code>rapporteer</code> blok rapporteert iets aan de computer dat op een andere plek in het programma gebruikt kan worden.</p></div>
+            Hier is de volledige definitie van de <code>wie</code> <em>resultaatblok</em>: <br />
+            <img class="indent" src="/bjc-r/img/1-introduction/who-block-definition.png" alt="resultaatblok 'wie' definitie: rapporteer (item (random) van (lijst (Señora) (Ms. C) (my cat) (Hannah) (Jake)))" title="resultaatblok 'wie' definitie: rapporteer (item (random) van (lijst (Señora) (Ms. C) (my cat) (Hannah) (Jake)))" /><br />
+            Waarom gebruiken we niet <code>zeg</code> in plaats van <code>rapporteer</code>?<br />
+            <img class="indent" src="/bjc-r/img/1-introduction/say-version-of-who.png" alt="who command block definition: say (item (random) of (list (Señora) (Ms. C) (my cat) (Hannah) (Jake)))" title="who command block definition: say (item (random) of (list (Señora) (Ms. C) (my cat) (Hannah) (Jake)))" /><br />
+            Als je dat doet, kan je niet <code>wie</code> gebruiken als invoer voor een ander blok als de <code>voeg toe</code> in <code>gossip</code>. Dus we moeten <code>wie</code> een <em>rapporteer</em> maken, om het te gebruiken in <code>gossip</code>:<br />
+            <img class="indent" src="/bjc-r/img/1-introduction/gossip-definition.png" alt="gossip: (report (join (who) ( ) (does what) ( ) (who)))" title="gossip: (report (join (who) ( ) (does what) ( ) (who)))" />
+        </div> 
+        
+		<div class="ifTime">
+			<ol start="4">
+            	<li>
+                	Net zoals je in <a href="/bjc-r/cur/programming/1-introduction/1-building-an-app/2-start-your-first-snap-app.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Programmeer je app">Hoofdstuk 1 les Pagina 2: Programmeer je app</a>  Net zoals je een Alonzo uiterlijk hebt gemaakt in LINK Hoofdstuk 1 Les pagina 2 , kun je ook de grijze sprite een uiterlijk geven       
+<br />
+                    <img class="indent" src="/bjc-r/img/1-introduction/gossip-costume.jpg" alt="Klets sprite met uiterlijk" title="Klets sprite met uiterlijk " />
+                </li>
+            </ol>
+        </div>
+        
+		<img class="imageRight" src="/bjc-r/img/1-introduction/stage-and-sprite-corral.png" alt="stage-and-sprite-corral" title="stage-and-sprite-corral" />
+		<img class="imageRight" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Draai de rollen om" title="Draai de rollen om" />
+        <h3>Ontdek een Tweede Sprite<a name="second" class="anchor">&nbsp;</a></h3>
+		<div class="forYouToDo">
+            <ol start="5">
+                <li>
+                	In het <strong>sprite scherm</strong> (zie afbeelding rechts), kun je op de <strong>groene sprite </strong>klikken genaamd "Sprite(2)" om de scripts en uiterlijken the besturen.<br />
+                    <img class="indent" src="/bjc-r/img/1-introduction/sprite-2.png" alt="pic of sprite(2) in sprite corral" title="pic of sprite(2) in sprite corral" />
+                </li>
+                <li>Klik op de "Scripts" tab om de code in te zien die de Sprite(2) bestuurd. Doe elk experiment (A-C) meerdere keren.</li>
+                <li>
+                    <img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> 
+                    Bespreek hoe <code>who2</code> vergeleken kan worden met <code>who</code> en hoe <code>gossip2</code> vergeleken kan worden met <code>gossip</code>.
+                </li>
+		        <img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Dit is een goed moment om je werk op te slaan" title="Nu is een goed moment om op te slaan" />
+                
+            </ol>
+        </div>
+        
+		<div class="ifTime">
+			<ol start="8">
+            	<li>Geef sprite(2) ook een kostuum.</li>
+                <div class="endnote">Misschien moet je hiervoor  <img class="inline" src="/bjc-r/img/blocks/point-in-direction-90.png" alt="point in direction (90)" title="point in direction (90)" />.</div>
+            </ol>
+        </div>
+        
+        
+	</body>
+</html>
+
+// De meeste alt=".." en title=".." zijn al vertaald naar het Nederlands

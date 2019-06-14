@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+	    <title>Hoofdstuk 2 Les 1: Spellen verbeteren met variabelen, Pagina 1</title>
+    </head>
+
+    <body>
+    <div class="todo">
+        ST EK List:
+       <br />
+       2.2.2A Software is developed using multiple levels of abstractions, such as constants, expressions, statements, procedures, and libraries. <br />
+       5.2.1C Program instructions may involve variables that are initialized and updated, read, and written.
+        </div>
+		<h2>Programmeer een Raad-het-getal spel met script variabelen</h2>
+        <div class="todo">
+            <h3>Ruthless Suggestions from Al</h3>
+            <ul>
+                <li>
+                    Radical suggestion: Unless AP demands it, there’s no need for script variables in a first course like this. The guessing game can be done with helper functions. But if we need to keep it,
+                    <ul>
+                        <li>
+                        	“In this lab, you will use two kinds of variables to store information:
+                            <ul>
+                                <li>Script variables (a kind of local variable) that can be used only within a single script, and</li>
+                                <li>Global variables that can be set, used, or changed anywhere in the program.”</li>
+                            </ul>
+                            Have they met the word “variable” before? And, even if so, this tells me nothing. Why not say that [← “variable” shows up in 1.3.3, but I suggest changing it there to “input.”] a script variable is a kind of watermelon variable (italics don’t help). I’d cut everything up to the FYTD.
+                        </li>
+                        <ul>
+                            <li>I agree with the principle and sentiment, but not all quite of the suggestion. There is a lot of pre-teaching here. Without looking super closely, I suggest moving and integrating the sub-bullets of the pink box into vocab boxes, and I wonder about moving the white text and vocab at the top (the formality) after the experience of the FYTD and maybe trimming it up. Needs some careful attention. --MF, 5/16/18</li>
+                        </ul>
+                        <li>delete “who invented the branch of mathematics dealing with Boolean operations (such as and, or, and not)” [← “Gauss was a mathematician who invented Gaussian integers.”] </li>
+                        <ul>
+                            <li>I don't dislike is <em>that</em> much, but it should be yellow not grey if it stays. Having it there is more about the capitalization, but I guess it's not really needed... --MF, 5/16/18</li>
+                        </ul>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="learn">
+            <p>
+                <strong>In deze les,</strong> ga je twee verschillende variabelen gebruiken om informatie in op te slaan:
+                <ul>
+                    <li><em>Script variabele</em> (een soort <em>lokale</em> variabele) die enkel binnen één script kan worden gebruikt, en</li>
+                    <li><em>Globale variabele</em> die je kunt plaatsen, gebruiken of veranderen waar dan ook in je programma.</li>
+                </ul>
+            </p>
+            <p><strong>Op deze pagina,</strong> ga je een Raad-het-getal spel bouwen die een script variable gebruikt om een geheim getal te onthouden.</p>
+        </div>
+
+        <h3>Gebruik een Script Variable (een lokale variabele)</h3>
+        <p>
+        	Je hebt variabelen als input aangemaakt voor je zelfgemaakte blokken:<br />
+            <!--<img class="indent" src="/bjc-r/img/2-complexity/input-variable-for-pinwheelbranches.png" alt="input-variable-for-pinwheelbranches">-->
+            <img class="indent noshadow" src="/bjc-r/img/2-complexity/input-variable-for-pinwheelbranches-commented.png" alt="block definition for pinwheel and setting 'number of branches' input variable for pinwheel" title="block definition for pinwheel and setting 'number of branches' input variable for pinwheel" />
+        </p>
+        <p>
+            Je hebt ook de variabele gebruikt die het <code>voor</code> blok je heeft gegeven:<br />
+            <!--<img class="indent" src="/bjc-r/img/2-complexity/local-variable-created-by-for-block.png" alt="local-variable-created-by-for-block">-->
+            <img class="indent noshadow" src="/bjc-r/img/2-complexity/local-variable-created-by-for-block-commented.png" alt="local variable created by for block" title="local variable created by for block" />
+        </p>
+		<p>
+        	Input variabelen en <code>voor</code> variabelen behoren beide tot de <strong>lokale variabelen</strong>; deze werken alleen binnen het script waarin ze aangemaakt zijn. Als je deze variabelen naar een ander script zou slepen, zal het niet werken. Soms is het nodig om <em>meer</em> variabelen te maken die informatie tijdelijk opslaan terwijl je script aan het runnen is. Het <code>script variabelen</code> blok zorgt daarvoor.<br />
+			<img class="indent" src="/bjc-r/img/prog/scriptvar.png" alt="script variables" title="script variables" />
+        </p>
+        <p>Bijvoorbeeld, stel je een Raad-het-getal spel voor waarbij een speler het geheime getal van een computer probeert te raden. De computer moet dit geheime getal ergens opslaan zodat het deze kan vergelijken met het getal waarvan de speler denkt dat het het juiste is. Maar, op het moment dat het spel voorbij is, is het geheime getal niet meer nodig. Als je hetzelfde spel weer wilt spelen, heb je een nieuw geheim getal nodig.</p>
+        <div class="vocabFullWidth"><strong>: Lokale Variabele</strong>
+			<p>Een variabele die alleen aangeroepen of gebruikt kan worden in de omgeving waarin hij is aangemaakt. Dit is de gebruikelijke term in de computerwetenschappen voor 'variabele' die omschreven worden als inputs voor procedures, of  (in Snap<em>!</em> en sommige andere programmeertalen) gemaakt door <code>voor</code> of <code>script variabeken</code>.</p>
+        </div>
+
+
+        <div class="forYouToDo" id="first">
+        	<ol>
+            	<li><div class="newProject"><span class="text">"U2L1-NumberGuessing"</span><img src="/bjc-r/img/icons/new-project-called.png" alt="Create a new project called U2L1-NumberGuessing" title="Create a new project called U2L1-NumberGuessing" /></div></li>
+                <li>Maak een nieuw command blok genaamd <code>Raad-het-getal spel</code>.</li>
+                <li>
+                    In dit blok, maak een script variabele genaamd <var>geheim getal</var> (instructies hieronder), en zet het op een random getal tussen 1 en 10.
+                    <div class="narrower">
+                        <h4><strong>Maak een Script Variabele</strong></h4>
+                        <ol type="a">
+                            <li>
+                                <strong>Plaats een <code>script variabele</code> blok in je script gedeelte.</strong> Deze kun je vinden in je Variabele palet.<br />
+                                <img class="indent" src="/bjc-r/img/prog/scriptvar.png" alt="script variables" title="script variables" />
+                            </li>
+                            <li><strong>Geef de variabele een naam </strong> door op de oranje <var>a</var> te klikken op het eind, en dan de naam die je wilt te typen. Hier, moet je het <var>geheim getal</var> noemen.</li>
+
+                        </ol>
+                        <strong>Later, ga je de script variabele gebruiken </strong>door het uit het <code>script variabelen</code> blok te slepen, dezelfde manier als hoe je een input variabele naar binnen sleept, en plaats deze waar je het nodig hebt in je code.
+                    </div>
+                </li>
+				<!-- I went with "down triangle." --MF <div class="todo">We have "down arrow" and "down-arrow" each several times throughout the curriculum.  We should pick one and clean these up.  Personally I like "downarrow" as one word! On the other hand, technically these are arrowheads, not arrows, so maybe "down arrowhead" or (need an ESL ruling) something like "downward-facing triangle"?  --bh<br />How's "black triangle"? --MF</div>-->
+                <div class="vocabBig"><strong>: Initialize</strong>
+                    <p>Je initiele waarde van een variabele aanmaken noemen we het <strong>initialiseren</strong> van de variabelen.</p>
+                </div>
+				<li>Gebruik <code>zet</code> om de initiële waarde van je variabele in te stellen. Het kleine driehoekje naar beneden zorgt ervoor dat je de variabele kunt kiezen die je wilt. Schrijf een code die een <var>geheim getal</var> aanwijst aan een random getal tussen de 1 en 10. <br />
+                    <img class="indent" src="/bjc-r/img/2-complexity/set-secret-number-menu.jpg" alt="set block menu selecting secret number" title="set block menu selecting secret number" />
+                    <!--REPLACED <img class="indent" src="/bjc-r/img/blocks/set-empty.png" alt="set" title="set" /> -->
+				</li>
+				<div class="endnote">De variabele <var>geheim getal </var> is alleen beschikbaar in het <code>zet</code> blok wanneer je het in hetzelfde script hebt geschreven met het <code>script variabelen</code> blok.</div>
+            </ol>
+        </div>
+
+
+        <h3>Check het getal van de speler</h3>
+		<div class="sidenote">Je hebt over 'herhaling' geleerd in <a href="/bjc-r/cur/programming/1-introduction/3-drawing/6-the-for-block.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Looping with a Counter">Hoofdstuk 1, Herhalen</a>.</div>
+        <p>Wat je graag wilt, is dat de computer net zo lang blijft vragen om getallen te raden, totdat het geheime getal is geraden. Om dat te doen, ga je het <code>herhaal tot</code> blok gebruiken. <code>Herhaal tot</code> is een <em>herhaling</em> (net als <code>herhaal</code>, <code>altijd</code>, en <code>voor</code>) die<strong> iets herhaalt totdat er een zekere <em>conditie</em> is voldaan</strong>. In dit geval, moet de code herhaalt worden totdat de speler's antwoord gelijk staat aan het geheime getal.</p>
+
+		<div class="takeNote">
+        	<p><code>Herhaal tot</code> is een <em>conditioneel</em> blok (net als <code>als</code>). Conditionelen maken keuzes gebaseerd op een <strong>conditie</strong> in de vorm van een <strong>Boolean waarde</strong> (of <img class="inline" src="/bjc-r/img/blocks/true.png" alt="true" title="true" /> of <img class="inline" src="/bjc-r/img/blocks/false.png" alt="false" title="false" />). <!--DEV NOTE: don't tell them what they shouldn't do (they may not have even thought of that and now we are giving hem the idea); tell them what they should do. :) --MF Cut text: But you don't generally use these values directly in your code; you don't say <img src="/bjc-r/img/2-complexity/iftrue.png" height="50" alt="if (true) ...">. Instead, --> De conditie wordt gecheckt door een <em>predikaat</em>, een waar/niet-waar vraag zoals <img src="/bjc-r/img/2-complexity/a-gt-7.png" alt="a &gt; 7" title="a &gt; 7" />. Predikaten zijn altijd Boolean waardes. En deze passen binnen een hexogone inputs, zoals in  <img class="inline" src="/bjc-r/img/blocks/if.png" alt="if block" title="if block" /> en <img class="inline" src="/bjc-r/img/blocks/repeat-until.png" alt="repeat until" title="repeat until" />. Predikaten ondersteunen conditionelen <em>beslissen wanneer ze iets moeten doen</em>.</p>
+        	<div class="vocabFullWidth"><strong>: Boolean</strong><br />Een <em>Boolean</em> waarde is of Waar of Niet Waar.  Het woord Boolean begint met een hoofdletter, omdat het vernoemd is naar een persoon, George Boole, die binnen de wiskunide de tak van Boolean functies heeft uitgevonden (zoals  <code>en</code>, <code>of</code>, en <code>niet</code>).</div>
+        </div>
+
+        <img class="inline" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> <br />
+        <div class="forYouToDo">
+            <ol start="5">
+                <li>Gebruik <code>herhaal tot</code> om aan de speler te <code>vragen</code> het geheime getal te raden totdat het <code>antwoord</code> gelijk is aan het <var>geheime getal</var>.</li>
+                <div class="narrower">
+                    <ul>
+                        <li>Sleep het <var>geheime getal</var> variabele uit het <code>script variabelen</code> blok om het te gebruiken.</li>
+                        <li>De <img class="inline" src="/bjc-r/img/blocks/ask-empty.png" alt="ask () and wait" title="ask () and wait" /> en <img class="inline" src="/bjc-r/img/blocks/answer.png" alt="answer" title="answer" /> blokken gaan goed samen. Als je <code>vraag</code> gebruikt om een vraag te stellen, zal het antwoord van de speler weergegeven worden door <code>antwoord</code>.</li>
+                    </ul>
+                </div>
+                <li>Zodra de speler het goede antwoord heeft geraden, zorg ervoor dat de computer de speler feliciteert.</li>
+                <li><strong>Test and debug.</strong> Speel om de beurt het spel, en fix alle problemen binnen de code die je tegenkomt voordat je verder gaat.</li>
+            </ol>
+        </div>
+        <div class="takeNote">Het checken van zulke stukjes code of je programma wel goed werkt voordat je verder gaat, zal je helpen dat je op het eind een goed functionerend stuk code, dus spel hebt.</div>
+
+        <div class="ifTime">
+			<ol start="8">
+                <li>Wanneer de computer de speler feliciteert omdat hij/zij het geheime getal goed heeft geraden, laat dan de computer het geheime getal nog eens zeggen. Bijvoorbeeld, het zou kunnen zeggen "Je hebt het geraden! Mijn geheime getal was '7'".</li>
+				<div class="endnote">Gebruik <code>voeg</code> om de tekst "Je hebt het geraden! Mijn geheime getal was.." samen te voegen met de waarde van de  <var>geheime getal</var> variabele.</div>
+            </ol>
+        </div>
+
+
+	</body>
+</html>

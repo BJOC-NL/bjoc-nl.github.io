@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+        <script type="text/javascript">
+			window.hinttext='<img class="indent" src="/bjc-r/img/3-lists/phone-number-of-conditional-with-list-reporters.png" alt="...else (report (item (1) of (matches)))" title="...else (report (item (1) of (matches)))" />';
+        </script>
+		<title>Hoofdstuk 3 Les 1: Contact lijst, Pagina 3</title>
+    </head> 
+    
+    <body>
+    <div class="todo">
+        ST EK List:
+       <br />
+       3.2.1D Search tools are essential for efficiently finding information.
+       5.3.1K Lists and list operations, such as add, remove, and search, are common in many programs.
+       5.5.1J Basic operations on collections include adding elements, removing elements, iterating over all elements, and determining whether an element is in a collection. 
+       </div>
+        <h2>Selecting Specific Data</h2>
+		<div class="todo"><strong>Purpose (do/learn; why this/here):</strong> Create a "Find Contact" button that uses a <code>find contacts</code> block to <em>select</em> items from the <var>contact list</var> based on the contact's name. Students get practice with list processing, navigating abstract data types, and using the higher order function, <code>keep</code>. </div>
+		<div class="learn">
+        	
+            <p>
+                <strong>Op deze pagina,</strong> Programmeer je een code voor een "Find Contact" knop, om contacten in een lijst te vinden<!--develop An "Find Contact" button for accessing specific contacts in your <var>contact list</var>-->.<br /> 
+				<img class="indent" src="/bjc-r/img/3-lists/find-contacts-with-name-Alphie-reporting.png" alt="find contacts with name: (Alphie) reporting" title="find contacts with name: (Alphie) reporting" />
+            </p>
+        </div>
+        
+        <p>Hoe meer contacten je toevoegd aan je lijst, hoe moeilijker het wordt om de naam die je zoekt te vinden door de lijst van namen door te nemen. Het bouwen van een zoek functie word dan essentieel voor het vinden van . Lijsten, het toevoegen en verwijderen van gegevens uit lijsten en het doorzoeken van lijsten zijn veel voorkomende functies in programma's.
+        <div class="todo">
+            EK 3.2.1D Search tools are essential for efficiently finding information.<br />
+            EK 5.3.1K Lists and list operations, such as add, remove, and search, are common in many programs.<br />
+        </div>
+        
+		
+        
+        <!--<p>Each new contact is a list (item 1 is a name and item 2 should be a phone number), so the list of contacts is a <em>list of lists</em>.</p>-->
+        
+        
+		<div class="forYouToDo" id="first">
+            <ol>
+				<li>Als het niet al open staat, open jouw U3L1-ContactList project.</li>
+                <li>
+					Maak een <img src="/bjc-r/img/3-lists/find-contacts-with-name.png" alt="find contacts with name: ()" title="find contacts with name: ()" /> blok dat een stuk tekst als input gebruikt, en dan of een lijst doorgeeft van de namen die dat stuk tekst bevatten, of een lege lijst omdat de namen dat stuk tekst niet bevatten. <var>contact list</var>.
+                	<!--Write a look-up block <img src="/bjc-r/img/3-lists/phone-number-of.png" alt="phone number of ()"> that takes any part of a person's name as input and reports either that person's phone number or "not found" if the name is not in the <var>contact list</var>.-->
+                    <div class="narrower">
+                        <strong>Gebruik deze blokken:</strong>
+                        <ol type="a">
+                            <!--<li><img class="inline" src="/bjc-r/img/blocks/contains.png" alt="() contains () predicate" title="() contains () predicate" />, which asks whether the inputted list (a contact) contains the inputted string (part of a name, address, or phone number) anywhere among its items.</li>-->
+                            <li><img class="inline" src="/bjc-r/img/3-lists/string-contains.png" alt="string () contains () ?" title="string () contains () ?" />, die <code>waar</code> doorgeeft als het eerste stuk (bijvoorbeeld, de naam van een contact in de lijst) het tweede stuk bevat (bijvoorbeeld een naam, of een deel van een naam)</li>
+                            <div class="sidenote">You learned about <a href="/bjc-r/cur/programming/2-complexity/3-predicates/2-keeping-list-items.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="Keeping Items from a List"><code>keep</code> in Unit 2</a>.</div>
+                            <li><img class="inline" src="/bjc-r/img/blocks/keep.png" alt="keep items such that &lt;  &gt; from (list)" title="keep items such that &lt;  &gt; from (list)">, die alleen de items doorgeeft die de functie waarmaakt</li>
+                            <li><img class="inline" src="/bjc-r/img/blocks/empty.png" alt="empty?() predicate function" title="empty?() predicate function" />, die <code>Waar</code> teruggeeft, als de lijst leeg is en <code>niet waar</code> in andere gevallen</li>
+                            <li>Kiezer<!--s--> <img class="inline" src="/bjc-r/img/3-lists/name-selector.png" alt="name from contact: ()" title="name from contact: ()" /> <!--and <img class="inline" src="/bjc-r/img/3-lists/name-display.png" alt="display-form from name: ()" title="display-form from name: ()" />--></li>
+                        </ol>
+                    </div>
+                </li>
+			<!--</ol>
+       </div>
+       
+       <p>When someone calls you, the phone company sends only the calling number to your phone, not the person's name. But if the number is in your contact list, your phone  figures out the name. </p>
+		<div class="forYouToDo">
+            <ol start="3">
+				<li>Write another look-up block <img src="/bjc-r/img/3-lists/name-from-number.png" alt="name from number ()"> that searches for a phone number and reports the contact's name.</li>-->
+                <li>
+                    Maak een "Find Contact" knop.
+                    <ol>
+                        <li>Maak het script, vraag de gebruiker naar welk contact je moet zoeken en laat de sprite <code>doorgeven</code> welke contacten overeenkomen.</li>
+                        <li>Als het contact niet in de lijst staat, laat de sprite "niet gevonden" doorgeven.</li>
+					</ol>
+                </li>
+                <li><strong>Debug.</strong> Zorg er voor dat alles precies werkt zoals jij wil voordat je verdergaat..</li>
+                <img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good to Save" />
+			</ol>
+		</div>
+       
+		
+        <div class="ifTime">
+			<ol start="5">
+				<li>
+                    Maak een "Delete Contact" knop. 
+                    <ol>
+                        <li>Verplaats de "Delete Contact" knop op het speelveld.</li>
+                        <li>Maak het script en vraag de gebruiker om "Voer de contact naam(/namen) in die je wil verwijderen."</li>
+                        <li>Daarna gebruik je je <code>find contacts</code> blok om alle overeenkomende contacten te vinden.</li>
+                        <li>Geef de gebruiker de lijst met overeenkomende contacten en vraag om bevestiging om ze te verwijderen(zodat de gebruiker niet per ongeluk zijn contacten verwijderd).</li>
+                        <li>Als de gebruiker bevestigd dat hij de contacten wil verwijderen, vervang dan de<var>contact lijst</var> met een lijst van alle namen die <em>niet</em> overeenkomen met de ingevoerde naam.</li>
+                    </ol>
+                </li>
+				<li>Pas je "Delete Contact" script zo aan dat het zijn gebruiker uit laat kiezen welk contact hij/zij wil verwijderen wanneer <code>vind</code> er meer dan een doorgeeft.</li>
+			</ol>
+		</div>
+				
+		
+    </body>
+</html>
