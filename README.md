@@ -13,3 +13,7 @@ We will create a roadmap for translation, adaptation and evaluation of BJC in Du
 **BJC** https://bjc.edc.org/bjc-r/course/bjc4nyc.html
 
 HTML to Markdown **converter**: https://www.browserling.com/tools/html-to-markdown
+
+
+
+![Image translating fun](https://drive.google.com/file/d/1h3Cbs7q-g9b8tjWnWqpQtKJwsnSw5kgx/view?usp=sharing "The joy of translating BJoC-NL")
