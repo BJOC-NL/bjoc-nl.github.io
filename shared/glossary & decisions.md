@@ -29,6 +29,8 @@ loop - lus
 
 condition - conditie
 
+partner - buur
+
 ## Snap *!*
 
 to snap - plakken
