@@ -31,6 +31,8 @@ condition - conditie
 
 partner - buur
 
+Self-Check - Zelftest
+
 ## Snap *!*
 
 to snap - plakken
