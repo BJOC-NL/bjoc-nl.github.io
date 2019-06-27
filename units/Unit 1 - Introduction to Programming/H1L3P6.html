@@ -4,9 +4,9 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
-        <title>Unit 1 Lab 3: Modern Art with Polygons, Page 6</title>
+        <title>Hoofdstuk 1 Les 3: Moderne kunst met veelhoeken, Pagina 6</title>
     </head>
-    
+
     <body>
     <div class="todo">
         ST EK List:<br />
@@ -14,117 +14,117 @@
         4.1.1A Sequencing, selection, and iteration are building blocks of algorithms.<br />
         4.1.1D Iteration is the repetition of part of an algorithm until a condition is met or for a specified number of times. <br />
         </div>
-    	<h2>Looping with a Counter</h2>
+    	<h2>Lussen met een teller</h2>
         <div class="todo">
         	<p>EK 4.1.2G Every algorithm can be constructed using only sequencing, selection, and iteration.</p>
             <p>EK 5.2.1A Algorithms are implemented using program instructions that are processed during program execution.<br />
             EK 5.2.1B Program instructions are executed sequentially.<br />
             EK 5.2.1C Program instructions may involve variables that are initialized and updated, read, and written.<ul><li>although it's a little iffy what a "program instruction" is.  Is clicking on a reporter a program instruction? --bh</li></ul></p>
         </div>
-		
+
         <div class="vocabBig">
-            <p>Computer scientists describe this  program structure as looping, repetition, or <strong>iteration</strong>. Sequencing, selection, and iteration are building blocks of algorithms.  You may wish to look at <a href="/bjc-r/cur/programming/1-introduction/2-gossip-and-greet/4-learning-names.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment#AP" title="Learning Player Names">Unit 1 Lab 2 Page 4: Learning Player Names </a> for a review of sequencing and selection.</p>
+            <p>Computer wetenschappers omschrijven zo'n structuur als "lussen", herhalen, of <strong>itereren</strong>. Opeenvolgen, selectie, en itereren zijn bouwblokken van algoritmes. Je wilt misschien nog even kijken bij <a href="/bjc-r/cur/programming/1-introduction/2-gossip-and-greet/4-learning-names.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment#AP" title="Learning Player Names">Hoofdstuk 1 Les 2 Pagina 4: Spelersnamen leren </a> voor een herinnering aan opeenvolgen en selecteren.</p>
         </div>
-        <div class="sidenoteBig">The <code>forever</code> block generates an <em>infinite loop</em> that goes on forever.  An infinite loop can sometimes be the result of a bug, but in some interactive programs, you <em>want</em> the program to keep running until stopped by the user.</div>
+        <div class="sidenoteBig">Het <code>herhaal</code> blok genereert een <em>oneindige lus</em> dat voor altijd zal blijven herhalen (lussen). Een oneindige lus kan soms het resultaat zijn van een bug, maar in sommige interactieve programma's, <em>wil</em> je dat het programma blijft lopen totdat het gestopt wordt door de gebruiker.</div>
 
         <p>
-        	You've seen these ways to repeat a set of commands:
+        	Je hebt de onderstaande manieren gezien om een set opdrachten te herhalen:
 			<ul>
-				<li><img class="inline" src="/bjc-r/img/blocks/forever.png" alt="the forever block" title="the forever block" />  repeats the same commands <em>forever</em>. (You used it to make Alonzo keep moving in <a href="/bjc-r/cur/programming/1-introduction/1-building-an-app/6-keeping-score.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Make It a Game">Unit 1 Lab 1 Page 6: Make It a Game</a>.)</li>
-                <li><img class="inline" src="/bjc-r/img/1-introduction/repeat.png" alt="the repeat block" title="the repeat block" />  repeats them <em>a specific number of times</em>. (You used it to draw shapes in <a href="/bjc-r/cur/programming/1-introduction/3-drawing/1-exploring-motion.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Exploring Motion">Unit 1 Lab 3 Page 1: Exploring Motion</a>.)</li>
+				<li><img class="inline" src="/bjc-r/img/blocks/forever.png" alt="the forever block" title="the forever block" />  herhaalt dezelfde opdrachten <em>voor altijd</em>. (Deze heb je gebruikt om Alonzo te laten blijven bewegen in <a href="/bjc-r/cur/programming/1-introduction/1-building-an-app/6-keeping-score.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Make It a Game">Hoofdstuk 1 Les 1 Pagina 6: Maak er een spel van</a>.)</li>
+                <li><img class="inline" src="/bjc-r/img/1-introduction/repeat.png" alt="the repeat block" title="the repeat block" />  herhaalt een <em>specifiek aantal keer</em>. (Deze heb je gebruikt om vormen te tekenen in <a href="/bjc-r/cur/programming/1-introduction/3-drawing/1-exploring-motion.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment" title="Exploring Motion">Hoofdstuk 1 Les 3 Pagina 1: Beweging verkennen</a>.)</li>
 				<!--<li><img src="/bjc-r/img/blocks/repeat-until.png" alt="repeat until" title="repeat until" /> repeats until <em>some special condition</em> occurs.</li>-->
             </ul>
         </p>
         <div class="learn">
             <p>
-                <strong>On this page,</strong> you will use <code>for</code> loops to repeat <em>and count the repetitions</em> so you can use that counter to draw shapes with repeated patterns...<br />
+                <strong>Op deze pagina,</strong> ga je <code>herhaal</code> lussen gebruiken om iets te laten herhalen <em>en deze herhalingen te tellen</em> zodat je die teller kunt gebruiken om vormen te laten tekenen met herhaalde patronen...<br />
                 <img class="indent" src="/bjc-r/img/prog/spiral.png" alt="spiral" title="spiral" />
                 <img class="indent" src="/bjc-r/img/1-introduction/nested-squares.png" alt="nested squares" title="nested squares" />
             </p>
         </div>
-        
+
         <p>
-        	You can use <img src="/bjc-r/img/prog/for.png" class="imageCenter" alt="for(i)=(1) to (10){}" title="for(i)=(1) to (10){}" /> to name a variable (here,  <img class="inline" src="/bjc-r/img/blocks/variable-i.png" alt="i" title="i" />) that counts each repetition, and you can use that counter  variable in the repeating script. For example, the <code>for</code> block lets you simplify long scripts like: <br /> 
-	<div class="sidenote">Each time the <code>for</code> block  runs the script inside, it changes the value of the  variable by 1, counting from the first input number to the second.</div>   
-            <img class="indent" src="/bjc-r/img/looping/for-loop-equivalent.png" alt="say (1) for (2) secs, say (2) for (2) secs, say (3) for (2) secs... say (10) for (2) secs" title="say (1) for (2) secs, say (2) for (2) secs, say (3) for (2) secs... say (10) for (2) secs" />  
-            &nbsp; &nbsp; &nbsp; to  
-            <img class=" noshadow" src="/bjc-r/img/looping/for-loop-drag-i.gif" alt="for (i)= (1) to (10) {say (i) for (2) secs}" title="for (i)= (1) to (10) {say (i) for (2) secs"} /> 
+        	Je kunt <img src="/bjc-r/img/prog/for.png" class="imageCenter" alt="for(i)=(1) to (10){}" title="for(i)=(1) to (10){}" /> gebruiken om een variabele een naam te geven (hier,  <img class="inline" src="/bjc-r/img/blocks/variable-i.png" alt="i" title="i" />) die elke herhaling telt, en je kunt die teller variabele gebruiken in het herhalende script. Bijvoorbeeld, het <code>herhaal</code> blok laat je lange scripts simplificeren zoals: <br />
+	<div class="sidenote">Elke keer wanneer het <code>herhaal</code> blok het script binnenin doorloopt, verandert het de waarde van de variabele met 1, tellend vanaf het eerste invoer getal tot aan de tweede.</div>
+            <img class="indent" src="/bjc-r/img/looping/for-loop-equivalent.png" alt="say (1) for (2) secs, say (2) for (2) secs, say (3) for (2) secs... say (10) for (2) secs" title="say (1) for (2) secs, say (2) for (2) secs, say (3) for (2) secs... say (10) for (2) secs" />
+            &nbsp; &nbsp; &nbsp; to
+            <img class=" noshadow" src="/bjc-r/img/looping/for-loop-drag-i.gif" alt="for (i)= (1) to (10) {say (i) for (2) secs}" title="for (i)= (1) to (10) {say (i) for (2) secs"} />
 		</p>
-		
+
 
         <div class="endnote">
             <p class="center"><img class="inline" src="/bjc-r/img/icons/import-tools.png" alt="Import Tools" title="Import Tools" /></p>
-            In the current version of <span class="snap">snap</span>, the <code>for</code> block isn't installed automatically.  You'll need to import tools once into each new <span class="snap">snap</span> project where you need <code>for</code> and some other important tools. <br />
+            In de huidige versie van <span class="snap">snap</span>, is het <code>herhaal</code> blok niet automatisch geïnstalleerd. Je zult tools eenmalig moeten importeren in elk nieuw <span class="snap">snap</span> project waar je <code>herhaal</code> en sommige andere belangrijke tools nodig hebt. <br />
           <img class="indent" src="/bjc-r/img/1-introduction/import-tools.png" alt="select 'Import tools' from the Snap! file menu" title="select 'Import tools' from the Snap! file menu" />
     </div>
-        
-        
+
+
         <div class="forYouToDo" id="first">
             <ol>
-                <li>Click on the File <img src="/bjc-r/img/sys/button-file-menu.png" class="inline" style="height:1.7em;" alt="File menu icon" title="File menu icon" /> menu at the top of the <span class="snap">snap</span> window and select "Import Tools."</li>
-				<div class="takeNote">The <code>for</code> block gives you a default variable, <var>i</var> (for index). You can change the name of this variable by clicking it. Once changed, drag it out and use it  just like any variable.</div>
+                <li>Klik op het Document <img src="/bjc-r/img/sys/button-file-menu.png" class="inline" style="height:1.7em;" alt="File menu icon" title="File menu icon" /> menu aan de bovenkant van het <span class="snap">snap</span> beeld en selecteer "Importeer Tools."</li>
+				<div class="takeNote">Het <code>herhaal</code> blok geeft je een standaard variabele, <var>i</var> (voor index). Je kunt de naam van deze variabele veranderen door er op te klikken. Eenmaal veranderd, sleep het buiten en gebruik het net als elke andere variabele.</div>
                 <li>
-                	Build this script that makes the sprite say the numbers 1 through 10. <br />
+                	Bouw dit script waarin een sprite elk nummer van 1 tot 10 zegt. <br />
                 	<img class="indent" src="/bjc-r/img/1-introduction/for-i-1-10-say-i.png" alt="for (i) = (1) to (10) {say (i) for (2) secs}" title="for (i) = (1) to (10) {say (i) for (2) secs}" />
                     <ol>
-                        <li>Then modify it so that the sprite says 0, 2, 4, 6, 8, ... up through 30.</li>
-                      <li>Discuss your solutions with another pair.</li>
+                        <li>Bewerk het zodanig dat de sprite het zegt als 0, 2, 4, 6, 8, ... tot en met 30.</li>
+                      <li>Bespreek je oplossingen met iemand anders (of een ander paar).</li>
                     </ol>
 				</li>
 				<li>
-                    Experiment with spirals.
+                    Experimenteer met spiralen.
                     <ol>
 						<li>
-                        	Build this script and try it out:<br />
-                            <div class="sidenote">This design got the nickname "squiral" because it's a square spiral. </div>
+                        	Bouw het onderstaande script en probeer het volgende:<br />
+                            <div class="sidenote">Dit ontwerp kreeg de bijnaam "vierkant" want het is een vierkante spiraal. </div>
                             <img class="indent" src="/bjc-r/img/looping/squirral-script.png" alt="pen down; for(length)=(1) to (100){move(2Xlength) steps; turn clockwise (90) degrees}" title="pen down; for(length)=(1) to (100){move(2Xlength) steps; turn clockwise (90) degrees}"><br />
 						</li>
-                        <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Make sure you can explain why the squiral spirals outward.</li>
-                        <li>Try switching the order of the 100 and the 1 in the <code>for</code> block in the squiral script. What is the result?</li>
-                        <li>Try changing the turning angle in the squiral script to other numbers such as 92, 126, etc.</li>
+                        <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Zorg ervoor dat je kunt uitleggen waarom de vierkante spiraal naar buiten draait.</li>
+                        <li>Probeer eens om de volgorde van de 100 en de 1 om te draaien in het <code>herhaal</code> blok in het vierkante script. Wat is het resultaat hiervan?</li>
+                        <li>Probeer eens om de draaihoek in het vierkant-script te veranderen in andere getallen zoals 92, 126, etc.</li>
                         <li>
-                        	Change the inputs to <code>turn</code> and <code>move</code> to get as close as you can get to a smooth spiral:<br />
+                        	Verander de invoer in <code>draai</code> en <code>neem</code> om zo dicht mogelijk in de buurt te komen van een effen spiraal:<br />
                         	<img class="indent" src="/bjc-r/img/prog/spiral.png" alt="spiral" title="spiral" />
                         </li>
                     </ol>
                 </li>
                 <li><div class="saveAs"><span class="text">"U1L3-Squiral"</span><img class="inline" src="/bjc-r/img/icons/save-this-as.png" alt="Save your work as U1L3-Squiral" title="Save your work as U1L3-Squiral" /></div></li>
-                
+
 			</ol>
 		</div>
-        
+
         <div class="ifTime">
             <ol start="5">
-                <li> 
-                    Open your U1L3-Pinwheel project, and build a <code>nest squares</code> block that uses <code>for</code> and your <code>polygon</code> block to draw nested squares. Give it an input so that it will draw whatever <var>number of squares</var> you specify, with each square larger than the previous: <br /> 
+                <li>
+                    Open je H1L3-Molentje project, en bouw een <code>geneste vierkanten</code> blok dat een <code>herhaal</code> gebruikt en je <code>polygon</code> blok om een geneste vierkant te tekenen. Geef het een invoer zodanig dat het een willekeurig <var>aantal vierkanten</var> zal tekenen die jij specificeert, met elk vierkant groter dan de voorgaande: <br />
                     <img class="indent" src="/bjc-r/img/1-introduction/nested-squares.png" alt="nested squares" title="nested squares" />
                 </li>
-                <li>Build <code>nest polygons</code> that accepts the <var>number of polygons</var> and the <var>number of sides</var> for the polygons.</li>
+                <li>Bouw <code>geneste polygonen</code> die een <var>bepaald aantal polygonen</var> aanneemt en de <var>aantal kanten</var> voor de polygonen aanneemt.</li>
                 <li>
-                    Build a script that draws 12 regular polygons, each with one more side than the previous one, as shown below.<br />
+                    Bouw een script dat 12 gewone polygonen tekent, elke met steeds één kant meer dan de voorgaande, zoals hieronder weergegeven.<br />
                     <img class="indent" src="/bjc-r/img/1-introduction/polygons.png" alt="polygons: triangle through decagon" title="polygons: triangle through decagon" />
                 </li>
-                <li>Predict what this script will do before you try it:<br /><img class="indent" src="/bjc-r/img/1-introduction/nested-fors.png" width="399" height="147" alt="for (tens) = (0) to (9){ for (ones) = (0) to (9){ say (join (tens) (ones)) for (0.3) secs}}" title="for (tens) = (0) to (9){ for (ones) = (0) to (9){ say (join (tens) (ones)) for (0.3) secs}}"></li>
+                <li>Voorspel wat dit script doet voordat je het uitprobeert:<br /><img class="indent" src="/bjc-r/img/1-introduction/nested-fors.png" width="399" height="147" alt="for (tens) = (0) to (9){ for (ones) = (0) to (9){ say (join (tens) (ones)) for (0.3) secs}}" title="for (tens) = (0) to (9){ for (ones) = (0) to (9){ say (join (tens) (ones)) for (0.3) secs}}"></li>
             </ol>
         </div>
-        
+
         <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
             <ol type="A">
-                <li>Build a script that counts down by 10 from 100 to 0  (that is, 100, 90, 80, etc.).</li>
+                <li>Bouw een script dat aftelt met stappen van 10 van 100 tot 0 (dat is dus, 100, 90, 80, etc.).</li>
 				<!--<li><img class="inline" src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Tough Stuff" title="Tough Stuff" /> Build a <em>block</em> with inputs that let you specify how to count. If you say <img src="/bjc-r/img/1-introduction/count-by-10-from-100-to-0.png" alt="count-by-10-from-100-to-0">, it counts 100, 90, 80, etc., but if you say <img src="/bjc-r/img/1-introduction/count-by-2-from-0-to-30.png" alt="count-by-2-from-0-to-30">, it counts 0, 2, 4, 6, ..., 28, 30.</li>-->
 
                 <li>
-                    Find a way to use <code>for</code> to nest squares this way. Build your <em>block</em> with two inputs that let you specify how many squares the design will contain and how much bigger each square will be than the previous one.<br />
-                    <img class="imageRight" src="/bjc-r/img/icons/tough-stuff.png" alt="Tough Stuff" title="Tough Stuff" /> 
+                    Vind een manier die <code>gebruikt</code> om een vierkant te nesten op deze manier. Bouw je <em>blok</em> met two invoeren die je laat specificeren hoeveel vierkanten het ontwerp bevat en hoeveel groter elk vierkant zal worden ten opzichte van de vorige.<br />
+                    <img class="imageRight" src="/bjc-r/img/icons/tough-stuff.png" alt="Tough Stuff" title="Tough Stuff" />
                     <img class="indent" src="/bjc-r/img/1-introduction/concentric-squares.png" width="219" height="170" alt="concentric squares" title="concentric squares">
                 </li>
                 <!--<div class="comment">We might want to teach them about sliders as part of the TiF. It is useful here, not essential (so TiF) and cool (so TiF). </div>-->
                 <li>
-                	Below are two animations that use the <code>pinwheel</code> code with inputs. Find out how to create your own artistic animations.<br />
+                	Hieronder zijn twee animaties die de <code>molentje</code> code gebruikt met invoer. Zoek uit hoe je voor jezelf zulke artistieke animaties kunt maken.<br />
                     <img class="indent" src="/bjc-r/img/1-introduction/Blockswith-Inputs_img/pinwheelArray" height="200" alt="Array of pinwheels animation" title="Array of pinwheels animation"/>
                     <img  src="/bjc-r/img/1-introduction/Blockswith-Inputs_img/PinwheelWreathAnimation.gif"  height="200" alt="Pinwheel wreath animation" title="Pinwheel wreath animation"/><br />
                     <div class="endnote">
-                        <p>The following code may give you ideas about how to create animations. Make sure to remove all <code> wait</code> <var>0.5</var> <code>secs</code> blocks from your <code>pinwheel</code> code so they don't slow it down. The <code>warp</code> block allows the drawing of the pinwheel all at once.</p>
+                        <p>De onderstaande code kan je ideeën geven over hoe je animaties kunt maken. Zorg ervoor dat je alle <code> wacht</code> <var>0.5</var> <code>sec</code> blokken van je <code>molentje</code> code hebt verwijdert, zodat ze niets zullen vertragen. Het <code>warp</code> blok staat toe alles tegelijkertijd te laten gebeuren.</p>
                         <img class="indent" src="/bjc-r/img/1-introduction/Blockswith-Inputs_img/animationCode.png"  height="150" alt="forever{for(i)=(0) to (50){clear;warp{pinwheel, branches:(12) size:(50) backup:(i)}}}" title="forever{for(i)=(0) to (50){clear;warp{pinwheel, branches:(12) size:(50) backup:(i)}}}"/>
                     </div>
                 </li>
@@ -132,26 +132,26 @@
                     <img src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Tough Stuff" title="Tough Stuff" />
                     <img src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Tough Stuff" title="Tough Stuff" />
                     <img src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Tough Stuff" title="Tough Stuff" />
-                    This block is like the squiral, but instead of changing the input to <code>move</code>, it changes the input to <code>turn</code>:<br />
+                    Dit blok is net als de vierkante, maar in plaats van de invoer te veranderen naar <code>neem</code>, verandert het de invoer naar <code>draai</code>:<br />
                     <img class="indent" src="/bjc-r/img/1-introduction/inspi.png" height="150" alt="inspi repeat:(num) size:(size) angle:(angle) : for (i) = (1) to (num) {move (size) steps; turn ((i) * (angle)) degrees}" title="inspi repeat:(num) size:(size) angle:(angle) : for (i) = (1) to (num) {move (size) steps; turn ((i) * (angle)) degrees}" />
                     <ol>
-                        <li>Try sketching what it will draw with an angle of 2.</li>
+                        <li>Probeer te schetsen wat het zal tekenen met een hoek van 2.</li>
                         <li>
-                            Then build it, and try each of these tests:<br />
-                            <div class="sidenote">You can stop each test with the stop button (<img class="button" src="/bjc-r/img/1-introduction/stop_button.png" alt="stop button" title="stop button"/>) when you're sure nothing new will happen, but don't decide that too quickly!</div>
+                            Bouw het dan, en probeer elk van deze tests:<br />
+                            <div class="sidenote">Je kunt elke test stoppen met de "stop" knop (<img class="button" src="/bjc-r/img/1-introduction/stop_button.png" alt="stop button" title="stop button"/>) als je er zeker van bent dat er niks nieuws gaat gebeuren, maak beslis dit nooit te snel!</div>
                             <img class="indent" src="/bjc-r/img/1-introduction/inspi-tests.png" alt="inspi with (1000,10,80), (1000,5,1), (1000,5,7), (1000,5,13), (1000,10,77)" title="inspi with (1000,10,80), (1000,5,1), (1000,5,7), (1000,5,13), (1000,10,77)" />
                         </li>
                         <!--<li>What's going on? Can you work out a theory to predict anything about the shape it draws for a particular angle input? <a id="hintbutton" onClick="document.getElementById('hintbutton').innerHTML='Think about divisibility.';">(Don't click unless you really, really need a super big hint.)</a></li>-->
-                        <li>What's going on? Can you work out a theory to predict anything about the shape it draws for a particular angle input? <a href="#hint-1" data-toggle="collapse" class="collapsed" title="Hint">(Don't click unless you need a big hint.)</a>
+                        <li>Wat gebeurt er? Kun je een theorie bedenken die iets voorspelt over de vorm die het tekent voor een specifieke hoek-invoer? <a href="#hint-1" data-toggle="collapse" class="collapsed" title="Hint">(Klik hier alleen op als je een grote tip nodig hebt.)</a>
           <div id="hint-1" class="collapse">
              Hint: Think about divisibility.
           </div></li>
-                        
+
                     </ol>
-                </li>  
+                </li>
             </ol>
-        </div>  
-       
-        
+        </div>
+
+
     </body>
 </html>
