@@ -1,76 +1,106 @@
-
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <script type="text/javascript" src="../../bjc-r/llab/loader.js"></script>
-        <script type="text/javascript" src="../../bjc-r/utilities/gifffer.min.js"></script>
-        <script type="text/javascript">window.onload = function() {Gifffer();}</script>
-        <link rel="stylesheet" type="text/css" href="/bjc-r/css/bjc-gifffer.css">
-        <title>Hoofdstuk 1 Les 2: Roddels en Groeten, Pagina 4</title>
-	</head>
 
-	<body>
-    	<div class="todo">
-            ST EK List:<br />
-            4.1.1B Sequencing is the application of each step of an algorithm in the order in which the statements are given. <br />
-            4.1.1C Selection uses a Boolean condition to determine which of two parts of an algorithm is used. <br />
-            5.2.1B Program instructions are executed sequentially.
-        </div>
-		<h2>Learning Player Names</h2>
-		<div class="todo">
-            <strong>BH/PG/AC/MF FP meeting:</strong>
-            <p>Animation should be redone so that the name is added to the list before the greeting is said. Also, change the sprite costume so that it's not a child younger than our students. --MF, 6/18/18</p>
-            <p>This appears is the first place where we talk about global variables; we should have a vocab box. --MF, 6/18/18</p>
-            <p>Move this to U2 in place of 2.1.4, which should be junked except for the pieces that are needed for 2.2.3. --MF, 6/18/18</p>
-        </div>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="../../bjc-r/llab/loader.js"></script>
+    <script type="text/javascript" src="../../bjc-r/utilities/gifffer.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            Gifffer();
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="/bjc-r/css/bjc-gifffer.css">
+    <title>Hoofdstuk 1 Les 2: Roddels en Groeten, Pagina 4</title>
+</head>
 
-        <div class="learn">
-            <p>
-                <strong>Op deze pagina,</strong> ga je een <code>groet speler</code> script maken dat gebruikers begroet en <em>hun namen onthoudt</em> zodat eerste bezoekers verschillende begroeting krijgen van terugkerende bezoekers.
-        <!--        <div class="sidenote">This project is an introductory example of a cutting edge field in computer science called Machine Learning.</div>  -->
-	            <img class="indent" data-gifffer="/bjc-r/img/1-introduction/U1ImageVideoAddendum_img/U1L2P4-MeetGreet.gif" width="500" alt="greet player example" title="greet player example" />
-            </p>
-		</div>
+<body>
+    <div class="todo">
+        ST EK List:<br />
+        4.1.1B Sequencing is the application of each step of an algorithm in the order in which the statements are
+        given. <br />
+        4.1.1C Selection uses a Boolean condition to determine which of two parts of an algorithm is used. <br />
+        5.2.1B Program instructions are executed sequentially.
+    </div>
+    <h2>Learning Player Names</h2>
+    <div class="todo">
+        <strong>BH/PG/AC/MF FP meeting:</strong>
+        <p>Animation should be redone so that the name is added to the list before the greeting is said. Also, change
+            the sprite costume so that it's not a child younger than our students. --MF, 6/18/18</p>
+        <p>This appears is the first place where we talk about global variables; we should have a vocab box. --MF,
+            6/18/18</p>
+        <p>Move this to U2 in place of 2.1.4, which should be junked except for the pieces that are needed for 2.2.3.
+            --MF, 6/18/18</p>
+    </div>
 
-		<div class="forYouToDo" id="first">
-            <ol>
-                <div class="vocabBig"><a name="AP" class="anchor">&nbsp;</a>
-                    <p>
-                        De keuze wordt gemaakt door een <code>als-anders</code>. <br />
-                        <img class="inline" src="../../bjc-r/img/1-introduction/greet-player-skeleton.png" width="350" alt="ask(What is your name?) and wait;if((player list) contains(answer)){}else{}" title="ask(What is your name?) and wait;if((player list) contains(answer)){}else{}"/><br />
-                        De <code>als</code> en <code>als-anders</code> blokken worden <em>conditionelen</em> genoemd omdat ze de code controleren gebaseerd op een <strong>conditie</strong> (hier, of de lijst van spelers de namen van deze spelers bevat). <div class="AP-only">Kiezen (selecteren) welk gedeelte van een algoritme te runnen gebaseerd op een conditie wordt een <strong>selectie</strong> genoemd.
-                    </div></p>
-                	<div class="AP-only"><p><strong>Rangschikken</strong> is het process van het <em>orderen</em> van de code (het in een volgorde plaatsen), zoals je dat hier doet.</p></div>
+    <div class="learn">
+        <p>
+            <strong>Op deze pagina,</strong> ga je een <code>groet speler</code> script maken dat gebruikers begroet en
+            <em>hun namen onthoudt</em> zodat eerste bezoekers verschillende begroeting krijgen van terugkerende
+            bezoekers.
+            <!--        <div class="sidenote">This project is an introductory example of a cutting edge field in computer science called Machine Learning.</div>  -->
+            <img class="indent" data-gifffer="/bjc-r/img/1-introduction/U1ImageVideoAddendum_img/U1L2P4-MeetGreet.gif"
+                width="500" alt="greet player example" title="greet player example" />
+        </p>
+    </div>
+
+    <div class="forYouToDo" id="first">
+        <ol>
+            <div class="vocabBig"><a name="AP" class="anchor">&nbsp;</a>
+                <p>
+                    De keuze wordt gemaakt door een <code>als-anders</code>. <br />
+                    <img class="inline" src="../../bjc-r/img/1-introduction/greet-player-skeleton.png" width="350"
+                        alt="ask(What is your name?) and wait;if((player list) contains(answer)){}else{}"
+                        title="ask(What is your name?) and wait;if((player list) contains(answer)){}else{}" /><br />
+                    De <code>als</code> en <code>als-anders</code> blokken worden <em>conditionelen</em> genoemd omdat
+                    ze de code controleren gebaseerd op een <strong>conditie</strong> (hier, of de lijst van spelers de
+                    namen van deze spelers bevat). <div class="AP-only">Kiezen (selecteren) welk gedeelte van een
+                        algoritme te runnen gebaseerd op een conditie wordt een <strong>selectie</strong> genoemd.
+                    </div>
+                </p>
+                <div class="AP-only">
+                    <p><strong>Rangschikken</strong> is het process van het <em>orderen</em> van de code (het in een
+                        volgorde plaatsen), zoals je dat hier doet.</p>
                 </div>
-                <li><a href="/bjc-r/prog/1-introduction/U1L2-GreetPlayer.xml" class="run"><img class="inline" src="../../bjc-r/img/icons/load-save.png" width="550" alt="Click here to load this file. Then save it to your Snap! account." title="Click here to load this file. Then save it to your Snap! account."></a><br /> Het bevat de meeste code die je nodig hebt om het script te maken.</li>
-				<li>
-                    Snap (klik) de stukken samen in een volgorde zodanig dat:
-					  <ol type="a">
-                        <li>De groeter zal <code>vragen</code> om de speler zijn/haar naam.</li>
-                        <li>
-                            <strong>Als</strong> de speler's naam in de <var>spelers lijst</var> staat,
-                            <ul><li><code>Zeg</code> "leuk je weer te zien, <em>naam speler</em>." </li></ul>
-                        </li>
-                        <li>
-                            <strong>Anders</strong>, wanneer de speler niet op de lijst staat,
-                            <ul>
-                                <li><code>Zeg</code> "leuk je te ontmoeten, <em>naam speler</em>," en </li>
-                                <li><code>Voeg</code> de speler's naam toe aan de <var>spelers lijst</var>. </li>
-                            </ul>
-                        </li>
-                    </ol>
-				</li>
-				<li>Test en debug. Zorg ervoor dat het script werkt op de manier dat jij wilt dat het werkt.</li>
-				<li>Maak een <img class="inline" src="../../bjc-r/img/1-introduction/greet-player.png" alt="greet player block" title="greet player block" /> <em>command</em> blok, en sleep je werkend script hierin.</li>
-                <li>Klik <code>groet speler</code> meerdere keren om te testen dat het werkt naar behoren. Fix alle bugs.</li>
-	            
-                <!--<img class="inline" src="../../bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />-->
-                <li><img class="inline" src="../../bjc-r/img/icons/save-use-later.png" alt="Save. You will use this later." title="Save. You will use this later."></li>
-	        </ol>
-        </div>
+            </div>
+            <li><a href="/bjc-r/prog/1-introduction/U1L2-GreetPlayer.xml" class="run"><img class="inline"
+                        src="../../bjc-r/img/icons/load-save.png" width="550"
+                        alt="Click here to load this file. Then save it to your Snap! account."
+                        title="Click here to load this file. Then save it to your Snap! account."></a><br /> Het bevat
+                de meeste code die je nodig hebt om het script te maken.</li>
+            <li>
+                Snap (klik) de stukken samen in een volgorde zodanig dat:
+                <ol type="a">
+                    <li>De groeter zal <code>vragen</code> om de speler zijn/haar naam.</li>
+                    <li>
+                        <strong>Als</strong> de speler's naam in de <var>spelers lijst</var> staat,
+                        <ul>
+                            <li><code>Zeg</code> "leuk je weer te zien, <em>naam speler</em>." </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Anders</strong>, wanneer de speler niet op de lijst staat,
+                        <ul>
+                            <li><code>Zeg</code> "leuk je te ontmoeten, <em>naam speler</em>," en </li>
+                            <li><code>Voeg</code> de speler's naam toe aan de <var>spelers lijst</var>. </li>
+                        </ul>
+                    </li>
+                </ol>
+            </li>
+            <li>Test en debug. Zorg ervoor dat het script werkt op de manier dat jij wilt dat het werkt.</li>
+            <li>Maak een <img class="inline" src="../../bjc-r/img/1-introduction/greet-player.png"
+                    alt="greet player block" title="greet player block" /> <em>command</em> blok, en sleep je werkend
+                script hierin.</li>
+            <li>Klik <code>groet speler</code> meerdere keren om te testen dat het werkt naar behoren. Fix alle bugs.
+            </li>
 
-<!--  WAY TOO HARD FOR UNIT 1      <div class="takeItFurther">
+            <!--<img class="inline" src="../../bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />-->
+            <li><img class="inline" src="../../bjc-r/img/icons/save-use-later.png" alt="Save. You will use this later."
+                    title="Save. You will use this later."></li>
+        </ol>
+    </div>
+
+    <!--  WAY TOO HARD FOR UNIT 1      <div class="takeItFurther">
             <ol type="A">
                 <img class="imageRight" src="../../bjc-r/img/icons/tough-stuff.png" alt="Tough Stuff" title="Tough Stuff" />
                 <li>
@@ -84,7 +114,6 @@
         </div>  -->
 
 
-	</body>
+</body>
+
 </html>
-
-
