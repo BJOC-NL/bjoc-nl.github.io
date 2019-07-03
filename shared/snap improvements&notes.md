@@ -18,18 +18,18 @@
 * In H2L2P2 hebben ze het over een 'point'  blok, maar in de NL Snap! versie zie ik niks wat daar op lijkt.
 
 
-#Casper
+# Casper
 
-##Glossary toevoegingen
+## Glossary toevoegingen
 * Discuss -> Bespreek
 * partner .> klasgenoot
-##Vragen over Glossary
+## Vragen over Glossary
 * Cloud blijft Cloud? (H1L4P1)
 * Privacy blijft Privacy? (H1L4)
 * Section -> gedeelte? miss paragraaf ?(H1L4P4)
 * For You To Do -> Voor Jou Om Te Doen? klinkt niet heel lekker.
 
-##Andere vragen
+## Andere vragen
 * H1L4P3, Verhaal in The Guardian, wat doen we hier mee? Ook lezen uit boek Blown to Bits, hoe hiermee omgaan nu?
 * de "Take It Further" werkt niet meer in H1L4P1, ook in de Engelse. weghalen?
 * Hoe gaan we de CSS/Javascript vertalen? Aangezien de tekst "For You to Do niet in de HTML zit, weet niet waar wel.
@@ -39,7 +39,7 @@
 * vertalen van blown to bits?
 
 
-##Om de layout te fixen
+## Om de layout te fixen
 * verander alle paths van /bjc-r etc. naar ../../bjc-r. dan is de styling gefixt.
 * <html lang="en"> naar <html lang="nl">. kan je beter via replace all op het eind doen wss
 
