@@ -20,10 +20,10 @@
 
 ##Glossary toevoegingen
 * Discuss -> Bespreek
-
+* partner .> klasgenoot
 ##Vragen over Glossary
 * Cloud blijft Cloud? (H1L4P1)
-* Privacy blijft Privacy? (H1L4P1)
+* Privacy blijft Privacy? (H1L4)
 
 ##Andere vragen
 * de "Take It Further" werkt niet meer in H1L4P1, ook in de Engelse. weghalen?
