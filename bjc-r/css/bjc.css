@@ -378,7 +378,7 @@ img.noshadow {
 }
 
 .dialogue:before {
-    content: "Thinking Out Loud";
+    content: "Hardop Denken";
 }
 
 .dialogue>div:not(.sidenote):not(.sidenoteBig):not(.comment):not(.commentBig):not(.todo):not(.endnote):not(.narrower):not(.narrowpurple):not(.vocab) {
@@ -424,7 +424,7 @@ img.noshadow {
 }
 
 .forYouToDo:before {
-    content: "For You To Do";
+    content: "Voor Jou Om Te Doen";
 }
 
 /* This had been .forYouToDo#first:before but we changed it for ADA compliance. --MF, 9/26/17 */
@@ -439,7 +439,7 @@ img.noshadow {
 }
 
 .ifTime:before {
-    content: "If There Is Time...";
+    content: "Als Er Tijd Over Is...";
 }
 
 .ifTimeHide:before {
@@ -480,7 +480,7 @@ table.truth tr td {
 }
 
 .takeItFurther:before {
-    content: "Take It Further";
+    content: "Een Stapje Verder";
 }
 
 .takeNote,
@@ -540,7 +540,7 @@ endHOM {
 .vocab:before,
 .vocabBig:before,
 .vocabFullWidth:before {
-    content: "Vocabulary";
+    content: "Woordenschat";
     font-size: 16px;
     font-weight: bold;
     line-height: 1.5em;
@@ -673,7 +673,7 @@ th {
 }
 
 .time:before {
-    content: "If you are short on time, you can skip...";
+    content: "Als je weing tijd hebt, kan je overslaan...";
 }
 
 /* Compare Page Styles */
