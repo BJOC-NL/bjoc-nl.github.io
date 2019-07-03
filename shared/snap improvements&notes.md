@@ -34,3 +34,8 @@
 * overal staat nog <html lang="en">.
 * weghalen van tekst die niet weergegeven is, todos en comments, voegen nisk toe en maken vertalen lastiger.
 
+
+##Om de layout te fixen
+* verander alle paths van /bjc-r etc. naar ../../bjc-r. dan is de styling gefixt.
+* <html lang="en"> naar <html lang="nl">. kan je beter via replace all op het eind doen wss
+

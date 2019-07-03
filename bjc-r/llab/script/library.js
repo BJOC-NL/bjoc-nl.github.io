@@ -31,7 +31,7 @@ llab.snapRunURLBase = "http://snap.berkeley.edu/snapsource/snap.html#open:";
 
 // returns the current domain with a cors proxy if needed
 
-llab.getSnapRunURL = function(targeturl) {
+llab.getSnapRunURL = function (targeturl) {
     if (!targeturl) {
         return '';
     }
@@ -63,7 +63,7 @@ llab.getSnapRunURL = function(targeturl) {
 
 
 /** Returns the value of the URL parameter associated with NAME. */
-llab.getQueryParameter = function(paramName) {
+llab.getQueryParameter = function (paramName) {
     var params = llab.getURLParameters();
     if (params.hasOwnProperty(paramName)) {
         return params[paramName];
@@ -73,7 +73,7 @@ llab.getQueryParameter = function(paramName) {
 };
 
 /** Strips comments off the line in a topic file. */
-llab.stripComments = function(line) {
+llab.stripComments = function (line) {
     var index = line.indexOf("//");
     // the second condition makes this ignore urls (http://...)
     if (index !== -1 && line[index - 1] !== ":") {
@@ -85,7 +85,7 @@ llab.stripComments = function(line) {
 /* Google Analytics Tracking
  * To make use of this code, the two ga() functions need to be called
  * on each page that is loaded, which means this file must be loaded.
- */
+
 llab.GAfun = function(i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r;
     i[r] = i[r] || function() {
@@ -107,11 +107,12 @@ if (llab.GACode) {
     ga('create', llab.GACode, llab.GAUrl);
     ga('send', 'pageview');
 }
+ */
 
 /** Truncate a STR to an output of N chars.
  *  N does NOT include any HTML characters in the string.
  */
-llab.truncate = function(str, n) {
+llab.truncate = function (str, n) {
     // Ensure string is 'proper' HTML by putting it in a div, then extracting.
     var clean = document.createElement('div');
     clean.innerHTML = str;
@@ -139,7 +140,7 @@ llab.truncate = function(str, n) {
 // Modiefied for LLAB. Inlined to reduce requests
 var queryString = {};
 
-queryString.parse = function(str) {
+queryString.parse = function (str) {
     if (typeof str !== 'string') {
         return {};
     }
@@ -150,7 +151,7 @@ queryString.parse = function(str) {
         return {};
     }
 
-    return str.trim().split('&').reduce(function(ret, param) {
+    return str.trim().split('&').reduce(function (ret, param) {
         var parts = param.replace(/\+/g, ' ').split('=');
         var key = parts[0];
         var val = parts[1];
@@ -172,12 +173,12 @@ queryString.parse = function(str) {
     }, {});
 };
 
-queryString.stringify = function(obj) {
-    return obj ? Object.keys(obj).map(function(key) {
+queryString.stringify = function (obj) {
+    return obj ? Object.keys(obj).map(function (key) {
         var val = obj[key];
 
         if (Array.isArray(val)) {
-            return val.map(function(val2) {
+            return val.map(function (val2) {
                 if (!val2) { // Mod: Don't have =null values in URL params
                     return encodeURIComponent(key);
                 }
@@ -199,7 +200,7 @@ llab.QS = queryString;
 // Return a new object with the combined properties of A and B.
 // Desgined for merging query strings
 // B will clobber A if the fields are the same.
-llab.merge = function(objA, objB) {
+llab.merge = function (objA, objB) {
     var result = {},
         prop;
     for (prop in objA) {
@@ -215,11 +216,11 @@ llab.merge = function(objA, objB) {
     return result;
 };
 
-llab.getURLParameters = function() {
+llab.getURLParameters = function () {
     return llab.QS.parse(location.search);
 };
 
-llab.getAttributesForElement = function(elm) {
+llab.getAttributesForElement = function (elm) {
     var map = elm.attributes,
         ignore = ['class', 'id', 'style'],
         attrs = {},
@@ -258,7 +259,7 @@ llab.selectors.PROGRESS = '.full-bottom-bar';
 
 //// cookie stuff
 // someday my framework will come, but for now, stolen blithely from http://www.quirksmode.org/js/cookies.html
-llab.createCookie = function(name, value, days) {
+llab.createCookie = function (name, value, days) {
     if (days) {
         var date = new Date();
         date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
@@ -267,7 +268,7 @@ llab.createCookie = function(name, value, days) {
     document.cookie = name + "=" + value + expires + "; path=/";
 }
 
-llab.readCookie = function(name) {
+llab.readCookie = function (name) {
     var nameEQ = name + "=";
     var ca = document.cookie.split(';');
     for (var i = 0; i < ca.length; i++) {
@@ -278,29 +279,29 @@ llab.readCookie = function(name) {
     return null;
 }
 
-llab.eraseCookie = function(name) {
+llab.eraseCookie = function (name) {
     createCookie(name, "", -1);
 }
 
 
-llab.spanTag = function(content, className) {
+llab.spanTag = function (content, className) {
     return '<span class="' + className + '">' + content + '</span>'
 }
 
 // Cool array level operations
-llab.any = function(A) {
-    return A.reduce(function(x, y) {
+llab.any = function (A) {
+    return A.reduce(function (x, y) {
         return x || y
     });
 }
 
-llab.all = function(A) {
-    return A.reduce(function(x, y) {
+llab.all = function (A) {
+    return A.reduce(function (x, y) {
         return x && y
     });
 }
 
-llab.which = function(A) {
+llab.which = function (A) {
     for (i = 0; i < A.length; i++) {
         if (A[i]) {
             return i;
