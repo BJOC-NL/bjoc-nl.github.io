@@ -18,12 +18,15 @@
 * In H2L2P2 hebben ze het over een 'point'  blok, maar in de NL Snap! versie zie ik niks wat daar op lijkt.
 
 
+#Casper
+
 ##Glossary toevoegingen
 * Discuss -> Bespreek
 * partner .> klasgenoot
 ##Vragen over Glossary
 * Cloud blijft Cloud? (H1L4P1)
 * Privacy blijft Privacy? (H1L4)
+* Section -> gedeelte? miss paragraaf ?(H1L4P4)
 * For You To Do -> Voor Jou Om Te Doen? klinkt niet heel lekker.
 
 ##Andere vragen
@@ -33,6 +36,7 @@
 * Icons moeten ook vertaald gaan worden, geloof dat het lettertype Arial is.
 * overal staat nog <html lang="en">.
 * weghalen van tekst die niet weergegeven is, todos en comments, voegen nisk toe en maken vertalen lastiger.
+* vertalen van blown to bits?
 
 
 ##Om de layout te fixen
