@@ -18,5 +18,15 @@
 * In H2L2P2 hebben ze het over een 'point'  blok, maar in de NL Snap! versie zie ik niks wat daar op lijkt.
 
 
+##Glossary toevoegingen
+* Discuss -> Bespreek
 
+##Vragen over Glossary
+* Cloud blijft Cloud? (H1L4P1)
+* Privacy blijft Privacy? (H1L4P1)
+
+##Andere vragen
+* de "Take It Further" werkt niet meer in H1L4P1, ook in de Engelse. weghalen?
+* Hoe gaan we de CSS/Javascript vertalen? Aangezien de tekst "For You to Do niet in de HTML zit, weet niet waar wel.
+* Icons moeten ook vertaald gaan worden, geloof dat het lettertype Arial is,.
 
