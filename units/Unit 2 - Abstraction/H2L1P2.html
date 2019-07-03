@@ -3,9 +3,9 @@
 <html lang="en">
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+		<script type="text/javascript" src="../../bjc-r/llab/loader.js"></script>
 	    <title>Hoofdstuk 2 Les 1: Verbeter spellen met variabelen, Pagina 2</title>
-		<script type="text/javascript" src="/bjc-r/utilities/gifffer.min.js"></script>
+		<script type="text/javascript" src="../../bjc-r/utilities/gifffer.min.js"></script>
         <script type="text/javascript">window.onload = function() {Gifffer();};</script>
         <link rel="stylesheet" type="text/css" href="/bjc-r/css/bjc-gifffer.css">
 	</head>
@@ -29,8 +29,8 @@
                     <strong>Analyseer en Debug.</strong> De definitie van een <code>Raad-het-getal-spel</code> blok heeft een <strong>bug</strong>&mdash;een error / fout in de code dat het programma anders doet gedragen dan dat jij zou willen. Deze code, zou je het constant spelen,  zal in de meeste gevallen wel werken, maar <em>soms</em> (niet altijd) zal het je feliciteren  <em>voordat je het getal hebt geraden</em>. <br />
                     <div class="sidenote"><div class="todo">This is a kind of debugging strategy (perhaps: "narrowing the possibilities"?). Do we want to say anything more about it? --MF, 3/21/18</div>
 		Als je dit bouwt om uit te proberen, zorg dat het random nummers selecteert van 1 tot 3 om de bug vaker voor te laten komen.</div>
-                    <img class="indent" src="/bjc-r/img/2-complexity/number-guessing-game-definition.png" alt="Number guessing game{script variables(secret number); set(secret number) to (pick random(1) to (10)); repeat until(answer=secret number){ask(Guess my secret number) and wait} say(You guessed it!) for (2) secs}" title="Number guessing game{script variables(secret number); set(secret number) to (pick random(1) to (10)); repeat until(answer=secret number){ask(Guess my secret number) and wait} say(You guessed it!) for (2) secs}" /><br />
-                    <img class="inline" src="/bjc-r/img/icons/talk-with-another-pair.png" alt="Talk with Another Pair" title="Talk with Another Pair" /> Analyseer de  code, of experimenteer met het, en leg uit hoe dit kan gebeuren.
+                    <img class="indent" src="../../bjc-r/img/2-complexity/number-guessing-game-definition.png" alt="Number guessing game{script variables(secret number); set(secret number) to (pick random(1) to (10)); repeat until(answer=secret number){ask(Guess my secret number) and wait} say(You guessed it!) for (2) secs}" title="Number guessing game{script variables(secret number); set(secret number) to (pick random(1) to (10)); repeat until(answer=secret number){ask(Guess my secret number) and wait} say(You guessed it!) for (2) secs}" /><br />
+                    <img class="inline" src="../../bjc-r/img/icons/talk-with-another-pair.png" alt="Talk with Another Pair" title="Talk with Another Pair" /> Analyseer de  code, of experimenteer met het, en leg uit hoe dit kan gebeuren.
 
                 </li>
             	<li>Als je het nog niet geopend hebt, open je H2L1-Raadhetgetal project.</li>
@@ -59,8 +59,8 @@
                       <p>
                             Wanneer je je code aan het debugging bent, kan het helpen om de waarde hiervan op verschillende momenten in je programma te bekijken. Dit kun je op verschillende manieren doen:
                             <ul>
-                                <li>Je kunt <strong>klikken op het variabele blok</strong> (zoals <img src="/bjc-r/img/2-complexity/secret-number.png" alt="secret number">) meldt af en toe de huidige waarde.</li>
-                                <li>Als het een <em>globale</em> variabele is, kun je deze <strong>markeren met de check-box</strong> ernaast in de palette (<img src="/bjc-r/img/2-complexity/secret-number-check.png" width="120" alt="checkbox next to secret number">) om een <em>watcher</em> display te krijgen. (Dit werkt soms ook voor sommige andere informatie die geen variabelen zijn, zoals te zien op het plaatje beneden.)</li>
+                                <li>Je kunt <strong>klikken op het variabele blok</strong> (zoals <img src="../../bjc-r/img/2-complexity/secret-number.png" alt="secret number">) meldt af en toe de huidige waarde.</li>
+                                <li>Als het een <em>globale</em> variabele is, kun je deze <strong>markeren met de check-box</strong> ernaast in de palette (<img src="../../bjc-r/img/2-complexity/secret-number-check.png" width="120" alt="checkbox next to secret number">) om een <em>watcher</em> display te krijgen. (Dit werkt soms ook voor sommige andere informatie die geen variabelen zijn, zoals te zien op het plaatje beneden.)</li>
                                 <li>Als het een <em>lokale</em> (script) variabele is, kun je het <strong>gebruik de <code>show variabele</code> blok</strong> om een 'kijker' te laten zien (en gebruik <code>verberg variabele</code> om het weer te verbergen). (Ook weer te zien op het plaatje hieronder.)</li>
                             </ul>
                         </p>
@@ -75,7 +75,7 @@
         <h3>Breid het programma uit met meer specifieke reacties</h3>
         <div class="forYouToDo">
             <ol start="5">
-                <li>Gebruik meer conditionele blokken en predikaten om de computer te laten zeggen of het gerade getal te groot of the klein is: "Dat is te groot. Probeer het nog eens." <br /><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Waar in de code horen deze conditionelen?</li>
+                <li>Gebruik meer conditionele blokken en predikaten om de computer te laten zeggen of het gerade getal te groot of the klein is: "Dat is te groot. Probeer het nog eens." <br /><img class="inline" src="../../bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Waar in de code horen deze conditionelen?</li>
                 <li>
                     <strong>Test en debug.</strong> Speel het spel net zo lang totdat je zeker weet dat alles het doet, en de manier waarop jij wilt dat het spel het doet. Het zou moeten:
                     <ul>
@@ -88,7 +88,7 @@
         </div>
 
 		<p>Script variabelen bestaan alleen wanneer het script draait, dus het <var>geheime getal number</var> variabele zal <em>niet bestaan</em> nadat <code>Raad-het-getal</code> afgelopen is. Als het weer opnieuw wordt gespeeld, zal het programma een nieuwe <var>geheime getal</var> variabele maken en <em>initieeren</em> bij een random nummer.</p>
-		<img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />
+		<img class="imageRight" src="../../bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />
 		<p>In een later hoofdstuk, ga je leren hoe de computer een geheim getal zal raden die <em>jij</em> hebt gekozen.</p>
 
         <div class="ifTime">

@@ -3,8 +3,8 @@
 <html lang="en">
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
-		<script type="text/javascript" src="/bjc-r/utilities/gifffer.min.js"></script>
+		<script type="text/javascript" src="../../bjc-r/llab/loader.js"></script>
+		<script type="text/javascript" src="../../bjc-r/utilities/gifffer.min.js"></script>
         <script type="text/javascript">window.onload = function() {Gifffer();}</script>
         <link rel="stylesheet" type="text/css" href="/bjc-r/css/bjc-gifffer.css">
 	    <title>Hoofdstuk 2 Les 1: Verbeter spellen met Variabelen, Pagina 4</title>
@@ -31,7 +31,7 @@
                     <div class="narrower">
                         <h4><strong>Exporteer blokken</strong></h4>
                         <ol type="a">
-                            <li><strong>Kies "Exporteer blokken..."</strong> van het Snap<em>!</em> menu (<img class="inline" src="/bjc-r/img/1-introduction/file_button.png" alt="File menu button" title="File menu button"/>).</li>
+                            <li><strong>Kies "Exporteer blokken..."</strong> van het Snap<em>!</em> menu (<img class="inline" src="../../bjc-r/img/1-introduction/file_button.png" alt="File menu button" title="File menu button"/>).</li>
                             <li><strong>Selecteer enkel de blokken die je wilt exporteren </strong> (in dit geval, enkel <code>groet speler</code>), en klik "OK." Een XML document gaat nu downloaden.</li>
 							<div class="manual">De <a href="http://snap.berkeley.edu/snapsource/help/SnapManual.pdf" target="_blank" title="Snap! Reference Manual">Snap<em>!</em> Reference Manual</a> vertelt meer over exporteren en importeren.</div>
                         </ol>
@@ -42,15 +42,15 @@
 					<div class="narrower">
                         <h4><strong>Importeer blokken</strong></h4>
 						<ol type="a">
-                            <li><strong>Kies "Importeer..."</strong> van het Snap<em>!</em> menu (<img class="inline" src="/bjc-r/img/1-introduction/file_button.png" alt="File menu button" title="File menu button"/>).</li>
+                            <li><strong>Kies "Importeer..."</strong> van het Snap<em>!</em> menu (<img class="inline" src="../../bjc-r/img/1-introduction/file_button.png" alt="File menu button" title="File menu button"/>).</li>
                             <li><strong>Vind de XML file die je eerder geëxporteerd hebt</strong> (waarschijnlijk op je desktop in de 'download' map) en <strong>klik Openen</strong>.</li>
                             <li><strong>Vind de blokken die</strong> je wilt. Deze zullen aan het <em>eind</em> van de palette die deze bevat verschijnen.</li>
                             <li><strong>Klik het geïmporteerde blok om ervoor te zorgen dat alles het goed doet.</strong> (In dit voorbeeld, zul je waarschijnlijk een error tegenkomen nadat je een naam hebt ingevoerd.)</li>
-                            <img class="indent" src="/bjc-r/img/1-introduction/greet-player-error.png" alt="greet player reporting an error message: 'Inside: Error. a variable of name 'player list' does not exist in this context'" title="greet player reporting an error message: 'Inside: Error. a variable of name 'player list' does not exist in this context'" />
+                            <img class="indent" src="../../bjc-r/img/1-introduction/greet-player-error.png" alt="greet player reporting an error message: 'Inside: Error. a variable of name 'player list' does not exist in this context'" title="greet player reporting an error message: 'Inside: Error. a variable of name 'player list' does not exist in this context'" />
                         </ol>
                     </div>
                 </li>
-                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Look at the code for <code>greet player</code>. Can you determine what's wrong?</li>
+                <li><img class="inline" src="../../bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Look at the code for <code>greet player</code>. Can you determine what's wrong?</li>
             </ol>
         </div>
 
@@ -70,7 +70,7 @@
                     </div>
                 </li>
                 <div class="takeNote">
-                    <img class="imageRight" src="/bjc-r/img/2-complexity/two-events.png" alt="when green flag clicked, when space key pressed" title="when green flag clicked, when space key pressed"  />
+                    <img class="imageRight" src="../../bjc-r/img/2-complexity/two-events.png" alt="when green flag clicked, when space key pressed" title="when green flag clicked, when space key pressed"  />
                     <p>Als <var>spelers lijst</var> is geïnitieerd elke keer wanneer het spel opnieuw start, zal het spel nooit een naam onthouden. Dus, je zult een ander moment nodig hebben om het spel te starten dan het initiëren van de <var>spelers lijst</var>. Bijvoorbeeld, je kunt de groene vlag gebruiken om de lijst te initiëren, en de spatiebalk gebruiken om het Raad-het-getal spel te starten.</p>
                 </div>
                 <li>
@@ -88,7 +88,7 @@
 
                         </ul>
                     </div>
-                    <img class="inline" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />
+                    <img class="inline" src="../../bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />
                 </li>
             </ol>
         </div>
@@ -102,7 +102,7 @@
         <div class="commentBig">I'm not too happy about this set of exercises.  The right way to handle this is to make <code>greet player</code> a reporter, and have <code>Number guessing game</code> use it to set a script variable! --bh</div>
 
     		<ol start="8">
-                <li>Create a new variable, <var>current player</var>, to store the name of the current player. <img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Should this be a global variable or a script variable?</li>
+                <li>Create a new variable, <var>current player</var>, to store the name of the current player. <img class="inline" src="../../bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Should this be a global variable or a script variable?</li>
                 <li>
                     Use the <var>current player</var> variable to address the player by name:
                     <ol>
@@ -116,7 +116,7 @@
                         </li>
                     </ol>
                 </li>
-                <img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />
+                <img class="imageRight" src="../../bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />
                 <li><strong>Test and debug.</strong> Take turns playing the game, and fix any bugs.</li>
                 <div class="todo">ST-Seems too convoluted to me.  I am not convinced that greet player is the best example of a block to be exported.  Something like a polygon block seems simpler and more natural to export.  I would consider rethinking this entire page to see if we can find a way to make it easier, it feels like we are trying to teach too many things here simultaneously.</div>
             </ol>
