@@ -26,16 +26,16 @@
 * Section -> gedeelte? miss paragraaf ?(H1L4P4)
 * For You To Do -> Voor Jou Om Te Doen? klinkt niet heel lekker.
 
-## Andere vragen
+## Andere vragen/opmerkingen
 * H1L4P3, Verhaal in The Guardian, wat doen we hier mee? Ook lezen uit boek Blown to Bits, hoe hiermee omgaan nu?
 * de "Take It Further" werkt niet meer in H1L4P1, ook in de Engelse. weghalen?
-* Hoe gaan we de CSS/Javascript vertalen? Aangezien de tekst "For You to Do niet in de HTML zit, weet niet waar wel.
+* aantal pagina's hebben een raar <head> blok, ik denk dat we deze gewoon kunnen aanpassen naar die van de meeste pagina's.
 * Icons moeten ook vertaald gaan worden, geloof dat het lettertype Arial is.
 * overal staat nog <html lang="en">.
-* weghalen van tekst die niet weergegeven is, todos en comments, voegen nisk toe en maken vertalen lastiger.
+* weghalen van tekst die niet weergegeven is? todos en comments, voegen nisk toe en maken vertalen lastiger.
 * vertalen van blown to bits?
 
-## Om de layout te fixen
-* verander alle paths van /bjc-r etc. naar ../../bjc-r. dan is de styling gefixt.
+## Stappen mm de layout te fixen
+* verander alle paths van /bjc-r etc. naar ../../bjc-r. dan is de styling gefixt. GEDAAN VOOR U1, MAAR AANTAL PAGINA'S ZIJN RAAR.
 * <html lang="en"> naar <html lang="nl">. kan je beter via replace all op het eind doen wss
 
