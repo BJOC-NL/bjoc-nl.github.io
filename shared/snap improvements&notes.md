@@ -29,7 +29,6 @@
 ## Andere vragen
 * H1L4P3, Verhaal in The Guardian, wat doen we hier mee? Ook lezen uit boek Blown to Bits, hoe hiermee omgaan nu?
 * de "Take It Further" werkt niet meer in H1L4P1, ook in de Engelse. weghalen?
-* Hoe gaan we de CSS/Javascript vertalen? Aangezien de tekst "For You to Do niet in de HTML zit, weet niet waar wel.
 * Icons moeten ook vertaald gaan worden, geloof dat het lettertype Arial is.
 * overal staat nog <html lang="en">.
 * weghalen van tekst die niet weergegeven is, todos en comments, voegen nisk toe en maken vertalen lastiger.
