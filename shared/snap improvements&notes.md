@@ -18,7 +18,8 @@
 
 ## Glossary toevoegingen
 * Discuss -> Bespreek
-* partner .> klasgenoot
+* partner -> klasgenoot
+* event -> gebeurtenis
 
 ## Vragen over Glossary
 * Cloud blijft Cloud? (H1L4P1)
@@ -38,4 +39,31 @@
 ## Stappen mm de layout te fixen
 * verander alle paths van /bjc-r etc. naar ../../bjc-r. dan is de styling gefixt. GEDAAN VOOR U1, MAAR AANTAL PAGINA'S ZIJN RAAR.
 * <html lang="en"> naar <html lang="nl">. kan je beter via replace all op het eind doen wss
+
+##Images 
+creeër file structure zodat alles bij de general afbeeldingen makkelijk kan en zorg dat bloks gesorteerd zijn en miss identificeerbaar.
+Folder voor alle afbeeldingen: afb
+Daarin:  icons, voor afbeeldingen zoals Pair Programming Swap, Etc, sommigen hiervan moeten dus vertaald worden.
+
+*afb
+**icons
+**H1
+***blocks
+***H1L1
+****blocks
+****overig
+***H1L2
+****blocks
+****overig
+***H1L3
+****blocks
+****overig
+***H1L4
+****blocks
+****overig
+***H1L5
+****blocks
+****overig
+**H2
+...
 
