@@ -21,6 +21,8 @@ course - lessen (Throught the course - Tijdens de lessen)
 
 Input - invoer
 
+slot - veld
+
 (stage) background - speelveld
 
 stage - speelveld

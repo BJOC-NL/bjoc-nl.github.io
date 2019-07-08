@@ -35,6 +35,7 @@
 * overal staat nog <html lang="en">.
 * weghalen van tekst die niet weergegeven is? todos en comments, voegen nisk toe en maken vertalen lastiger.
 * vertalen van blown to bits?
+* heb in H1L5P2 het blok waar ze vertellen dat je een blok moet importeren weggehaald omdat het nu geloof ik in de standaard versie zit.
 
 ## Stappen mm de layout te fixen
 * verander alle paths van /bjc-r etc. naar ../../bjc-r. dan is de styling gefixt. GEDAAN VOOR U1, MAAR AANTAL PAGINA'S ZIJN RAAR.
