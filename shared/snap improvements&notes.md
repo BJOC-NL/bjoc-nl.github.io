@@ -46,25 +46,24 @@ creeër file structure zodat alles bij de general afbeeldingen makkelijk kan en 
 Folder voor alle afbeeldingen: afb
 Daarin:  icons, voor afbeeldingen zoals Pair Programming Swap, Etc, sommigen hiervan moeten dus vertaald worden.
 
-*afb
-**icons
-**H1
-***blocks
-***H1L1
-****blocks
-****overig
-***H1L2
-****blocks
-****overig
-***H1L3
-****blocks
-****overig
-***H1L4
-****blocks
-****overig
-***H1L5
-****blocks
-****overig
-**H2
+* afb
+  * icons
+  * H1
+    * H1L1
+      * blocks
+      * overig
+    * H1L2
+      * blocks
+      * overig
+    * H1L3
+      * blocks
+      * overig
+    * H1L4
+      * blocks
+      * overig
+    * H1L5
+      * blocks
+      * overig                        
+  * H2
 ...
 
