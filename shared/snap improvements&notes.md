@@ -38,6 +38,7 @@
 * heb in H1L5P2 het blok waar ze vertellen dat je een blok moet importeren weggehaald omdat het nu geloof ik in de standaard versie zit.
 * Youtube video op h1l1p7, wat doen we hier mee?
 * Wat doen we met de gifs/video files? ik zou zeggen aangezien ze de locatie van de knoppen laten zien dat het prima werkt ookal zou je geen Engels kunnen.
+* H1L2P1 heeft een soort custom blokken? en project, weet niet hoe je dit doet.
 
 ## Stappen mm de layout te fixen
 * verander alle paths van /bjc-r etc. naar ../../bjc-r. dan is de styling gefixt. GEDAAN VOOR U1, MAAR AANTAL PAGINA'S ZIJN RAAR.
