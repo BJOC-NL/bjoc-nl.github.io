@@ -18,7 +18,8 @@
 
 ## Glossary toevoegingen
 * Discuss -> Bespreek
-* partner .> klasgenoot
+* partner -> klasgenoot
+* event -> gebeurtenis
 
 ## Vragen over Glossary
 * Cloud blijft Cloud? (H1L4P1)
@@ -34,8 +35,35 @@
 * overal staat nog <html lang="en">.
 * weghalen van tekst die niet weergegeven is? todos en comments, voegen nisk toe en maken vertalen lastiger.
 * vertalen van blown to bits?
+* heb in H1L5P2 het blok waar ze vertellen dat je een blok moet importeren weggehaald omdat het nu geloof ik in de standaard versie zit.
 
 ## Stappen mm de layout te fixen
 * verander alle paths van /bjc-r etc. naar ../../bjc-r. dan is de styling gefixt. GEDAAN VOOR U1, MAAR AANTAL PAGINA'S ZIJN RAAR.
 * <html lang="en"> naar <html lang="nl">. kan je beter via replace all op het eind doen wss
+
+##Images 
+creeër file structure zodat alles bij de general afbeeldingen makkelijk kan en zorg dat bloks gesorteerd zijn en miss identificeerbaar.
+Folder voor alle afbeeldingen: afb
+Daarin:  icons, voor afbeeldingen zoals Pair Programming Swap, Etc, sommigen hiervan moeten dus vertaald worden.
+
+* afb
+  * icons
+  * H1
+    * H1L1
+      * blocks
+      * overig
+    * H1L2
+      * blocks
+      * overig
+    * H1L3
+      * blocks
+      * overig
+    * H1L4
+      * blocks
+      * overig
+    * H1L5
+      * blocks
+      * overig                        
+  * H2
+...
 
