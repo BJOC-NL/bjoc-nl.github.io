@@ -3,8 +3,8 @@
 <html lang="en">
     <head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
-        <script type="text/javascript" src="/bjc-r/utilities/gifffer.min.js"></script>
+        <script type="text/javascript" src="../../bjc-r/llab/loader.js"></script>
+        <script type="text/javascript" src="../../bjc-r/utilities/gifffer.min.js"></script>
         <script type="text/javascript">window.onload = function() {Gifffer();}</script>
         <link rel="stylesheet" type="text/css" href="/bjc-r/css/bjc-gifffer.css">
 		<title>Unit 2 Lab 2: Making Art by Using Data Structures, Page 4</title>
@@ -26,14 +26,14 @@
         <h2>Mandala Design</h2>
         <div class="learn">
             <strong>On this page,</strong> you will create a design called a <em>mandala</em>.<br />
-            <img class="indent" src="/bjc-r/img/2-complexity/Mandala_img/MandalaEvolution.gif"  height="300" alt="Mandala Evolution" title="Mandala Evolution"/>
+            <img class="indent" src="../../bjc-r/img/2-complexity/Mandala_img/MandalaEvolution.gif"  height="300" alt="Mandala Evolution" title="Mandala Evolution"/>
             
         </div>
         
         <div class="forYouToDo" id="first">
             <ol>
                 
-				<li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Before you open Snap<em>!</em>, figure out a possible algorithm for drawing this mandala: <img class="inline" src="/bjc-r/img/2-complexity/Mandala_img/10-gon-with-diagonals.png" height="100" alt="10-gon-with-diagonals" title="10-gon-with-diagonals" /></li>
+				<li><img class="inline" src="../../bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Before you open Snap<em>!</em>, figure out a possible algorithm for drawing this mandala: <img class="inline" src="../../bjc-r/img/2-complexity/Mandala_img/10-gon-with-diagonals.png" height="100" alt="10-gon-with-diagonals" title="10-gon-with-diagonals" /></li>
             </ol>
         </div>
 
@@ -43,16 +43,16 @@
             </div>
             <div class="stagedir">
                 Alphie opens their polygon project.<br />
-                <img class="indent" src="/bjc-r/img/2-complexity/polygonCode.png" height="180" alt="polygon, sides:(number of sides#) side length:(length#){repeat(number of sides){move(length) steps; turn clockwise(360/number of sides) degrees}}" title="polygon, sides:(number of sides#) side length:(length#){repeat(number of sides){move(length) steps; turn clockwise(360/number of sides) degrees}}" /> <br />
+                <img class="indent" src="../../bjc-r/img/2-complexity/polygonCode.png" height="180" alt="polygon, sides:(number of sides#) side length:(length#){repeat(number of sides){move(length) steps; turn clockwise(360/number of sides) degrees}}" title="polygon, sides:(number of sides#) side length:(length#){repeat(number of sides){move(length) steps; turn clockwise(360/number of sides) degrees}}" /> <br />
             </div>
             <div><span>Betsy:</span> So let's make our <code>polygon</code> block  store 
       <!--the location of--> each vertex as a <code>point</code> <em>while</em> it draws the polygon. We  listed  points as <em>we</em> clicked on them. This is the same, but with the <em>program</em> generating the points.</div>
-            <div><span> Gamal:</span> Right! Set up a empty list variable first, and then use <img src="/bjc-r/img/3-lists/add()to().png" height="44" alt="add() to ()" title="add() to ()" /> inside the <code>polygon</code> block.</div>
+            <div><span> Gamal:</span> Right! Set up a empty list variable first, and then use <img src="../../bjc-r/img/3-lists/add()to().png" height="44" alt="add() to ()" title="add() to ()" /> inside the <code>polygon</code> block.</div>
             <div><span>Alphie:</span> Global variable or a  script variable?</div>
             <div><span> Gamal:</span> Well, we need to use it inside <code>polygon</code> <em>and</em> in the script that draws the mandala, so I'd make it global so multiple scripts can access it.</div>
             <div><span> Betsy:</span> I have an idea for the part of the program that actually draws the diagonals.</div>
             <div class="stagedir">
-            Betsy sketches this: <img src="/bjc-r/img/2-complexity/Mandala_img/Stage2.png" height="160" alt="Stage 2 of Mandala" title="Stage 2 of Mandala" />
+            Betsy sketches this: <img src="../../bjc-r/img/2-complexity/Mandala_img/Stage2.png" height="160" alt="Stage 2 of Mandala" title="Stage 2 of Mandala" />
             </div>
             <div><span> Gamal:</span> Smart! We'll draw all the diagonals from <em>one</em> vertex as a subproblem.</div>
             
@@ -61,9 +61,9 @@
         </div>
         
         <div class="takeNote">
-			<h4><strong>Debugging with <img src="/bjc-r/img/2-complexity/Debugging/pause-all-block.png"  height="42" alt="pause all" title="pause all"/></strong></h4>
+			<h4><strong>Debugging with <img src="../../bjc-r/img/2-complexity/Debugging/pause-all-block.png"  height="42" alt="pause all" title="pause all"/></strong></h4>
             
-			You can use <code>pause all</code> to place breaks in your code so you can see what's happening along the way. In this animation, the programmer runs their code with <code>pause all</code> inside it and then clicks the yellow Run/Pause button next to the Green Flag (<img src="/bjc-r/img/sys/play-button.png" alt="play button" title="play button"/>/<img src="/bjc-r/img/1-introduction/pause_button.png" alt="pause button" title="pause button"/>) to move through the code up until a <code>pause</code> block is reached again. In this example, there is only one script running, but <code>pause all</code> will pause <em>every</em> script that is running until the yellow Run/Pause button is clicked.<br />
+			You can use <code>pause all</code> to place breaks in your code so you can see what's happening along the way. In this animation, the programmer runs their code with <code>pause all</code> inside it and then clicks the yellow Run/Pause button next to the Green Flag (<img src="../../bjc-r/img/sys/play-button.png" alt="play button" title="play button"/>/<img src="../../bjc-r/img/1-introduction/pause_button.png" alt="pause button" title="pause button"/>) to move through the code up until a <code>pause</code> block is reached again. In this example, there is only one script running, but <code>pause all</code> will pause <em>every</em> script that is running until the yellow Run/Pause button is clicked.<br />
             <img class="indent" data-gifffer="/bjc-r/img/2-complexity/Debugging/PauseAll.gif" width="800" height="358" alt="Animation on how to use pause all block" title="Animation on how to use pause all block"/>
 		</div>
             
@@ -73,7 +73,7 @@
                 <p><strong>Problem decomposition</strong> is the process of solving a complex problem by building small tools and combining them to make bigger ones. </p>
             </div>
             <ol start="2">
-                <li>Now build your own program to draw <img src="/bjc-r/img/2-complexity/Mandala_img/10-gon-with-diagonals.png" height="100" alt="10-gon with diagonals" title="10-gon with diagonals" /> by decomposing the problem into manageable small parts.</li>
+                <li>Now build your own program to draw <img src="../../bjc-r/img/2-complexity/Mandala_img/10-gon-with-diagonals.png" height="100" alt="10-gon with diagonals" title="10-gon with diagonals" /> by decomposing the problem into manageable small parts.</li>
             </ol> 
 		</div>
 		
@@ -81,12 +81,12 @@
             <ol type="A">
                 <li>
                     Here are some variations. Create your own.<br />
-                    <img src="/bjc-r/img/2-complexity/Mandala_img/Mandala4b.png" height="200" alt="Denser Mandala" title="Denser Mandala" />
-                    <img src="/bjc-r/img/2-complexity/Mandala_img/Mandala2.png" height="200" alt="Four Mandalas" title="Four Mandalas" />
-                    <img src="/bjc-r/img/2-complexity/Mandala_img/Mandala3b.png" height="200" alt="Mandala Ring" title="Mandala Ring"/><br />
-                    <img src="/bjc-r/img/2-complexity/Mandala_img/ColorMandala3.png" height="200" alt="Colored Mandala Ring" title="Colored Mandala Ring" />
-                    <img src="/bjc-r/img/2-complexity/Mandala_img/ColorMandala2.png" height="200" alt="Colored Four Mandalas" title="Colored Four Mandalas" />
-                    <img src="/bjc-r/img/2-complexity/Mandala_img/ColorMandala1.png" height="200" alt="Colored Denser Mandala" title="Colored Denser Mandala" />
+                    <img src="../../bjc-r/img/2-complexity/Mandala_img/Mandala4b.png" height="200" alt="Denser Mandala" title="Denser Mandala" />
+                    <img src="../../bjc-r/img/2-complexity/Mandala_img/Mandala2.png" height="200" alt="Four Mandalas" title="Four Mandalas" />
+                    <img src="../../bjc-r/img/2-complexity/Mandala_img/Mandala3b.png" height="200" alt="Mandala Ring" title="Mandala Ring"/><br />
+                    <img src="../../bjc-r/img/2-complexity/Mandala_img/ColorMandala3.png" height="200" alt="Colored Mandala Ring" title="Colored Mandala Ring" />
+                    <img src="../../bjc-r/img/2-complexity/Mandala_img/ColorMandala2.png" height="200" alt="Colored Four Mandalas" title="Colored Four Mandalas" />
+                    <img src="../../bjc-r/img/2-complexity/Mandala_img/ColorMandala1.png" height="200" alt="Colored Denser Mandala" title="Colored Denser Mandala" />
                 </li>
                 <li>
                     Some cultures see mandalas as symbols of interconnectedness and harmony.  Do some research on mandalas across different cultures and present your findings to your classmates. Try writing programs to reproduce some that you find.<br />
