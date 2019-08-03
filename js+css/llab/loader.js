@@ -47,8 +47,8 @@ llab.BUILD_FILE_PATH = "./llab-complied.js";
 // ADDITIONAL LIBRARIES
 
 // Syntax Highlighting support
-//llab.paths.syntax_highlights = "//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js";
-//llab.paths.syntax_highlighting_css = "css/tomorrow-night-blue.css";
+llab.paths.syntax_highlights = "//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js";
+llab.paths.syntax_highlighting_css = "css/tomorrow-night-blue.css";
 // Math / LaTeX rendering
 llab.paths.math_katex_js = "lib/katex.min.js";
 llab.paths.katex_css = "css/katex.min.css";
