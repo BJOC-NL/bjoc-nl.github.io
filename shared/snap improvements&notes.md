@@ -26,6 +26,8 @@
 * Privacy blijft Privacy? (H1L4)
 * Section -> gedeelte? miss paragraaf ?(H1L4P4)
 * For You To Do -> Voor Jou Om Te Doen? klinkt niet heel lekker.
+* Graphics, Debugging, screenshot? ik zou onvertaald laten (H1L3P7).
+* Feature? heb het nu vertaald als eigenschap, maar dekt neit helemaal de lading. (H1L3P7)
 
 ## Andere vragen/opmerkingen
 * H1L4P3, Verhaal in The Guardian, wat doen we hier mee? Ook lezen uit boek Blown to Bits, hoe hiermee omgaan nu?
