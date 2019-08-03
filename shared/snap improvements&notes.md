@@ -26,6 +26,8 @@
 * Privacy blijft Privacy? (H1L4)
 * Section -> gedeelte? miss paragraaf ?(H1L4P4)
 * For You To Do -> Voor Jou Om Te Doen? klinkt niet heel lekker.
+* Graphics, Debugging, screenshot? ik zou onvertaald laten (H1L3P7).
+* Feature? heb het nu vertaald als eigenschap, maar dekt neit helemaal de lading. (H1L3P7)
 
 ## Andere vragen/opmerkingen
 * H1L4P3, Verhaal in The Guardian, wat doen we hier mee? Ook lezen uit boek Blown to Bits, hoe hiermee omgaan nu?
@@ -38,11 +40,13 @@
 * heb in H1L5P2 het blok waar ze vertellen dat je een blok moet importeren weggehaald omdat het nu geloof ik in de standaard versie zit.
 * Youtube video op h1l1p7, wat doen we hier mee?
 * Wat doen we met de gifs/video files? ik zou zeggen aangezien ze de locatie van de knoppen laten zien dat het prima werkt ookal zou je geen Engels kunnen.
-* H1L2P1 heeft een soort custom blokken? en project, weet niet hoe je dit doet.
+*  Vertaalde Projecten hebben nu een letterlijke link naar het project, dit zou netter moeten kunnen, weet niet hoe.
+* Er zijn een aantal links naar pagina's, dit zijn nu links binnen de files, e.g. `: ../../units ... /h1l3p1.html`. Dit is miss niet ideaal?
+* H1L3P5 heeft een verwijzing naar een extra project, misschien deze hele verwijzing weghalen, anders misschien zeggen dat deze pagina nog niet vertaald is. en de verwijzing behouden.
 
 ## Stappen mm de layout te fixen
 * verander alle paths van /bjc-r etc. naar ../../bjc-r. dan is de styling gefixt. GEDAAN VOOR U1, MAAR AANTAL PAGINA'S ZIJN RAAR.
-* <html lang="en"> naar <html lang="nl">. kan je beter via replace all op het eind doen wss
+* `<html lang="en"> naar <html lang="nl">` kan je beter via replace all op het eind doen wss
 
 ##Images 
 creeër file structure zodat alles bij de general afbeeldingen makkelijk kan en zorg dat bloks gesorteerd zijn en miss identificeerbaar.
