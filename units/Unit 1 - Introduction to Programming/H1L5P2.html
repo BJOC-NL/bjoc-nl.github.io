@@ -3,25 +3,21 @@
 
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <script type="text/javascript" src="../../bjc-r/llab/loader.js"></script>
-    <script type="text/javascript" src="../../bjc-r/utilities/gifffer.min.js"></script>
+    <script type="text/javascript" src="../../js+css/llab/loader.js"></script>
+    <script type="text/javascript" src="../../js+css/gifffer.min.js"></script>
     <script type="text/javascript">
         window.onload = function () {
             Gifffer();
         }
     </script>
-    <link rel="stylesheet" type="text/css" href="/bjc-r/css/bjc-gifffer.css">
+    <link rel="stylesheet" type="text/css" href="../../js+css/css/bjc-gifffer.css">
     <title>Unit 1 Les 5: Volg de Leider, Pagina 2</title>
 </head>
 
 <body>
 
     <h2>Sprite Die een Sprite Volgt</h2>
-    <div class="todo">The <code>tell</code> block image(s) need to be updated (see <a
-            href="https://piazza.com/class/h8yx482idav52y?cid=1733" target="_blank">relevant piazza post</a>). When we
-        do this, we also need to remove the sidenote alerting users to the issue. The solution file probably needs to be
-        updated too, and perhaps also images in the TG. Also search site for other instances of <code>tell</code>. --MF,
-        11/6/17</div>
+
     <div class="learn">
         <p><strong>Op deze pagina,</strong> ga je het script aanpassen zodat de sprites niet voor altijd blijven
             bewegen, maar alleen <code> herhalen tot</code> ze elkaar aanraken.
@@ -36,11 +32,11 @@
                     <li>Selecteer Sprite(2) door op zijn knop de klikken onder het speelveld.</li>
                     <li>Vervang het <code>herhaal</code> blok met een <code>herhaal tot </code> blok.</li>
                     <li>
-                        Sleep <img src="../../bjc-r/img/blocks/touching.png" alt="raak ik ()?" title="raak ik ()?">
+                        Sleep <img src="../../afb/H1/H1L5/blocks/H1L5P2-b1.png" alt="raak ik ()?" title="raak ik ()?">
                         in de zeshoekige ruimte in het <code>herhaalt tot</code> blok. Stel het blok in zodat het blijft
                         herhalen totdat het <var> Sprite aanraakt</var>.
                         <br />
-                        <img data-gifffer="/bjc-r/img/1-introduction/replacing-code.gif" alt="Replacing code"
+                        <img data-gifffer="../../afb/H1/H1L5/videos/H1L5P2-v1.gif" alt="Replacing code"
                             title="Replacing code" />
                     </li>
                 </ol>
@@ -49,8 +45,8 @@
                     Sprite(2)</var> <code> aanraakt</code>. </li>
             <li> Test je programma om te kijken of het doet wat je wil:
                 <ul>
-                    <li>Als je klikt op <img src="../../bjc-r/img/1-introduction/green-flag_button.png"
-                            style="height:1.6em;" alt="green-flag button" title="green-flag button" />, zou Sprite (de
+                    <li>Als je klikt op <img src="../../afb/icons/green-flag_button.png" style="height:1.6em;"
+                            alt="green-flag button" title="green-flag button" />, zou Sprite (de
                         grijze) je muis moeten volgen en Sprite(2) zou naar Sprite moeten wijzen.
                     </li>
                     <li>Als je Sprite genoeg dichtbij Sprite(2) zet, zouden beide Sprites moeten stoppen met bewegen.
@@ -63,7 +59,7 @@
                 <br />
                 <div class="sidenote">Vul het invoerveld in het <code> neem _ stappen</code> blok met een laag getal
                     (waarschijnlijk minder dan 1) zodat Sprite(2) niet te snel bij Sprite is.</div>
-                <img class="indent" src="../../bjc-r/img/1-introduction/move-tiny.png"
+                <img class="indent" src="../../afb/H1/H1L5/overig/H1L5P2-o1.png"
                     alt="when green flag clicked{repeat until(touching(Sprite)){point towards(Sprite); move(tiny number here) steps}}"
                     title="when green flag clicked{repeat until(touching(Sprite)){point towards(Sprite); move(tiny number here) steps}}">
                 <!--					<div class="takeNote">This kind of written-out code is often called "pseudo-code." It isn't precisely what your code would look like in <em>any</em> programming language, but it makes the logical steps clear. There are no special "rules" for writing pseudo-code. You may use your own style as long as you specify the logical steps clearly.</div> -->
@@ -71,7 +67,7 @@
             </li>
             <li>Test je programma een paar keer. </li>
 
-            <img class="inline" src="../../bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap"
+            <img class="inline" src="../../afb/icons/DraaiDeRollenOm.png" alt="Pair Programming Swap"
                 title="Pair Programming Swap" />
 
             <li>
@@ -98,7 +94,7 @@
                 <div class="sidenoteBig">Please note that the <code>tell</code> block looks slightly different than it
                     does in this image. It is now a one-line block. This image will be updated soon.</div>
                 -->
-                <img class="inline" src="../../bjc-r/img/1-introduction/simpledialogue-going-to-lunch.png"
+                <img class="inline" src="../../afb/H1/H1L5/blocks/H1L5P2-b2_small.png"
                     alt="Simple dialogue about going to lunch" title="Simple dialogue about going to lunch" />
             </li>
 
@@ -107,12 +103,12 @@
             hebben de sprites wat ruimte nodig tussen elkaar en wat tijd los van elkaar voordat de achtervolging begint.
             Blokken zoals deze kunnen hierbij van pas komen.
             <br />
-            <img class="indent" src="../../bjc-r/img/1-introduction/U1ImageVideoAddendum_img/U1L5p2-PuppySeparation.png"
-                height="90" alt="go to x:(-200) y:(-50); wait (1) secs  & go to x:(200) y:(-50); wait (1) secs"
+            <img class="indent" src="../../afb/H1/H1L5/overig/H1L5P2-o2.png" height="90"
+                alt="go to x:(-200) y:(-50); wait (1) secs  & go to x:(200) y:(-50); wait (1) secs"
                 title="go to x:(-200) y:(-50); wait (1) secs  & go to x:(200) y:(-50); wait (1) secs" />
 
         </div>
-        <img class="imageRight" src="../../bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save"
+        <img class="imageRight" src="../../afb/icons/HetIsNuEenGoedMoment.png" alt="Now Is a Good Time to Save"
             title="Now Is a Good Time to Save" />
     </div>
 
@@ -126,9 +122,8 @@
             </li>
             <li>
                 Verander de achtergrond van het speelveld.<br />
-                <img class="indent"
-                    data-gifffer="/bjc-r/img/1-introduction/U1ImageVideoAddendum_img/U1L2-GossipBackground.gif"
-                    height="400" alt="change the background on the stage" title="change the background on the stage" />
+                <img class="indent" data-gifffer="../../afb/H1/H1L5/videos/H1L5P2-v2.gif" height="400"
+                    alt="change the background on the stage" title="change the background on the stage" />
             </li>
         </ol>
     </div>
