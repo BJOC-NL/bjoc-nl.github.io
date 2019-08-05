@@ -18,7 +18,6 @@
 
 ## Glossary toevoegingen
 * Discuss -> Bespreek
-* partner -> klasgenoot
 * event -> gebeurtenis
 
 ## Vragen over Glossary
@@ -32,10 +31,6 @@
 ## Andere vragen/opmerkingen
 * H1L4P3, Verhaal in The Guardian, wat doen we hier mee? Ook lezen uit boek Blown to Bits, hoe hiermee omgaan nu?
 * de "Take It Further" werkt niet meer in H1L4P1, ook in de Engelse. weghalen?
-* aantal pagina's hebben een raar <head> blok, ik denk dat we deze gewoon kunnen aanpassen naar die van de meeste pagina's.
-* Icons moeten ook vertaald gaan worden, geloof dat het lettertype Arial is.
-* overal staat nog <html lang="en">.
-* weghalen van tekst die niet weergegeven is? todos en comments, voegen nisk toe en maken vertalen lastiger.
 * vertalen van blown to bits?
 * heb in H1L5P2 het blok waar ze vertellen dat je een blok moet importeren weggehaald omdat het nu geloof ik in de standaard versie zit.
 * Youtube video op h1l1p7, wat doen we hier mee?
