@@ -39,10 +39,9 @@
 * Er zijn een aantal links naar pagina's, dit zijn nu links binnen de files, e.g. `: ../../units ... /h1l3p1.html`. Dit is miss niet ideaal?
 * H1L3P5 heeft een verwijzing naar een extra project, misschien deze hele verwijzing weghalen, anders misschien zeggen dat deze pagina nog niet vertaald is. en de verwijzing behouden.
 
-## Stappen mm de layout te fixen
-* verander alle paths van /bjc-r etc. naar ../../bjc-r. dan is de styling gefixt. GEDAAN VOOR U1, MAAR AANTAL PAGINA'S ZIJN RAAR.
-* `<html lang="en"> naar <html lang="nl">` kan je beter via replace all op het eind doen wss
-
+##TODO
+* Controleer alle pagina's nog op fouten
+* Voeg overal de VOLGENDE TERUG balk toe onderaan.
 ##Images 
 creeër file structure zodat alles bij de general afbeeldingen makkelijk kan en zorg dat bloks gesorteerd zijn en miss identificeerbaar.
 Folder voor alle afbeeldingen: afb
