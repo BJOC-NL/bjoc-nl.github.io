@@ -16,151 +16,163 @@
 </head>
 
 <body>
-    <h2>Blokken met Invoer</h2>
-    <div class="learn">
-        <img class="indent" src="../../afb/h1/H1L3/videos/H1L3P3-v1.gif" height="200" alt="Branch Cycle Animation"
-            title="Branch Cycle Animation" />
-        <p><strong>Op deze pagina,</strong> ga je verschillende plaatjes maken (zoals hierboven) met een enkel blok met
-            een <em>invoerveld</em>: <img src="../../afb/h1/H1L3/blocks/H1L3P3-b1.png" height="40"
-                alt="pinwheel, branches:()" title="pinwheel, branches:()">. Met invoervelden kun je een blok heel
-            verschillende dingen laten doen.</p>
+    <div class="full">
+        <h2>Blokken met Invoer</h2>
+        <div class="learn">
+            <img class="indent" src="../../afb/h1/H1L3/videos/H1L3P3-v1.gif" height="200" alt="Branch Cycle Animation"
+                title="Branch Cycle Animation" />
+            <p><strong>Op deze pagina,</strong> ga je verschillende plaatjes maken (zoals hierboven) met een enkel blok
+                met
+                een <em>invoerveld</em>: <img src="../../afb/h1/H1L3/blocks/H1L3P3-b1.png" height="40"
+                    alt="pinwheel, branches:()" title="pinwheel, branches:()">. Met invoervelden kun je een blok heel
+                verschillende dingen laten doen.</p>
+        </div>
+
+        <div class="forYouToDo" id="first">
+            <ol>
+                <li>
+                    <a href="https://snap.berkeley.edu/snapsource/snap.html#present:Username=cfkaligula&ProjectName=H1L3-Molen"
+                        class="run"><img class="inline" src="../../afb/icons/LaadEnSlaOp.png"
+                            alt="Klik hier om dit bestand te openen. Bewaar het vervolgens in je Snap! account."
+                            title="Klik hier om dit bestand te openen. Bewaar het vervolgens in je Snap! account."></a><br />
+                    Maak 5 kopieën van dit script en pas ze zo aan dat de molens 3, 4, 5, 6, and 12 wieken
+                    krijgen.<br />
+                    <img src="../../afb/H1/H1L3/overig/H1L3P3-o1.png" height="120" alt="pinwheel with 3 branches"
+                        title="pinwheel with 3 branches" />
+                    <img src="../../afb/H1/H1L3/overig/H1L3P3-o2.png" height="120" alt="pinwheel with 4 branches"
+                        title="pinwheel with 4 branches" />
+                    <img src="../../afb/H1/H1L3/overig/H1L3P3-o3.png" height="120" alt="pinwheel with 5 branches"
+                        title="pinwheel with 5 branches" />
+                    <img src="../../afb/H1/H1L3/overig/H1L3P3-o4.png" height="120" alt="pinwheel with 6 branches"
+                        title="pinwheel with 6 branches" />
+                    <img src="../../afb/H1/H1L3/overig/H1L3P3-o5.png" height="120" alt="pinwheel with 12 branches"
+                        title="pinwheel with 12 branches" />
+                </li>
+            </ol>
+        </div>
+
+        <p>De scripts zijn eigenlijk allemaal hetzelfde: alleen de <em>invoerwaarde</em> is anders. In plaats van veel
+            verschillende scripts, kun je een algemener script maken die ze allemaal kan tekenen. Je <code>molen</code>
+            heeft een invoerveld nodig om aan te geven hoeveel wieken je wil, <img
+                src="../../afb/h1/H1L3/blocks/H1L3P3-b1.png" height="40" alt="pinwheel, branches:()"
+                title="pinwheel, branches:()"> net zo als het <code>ga naar</code> blok invoervelden heeft voor x en y
+            waarden <img src="../../afb/h1/H1L3/blocks/H1L3P3-b2.png" height="40" alt="go to x:() y:()"
+                title="go to x:() y:()">.</p>
+        <img class="inline" src="../../afb/icons/DraaiDeRollenOm.png" alt="Draai de rollen om"
+            title="Draai de rollen om" />
+
+        <div class="takeNote">
+            <h4><strong>Debugging Tip: Opmerkingen bij je code</strong></h4>
+            <p>Door opmerkingen bij je code toe te voegen herinner je je makkelijker hoe je code werkt, het helpt
+                anderen je
+                code te begrijpen. En het helpt je bugs te voorkomen doordat je je code ermee verduidelijkt. Dit filmpje
+                laat zien hoe je opmerkingen in Snap<em>!</em> toevoegt met een rechts-klik (of control-klik) op het
+                scripts
+                werkvlak, waarna je kunt kiezen voor " opmerking toevoegen".</p>
+            <p>Merk op dat een opmerking die je toevoegt aan een hoed blok ook wordt gebruikt voor de helptekst van zo'n
+                zelfgemaakt blok.</p>
+            <img class="indent" data-gifffer="../../afb/h1/H1L3/videos/H1L3P3-v2.gif" height="400"
+                alt="Animation on how to  add a comment to a block and how a comment added to a hat block becomes that custom block's help message."
+                title="Animation on how to add a comment to a block and how a comment added to a hat block becomes that custom block's help message." />
+        </div>
+
+        <div class="forYouToDo">
+            <ol start="2">
+                <li>
+                    Maak een <code>molen</code> blok met een invoerveld voor het aantal <var>wieken</var>. De uitleg
+                    staat hieronder en na de uitleg zie je ook een korte video die laat zien hoe je het doet.
+                    <div class="narrower">
+                        <h4><strong>Maak een blok met invoerveld</strong></h4>
+                        <ol type="a">
+                            <li>
+                                <strong>Typ de naam van het blok en de naam van de invoer </strong> in het
+                                dialoogvenster
+                                van "Maak een blok…", en klik OK. In dit project, typ <code>molen, wieken:</code><br />
+
+                                <img class="indent" src="../../afb/h1/H1L3/overig/H1L3P3-o7.png" height="300"
+                                    alt="Make a block" title="Make a block" />
+                                <ul>
+                                    <li>Dit blok gaat over het <em>bewegen</em> van je sprite, je kunt kiezen voor het
+                                        blauwe Bewegen-palet. Of kies niets dan wordt je blok grijs.</li>
+                                    <li>Het gebruik van komma's en dubbele punten is niet verplicht; ze staan hier om
+                                        het duidelijker te maken.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <strong>Klik op + (plus teken) achter de naam van je invoer, typ de naam van je
+                                    invoer</strong>, en klik OK om een variabele invoer aan te maken. Voor
+                                <code>molen</code>, klik de + na "wieken:" en typ <var>aantal wieken</var> als de naam
+                                van je invoervariable.<br />
+                                <img class="indent" src="../../afb/H1/H1L3/overig/H1L3P3-o6.png" height="75"
+                                    alt="Plus sign" title="Plus sign" />
+                                <img class="indent" src="../../afb/H1/H1L3/overig/H1L3P3-o8.png" height="175"
+                                    alt="Creat input name" title="Create input name" />
+                            </li>
+                            <li>
+                                <strong>Sleep de blokken die je nodig hebt, en gebruik je nieuwe invoerveld.</strong>
+                                <ul>
+                                    <li>Hier kun je een van je eerdere molen-scripts naar het venster te slepen waar je
+                                        je blok maakt, en klik het vast aan je <code>molen</code> blok.</li>
+                                    <div class="vocabBig">
+                                        <p>We gebruiken het woord "invoer" voor twee verschillende maar verwante ideeën:
+                                            <ol>
+                                                <li>De <em>naam</em> van de invoer zoals <var>aantal wieken</var>, die
+                                                    je bij de aanmaak van je blok maakt. Dit heet een
+                                                    <strong>parameter</strong> (of formele parameter).
+                                                </li>
+                                                <li>De <em>waarde</em> van de invoer zoals 6 voor een zeshoekige molen,
+                                                    die bij ieder gebruik van het blok gevarieerd kan worden. Dit noemen
+                                                    we
+                                                    een <em>argument</em> (of actueel argument).
+                                                </li>
+                                            </ol>
+                                        </p>
+                                    </div>
+                                    <li>Vervolgens, sleep het nieuwe invoerveld <var>aantal wieken</var> om de getallen
+                                        te vervangen zodat het script meer algemeen gebruikt kan worden.</li>
+                                </ul>
+                                <img class="indent" src="../../afb/H1/H1L3/overig/H1L3P3-o9.png"
+                                    alt="pinwheel, branches:(number of branches){repeat(21){move(100) steps; wait(0.1) secs; move(-70) steps; wait(0.1) secs; turn clockwise(360/21) degrees}}"
+                                    title="pinwheel, branches:(number of branches){repeat(21){move(100) steps; wait(0.1) secs; move(-70) steps; wait(0.1) secs; turn clockwise(360/21) degrees}}" />
+                                <img class="indent" src="../../afb/H1/H1L3/blocks/H1L3P3-b3.png"
+                                    alt="pinwheel, branches:(number of branches){repeat(number of branches){move(100) steps; wait(0.1) secs; move(-70) steps; wait(0.1) secs; turn clockwise(360/number of branches) degrees}}"
+                                    title="pinwheel, branches:(number of branches){repeat(number of branches){move(100) steps; wait(0.1) secs; move(-70) steps; wait(0.1) secs; turn clockwise(360/number of branches) degrees}}" />
+                            </li>
+                        </ol>
+                        Het hele proces wordt nog eens getoond in de video hieronder.<br />
+                        <img class="indent" data-gifffer="../../afb/h1/H1L3/videos/H1L3P3-v3.gif" height="500"
+                            alt="Animation summarizing how to create a block with input."
+                            title="Animation summarizing how to create a block with input." />
+                    </div>
+                </li>
+                <li>Voeg opmerkingen aan de code toe zoals je boven leerde bij de Debugging Tip.</li>
+                <li><img class="inline" src="../../afb/icons/save-mini.png" alt="Save Your Work"
+                        title="Save Your Work" />Bewaar je werk als H1L3-Molen.</li>
+            </ol>
+        </div>
+
+        <div class="takeItFurther">
+            <ol type="A">
+                <li>
+                    Deze plaatjes zijn gemaakt met het <code>molen</code> blok en <code>maak penkleur</code>. Maak je
+                    eigen kunst.<br />
+                    <img src="../../afb/H1/H1L3/overig/H1L3P3-o10.png" height="200"
+                        alt="wreath of rainbow colored pinwheels" title="wreath of rainbow colored pinwheels" />
+                    <img src="../../afb/H1/H1L3/overig/H1L3P3-o11.png" height="200"
+                        alt="wreath of rainbow colored pinwheels" title="wreath of rainbow colored pinwheels" />
+                    <img src="../../afb/H1/H1L3/overig/H1L3P3-o12.png" height="200"
+                        alt="wreath of rainbow colored pinwheels" title="wreath of rainbow colored pinwheels" />
+                </li>
+                <li>Maak de animatie zoals boven aan deze pagina te zien is.</li>
+            </ol>
+        </div>
     </div>
 
-    <div class="forYouToDo" id="first">
-        <ol>
-            <li>
-                <a href="https://snap.berkeley.edu/snapsource/snap.html#present:Username=cfkaligula&ProjectName=H1L3-Molen"
-                    class="run"><img class="inline" src="../../afb/icons/LaadEnSlaOp.png"
-                        alt="Klik hier om dit bestand te openen. Bewaar het vervolgens in je Snap! account."
-                        title="Klik hier om dit bestand te openen. Bewaar het vervolgens in je Snap! account."></a><br />
-                Maak 5 kopieën van dit script en pas ze zo aan dat de molens 3, 4, 5, 6, and 12 wieken krijgen.<br />
-                <img src="../../afb/H1/H1L3/overig/H1L3P3-o1.png" height="120" alt="pinwheel with 3 branches"
-                    title="pinwheel with 3 branches" />
-                <img src="../../afb/H1/H1L3/overig/H1L3P3-o2.png" height="120" alt="pinwheel with 4 branches"
-                    title="pinwheel with 4 branches" />
-                <img src="../../afb/H1/H1L3/overig/H1L3P3-o3.png" height="120" alt="pinwheel with 5 branches"
-                    title="pinwheel with 5 branches" />
-                <img src="../../afb/H1/H1L3/overig/H1L3P3-o4.png" height="120" alt="pinwheel with 6 branches"
-                    title="pinwheel with 6 branches" />
-                <img src="../../afb/H1/H1L3/overig/H1L3P3-o5.png" height="120" alt="pinwheel with 12 branches"
-                    title="pinwheel with 12 branches" />
-            </li>
-        </ol>
+    <div class="full-bottom-bar" style="background-position: 20px 3px;">
+        <div class="bottom-nav btn-group"><a class="btn btn-default backbutton arrow" style="min-width: 90px;"
+                href="H1L3P2.html">Terug</a><a style="min-width:90px;" class="btn btn-default forwardbutton arrow"
+                href="H1L3P4.html">Volgende</a> </div>
     </div>
-
-    <p>De scripts zijn eigenlijk allemaal hetzelfde: alleen de <em>invoerwaarde</em> is anders. In plaats van veel
-        verschillende scripts, kun je een algemener script maken die ze allemaal kan tekenen. Je <code>molen</code>
-        heeft een invoerveld nodig om aan te geven hoeveel wieken je wil, <img
-            src="../../afb/h1/H1L3/blocks/H1L3P3-b1.png" height="40" alt="pinwheel, branches:()"
-            title="pinwheel, branches:()"> net zo als het <code>ga naar</code> blok invoervelden heeft voor x en y
-        waarden <img src="../../afb/h1/H1L3/blocks/H1L3P3-b2.png" height="40" alt="go to x:() y:()"
-            title="go to x:() y:()">.</p>
-    <img class="inline" src="../../afb/icons/DraaiDeRollenOm.png" alt="Draai de rollen om" title="Draai de rollen om" />
-
-    <div class="takeNote">
-        <h4><strong>Debugging Tip: Opmerkingen bij je code</strong></h4>
-        <p>Door opmerkingen bij je code toe te voegen herinner je je makkelijker hoe je code werkt, het helpt anderen je
-            code te begrijpen. En het helpt je bugs te voorkomen doordat je je code ermee verduidelijkt. Dit filmpje
-            laat zien hoe je opmerkingen in Snap<em>!</em> toevoegt met een rechts-klik (of control-klik) op het scripts
-            werkvlak, waarna je kunt kiezen voor " opmerking toevoegen".</p>
-        <p>Merk op dat een opmerking die je toevoegt aan een hoed blok ook wordt gebruikt voor de helptekst van zo'n
-            zelfgemaakt blok.</p>
-        <img class="indent" data-gifffer="../../afb/h1/H1L3/videos/H1L3P3-v2.gif" height="400"
-            alt="Animation on how to  add a comment to a block and how a comment added to a hat block becomes that custom block's help message."
-            title="Animation on how to add a comment to a block and how a comment added to a hat block becomes that custom block's help message." />
-    </div>
-
-    <div class="forYouToDo">
-        <ol start="2">
-            <li>
-                Maak een <code>molen</code> blok met een invoerveld voor het aantal <var>wieken</var>. De uitleg
-                staat hieronder en na de uitleg zie je ook een korte video die laat zien hoe je het doet.
-                <div class="narrower">
-                    <h4><strong>Maak een blok met invoerveld</strong></h4>
-                    <ol type="a">
-                        <li>
-                            <strong>Typ de naam van het blok en de naam van de invoer </strong> in het dialoogvenster
-                            van "Maak een blok…", en klik OK. In dit project, typ <code>molen, wieken:</code><br />
-
-                            <img class="indent" src="../../afb/h1/H1L3/overig/H1L3P3-o7.png" height="300"
-                                alt="Make a block" title="Make a block" />
-                            <ul>
-                                <li>Dit blok gaat over het <em>bewegen</em> van je sprite, je kunt kiezen voor het
-                                    blauwe Bewegen palet. Of kies niets dan wordt je blok grijs.</li>
-                                <li>Het gebruik van komma's en dubbele punten is niet verplicht; ze staan hier om het
-                                    duidelijker te maken.</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <strong>Klik op + (plus teken) achter de naam van je invoer, typ de naam van je
-                                invoer</strong>, en klik OK om een variabele invoer aan te maken. Voor
-                            <code>molen</code>, klik de + na "wieken:" en typ <var>aantal wieken</var> als de naam
-                            van je invoer variabele.<br />
-                            <img class="indent" src="../../afb/H1/H1L3/overig/H1L3P3-o6.png" height="75" alt="Plus sign"
-                                title="Plus sign" />
-                            <img class="indent" src="../../afb/H1/H1L3/overig/H1L3P3-o8.png" height="175"
-                                alt="Creat input name" title="Create input name" />
-                        </li>
-                        <li>
-                            <strong>Sleep de blokken die je nodig hebt, en gebruik je nieuwe invoerveld.</strong>
-                            <ul>
-                                <li>Hier kun je een van je eerdere molen-scripts naar het venster te slepen waar je
-                                    je blok maakt, en klik het vast aan je <code>molen</code> blok.</li>
-                                <div class="vocabBig">
-                                    <p>We gebruiken het woord "invoer" voor twee verschillende maar verwante ideeën:
-                                        <ol>
-                                            <li>De <em>naam</em> van de invoer zoals <var>aantal wieken</var>, die je
-                                                bij de aanmaak van je blok maakt. Dit heet een
-                                                <strong>parameter</strong> (of formele parameter).</li>
-                                            <li>De <em>waarde</em> van de invoer zoals 6 voor een zeshoekige molen,
-                                                die bij ieder gebruik van het blok gevarieerd kan worden. Dit noemen we
-                                                een <em>argument</em> (of actueel argument).</li>
-                                        </ol>
-                                    </p>
-
-                                    <p>De informatica eindtermen gebruiken het woord parameter overigens in beide
-                                        betekenissen!</p>
-                                </div>
-                                <li>Vervolgens, sleep het nieuwe invoerveld <var>aantal wieken</var> om de getallen te
-                                    vervangen zodat het script meer algemeen gebruikt kan worden.</li>
-                            </ul>
-                            <img class="indent" src="../../afb/H1/H1L3/overig/H1L3P3-o9.png"
-                                alt="pinwheel, branches:(number of branches){repeat(21){move(100) steps; wait(0.1) secs; move(-70) steps; wait(0.1) secs; turn clockwise(360/21) degrees}}"
-                                title="pinwheel, branches:(number of branches){repeat(21){move(100) steps; wait(0.1) secs; move(-70) steps; wait(0.1) secs; turn clockwise(360/21) degrees}}" />
-                            <img class="indent" src="../../afb/H1/H1L3/blocks/H1L3P3-b3.png"
-                                alt="pinwheel, branches:(number of branches){repeat(number of branches){move(100) steps; wait(0.1) secs; move(-70) steps; wait(0.1) secs; turn clockwise(360/number of branches) degrees}}"
-                                title="pinwheel, branches:(number of branches){repeat(number of branches){move(100) steps; wait(0.1) secs; move(-70) steps; wait(0.1) secs; turn clockwise(360/number of branches) degrees}}" />
-                        </li>
-                    </ol>
-                    Het hele proces wordt nog eens getoond in de video hieronder.<br />
-                    <img class="indent" data-gifffer="../../afb/h1/H1L3/videos/H1L3P3-v3.gif" height="500"
-                        alt="Animation summarizing how to create a block with input."
-                        title="Animation summarizing how to create a block with input." />
-                </div>
-            </li>
-            <li>Voeg opmerkingen aan de code toe zoals je boven leerde bij de Debugging Tip.</li>
-            <li><img class="inline" src="../../afb/icons/save-mini.png" alt="Save Your Work"
-                    title="Save Your Work" />Bewaar je werk als H1L3-Molen.</li>
-        </ol>
-    </div>
-
-    <div class="takeItFurther">
-        <ol type="A">
-            <li>
-                Deze plaatjes zijn gemaakt met het <code>molen</code> blok en <code>maak penkleur</code>. Maak je
-                eigen kunst.<br />
-                <img src="../../afb/H1/H1L3/overig/H1L3P3-o10.png" height="200"
-                    alt="wreath of rainbow colored pinwheels" title="wreath of rainbow colored pinwheels" />
-                <img src="../../afb/H1/H1L3/overig/H1L3P3-o11.png" height="200"
-                    alt="wreath of rainbow colored pinwheels" title="wreath of rainbow colored pinwheels" />
-                <img src="../../afb/H1/H1L3/overig/H1L3P3-o12.png" height="200"
-                    alt="wreath of rainbow colored pinwheels" title="wreath of rainbow colored pinwheels" />
-            </li>
-            <li>Maak de animatie zoals boven aan deze pagina te zien is.</li>
-        </ol>
-    </div>
-
-
 </body>
 
 </html>
