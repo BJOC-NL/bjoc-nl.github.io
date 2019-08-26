@@ -1,26 +1,33 @@
+
 # Lijst van verbetervoorstellen voor Snap (tzt in te dienen als pull request)
-## TO CHECK: 
-* is "initialize" verandert in "initialiseren" ? 
-* spreken we bij Booleans over "booleanen" en "waar" en "onwaar" ? 
+
+## TO CHECK
+
+* is "initialize" verandert in "initialiseren" ?
+* spreken we bij Booleans over "booleanen" en "waar" en "onwaar" ?
 * zijn alle "loops" vertaald in "lussen" (loop = lus)
-* Predicates vertaald in "predikaten"  ? 
+* Predicates vertaald in "predikaten"  ?
 
 ## ALGEMEEN
+
 * Belangrijke to-do: waar ik (Sabine) mogelijk niet meer bij kan zijn is het nalopen en verwisselen van afbeeldingen. Er worden vaak blokken als voorbeelden gegeven, maar dit is allemaal nog vanuit de Engelse Snap! versie.
-* In H2L1P3 <a href="http://snap.berkeley.edu/snapsource/help/SnapManual.pdf"   Manual vertalen?
+* In H2L1P3 <a href="<http://snap.berkeley.edu/snapsource/help/SnapManual.pdf">   Manual vertalen?
 
 ## 14/05 SVT
-* In U2L2P4 wordt er over een 'For each' code gepraat, maar die vind ik niet noch in de Eng noch in NL
+
+* In H2L2P4 wordt er over een 'For each' code gepraat, maar die vind ik niet noch in de Eng noch in NL
 * Link veranderen in H2L3P1
 * In H2L2P2 hebben ze het over een 'point'  blok, maar in de NL Snap! versie zie ik niks wat daar op lijkt.
 
 # Casper 03/07/19
 
 ## Glossary toevoegingen
+
 * Discuss -> Bespreek
 * event -> gebeurtenis
 
 ## Vragen over Glossary
+
 * Cloud blijft Cloud? (H1L4P1)
 * Privacy blijft Privacy? (H1L4)
 * Section -> gedeelte? miss paragraaf ?(H1L4P4)
@@ -29,42 +36,18 @@
 * Feature? heb het nu vertaald als eigenschap, maar dekt neit helemaal de lading. (H1L3P7)
 
 ## Andere vragen/opmerkingen
+
 * H1L4P3, Verhaal in The Guardian, wat doen we hier mee? Ook lezen uit boek Blown to Bits, hoe hiermee omgaan nu?
 * de "Take It Further" werkt niet meer in H1L4P1, ook in de Engelse. weghalen?
 * vertalen van blown to bits?
 * heb in H1L5P2 het blok waar ze vertellen dat je een blok moet importeren weggehaald omdat het nu geloof ik in de standaard versie zit.
 * Youtube video op h1l1p7, wat doen we hier mee?
 * Wat doen we met de gifs/video files? ik zou zeggen aangezien ze de locatie van de knoppen laten zien dat het prima werkt ookal zou je geen Engels kunnen.
-*  Vertaalde Projecten hebben nu een letterlijke link naar het project, dit zou netter moeten kunnen, weet niet hoe.
+* Vertaalde Projecten hebben nu een letterlijke link naar het project, dit zou netter moeten kunnen, weet niet hoe.
 * Er zijn een aantal links naar pagina's, dit zijn nu links binnen de files, e.g. `: ../../units ... /h1l3p1.html`. Dit is miss niet ideaal?
 * H1L3P5 heeft een verwijzing naar een extra project, misschien deze hele verwijzing weghalen, anders misschien zeggen dat deze pagina nog niet vertaald is. en de verwijzing behouden.
 
-##TODO
+## TODO
+
 * Controleer alle pagina's nog op fouten
-* Voeg overal de VOLGENDE TERUG balk toe onderaan.
-##Images 
-creeër file structure zodat alles bij de general afbeeldingen makkelijk kan en zorg dat bloks gesorteerd zijn en miss identificeerbaar.
-Folder voor alle afbeeldingen: afb
-Daarin:  icons, voor afbeeldingen zoals Pair Programming Swap, Etc, sommigen hiervan moeten dus vertaald worden.
-
-* afb
-  * icons
-  * H1
-    * H1L1
-      * blocks
-      * overig
-    * H1L2
-      * blocks
-      * overig
-    * H1L3
-      * blocks
-      * overig
-    * H1L4
-      * blocks
-      * overig
-    * H1L5
-      * blocks
-      * overig                        
-  * H2
-...
-
+* Voeg overal de VOLGENDE TERUG balk toe onderaan. (Hiervoor moet ook de class="full" worden toegevoegd)

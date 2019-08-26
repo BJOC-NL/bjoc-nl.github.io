@@ -16,72 +16,75 @@
 </head>
 
 <body>
+    <div class="full">
+        <h2>Sprite Die een Sprite Volgt</h2>
+        <div class="learn">
+            <p><strong>Op deze pagina,</strong> ga je het script aanpassen zodat de sprites niet voor altijd blijven
+                bewegen, maar alleen <code> herhalen tot</code> ze elkaar aanraken.
+            </p>
+        </div>
+        <div class="forYouToDo" id="first">
+            <ol>
+                <li>
+                    Pas de code van Sprite(2) aan zodat hij naar Sprite wijst totdat hij Sprite aanraakt.
+                    (De instructies en animatie hieronder laten zien hoe.)
+                    <ol>
+                        <li>Selecteer Sprite(2) door op zijn knop de klikken onder het speelveld.</li>
+                        <li>Vervang het <code>herhaal</code> blok met een <code>herhaal tot </code> blok.</li>
+                        <li>
+                            Sleep <img src="../../afb/H1/H1L5/blocks/H1L5P2-b1.png" alt="raak ik ()?"
+                                title="raak ik ()?">
+                            in de zeshoekige ruimte in het <code>herhaalt tot</code> blok. Stel het blok in zodat het
+                            blijft
+                            herhalen totdat het <var> Sprite aanraakt</var>.
+                            <br />
+                            <img data-gifffer="../../afb/H1/H1L5/videos/H1L5P2-v1.gif" alt="Replacing code"
+                                title="Replacing code" />
+                        </li>
+                    </ol>
+                </li>
+                <li>Doe hetzelfde voor Sprite. Vervang de code zodat hij alleen je muis volgt totdat hij <var>
+                        Sprite(2)</var> <code> aanraakt</code>. </li>
+                <li> Test je programma om te kijken of het doet wat je wil:
+                    <ul>
+                        <li>Als je klikt op <img src="../../afb/icons/green-flag_button.png" style="height:1.6em;"
+                                alt="green-flag button" title="green-flag button" />, zou Sprite (de
+                            grijze) je muis moeten volgen en Sprite(2) zou naar Sprite moeten wijzen.
+                        </li>
+                        <li>Als je Sprite genoeg dichtbij Sprite(2) zet, zouden beide Sprites moeten stoppen met
+                            bewegen.
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Tot zover <em> wijst</em> Sprite(2) naar Sprite, maar hij <em> beweegt </em> niet naar Sprite toe.
+                    Voeg een regel code toe aan het script van Sprite(2) zodat hij Sprite achtervolgt. Dit is het idee:
+                    <br />
+                    <div class="sidenote">Vul het invoerveld in het <code> neem _ stappen</code> blok met een laag getal
+                        (waarschijnlijk minder dan 1) zodat Sprite(2) niet te snel bij Sprite is.</div>
+                    <img class="indent" src="../../afb/H1/H1L5/overig/H1L5P2-o1.png"
+                        alt="when green flag clicked{repeat until(touching(Sprite)){point towards(Sprite); move(tiny number here) steps}}"
+                        title="when green flag clicked{repeat until(touching(Sprite)){point towards(Sprite); move(tiny number here) steps}}">
+                    <!--					<div class="takeNote">This kind of written-out code is often called "pseudo-code." It isn't precisely what your code would look like in <em>any</em> programming language, but it makes the logical steps clear. There are no special "rules" for writing pseudo-code. You may use your own style as long as you specify the logical steps clearly.</div> -->
 
-    <h2>Sprite Die een Sprite Volgt</h2>
+                </li>
+                <li>Test je programma een paar keer. </li>
 
-    <div class="learn">
-        <p><strong>Op deze pagina,</strong> ga je het script aanpassen zodat de sprites niet voor altijd blijven
-            bewegen, maar alleen <code> herhalen tot</code> ze elkaar aanraken.
-        </p>
-    </div>
-    <div class="forYouToDo" id="first">
-        <ol>
-            <li>
-                Pas de code van Sprite(2) aan zodat hij naar Sprite wijst totdat hij Sprite aanraakt.
-                (De instructies en animatie hieronder laten zien hoe.)
-                <ol>
-                    <li>Selecteer Sprite(2) door op zijn knop de klikken onder het speelveld.</li>
-                    <li>Vervang het <code>herhaal</code> blok met een <code>herhaal tot </code> blok.</li>
-                    <li>
-                        Sleep <img src="../../afb/H1/H1L5/blocks/H1L5P2-b1.png" alt="raak ik ()?" title="raak ik ()?">
-                        in de zeshoekige ruimte in het <code>herhaalt tot</code> blok. Stel het blok in zodat het blijft
-                        herhalen totdat het <var> Sprite aanraakt</var>.
-                        <br />
-                        <img data-gifffer="../../afb/H1/H1L5/videos/H1L5P2-v1.gif" alt="Replacing code"
-                            title="Replacing code" />
-                    </li>
-                </ol>
-            </li>
-            <li>Doe hetzelfde voor Sprite. Vervang de code zodat hij alleen je muis volgt totdat hij <var>
-                    Sprite(2)</var> <code> aanraakt</code>. </li>
-            <li> Test je programma om te kijken of het doet wat je wil:
-                <ul>
-                    <li>Als je klikt op <img src="../../afb/icons/green-flag_button.png" style="height:1.6em;"
-                            alt="green-flag button" title="green-flag button" />, zou Sprite (de
-                        grijze) je muis moeten volgen en Sprite(2) zou naar Sprite moeten wijzen.
-                    </li>
-                    <li>Als je Sprite genoeg dichtbij Sprite(2) zet, zouden beide Sprites moeten stoppen met bewegen.
-                    </li>
-                </ul>
-            </li>
-            <li>
-                Tot zover <em> wijst</em> Sprite(2) naar Sprite, maar hij <em> beweegt </em> niet naar Sprite toe.
-                Voeg een regel code toe aan het script van Sprite(2) zodat hij Sprite achtervolgt. Dit is het idee:
-                <br />
-                <div class="sidenote">Vul het invoerveld in het <code> neem _ stappen</code> blok met een laag getal
-                    (waarschijnlijk minder dan 1) zodat Sprite(2) niet te snel bij Sprite is.</div>
-                <img class="indent" src="../../afb/H1/H1L5/overig/H1L5P2-o1.png"
-                    alt="when green flag clicked{repeat until(touching(Sprite)){point towards(Sprite); move(tiny number here) steps}}"
-                    title="when green flag clicked{repeat until(touching(Sprite)){point towards(Sprite); move(tiny number here) steps}}">
-                <!--					<div class="takeNote">This kind of written-out code is often called "pseudo-code." It isn't precisely what your code would look like in <em>any</em> programming language, but it makes the logical steps clear. There are no special "rules" for writing pseudo-code. You may use your own style as long as you specify the logical steps clearly.</div> -->
+                <img class="inline" src="../../afb/icons/DraaiDeRollenOm.png" alt="Pair Programming Swap"
+                    title="Pair Programming Swap" />
 
-            </li>
-            <li>Test je programma een paar keer. </li>
+                <li>
+                    <p>Op dit moment, als de sprites elkaar tegenkomen, stoppen ze alleen maar.
+                        Zorg dat ze een praatje maken wanneer ze stoppen. Dit kan je doen door code toe te voegen aan
+                        het
+                        script van Sprite(2).
+                        Bedenk zelf wat ze moeten zeggen, je kan iedere taal gebruiken die je kan typen.
+                    </p>
+                    <div class="sidenoteBig">Sprite(2) doet dingen zelf.
+                        Hij vertelt ook aan Sprite wat hij wanneer moet doen. Deze code geeft Sprite(2) de leiding over
+                        Sprite.</div>
 
-            <img class="inline" src="../../afb/icons/DraaiDeRollenOm.png" alt="Pair Programming Swap"
-                title="Pair Programming Swap" />
-
-            <li>
-                <p>Op dit moment, als de sprites elkaar tegenkomen, stoppen ze alleen maar.
-                    Zorg dat ze een praatje maken wanneer ze stoppen. Dit kan je doen door code toe te voegen aan het
-                    script van Sprite(2).
-                    Bedenk zelf wat ze moeten zeggen, je kan iedere taal gebruiken die je kan typen.
-                </p>
-                <div class="sidenoteBig">Sprite(2) doet dingen zelf.
-                    Hij vertelt ook aan Sprite wat hij wanneer moet doen. Deze code geeft Sprite(2) de leiding over
-                    Sprite.</div>
-
-                <!--  <div class="sidenoteBig">
+                    <!--  <div class="sidenoteBig">
                     <p class="center"><img class="inline" src="../../bjc-r/img/icons/import-tools.png"
                             alt="Import Tools" title="Import Tools" /></p>
                     In the current version of <span class="snap">snap</span>, the <code>tell</code> block isn't
@@ -95,40 +98,46 @@
                 <div class="sidenoteBig">Please note that the <code>tell</code> block looks slightly different than it
                     does in this image. It is now a one-line block. This image will be updated soon.</div>
                 -->
-                <img class="inline" src="../../afb/H1/H1L5/blocks/H1L5P2-b2_small.png"
-                    alt="Simple dialogue about going to lunch" title="Simple dialogue about going to lunch" />
-            </li>
+                    <img class="inline" src="../../afb/H1/H1L5/blocks/H1L5P2-b2_small.png"
+                        alt="Simple dialogue about going to lunch" title="Simple dialogue about going to lunch" />
+                </li>
 
-        </ol>
-        <div class="endnote">Om te voorkomen dat de twee sprites vast zitten tegen elkaar, niet in staat te bewegen,
-            hebben de sprites wat ruimte nodig tussen elkaar en wat tijd los van elkaar voordat de achtervolging begint.
-            Blokken zoals deze kunnen hierbij van pas komen.
-            <br />
-            <img class="indent" src="../../afb/H1/H1L5/overig/H1L5P2-o2.png" height="90"
-                alt="go to x:(-200) y:(-50); wait (1) secs  & go to x:(200) y:(-50); wait (1) secs"
-                title="go to x:(-200) y:(-50); wait (1) secs  & go to x:(200) y:(-50); wait (1) secs" />
+            </ol>
+            <div class="endnote">Om te voorkomen dat de twee sprites vast zitten tegen elkaar, niet in staat te bewegen,
+                hebben de sprites wat ruimte nodig tussen elkaar en wat tijd los van elkaar voordat de achtervolging
+                begint.
+                Blokken zoals deze kunnen hierbij van pas komen.
+                <br />
+                <img class="indent" src="../../afb/H1/H1L5/overig/H1L5P2-o2.png" height="90"
+                    alt="go to x:(-200) y:(-50); wait (1) secs  & go to x:(200) y:(-50); wait (1) secs"
+                    title="go to x:(-200) y:(-50); wait (1) secs  & go to x:(200) y:(-50); wait (1) secs" />
 
+            </div>
+            <img class="imageRight" src="../../afb/icons/HetIsNuEenGoedMoment.png" alt="Now Is a Good Time to Save"
+                title="Now Is a Good Time to Save" />
         </div>
-        <img class="imageRight" src="../../afb/icons/HetIsNuEenGoedMoment.png" alt="Now Is a Good Time to Save"
-            title="Now Is a Good Time to Save" />
+
+
+        <div class="ifTime">
+            <ol start="7">
+                <li>
+                    Geef de sprites een ander uiterlijk.
+                    <div class="endnote">Je kan een plaatje van het internet gebruiken door het plaatje in het
+                        Uiterlijken-tabblad te slepen van de Sprite.</div>
+                </li>
+                <li>
+                    Verander de achtergrond van het speelveld.<br />
+                    <img class="indent" data-gifffer="../../afb/H1/H1L5/videos/H1L5P2-v2.gif" height="400"
+                        alt="change the background on the stage" title="change the background on the stage" />
+                </li>
+            </ol>
+        </div>
     </div>
-
-
-    <div class="ifTime">
-        <ol start="7">
-            <li>
-                Geef de sprites een ander uiterlijk.
-                <div class="endnote">Je kan een plaatje van het internet gebruiken door het plaatje in het
-                    Uiterlijken-tabblad te slepen van de Sprite.</div>
-            </li>
-            <li>
-                Verander de achtergrond van het speelveld.<br />
-                <img class="indent" data-gifffer="../../afb/H1/H1L5/videos/H1L5P2-v2.gif" height="400"
-                    alt="change the background on the stage" title="change the background on the stage" />
-            </li>
-        </ol>
+    <div class="full-bottom-bar" style="background-position: 20px 3px;">
+        <div class="bottom-nav btn-group"><a class="btn btn-default backbutton arrow" style="min-width: 90px;"
+                href="H1L4P1.html">Terug</a><a style="min-width:90px;" class="btn btn-default forwardbutton arrow"
+                href="H1L4P2.html">Volgende</a> </div>
     </div>
-
 
 </body>
 

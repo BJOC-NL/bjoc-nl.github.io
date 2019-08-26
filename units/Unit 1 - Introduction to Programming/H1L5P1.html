@@ -16,121 +16,123 @@
 </head>
 
 <body>
+    <div class="full">
+        <h2>Sprite Die de Muis Volgt</h2>
 
-    <h2>Sprite Die de Muis Volgt</h2>
-    <div class="todo">
-        <ul>
-            <li>GH Feedback 9/10/15: I would like to suggest more questions on this page. It's great material, but not
-                enough places for the kids to stop and think.</li>
-            <li>GH Feedback 10/24/15: Need more specific attention to the Sprite(2) script. We just start using it and
-                students gloss over that this is a separate script for the second sprite.</li>
-        </ul>
-    </div>
+        <div class="learn">
+            <p><strong>In deze les,</strong> ga je met <em>twee</em> sprites programmeren. Één sprite gaat je muis
+                volgen.
+                De ander gaat de eerste sprite achtervolgen. Wanneer ze elkaar aanraken, zullen ze een praatje houden
+                met
+                elkaar.</p>
+            <img class="indent" data-gifffer="../../afb/H1/H1L5/videos/H1L5P1-v1.gif" height="300" alt="Puppy chase"
+                title="Puppy chase" />
+            <p><strong>Op deze pagina,</strong> ga je de eerste sprite programmeren zodat hij je muis volgt en de tweede
+                sprite programmeren zodat hij in de richting van de eerste wijst, als voorbereiding op het achtervolgen.
+            </p>
+        </div>
+        <div class="forYouToDo" id="first">
+            <ol>
+                <li>
+                    <div class="newProject"><span class="text">"H1L5-SpriteAchtervolg"</span><img
+                            src="../../afb/icons/NieuwProjectSlaOp.png"
+                            alt="Maak een nieuw project. Sla het op als 'H1L5-SpriteVolgen'."
+                            title="Maak een nieuw project. Sla het op als 'H1L5-SpriteVolgen'." /></div>
 
-    <div class="learn">
-        <p><strong>In deze les,</strong> ga je met <em>twee</em> sprites programmeren. Één sprite gaat je muis volgen.
-            De ander gaat de eerste sprite achtervolgen. Wanneer ze elkaar aanraken, zullen ze een praatje houden met
-            elkaar.</p>
-        <img class="indent" data-gifffer="../../afb/H1/H1L5/videos/H1L5P1-v1.gif" height="300" alt="Puppy chase"
-            title="Puppy chase" />
-        <p><strong>Op deze pagina,</strong> ga je de eerste sprite programmeren zodat hij je muis volgt en de tweede
-            sprite programmeren zodat hij in de richting van de eerste wijst, als voorbereiding op het achtervolgen.</p>
-    </div>
-    <div class="forYouToDo" id="first">
-        <ol>
-            <li>
-                <div class="newProject"><span class="text">"H1L5-SpriteAchtervolg"</span><img
-                        src="../../afb/icons/NieuwProjectSlaOp.png"
-                        alt="Maak een nieuw project. Sla het op als 'H1L5-SpriteVolgen'."
-                        title="Maak een nieuw project. Sla het op als 'H1L5-SpriteVolgen'." /></div>
+                </li>
+                <li>
+                    <img class="imageRight" src="../../afb/icons/PraatMetJeBuur.png" alt="Talk with Your Partner"
+                        title="Talk with Your Partner" />
+                    <div class="sidenoteBig"><img src="../../afb/H1/H1L5/blocks/H1L5P1-b2.png" class="inline"
+                            alt="mouse x" title="mouse x" /> and <img src="../../afb/H1/H1L5/blocks/H1L5P1-b3.png"
+                            class="inline" alt="mouse y" title="mouse y" /> rapporteren de locatie van de muis op het
+                        speelveld. Ze zijn te
+                        vinden in het Waarnemen-palet.</div>
+                    Lees en denk na over het script voordat je het bouwt. Wat verwacht je dat het doet?<br />
+                    <img class="indent" src="../../afb/H1/H1L5/blocks/H1L5P1-b1.png"
+                        alt="when green flag clicked{forever{go to x:(mouse x) y:(mouse y)}}"
+                        title="when green flag clicked{forever{go to x:(mouse x) y:(mouse y)}}" />
+                </li>
+                <li>
+                    Bouw nu het script en voer het uit. Beweeg je muis over het speelveld terwijl het programma bezig
+                    is.
+                    <div class="endnote">
+                        <p>
+                            <img class="imageRight" src="../../afb/H1/H1L5/blocks/H1L5P1-b4.png"
+                                alt="when green flag clicked" title="when green flag clicked" />
+                            Het blok aan de bovenkant van het script heet een <strong>hoed</strong>blok. De vorm
+                            benadrukt
+                            dat het alleen aan het <em>begin</em> van een script kan worden gebruikt.
+                            Hoedblokken zeggen niet <em>wat</em> het script moet doen; ze zeggen <em>wanneer</em> het
+                            script
+                            iets moet doen.
+                            Hoed blokken zeggen door middel van welke <strong> gebeurtenis </strong> het script moet
+                            beginnen.
+                            In dit geval start het script wanneer er op de groene vlag geklikt wordt.
+                        </p>
+                        <p> Om dit script te <em>stoppen</em> , klik je op de knop met het rode stop teken: <img
+                                class="button" src="../../afb/icons/stop_button.png" style="height:1.9em;"
+                                alt="stop button" title="stop button" /> </p>
+                    </div>
+                </li>
+                <li><img class="inline" src="../../afb/icons/PraatMetJeBuur-mini.png" alt="Talk with Your Partner"
+                        title="Talk with Your Partner" />Werkt het programma zoals je had
+                    verwacht?
+                </li>
+                <li>
+                    Maak een tweede sprite door te klikken op de <img src="../../afb/H1/H1L5/overig/H1L5P1-o1.png"
+                        alt="Voeg een nieuwe turtle sprite toe" title="add a new turtle sprite" /> knop, onder het
+                    speelveld. <a name="newTurtle" class="anchor">&nbsp;</a><br />
+                    Gebruik dan het <code>richt naar</code> blok om hem naar Sprite te richten. De animatie hieronder
+                    laat
+                    zien hoe het moet.
+                    <img data-gifffer="../../afb/H1/H1L5/videos/H1L5P1-v2.gif" alt="een nieuwe sprite krijgen"
+                        title="een nieuwe sprite krijgen" />
+                </li>
 
-            </li>
-            <li>
-                <img class="imageRight" src="../../afb/icons/PraatMetJeBuur.png" alt="Talk with Your Partner"
-                    title="Talk with Your Partner" />
-                <div class="sidenoteBig"><img src="../../afb/H1/H1L5/blocks/H1L5P1-b2.png" class="inline" alt="mouse x"
-                        title="mouse x" /> and <img src="../../afb/H1/H1L5/blocks/H1L5P1-b3.png" class="inline"
-                        alt="mouse y" title="mouse y" /> rapporteren de locatie van de muis op het speelveld. Ze zijn te
-                    vinden in het Waarnemen-palet.</div>
-                Lees en denk na over het script voordat je het bouwt. Wat verwacht je dat het doet?<br />
-                <img class="indent" src="../../afb/H1/H1L5/blocks/H1L5P1-b1.png"
-                    alt="when green flag clicked{forever{go to x:(mouse x) y:(mouse y)}}"
-                    title="when green flag clicked{forever{go to x:(mouse x) y:(mouse y)}}" />
-            </li>
-            <li>
-                Bouw nu het script en voer het uit. Beweeg je muis over het speelveld terwijl het programma bezig is.
                 <div class="endnote">
-                    <p>
-                        <img class="imageRight" src="../../afb/H1/H1L5/blocks/H1L5P1-b4.png"
-                            alt="when green flag clicked" title="when green flag clicked" />
-                        Het blok aan de bovenkant van het script heet een <strong>hoed</strong>blok. De vorm benadrukt
-                        dat het alleen aan het <em>begin</em> van een script kan worden gebruikt.
-                        Hoedblokken zeggen niet <em>wat</em> het script moet doen; ze zeggen <em>wanneer</em> het script
-                        iets moet doen.
-                        Hoed blokken zeggen door middel van welke <strong> gebeurtenis </strong> het script moet
-                        beginnen.
-                        In dit geval start het script wanneer er op de groene vlag geklikt wordt.
-                    </p>
-                    <p> Om dit script te <em>stoppen</em> , klik je op de knop met het rode stop teken: <img
-                            class="button" src="../../afb/icons/stop_button.png" style="height:1.9em;" alt="stop button"
-                            title="stop button" /> </p>
+                    De nieuwe sprite, genaamd Sprite(2), verschijnt op het speelveld.
+                    Hij is gloednieuw, dus hij heeft nog geen scripts. De knoppen onder het speelveld kan je gebruiken
+                    om
+                    te selecteren welke sprite je wil programmeren.
                 </div>
-            </li>
-            <li><img class="inline" src="../../afb/icons/PraatMetJeBuur-mini.png" alt="Talk with Your Partner"
-                    title="Talk with Your Partner" />Werkt het programma zoals je had
-                verwacht?
-            </li>
-            <li>
-                Maak een tweede sprite door te klikken op de <img src="../../afb/H1/H1L5/overig/H1L5P1-o1.png"
-                    alt="Voeg een nieuwe turtle sprite toe" title="add a new turtle sprite" /> knop, onder het
-                speelveld. <a name="newTurtle" class="anchor">&nbsp;</a><br />
-                Gebruik dan het <code>richt naar</code> blok om hem naar Sprite te richten. De animatie hieronder laat
-                zien hoe het moet.
-                <img data-gifffer="../../afb/H1/H1L5/videos/H1L5P1-v2.gif" alt="een nieuwe sprite krijgen"
-                    title="een nieuwe sprite krijgen" />
-            </li>
+            </ol>
+        </div>
 
-            <div class="endnote">
-                De nieuwe sprite, genaamd Sprite(2), verschijnt op het speelveld.
-                Hij is gloednieuw, dus hij heeft nog geen scripts. De knoppen onder het speelveld kan je gebruiken om
-                te selecteren welke sprite je wil programmeren.
-            </div>
-        </ol>
+        <img class="inline" src="../../afb/icons/DraaiDeRollenOm.png" alt="Pair Programming Swap"
+            title="Pair Programming Swap" />
+
+        <div class="forYouToDo">
+            <ol start="6">
+                <li>
+                    Pas je script aan zodat Sprite(2), zodra er op de groene vlag geklikt is,
+                    het wijzen naar Sprite <code> herhaalt</code>. <br />
+                    <img data-gifffer="../../afb/H1/H1L5/videos/H1L5P1-v3.gif" alt="pointing towards Sprite forever"
+                        title="pointing towards Sprite forever" />
+                </li>
+                <div class="endnote">Terwijl een script bezig is met uitvoeren, licht zijn rand op. Als de looptijd kort
+                    is,
+                    dan zie je misschien wel alleen een korte flits.
+                </div>
+                <li>
+                    Klik op de <img src="../../afb/icons/green-flag_button.png" style="height:1.9em;"
+                        alt="green-flag button" title="green-flag button" /> en controleer of je script doet wat het zou
+                    moeten doen:
+                    <ul>
+                        <li>Sprite volgt altijd je muis, wanneer je je muis beweegt.</li>
+                        <li>Sprite(2) blijft op zijn plek, maar wijst altijd naar Sprite.</li>
+                    </ul>
+                </li>
+                <div class="endnote">Allebei de scripts gebruiken <code>wanneer<img
+                            src="../../afb/icons/green-flag_button.png" style="height:1.6em;" alt="green-flag button"
+                            title="green-flag button" />wordt aangeklikt</code>, dus
+                    <em>allebei</em> de scripts zijn bezig wanneer de <img src="../../afb/icons/green-flag_button.png"
+                        style="height:1.9em;" alt="green-flag button" title="green-flag button" /> is aangeklikt.</div>
+            </ol>
+        </div>
+        <img class="inline" src="../../afb/icons/HetIsNuEenGoedMoment.png" alt="Now Is a Good Time to Save"
+            title="Now Is a Good Time to Save" />
     </div>
-
-    <img class="inline" src="../../afb/icons/DraaiDeRollenOm.png" alt="Pair Programming Swap"
-        title="Pair Programming Swap" />
-
-    <div class="forYouToDo">
-        <ol start="6">
-            <li>
-                Pas je script aan zodat Sprite(2), zodra er op de groene vlag geklikt is,
-                het wijzen naar Sprite <code> herhaalt</code>. <br />
-                <img data-gifffer="../../afb/H1/H1L5/videos/H1L5P1-v3.gif" alt="pointing towards Sprite forever"
-                    title="pointing towards Sprite forever" />
-            </li>
-            <div class="endnote">Terwijl een script bezig is met uitvoeren, licht zijn rand op. Als de looptijd kort is,
-                dan zie je misschien wel alleen een korte flits.
-            </div>
-            <li>
-                Klik op de <img src="../../afb/icons/green-flag_button.png" style="height:1.9em;"
-                    alt="green-flag button" title="green-flag button" /> en controleer of je script doet wat het zou
-                moeten doen:
-                <ul>
-                    <li>Sprite volgt altijd je muis, wanneer je je muis beweegt.</li>
-                    <li>Sprite(2) blijft op zijn plek, maar wijst altijd naar Sprite.</li>
-                </ul>
-            </li>
-            <div class="endnote">Allebei de scripts gebruiken <code>wanneer<img
-                        src="../../afb/icons/green-flag_button.png" style="height:1.6em;" alt="green-flag button"
-                        title="green-flag button" />wordt aangeklikt</code>, dus
-                <em>allebei</em> de scripts zijn bezig wanneer de <img src="../../afb/icons/green-flag_button.png"
-                    style="height:1.9em;" alt="green-flag button" title="green-flag button" /> is aangeklikt.</div>
-        </ol>
-    </div>
-    <img class="inline" src="../../afb/icons/HetIsNuEenGoedMoment.png" alt="Now Is a Good Time to Save"
-        title="Now Is a Good Time to Save" />
-
     <div class="full-bottom-bar" style="background-position: 20px 3px;">
         <div class="bottom-nav btn-group"><a class="btn btn-default backbutton arrow disabled" style="min-width: 90px;"
                 href=" #">Terug</a><a style="min-width:90px;" class=" btn btn-default forwardbutton arrow"
