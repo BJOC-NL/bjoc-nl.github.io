@@ -1,6 +1,7 @@
 # Engels - Nederlands
 
 ## Algemene termen
+
 computer science - informatica
 
 predicate - predikaat
@@ -74,15 +75,16 @@ Tic-Tac-Toe - boter, kaas en eieren
 stage - speelveld
 
 ## Niet te vertalen
+
 HTML
 
 dataset
 
-URL 
+URL
 
-app 
+app
 
-Content met <div class="todo"></div> wordt niet op webpagina getoond, is in feite commentaar van ontwikkelaars/gebruikers en hoeft niet vertaald
+Content met ```<div class="todo"></div>``` wordt niet op webpagina getoond, is in feite commentaar van ontwikkelaars/gebruikers en hoeft niet vertaald
 
 account
 
@@ -98,6 +100,7 @@ Machine- Deep learning
 bug
 
 ## Hoofdstuk specifieke termen
+
 artificial intelligence (AI) - Kunstmatige intelligentie (KI)
 
 (list) item - item
@@ -114,12 +117,12 @@ For you to do - Wat je moet doen
 
 Take it further - Ga een stapje verder
 
-If there is time - Als er nog tijd over is 
+If there is time - Als er nog tijd over is
 
 In this lesson you will - In deze les ga je
 
 (Knop tekst)
-Click here to load this file. Then save it to your Snap! account. - 
+Click here to load this file. Then save it to your Snap! account. -
 Klik hier om dit bestand te openen. Bewaar het vervolgens in je Snap! account.
 
 (knop tekst)
@@ -128,35 +131,33 @@ Pair Programming Swap - Draai de rollen om
 This question is similar to those you will see on the AP CSP exam - Met deze vraag kun jij je kennis testen.
 
 ## Namen
+
 Alphie - Alex
 
 Betsy - Robin
 
 Gamal - Yasmine
 
-* Namen en plaatsnamen: zoveel mogelijk Nederlandse tegenhangers vinden. Voorbeelden Alphie/Alex, Betsy/Robin, Gamal/Yasmine
+- Namen en plaatsnamen: zoveel mogelijk Nederlandse tegenhangers vinden. Voorbeelden Alphie/Alex, Betsy/Robin, Gamal/Yasmine
 
-* **Video**: proberen samen te vatten, we zien later wel wat we hiermee doen 
+- **Video**: proberen samen te vatten, we zien later wel wat we hiermee doen
 
-* Oorspronkelijke (Engelse) tekst bekommentarieren 
+- Oorspronkelijke (Engelse) tekst bekommentarieren
 
-* Vertaling "lab" als "les" creërt een indruk dat het één lesuur betreft.  
+- Vertaling "lab" als "les" creërt een indruk dat het één lesuur betreft.  
 
-* Bestaandsnamen moeten eventueel ook vertaald worden
+- Bestaandsnamen moeten eventueel ook vertaald worden
 
-* In de Engelse versie worden veel hoofdletters gebruikt en ook komma's. Maak dit zo Nederlands mogelijk in de vertaalde versie.
+- In de Engelse versie worden veel hoofdletters gebruikt en ook komma's. Maak dit zo Nederlands mogelijk in de vertaalde versie.
 
-# Voorlopig niet te vertalen
+## Voorlopig niet te vertalen
 
-* Div class maar zie glossary voor voorbeelden
+- Div class maar zie glossary voor voorbeelden
 
-* Alt teksten
+- Alt teksten
 
-* Mappen structuur
+- Mappen structuur
 
-* Inhoudsopgave
+- Inhoudsopgave
 
-* Namen van Snap *!* blokken
-
-
-
+- Namen van Snap *!* blokken
