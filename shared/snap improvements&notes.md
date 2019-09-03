@@ -34,6 +34,7 @@
 * For You To Do -> Voor Jou Om Te Doen? klinkt niet heel lekker.
 * Graphics, Debugging, screenshot? ik zou onvertaald laten (H1L3P7).
 * Feature? heb het nu vertaald als eigenschap, maar dekt neit helemaal de lading. (H1L3P7)
+* Dependencies -> afhankelijkheden? Klinkt raar weet niet of het helemaal correct is. (H2L1P4)
 
 ## Andere vragen/opmerkingen
 
@@ -46,6 +47,7 @@
 * Vertaalde Projecten hebben nu een letterlijke link naar het project, dit zou netter moeten kunnen, weet niet hoe.
 * Er zijn een aantal links naar pagina's, dit zijn nu links binnen de files, e.g. `: ../../units ... /h1l3p1.html`. Dit is miss niet ideaal?
 * H1L3P5 heeft een verwijzing naar een extra project, misschien deze hele verwijzing weghalen, anders misschien zeggen dat deze pagina nog niet vertaald is. en de verwijzing behouden.
+
 
 ## TODO
 
