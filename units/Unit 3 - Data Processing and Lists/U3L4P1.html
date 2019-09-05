@@ -3,8 +3,8 @@
 <html lang="en">
     <head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <script type="text/javascript" src="../../bjc-r/llab/loader.js"></script>
-        <script type="text/javascript" src="../../bjc-r/utilities/gifffer.min.js"></script>
+        <script type="text/javascript" src="../../afb/"></script>
+        <script type="text/javascript" src="../../afb/"></script>
         <script type="text/javascript">window.onload = function() {Gifffer();}</script>
         <link rel="stylesheet" type="text/css" href="/bjc-r/css/bjc-gifffer.css">
 		<title>Unit 3 Lab 4: Building Data Visualization Tools, Page 1</title>
@@ -42,14 +42,14 @@
         <div class="learn">  
         	<p>
             	<strong>In this project,</strong> you will create a <em>general purpose</em> data visualization tool that can generate bar graphs for a variety of data sets.  You will practice using <em>abstraction</em> and the higher order function <code>map</code>.<br />
-        		<img class="indent" src="../../bjc-r/img/3-lists/BarGraph_img/CO2Table.png" height="300" alt="Geen Afbeelding" />
+        		<img class="indent" src="../../afb/" />
             </p>
         </div>
         
         <div class="forYouToDo" id="first">
             <ol>
                 <li>
-                <img class="imageRight" src="../../bjc-r/img/icons/talk-with-your-partner.png" alt="Geen Afbeelding">
+                <img class="imageRight" src="../../afb/">
                     Technology has come at the cost of environmental pollution around the world. In collaboration with your partner, examine the data table given on <a href="http://www.ucsusa.org/global_warming/science_and_impacts/science/each-countrys-share-of-co2.html#.WVqJI9PytE5" target="_blank" title="Each Country's Share of CO2 Emissions">this link</a>. 
                     <ol>
                         <li>What countries have the highest Carbon Dioxide (CO<sub>2</sub>) emissions?</li>
@@ -59,22 +59,22 @@
                 </li>
                 <div class="takeNote">You can gain knowledge and insights by talking to others (in person or online) as you form questions and hypotheses about data.</div>
                 <li>
-                	<a class="run" href="/bjc-r/prog/3-lists/U3L4-BarGraph.xml"><img class="inline" src="../../bjc-r/img/icons/load-save.png" alt="Geen Afbeelding"></a>
+                	<a class="run" href="/bjc-r/prog/3-lists/U3L4-BarGraph.xml"><img class="inline" src="../../afb/"></a>
                     <div class="endnote">
                         This file contains
                         <ul>
                             <li>
                                 A <em>constructor</em> of a new ADT (Abstract Data Type) called <code>data-record</code> with two fields <code>label</code> and <code>value</code>.<br />
-                                <img class="indent" src="../../bjc-r/img/3-lists/BarGraph_img/datalabelvaluewithResult.png"  height="135" alt="Geen Afbeelding"/> 
+                                <img class="indent" src="../../afb/"/> 
                             </li>
                             <li>
                                 Two <em>selectors</em> for the new ADT, <!--<code>label from data-record</code> and <code>value from data-record</code>-->to extract specific data from a <code>data-record</code> input.<br />
-                                <img class="indent" src="../../bjc-r/img/3-lists/BarGraph_img/getlabelwithResult.png" height="50" alt="Geen Afbeelding" /><br />
-                                <img class="indent" src="../../bjc-r/img/3-lists/BarGraph_img/getvaluewithResult.png"  height="50" alt="Geen Afbeelding"/><br />
+                                <img class="indent" src="../../afb/" /><br />
+                                <img class="indent" src="../../afb/"/><br />
                             </li>
                             <li>
                                 A <code>max of list</code> reporter that finds the largest element of a list.<br />
-                            	<img  class="indent" src="../../bjc-r/img/3-lists/BarGraph_img/maxoflistwithResult.png"  height="50" alt="Geen Afbeelding"/>
+                            	<img  class="indent" src="../../afb/"/>
                             </li>
                         </ul>
                     </div>
@@ -82,29 +82,29 @@
                 </li>
                 <li>
                     Develop code for the <code>draw axes</code> block.  It should draw the <em>horizontal</em> and <em>vertical</em> axes based on the given stage coordinates of the origin <var>x0</var>, <var>y0</var> and the given length, height information.  <br />
-                    <img class="indent" src="../../bjc-r/img/3-lists/BarGraph_img/drawAxis.png"  height="60" alt="Geen Afbeelding"/><br />
+                    <img class="indent" src="../../afb/"/><br />
                     <div class="endnote">
                         This diagram may help you understand how the given information will determine the <em>horizontal</em> and <em>vertical</em> axes. As you will be graphing only positive values, the axes should meet in the lower left corner as shown in the diagram.  There should not be any labels or tick marks at this point.  The markings in the diagram are shown for clarity. <br />
-                        <img class="indent" src="../../bjc-r/img/3-lists/BarGraph_img/axeshorizvert.png"  height="200" alt="Geen Afbeelding"/>
+                        <img class="indent" src="../../afb/"/>
                     </div>
                     In the <code>draw axes</code> block also make sure that the coordinates of the origin is stored in global variables <var>x-origin</var>, <var>y-origin</var>.  In the upcoming steps of this project, other blocks will need this information to properly allign the bars and labels .<br />
-                    <img class="indent" src="../../bjc-r/img/3-lists/BarGraph_img/globalx0y0.png" height="100" alt="Geen Afbeelding"/>
-                    <img src="../../bjc-r/img/3-lists/BarGraph_img/setXYOrigin.png"  height="75" alt="Geen Afbeelding"/>
+                    <img class="indent" src="../../afb/"/>
+                    <img src="../../afb/"/>
                     <div class="sidenote">
                         You can import the basic <code>label</code> block in your new projects via the "Import tools" option of the File menu:<br />
-                        <img src="../../bjc-r/img/3-lists/BarGraph_img/importTools.png"  height="150" alt="Geen Afbeelding"/>
+                        <img src="../../afb/"/>
                     </div>
                 </li>
                 <li>
                     Explore the basic <code>label</code> block included in the starter project.  Try changing the location and direction of the drawing sprite.<br />
-                    <img class="indent" src="../../bjc-r/img/3-lists/BarGraph_img/labelofsize.png"  height="45" alt="Geen Afbeelding"/>
+                    <img class="indent" src="../../afb/"/>
                     <div class="endnote">
                         
                         <p> Note that the <code>label</code> block does not need to have <code>pen down</code> in order to do its writing.  Having <code>pen down</code>  with the <code>label</code> block may cause some undesired effects.<br /><br />
                             You're not required to look inside the <code>label</code> block, but if you do, you'll see something unfamiliar.<br />
                             <a href="#hint-1" data-toggle="collapse" class="collapsed" title="More information">Show more information.</a>
                             <div id="hint-1" class="collapse">
-                                <img class="indent" src="../../bjc-r/img/3-lists/BarGraph_img/labelwithJS.png"  height="150" alt="Geen Afbeelding"/><br />
+                                <img class="indent" src="../../afb/"/><br />
                                 Snap<em>!</em>, like pretty much everything that runs in a browser, is written in a programming language called <em>JavaScript</em>.  The <code>label</code> block is implemented using a Snap! <code>JavaScript function</code>  block that allows advanced users to extend Snap<em>!</em> by adding new blocks written in JavaScript.
                         	</div>
 						</p>
@@ -114,25 +114,25 @@
                 </li>
                 <li>
                     Use the basic <code>label</code> block to develop code for the more elaborate <code>label</code> block that will place a label with the inputted specifications (text, size and direction.) <br /><br />
-                    <img class="indent" src="../../bjc-r/img/3-lists/BarGraph_img/labelChina.png"  height="45" alt="Geen Afbeelding"/><br /><br />
+                    <img class="indent" src="../../afb/"/><br /><br />
                     Note that the orientation directions should follow Snap<em>!</em> ’s convention for directions (0<sup>o</sup> up, 90<sup>o</sup> right, 180<sup>o</sup> down, 270<sup>o</sup> left).  Test your new <code>label</code> with the four directions.<br />
-                    <img class="indent" src="../../bjc-r/img/3-lists/BarGraph_img/ChinaLabels.png"  height="250" alt="Geen Afbeelding"/>
+                    <img class="indent" src="../../afb/"/>
                 </li>
                 <li>
                     Develop code for the <code>draw bar</code> block. It should draw a vertical bar (a line with the given width and height) straight up from the current location with a label placed underneath the bar.<br />
-                    <img class="indent" src="../../bjc-r/img/3-lists/BarGraph_img/drawbar.png" height="45" alt="Geen Afbeelding"/>
-                    <img class="indent" src="../../bjc-r/img/3-lists/BarGraph_img/barGermany.png" height="200" alt="Geen Afbeelding"/>
+                    <img class="indent" src="../../afb/"/>
+                    <img class="indent" src="../../afb/"/>
                     <div class="endnote">
                         You may wish to review your earlier <a href="/bjc-r/cur/programming/2-complexity/4-abstraction/3-brick-wall.html" title="Brick Wall">Brick Wall</a> project to remind yourself how to draw bars with a pen of a given width.  You don't need to import <code>set flat line ends to</code> block from that project but make sure that you have "Flat line ends" selected from the Settings menu to draw rectangular bars.  You can see below the difference in two types of lines drawn.<br />
-                        <img class="indent" src="../../bjc-r/img/3-lists/BarGraph_img/FlatLineEnds.png" height="200" alt="Geen Afbeelding"/>
-                        <img class="indent" src="../../bjc-r/img/3-lists/BarGraph_img/FlatLineBar.png"  height="100" alt="Geen Afbeelding"/>
-                        <img src="../../bjc-r/img/3-lists/BarGraph_img/RoundedBar.png"  height="120" alt="Geen Afbeelding"/>
+                        <img class="indent" src="../../afb/"/>
+                        <img class="indent" src="../../afb/"/>
+                        <img src="../../afb/"/>
                     </div>
                 </li>
                 <li>
                     Develop code for the <code>draw bars</code> block, which should draw a series of labelled bars of the desired width and an appropriate height that start on the left and continue to the right.  In order to properly level the bars and the labels you may need to refer to the global variables <var>x-origin</var>, <var>y-origin</var>.<br />
-                    <img class="indent" src="../../bjc-r/img/3-lists/BarGraph_img/drawthebars.png"  height="60" alt="Geen Afbeelding"/>
-                    <img class="indent" src="../../bjc-r/img/3-lists/BarGraph_img/bars.png"  height="250" alt="Geen Afbeelding"/>
+                    <img class="indent" src="../../afb/"/>
+                    <img class="indent" src="../../afb/"/>
                 </li>
                 <div class="narrower">
                     Note that given a maximum bar height, the heights of all the bars can be computed as a fraction of this maximum bar height.  Using the following proportion, you can derive each country's bar height:
@@ -141,28 +141,28 @@
                     <span class="katex-block" > {\text{USA bar height}} =  {\text{max bar height .}}\frac{\text{USA data value}}{\text{max data value}} = {\text{240 .}}\frac{\text{5491}}{\text{8715}}\approx {\text{151}}</span>
                     <br />
                     While finding the maximum of the data values, first you need to get a list of values and then apply the <code>max of list</code> block.  The following block which uses the selector <code>value from data-record</code> will extract a list of <em>values</em> from the given <var>data list</var>.<br />
-                    <img class="indent" src="../../bjc-r/img/3-lists/BarGraph_img/mapgetvalue.png"  height="45" alt="Geen Afbeelding"/>
+                    <img class="indent" src="../../afb/"/>
                 </div>
                 <li>
                     Develop code for the <code>label vertical axis</code> block so that it labels the vertical axis based on the specified inputs. For simplicity, you can assume that the labels will always split the vertical axis into 10 equal parts (using 11 tick marks) like this:<br />
-                    <img class="indent" src="../../bjc-r/img/3-lists/BarGraph_img/labelyaxis.png"  height="45" alt="Geen Afbeelding"/>
-                    <img src="../../bjc-r/img/3-lists/BarGraph_img/yaxislabels.png"  height="250" alt="Geen Afbeelding"/>
+                    <img class="indent" src="../../afb/"/>
+                    <img src="../../afb/"/>
                 </li>
                 <li>
                     Now you are ready to put everything together and develop code for the <code>Bar Graph</code> drawing block for a given <var>data list</var> input.  Fill in the blanks.  <br />
                     <div class="sidenote">You are allowed to use any other blocks as you need in the definition of <code>Bar Graph</code>.</div>
-                    <img class="indent" src="../../bjc-r/img/3-lists/BarGraph_img/BarGraphdata.png"  height="180" alt="Geen Afbeelding" />
+                    <img class="indent" src="../../afb/" />
                 </li>
                 <li>
                     When everything is done, the following code, with a few extra labels for the graph title, should produce a bar graph as shown below:<br />
-                    <img class="indent" src="../../bjc-r/img/3-lists/BarGraph_img/codeCO2EmissionsData.png" height="45" alt="Geen Afbeelding" /><br />
+                    <img class="indent" src="../../afb/" /><br />
                     <div class="sidenote">Please note that the lowest value on the vertical axis must be <em><strong>zero</strong></em> for this bar graph to be a legitimate data visualization.  If, for example, you had started the vertical axis at 5000, it would look like China is a vastly worse polluter than the USA.  <br /><br />In general, be very skeptical of graphs presented to you that do not start at <em><strong>zero</strong></em>.</div>
-                    <img class="indent" src="../../bjc-r/img/3-lists/BarGraph_img/CO2bargraph.png"  height="300" alt="Geen Afbeelding"/>
+                    <img class="indent" src="../../afb/"/>
                 </li>
                 <li>
                     Your coding should be general enough to accommodate a new set of data (also included in your starter file):<br />
-                    <img class="indent" src="../../bjc-r/img/3-lists/BarGraph_img/codeCO2EmissionsPerCapita.png"  height="45" alt="Geen Afbeelding"/><br />
-                    <img class="indent" src="../../bjc-r/img/3-lists/BarGraph_img/CO2EmissionsPerCapita.png"  height="300" alt="Geen Afbeelding"/>
+                    <img class="indent" src="../../afb/"/><br />
+                    <img class="indent" src="../../afb/"/>
                 </li>
                 <div class="endnote">
                     Note: "per capita" means "per person".  So, for example for China, the total CO<sub>2</sub> emissions was divided by the population:<br />
@@ -170,9 +170,9 @@
                    
                 	These values are already given to you in the starter file as <code>CO<sub>2 </sub>Emissions per capita Data</code>.
                 </div>
-                <img class="imageRight" src="../../bjc-r/img/icons/talk-with-your-partner.png" alt="Geen Afbeelding">
+                <img class="imageRight" src="../../afb/">
                 <li>In collaboration with your partner, compare the two bar graphs.  What insights does each graph provide about CO<sub>2</sub> emissions? Is one better than the other?</li>
-                <img class="imageRight" src="../../bjc-r/img/icons/save-now.png" alt="Geen Afbeelding">
+                <img class="imageRight" src="../../afb/">
             </ol>
         </div>
         
@@ -183,13 +183,13 @@
                 <strong>Data Processing:</strong> Look at the Variables palette to locate the <code>Country-GDP-Population Data</code> block.  When you examine its contents you will notice that it is a list of lists containing data on the GDP (<a href="https://en.wikipedia.org/wiki/Gross_domestic_product" target="_blank" title="Wikipedia: Gross Domestic Product">Gross Domestic Product</a>) and population size for each of the countries you studied in this project.  <em>Process</em> the data so you can create a bar graph for the GDP <strong>per capita</strong> of each country.<br />
                 
                 <br />
-                <img class="indent" src="../../bjc-r/img/3-lists/BarGraph_img/Country-GDP-Population.png"  height="200" alt="Geen Afbeelding"/>
+                <img class="indent" src="../../afb/"/>
                <br /><br />
                 
                 Click here for a<a href="#hint-2" data-toggle="collapse" class="collapsed"title="Hint"> hint</a> on how to <em>process</em> data quickly using the higher order function <code>map</code>.
                             <div id="hint-2" class="collapse">
                             These blocks may help:<br />
-                            <img class="indent" src="../../bjc-r/img/3-lists/BarGraph_img/dataProcessHint.png"  height="100" alt="Geen Afbeelding"/><br />
+                            <img class="indent" src="../../afb/"/><br />
                                 
                         	
                 </div>
@@ -203,11 +203,11 @@
             <ol type="A">
                 <li>
                     Sometimes it is more convenient to present your bar graph with horizontal bars instead of vertical ones.  Modify your code so that it takes an input indicating which type of bar graph (horizontal or vertical) is to be generated.<br />
-                    <img class="indent" src="../../bjc-r/img/3-lists/BarGraph_img/HorizontalBarGraph.png" height="300" alt="Geen Afbeelding"/>
+                    <img class="indent" src="../../afb/"/>
                 </li>
                 <li>
                     Histograms display <em>numerical</em> data grouped into ranges (called bins) and plotted as bars.  For example, the histogram below shows the number of students in each age group at a summer camp.  Learn about histograms and create a data visualization tool in Snap<em>!</em> for displaying histograms. <br />
-                    <img class="indent" src="../../bjc-r/img/3-lists/BarGraph_img/Histogram.JPG"  height="250" alt="Geen Afbeelding"/>
+                    <img class="indent" src="../../afb/"/>
                 </li>
             </ol>
         </div>
