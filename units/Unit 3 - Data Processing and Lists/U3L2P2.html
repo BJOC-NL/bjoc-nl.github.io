@@ -24,13 +24,13 @@
         
         <h3>Storing All the Ways to Win</h3>
 		<p>
-            To program a way to detect a win, we need to determine what counts as a win. We'll store each possible winning triple as a list of three position numbers (a <em>triple</em>).  For example, this winning triple could be represented as <img src="../../bjc-r/img/3-lists/{3,5,7}.png" alt="list{3, 5, 7}" title="list{3, 5, 7}"> because the win is in the 3<sup>rd</sup>, 5<sup>th</sup>, and 7<sup>th</sup> positions:<br />
-            <img class="indent noshadow" src="../../bjc-r/img/3-lists/winning-combo-357.png" alt="diagonal win bottom left to top right" title="diagonal win bottom left to top right"><br />
+            To program a way to detect a win, we need to determine what counts as a win. We'll store each possible winning triple as a list of three position numbers (a <em>triple</em>).  For example, this winning triple could be represented as <img src="../../bjc-r/img/3-lists/{3,5,7}.png" alt="Geen Afbeelding"> because the win is in the 3<sup>rd</sup>, 5<sup>th</sup>, and 7<sup>th</sup> positions:<br />
+            <img class="indent noshadow" src="../../bjc-r/img/3-lists/winning-combo-357.png" alt="Geen Afbeelding"><br />
         </p>
         
         <div class="forYouToDo" id="first">
 			<ol>
-                <li><img class="inline" src="../../bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
+                <li><img class="inline" src="../../bjc-r/img/icons/talk-with-your-partner.png" alt="Geen Afbeelding" />
                     <ol>
                         <li>How many winning triples are possible? </li>
                         <li>Write down each of the possible winning triples.</li>
@@ -44,10 +44,10 @@
         <div class="forYouToDo">
 			<ol start="2">
 	            <li>Open your project <strong>U3L2-TicTacToe</strong> if it isn't open already.</li>
-                <img class="imageRight" src="../../bjc-r/img/icons/save-mini.png" alt="Save Your Work" title="Save Your Work" />
+                <img class="imageRight" src="../../bjc-r/img/icons/save-mini.png" alt="Geen Afbeelding" />
                 <li>
                     Create a reporter that outputs a list of all possible winning triples. It will look something like this:<br />
-                    <img class="indent" src="../../bjc-r/img/3-lists/winning-triples.png" alt="winning triples partial block definition showing a list with at least two lists inside it: {1,2,3} and {2,5,8}" title="winning triples partial block definition showing a list with at least two lists inside it: {1,2,3} and {2,5,8}"/>
+                    <img class="indent" src="../../bjc-r/img/3-lists/winning-triples.png" alt="Geen Afbeelding"/>
                 </li>
             </ol>
         </div>
@@ -59,17 +59,17 @@
             <p>You learned about <code>map</code> in <a href="/bjc-r/cur/programming/3-lists/1-introduction-to-lists/4-mapping-over-list.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 3 Lab 1 Page 4: Transforming Every List Item">Unit 3 Lab 1 Page 4: Transforming Every List Item</a>.</p>
             <p>
                 <code>Map</code> applies the function in the gray ring to each item in the input list, and it reports a list of all the results.<br />
-                <img class="indent" src="../../bjc-r/img/3-lists/map-example-2.png" alt="map (join( )(s)) over (list {cat, dog, bird}) reporting {cats, dogs, birds}" title="map (join( )(s)) over (list {cat, dog, bird}) reporting {cats, dogs, birds}" />
+                <img class="indent" src="../../bjc-r/img/3-lists/map-example-2.png" alt="Geen Afbeelding" />
             </p>
             <p>Recall that the blank input slot in the function inside the gray ring is where one list item goes every time the function is performed.</p>
         </div>
         
         <div class="forYouToDo">
 			<ol start="4">
-                <li>Click <img src="../../bjc-r/img/1-introduction/green-flag_button.png" alt="green flag button" title="green flag button" /> to start a new game. Play one game, <em>deliberately letting <strong>x</strong>  win</em>. </li>
+                <li>Click <img src="../../bjc-r/img/1-introduction/green-flag_button.png" alt="Geen Afbeelding" /> to start a new game. Play one game, <em>deliberately letting <strong>x</strong>  win</em>. </li>
                 <li>
                     Then build this expression, and see what it reports:<br />
-                    <img class="indent" src="../../bjc-r/img/3-lists/map-item-board.png" alt="map (item ( ) of (board)) over (list{1, 2, 3})" title="map (item ( ) of (board)) over (list{1, 2, 3})"><br />
+                    <img class="indent" src="../../bjc-r/img/3-lists/map-item-board.png" alt="Geen Afbeelding"><br />
                     <div class="endnote">
                         <a href="#hint-map-item" data-toggle="collapse" title="How does map work here?">How does <code>map</code> work here?</a>
                         <div id="hint-map-item" class="collapse">
@@ -77,23 +77,23 @@
                             <p>But here, the function in the gray ring is <code>item ( ) of (</code><var>board</var><code>)</code>, so <code>map</code> checks items 1, 2, and 3 of the list stored in the <var>board</var> variable, and it reports a list of what is in those three positions (X, O, or Empty).</p>
                             <p>
                             	If you can't see what's inside the <var>board</var> variable, be sure its box is checked in the Variables palette and expand its watcher to see its list items as in the picture below.<br />
-                                <img class="indent noshadow" src="../../bjc-r/img/3-lists/ttt-board-var.png" alt="picture of: watcher of board variable showing {X, O, Empty, Empty, X, Empty, Empty, Empty, O}; and Tic Tac Toe game with X in upper left and center and O in upper middle and lower right" title="picture of: watcher of board variable showing {X, O, Empty, Empty, X, Empty, Empty, Empty, O}; and Tic Tac Toe game with X in upper left and center and O in upper middle and lower right" />
-                                <img class="indent" src="../../bjc-r/img/3-lists/map-item-board-reporting.png" alt="map (item ( ) of (board)) over (list{1, 2, 3}) reporting {X, Empty, Empty}" title="map (item ( ) of (board)) over (list{1, 2, 3}) reporting {X, Empty, Empty}"><br />
+                                <img class="indent noshadow" src="../../bjc-r/img/3-lists/ttt-board-var.png" alt="Geen Afbeelding" />
+                                <img class="indent" src="../../bjc-r/img/3-lists/map-item-board-reporting.png" alt="Geen Afbeelding"><br />
 							</p>
                         </div>
                     </div>
                 </li>
                 <li>
-                    <img class="inline" src="../../bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
+                    <img class="inline" src="../../bjc-r/img/icons/talk-with-your-partner.png" alt="Geen Afbeelding" />
                     What does the result of that expression tell you about the state of the game?
                 </li>
                 <li>If <code>{1, 2, 3}</code> isn't the triple in which <strong>x</strong> won the game, replace the list in the <code>map</code> expression with the winning triple, and click the expression again.</li>
                 <li>
-                	Use this idea to make a <img src="../../bjc-r/img/3-lists/status-of-triple.png" alt="status of triple ( )" title="status of triple ( )"> block that takes one possible winning triple (a triple like <img src="../../bjc-r/img/3-lists/{1,2,3}.png" alt="list{1, 2, 3}" title="list{1, 2, 3}">) as input and reports a list of what is in those three positions (X, O, or Empty).
-                    <div class="endnote">You learned how to specify the list input type (<img class="inline" src="../../bjc-r/img/3-lists/list_input_slot.png" alt="list input type: rectangle with two smaller orange rectangles inside" title="list input type: rectangle with two smaller orange rectangles inside">) on <a href="/bjc-r/cur/programming/2-complexity/2-data-structures-art/1-the-for-each-block.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" title="Unit 2 Lab 2 Page 1: Processing Each Item in a List">Unit 2 Lab 2 Page 1: Processing Each Item in a List</a>.</div>
+                	Use this idea to make a <img src="../../bjc-r/img/3-lists/status-of-triple.png" alt="Geen Afbeelding">) as input and reports a list of what is in those three positions (X, O, or Empty).
+                    <div class="endnote">You learned how to specify the list input type (<img class="inline" src="../../bjc-r/img/3-lists/list_input_slot.png" alt="Geen Afbeelding">Unit 2 Lab 2 Page 1: Processing Each Item in a List</a>.</div>
                 </li>
                 <li>
-                    <img class="imageRight" src="../../bjc-r/img/icons/save-mini.png" alt="Save Your Work" title="Save Your Work" />
+                    <img class="imageRight" src="../../bjc-r/img/icons/save-mini.png" alt="Geen Afbeelding" />
                     Play another game where player O wins, and test your <code>status of triple</code> block with the winning triple. Fix any bugs.
                 </li>
             </ol>
@@ -103,8 +103,8 @@
         <p>You've just built a block that will check one triple to show if either player has chosen all three of those squares. Now, you'll build a block, <code>status of all winning triples</code> to perform the same check for <em>all</em> of the triples that make a win. Then, you'll use that block to check if any of the winning triples actually contain three moves from the same player.</p>
         <p>
         	For example below, Player O has won this game, and the <code>status of all winning triples</code> block contains the status of each triple. The computer can use this block to check for a winning triple that has either all X or all O.<br />
-	        <img class="indent noshadow" src="../../bjc-r/img/3-lists/status-of-all-board.png" alt="Tic Tac Toe game where Player O has won down the middle column. In row one, there is X, O, and X. In row two, there is X, O, and an empty square. In row three, there is an empty square, O, and an empty square." title="Tic Tac Toe game where Player O has won down the middle column. In row one, there is X, O, and X. In row two, there is X, O, and an empty square. In row three, there is an empty square, O, and an empty square." />
-	        <img class="indent noshadow" src="../../bjc-r/img/3-lists/status-of-all-reporting.png" alt="The status of all winning triples block is reporting a list of lists (a table). There are three columns and eight rows, and each cell contains either a X, an O, or Empty. There is text to the right of each row listing the corresponding triple and where it appears on the board (such as 1, 5, 9 being the top-left to bottom-right diagonal). The triple in which Player O has won this game (2, 5, 8) shows O, O, O in the table. That is the only row with either all O or all X." title="The status of all winning triples block is reporting a list of lists (a table). There are three columns and eight rows, and each cell contains either a X, an O, or Empty. There is text to the right of each row listing the corresponding triple and where it appears on the board (such as 1, 5, 9 being the top-left to bottom-right diagonal). The triple in which Player O has won this game (2, 5, 8) shows O, O, O in the table. That is the only row with either all O or all X." />
+	        <img class="indent noshadow" src="../../bjc-r/img/3-lists/status-of-all-board.png" alt="Geen Afbeelding" />
+	        <img class="indent noshadow" src="../../bjc-r/img/3-lists/status-of-all-reporting.png" alt="Geen Afbeelding" />
         </p>
         <div class="endnote">The order of your triples and/or the numbering of the positions in your project might be different. This is OK as long as your project works.</div>
         <div class="forYouToDo">
@@ -127,12 +127,12 @@
                         <p>Are there any blocks that might be helpful for that?</p>
                         <p>
                             <a href="#hint-won-contains" data-toggle="collapse" title="Click for another hint.">Click for another hint.</a>
-                            <div id="hint-won-contains" class="collapse"><img src="../../bjc-r/img/3-lists/contains.png" alt="( ) contains ( )" title="( ) contains ( )" /></div>
+                            <div id="hint-won-contains" class="collapse"><img src="../../bjc-r/img/3-lists/contains.png" alt="Geen Afbeelding" /></div>
                         </p>
                     </div>
                 </div>
-                <li>Now make a block <img src="../../bjc-r/img/3-lists/wonQ.png" alt="won? ( )" title="won? ( )"> that takes the letter <strong>X</strong> or <strong>O</strong> as input, and reports <code>true</code> if and only if that player has won the game. </li>
-                <img class="imageRight" src="../../bjc-r/img/icons/save-mini.png" alt="Save Your Work" title="Save Your Work" />
+                <li>Now make a block <img src="../../bjc-r/img/3-lists/wonQ.png" alt="Geen Afbeelding"> that takes the letter <strong>X</strong> or <strong>O</strong> as input, and reports <code>true</code> if and only if that player has won the game. </li>
+                <img class="imageRight" src="../../bjc-r/img/icons/save-mini.png" alt="Geen Afbeelding" />
                 <li>Modify your program so that when a player wins the game, the program <em>notifies</em> the players.</li>
                 <li>Play the game a few times to check that it's working, and fix any bugs. Be sure to let each player win at least once.</li>
             </ol>
@@ -151,7 +151,7 @@
                 <li>
                     <div class="sidenoteBig">
                         <a href="#hint-tie-contains" data-toggle="collapse" title="Hint">Click for a hint about checking for ties.</a>
-                        <div id="hint-tie-contains" class="collapse"><img src="../../bjc-r/img/3-lists/contains.png" alt="( ) contains ( )" title="( ) contains ( )" /></div>
+                        <div id="hint-tie-contains" class="collapse"><img src="../../bjc-r/img/3-lists/contains.png" alt="Geen Afbeelding" /></div>
 					</div>
                     Develop a way to determine if the game has tied, and if so, make the program notify the players.
                 </li>
@@ -161,9 +161,9 @@
                 </div>
                 <li>
                 	Why does the order of the tests (for wins vs. for ties) matter?
-					<img src="../../bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
+					<img src="../../bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Geen Afbeelding" />
 				</li>
-                <li><img class="inline" src="../../bjc-r/img/icons/save-use-later.png" alt="Save. You will use this later." title="Save. You will use this later." /></li>
+                <li><img class="inline" src="../../bjc-r/img/icons/save-use-later.png" alt="Geen Afbeelding" /></li>
 			</ol>
 		</div>
         
@@ -174,7 +174,7 @@
 		</div>
 
         <div class="takeItFurther">
-			<img class="imageRight" src="../../bjc-r/img/icons/tough-stuff-mini.png" alt="Tough Stuff" title="Tough Stuff" />
+			<img class="imageRight" src="../../bjc-r/img/icons/tough-stuff-mini.png" alt="Geen Afbeelding" />
             <ol type="A">
                 <li>Your program can be smarter about detecting ties.  If there is only one empty square on the board, and filling that square with the player whose turn is next wouldn't cause a win, then the game is already tied. The challenge here is that you'll have to test for a win on a board that isn't the current <var>board</var>.</li>
                 <li>Instead of just having the sprite say something like "X wins," it would be more satisfying to the players if you draw a thick line through the three squares that generate a win. This is a little tricky because by the time you know there's a win, you no longer know which triple triggered it. Make sure your code stays readable to another programmer.</li>
