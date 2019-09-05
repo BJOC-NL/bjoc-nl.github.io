@@ -1,85 +1,104 @@
-
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<script type="text/javascript" src="../../afb/"></script>
 
-		<title>Hoofdstuk 2 Les 3: Keuzes maken met predikaten, Pagina 3</title>
+<head>
+    <link rel="icon" href="../../BJOC-NL-logo.png" type="image/png">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="../../js+css/llab/loader.js"></script>
+    <title>Hoofdstuk 2 Les 3: Keuzes maken met predikaten, Pagina 3</title>
 
-	</head>
+</head>
 
-	<body>
+<body>
     <div class="todo">
         ST EK List:
-       <br />
-       5.5.1F Compound expressions using <em>and</em>, <em>or</em>, and <em>not</em> are part of most programming languages. <br />
-       5.5.1G Intuitive and formal reasoning about program components using Boolean concepts helps in developing correct programs. 
+        <br />
+        5.5.1F Compound expressions using <em>and</em>, <em>or</em>, and <em>not</em> are part of most programming
+        languages. <br />
+        5.5.1G Intuitive and formal reasoning about program components using Boolean concepts helps in developing
+        correct programs.
 
 
-       </div>
-		<h2>Een woordpuzzel oplossen</h2>
-		<div class="learn">
-			<p><strong>Op deze pagina</strong>, ga je een kruiswoordpuzzel oplossen door predikaten te combineren met gebruik van het <code>en</code> blok. Je gaat daarna de resultaten van die predikaten gebruiken met de <code>hou</code> om woorden te vinden met specifieke karakteristieken.</p>
-            <img class="indent" src="../../afb/" />
-        </div>
-		<div class="forYouToDo" id="first">
-		    <ol>
-                <li><a class="run" href="/bjc-r/prog/2-complexity/U2L3-WordPuzzleSolver.xml" target="_blank"><img class="inline" src="../../afb/"></a><br />Run <code>importeer woordenlijst</code> om de <var>woord lijst</var> variabele te initiëren.</li>
-		        <!--<div class="sidenote">The <img class="inline nopadtb" src="../../afb/" /> block is in the Operators pallete.</div>-->
-		        <li>
-                    Je hebt het <img class="inline" src="../../afb/" /> blok gebruikt uit het Besturings palette samen met de <code>=</code> en <code>hou</code> om woorden te vinden van een bepaalde lengte in de <var>woordenlijst</var>.
-                    <!--<div class="sidenoteBig">The green <img class="inline" src="../../afb/" /> block for lists.)</div>-->
-		        	<ol>
-                        <li>Richt het script zodanig in dat het al de woorden met 8 letters kan vinden.</li>
-				        <li>Vind alle woorden die 11 letters hebben.</li>
-                        <li>Je hebt nu een <em>expressie</em> die je kunt bewerken om elk woord voor elk aantal letters kunt testen. Dit is een hele handig tool om te hebben. Maak en test een predikaat <em>blok</em> dat een woord neemt en getal neemt als input en zo werkt:
-                            <!-- <ul>
+    </div>
+    <h2>Een woordpuzzel oplossen</h2>
+    <div class="learn">
+        <p><strong>Op deze pagina</strong>, ga je een kruiswoordpuzzel oplossen door predikaten te combineren met
+            gebruik van het <code>en</code> blok. Je gaat daarna de resultaten van die predikaten gebruiken met de
+            <code>hou</code> om woorden te vinden met specifieke karakteristieken.</p>
+        <img class="indent" src="../../afb/" />
+    </div>
+    <div class="forYouToDo" id="first">
+        <ol>
+            <li><a class="run" href="/bjc-r/prog/2-complexity/U2L3-WordPuzzleSolver.xml" target="_blank"><img
+                        class="inline" src="../../afb/"></a><br />Run <code>importeer woordenlijst</code> om de
+                <var>woord lijst</var> variabele te initiëren.</li>
+            <!--<div class="sidenote">The <img class="inline nopadtb" src="../../afb/" /> block is in the Operators pallete.</div>-->
+            <li>
+                Je hebt het <img class="inline" src="../../afb/" /> blok gebruikt uit het Besturings palette samen met
+                de <code>=</code> en <code>hou</code> om woorden te vinden van een bepaalde lengte in de
+                <var>woordenlijst</var>.
+                <!--<div class="sidenoteBig">The green <img class="inline" src="../../afb/" /> block for lists.)</div>-->
+                <ol>
+                    <li>Richt het script zodanig in dat het al de woorden met 8 letters kan vinden.</li>
+                    <li>Vind alle woorden die 11 letters hebben.</li>
+                    <li>Je hebt nu een <em>expressie</em> die je kunt bewerken om elk woord voor elk aantal letters kunt
+                        testen. Dit is een hele handig tool om te hebben. Maak en test een predikaat <em>blok</em> dat
+                        een woord neemt en getal neemt als input en zo werkt:
+                        <!-- <ul>
                                 <li>Accept two inputs: a <var>word</var> and the <var>number of letters</var> it should have, and</li>
                                 <li>Report whether or not (using <code>true</code>/<code>false</code>) the inputted word has the inputted number of letters.</li>
                             </ul> -->
-                            <img class="indent" src="../../afb/" />
-                            <img class="indent" src="../../afb/" />
-						</li>
-                	</ol>
-                </li>
-		        <li>
-		        	Bouw een <em>expressie</em> en gebruik hiervoor het <img class="inline" src="../../afb/" /> blok met <code>=</code> en <code>hou</code> om woorden te vinden die bepaalde letters op bepaalde plaatsen hebben.
-	                <ol>
-				        <li>Gebruik dit om alle woorden te vinden die beginnen met de 'i'.</li>
+                        <img class="indent" src="../../afb/" />
+                        <img class="indent" src="../../afb/" />
+                    </li>
+                </ol>
+            </li>
+            <li>
+                Bouw een <em>expressie</em> en gebruik hiervoor het <img class="inline" src="../../afb/" /> blok met
+                <code>=</code> en <code>hou</code> om woorden te vinden die bepaalde letters op bepaalde plaatsen
+                hebben.
+                <ol>
+                    <li>Gebruik dit om alle woorden te vinden die beginnen met de 'i'.</li>
 
-				        <li>Vind alle woorden waarvan de 4de letter een 'r' is.</li>
-                        	<div class="sidenote">Je blok's titel mag verschillen van degene die je hier ziet, zolang hij maar hetzelfde doet.</div>
-                        <li>Als je je expressie nog niet in een predikaat <em>blok</em> hebt veranderd, doe dat dan nu. Je blok zou zo moeten werken:
-     <ul>
-                                <!-- <li>Accept three inputs: a <var>letter number</var> for the place in the word, a <var>word</var>, and a <var>letter</var>, and</li>
+                    <li>Vind alle woorden waarvan de 4de letter een 'r' is.</li>
+                    <div class="sidenote">Je blok's titel mag verschillen van degene die je hier ziet, zolang hij maar
+                        hetzelfde doet.</div>
+                    <li>Als je je expressie nog niet in een predikaat <em>blok</em> hebt veranderd, doe dat dan nu. Je
+                        blok zou zo moeten werken:
+                        <ul>
+                            <!-- <li>Accept three inputs: a <var>letter number</var> for the place in the word, a <var>word</var>, and a <var>letter</var>, and</li>
                                 <div class="todo">ST-Something feels wrong about this repeated use of "letter number".  Removing duplicate doesn't help either, so I did not change anything.</div>
                                 <li>Report whether or not the letter number <var>letter number</var> in the word is the inputted letter.</li> -->
-                            </ul>
-                            <img class="indent" src="../../afb/" />
-                            <img class="indent" src="../../afb/" />
-                    </li>
-					</ol>
-		        </li>
-				<li>
-					<strong>Werk met een ander paar.</strong> Gebruik je predikaten, samen met <code>en</code> en <code>hou</code>, om <a href="https://drive.google.com/open?id=1x8ShDe58qUQJDK8n97xoQGY4J4rw9aDsJCmkY-6SQc0" target="_blank" title="Solving a Word Puzzle">dit Hoofdstuk 2 Les 3 Woordpuzzel op te lossen</a>.<br />
-                    <div class="endnote">
-                        Bijvoorbeeld, deze expressie zoekt 6-letterige woorden die beginnen met een <var>r</var> en die <var>d</var> heeft als 3de letter:
+                        </ul>
                         <img class="indent" src="../../afb/" />
-                    </div>
-                    <div class="AP-only">
+                        <img class="indent" src="../../afb/" />
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <strong>Werk met een ander paar.</strong> Gebruik je predikaten, samen met <code>en</code> en
+                <code>hou</code>, om <a
+                    href="https://drive.google.com/open?id=1x8ShDe58qUQJDK8n97xoQGY4J4rw9aDsJCmkY-6SQc0" target="_blank"
+                    title="Solving a Word Puzzle">dit Hoofdstuk 2 Les 3 Woordpuzzel op te lossen</a>.<br />
+                <div class="endnote">
+                    Bijvoorbeeld, deze expressie zoekt 6-letterige woorden die beginnen met een <var>r</var> en die
+                    <var>d</var> heeft als 3de letter:
+                    <img class="indent" src="../../afb/" />
+                </div>
+                <div class="AP-only">
                     <div class="vocab">
-                    	<p>All the words in the puzzle are related to the AP CS Principles course.</p>
+                        <p>All the words in the puzzle are related to the AP CS Principles course.</p>
                     </div>
-                    </div>
-                    <a class="run" href="https://drive.google.com/open?id=1x8ShDe58qUQJDK8n97xoQGY4J4rw9aDsJCmkY-6SQc0" target="_blank"><img class="indent" src="../../afb/" /></a>
-				</li>
-                <img class="imageRight" src="../../afb/" />
-            </ol>
-		</div>
+                </div>
+                <a class="run" href="https://drive.google.com/open?id=1x8ShDe58qUQJDK8n97xoQGY4J4rw9aDsJCmkY-6SQc0"
+                    target="_blank"><img class="indent" src="../../afb/" /></a>
+            </li>
+            <img class="imageRight" src="../../afb/" />
+        </ol>
+    </div>
 
 
-		<!-- The whole point of this first problem was to prep for the second problem. If the second is commented out, the first should be also. --MF, 6/26/17
+    <!-- The whole point of this first problem was to prep for the second problem. If the second is commented out, the first should be also. --MF, 6/26/17
 
         <div class="ifTime">
 			<ol start="5">
@@ -111,22 +130,24 @@
 			</ol>
 		</div>-->
 
-		<div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
-    		<ol type="A">
-                <li>
-                	Maak en test een predikaat blok dat checkt of een bepaalde letter in een woord is. Onderstaand vind je wat voorbeelden. Je blok moet:
-					<!--They've already been imported in the starter file --MF, 6/26/17 <img class="imageRight" src="../../afb/" />-->
-					<ul>
-						<li>Twee inputs accepteren: een <var>letter</var> om te checken en een <var>woord</var>, en</li>
-                        <li>Rapporteer of een woord wel of niet een bepaalde letter heeft.</li>
-                    </ul>
-                    <img class="indent" src="../../afb/" />
-                    <img class="indent" src="../../afb/" />
-				</li>
+    <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
+        <ol type="A">
+            <li>
+                Maak en test een predikaat blok dat checkt of een bepaalde letter in een woord is. Onderstaand vind je
+                wat voorbeelden. Je blok moet:
+                <!--They've already been imported in the starter file --MF, 6/26/17 <img class="imageRight" src="../../afb/" />-->
+                <ul>
+                    <li>Twee inputs accepteren: een <var>letter</var> om te checken en een <var>woord</var>, en</li>
+                    <li>Rapporteer of een woord wel of niet een bepaalde letter heeft.</li>
+                </ul>
+                <img class="indent" src="../../afb/" />
+                <img class="indent" src="../../afb/" />
+            </li>
 
-            </ol>
-        </div>
+        </ol>
+    </div>
 
 
-	</body>
+</body>
+
 </html>
