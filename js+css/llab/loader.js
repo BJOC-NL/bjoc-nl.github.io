@@ -1,3 +1,10 @@
+//Add Hypothesis Annotation
+var script = document.createElement('script');
+script.src = 'https://hypothes.is/embed.js';
+script.type = 'text/javascript';
+document.getElementsByTagName('head')[0].appendChild(script);
+document.getElementsByTagName('head')[0].async = true
+
 // Polyfills for older browsers
 if (!String.prototype.endsWith) {
     Object.defineProperty(String.prototype, 'endsWith', {
