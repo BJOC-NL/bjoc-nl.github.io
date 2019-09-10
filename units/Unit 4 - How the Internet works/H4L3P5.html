@@ -55,8 +55,8 @@
         <p>A variant is the <em>Distributed Denial of Service</em> (DDoS) attack, in which the attacker first uses viruses and other malware to take control of many (sometimes hundreds of thousands of) computers around the world. This network of infected computers is called a <em>botnet</em>. The attacker then launches a DoS attack from all of the victims' computers at the same time. Besides increasing the number of simultaneous server requests, DDoS makes it harder to determine who is at fault, since the attack seems to come from many innocent people.</p>
                 
         <h3>The Lack of DNS Security</h3>
-        <p>The hierarchy of the DNS makes the system more efficient. When you visit <a href="http://snap.berkeley.edu" target="_blank" title="Snap! Build Your Own Blocks">snap.berkeley.edu</a>, your computer only has to know where to find an <em>edu</em> name server. That server only has to know where to find the <em>berkeley.edu</em> server. And that server directs your computer to <em>snap.berkeley.edu</em>.</p>
-        <!--<div class="sidenote">You learned about root domain servers on the <a href="/bjc-r/cur/programming/4-internet/1-reliable-communication/3-address-hierarchy.html?topic=nyc_bjc%2F4-internet.topic&course=bjc4nyc.html&novideo&noassignment" title="Address Hierarchy">Address Hierarchy</a> page.</div>-->
+        <p>The hierarchy of the DNS makes the system more efficient. When you visit <a href="http://snap.berkeley.edu" target="_blank" >snap.berkeley.edu</a>, your computer only has to know where to find an <em>edu</em> name server. That server only has to know where to find the <em>berkeley.edu</em> server. And that server directs your computer to <em>snap.berkeley.edu</em>.</p>
+        <!--<div class="sidenote">You learned about root domain servers on the <a href="/bjc-r/cur/programming/4-internet/1-reliable-communication/3-address-hierarchy.html?topic=nyc_bjc%2F4-internet.topic&course=bjc4nyc.html&novideo&noassignment" >Address Hierarchy</a> page.</div>-->
         <p>There are millions of such DNS requests every second, and if all of those requests had to begin at the same few root domain servers, those servers would be flooded with too many requests. Instead, DNS servers remember (<em>cache</em>) the results of host name queries, and they provide these remembered (<em>non-authoritative</em>) answers for most requests. However, if the IP address of the site you are requesting <em>changes</em> before before the non-authoritative answer is updated, you may be sent to the wrong site. More critically, a fraudulent DNS server may provide deliberately wrong non-authoritative answers. DNS was not designed to be perfectly secure.</p>
 
         <h3>What Can You Do?</h3>
@@ -73,8 +73,8 @@
 
 		<div class="todo">
             <h3>Cybersecurity and Crime</h3>
-            <img class="imageRight" src="../../bjc-r/img/icons/headphones.png" alt="Set Up Your Headphones or Speakers" title="Set Up Your Headphones or Speakers" />
-            <div class="sidenote">If your connection blocks YouTube, <a href="http://scratch.mit.edu/discuss/youtube/AuYNXgO_f3Y" target="_blank" title="The Internet: Cybersecurity & Crime">watch the video here</a>.</div>
+            <img class="imageRight" src="../../bjc-r/img/icons/headphones.png" alt="Set Up Your Headphones or Speakers"  />
+            <div class="sidenote">If your connection blocks YouTube, <a href="http://scratch.mit.edu/discuss/youtube/AuYNXgO_f3Y" target="_blank" >watch the video here</a>.</div>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/AuYNXgO_f3Y?rel=0" frameborder="0" allowfullscreen class="indent"></iframe>
         </div>
       
