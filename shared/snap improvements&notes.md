@@ -47,6 +47,7 @@
 * Vertaalde Projecten hebben nu een letterlijke link naar het project, dit zou netter moeten kunnen, weet niet hoe.
 * Er zijn een aantal links naar pagina's, dit zijn nu links binnen de files, e.g. `: ../../units ... /h1l3p1.html`. Dit is miss niet ideaal?
 * H1L3P5 heeft een verwijzing naar een extra project, misschien deze hele verwijzing weghalen, anders misschien zeggen dat deze pagina nog niet vertaald is. en de verwijzing behouden.
+* H2L2P3 onderaan, de Een Stapje Verder heeft een link naar een andere pagina die niet vertaald is.
 
 
 ## TODO
