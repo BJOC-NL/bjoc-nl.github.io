@@ -2,137 +2,146 @@
 <html lang="en">
 
 <head>
-	<link rel="icon" href="../../BJOC-NL-logo.png" type="image/png">
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<script type="text/javascript" src="../../js+css/llab/loader.js"></script>
-	<script type="text/javascript" src="../../js+css/gifffer.min.js"></script>
-	<script type="text/javascript">
-		window.onload = function () {
-			Gifffer();
-		}
-	</script>
-	<link rel="stylesheet" type="text/css" href="../../js+css/css/bjc-gifffer.css">
-	<title>Hoofdstuk 2 Les 3: Keuzes maken met predikaten, Pagina 2</title>
+    <link rel="icon" href="../../BJOC-NL-logo.png" type="image/png">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="../../js+css/llab/loader.js"></script>
+    <script type="text/javascript" src="../../js+css/gifffer.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            Gifffer();
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../js+css/css/bjc-gifffer.css">
+    <title>Hoofdstuk 2 Les 3: Keuzes maken met predikaten, Pagina 2</title>
 
 </head>
 
 <body>
-	<div class="todo">
-		ST EK List:
-		<br />
-		No EK's found
-	</div>
-	<h2><code>Hou</code>items van lijsten</h2>
-	<div class="learn">
-		<p><strong>Op deze pagina</strong>, ga je predikaten gebruiken met het <code>hou</code> blok om items binnen een
-			lijst te houden die specifieke karakteristieken hebben.</p>
-	</div>
+    <div class="full">
+        <h2><code>Hou</code>items van lijsten</h2>
+        <div class="learn">
+            <p><strong>Op deze pagina</strong>, ga je predikaten gebruiken met het <code>hou</code> blok om items binnen
+                een
+                lijst te houden die specifieke karakteristieken hebben.</p>
+        </div>
 
-	<p>Zoals je weet, kunnen predikaten gebruikt worden met conditionale om te beslissen wanneer iets te <em>doen</em>;
-		ze kunnen ook gebruikt worden met het <code>hou</code> blok om te beslissen welke dingen te <em>houden</em>. Het
-		<img class="inline" src="../../afb/" /> blok neemt een lijst en een predikaat
-		<!--with a <em>blank input slot</em> (shown below)--> als input, en het meldt een nieuwe lijst met alleen maar
-		items van die lijst die de conditie als 'waar' heeft gekregen van de predikaat.</p>
+        <p>Zoals je weet, kunnen predikaten gebruikt worden met conditionale om te beslissen wanneer iets te
+            <em>doen</em>;
+            ze kunnen ook gebruikt worden met het <code>hou</code> blok om te beslissen welke dingen te <em>houden</em>.
+            Het
+            <img class="inline" src="../../afb/" /> blok neemt een lijst en een predikaat
+            <!--with a <em>blank input slot</em> (shown below)--> als input, en het meldt een nieuwe lijst met alleen
+            maar
+            items van die lijst die de conditie als 'waar' heeft gekregen van de predikaat.</p>
 
-	<p>
-		Bijvoorbeeld, de volgende expressie vindt woorden van de <var>woorden lijst</var> <strong>waarvan de eerste
-			letter een 'v' is</strong>. Het <em>lege input vakje</em> is waar elk item van de lijst naartoe gaat om te
-		beslissen of deze gehouden wordt of niet.<br>
-		<img class="indent" src="../../afb/">
-		<!--<img class="indent" src="../../afb/" />-->
-	</p>
+        <p>
+            Bijvoorbeeld, de volgende expressie vindt woorden van de <var>woorden lijst</var> <strong>waarvan de eerste
+                letter een 'v' is</strong>. Het <em>lege input vakje</em> is waar elk item van de lijst naartoe gaat om
+            te
+            beslissen of deze gehouden wordt of niet.<br>
+            <img class="indent" src="../../afb/">
+            <!--<img class="indent" src="../../afb/" />-->
+        </p>
 
-	<div class="takeNote">
-		<p>Je schrijft de predikaat die het checken doet aan, en <strong><code>hou</code> voegt iedere predikaat aan elk
-				item in de input lijst van items die je predikaten <code>waar</code></strong> maken.</p>
-		<p>Let op dat het lege input gedeelte in de predikaat <em>noodzakelijk</em> is wanneer je <code>hou</code>
-			gebruikt. Dit is waar het item van de lijst naartoe gaat elke keer wanneer er een vraag wordt gesteld.</p>
-	</div>
+        <div class="takeNote">
+            <p>Je schrijft de predikaat die het checken doet aan, en <strong><code>hou</code> voegt iedere predikaat aan
+                    elk
+                    item in de input lijst van items die je predikaten <code>waar</code></strong> maken.</p>
+            <p>Let op dat het lege input gedeelte in de predikaat <em>noodzakelijk</em> is wanneer je <code>hou</code>
+                gebruikt. Dit is waar het item van de lijst naartoe gaat elke keer wanneer er een vraag wordt gesteld.
+            </p>
+        </div>
 
-	<div class="forYouToDo" id="first">
-		<ol>
-			<li>
-				<a class="run" href="/bjc-r/prog/2-complexity/U2L3-KeepingData.xml" target="_blank"><img class="inline"
-						src="../../afb/"></a><br />
-				Exporteer je nieuwe predikaten (<code>tussen?</code>, <code>deelbaar?</code>, <code>even?</code>, en
-				misschien ook <code>integer?</code>) van je project <a
-					href="/bjc-r/cur/programming/2-complexity/3-predicates/1-adding-questions.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment"
-					title="What's a Predicate?">Hoofdstuk 2 Les 3 Pagina 1: Wat is een predikaat?</a> en importeer deze
-				dan naar je nieuwe project en sla dit op. Om terug te kijken hoe je blokken importeert en exporteert,
-				kun je dit terugvinden in <a
-					href="/bjc-r/cur/programming/2-complexity/1-variables-games/4-importing-exporting.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment"
-					title="Importing Greet Player into Another Program">Hoofdstuk 2 Les 1 Pagina 4: Importeer Groet
-					Speler in een ander programma</a> .</li>
-			<li><img class="inline" src="../../afb/" /> Experimenteer met deze voorbeelden van <code>hou</code>.
-				Discussier en leg deze uit <em>in schrift</em> wat deze expressies doen.<br />
-				<img class="indent" src="../../afb/"><br />
-				<img class="indent" src="../../afb/">
-			</li>
+        <div class="forYouToDo" id="first">
+            <ol>
+                <li>
+                    <a class="run" href="/bjc-r/prog/2-complexity/U2L3-KeepingData.xml" target="_blank"><img
+                            class="inline" src="../../afb/"></a><br />
+                    Exporteer je nieuwe predikaten (<code>tussen?</code>, <code>deelbaar?</code>, <code>even?</code>, en
+                    misschien ook <code>integer?</code>) van je project <a
+                        href="/bjc-r/cur/programming/2-complexity/3-predicates/1-adding-questions.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment"
+                        title="What's a Predicate?">Hoofdstuk 2 Les 3 Pagina 1: Wat is een predikaat?</a> en importeer
+                    deze
+                    dan naar je nieuwe project en sla dit op. Om terug te kijken hoe je blokken importeert en
+                    exporteert,
+                    kun je dit terugvinden in <a
+                        href="/bjc-r/cur/programming/2-complexity/1-variables-games/4-importing-exporting.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment"
+                        title="Importing Greet Player into Another Program">Hoofdstuk 2 Les 1 Pagina 4: Importeer Groet
+                        Speler in een ander programma</a> .</li>
+                <li><img class="inline" src="../../afb/" /> Experimenteer met deze voorbeelden van <code>hou</code>.
+                    Discussier en leg deze uit <em>in schrift</em> wat deze expressies doen.<br />
+                    <img class="indent" src="../../afb/"><br />
+                    <img class="indent" src="../../afb/">
+                </li>
 
-			<!--<p>
+                <!--<p>
 					Here, every word in the list is asked whether the first letter is <var>a</var>:<br />
 					<img class="indent" src="../../afb/" />
 				</p>-->
 
 
-			<div class="endnote">
-				<img class="imageRight" src="../../afb/" />
-				Net als het <code>voor</code> blok die je hebt gezien in <a
-					href="/bjc-r/cur/programming/1-introduction/3-drawing/6-the-for-block.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment"
-					title="Looping with a Counter"> Hoofdstuk 1 Les 3 Pagina 6: Looping met een Counter</a>,
-				<code>hou</code> is niet automatisch geinstalleerd. Het is al in dit project toegevoegd, maar in andere
-				projecten, moet je de "importeer tools" selecteren van het menu om toegang te krijgen tot het
-				<code>hou</code> blok. <br />
-			</div>
-		</ol>
-	</div>
+                <div class="endnote">
+                    <img class="imageRight" src="../../afb/" />
+                    Net als het <code>voor</code> blok die je hebt gezien in <a
+                        href="/bjc-r/cur/programming/1-introduction/3-drawing/6-the-for-block.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment"
+                        title="Looping with a Counter"> Hoofdstuk 1 Les 3 Pagina 6: Looping met een Counter</a>,
+                    <code>hou</code> is niet automatisch geinstalleerd. Het is al in dit project toegevoegd, maar in
+                    andere
+                    projecten, moet je de "importeer tools" selecteren van het menu om toegang te krijgen tot het
+                    <code>hou</code> blok. <br />
+                </div>
+            </ol>
+        </div>
 
-	<p>Het eerste voorbeeld houdt inputs van een bepaalde <em>lengte</em>; elk woord in de lijst wordt gevraagd of de
-		lengte '5' is, en alleen degene met 5 karakters/letter worden gemeld. Het tweede voorbeeld houdt inputs die
-		<em>geen getallen</em> zijn; elk item in deze lijst wordt gevraagd "Is dit item <em>geen</em> getal?" en alleen
-		de elementen die geen getallen zijn worden gemeld.</p>
+        <p>Het eerste voorbeeld houdt inputs van een bepaalde <em>lengte</em>; elk woord in de lijst wordt gevraagd of
+            de
+            lengte '5' is, en alleen degene met 5 karakters/letter worden gemeld. Het tweede voorbeeld houdt inputs die
+            <em>geen getallen</em> zijn; elk item in deze lijst wordt gevraagd "Is dit item <em>geen</em> getal?" en
+            alleen
+            de elementen die geen getallen zijn worden gemeld.</p>
 
-	<div class="forYouToDo">
-		<ol start="3">
+        <div class="forYouToDo">
+            <ol start="3">
 
-			<li>
-				Run <code>initieer lijsten</code>, en gebruik dan je nieuwe predikaten samen met <code>hou</code> om
-				deze vragen te beantwoorden:
-				<ol>
-					<li>Hoeveel 12-letterige woorden zijn er in <var>woordenlijst</var>?</li>
-					<li>Hoeveel 15-letterige woorden zijn er in <var>woordenlijst</var>?</li>
-					<li>Hoeveel 17-letterige woorden zijn er in <var>woordenlijst</var>?</li>
-					<li>
-						Hoeveel items in de <var>getallen lijst</var> zijn:
-						<ol style="list-style-type: lower-roman">
-							<li>Even?</li>
-							<li>Tussen 25 en 75?</li>
-							<li>Even getallen die groter zijn dan nul?</li>
-						</ol>
-					</li>
-				</ol>
-			</li>
-		</ol>
-	</div>
+                <li>
+                    Run <code>initieer lijsten</code>, en gebruik dan je nieuwe predikaten samen met <code>hou</code> om
+                    deze vragen te beantwoorden:
+                    <ol>
+                        <li>Hoeveel 12-letterige woorden zijn er in <var>woordenlijst</var>?</li>
+                        <li>Hoeveel 15-letterige woorden zijn er in <var>woordenlijst</var>?</li>
+                        <li>Hoeveel 17-letterige woorden zijn er in <var>woordenlijst</var>?</li>
+                        <li>
+                            Hoeveel items in de <var>getallen lijst</var> zijn:
+                            <ol style="list-style-type: lower-roman">
+                                <li>Even?</li>
+                                <li>Tussen 25 en 75?</li>
+                                <li>Even getallen die groter zijn dan nul?</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
 
-	<div class="ifTime">
-		<ol start="4">
-			<li>
-				Als je een <code>integer?</code> predikaat hebt gemaakt, gebruik dan je nieuwe predikaten samen met
-				<code>hou</code> om te kijken hoeven getallen in de <var>getallen lijst</var> zijn:
-				<ol>
-					<li>Integers?</li>
-					<li>Integers tussen 25 en 75?</li>
-					<li>Geen integers?</li>
-					<li>Oneven integers?</li>
-				</ol>
-
-
-		</ol>
-	</div>
-
-
-
+        <div class="ifTime">
+            <ol start="4">
+                <li>
+                    Als je een <code>integer?</code> predikaat hebt gemaakt, gebruik dan je nieuwe predikaten samen met
+                    <code>hou</code> om te kijken hoeven getallen in de <var>getallen lijst</var> zijn:
+                    <ol>
+                        <li>Integers?</li>
+                        <li>Integers tussen 25 en 75?</li>
+                        <li>Geen integers?</li>
+                        <li>Oneven integers?</li>
+                    </ol>
+            </ol>
+        </div>
+    </div>
+    <div class="full-bottom-bar" style="background-position: 20px 3px;">
+        <div class="bottom-nav btn-group"><a class="btn btn-default backbutton arrow" style="min-width: 90px;"
+                href="H2L3P1.html">Terug</a><a style="min-width:90px;" class="btn btn-default forwardbutton arrow"
+                href="H2L3P3.html">Volgende</a> </div>
+    </div>
 
 </body>
 
