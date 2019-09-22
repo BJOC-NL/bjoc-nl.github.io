@@ -1,0 +1,1 @@
+Deze folder bevat alle afbeeldingen, opgedeeld per hoofdstuk, per les en dan in blokafbeeldingen, videos en overigen.
