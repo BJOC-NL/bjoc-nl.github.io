@@ -49,6 +49,7 @@
 * H1L3P5 heeft een verwijzing naar een extra project, misschien deze hele verwijzing weghalen, anders misschien zeggen dat deze pagina nog niet vertaald is. en de verwijzing behouden.
 * H2L2P3 onderaan, de Een Stapje Verder heeft een link naar een andere pagina die niet vertaald is.
 * H2L3P3 noemt de AP CS Principles Course, dit wordt vaker gedaan, willen we dit gweoon allemaal weglaten? het geeft wel context.
+* H2L5P1 heeft een mooie comment, misschien kunnen we hier iets mee doen?
 
 
 ## TODO
