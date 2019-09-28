@@ -34,7 +34,7 @@
 * For You To Do -> Voor Jou Om Te Doen? klinkt niet heel lekker.
 * Graphics, Debugging, screenshot? ik zou onvertaald laten (H1L3P7).
 * Feature? heb het nu vertaald als eigenschap, maar dekt neit helemaal de lading. (H1L3P7)
-* Dependencies -> afhankelijkheden? Klinkt raar weet niet of het helemaal correct is. (H2L1P4)
+* Dependencies -> afhankelijkheden? Klinkt raar weet niet of het helemaal correct is. (H2L1P4) (H2L3P3)
 
 ## Andere vragen/opmerkingen
 

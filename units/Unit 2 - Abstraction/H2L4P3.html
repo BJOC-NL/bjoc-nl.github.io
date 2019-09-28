@@ -29,59 +29,61 @@
 
 
         <div class="takeNote">
-            <h4><strong>Abstraction</strong></h4>
-            <p>Any good programming language might have many tools for drawing and moving, but it wouldn't make sense to
-                have special tools for drawing bricks because most programs don't involve bricks. That's the sort of
-                tool you make yourself when you need it.</p>
-            <p>Creating a special <img height="40" class="nopadtb" src="../../afb/h2/l4/blocks/p3-b1.png" /> block lets
-                you use
-                procedure names related to the problem you are solving (like <code>draw brick</code>), rather than the
-                general-purpose procedures (like
-                <code>move</code>) that the computer uses for all kinds of tasks.
+            <h4><strong>Abstractie</strong></h4>
+            <p>Iedere goede programmeertaal kan verschillende manieren hebben om te tekenen en bewegen, maar het zou
+                niet logisch zijn om een speciale manier te hebben om bakstenen te tekenen omdat de meeste programma's
+                geen bakstenen nodig hebben. Dat zijn de soort functies die je zelf moet maken als je ze nodig hebt.
+            </p>
+            <p>Door een speciaal <img height="40" class="nopadtb" src="../../afb/h2/l4/blocks/p3-b1.png" />blok te
+                maken, zorg je ervoor dat namen voor procedures kan gebruiken die gerelateerd zijn aan het probleem dat
+                je aan het oplossen bent(zoals <code> teken baksteen</code>), in plaats van algemene procedures (zoals
+                <code>beweeg</code>) die de computer gebruikt voor van alles.
             </p>
         </div>!
 
-        <h3>Drawing One Brick</h3>
+        <h3>Één Baksteen Tekenen</h3>
         <p>
-            A picture of a brick is just a rectangle with a brick red color. However, there's no
-            <code>draw rectangle</code> block in <span class="snap">snap</span>. One way to draw one is by thinking of a
-            rectangle as a very thick line. Here's the idea:<br />
+            Een afbeelding van een baksteen is gewoon een rechthoek met de rode kleur van een baksteen. Hoewel er geen
+            <code> teken rechthoek</code>blok bestaat in <span class="snap">snap</span>, bestaan er toch manieren om
+            er een te tekenen. Een manier is om een rechthoek te zien als een hele dikke lijn. Hieronder kan je dit idee
+            toegepast zien: <br />
             <img height="150" class="indent" src="../../afb/h2/l4/blocks/p3-b2.png" />
         </p>
         <div class="forYouToDo" id="first">
             <div class="sidenoteBig">
-                <p>The <img height="40" src="../../afb/h2/l4/blocks/p3-b3.png"> block isn't built
-                    into Snap<em>!</em>. In projects without it, you can set the "Flat line ends" in the <img
-                        src="../../afb/icons/settings.png" /> menu.</p>
-                <p>Ordinarily, Snap<em>!</em> draws thick lines with rounded ends: <img class="nopadtb"
+                <p>Het <img height="40" src="../../afb/h2/l4/blocks/p3-b3.png">blok zit niet standaard in
+                    Snap<em>!</em>. In een projecten zonder dit blok, kan je "Flat line ends" aanzetten in het
+                    <img src="../../afb/icons/settings.png" /> menu.</p>
+                <p>Normaliter tekent Snap<em>!</em> dikke lijnen met afgeronde eindes: <img class="nopadtb"
                         src="../../afb/h2/l4/other/p3-o3.png" alt="line with round ends" title="line with round ends">.
-                    That's
-                    often the best choice, and you can see why below. But for
-                    bricks, we want flat line ends: <img class="nopadtb" src="../../afb/h2/l4/other/p3-o4.png"
-                        alt="flat line ends" title="flat line ends">.</p>
-                <p class="center"><img src="../../afb/h2/l4/other/p3-o5.jpg" /><br /><strong>flat</strong> vs.
-                    <strong>rounded</strong> line
-                    ends
+                    Dat is vaak de beste keuze, en je kan de reden daarvoor hieronder zien. Maar voor bakstenen willen
+                    we dat het einde van een lijn recht is:
+                    <img class="nopadtb" src="../../afb/h2/l4/other/p3-o4.png" alt="flat line ends"
+                        title="flat line ends">.</p>
+                <p class="center"><img src="../../afb/h2/l4/other/p3-o5.jpg" /><br /><strong>rechte</strong> vs.
+                    <strong>afgeronde</strong> lijneindes
                 </p>
             </div>
             <ol>
                 <li><a class="run"
                         href="https://snap.berkeley.edu/snapsource/snap.html#present:Username=cfkaligula&ProjectName=H2L4-BakstenenMuur"><img
                             class="inline" src="../../afb/icons/LaadEnSlaOp.png"></a><br />
-                    It includes the complete <code>draw brick</code> block shown below. Read the code; then try it
-                    out.<br /> <img height="250" src="../../afb/h2/l4/blocks/p3-b4.png" />
+                    Het bevat het gehele <code>teken baksteen</code>blok zoals hieronder. Lees de code; probeer het dan
+                    uit.<br />
+                    <img height="250" src="../../afb/h2/l4/blocks/p3-b4.png" />
                 </li>
             </ol>
         </div>
 
-        <h3>Using Problem Decomposition</h3>
+        <h3>Probleem-Decompositie Gebruiken</h3>
         <p>
-            You'd like the "top level" block to be something like this:<br />
+            Je wil eigenlijk dat het blok op het hoogste niveau er ongeveer zo uitziet:<br />
             <img height="45" class="indent" src="../../afb/h2/l4/blocks/p3-b5.png" /><br />
-            Getting there involves <strong>problem decomposition</strong>: breaking the problem into smaller pieces.
+            Om dat te krijgen heb je iets nodig dat <strong>probleem decompositie</strong> heet: Het probleem opbreken
+            in kleinere stukken.
         </p>
         <p>
-            There are two kinds of rows, so we make blocks that specialize in each:
+            Er zijn twee soorten rijen, dus we maken blokken die gespecialiseerd zijn in iedere soort:
             <ul>
                 <li><strong>Row A</strong>: <img class="noshadow" src="../../afb/h2/l4/other/p3-o6.png" title="Row A"
                         alt="Geen Afbeelding" /></li>
@@ -91,54 +93,59 @@
         </p>
         <div class="forYouToDo" id="second">
             <ol start="2">
-                <li>Use <code>draw brick</code> to make blocks
-                    <img height="40" src="../../afb/h2/l4/blocks/p3-b6.png" /> and
+                <li>Gebruik <code>teken baksteen</code> om de blokken
+                    <img height="40" src="../../afb/h2/l4/blocks/p3-b6.png" /> en
                     <img height="40" src="../../afb/h2/l4/blocks/p3-b7.png" />.</li>
 
                 <li>
-                    The two kinds of rows should be exactly the same length. Your first try at drawing Row B is probably
-                    a little too long. <strong>Debug it.</strong>
-                    <ul>
-                        <li>Should Row B have different-size bricks, different-size gaps, or just different-size bricks
-                            on the end?</li>
-                        <li>If you're not sure, try all the possibilities and see which looks right in the finished
-                            wall.
-                        </li>
-                        <li>Or think "What would <em>make the most sense</em> in a <em>real</em> brick wall?"</li>
+                    De twee soorten rijen moeten precies dezelfde lengte zijn. Je eerste poging om Rij B te tekenen is
+                    waarschijnljk te lang.
 
+                    The two kinds of rows should be exactly the same length. Your first try at drawing Row B is probably
+                    a little too long. <strong>Debug het probleem.</strong>
+                    <ul>
+                        <li>Moet Rij B bakstenen van een andere grootte hebben, gaten van andere grootte of alleen
+                            andere blokken aan het eind? </li>
+                        <li>Als je het niet zeker weet, probeer dan alle mogelijkheden en bepaal zelf wat er het beste
+                            uit ziet in de muur.
+                        </li>
+                        <li>Of bedenk "Wat zou het meest <em>logisch</em> zijn in een <em>echte</em> bakstenen muur?"
+                        </li>
                     </ul>
                 </li>
             </ol>
         </div>
 
-        <p>Once you have rows A and B the same length, you are ready to write the
-            <img height="40" class="nopadtb" src="../../afb/h2/l4/blocks/p3-b5.png" /> block. </p>
+        <p>Als je eenmaal rijen A en B dezeflde lengte hebt gemaaakt, dan ben je er klaar voor om het
+            <img height="40" class="nopadtb" src="../../afb/h2/l4/blocks/p3-b5.png" />blok te maken. </p>
 
         <div class="forYouToDo">
             <ol start="4">
                 <li>
-                    Import your <code>even?</code> block and use it to write the
-                    <img class="nopadtb" height="40" src="../../afb/H2/L4/blocks/p3-b5.png" /> block.
-                    You may wish to revisit
+                    Importeer je <code>even?</code>blok en gebruiken het om het
+                    <img class="nopadtb" height="40" src="../../afb/H2/L4/blocks/p3-b5.png" />blok te schrijven.
+                    Je vindt het misschien handig om weer even te kijken naar
                     <a href="./H2L1P4.html" title="Importing Greet Player into Another Program">
-                        Unit 2 Lab 1 Page 4: Importeer <code>Groet Spelers</code> in een ander programma</a>
-                    to review importing of blocks and
+                        Hoofdstuk 2 Les 1 Pagina 4: Importeer <code>Groet Spelers</code> in een ander programma</a>
+                    om te herhalen hoe je een blok importeert en
                     <a href="./H2L3P1.html" title="What's a Predicate?">
-                        Unit 2 Lab 3 Page 1: Wat is een predikaat?</a>
-                    for the <code>even?</code>block. Read the Debugging Dependencies section below and
-                    <strong>test</strong> your new block to make sure it works properly.
+                        Hoofdst 2 Les 3 Pagina 1: Wat is een predikaat?</a>
+                    voor het <code>even?</code>blok. Lees de sectie Debugging Dependencies hieronder en
+                    <strong>test</strong> je nieuwe blok om er zeker van te zijn dat het goed werkt.
 
                     <div class="takeNote">
                         <h4><strong>Debugging Dependencies</strong></h4>
                         <img height="100" class="imageRight" src="../../afb/H2/L4/blocks/p3-b8.png" />
-                        <p>You created your <code>even?</code> block using another custom block, <code>divisible
-                                by?</code>.
-                            You must export <em>both</em> blocks in order for <code>even?</code> to work properly when
-                            you import it into your Brick Wall project.</p>
+                        <p>Je hebt je <code>even?</code>blok gemaakt met behulp van een ander zelf gemaakt blok,
+                            <code>deelbaar door? </code>.
+                            Je moet beide blokken exporteren opdat <code>even?</code> goed werkt wanneer je het
+                            importeert in je Bakstenen Muurproject.
+                        </p>
                         <p>
-                            If you ever see this red <code>Obsolete!</code> block in code you have imported, it means
-                            that a required block was not exported. You'll want to go back to the original project and
-                            export again being sure to select all of the blocks needed by your custom blocks.<br />
+                            Als je ooit dit rode <code>Obsolete!</code>blok ziet in code die je geïmporteerd hebt, dan
+                            betekent dat dat een benodigd blok niet is geëxporteerd. Je moet dan terug naar je originele
+                            project en opnieuw exporteren. Zorg ervoor dat je alle blokken die je nodig hebt selecteert
+                            bij het exporteren. <br />
                         </p>
                     </div>
                 </li>
@@ -149,10 +156,11 @@
 
         <div class="ifTime">
             <ol start="5">
-                <li>Use your brick wall in another project by <em>exporting</em> and <em>importing</em> your brick wall
-                    blocks. You may wish to review
+                <li>Gebruik je bakstenen muur in een ander project door je bakstenen-muurblokken te <em>exporteren</em>
+                    en <em>importeren</em>. Je vindt het misschien handig om weer even te kijken naar
                     <a href="./H2L1P4.html" title="Importing Greet Player into Another Program">
-                        Unit 2 Lab 1 Page 4: Importeer <code>Groet Spelers</code> in een ander programma</a>.</li>
+                        Hoofdstuk 2 Les 1 Pagina 4: Importeer <code>Groet Spelers</code> in een ander programma</a>.
+                </li>
             </ol>
         </div>
 
@@ -160,17 +168,20 @@
         <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
             <ol type="A">
                 <li>
-                    Add more inputs to <code>draw Brick Wall</code> (and as needed to <code>row A</code> and <code>row
-                        B</code>) for:<br />
+                    Voeg meer invoeren toe aan je <code>teken Bakstenen Muur</code> (en indien nodig aan je <code>rij A
+                    </code> en <code>rij B</code>) voor:
+                    <br />
                     <ol style="list-style:lower-roman;">
-                        <li>Number of <var>bricks per row</var></li>
-                        <li><var>length</var> and <var>width</var> of a brick</li>
-                        <li>Gap <var>thickness</var></li>
+                        <li>Aantal <var>bakstenen per rij</var> </li>
+                        <li><var>lengte</var> en <var>breedte</var> van een baksteen</li>
+                        <li>Gat <var>dikte</var></li>
                     </ol>
                     <img class="indent" src="../../afb/h2/l4/blocks/p3-b9.png" /><br />
-                    <div class="endnote">Add these one at a time, not all at once! When you modify the length of a
-                        brick, that should also change the length of a row B end brick. When you modify the gap
-                        thickness, that should also change the distance between the rows.</div>
+                    <div class="endnote">
+                        Voeg deze één voor één toe, niet allemaal tegelijkertijd! Wanneer je de lengte van een baksteen
+                        aanpast, moet dat ook de lengte van een baksteen in rij B aanpassen.
+                        Als je de gatdikte aanpast, moet dat ook de afstand tussen de rijen veranderen.
+                    </div>
                 </li>
             </ol>
         </div>
