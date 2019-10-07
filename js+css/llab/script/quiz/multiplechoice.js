@@ -46,10 +46,10 @@ function MC(data, location, questionNumber) {
 }
 
 
-MC.prototype.loadContent = function() {
+MC.prototype.loadContent = function () {
     var choices = this.choices;
     var i;
-    this.interaction.find('.choice').each(function() {
+    this.interaction.find('.choice').each(function () {
         var elem = $(this);
         var choice = {
             identifier: elem.attr('identifier'),
@@ -74,7 +74,7 @@ MC.prototype.loadContent = function() {
 };
 
 //gets and returns a choice object given the choice's identifier
-MC.prototype.getChoiceByIdentifier = function(identifier) {
+MC.prototype.getChoiceByIdentifier = function (identifier) {
     var i = 0;
     for (; i < this.choices.length; i++) {
         if (this.removeSpace(this.choices[i].identifier) == identifier) {
@@ -84,25 +84,25 @@ MC.prototype.getChoiceByIdentifier = function(identifier) {
     return null;
 };
 
-MC.prototype.displayNumberAttempts = function(part1, part2, states) {
+MC.prototype.displayNumberAttempts = function (part1, part2, states) {
     var nextAttemptNum = states.length + 1;
     var nextAttemptString = "";
     // TODO: Make this switch / case and refactor to a function (for clarity)
     if (Math.floor(nextAttemptNum / 10) == 1) {
-        nextAttemptString = nextAttemptNum + "th";
+        nextAttemptString = nextAttemptNum + "de";
     } else if (nextAttemptNum % 10 == 1) {
-        nextAttemptString = nextAttemptNum + "st";
+        nextAttemptString = nextAttemptNum + "ste";
     } else if (nextAttemptNum % 10 == 2) {
-        nextAttemptString = nextAttemptNum + "nd";
+        nextAttemptString = nextAttemptNum + "de";
     } else if (nextAttemptNum % 10 == 3) {
-        nextAttemptString = nextAttemptNum + "rd";
+        nextAttemptString = nextAttemptNum + "de";
     } else {
-        nextAttemptString = nextAttemptNum + "th";
+        nextAttemptString = nextAttemptNum + "de";
     }
     this.multipleChoice.find('.numberAttemptsDiv').html(part1 + " " + nextAttemptString + " " + part2 + ".");
 };
 
-MC.prototype.tryAgain = function(e) {
+MC.prototype.tryAgain = function (e) {
     // TODO: Google Analytics Push
     // Capture Question + Correctness + Attempts
     if (this.multipleChoice.find(".tryAgainButton").hasClass("disabled")) {
@@ -116,7 +116,7 @@ MC.prototype.tryAgain = function(e) {
  * Nate: plan is to have the mc-single-template.body in the html currently, and pull
  * pieces from the data model (that the author makes) into the template
  */
-MC.prototype.render = function() {
+MC.prototype.render = function () {
     var i, type, choiceHTML;
     if (!this.previouslyRendered) {
         //$('.MultipleChoice').html(pageTemplate);
@@ -162,7 +162,7 @@ MC.prototype.render = function() {
         // TODO -- too much duplication!
         $('#' + this.removeSpace(this.choices[i].identifier)).bind('click', {
             myQuestion: this
-        }, function(args) {
+        }, function (args) {
             args.data.myQuestion.enableCheckAnswerButton('true');
         });
         if (this.selectedInSavedState(this.choices[i].identifier)) {
@@ -171,13 +171,13 @@ MC.prototype.render = function() {
 
         this.multipleChoice.find(".checkAnswerButton").bind('click', {
             myQuestion: this
-        }, function(args) {
+        }, function (args) {
             args.data.myQuestion.checkAnswer();
         });
 
         this.multipleChoice.find(".tryAgainButton").bind('click', {
             myQuestion: this
-        }, function(args) {
+        }, function (args) {
             args.data.myQuestion.tryAgain();
         });
     }
@@ -194,7 +194,7 @@ MC.prototype.render = function() {
         this.multipleChoice.find(".checkAnswerButton").innerHTML = "Save Answer";
         this.multipleChoice.find(".tryAgainButton").innerHTML = "Edit Answer";
     } else {
-        this.displayNumberAttempts("This is your", "attempt", this.attempts);
+        this.displayNumberAttempts("Dit is je", "poging", this.attempts);
     };
 
     if (this.states.length > 0) {
@@ -217,14 +217,14 @@ MC.prototype.render = function() {
 /**
  * Determine if challenge question is enabled
  */
-MC.prototype.isChallengeEnabled = function() {
+MC.prototype.isChallengeEnabled = function () {
     return false;
 };
 
 /**
  * Determine if scoring is enabled
  */
-MC.prototype.isChallengeScoringEnabled = function() {
+MC.prototype.isChallengeScoringEnabled = function () {
     var result = false;
 
     if (this.properties.attempts != null) {
@@ -244,7 +244,7 @@ MC.prototype.isChallengeScoringEnabled = function() {
  * @param choiceId
  * @return boolean
  */
-MC.prototype.selectedInSavedState = function(choiceId) {
+MC.prototype.selectedInSavedState = function (choiceId) {
     var b, latestState;
     if (this.states && this.states.length > 0) {
         latestState = this.states[this.states.length - 1];
@@ -265,7 +265,7 @@ MC.prototype.selectedInSavedState = function(choiceId) {
 if (!Array.shuffle) {
     // FIXME -- wtf if with this for loop?
     // Document sources
-    Array.prototype.shuffle = function() {
+    Array.prototype.shuffle = function () {
         var rnd, tmp, i;
         for (i = this.length; i; rnd = parseInt(Math.random() * i), tmp = this[--i], this[i] = this[rnd], this[rnd] = tmp) {}
     };
@@ -274,7 +274,7 @@ if (!Array.shuffle) {
 /**
  * Returns true if the choice with the given id is correct, false otherwise.
  */
-MC.prototype.isCorrect = function(id) {
+MC.prototype.isCorrect = function (id) {
     var h;
     /* if no correct answers specified by author, then always return true */
     if (this.correctResponse.length == 0) {
@@ -295,7 +295,7 @@ MC.prototype.isCorrect = function(id) {
  * Disables "Check Answer" button and enables "Try Again" button
  */
 // FIXME --- CACHE THE $ SELECTORS!!
-MC.prototype.checkAnswer = function() {
+MC.prototype.checkAnswer = function () {
     // TODO: Google Analytics Push
     // Capture Question + Correctness + Attempts
     if (this.multipleChoice.find('.checkAnswerButton').hasClass('disabled')) {
@@ -379,7 +379,7 @@ MC.prototype.checkAnswer = function() {
  * the number of checkboxes equals this.maxChoices. Returns
  * false otherwise.
  */
-MC.prototype.enforceMaxChoices = function(inputs) {
+MC.prototype.enforceMaxChoices = function (inputs) {
     var x, maxChoices;
     var maxChoices = parseInt(this.properties.maxChoices);
     if (maxChoices > 1) {
@@ -413,7 +413,7 @@ MC.prototype.enforceMaxChoices = function(inputs) {
  * @param boolean - noFormat, return plain text
  * @return string - html response
  */
-MC.prototype.getResultMessage = function(isCorrect) {
+MC.prototype.getResultMessage = function (isCorrect) {
     var message = '';
 
     /* if this attempt is correct, then we only need to return a msg */
@@ -427,7 +427,7 @@ MC.prototype.getResultMessage = function(isCorrect) {
 /** FIXME -- reusable
  * Returns a string of the given string with all spaces removed.
  */
-MC.prototype.removeSpace = function(text) {
+MC.prototype.removeSpace = function (text) {
     return text.replace(/ /g, '');
 };
 
@@ -436,7 +436,7 @@ MC.prototype.removeSpace = function(text) {
  * OR
  * disable checkAnswerButton
  */
-MC.prototype.enableCheckAnswerButton = function(doEnable) {
+MC.prototype.enableCheckAnswerButton = function (doEnable) {
     if (doEnable == 'true') { // FIXME
         this.multipleChoice.find('.checkAnswerButton').removeClass('disabled');
         // disable checkAnswerButton
@@ -448,7 +448,7 @@ MC.prototype.enableCheckAnswerButton = function(doEnable) {
 /**
  * Enables radiobuttons so that user can click on them
  */
-MC.prototype.enableRadioButtons = function(doEnable) {
+MC.prototype.enableRadioButtons = function (doEnable) {
     var i;
     var radiobuttons = this.multipleChoice.find('[name="radiobutton"]');
     for (i = 0; i < radiobuttons.length; i++) {
@@ -464,7 +464,7 @@ MC.prototype.enableRadioButtons = function(doEnable) {
 /**
  * Clears HTML inside feedbackdiv
  */
-MC.prototype.clearFeedbackDiv = function() {
+MC.prototype.clearFeedbackDiv = function () {
     var z;
     var feedbackdiv = this.multipleChoice.find('.feedbackdiv');
     feedbackdiv.innerHTML = "";
@@ -475,13 +475,13 @@ MC.prototype.clearFeedbackDiv = function() {
     }
 };
 
-MC.prototype.postRender = function() {
+MC.prototype.postRender = function () {
     //  var thetitle = document.title;
 };
 
 
 // BEAUTIOUS
-MC.prototype.getTemplate = function() {
+MC.prototype.getTemplate = function () {
     return "<div class='panel panel-primary MultipleChoice Question'>" +
         "        <div class='panel-heading questionType'>" +
         "            Multiple Choice" +
@@ -506,10 +506,10 @@ MC.prototype.getTemplate = function() {
         "                <table class='buttonTable'>" +
         "                    <tr>" +
         "                        <td><div class='buttonDiv'>" +
-        "                            <button class='checkAnswerButton btn btn-primary'>Check Answer</button>" +
+        "                            <button class='checkAnswerButton btn btn-primary'>Controleer Antwoord</button>" +
         "                        </div></td><td>" +
         "                        <div class='buttonDiv'>" +
-        "                            <button class='tryAgainButton btn btn-primary'>Try Again</button>" +
+        "                            <button class='tryAgainButton btn btn-primary'>Probeer Opnieuw</button>" +
         "                        </div></td>" +
         "                    </tr>" +
         "                </table>" +

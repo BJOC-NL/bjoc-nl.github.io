@@ -14,7 +14,7 @@ llab.url_list = [];
 var FULL = llab.selectors.FULL,
     hamburger = llab.fragments.hamburger;
 
-llab.secondarySetUp = function() {
+llab.secondarySetUp = function () {
     // FIXME -- this needs to be called on EVERY page.
     llab.setupTitle();
 
@@ -33,7 +33,7 @@ llab.secondarySetUp = function() {
     /* This stuff should only happen on curriculum pages */
 
     // fix snap links so they run snap
-    $('a.run').each(function(i) {
+    $('a.run').each(function (i) {
         $(this).attr('target', '_blank');
         $(this).attr('href', llab.getSnapRunURL(this.getAttribute('href')));
     });
@@ -72,7 +72,7 @@ llab.secondarySetUp = function() {
         dataType: "text",
         cache: true,
         success: llab.processLinks,
-        error: function(jqXHR, status, error) {
+        error: function (jqXHR, status, error) {
             // TODO: We should push errors to Google Analytics
             console.log('Error Accessing Topic: ' + llab.file);
             console.log('Error: ' + error);
@@ -91,9 +91,9 @@ llab.secondarySetUp = function() {
  *  TODO: Cleanup and test this code.
  *  TODO: Explore ideas for better trigger options?
  */
-llab.additionalSetup = function(triggers) {
+llab.additionalSetup = function (triggers) {
     var items;
-    triggers.forEach(function(obj) {
+    triggers.forEach(function (obj) {
         if (obj.trigger && obj.function) {
             items = $(trigger);
             if (items.length) {
@@ -106,7 +106,7 @@ llab.additionalSetup = function(triggers) {
 /** Import the required JS and CSS for Code highlighting.
  *  TODO: Abstract this away into its own function
  */
-llab.codeHighlightSetup = function() {
+llab.codeHighlightSetup = function () {
     var cssFile, jsFile, css, js;
     cssFile = llab.paths.syntax_highlighting_css;
     jsFile = llab.paths.syntax_highlights;
@@ -123,9 +123,9 @@ llab.codeHighlightSetup = function() {
 }
 
 // Call The Functions to HighlightJS to render
-llab.highlightSyntax = function() {
+llab.highlightSyntax = function () {
     // TODO: PUT THESE CLASSES SOMEWHERE
-    $('pre code').each(function(i, block) {
+    $('pre code').each(function (i, block) {
         // Trim the extra whitespace in HTML files.
         block.innerHTML = block.innerHTML.trim();
         if (typeof hljs !== 'undefined') {
@@ -137,7 +137,7 @@ llab.highlightSyntax = function() {
 /** Import the required JS and CSS for LaTeX Code.
  *  TODO: Abstract this away into its own function
  */
-llab.mathDisplaySetup = function() {
+llab.mathDisplaySetup = function () {
     var cssFile, jsFile, css, js;
     cssFile = llab.paths.katex_css;
     jsFile = llab.paths.math_katex_js;
@@ -154,16 +154,16 @@ llab.mathDisplaySetup = function() {
 }
 
 // Call the KaTeX APIS to render the LaTeX code.
-llab.displayMathDivs = function() {
+llab.displayMathDivs = function () {
     // TODO: Investigate caching of the selectors?
     // TODO: PUT THESE CLASSES SOMEWHERE
-    $('.katex, .katex-inline').each(function(idx, elm) {
+    $('.katex, .katex-inline').each(function (idx, elm) {
         katex.render(elm.textContent, elm, {
             throwOnError: false
         }); //Changed .innerHTML to .textContent on 1/29/16 to get > and < to work.
     });
     // TODO: PUT THESE CLASSES SOMEWHERE
-    $('.katex-block').each(function(idx, elm) {
+    $('.katex-block').each(function (idx, elm) {
         katex.render(elm.textContent, elm, { //Changed .innerHTML to .textContent on 1/29/16 to get > and < to work.
             displayMode: true,
             throwOnError: false
@@ -176,7 +176,7 @@ llab.displayMathDivs = function() {
  *  and creates navigation buttons.
  *  FIXME: This should share code with llab.topic!
  */
-llab.processLinks = function(data, status, jqXHR) {
+llab.processLinks = function (data, status, jqXHR) {
     /* NOTE: DO NOT REMOVE THIS CONDITIONAL WITHOUT SERIOUS TESTING
      * llab.file gets reset with the ajax call.
      */
@@ -326,7 +326,7 @@ llab.processLinks = function(data, status, jqXHR) {
 
 // Create an iframe when loading from an empty curriculum page
 // Used for embedded content. (Videos, books, etc)
-llab.addFrame = function() {
+llab.addFrame = function () {
     var source = llab.getQueryParameter("src");
 
     var frame = $(document.createElement("iframe")).attr({
@@ -345,7 +345,7 @@ llab.addFrame = function() {
 // Setup the entire page title. This includes creating any HTML elements.
 // This should be called EARLY in the load process!
 // FIXME: lots of stuff needs to be pulled out of this function
-llab.setupTitle = function() {
+llab.setupTitle = function () {
     // TODO: rename / refactor location
     $(document.head).append('<meta name="viewport" content="width=device-width, initial-scale=1">');
 
@@ -386,19 +386,19 @@ llab.setupTitle = function() {
     document.title = document.title.replace('snap', 'Snap!');
 
     $(document.body).css('padding-top', $('.llab-nav').height() + 10);
-    document.body.onresize = function(event) {
+    document.body.onresize = function (event) {
         $(document.body).css('padding-top', $('.llab-nav').height() + 10);
     };
 
     llab.titleSet = true;
 };
 
-llab.toggleDevComments = function() {
+llab.toggleDevComments = function () {
     $(".todo, .comment, .commentBig").toggle();
 };
 
 // Create the 'sticky' title header at the top of each page.
-llab.createTitleNav = function() {
+llab.createTitleNav = function () {
     var addToggle = "";
     if (window.location.href.slice(0, 16) == "http://localhost" || window.location.href.slice(0, 32) == "http://bjc-edc-2017-18.github.io") {
         addToggle = $('<button>').addClass('imageRight btn btn-default')
@@ -444,7 +444,7 @@ llab.createTitleNav = function() {
 
 
 // Create the navigation dropdown
-llab.buildDropdown = function() {
+llab.buildDropdown = function () {
     // TODO -- cleanup use selectors for classes
 
     var dropwon, list_header;
@@ -470,7 +470,7 @@ llab.buildDropdown = function() {
 /** Build an item for the navigation dropdown
  *  Takes in TEXT and a URL and reutrns a list item to be added
  *  too an existing dropdown */
-llab.dropdownItem = function(text, url) {
+llab.dropdownItem = function (text, url) {
     var item, link;
     // li container
     item = $(document.createElement("li")).attr({
@@ -492,7 +492,7 @@ llab.dropdownItem = function(text, url) {
 };
 
 // FIXME
-llab.isCurriculum = function() {
+llab.isCurriculum = function () {
     if (llab.getQueryParameter('topic')) {
         return location.pathname !== llab.empty_topic_page_path &&
             location.pathname !== llab.topic_launch_page &&
@@ -505,20 +505,20 @@ llab.isCurriculum = function() {
 /* Return the index value of this page in reference to the lab.
  * Indicies are 0 based, and this excludes query parameters because
  * they could become re-ordered. */
-llab.thisPageNum = function() {
+llab.thisPageNum = function () {
     return llab.pageNum;
     /// This code below needs to be removed, pending some testing
     // January 21, 2015 (If it hasn't been removed in a long while, chuck it)
     var path = location.pathname;
     var urls;
     if (path === llab.empty_curriculum_page_path) {
-        urls = llab.url_list.map(function(item) {
+        urls = llab.url_list.map(function (item) {
             return llab.QS.parse(item)['src'];
         });
         path = llab.getQueryParameter('src');
     } else {
         var result = -1;
-        llab.url_list.forEach(function(item, idx) {
+        llab.url_list.forEach(function (item, idx) {
             if (document.URL.indexOf(item) !== -1) {
                 result = idx;
                 return result;
@@ -530,7 +530,7 @@ llab.thisPageNum = function() {
 }
 
 // Create the Forward and Backward buttons, properly disabling them when needed
-llab.setButtonURLs = function() {
+llab.setButtonURLs = function () {
     // No dropdowns for places that don't have a step.
     if (!llab.isCurriculum()) {
         return;
@@ -553,12 +553,12 @@ llab.setButtonURLs = function() {
     // Disable the back button
     var thisPage = llab.thisPageNum();
     if (thisPage === 0) {
-        back.each(function(i, item) {
+        back.each(function (i, item) {
             $(item).addClass('disabled')
                 .attr('href', '#');
         });
     } else {
-        back.each(function(i, item) {
+        back.each(function (i, item) {
             $(item).removeClass('disabled')
                 .attr('href', llab.url_list[thisPage - 1])
                 .click(llab.goBack);
@@ -567,12 +567,12 @@ llab.setButtonURLs = function() {
 
     // Disable the forward button
     if (thisPage === llab.url_list.length - 1) {
-        forward.each(function(i, item) {
+        forward.each(function (i, item) {
             $(item).addClass('disabled')
                 .attr('href', '#');
         });
     } else {
-        forward.each(function(i, item) {
+        forward.each(function (i, item) {
             $(item).removeClass('disabled')
                 .attr('href', llab.url_list[thisPage + 1])
                 .click(llab.goForward);
@@ -581,15 +581,15 @@ llab.setButtonURLs = function() {
 };
 
 // TODO: Update page content and push URL onto browser back button
-llab.goBack = function() {
+llab.goBack = function () {
     location.href = llab.url_list[llab.thisPageNum() - 1];
 };
 
-llab.goForward = function() {
+llab.goForward = function () {
     location.href = llab.url_list[llab.thisPageNum() + 1];
 };
 
-llab.addFeedback = function(title, topic, course) {
+llab.addFeedback = function (title, topic, course) {
     // Prevent Button on small devices
     if (screen.width < 1024) {
         return;
@@ -624,7 +624,7 @@ llab.addFeedback = function(title, topic, course) {
     // Delay inserting a frame until the button is clicked.
     // Reason 1: Performance
     // Reason 2: GetFeedback tracks "opens" and each load is an open
-    button.click('click', function(event) {
+    button.click('click', function (event) {
         if ($('#feedback-frame').length === 0) {
             var frame = $(document.createElement('iframe')).attr({
                 'frameborder': "0",
@@ -640,7 +640,7 @@ llab.addFeedback = function(title, topic, course) {
 };
 
 // Footer content added by Mary on 1/20/16 was moved outside of feedback function by Mary on 10/16/17
-llab.addFooter = function() {
+llab.addFooter = function () {
     var footer = '<div class="footer" style="position:relative;"><a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img class="imageLeft" alt="Geen Afbeelding" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><div style="position:absolute;left: 135px; margin-bottom: 20px;"><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><em>Beauty and Joy of Computing</em></span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">University of California, Berkeley and Education Development Center, Inc.</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>. The development of this site is funded by the National Science Foundation under grant number 1441075. Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the views of the National Science Foundation.</div></div>';
     $(document.body).append(footer);
 }
@@ -651,7 +651,7 @@ llab.addFooter = function() {
  *  currentStep is the number of the current step
  *  Note, these steps are 0 indexed!
  */
-llab.indicateProgress = function(numSteps, currentStep) {
+llab.indicateProgress = function (numSteps, currentStep) {
     var progress = $(llab.selectors.PROGRESS),
         width = progress.width(),
         // TODO: This neeeds to be a global selector!!
@@ -671,6 +671,6 @@ llab.indicateProgress = function(numSteps, currentStep) {
 };
 
 // Setup the nav and parse the topic file.
-$(document).ready(function() {
+$(document).ready(function () {
     llab.secondarySetUp();
 });

@@ -68,7 +68,7 @@ initialize - initialiseren
 
 ## Voorbeelden
 
-number guessing game - raad-het-getal spel
+number guessing game - raad-het-getalspel
 
 Tic-Tac-Toe - boter, kaas en eieren
 

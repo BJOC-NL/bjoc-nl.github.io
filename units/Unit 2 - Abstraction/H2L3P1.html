@@ -1,262 +1,240 @@
-
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<script type="text/javascript" src="../../bjc-r/llab/loader.js"></script>
-		<script type="text/javascript" src="../../bjc-r/utilities/gifffer.min.js"></script>
-        <script type="text/javascript">window.onload = function() {Gifffer();}</script>
-        <link rel="stylesheet" type="text/css" href="/bjc-r/css/bjc-gifffer.css">
-		<title>Hoofdstuk 2 Les 3: Keuzes maken met predikaten, Pagina 1</title>
-	</head>
 
-	<body>
-    <div class="todo">
-        ST EK List:
-       <br />
-       4.1.1C Selection uses a Boolean condition to determine which of two parts of an algorithm is used. <br />
-       5.5.1E Logical concepts and Boolean algebra are fundamental to programming.<br />
-       5.5.1F Compound expressions using <em>and</em>, <em>or</em>, and <em>not</em> are part of most programming languages. <br />
-       </div>
-		<h2>Wat is een predikaat?</h2>
-        <div class="todo">
-            <h3>Ruthless Suggestions from Al</h3>
-            <ul>
-                <li>The lab title: “Making Decisions by Using Predicates” Maybe change to “Making Decisions with Predicates”. But the big deal here, in addition to the use of predicates, is keep. Maybe “Using Predicates and Keep.”</li>
-                <ul><li>I'm a fan of content over context in the page titles, but it's a lonely fan club. I'm ok either way in this particular case. Others? --MF, 5/16/18</li></ul>
-            </ul>
+<head>
+    <link rel="icon" href="../../BJOC-NL-logo.png" type="image/png">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="../../js+css/llab/loader.js"></script>
+    <script type="text/javascript" src="../../js+css/gifffer.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            Gifffer();
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../js+css/css/bjc-gifffer.css">
+    <title>Hoofdstuk 2 Les 3: Keuzes maken met predikaten, Pagina 1</title>
+</head>
+
+<body>
+    <div class="full">
+        <h2>Wat is een predikaat?</h2>
+        <div class="learn">
+            <p><strong>In deze les,</strong> ga je werken aan een woord-puzzeloplosser die door een lange lijst aan
+                woorden gaat zoeken en woorden met specifieke karakters zal melden.</p>
+            <p><strong>Op deze pagina</strong>, ga je kijken naar zulke predikaten en zul je er zelf ook een paar bouwen
+                die je kunt gebruiken in andere projecten.</p>
         </div>
-		<div class="todo">
-            <p>I want to rewrite this page to <strong>bring back a simplified version of my <a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=mfries&ProjectName=U2L3-GuessingGame" target="_blank">number guessing game with more predicates</a></strong>. They'll build these same predicates but for the context (e.g. project) of letting the player ask more than just greater/less than. (If not this, then I think we should start <code>keep</code> earlier on the page.) --MF</p>
-            <p>**ST-Some issues with the Guessing Game: "say" blocks need to be in an "if else" and "goto front" must be employed to avoid overlaps.**</p>
-            <p>Is this idea still relevant? --MF, 11/19/17</p>
-        </div>
-        <div class="todo">Need to add EK "5.5.1G Intuitive and formal reasoning about program components using Boolean concepts helps in developing correct programs." to pages 2.3.1 and 5.3.3. --MF, 12/1/17</div>
-
-		<div class="learn">
-			<p><strong>In deze les,</strong> ga je werken aan een woord-puzzel oplosser die door een lange lijst aan woorden gaat zoeken en woorden met specifieke karakters zal melden.</p>
-            <p><strong>Op deze pagina</strong>, ga je kijken naar zulke predikaten en zul je er zelf ook een paar bouwen die je kunt gebruiken in andere projecten.</p>
-		</div>
-
-		<h3>Predikaten</h3>
-        <p><strong>Predikaten zijn blokken die iets melden (functies) die altijd een <em>Boolean waarde</em></strong> zal melden (deze geven je alleen een <img class="inline nopadtb" src="../../bjc-r/img/blocks/true.png" alt="Geen Afbeelding"  /> of <img class="inline nopadtb" src="../../bjc-r/img/blocks/false.png" alt="Geen Afbeelding"  />). In Snap<em>!</em> worden deze weergegeven door middel van hexagonale (6 hoekige) blokjes.</p>
-        <p>
-          Je bent predikaten al eens eerder tegen gekomen. Predikaten verwerken de <em>condities</em> gebruikt door <em>conditionele</em> (zoals een <code>als</code> of <code>herhaal tot</code>) om te beslissen wanneer iets te doen. Predikaten stellen een vraag als "Bezit de <var>spelers lijst</var> de speler's <code>antwoord</code>?" of "Raakt deze sprite de sprite aan die 'Sprite' heet?" <br />
-            <a href="/bjc-r/cur/programming/1-introduction/2-gossip-and-greet/4-learning-names.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment"><img class="indent" src="../../bjc-r/img/1-introduction/greet-player-skeleton.png" alt="Geen Afbeelding"  /></a>
-            <a href="/bjc-r/cur/programming/1-introduction/5-follow-the-leader/2-sprite-interaction.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment"><img class="indent" src="../../bjc-r/img/1-introduction/move-tiny-no-comment.png" alt="Geen Afbeelding"  /></a>
-        </p>
-		<div class="forYouToDo" id="first">
+        <h3>Predikaten</h3>
+        <p><strong>Predikaten zijn blokken die iets melden (functies) die altijd een <em>Boolean waarde</em></strong>
+            zal melden (deze geven je alleen een <img height="20" class="inline nopadtb"
+                src="../../afb/h2/l3/blocks/p1-b1.png" /> of <img height="20" class="inline nopadtb"
+                src="../../afb/h2/l3/blocks/p1-b2.png" />). In Snap<em>!</em> worden deze weergegeven door middel van
+            hexagonale (6 hoekige) blokjes.</p>
+        <p> Je bent predikaten al eens eerder tegen gekomen. Predikaten verwerken de <em>condities</em> gebruikt door
+            <em>conditionele</em> (zoals een <code>als</code> of <code>herhaal tot</code>) om te beslissen wanneer iets
+            te doen. Predikaten stellen een vraag als "Bezit de <var>spelers lijst</var> de speler's
+            <code>antwoord</code>?" of "Raakt deze sprite de sprite aan die 'Sprite' heet?" <br /> <a
+                href="../Unit 1 - Introduction to Programming/H1L2P4.html"><img class="indent"
+                    src="../../afb/h2/l3/blocks/p1-b3.png" /></a> <a
+                href="../Unit 1 - Introduction to Programming/H1L5P2.html"><img class="indent"
+                    src="../../afb/h2/l3/blocks/p1-b4.png" /></a> </p>
+        <div class="forYouToDo" id="first">
             <ol>
-                <li><div class="newProject"><span class="text">"U2L3-Predicates"</span><img src="../../bjc-r/img/icons/new-project-called.png" alt="Geen Afbeelding"  /></div></li>
                 <li>
-                    <div class="comment">There is a commented-out hint box here. --MF, 11/19/17</div>
-                    <!--<div class="sidenote">
-                    	<p>Only <a href="/bjc-r/img/2-complexity/forever-go-to-mouse-if-xpos-lt-0-pen-red-else-pen-green-315x217.png" target="_blank">study this script</a> if you need a big hint.</p>
-                    </div>-->
-                	In de laatste les (en ook veel eerder terug bij <a href="/bjc-r/cur/programming/1-introduction/5-follow-the-leader/1-following-sprites.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment">Hoofdstuk 1 Les 5</a>), heb je scripts gemaakt waarin de sprite de muis volgde. <br />
-					<img class="indent" src="../../bjc-r/img/2-complexity/U2-follow-that-mouse.png" alt="Geen Afbeelding" ><br />
-                    Nu ga je een script maken die ervoor zorgt dat je met je muis in je speelveld kunt schrijven in twee kleuren, afhankelijk van de positie van de muis in dit scherm:<br />
-                    <div class="sidenote">
-                        Gebruik een van die gelijk/ongelijke predikaten: <br />
-                        <img class="" src="../../bjc-r/img/2-complexity/relations.jpg" alt="Geen Afbeelding"  />
-                    </div>
-                    <img class="indent" data-gifffer="/bjc-r/img/2-complexity/writing-mouse-on-stage.gif" alt="Geen Afbeelding"  />
+                    <div class="newProject"><span class="text">"H2L3-Predikaten"</span><img
+                            src="../../afb/icons/NieuwProjectSlaOp.png" /></div>
+                </li>
+                <li> In de laatste les (en ook veel eerder terug bij <a
+                        href="../Unit 1 - Introduction to Programming/H1L5P1.html"> Hoofdstuk 1 Les 5</a>), heb je
+                    scripts gemaakt waarin de sprite de muis volgde. <br /> <img class="indent"
+                        src="../../afb/h2/l3/others/p1-o1.png "><br /> Nu ga je een script maken die ervoor zorgt dat je
+                    met je muis in je speelveld kunt schrijven in twee kleuren, afhankelijk van de positie van de muis
+                    in dit scherm:<br />
+                    <div class="sidenote"> Gebruik een van die gelijk/ongelijke predikaten: <br /> <img class=""
+                            src="../../afb/h2/l3/others/p1-o2.jpg " /> </div> <img class="indent"
+                        data-gifffer="../../afb/h2/l3/videos/p1-v1.gif" alt="Geen Afbeelding" />
                 </li>
             </ol>
-    </div>
-
+        </div>
         <div class="ifTime">
-			<ol start="3">
-                <li>
-                    Verbeter je teken script zodanig dat de sprite altijd de muis volgt, maar alleen maar iets tekent wanneer de knop van de muis naar beneden is, zodat je niet-verbonden vormen kunt tekenen.<br />
-					<div class="takeNote">
-                        Vink het "versleepbaar" blokje uit boven het script gedeelde voordat je dit probeert (zodat Snap<em>!</em> niet denkt dat je een sprite probeert weg te slepen als je er op klikt).<br />
-                        <img class="indent" src="../../bjc-r/img/2-complexity/draggable-check-box.png" alt="Geen Afbeelding" >
-                    </div>
-                    <div class="sidenote">Waarschijnlijk wil je het <img class="inline" src="../../bjc-r/img/blocks/mouse-down.png" alt="Geen Afbeelding"  /> blok gebruiken, die je kunt vinden in het Waarneem palette.</div>
-                    <img class="indent" src="../../bjc-r/img/2-complexity/bicolor-hello.png" alt="Geen Afbeelding" >
+            <ol start="3">
+                <li> Verbeter je teken script zodanig dat de sprite altijd de muis volgt, maar alleen maar iets tekent
+                    wanneer de knop van de muis naar beneden is, zodat je niet-verbonden vormen kunt tekenen.<br />
+                    <div class="takeNote"> Vink het "versleepbaar" blokje uit boven het script gedeelde voordat je dit
+                        probeert (zodat Snap<em>!</em> niet denkt dat je een sprite probeert weg te slepen als je er op
+                        klikt).<br /> <img class="indent" src="../../afb/h2/l3/others/p1-o3.png"> </div>
+                    <div class="sidenote">Waarschijnlijk wil je het <img class="inline"
+                            src="../../afb/h2/l3/blocks/p1-b5.png" /> blok gebruiken, die je kunt vinden in het Waarneem
+                        palette.</div> <img class="indent" src="../../afb/h2/l3/others/p1-o4.png">
                 </li>
-			</ol>
-		</div>
-
-		<div class="forYouToDo">
-			<ol start="4">
+            </ol>
+        </div>
+        <div class="forYouToDo">
+            <ol start="4">
                 <li>
                     <div class="sidenoteBig">
-                        <p>
-                            Je zult misschien één of meer van zulke <strong>Boolean operatoren</strong> helpend vinden voor <code>tussen?</code>.<br />
-                            <img class="inline" src="../../bjc-r/img/prog/Booleans.png" alt="Geen Afbeelding"  />
-                        </p>
-                    	<p>Je kunt kiezen of je <code>tussen?</code> blok de twee grens nummers bevat of niet. Je kunt ze dan later veranderen, afhankelijk van waar je ze nodig hebt.</p>
-                    </div>
-                    Bouw een predikaat die zegt of een input getal tussen twee andere getallen staat, en test hiermee in verschillende gevallen.<br />
-                    <img class="indent" src="../../bjc-r/img/2-complexity/number-between-two-others(with-result-false).png" alt="Geen Afbeelding" >
-                    <img class="indent" src="../../bjc-r/img/2-complexity/number-between-two-others(with-result-true).png" alt="Geen Afbeelding" >
+                        <p> Je zult misschien één of meer van zulke <strong>Boolean operatoren</strong> helpend vinden
+                            voor <code>tussen?</code>.<br /> <img class="inline"
+                                src="../../afb/h2/l3/others/p1-o7.png" /> </p>
+                        <p>Je kunt kiezen of je <code>tussen?</code> blok de twee grens nummers bevat of niet. Je kunt
+                            ze dan later veranderen, afhankelijk van waar je ze nodig hebt.</p>
+                    </div> Bouw een predikaat dat zegt of een input getal tussen twee andere getallen staat, en test
+                    hiermee in verschillende gevallen.<br /> <img class="indent" src="../../afb/h2/l3/others/p1-o5.png">
+                    <img class="indent" src="../../afb/h2/l3/others/p1-o6.png">
                     <div class="narrower">
                         <h4><strong>Een predikaat maken </strong></h4>
                         <ul>
-                            <li>
-                            	Kies de hexagonale <em>predikaat</em> vorm.<br />
-
-                                <img class="indent" src="../../bjc-r/img/2-complexity/make-predicate.png" alt="Geen Afbeelding"  />
-                            </li>
-                            <li>Je moet het <img class="nopadtb" src="../../bjc-r/img/blocks/report.png" alt="Geen Afbeelding"  /> blok gebruiken om de resultaten van de reporter functies te melden (inclusief predikaat functies).</li>
-<div class="AP-only">
-                            <div class="vocabFullWidth">
-                                <p>Veel talen gebruiken <code>geef</code> instead of <code>rapporteer</code> als naam van je command die een waarde terug geeft aan het eind van een functie aanroep.</p>
-                            </div>
+                            <li> Kies de hexagonale <em>predikaat</em> vorm.<br /> <img class="indent"
+                                    src="../../afb/h2/l3/others/p1-o8.png" /> </li>
+                            <li>Je moet het <img class="nopadtb" src="../../afb/h2/l3/blocks/p1-b6.png" /> blok
+                                gebruiken om de resultaten van de reporter functies te melden (inclusief predikaat
+                                functies).</li>
+                            <div class="AP-only">
+                                <div class="vocabFullWidth">
+                                    <p>Veel talen gebruiken <code>return</code> in plaats van <code>rapporteer</code>
+                                        als naam van je command die een waarde terug geeft aan het eind van een functie
+                                        aanroep. </p>
+                                </div>
                             </div>
                         </ul>
                     </div>
-                    <!--<p><img class="indent" data-gifffer="/bjc-r/img/2-complexity/defining-even-predicate.gif" alt="Geen Afbeelding"  /></p>-->
                 </li>
-                <li>
-                    Gebruik <code>tussen?</code> om een script te schrijven die ervoor zorg dat je met drie kleuren kunt schrijven in je speelveld (afhankelijk van de hoogte van je speelveld), gebruik je muis:<br />
-                    <div class="sidenote">Je letter zullen verbonden zijn tenzij je de tijd had om de niet-verbondenheid te coderen zoals eerder genoemd.</div>
-                    <img class="indent" data-gifffer="/bjc-r/img/2-complexity/U2ImageVideoAddendum_img/TriColorBJC" alt="Geen Afbeelding" height="300"  />
-
+                <li> Gebruik <code>tussen?</code> om een script te schrijven die ervoor zorg dat je met drie kleuren
+                    kunt schrijven in je speelveld (afhankelijk van de hoogte van je speelveld), gebruik je muis:<br />
+                    <div class="sidenote">Je letter zullen verbonden zijn tenzij je de tijd had om de niet-verbondenheid
+                        te coderen zoals eerder genoemd.</div> <img class="indent" height="200"
+                        data-gifffer="../../afb/h2/l3/videos/p1-v2.gif" alt="Geen Afbeelding" />
                 </li>
-                <li>
-                    Bouw een predikaat die test naar onzichtbaarheid door de stappen hieronder te volgen.<br />
-                    <img class="indent" src="../../bjc-r/img/2-complexity/15-divisible-by-3-reporting-true.png" alt="Geen Afbeelding"  />
-                    <img class="indent" src="../../bjc-r/img/2-complexity/15-divisible-by-6-reporting-false.png" alt="Geen Afbeelding"  />
+                <li> Bouw een predikaat dat test naar onzichtbaarheid door de stappen hieronder te volgen.<br />
+                    <img class="indent" src="../../afb/h2/l3/others/p1-o9.png" /> <img class="indent"
+                        src="../../afb/h2/l3/others/p1-o10.png" />
                     <ol>
-                        <li>Begin met het experimenteren met het <code>modulo</code> blok.
-                            <ol style="list-style-type:lower-roman;">
+                        <li>Begin met het experimenteren met het <code>modulo</code> blok. <ol
+                                style="list-style-type:lower-roman;">
                                 <li><strong>Probeer verschillende inputs</strong>.</li>
-                                <li><strong>Laat het tweede getal als constante</strong>, en probeer verschillende inputs voor het eerste getal.</li>
+                                <li><strong>Laat het tweede getal als constante</strong>, en probeer verschillende
+                                    inputs voor het eerste getal.</li>
                                 <li><strong>Maak een hypothese.</strong> Wat valt je op?</li>
                             </ol>
                         </li>
                         <div class="takeNote">
-                            <p>Het <img class="inline" src="../../bjc-r/img/blocks/mod.png" alt="Geen Afbeelding" /> blok <strong>vermeldt het overgeblevene </strong>wanneer het eerste getal is gedeeld door de tweede. Bijvoorbeeld, <img src="../../bjc-r/img/1-introduction/17-mod-5.png" alt="Geen Afbeelding"  /> geeft 2 terug want wanneer je 17 deelt door 5, het overblijfsel is 2. Wanneer het ene nummer het andere even deelt, blijft er 0 over. Dus, <img src="../../bjc-r/img/1-introduction/15-mod-5.png" alt="Geen Afbeelding"  /> meldt 0.</p>
+                            <p>Het <img class="inline" src="../../afb/h2/l3/blocks/p1-b7.png" /> blok
+                                <strong>rapporteert
+                                    wat overblijft</strong> nadat het eerste getal is gedeeld door het tweede.
+                                Bijvoorbeeld, <img src="../../afb/h2/l3/blocks/p1-b8.png" /> rapporteert 2 omdat waneer
+                                17 wordt gedeeld door 5, er 2 overblijft.
+                                Wanneer een getal een ander getal geheel deelt, dan blijft er 0 over. Dus <img
+                                    src="../../afb/h2/l3/blocks/p1-b9.png" /> rapporteert 0.</p>
                         </div>
-                        <li>Dan nu, defineer het <img class="nopadtb" src="../../bjc-r/img/2-complexity/divisible-by.png" alt="Geen Afbeelding"  /> predikaat met het gebruik van <code>modulo</code>.</li>
+                        <li>Dan nu, defineer het <img class="nopadtb"
+                                src="../../afb/../../afb/h2/l3/blocks/p1-b10.png" /> predikaat met het gebruik van
+                            <code>modulo</code>.</li>
                     </ol>
                 </li>
-                <li>
-                    Gebruik je <code>divisible</code> predikaat om een andere predikaat te bouwen die test of de input even (deelbaar door 2) is.<br />
-                    <img class="indent" src="../../bjc-r/img/2-complexity/even--22-reporting-true.png" alt="Geen Afbeelding"  />
-                    <img class="indent" src="../../bjc-r/img/2-complexity/even-7-reporting-false.png" alt="Geen Afbeelding"  />
-
-                    <img class="imageRight" src="../../bjc-r/img/icons/save-now.png" alt="Geen Afbeelding"  />
-                    <div class="endnote">
-                        In dit plaatje, zijn de even en oneven genummerde rijen verschillend. In de volgende les, ga je het <code>even?</code> blok gebruiken om een muur van baksteen te tekenen <a href="/bjc-r/cur/programming/2-complexity/4-abstraction/3-brick-wall.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment" >brick wall</a>.<br />
-
-						<img class="indent" src="../../bjc-r/img/abstraction/new-brickwall/wall.png" alt="Geen Afbeelding"  />
-                    </div>
-
+                <li> Gebruik je <code>deelbaar</code> predikaat om een andere predikaat te bouwen die test of de input
+                    even (deelbaar door 2) is.<br /> <img class="indent" src="../../afb/h2/l3/others/p1-o11.png" /> <img
+                        class="indent" src="../../afb/h2/l3/others/p1-o12.png" /> <img class="imageRight"
+                        src="../../afb/icons/HetIsNuEenGoedMoment.png" />
+                    <div class="endnote"> In dit plaatje, zijn de even en oneven genummerde rijen verschillend. In de
+                        volgende les, ga je het <code>even?</code> blok gebruiken om een muur van baksteen te tekenen <a
+                            href="./H2L4P3.html" title="Brick Wall">brick wall</a>.<br /> <img class="indent"
+                            src="../../afb/h2/l3/others/p1-o13.png" /> </div>
                 </li>
             </ol>
-		</div>
-
+        </div>
         <div class="ifTime">
-			<ol start="8">
-				<li>
-                    Bouw een predikaat die test of de input een integer is. Hierbij vind je misschien <img src="../../bjc-r/img/blocks/round-a-number.png" alt="Geen Afbeelding" > handig.<br />
-                    <img class="indent" src="../../bjc-r/img/2-complexity/integer-4(with-result-true).png" alt="Geen Afbeelding"  />
-                    <img class="indent" src="../../bjc-r/img/2-complexity/integer-4-point-1(with-result-false).png" alt="Geen Afbeelding"  />
-                </li>
-			</ol>
-		</div>
-        <!--<div class="endnote">You can <a href="/bjc-r/cur/programming/2-complexity/1-variables-games/3-importing-exporting.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment">import</a> your <code>integer?</code>, <code>between?</code>, and <code>even?</code> predicates into other projects when you need them.</div>-->
-
+            <ol start="8">
+                <li> Bouw een predikaat dat test of de input een integer is. Hierbij vind je misschien <img
+                        src="../../afb/h2/l3/blocks/p1-b11.png"> handig.<br /> <img class="indent"
+                        src="../../afb/h2/l3/others/p1-o14.png" />
+                    <img class="indent" src="../../afb/h2/l3/others/p1-o15.png" /> </li>
+            </ol>
+        </div>
         <h3>Zelf-Check: Predikaten</h3>
         <div class="forYouToDo">
-			<ol start="9">
+            <ol start="9">
                 <li>
                     <!-- Question 1 -->
-                    <div class="assessment-data" type="multiplechoice" identifier="What's equivalent to num less than or equal to 23?"
-                        hasinlinefeedback="true" maxchoices="2" responseIdentifier="ri1" shuffle="false">
-                        <div class="prompt">
-           Er is geen standaard ≤ blok in Snap<em>!</em>.  Stel, we willen er zo eentje bouwen. Welke <em><strong>twee</strong></em> van de volgende Boolean expressies zijn gelijk aan de expressie <img class="inline" src="../../bjc-r/img/2-complexity/num-le-23.png" alt="Geen Afbeelding"  />?
-                        </div>
+                    <div class="assessment-data" type="multiplechoice"
+                        identifier="What's equivalent to num less than or equal to 23?" hasinlinefeedback="true"
+                        maxchoices="2" responseIdentifier="ri1" shuffle="false">
+                        <div class="prompt"> Er is geen standaard ≤ blok in Snap<em>!</em>. Stel, we willen er zo eentje
+                            bouwen. Welke <em><strong>twee</strong></em> van de volgende Boolean expressies zijn gelijk
+                            aan de expressie <img class="inline" src="../../afb/h2/l3/blocks/p1-b12.png" />? </div>
                         <div class="choice" identifier="c1">
-                            <div class="text"><img class="inline" src="../../bjc-r/img/2-complexity/num-le-23-opt-1.png" alt="Geen Afbeelding"  /></div>
-                            <div class="feedback">
-                                Kan <var>num</var> beide minder dan 23 en gelijk aan 23 zijn, tegelijkertijd?
+
+                            <div class="text"><img height="50" class="inline" src="../../afb/h2/l3/blocks/p1-b13.png" />
                             </div>
+                            <div class="feedback"> Kan <var>num</var> beide minder dan 23 en gelijk aan 23 zijn,
+                                tegelijkertijd? </div>
                         </div>
                         <div class="choice" identifier="c2">
-                            <div class="text"><img class="inline" src="../../bjc-r/img/2-complexity/num-le-23-opt-2.png" alt="Geen Afbeelding"  /></div>
-                            <div class="feedback">
-
-                                Heel goed! Deze afbeelding laat een expressie zien die <code>waar</code> meldt als <var>num</var> minder or gelijk is aan 23.
-
+                            <div class="text"><img height="50" class="inline" src="../../afb/h2/l3/blocks/p1-b14.png" />
                             </div>
+                            <div class="feedback"> Heel goed! Deze afbeelding laat een expressie zien die
+                                <code>waar</code> meldt als <var>num</var> minder or gelijk is aan 23. </div>
                         </div>
                         <div class="choice" identifier="c3">
-                            <div class="text"><img class="inline" src="../../bjc-r/img/2-complexity/num-le-23-opt-3.png" alt="Geen Afbeelding"  /></div>
-                            <div class="feedback">
-
-                                Heel goed! Als <var>num</var> <strong>niet</strong> groter dan 23 is, dan is het of kleiner dan 23 of gelijk aan 23.
-
+                            <div class="text"><img height="50" class="inline" src="../../afb/h2/l3/blocks/p1-b15.png" />
                             </div>
+                            <div class="feedback"> Heel goed! Als <var>num</var> <strong>niet</strong> groter dan 23 is,
+                                dan is het of kleiner dan 23 of gelijk aan 23. </div>
                         </div>
                         <div class="choice" identifier="c4">
-                            <div class="text"><img class="inline" src="../../bjc-r/img/2-complexity/num-le-23-opt-4.png" alt="Geen Afbeelding"  /></div>
-                            <div class="feedback">
-
-                                Stel dat de waarde van <var>num</var> 22.5 is. Zou dan deze expressie en de expressie gegeven in de vraag dezelfde reactie geven?
-
+                            <div class="text"><img height="50" class="inline" src="../../afb/h2/l3/blocks/p1-b16.png" />
                             </div>
+                            <div class="feedback"> Stel dat de waarde van <var>num</var> 22.5 is. Zou dan deze expressie
+                                en de expressie gegeven in de vraag dezelfde reactie geven? </div>
                         </div>
                         <div class="responseDeclaration" identifier="ri1">
                             <div class="correctResponse" identifier="c2"></div>
                             <div class="correctResponse" identifier="c3"></div>
                         </div>
-                    </div>
-
-                    <!-- Question 2 -->
-                    <div class="assessment-data" type="multiplechoice" identifier="What's the missing condition for an ODD? predicate?"
-                        hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri2" shuffle="false">
-                        <div class="prompt">
-
-                            Het volgende code fragment was ontworpen om <var>getal</var> te testen op een oneven nummer:<br />
-          <div class="AP-only">
-                            <pre>ALS (MISSING CONDITION)
-{
-  DISPLAY "Dit getal is oneven."
-}</pre><br />
-</div>
-<div class="non-AP-only">
-<img src="../../bjc-r/img/2-complexity/missing-condition.png" alt="Geen Afbeelding">
-</div>
-
-                            Welke van de volgende opties kan gebruikt worden op de plaats van de MISSENDE CONDITIE?
-
-                        </div>
-                        <div class="choice" identifier="c1">
-                            <div class="text"><img class="inline" src="../../bjc-r/img/2-complexity/quiz-mod-1.png" alt="Geen Afbeelding"  /></div>
-                            <div class="feedback">
-
-                                Het <code>modulo</code> blok rapporteert het overgeblevene wanneer het eerste getal wordt gedeeld door het tweede getal. Of een nummer even of oneven is, hangt af of het gedeeld kan worden door 2.
-
+                    </div> <!-- Question 2 -->
+                    <div class="assessment-data" type="multiplechoice"
+                        identifier="What's the missing condition for an ODD? predicate?" hasinlinefeedback="true"
+                        maxchoices="1" responseIdentifier="ri2" shuffle="false">
+                        <div class="prompt"> Het volgende code fragment was ontworpen om <var>getal</var> te testen op
+                            een oneven nummer:<br />
+                            <div class="AP-only">
+                                <pre>if (ONTBREKENDE CONDITIE)
+    {
+      DISPLAY "This number is odd."
+    }</pre><br />
                             </div>
+                            <div class="non-AP-only"> <img src="../../afb/h2/l3/blocks/p1-b17.png"> </div>
+                            Welke van de
+                            volgende opties kan
+                            gebruikt worden op de plaats van de MISSENDE CONDITIE?
+                        </div>
+
+                        <div class="choice" identifier="c1">
+                            <div class="text"><img height="50" class="inline" src="../../afb/h2/l3/blocks/p1-b18.png" />
+                            </div>
+                            <div class="feedback"> Het <code>modulo</code> blok rapporteert het overgeblevene wanneer
+                                het eerste getal wordt gedeeld door het tweede getal. Of een nummer even of oneven is,
+                                hangt af of het gedeeld kan worden door 2. </div>
                         </div>
                         <div class="choice" identifier="c2">
-                            <div class="text"><img class="inline" src="../../bjc-r/img/2-complexity/quiz-mod-2.png" alt="Geen Afbeelding"  /></div>
-                            <div class="feedback">
-
-                                Het <code>modulo</code> blok rapporteert het overgeblevene wanneer het eerste getal wordt gedeeld door het tweede getal. Of een nummer even of oneven is, hangt af of het gedeeld kan worden door 2.
-
+                            <div class="text"><img height="50" class="inline" src="../../afb/h2/l3/blocks/p1-b19.png" />
                             </div>
+                            <div class="feedback"> Het <code>modulo</code> blok rapporteert het overgeblevene wanneer
+                                het eerste getal wordt gedeeld door het tweede getal. Of een nummer even of oneven is,
+                                hangt af of het gedeeld kan worden door 2. </div>
                         </div>
                         <div class="choice" identifier="c3">
-                            <div class="text"><img class="inline" src="../../bjc-r/img/2-complexity/quiz-mod-3.png" alt="Geen Afbeelding"  /></div>
-                            <div class="feedback">
-
-                                (<var>getal</var> modulo 2) produceert het overgeblevene nadat het <var>getal</var> gedeeld is door 2. Als het overblijfsel 0 is, is het nummer dan even of oneven?
-
+                            <div class="text"><img height="50" class="inline" src="../../afb/h2/l3/blocks/p1-b20.png" />
                             </div>
+                            <div class="feedback"> (<var>getal</var> modulo 2) produceert het overgeblevene nadat het
+                                <var>getal</var> gedeeld is door 2. Als het overblijfsel 0 is, is het nummer dan even of
+                                oneven? </div>
                         </div>
                         <div class="choice" identifier="c4">
-                            <div class="text"><img class="inline" src="../../bjc-r/img/2-complexity/quiz-mod-4.png" alt="Geen Afbeelding"  /></div>
-                            <div class="feedback">
-
-                                Heel goed! (<var>getal</var> mod 2) produceert het overgeblevene nadat het <var>number</var> gedeeld is door 2.  Als (<var>getal</var> mod 2) = 1, dan is het getal oneven.
-
+                            <div class="text"><img height="50" class="inline" src="../../afb/h2/l3/blocks/p1-b21.png" />
                             </div>
+                            <div class="feedback"> Heel goed! (<var>getal</var> mod 2) produceert het overgeblevene
+                                nadat het <var>number</var> gedeeld is door 2. Als (<var>getal</var> mod 2) = 1, dan is
+                                het getal oneven. </div>
                         </div>
                         <div class="responseDeclaration" identifier="ri2">
                             <div class="correctResponse" identifier="c4"></div>
@@ -265,6 +243,12 @@
                 </li>
             </ol>
         </div>
+    </div>
+    <div class="full-bottom-bar" style="background-position: 20px 3px;">
+        <div class="bottom-nav btn-group"><a class="btn btn-default backbutton arrow" style="min-width: 90px;"
+                href="H2L2P4.html">Terug</a><a style="min-width:90px;" class="btn btn-default forwardbutton arrow"
+                href="H2L3P2.html">Volgende</a> </div>
+    </div>
+</body>
 
-	</body>
 </html>

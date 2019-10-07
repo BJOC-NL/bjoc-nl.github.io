@@ -1,185 +1,180 @@
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <script type="text/javascript" src="../../bjc-r/llab/loader.js"></script>
-		<script type="text/javascript" src="../../bjc-r/utilities/gifffer.min.js"></script>
-        <script type="text/javascript">window.onload = function() {Gifffer();}</script>
-        <link rel="stylesheet" type="text/css" href="/bjc-r/css/bjc-gifffer.css">
-        <title>Hoofdstuk 2 Les 4: Omgaan met complexiteit, Pagina 2</title>
-    </head>
 
-    <body>
-        <div class="todo">
-            ST EK List:
-            <br />
-            1.3.1D Digital effects and animations can be created by using existing software or modified software that includes functionality to implement the effects and animations.<br />
-            4.1.1I Developing a new algorithm to solve a problem can yield insight into the problem.<br />
-			LO 5.4.1<br />
-            5.4.1B Duplicated code can make it harder to reason about a program.<br />
-            5.4.1H Visual displays (or different modalities) of program state can help in finding errors. (with visible stepping)
-		</div>
-        <h2>Fractal Art</h2>
-        <div class="learn">
-        <!-- <div class="comment">I think this attempt at definition, with two unrelated meanings, does more harm than good. --bh<div class="sidenote"><em>Nesting</em> means organizing information in layers or embedding objects inside other similar objects.</div></div>  -->
-            <strong>In this project,</strong> you will nest <code>repeat</code> blocks inside <code>repeat</code> blocks to generate complex pictures.<br />
-            <div class="commentBig">
-                <p>
-                    I find it odd that we have two images from the TIF in this pink box. Why not use this? --MF, 3/21/18<br />
-                    <img class="indent" src="../../bjc-r/img/2-complexity/U2ImageVideoAddendum_img/three-color-sierpinski.png" height="300" alt="Geen Afbeelding"  /><br />
-                    ST- The image proposed is identical to what we have in FYTD#7 and in the two debugging videos.  The animations in the pink box are not the same as in the TIF.  The TIF versions involve an animated parameter guiding the changing rotations of the smaller versions of the polygons.  Whereas the pink box versions do not have any changing rotations.  So I would vote against the change.
-                </p>
-                <p>My concern is that these images don't look like what the students so on this page. They don't make these images. Right? We don't have to resolve this now though. We can leave this for later. :) --MF, 3/22/18 <br />
-                ST-They actually do.  Aside from the color and orientation, these are exactly what the kids work on this page.</p>
-            </div>
-            <img class="indent" src="../../bjc-r/img/2-complexity/U2ImageVideoAddendum_img/RecursiveTriangleSteps.gif"  height="250" alt="Geen Afbeelding" />&nbsp;<img src="../../bjc-r/img/2-complexity/U2ImageVideoAddendum_img/RecursiveSquareSteps.gif" height="250" alt="Geen Afbeelding" />
+<head>
+    <link rel="icon" href="../../BJOC-NL-logo.png" type="image/png">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="../../js+css/llab/loader.js"></script>
+    <script type="text/javascript" src="../../js+css/gifffer.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            Gifffer();
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../js+css/css/bjc-gifffer.css">
+    <title>Hoofdstuk 2 Les 4: Omgaan met complexiteit, Pagina 2</title>
+</head>
+
+<body>
+    <div class="full">
+        <h2>Fractale Kunst</h2>
+        <div class="learn"> <strong>In dit project,</strong> ga je <code>herhaal</code>blokken 'nesten' in
+            <code>herhaal</code>blokken om complexe afbeeldingen te maken.<br />
+            <img height="200" class="indent" src="../../afb/h2/l4/videos/p2-v1.gif" />
+            <img height="200" class="indent" src="../../afb/h2/l4/videos/p2-v2.gif" />
         </div>
-
-        <p>
-            <img class="indent" src="../../bjc-r/img/1-introduction/two-color-sierpinski-code.png" alt="Geen Afbeelding" />
-            <div class="todo">
-                <p>ST 3/7/18- Brian says:In the script picture just under the pink box, shouldn't the left caption say "with three blue triangles"?</p>
-                <p>Also, why is this here? Shouldn't this appear later on the page? It's a great image, but it's out of context here. --MF, 3/21/18</p>
-            </div>
+        <p> <img height="300" class="indent" src="../../afb/h2/l4/other/p2-o2.png" />
         </p>
-
         <div class="forYouToDo" id="first">
             <ol>
-	            <li><div class="newProject"><span class="text">"U2L4-FractalArt"</span><img src="../../bjc-r/img/icons/new-project-called.png" alt="Geen Afbeelding"  /></div></li>
                 <li>
-                	Build a script that draws a red triangle, duplicate it twice, and make the two new scripts draw a  blue triangle half the size of the red and  green one half the size of the blue.
-                      <ul>
-                    	<li>To duplicate a script, right-click (or control-click) on the first block of the script (in this case, the <code>repeat</code> block) and choose "duplicate".</li>
-                        <li>
-                            Then, change the inputs as the video shows:<br /></li>
-
-
+                    <div class="newProject"><span class="text">"H2L4-FractaleKunst"</span><img
+                            src="../../afb/icons/NieuwProjectSlaOp.png" /></div>
+                </li>
+                <li>Bouw een script dat een rode driehoek tekent, kopieer het twee keer en laat de twee nieuwe scripts
+                    een blauwe driehoek teken half zo groot als de rode en een groene driehoek half zo groot als de
+                    blauwe.
+                    <ul>
+                        <li>Om een script te kopiëren, klik je met de rechter muisknop (of met de linker muisknop
+                            terwijl je Ctrl ingedrukt houdt) op het eerste blok van het script (in dit geval het
+                            <code>herhaal</code> blok) en klik op 'kopieer'.
+                        </li>
+                        <li> Dan verander je de invoer zoals de video laat zien:<br /></li>
                     </ul>
-                    <img class="indent" data-gifffer="/bjc-r/img/1-introduction/duplicating-a-script.gif" alt="Geen Afbeelding" >
+                    <img class="indent" data-gifffer="../../afb/h2/l4/videos/p2-v3.gif" alt="Geen Afbeelding">
                 </li>
-                <li>Try each script by itself to be certain what it does. Then clear the stage.</li>
-                <li>
-                    Now, insert the entire script for the blue triangle between the <code>move</code> and <code>turn</code> blocks of the red triangle, like this. <br />
-                    <img class="indent" data-gifffer="/bjc-r/img/1-introduction/embedding-one-script-in-another.gif" alt="Geen Afbeelding" >
-                    <img class="imageRight" src="../../bjc-r/img/icons/pair-programming-swap.png" alt="Geen Afbeelding"  />
+                <li>Probeer ieder script op zichzelf om zeker te zijn van what het doet.
+                    wis daarna het speelveld.
                 </li>
-                <li><img class="inline" src="../../bjc-r/img/icons/talk-with-your-partner.png" alt="Geen Afbeelding"  />
- Predict what will happen when you run this script.</li>
-                <li>Then, it to see what it does.</li>
+                <li> Voeg nu het hele script voor de blauwe driehoek tusssen de <code> neem ... stappen</code> en
+                    <code>draai</code>blokken van de rode driehoek, zoals hieronder.
+                    <br />
+                    <img class="indent" data-gifffer="../../afb/h2/l4/videos/p2-v4.gif" alt="Geen Afbeelding">
+                    <img class="imageRight" src="../../afb/icons/DraaiDeRollenOm.png" /> </li>
+                <li><img class="inline" src="../../afb/icons/PraatMetJeBuur.png" />
+                    Voorspel wat zal gebeuren als je dit script uitvoert.
+                </li>
+                <li>Voer het daarna uit om te zien wat het doet.</li>
             </ol>
         </div>
-
         <div class="takeNote">
-			<h4><strong>Debugging with Visible Stepping</strong></h4>
+            <h4><strong>Debuggen met Stapsgewijs Programmaverloop</strong></h4>
 
-            <p>Snap<em>!</em> has a debugging tool called <strong>Visible Stepping</strong> that allows you to control how quickly Snap<em>!</em> steps through the blocks of your code. This lets you see the effect of each block one-by-one to help you understand any errors in your code.</p>
+            <p>Snap<em>!</em> heeft een debug-tool genaamd <strong>Stapsgewijs Programmaverloop</strong> dat je laat
+                bepalen hoe snel Snap<em>?</em> door de blokken van je code 'stapt'. Dit zorgt ervoor dat je het effect
+                van ieder blok één voor één kan zien om je te helpen fouten in je code te vinden.
+            </p>
 
-                <p>After clicking the Visible Stepping button (<img class="inline nopadtb" src="../../bjc-r/img/2-complexity/visible-stepping.png" alt="Geen Afbeelding"  />), you can adjust the slider to control the stepping speed. The sprite executes the each step of the code as it is highlighted in <span style="color: black; background-color:cyan">cyan</span>.</p>
-                <img  class="indent" data-gifffer="/bjc-r/img/2-complexity/VisualSteppinginFractal.gif" alt="Geen Afbeelding" />
-                <p>If you move the slider to the slowest setting (all the way to the left), the shape of the yellow Run/Pause button will change, and you can press it to <em>single step</em> through your code. This can help you see what happens at a specific point.</p>
-                <img class="indent" data-gifffer="/bjc-r/img/2-complexity/VisualPauseSteppinginFractal.gif" alt="Geen Afbeelding" />
-
+            <p>Nadat je op de Stapsgewijs Programmaverloop-knop
+                (<img class="inline nopadtb" src="../../afb/icons/visible-stepping.png">) hebt geklikt, kan je met de
+                schuif de stapsnelheid bepalen. De sprite voert iedere stap van de code uit, gemarkeerd in
+                <span style="color: black; background-color:cyan">cyaan</span>.</p>
+            <img class="indent" data-gifffer="../../afb/h2/l4/videos/p2-v5.gif" alt="Geen Afbeelding" />
+            <p>Als je de schuif op de langzaamste instelling zet (helemaal naar links), dan verandert de vorm van de
+                gele Pauze-knop en kan je erop drukken om één stap vooruit te gaan in je code.
+                Dit kan je helpen om te zien wat er gebeurt op een specifiek punt.
+            </p> <img class="indent" data-gifffer="../../afb/h2/l4/videos/p2-v6.gif" alt="Geen Afbeelding" />
         </div>
-
         <div class="forYouToDo">
-			<ol start="7">
-				<li>
-                    Using the scripts you have, find a way to make this picture. Use Visible Stepping to help you work out any bugs.<br />
-                    <img class="indent" src="../../bjc-r/img/2-complexity/U2ImageVideoAddendum_img/three-color-sierpinski.png" height="300" alt="Geen Afbeelding"  />
-                </li>
-			</ol>
-		</div>
-
+            <ol start="7">
+                <li>Bedenk met behulp van de scripts die je hebt, een manier om deze afbeelding te maken. Gebruik
+                    Stapsgewijs Programmeverloop om bugs te vinden, indien nodig.
+                    <br /> <img height="300" class="indent" src="../../afb/h2/l4/other/p2-o1.png" /> </li>
+            </ol>
+        </div>
         <div class="ifTime">
-        	<ol start="8">
-            	<li>If you like, embed one more triangle, half the size of the last one, in the same way.</li>
+            <ol start="8">
+                <li>ALs je wil, voeg nog een driehoek toe, half zo groot als de laatste, op dezelfde manier.</li>
             </ol>
         </div>
 
-		<div class="todo"><hr />I suggest a page break here. This page is getting rather long. --MF, 3/21/18<hr /> ST-It is an asterisked page so I don't think it is worth adding a new page to an already very full lab.</div>
-		<h3>Using Abstraction to Nest Triangles</h3>
-        <p>Does all this copying and pasting of code feel awkward to you? You know a better way: <em>abstraction</em>.  In Unit 1 you used a <code>pinwheel</code> block to implement <code>asterisk</code> and <code>polygon</code>, rather than copying the code. Here, you can use a block to manage the abstraction too, but in this case, we want very similar code (a smaller triangle) nested inside, so we will actually <em>use the same block inside itself</em>.</p>
+        <h3>Abstractie gebruiken om Driehoeken te Nesten</h3>
+        <p>Voelt al dit knippen en plakken van code een beetje raar? Je kent al een nettere manier: <em>abstractie</em>.
+            In Hoofdstuk 1 heb je een <code>molen</code>blok gebruikt om <code>asterisk</code> en <code>polygoon</code>
+            te implementeren, in plaats van de code te kopiëren.
+            Hier kan je ook een blok maken om abstractie te hanteren, maar in dit geval, willen we soortgelijke code
+            (een kleinere driehoek) genest binnenin, dus we zullen <em>hetzelfde blok in zichzelf gebruiken.</em>
+            <div class="forYouToDo">
+                <ol start="9">
+                    <li> Maak een <code>geneste driehoek</code>blok. <ol type="a">
+                            <li> Ontwerp een blok met één invoer, <var>grootte</var>.
+                                Laat voor nu het deel over kleur veranderen weg.
+                                <br /> <img height="80" class="indent" src="../../afb/h2/l4/blocks/p2-b1.png"><br />
+                            </li>
+                            <li> Gebruik je eerste driehoekscript zonder naam van probleem 1
+                                als voorbeeld. Voeg wel één conditie toe: Teken de driehoek alleen als hij groot genoeg
+                                is:
+                                <br /> <img height="200" class="indent" src="../../afb/h2/l4/blocks/p2-b2.png">
+                            </li>
+                            <li>Klik op "OK" in het "Blok Bewerken" venster zodat het blok links verschijnt in het palet
+                                aan de linkerzijde. </li>
+                            <li><strong>Probeer dit blok te gebruiken</strong> met ten minste de invoeren 9, 18, 20 en
+                                100 zodat je zeker weet dat het werkt zoals je verwacht.
+                            </li>
+                        </ol>
+                    </li>
+                    <li> Bij probleem #4, sleepte je een kopie van het script tussen de <code> neem ... stappen</code>
+                        en <code>draai</code>blokken Je kan iets soortgelijks doen met je <em>blok</em>.
+                        <ol>
+                            <li> Sleep van het palet een kopie van het <code>geneste driehoek</code>blok in het venster
+                                en zet het <em>in</em> de definitie van <code>geneste driehoek</code> tussen de <code>
+                                    neem ... stappen</code>
+                                en <code>draai</code>blokken. Maak zijn <var>grootte</var> invoer de helft van de huidge
+                                waarde van <var>grootte</var>.
+                                <br /> <img height="60" class="indent" src="../../afb/h2/l4/blocks/p2-b3.png"> </li>
+                            <li> Probeer opnieuw je blok uit met ten minste de invoeren 9, 18, 20 en 100 om zeker te
+                                weten dat het werkt zoals je verwacht.
+                                <div class="endnote"> Je gebruikt <code>geneste driehoek</code> in zijn eigen definitie
+                                    Als een blok naar zichzelf verwijst, dan noem je dit blok <em>recursief</em>
+                                    Recursie is een van de meest krachtige technieken in de informatica en je gaat
+                                    er meer over leren in latere projecten.
+                                </div>
+                            </li>
+                        </ol>
+                    </li> <img class="imageRight" src="../../afb/icons/HetIsNuEenGoedMoment.png" />
+                    <li>Gebruik <code>geneste driehoek</code> als een voorbeeld om een recursief
+                        <code>genest vierkant</code> blok te definiëren.
+                    </li>
+                </ol>
+            </div>
+            <div class="ifTime">
+                <ol start="12">
+                    <li>Probeer een <var>kleur</var>invoer to te voegen en, gebruikmakend van
+                        <img height="50" src="../../afb/h2/l4/blocks/p2-b4.png"> in plaats van
+                        <img height="50" src="../../afb/h2/l4/blocks/p2-b5.png"> zodat je de kleur kan veranderen
+                        terwijl je tekent.
+                        Probeer in de "recursieve oproep" , het blok binnenin met de gehalveerde "grootte", 10 toe te
+                        voegen aan de kleur. Voordat je dit blok uitprobeert, gebruik
+                        <img height="50" src="../../afb/h2/l4/blocks/p2-b5.png"> om een felle kleur te kiezen, niet
+                        bijna wit of bijna zwart. Daarna kan je elk getal gebruiken als invoer voor je nieuwe blok.
+                    </li>
+                    <li> Bekijk deze code zonder het uit te voeren:<br /> <img class="indent"
+                            src="../../afb/h2/l4/blocks/p2-b6.png">
+                        <ol>
+                            <li>Voorspel hoeveel blauwe vormen het zal tekenen.</li>
+                            <li>Probeer te schetsen wat het zal maken</li>
+                            <li>Als nog een kopie van het originele script in de blauwe versie zat , hoe vaak zou
+                                <em>die</em> vorm getekend worden? </li>
+                        </ol>
+                    </li>
+                </ol>
+            </div>
+            <div class="takeItFurther">
+                <ol type="A">
 
-		<div class="forYouToDo">
-			<ol start="9">
-                <li>
-                    Create a <code>nested triangle</code> block.
-                    <ol type="a">
-                        <li>
-                            Design the block with one input, <var>size</var>. For now, leave out the part about changing colors.<br />
-                            <img class="indent" src="../../bjc-r/img/2-complexity/nested-tri-no-color-proto.png" alt="Geen Afbeelding" ><br />
-                        </li>
-                        <li>
-                            Use your first unnamed triangle script from problem 1 as a model. But add one condition: draw the triangle only if it's big enough:<br />
-                            <img class="indent" src="../../bjc-r/img/2-complexity/triangle.png" alt="Geen Afbeelding" >
-                        </li>
-                        <li>Click the "Apply" button in the Block Editor so that the block appears in the palette on the left.</li>
-                        <li><strong>Try out this block</strong> giving at least the inputs 9, 18,  20 and 100 to make sure it works as you expect.</li>
-                    </ol>
-                </li>
-                <li>
-                    In problem #4, you dragged a copy of the script between the <code>move</code> and <code>turn</code> blocks. You can do a similar thing with your <em>block</em>.
-                    <ol>
-                        <li>
-                            From the palette, drag a copy of that <code>nested triangle</code> block into the editor and insert it <em>in</em> the definition of <code>nested triangle</code> between the <code>move</code> and <code>turn</code> blocks.  Make its <var>size</var> input  half the current value of <var>size</var>.<br />
-                            <img class="indent" src="../../bjc-r/img/2-complexity/nested-tri-recur-no-color.png" alt="Geen Afbeelding" >
+                    <li>
+                        Gebruik wat je weet van animatie om dingen zoals dit te tekenen:<br />
+                        <img src="../../afb/h2/l4/videos/p2-v7.gif" height="300" />
+                        <img src="../../afb/h2/l4/videos/p2-v8.gif" height="300" />
+                    </li>
+                </ol>
+            </div>
+    </div>
+    <div class="full-bottom-bar" style="background-position: 20px 3px;">
+        <div class="bottom-nav btn-group"><a class="btn btn-default backbutton arrow" style="min-width: 90px;"
+                href="H2L4P1.html">Terug</a><a style="min-width:90px;" class="btn btn-default forwardbutton arrow"
+                href="H2L4P3.html">Volgende</a> </div>
+    </div>
+</body>
 
-                        </li>
-                        <li>
-                            Again try out your block with at least the inputs 9, 18, 20 and 100 to make sure it works as you expect.
-                            <div class="endnote">You are using <code>nested triangle</code> in its own definition.  When a block refers to itself, the block is said to be <em>recursive</em>.  Recursion is one of the most powerful techniques in computer science and you will learn more about it in later projects.</div>
-                        </li>
-                    </ol>
-                </li>
-                <img class="imageRight" src="../../bjc-r/img/icons/save-now.png" alt="Geen Afbeelding"  />
-                <li>Use <code>nested triangle</code> as a model to define a recursive <code>nested square</code> block.</li>
-            </ol>
-		</div>
-
-		<div class="ifTime">
-            <ol start="12">
-            	<li>Try adding a <var>color</var> input and using <img src="../../bjc-r/img/2-complexity/set-pen-color-to-number.png"  alt="Geen Afbeelding" > instead of  <img src="../../bjc-r/img/2-complexity/set-pen-color-to-color-selector.png"  alt="Geen Afbeelding" > so that you can vary the color as you draw. In the &quot;recursive call&quot;—the block that is embedded <em>inside</em> and that has the half-size input—try adding 10 to the color. Before you try this block, use <img src="../../bjc-r/img/2-complexity/set-pen-color-to-color-selector.png" alt="Geen Afbeelding" > to pick a colorful color, not nearly white or nearly black. Then you can use any color number as input to your new block.</li>
-				<li>
-                	Examine this code without running it:<br />
-					<img class = "indent" src="../../bjc-r/img/2-complexity/blue-square-embedded-in-red-square.png" alt="Geen Afbeelding"  >
-                	<ol>
-                    	<li>Predict how many blue shapes it will draw.</li>
-                        <li>Try to sketch what it will produce.</li>
-                        <li>If one more copy of the basic script were embedded inside the blue, how many copies of <em>that</em> shape would be drawn?</li>
-
-                        <!-- <li>
-                    This animation shows another example of embedding one script inside a similar script. (You'll make predictions first, so don't build it yet.)<br />
-                    <img class="indent" data-gifffer="/bjc-r/img/2-complexity/embedding-scripts-for-squares.gif" alt="Geen Afbeelding"  />
-                    <ol type="a">
-                        <li>
-                            Before building this script:
-                            <ol style="list-style-type:lower-roman;">
-                                <li>Sketch what each of the two <em>individual</em> scripts will draw before they are combined. </li>
-                                <li>Predict the number of blue shapes that the combined script will draw.</li>
-                                <li>Sketch the shape that the combined script will draw.</li>
-                            </ol>
-                        </li>
-                        <li>Now, build the combined script and try it out.</li>
-                        <li><strong>Experiment: </strong> Embed <em>another</em> square, half the size of the last, in the same way. How many of these smallest squares does the script draw? How could you have <em>predicted </em> that number before trying it?</li>
-                        <li><strong>Predict then experiment: </strong> Next, embed <em>one more</em> square, half the size of the last, in exactly the same way. But first, try to <em>predict</em> the number of tiny squares it will draw before trying it.</li> -->
-                    </ol>
-                </li>
-
-			</ol>
-		</div>
-
-        <div class="takeItFurther">
-            <ol type="A">
-
-                <li>
-                    Use what you know about animations to try things like this:<br />
-                    <img src="../../bjc-r/img/2-complexity/U2ImageVideoAddendum_img/RecursiveTriangleAnimation.gif" height="300" alt="Geen Afbeelding" />
-                    <img src="../../bjc-r/img/2-complexity/U2ImageVideoAddendum_img/RecursiveSquareAnimation.gif" height="300" alt="Geen Afbeelding" />
-                </li>
-            </ol>
-        </div>
-
-
-    </body>
 </html>
