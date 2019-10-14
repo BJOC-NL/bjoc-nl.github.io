@@ -17,186 +17,155 @@
 
 <body>
     <div class="full">
-        <h2>Verwerken van elk item in een lijst</h2>
-        <img class="imageRight" src="../../afb/H2/L2/other/p1-o2.png" height="180" alt="Geen Afbeelding" />
+        <h2>Verwerken van elk item in een lijst</h2> <img class="imageRight" src="../../afb/H2/L2/other/p1-o2.png"
+            height="180" alt="Geen Afbeelding" />
         <div class="learn">
-            <p><strong>In deze les,</strong> ga je tools maken voor het tekenen van complexe ontwerpen van een lijst met
-                punten. Om dit te doen, ga je probleem decomposition gebruiken&mdash; het probleem in kleine stukjes
-                breken.
-            </p>
-            <p><strong>Op deze pagina,</strong> ga je een script schrijven die ervoor zorgt dat de puntjes met elkaar
-                worden
-                verbonden (gegeven door een lijst met punten) die de letter A tekenen. </p>
+            <p><strong>In deze les,</strong> ga je tools maken voor het tekenen van complexe ontwerpen van lijsten met
+                punten. Om dit te doen, ga je probleem-decompositie gebruiken&mdash; een probleem in kleine stukjes
+                opbreken. </p>
+            <p><strong>Op deze pagina,</strong> ga je een script schrijven dat ervoor zorgt dat de punten met elkaar
+                verbonden worden (gegeven door een lijst met punten) om zo de letter A tekenen. </p>
         </div>
-
         <div class="dialogue"> <a name="seta" class="anchor">&nbsp;</a>
             <div class="stagedir">
-                <p>Alfie en Robin maken een programma dat van een lijst van punten aanneemt (elk van waar de lijst met
-                    <em>x</em> en <em>y</em> coördinaten) als input en de punten met elkaar zal verbinden. Ze kwamen
-                    erachter dat ze dit kunnen gebruiken om foto's of grafieken met data te tekenen:</p>
-                <p>
-                    Om een setje startdata te maken, schetste ze de letter A op een ruitjes papiertje. Ze kozen een
-                    <em>schaal</em> waarvan ze dachten dat het de foto er goed uit zou komen te laten zien.<br />
-
-                    <img src="../../afb/h2/l2/other/p1-o3.png" height="300" alt="Geen Afbeelding"
+                <p>Alfred en Berta maken een programma dat een lijst van punten gebruikt (elk van waar de lijst met
+                    <em>x</em> en <em>y</em> coördinaten) als invoer en de punten met elkaar verbindt. Ze kwamen
+                    erachter dat ze dit kunnen gebruiken om afbeeldingen of grafieken met data te tekenen:</p>
+                <p> Om een set data te maken om mee te beginnen, schetsten ze de letter A op ruitjespapier. Ze
+                    kozen een <em>schaal</em> waarvan ze dachten dat het de afbeelding er goed uit zou laten
+                    zien.<br /> <img src="../../afb/h2/l2/other/p1-o3.png" height="300" alt="Geen Afbeelding"
                         title="Letter A drawn of graph paper with corner coordinates" /><img
                         src="../../afb/h2/l2/other/p1-o4.png" height="300" alt="Geen Afbeelding"
-                        title="Corner coordinates (-50, 20) (-10,120), ... (-30,20)" />
-                    <br />
-                    Daarna noteerde ze de coördinaten van elke vertex, beginnend bij het pijltje en met de klok mee
-                    rond het figuur. Het eerste punt is bij (-50, 20), de tweede bij (-10, 120), enzovoort. Daarna
-                    bouwde ze deze lijst in Snap<em>!</em> op deze manier:<br />
-                    <img src="../../afb/h2/l2/blocks/p1-b1.png" alt="Geen Afbeelding"
-                        title="coordinate-list-for-A"><br />
+                        title="Corner coordinates (-50, 20) (-10,120), ... (-30,20)" /> <br /> Daarna noteerden ze de
+                    coördinaten van elk punt, beginnend bij het pijltje en met de klok mee rond het figuur. Het
+                    eerste punt is bij (-50, 20), de tweede bij (-10, 120), enzovoort. Daarna bouwden ze deze lijst in
+                    Snap<em>!</em> op deze manier:<br /> <img height="60" src="../../afb/h2/l2/blocks/p1-b1.png"
+                        alt="Geen Afbeelding" title="coordinate-list-for-A"><br />
                     Nu hebben ze een script nodig die die lijst gebruikt om de tekening te maken, op deze manier:<br />
                     <img class="center" data-gifffer="../../afb/h2/l2/videos/p1-v1.gif" alt="Geen Afbeelding"
-                        title="sprite drawing letter A by going to each set of coordinates" />
-                </p>
+                        title="sprite drawing letter A by going to each set of coordinates" /> </p>
             </div>
-            <div><span>Robin:</span> Deze lijst van coördinaten, omlijnd een A, dus laten we hem A noemen.</div>
+            <div><span>Berta:</span> Deze lijst van coördinaten, omlijnd een A, dus laten we hem A noemen.</div>
             <div class="stagedir">
-                <p>Robin klikt op <code>Maak een variabele</code>, noemt hem <code>A</code>, en bouwt <img
-                        src="../../afb/H2/L2/blocks/p1-b2.png" alt="Geen Afbeelding"
+                <p>Berta klikt op <code>Maak een variabele</code>, noemt hem <code>A</code>, en bouwt
+                    <img height="70" src="../../afb/H2/L2/blocks/p1-b2.png" alt="Geen Afbeelding"
                         title="set A to {{-50,20}, {-10,120}, {10,120}, {50,20}, {30,20}, {20,50}, {-20,50}, {-30,20}}" />.
                 </p>
                 <p>Dan, klikt ze op het <code>zet</code> blok om de code te runnen.</p>
             </div>
-            <div>
-                <span>Alex:</span> Dus, voor elk van die 8 punten, willen we dat de sprite er naartoe beweegt. Hmmm...
-                <img src="../../afb/h2/L2/blocks/p1-b3.png" height="41" alt="Geen Afbeelding" />
-                gaat niet werken, want het moet inputs onderscheiden. We hebben een blok
-                nodig dat <em>één</em> input aanneemt, een punt als <img src="../../afb/h2/l2/blocks/p1-b4.png"
-                    height="37" alt="Geen Afbeelding" />.
-            </div>
-            <div>
-                <span>Robin:</span> Dus we maken een <em>nieuw </em>blok.
-                Laten we die <code>ga naar punt</code> noemen. Dat werkt zo:
-                <img src="../../afb/h2/l2/blocks/p1-b6.png" alt="Geen Afbeelding"
+            <div> <span>Alfred:</span> Dus, voor elk van die 8 punten, willen we dat de sprite ernaartoe beweegt.
+                Hmmm...
+                <img height="40" src="../../afb/h2/L2/blocks/p1-b3.png" height="41" alt="Geen Afbeelding" />
+                gaat niet werken, want het moet invoeren onderscheiden. We hebben een blok nodig dat <em>één</em> invoer
+                aanneemt, een punt als
+                <img height="40" src="../../afb/h2/l2/blocks/p1-b4.png" height="37" alt="Geen Afbeelding" />. </div>
+            <div> <span>Berta:</span> Dus we maken een <em>nieuw </em>blok. Laten we die <code>ga naar punt</code>
+                noemen. Dat werkt zo:
+                <img height="40" src="../../afb/h2/l2/blocks/p1-b6.png" alt="Geen Afbeelding"
                     title="go to point (list (-50) (20))" />.
-                We gebruiken <img src="../../afb/h2/l2/blocks/p1-b3.png" height="41" alt="Geen Afbeelding"
-                    title="go to x:() y:()" />
-                of <img src="../../afb/h2/l2/blocks/p1-b7.png" height="41" alt="Geen Afbeelding"
+                We gebruiken
+                <img src="../../afb/h2/l2/blocks/p1-b3.png" height="41" alt="Geen Afbeelding" title="go to x:() y:()" />
+                of
+                <img src="../../afb/h2/l2/blocks/p1-b7.png" height="41" alt="Geen Afbeelding"
                     title="glide (.5) secs to x:() y:()" />
-                <em>daar in</em>, maar we zullen de input moeten verwerken,
-                <img src="../../afb/h2/l2/blocks/p1-b4.png" height="37" alt="Geen Afbeelding" />
-                , om <code>x:</code> en <code>y:</code> apart te voeden. Hmmm... </div>
-
-            <div>
-                <span>Yasmine:</span> Oh! Ik weet het! Volgens mij kunnen we
-                <img src="../../afb/h2/l2/blocks/p1-b8.png" height="35" alt="Geen Afbeelding">
-                gebruiken. Geef het een nummer als eerste input. Ik denk dat de
-                <img class="inline" src="../../afb/h2/l2/other/p1-o1.png" alt="Geen Afbeelding"
-                    title="rectangle with two smaller orange rectangles inside" />
-                gewoon aangeeft dat het een lijst als tweede input verwacht.</div>
-            <div><span>Alex:</span> Ik vraag me af of we <em>ons</em> <code>ga naar punt</code> blok kunnen laten zien
-                dat het een lijst als input verwacht...</div>
+                <em>daar in</em>, maar we zullen de invoer moeten verwerken,
+                <img src="../../afb/h2/l2/blocks/p1-b4.png" height="37" alt="Geen Afbeelding" /> , om <code>x:</code> en
+                <code>y:</code> apart te voeden. Hmmm... </div>
+            <div> <span>Yasmine:</span> Oh! Ik weet het! Volgens mij kunnen we <img
+                    src="../../afb/h2/l2/blocks/p1-b8.png" height="35" alt="Geen Afbeelding"> gebruiken. Geef het een
+                nummer als eerste invoer. Ik denk dat de <img class="inline" src="../../afb/h2/l2/other/p1-o1.png"
+                    alt="Geen Afbeelding" title="rectangle with two smaller orange rectangles inside" /> gewoon aangeeft
+                dat het een lijst als tweede invoer verwacht.</div>
+            <div><span>Alfred:</span> Ik vraag me af of we <em>ons</em> <code>ga naar punt</code> blok kunnen laten zien
+                dat het een lijst als invoer verwacht...</div>
         </div>
-
-        <p>Ja, <em>jij</em>kunt <em>jouw</em> blokken laten zien welk type data ze verwachten als input: een nummer, een
-            lijst, of een ander type. Sommige talen <em>vereisen</em> dat het data type aangegeven moet zijn. In
+        <p>Ja, <em>jij</em> kunt <em>jouw</em> blokken laten zien welk type data ze verwachten als invoer: een nummer,
+            een
+            lijst, of een ander type. Sommige talen <em>vereisen</em> dat het data type aangegeven is. In
             Snap<em>!</em> is dit een optie. Het is niet perse nodig, maar, net als dat je een kleur toewijst aan een
-            blok,
-            kan het een handige herinnering zijn van wat het blok nu eigenlijk doet en welk type input het verwacht. Je
-            hebt
-            al input ingangen gezien van verschillende vormen en soorten, die elk verschillende datatypen verwachten.
-        </p>
-
+            blok, kan het een handige herinnering zijn van wat het blok nu eigenlijk doet en welk type invoer het
+            verwacht. Je hebt al invoeringangen gezien van verschillende vormen en soorten, die elk verschillende
+            datatypen verwachten. </p>
         <div class="forYouToDo" id="first">
-            <div class="sidenote">
-                Heb je in de video gezien dat je veel verschillende input typen kunt specificeren? (Tekst, nummers,
-                Boolean, etc.) De <strong>lijst</strong> input typen is gekozen omdat een <code>punt</code> een
-                <em>lijst</em> is bestaande uit twee coördinaten.<br />
-                <img src="../../afb/H2/L2/other/p1-o6.png" height="150" alt="Geen Afbeelding"
-                    title="Input types, list type selected" />
-            </div>
+            <div class="sidenote"> Heb je in de video gezien dat je veel verschillende invoer-types kunt specificeren?
+                (Tekst, nummers, Boolean, etc.) De <strong>lijst</strong> invoer-types zijn gekozen omdat een
+                <code>punt</code> een <em>lijst</em> is bestaande uit twee coördinaten.<br /> <img
+                    src="../../afb/H2/L2/other/p1-o6.png" height="150" alt="Geen Afbeelding"
+                    title="Invoer types, list type selected" /> </div>
             <ol>
                 <li><a class="run"
                         href="https://snap.berkeley.edu/snapsource/snap.html#present:Username=cfkaligula&ProjectName=H2L2-TekenVorm"><img
                             class="inline" src="../../afb/icons/LaadEnSlaOp.png" alt="Geen Afbeelding"
-                            title="Click here to load this file. Then save it to your Snap! account."></a><br />
-                    Het beschikt over de lijst van punten, maar je moet hun <img src="../../afb/h2/l2/blocks/p1-b9.png"
-                        alt="Geen Afbeelding" title="go to point (point) block with list type input named point"> blok
+                            title="Click here to load this file. Then save it to your Snap! account."></a><br /> Het
+                    beschikt over de lijst van punten, maar je moet hun <img height="40"
+                        src="../../afb/h2/l2/blocks/p1-b9.png" alt="Geen Afbeelding"
+                        title="go to point (point) block with list type invoer named point"> blok
                     bouwen.</li>
                 <div class="narrower">
-                    <h4><strong>Specificeer je input type</strong></h4>
-                    Deze animatie laat zien hoe je het input typen van de lijst kunt specifieren. Andere input types
-                    worden
-                    op dezelfde manier gespecificeerd. <img class="inline" src="../../afb/h2/l2/other/p1-o1.png"
-                        alt="Geen Afbeelding"
-                        title="list input type: rectangle with two smaller orange rectangles inside"><br />
-                    <img data-gifffer="../../afb/h2/l2/videos/p1-v2.gif" height="400" alt="Geen Afbeelding"
-                        title="List input type selection" /> <br />
-                    Nadat je het een titel hebt gegeven en de input hebt benoemd:
+                    <h4><strong>Specificeer je invoer-type</strong></h4> Deze animatie laat zien hoe je het invoer-type
+                    van de lijst kunt specifieren. Andere invoer-types worden op dezelfde manier gespecificeerd. <img
+                        class="inline" src="../../afb/h2/l2/other/p1-o1.png" alt="Geen Afbeelding"
+                        title="list invoer type: rectangle with two smaller orange rectangles inside"><br /> <img
+                        data-gifffer="../../afb/h2/l2/videos/p1-v2.gif" height="400" alt="Geen Afbeelding"
+                        title="List invoer type selection" /> <br /> Nadat je de titel hebt gemaakt en de invoer
+                    een naam hebt gegeven:
                     <ul>
-                        <li>
-                            Klik op de rechter pijl van de input naam:<br />
-                            <img class="indent" src="../../afb/h2/L2/other/p1-o7.png" height="125"
-                                alt="Geen Afbeelding" />
-                        </li>
-                        <li>Kies het data type dat je wilt voor de input.</li>
-                        <li>Klik OK.</li>
+                        <li> Klik je op de rechter pijl naast de invoernaam:<br /> <img class="indent"
+                                src="../../afb/h2/L2/other/p1-o7.png" height="125" alt="Geen Afbeelding" /> </li>
+                        <li>Kies je het data-type dat je wilt voor de invoer.</li>
+                        <li>Klik je op OK.</li>
                     </ul>
                 </div>
-                <li>Rond het bouwen van je <code>ga naar punt</code> blok en <strong>test</strong> je blok met een paar
-                    punten als input om er zeker van te zijn dat het doet wat jij wilt.</li>
+                <li>Rond het bouwen van je <code>ga naar punt</code>blok af en <strong>test</strong> je blok met een
+                    paar punten als invoer om er zeker van te zijn dat het doet wat je wilt.</li>
             </ol>
         </div>
-
         <div class="dialogue"> <a name="seta" class="anchor">&nbsp;</a>
-            <div><span> Alex:</span> Top! Nu kunnen we ons <code>ga naar punt</code> blok gebruiken voor elk punt in
-                onze
-                lijst.</div>
-            <div><span>Robin:</span> Ik weet zeker dat we <img src="../../afb/H2/L2/blocks/p1-b10.png" height="68"
+            <div><span> Alfred:</span> Top! Nu kunnen we ons <code>ga naar punt</code> blok gebruiken voor elk punt in
+                onze lijst.</div>
+            <div><span>Berta:</span> Ik denk dat we <img src="../../afb/H2/L2/blocks/p1-b10.png" height="68"
                     alt="Geen Afbeelding"> kunnen gebruiken. </div>
             <div class="stagedir">
-                <p>Alex and Robin design this new script to automate the process of going to each point. </p>
-                <p><img src="../../afb/H2/L2/blocks/p1-b11.png" alt="Geen Afbeelding"
+                <p>Alfred and Berta ontwerpen dit nieuwe script om het bezoeken van ieder punt te
+                    automatiseren. </p>
+                <p><img height="120" src="../../afb/H2/L2/blocks/p1-b11.png" alt="Geen Afbeelding"
                         title="pen down;for each(item) of (A){go to point(item)}"> </p>
-                <p>Dan proberen ze het uit.</p>
+                <p>Daarna proberen ze het uit.</p>
             </div>
-            <div><span> Alex:</span> Yes! <code>voor elke</code> doet precies wat we willen. Maar we hebben een paar
-                bugs
-                die we moeten fixen.</div>
-
+            <div><span> Alfred:</span> Yes! <code>voor elke</code> doet precies wat we willen. Maar we hebben een paar
+                bugs die we moeten fixen.</div>
         </div>
-
         <div class="forYouToDo">
             <ol start="3">
                 <li>Bouw en test het script dat ze gebruikt hebben.</li>
-                <li>Fix de twee bugs die Alex vond.</li>
+                <li>Fix de twee bugs die Alfred vond.</li>
                 <li>
                     <div class="saveAs"><span class="text">"H2L2-TekenVorm"</span><img
                             src="../../afb/icons/SlaHetOpAls.png" alt="Geen Afbeelding"
                             title="Save your work as U2L2-DrawShape" /></div>
                 </li>
-                <li>
-                    <strong>Denk en schrijf: </strong>
+                <li> <strong>Denk en schrijf: </strong>
                     <ul>
-                        <li> Voor welke reden zou je het eerste en laatste punt <em>niet</em> met elkaar willen
-                            verbinden?
-                        </li>
-                        <li> Voor welke reden zou je de pen naar beneden willen <em>enkel</em> wanneer de sprite elk
-                            punt
-                            raakt, maar nooit wanneer de sprite beweegt van het ene punt naar het andere?</li>
+                        <li> Waarom zou je het eerste en laatste punt <em>niet</em> met elkaar willen
+                            verbinden? </li>
+                        <li> Waarom zou je de pen neer willen <em>alleen</em> wanneer de sprite elk
+                            punt mar keert, maar nooit wanneer de sprite beweegt van het ene naar het andere punt?</li>
                         <li> Voor welke reden zou je voorkeur geven aan <code>ga naar</code> in plaats van
-                            <code>glij</code>?</li>
+                            <code>glijd</code>?</li>
                     </ul>
                 </li>
             </ol>
         </div>
-
         <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
             <ol type="A">
-                <li>
-                    Creëer drie nieuwe punten en een script dat het tekenen van de letter A afmaakt. Je moet een manier
-                    ontwerpen die binnen een lijst aangeeft dat alle punten nog niet met elkaar verbonden zijn.<br />
-                    <div class="sidenote">Kies de nieuwe coördinaten zelf.</div>
-                    <img class="indent" src="../../afb/H2/L2/other/p1-o5.png" alt="Geen Afbeelding"
+                <li> Maak drie nieuwe punten en een script dat het tekenen van de letter A afmaakt. Je moet een manier
+                    bedenken die binnen een lijst aangeeft dat alle punten nog niet met elkaar verbonden zijn.<br />
+                    <div class="sidenote">Kies de nieuwe coördinaten zelf.</div> <img class="indent"
+                        src="../../afb/H2/L2/other/p1-o5.png" alt="Geen Afbeelding"
                         title="complete-drawing-of-letter-A">
                 </li>
             </ol>
         </div>
-
         <div class="AP-only">
             <h3>Self-Check: <code>For Each</code></h3>
             <div class="forYouToDo">
@@ -207,95 +176,50 @@
                             identifier="FOR EACH positive and square over 4" hasinlinefeedback="true" maxchoices="1"
                             responseIdentifier="ri1" shuffle="false">
                             <div class="prompt">
-
-                                <pre>inputList ← [3, -1, 2, 10, -5]
-
-FOR EACH item IN inputList
-{
-  IF ( (item &gt; 0)  AND  (item * item &gt; 4) )
-  {
-    DISPLAY item
-  }
-}
-</pre><br />
-                                Wat zal er worden weergegeven als het resultaat van de code hierboven?
-                            </div>
+                                <pre>inputList ← [3, -1, 2, 10, -5] FOR EACH item IN inputList { IF ( (item &gt; 0)  AND  (item * item &gt; 4) ) { DISPLAY item } } </pre>
+                                <br /> Wat zal er worden weergegeven als het resultaat van de code hierboven? </div>
                             <div class="choice" identifier="c1">
                                 <div class="text">9, 1, 4, 100, 25</div>
-                                <div class="feedback">
-                                    These are not items from the <var>inputList</var>. What does the
-                                    <em>conditional</em> in
-                                    the procedure do?
-                                </div>
+                                <div class="feedback"> These are not items from the <var>inputList</var>. What does the
+                                    <em>conditional</em> in the procedure do? </div>
                             </div>
                             <div class="choice" identifier="c2">
                                 <div class="text">9, 100</div>
-                                <div class="feedback">
-                                    These are not items from the <var>inputList</var>. What does the
-                                    <em>conditional</em> in
-                                    the procedure do?
-                                </div>
+                                <div class="feedback"> These are not items from the <var>inputList</var>. What does the
+                                    <em>conditional</em> in the procedure do? </div>
                             </div>
                             <div class="choice" identifier="c3">
                                 <div class="text">3, 2, 10</div>
-                                <div class="feedback">
-                                    Is 2 * 2 &gt; 4 ?
-                                </div>
+                                <div class="feedback"> Is 2 * 2 &gt; 4 ? </div>
                             </div>
                             <div class="choice" identifier="c4">
                                 <div class="text">3, 10</div>
-                                <div class="feedback">
-                                    Correct!
-                                </div>
+                                <div class="feedback"> Correct! </div>
                             </div>
                             <div class="responseDeclaration" identifier="ri1">
                                 <div class="correctResponse" identifier="c4"></div>
                             </div>
-                        </div>
-
-                        <!-- Question 2 -->
+                        </div> <!-- Question 2 -->
                         <div class="assessment-data" type="multiplechoice" identifier="Mystery Procedure"
                             hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri2" shuffle="true">
                             <div class="prompt">
-                                <pre>PROCEDURE Mystery (numberList, targetNumber)
-{
-  counter ← 0
-  FOR EACH number IN numberList
-  {
-    IF (number &gt; targetNumber)
-    {
-      counter ← counter + 1
-    }
-  }
-  RETURN (counter)
-}
-myMathGrades ← [100, 80, 90, 80, 60, 100, 50, 100]
-Mystery(myMathGrades, 60)
-</pre><br /> Wat wordt er teruggegeven als de code hierboven wordt gerund?
-                            </div>
+                                <pre>PROCEDURE Mystery (numberList, targetNumber) { counter ← 0 FOR EACH number IN numberList { IF (number &gt; targetNumber) { counter ← counter + 1 } } RETURN (counter) } myMathGrades ← [100, 80, 90, 80, 60, 100, 50, 100] Mystery(myMathGrades, 60) </pre>
+                                <br /> Wat wordt er teruggegeven als de code hierboven wordt gerund? </div>
                             <div class="choice" identifier="c1">
                                 <div class="text">[100, 80, 90, 80, 100, 100]</div>
-                                <div class="feedback">
-                                    Wat voor <em>soort</em> waarde geeft de procedure?
-                                </div>
+                                <div class="feedback"> Wat voor <em>soort</em> waarde geeft de procedure? </div>
                             </div>
                             <div class="choice" identifier="c2">
                                 <div class="text">7</div>
-                                <div class="feedback">
-                                    Is 60 &gt; 60 ?
-                                </div>
+                                <div class="feedback"> Is 60 &gt; 60 ? </div>
                             </div>
                             <div class="choice" identifier="c3">
                                 <div class="text">6</div>
-                                <div class="feedback">
-                                    Correct!
-                                </div>
+                                <div class="feedback"> Correct! </div>
                             </div>
                             <div class="choice" identifier="c4">
                                 <div class="text">60</div>
-                                <div class="feedback">
-                                    What doet de procedure?
-                                </div>
+                                <div class="feedback"> What doet de procedure? </div>
                             </div>
                             <div class="responseDeclaration" identifier="ri2">
                                 <div class="correctResponse" identifier="c3"></div>
