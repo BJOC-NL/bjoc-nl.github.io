@@ -24,11 +24,11 @@
         </div>
         <div class="forYouToDo" id="first">
             <ol>
-                <li> <strong>Analyseer en Debug.</strong> De definitie van een <code>Raad-het-getal-spel</code> blok
+                <li> <strong>Analyseer en Debug.</strong> Het <code>Raad-het-getal-spel</code>blok
                     heeft een <strong>bug</strong>&mdash;een error / fout in de code dat het programma anders doet
-                    gedragen dan dat jij zou willen. Deze code, zou je het constant spelen, zal in de meeste gevallen
-                    wel werken, maar <em>soms</em> (niet altijd) zal het je feliciteren <em>voordat je het getal hebt
-                        geraden</em>. <br />
+                    gedragen dan je wilt. Deze code, als je het constant uitvoert, zal in de meeste gevallen
+                    wel werken, maar <em>soms</em> (niet altijd) zal het je feliciteren <em>voordat je het getal
+                        geraden hebt</em>. <br />
                     <div class="sidenote">
                         <div class="todo">This is a kind of debugging strategy (perhaps: "narrowing the
                             possibilities"?). Do we want to say anything more about it? --MF, 3/21/18</div> Als je dit
@@ -38,41 +38,39 @@
                         title="Number guessing game{script variables(secret number); set(secret number) to (pick random(1) to (10)); repeat until(answer=secret number){ask(Guess my secret number) and wait} say(You guessed it!) for (2) secs}" /><br />
                     <img class="inline" src="../../afb/icons/PraatMetEenAnderPaar.png" alt="Geen Afbeelding"
                         title="Talk with Another Pair" />
-                    Analyseer de code, of experimenteer met het, en leg uit hoe dit kan gebeuren.
+                    Analyseer de code, of experimenteer ermee en leg uit hoe dit kan gebeuren.
                 </li>
-                <li>Als je het nog niet geopend hebt, open je H2L1-RaadHetGetal project.</li>
+                <li>Open je H2L1-RaadHetGetal project, als je dat nog niet gedaan had.</li>
                 <li> Er zijn een paar verschillende manieren om de bug te fixen.
                     <div class="endnote"> <a href="#hint-2" data-toggle="collapse" class="collapsed"
                             title="A possible solution">Nadat je er zelf over hebt nagedacht, bekijk deze manier om het
                             te doen:</a>
-                        <div id="hint-2" class="collapse"> Een manier zou kunnen zijn, dat je een tweede script
-                            variabelen gebruikt om informatie in op te slaan en de antwoorden te checken. Het kan zijn
+                        <div id="hint-2" class="collapse"> Een mogelijkheid is dat je een tweede script-variabele
+                            gebruikt om de antwoorden in op te slaan en te checken. Het kan zijn
                             dat je een andere manier handiger vindt. </div>
                     </div>
                     <div class="endnote"> Als je meer script-variabelen toe wilt voegen, gebruikt de rechts-wijzende
-                        driehoek. (De linkse driehoek zal het verwijderen.)<br /> <img class="indent"
+                        driehoek. (De linkse driehoek zal ze verwijderen.)<br /> <img class="indent"
                             data-gifffer="../../afb/H2/L1/videos/P2-v1.gif" alt="Geen Afbeelding"
                             title="clicking triangles to add and remove script variables" height="70" /> </div>
                     <div class="takeNote">
                         <h4><strong>Debug-Tip: Weergeven van variabelen</strong></h4>
-                        <p> Wanneer je je code aan het debuggen bent, kan het helpen om de waarde hiervan op
+                        <p> Wanneer je je code aan het debuggen bent, kan het helpen om de waarde van je variabelen op
                             verschillende momenten in je programma te bekijken. Dit kun je op verschillende manieren
                             doen: <ul>
                                 <li>Je kunt <strong>klikken op het variabele blok</strong> (zoals <img
                                         src="../../afb/H2/L1/blocks/P2-b2.png" alt="Geen Afbeelding">) meldt
                                     af en toe de huidige waarde.</li>
                                 <li>Als het een <em>globale</em> variabele is, kun je deze <strong>markeren met de
-                                        check-box</strong> ernaast in de palette (<img
+                                        check-box</strong> ernaast in het palet (<img
                                         src="../../afb/h2/L1/other/P2-o1.png" width="120" alt="Geen Afbeelding">) om een
                                     <em>watcher</em> display te
-                                    krijgen. (Dit werkt soms ook voor sommige andere informatie die geen variabelen
-                                    zijn, zoals te zien op het plaatje beneden.)</li>
-                                <li>Als het een <em>lokale</em> (script) variabele is, kun je het
+                                    krijgen. (Dit werkt soms ook voor andere soorten data die geen variabelen
+                                    zijn, zoals te zien op het plaatje hieronder.)</li>
+                                <li>Als het een <em>lokale</em> (script)-variabele is, kun je het
                                     <strong> <code>toon variabele</code>blok gebruiken</strong> om een 'kijker' te
                                     laten zien (en het <code>verberg variabele</code>blok gebruiken om het weer te
-                                    verbergen).
-                                    (Ook weer te zien
-                                    op het plaatje hieronder.)</li>
+                                    verbergen). (Ook weer te zien op het plaatje hieronder.)</li>
                             </ul>
                         </p> <img class="indent" data-gifffer="../../afb/H2/L1/videos/P2-v2.gif" height="375"
                             alt="Geen Afbeelding"
@@ -85,10 +83,11 @@
         <h3>Breid het programma uit met meer specifieke reacties</h3>
         <div class="forYouToDo">
             <ol start="5">
-                <li>Gebruik meer conditionele blokken en predikaten om de computer te laten zeggen of het gerade getal
-                    te groot of the klein is: "Dat is te groot. Probeer het nog eens." <br /><img class="inline"
+                <li>Gebruik meer blokken met voorwaardes en predikaten om de computer te laten zeggen of het gerade
+                    getal
+                    te groot of te klein is: "Dat is te groot. Probeer het nog eens." <br /><img class="inline"
                         src="../../afb/icons/PraatMetJeBuur.png" alt="Geen Afbeelding" title="Talk with Your Partner" />
-                    Waar in de code horen deze conditionelen?</li>
+                    Waar in de code horen deze voorwaardes?</li>
                 <li> <strong>Test en debug.</strong> Speel het spel net zo lang totdat je zeker weet dat alles het doet,
                     en de manier waarop jij wilt dat het spel het doet. Het zou moeten: <ul>
                         <li>vragen aan de speler om het geheime getal te raden;</li>
@@ -99,28 +98,28 @@
                 </li>
             </ol>
         </div>
-        <p>script-variabelen bestaan alleen wanneer het script draait, dus het <var>geheime getal number</var> variabele
-            zal <em>niet bestaan</em> nadat <code>Raad-het-getal</code> afgelopen is. Als het weer opnieuw wordt
-            gespeeld, zal het programma een nieuwe <var>geheime getal</var> variabele maken en <em>initieeren</em> bij
-            een random nummer. </p> <img class="imageRight" src="../../afb/icons/HetIsNuEenGoedMoment.png"
-            alt="Geen Afbeelding" />
-        <p>In een later hoofdstuk, ga je leren hoe de computer een geheim getal zal raden die <em>jij</em> hebt gekozen.
+        <p>Script-variabelen bestaan alleen terwijl het script wordt uitgevoerd, dus het <var>geheime
+                getal</var>variabele zal <em>niet bestaan</em> nadat <code>Raad-het-getal</code> afgelopen is. Als het
+            weer opnieuw wordt uitgevoerd, zal het programma een nieuwe <var>geheime getal</var>variabele maken en
+            <em>initiëren</em> als een willekeurig getal. </p> <img class="imageRight"
+            src="../../afb/icons/HetIsNuEenGoedMoment.png" alt="Geen Afbeelding" />
+        <p>In een later hoofdstuk, ga je leren hoe de computer een geheim getal zal raden dat <em>jij</em> hebt gekozen.
         </p>
         <div class="ifTime">
             <ol start="7">
-                <li>Op dit moment, kiest het script altijd een nummer tussen de 1 en 10. Bij het begin van het spel,
-                    vraag de speler wat het maximum zal zijn en maak vervolgens je programma zodanig dat het een getal
-                    kiest tussen de 1 en <var>maximum</var>.</li>
+                <li>Op dit moment, kiest het script altijd een nummer tussen de 1 en 10.
+                    Vraag de speler aan het begin van het spel wat het maximale getal zal zijn en maak vervolgens je
+                    programma zodanig dat het een getal kiest tussen de 1 en <var>maximum</var>.</li>
             </ol>
         </div>
         <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
             <ol type="A">
-                <li>Gebruik een andere script-variabele om bij te houden hoevaak de speler al heeft geprobeerd het getal
-                    te raden, voordat hij/zij het juiste antwoord had. Wanneer de speler het raadt, zeg dan hoeveel
-                    pogingen hij/zij heeft gedaan.</li>
-                <li>Vind een manier om verschillende antwoorden te geven of dingen te zeggen, zodat de computer niet
-                    constant hetzelfde zegt in eenzelfde situatie. Bijvoorbeeld, als een speler twee keer achter elkaar
-                    te hoog raadt, kan het programma zeggen "Dat is te groot. Probeer een ander getal."</li>
+                <li>Gebruik een andere script-variabele om bij te houden hoe vaak de speler al heeft geprobeerd het
+                    getal te raden, voordat hij/zij het juiste antwoord had. Wanneer de speler het raadt, zeg dan
+                    hoeveel pogingen hij/zij nodig had.</li>
+                <li>Vind een manier om de tekst een beetje aan te passen, zodat het programma niet
+                    constant hetzelfde zegt in dezelfde situatie. Bijvoorbeeld, als een speler twee keer achter elkaar
+                    te hoog raadt, kan het programma zeggen "Dat is nog steeds te hoog. Probeer een ander getal."</li>
             </ol>
         </div>
     </div>

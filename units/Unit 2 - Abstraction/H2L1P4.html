@@ -19,9 +19,8 @@
     <div class="full">
         <h2>Importeer <code>Groet Spelers</code> in een ander programma</h2>
         <div class="learn">
-            <p>Wat je zult tegen zult komen, is dat je al eens een stukje code hebt geschreven die in een later script
-                goed
-                van pas zou komen.</p>
+            <p>Wat je zult tegen komen, is dat een stukje code hebt dat in een later script
+                goed van pas komt.</p>
             <p><strong>Op deze pagina,</strong> ga je je code <code>groet speler</code> blok kopiëren in je
                 Raad-het-getalspel, zodat je het daar kunt gebruiken.</p>
         </div>
@@ -30,8 +29,8 @@
             <ol>
                 <div class="sidenote">Dit project is van <a href="../Unit 1 - Introduction to Programming/H1L2P4.html"
                         title="Learning Player Names"> Hoofdstuk 1 Les 2 Pagina 4: Namen van Spelers Leren</a>.</div>
-                <li>Open je H1L2-GroetSpeler project, run het een paar keer en bekijk je code net zo lang totdat je
-                    weer zeker bent hoe het werkt. (Op het moment dat je wat namen in je <var>spelers lijst</var> hebt,
+                <li>Open je H1L2-GroetSpelerproject, voer het een paar keer uit en bekijk je code net zo lang totdat je
+                    weer weet hoe het werkt. (Op het moment dat je wat namen in je <var>spelerslijst</var> hebt,
                     test dan met een paar namen die wel op de lijst staan en die niet op de lijst staan.)</li>
                 <li>
                     Fix alle problemen met <code>groet speler</code>. Op het moment dat het correct werkt,
@@ -59,11 +58,11 @@
                             <li><strong>Kies "Importeer..."</strong> van het Snap<em>!</em> menu (<img class="inline"
                                     src="../../afb/icons/file_button.png" alt="Geen Afbeelding"
                                     title="File menu button" />).</li>
-                            <li><strong>Vind de XML file die je eerder geëxporteerd hebt</strong> (waarschijnlijk op je
-                                desktop in de 'download' map) en <strong>klik Openen</strong>.</li>
-                            <li><strong>Vind de blokken die</strong> je wilt. Deze zullen aan het <em>eind</em> van de
-                                palette die deze bevat verschijnen.</li>
-                            <li><strong>Klik het geïmporteerde blok om ervoor te zorgen dat alles het goed
+                            <li><strong>Vind het XML-bestand dat je eerder geëxporteerd hebt</strong> (waarschijnlijk in
+                                de 'download' map) en <strong>klik Openen</strong>.</li>
+                            <li><strong>Vind de blokken die</strong> je wilt. Deze zullen aan het <em>eind</em> van het
+                                palet dat deze bevat verschijnen.</li>
+                            <li><strong>Klik op het geïmporteerde blok om ervoor te zorgen dat alles het goed
                                     doet.</strong>
                                 (In dit voorbeeld, zul je waarschijnlijk een error tegenkomen nadat je een naam hebt
                                 ingevoerd.)</li>
@@ -80,26 +79,26 @@
 
         <div class="takeNote">
             <h4><strong>Debuggen van afhankelijkheden</strong></h4>
-            <p>Soms, als je een script neemt uit het programma waarin je dit hebt gebouwd, en het dan ergens anders
-                uitprobeert, gaat er iets kapot. Het kan zijn dat het script afhankelijk is van een speciaal blok in het
-                nieuwe programma, of (zoals in dit geval) dat het script afhankelijk is van een <em>globale
-                    variabele</em>
-                dat niet gedefinieerd is in het nieuwe programma. </p>
-            <p>Om dit probleem op te lossen zodat je het geïmporteerde blok goed kunt gebruiken, zul je je globale
-                variabele moeten definiëren in je nieuwe programma. Afhankelijken zijn een reden om eerder een script
-                variabele te
-                gebruiken dan een globale variabele wanneer mogelijk. Dit omdat ze gedefinieerd zijn <em>in</em> hun
-                scripts, en niet kwijtraakt wanneer je het script naar een andere plek verplaatst.</p>
+            <p>Soms, als je een script uit het programma haalt waarin je het hebt gebouwd en het dan ergens anders
+                probeert te gebruiken, gaat er iets fout. Het kan zijn dat het script afhankelijk is van een zelfgemaakt
+                blok dat niet bestaat in het nieuwe programma, of (zoals in dit geval) dat het script afhankelijk is van
+                een <em>globale variabele</em> dat niet gedefinieerd is in het nieuwe programma. </p>
+            <p>Om dit probleem op te lossen zodat je het geïmporteerde blok goed kunt gebruiken, zul je het globale
+                variabele moeten definiëren in je nieuwe programma. Afhankelijkheden zijn een reden om een script
+                variabele te gebruiken in plaats van een globale variabele indien mogelijk. Dit is zo omdat ze
+                gedefinieerd zijn <em>in</em> hun scripts, en niet verdwijnen wanneer je het script naar een andere plek
+                verplaatst.
+            </p>
         </div>
 
         <div class="forYouToDo">
             <ol start="5">
                 <li>
-                    Maak de ontbrekende globale variabele, <var>spelers lijst</var>, en zorg dat het programma het
-                    initieert als lege lijst.
+                    Maak de ontbrekende globale variabele, <var>spelerslijst</var>, en zorg dat het programma het
+                    initieert als een lege lijst.
                     <div class="endnote">
                         Om een lege lijst aan te maken, klik op de linker pijl op het lijst-blok, zodat er geen nieuwe
-                        invoer plekken zijn.<br />
+                        invoerplekken zijn.<br />
                         <img class="indent" data-gifffer="../../afb/H2/L1/videos/p4-v1.gif" alt="Geen Afbeelding" />
                     </div>
                 </li>
@@ -107,26 +106,26 @@
                     <img class="imageRight" src="../../afb/H2/L1/blocks/p4-b1.png" alt="Geen Afbeelding"
                         title="when green flag clicked, when space key pressed" />
 
-                    <p>Als <var>spelers lijst</var> is geïnitieerd elke keer wanneer het spel opnieuw start, zal het
-                        spel nooit een naam onthouden. Dus, je zult een ander moment nodig hebben om het spel te starten
+                    <p>Als <var>spelerslijst</var> wordt geïnitieerd elke keer wanneer het spel opnieuw start, zal het
+                        spel nooit een naam onthouden. Je zult dus een ander moment nodig hebben om het spel te starten
                         dan het initialiseren van de <var>spelerslijst</var>. Bijvoorbeeld, je kunt de groene vlag
                         gebruiken om de lijst te initialiseren, en de spatiebalk gebruiken om het Raad-het-getalspel te
                         starten.</p>
                 </div>
                 <li>
-                    <strong>Test en Debug.</strong> Je programma dient
+                    <strong>Test en Debug.</strong> Je programma moet
                     <ul>
-                        <li>de spelers te groeten en hun namen te onthouden;</li>
-                        <li>het Raad-het-getalspelt telkens te starten met een nieuw <var>geheim getal</var>.</li>
+                        <li>de spelers groeten en hun namen onthouden;</li>
+                        <li>het Raad-het-getalspel elke keer te starten met een nieuw <var>geheim getal</var>.</li>
                     </ul>
                     Fix alle problemen met je code.
                     <div class="endnote">
                         Is er een probleem met de variabele?
                         <ul>
-                            <li>Check de variabele initialisatie (daar waar het van origine is gebouwd): Staat de code
+                            <li>Check de variabele-initialisatie (daar waar het wordt aangemaakt): Staat de code
                                 waar het hoort te staan? Doet de code datgene waarvoor het is bedoeld?</li>
                             <li>Check waar de variabele is gebruikt: Gebruik je de variabele die je bedoelt? Gebruik je
-                                het op de manier zoals je verwachtte?</li>
+                                het op de manier zoals je verwacht?</li>
 
                         </ul>
                     </div>
