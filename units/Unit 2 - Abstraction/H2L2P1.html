@@ -28,9 +28,9 @@
         </div>
         <div class="dialogue"> <a name="seta" class="anchor">&nbsp;</a>
             <div class="stagedir">
-                <p>Alfred en Berta maken een programma dat een lijst van punten gebruikt (elk van waar de lijst met
-                    <em>x</em> en <em>y</em> coördinaten) als invoer en de punten met elkaar verbindt. Ze kwamen
-                    erachter dat ze dit kunnen gebruiken om afbeeldingen of grafieken met data te tekenen:</p>
+                <p>Alfred en Berta maken een programma dat een lijst van punten als invoer gebruikt (waarbij ieder punt
+                    weer een lijst met <em>x</em> en <em>y</em> coördinaten is) en de punten met elkaar verbindt.
+                    Ze kwamen erachter dat ze dit kunnen gebruiken om afbeeldingen of grafieken van data te tekenen:</p>
                 <p> Om een set data te maken om mee te beginnen, schetsten ze de letter A op ruitjespapier. Ze
                     kozen een <em>schaal</em> waarvan ze dachten dat het de afbeelding er goed uit zou laten
                     zien.<br /> <img src="../../afb/H2/L2/other/p1-o3.png" height="300" alt="Geen Afbeelding"
@@ -38,14 +38,16 @@
                         src="../../afb/H2/L2/other/p1-o4.png" height="300" alt="Geen Afbeelding"
                         title="Corner coordinates (-50, 20) (-10,120), ... (-30,20)" /> <br /> Daarna noteerden ze de
                     coördinaten van elk punt, beginnend bij het pijltje en met de klok mee rond het figuur. Het
-                    eerste punt is bij (-50, 20), de tweede bij (-10, 120), enzovoort. Daarna bouwden ze deze lijst in
-                    Snap<em>!</em> op deze manier:<br /> <img height="60" src="../../afb/H2/L2/blocks/p1-b1.png"
-                        alt="Geen Afbeelding" title="coordinate-list-for-A"><br />
-                    Nu hebben ze een script nodig die die lijst gebruikt om de tekening te maken, op deze manier:<br />
+                    eerste punt is bij (-50, 20), de tweede bij (-10, 120), enzovoort.
+                    <br>Daarna bouwden ze deze lijst in Snap<em>!</em> op deze manier:<br />
+                    <img height="60" src="../../afb/H2/L2/blocks/p1-b1.png" alt="Geen Afbeelding"
+                        title="coordinate-list-for-A"><br />
+                    Nu hebben ze een script nodig dat deze lijst gebruikt om de tekening te maken, op de manier
+                    hieronder:<br />
                     <img class="center" data-gifffer="../../afb/H2/L2/videos/p1-v1.gif" alt="Geen Afbeelding"
                         title="sprite drawing letter A by going to each set of coordinates" /> </p>
             </div>
-            <div><span>Berta:</span> Deze lijst van coördinaten, omlijnd een A, dus laten we hem A noemen.</div>
+            <div><span>Berta:</span> "Deze lijst van coördinaten, tekent een A, dus laten we de lijst 'A' noemen."</div>
             <div class="stagedir">
                 <p>Berta klikt op <code>Maak een variabele</code>, noemt hem <code>A</code>, en bouwt
                     <img height="70" src="../../afb/H2/L2/blocks/p1-b2.png" alt="Geen Afbeelding"
@@ -53,13 +55,13 @@
                 </p>
                 <p>Dan, klikt ze op het <code>zet</code> blok om de code te runnen.</p>
             </div>
-            <div> <span>Alfred:</span> Dus, voor elk van die 8 punten, willen we dat de sprite ernaartoe beweegt.
+            <div> <span>Alfred:</span> "Dus, voor elk van die 8 punten, willen we dat de sprite ernaartoe beweegt.
                 Hmmm...
                 <img height="40" src="../../afb/h2/L2/blocks/p1-b3.png" height="41" alt="Geen Afbeelding" />
                 gaat niet werken, want het moet invoeren onderscheiden. We hebben een blok nodig dat <em>één</em> invoer
                 aanneemt, een punt als
-                <img height="40" src="../../afb/H2/L2/blocks/p1-b4.png" height="37" alt="Geen Afbeelding" />. </div>
-            <div> <span>Berta:</span> Dus we maken een <em>nieuw </em>blok. Laten we die <code>ga naar punt</code>
+                <img height="40" src="../../afb/H2/L2/blocks/p1-b4.png" height="37" alt="Geen Afbeelding" />." </div>
+            <div> <span>Berta:</span> "Dus we maken een <em>nieuw </em>blok. Laten we die <code>ga naar punt</code>
                 noemen. Dat werkt zo:
                 <img height="40" src="../../afb/H2/L2/blocks/p1-b6.png" alt="Geen Afbeelding"
                     title="go to point (list (-50) (20))" />.
@@ -70,14 +72,15 @@
                     title="glide (.5) secs to x:() y:()" />
                 <em>daar in</em>, maar we zullen de invoer moeten verwerken,
                 <img src="../../afb/H2/L2/blocks/p1-b4.png" height="37" alt="Geen Afbeelding" /> , om <code>x:</code> en
-                <code>y:</code> apart te voeden. Hmmm... </div>
-            <div> <span>Yasmine:</span> Oh! Ik weet het! Volgens mij kunnen we <img
+                <code>y:</code> apart te voeden. Hmmm..". </div>
+            <div> <span>Yasmine:</span> "Oh! Ik weet het! Volgens mij kunnen we <img
                     src="../../afb/H2/L2/blocks/p1-b8.png" height="35" alt="Geen Afbeelding"> gebruiken. Geef het een
                 nummer als eerste invoer. Ik denk dat de <img class="inline" src="../../afb/H2/L2/other/p1-o1.png"
                     alt="Geen Afbeelding" title="rectangle with two smaller orange rectangles inside" /> gewoon aangeeft
-                dat het een lijst als tweede invoer verwacht.</div>
-            <div><span>Alfred:</span> Ik vraag me af of we <em>ons</em> <code>ga naar punt</code> blok kunnen laten zien
-                dat het een lijst als invoer verwacht...</div>
+                dat het een lijst als tweede invoer verwacht."</div>
+            <div><span>Alfred:</span> "Ik vraag me af of we <em>ons</em> <code>ga naar punt</code> blok kunnen laten
+                zien
+                dat het een lijst als invoer verwacht..."</div>
         </div>
         <p>Ja, <em>jij</em> kunt <em>jouw</em> blokken laten zien welk type data ze verwachten als invoer: een nummer,
             een
@@ -121,10 +124,10 @@
             </ol>
         </div>
         <div class="dialogue"> <a name="seta" class="anchor">&nbsp;</a>
-            <div><span> Alfred:</span> Top! Nu kunnen we ons <code>ga naar punt</code> blok gebruiken voor elk punt in
-                onze lijst.</div>
-            <div><span>Berta:</span> Ik denk dat we <img src="../../afb/H2/L2/blocks/p1-b10.png" height="68"
-                    alt="Geen Afbeelding"> kunnen gebruiken. </div>
+            <div><span> Alfred:"</span> Top! Nu kunnen we ons <code>ga naar punt</code> blok gebruiken voor elk punt in
+                onze lijst."</div>
+            <div><span>Berta:"</span> Ik denk dat we <img src="../../afb/H2/L2/blocks/p1-b10.png" height="68"
+                    alt="Geen Afbeelding"> kunnen gebruiken."</div>
             <div class="stagedir">
                 <p>Alfred and Berta ontwerpen dit nieuwe script om het bezoeken van ieder punt te
                     automatiseren. </p>
@@ -132,8 +135,8 @@
                         title="pen down;for each(item) of (A){go to point(item)}"> </p>
                 <p>Daarna proberen ze het uit.</p>
             </div>
-            <div><span> Alfred:</span> Yes! <code>voor elke</code> doet precies wat we willen. Maar we hebben een paar
-                bugs die we moeten fixen.</div>
+            <div><span> Alfred:</span> "Yes! <code>voor elke</code> doet precies wat we willen. Maar we hebben een paar
+                bugs die we moeten oplossen."</div>;
         </div>
         <div class="forYouToDo">
             <ol start="3">
@@ -144,12 +147,12 @@
                             src="../../afb/icons/SlaHetOpAls.png" alt="Geen Afbeelding"
                             title="Save your work as U2L2-DrawShape" /></div>
                 </li>
-                <li> <strong>Denk en schrijf: </strong>
+                <li> <strong>Denk en schrijf op: </strong>
                     <ul>
                         <li> Waarom zou je het eerste en laatste punt <em>niet</em> met elkaar willen
                             verbinden? </li>
-                        <li> Waarom zou je de pen neer willen <em>alleen</em> wanneer de sprite elk
-                            punt mar keert, maar nooit wanneer de sprite beweegt van het ene naar het andere punt?</li>
+                        <li> Waarom zou je de pen <em>alleen</em> neer willen wanneer de sprite elk
+                            punt markeert, maar nooit wanneer de sprite beweegt van het ene naar het andere punt?</li>
                         <li> Voor welke reden zou je voorkeur geven aan <code>ga naar</code> in plaats van
                             <code>glijd</code>?</li>
                     </ul>
@@ -159,7 +162,7 @@
         <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
             <ol type="A">
                 <li> Maak drie nieuwe punten en een script dat het tekenen van de letter A afmaakt. Je moet een manier
-                    bedenken die binnen een lijst aangeeft dat alle punten nog niet met elkaar verbonden zijn.<br />
+                    bedenken om aan te geven welke punten in een lijst nog niet met elkaar verbonden zijn.<br />
                     <div class="sidenote">Kies de nieuwe coördinaten zelf.</div> <img class="indent"
                         src="../../afb/H2/L2/other/p1-o5.png" alt="Geen Afbeelding"
                         title="complete-drawing-of-letter-A">
@@ -177,7 +180,7 @@
                             responseIdentifier="ri1" shuffle="false">
                             <div class="prompt">
                                 <pre>inputList ← [3, -1, 2, 10, -5] FOR EACH item IN inputList { IF ( (item &gt; 0)  AND  (item * item &gt; 4) ) { DISPLAY item } } </pre>
-                                <br /> Wat zal er worden weergegeven als het resultaat van de code hierboven? </div>
+                                <br /> Wat zal er worden weergegeven als resultaat van de code hierboven? </div>
                             <div class="choice" identifier="c1">
                                 <div class="text">9, 1, 4, 100, 25</div>
                                 <div class="feedback"> These are not items from the <var>inputList</var>. What does the
@@ -204,7 +207,7 @@
                             hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri2" shuffle="true">
                             <div class="prompt">
                                 <pre>PROCEDURE Mystery (numberList, targetNumber) { counter ← 0 FOR EACH number IN numberList { IF (number &gt; targetNumber) { counter ← counter + 1 } } RETURN (counter) } myMathGrades ← [100, 80, 90, 80, 60, 100, 50, 100] Mystery(myMathGrades, 60) </pre>
-                                <br /> Wat wordt er teruggegeven als de code hierboven wordt gerund? </div>
+                                <br /> Wat wordt er teruggegeven als de code hierboven wordt uitgevoerd? </div>
                             <div class="choice" identifier="c1">
                                 <div class="text">[100, 80, 90, 80, 100, 100]</div>
                                 <div class="feedback"> Wat voor <em>soort</em> waarde geeft de procedure? </div>
