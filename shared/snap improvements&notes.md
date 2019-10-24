@@ -66,3 +66,8 @@ Gebruikersnaam: BJOCNL
 Wachtwoord: Beauty$ndJoy
 
 De code ```<script src="https://hypothes.is/embed.js" async></script>``` staat boven aan de index.
+
+
+##Replace
+om bvb alles tussen src=" tot en met " weg te halen doe je dit:
+src=".*?"
