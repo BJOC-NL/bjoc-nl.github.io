@@ -19,45 +19,33 @@
     <div class="full">
         <h2>Disease Spread Project</h2>
         <div class="learn">
-            <p><strong>On this page,</strong> you will model the spread of a disease in a population.</p>
-
-            <img class="indent" data-gifffer="/bjc-r/img/5-algorithms/img_disease-spread/disease-spread.gif"
-                height="300"
+            <p><strong>On this page,</strong> you will model the spread of a disease in a population.</p> <img
+                class="indent" data-gifffer="/bjc-r/img/5-algorithms/img_disease-spread/disease-spread.gif" height="300"
                 alt="Simulation of a disease spreading in a population.  A single infected individual eventually causes everyone to be infected."
                 title="Simulation of a disease spreading in a population.  A single infected individual eventually causes everyone to be infected." />
         </div>
         <p>Suppose you are a medical researcher at the Centers for Disease Control (CDC) and would like to understand
-            the
-            factors that contribute to the spreading of a new disease across a population. In particular, you would like
-            to
-            know the effect of population size on the rate at which the disease spreads.</p>
-
+            the factors that contribute to the spreading of a new disease across a population. In particular, you would
+            like to know the effect of population size on the rate at which the disease spreads.</p>
         <div class="forYouToDo" id="first">
             <ol>
                 <li>What would be a sensible hypothesis on how population size relates to the rate of the spread of the
                     disease?</li>
             </ol>
         </div>
-
         <p>You may not have enough data from actual outbreaks to test your hypothesis and make any meaningful
-            conclusions,
-            and it would be unethical to induce the disease in some population in order to gather new data. In this
-            situation, a simulation would be the best option to generate data in order to test your hypotheses without
-            the
-            constraints of time, cost, and ethics.</p>
+            conclusions, and it would be unethical to induce the disease in some population in order to gather new data.
+            In this situation, a simulation would be the best option to generate data in order to test your hypotheses
+            without the constraints of time, cost, and ethics.</p>
         <p>In this project, you will simulate the spread of a disease within a small population and explore the effects
-            of
-            variables such as population size and speed of human interaction on the spread of disease.</p>
-
+            of variables such as population size and speed of human interaction on the spread of disease.</p>
         <div class="forYouToDo" id="second">
             <ol start="2">
-                <li>Play with the Snap<em>!</em> file
-                    <!--<a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=bjcsolutions&ProjectName=U5L3p3%20Disease%20Spread%20(answer%20file)%20%20&hideControls" target="_blank">-->
-                    <a href="/bjc-r/cur/programming/5-algorithms/2-simulation/3c-disease-spread-interactive.html"
-                        target="_blank" title="Disease Spread Interactive">
-                        linked here</a> to get a feel for the simulation program you will be writing.</li>
-                <li>
-                    Your code should:<br />
+                <li>Play with the Snap<em>!</em> file <a
+                        href="/bjc-r/cur/programming/5-algorithms/2-simulation/3c-disease-spread-interactive.html"
+                        target="_blank" title="Disease Spread Interactive"> linked here</a> to get a feel for the
+                    simulation program you will be writing.</li>
+                <li> Your code should:<br />
                     <ul>
                         <li>Ask the user for 3 inputs: the population size, the percentage of the population initially
                             infected, and the speed at which the people should be moving.</li>
@@ -76,66 +64,48 @@
                     </ul>
                 </li>
                 <li>Discuss how your simulation may be similar to and different from a real life disease outbreak.
-                    Identify
-                    the <em>simplifying assumptions</em> you made in this simulation.</li>
-                <li>
-                    Study the relationships between the various variables in the simulation:
-                    <ul>
+                    Identify the <em>simplifying assumptions</em> you made in this simulation.</li>
+                <li> Study the relationships between the various variables in the simulation: <ul>
                         <li>the <var>population size</var></li>
                         <li>the percentage of the population initially sick (<var>percent initially sick</var>)</li>
                         <li>the <var>speed</var> at which the people move</li>
                         <li><var>time elapsed</var> (at the point when the entire population becomes sick)</li>
                     </ul>
                     <div class="todo">Brian, I made light edits to the following line and I split off the end of #5 into
-                        a
-                        new &lt;li&gt;; if you agree, this changes needs to be made to the solution file too. Also, the
-                        solution file still has single-letter variables in it toward the end. --MF, 2/22/18</div>
+                        a new &lt;li&gt;; if you agree, this changes needs to be made to the solution file too. Also,
+                        the solution file still has single-letter variables in it toward the end. --MF, 2/22/18</div>
                     Create a hypothesis predicting the pattern(s) that will emerge in the simulations.<br />
                     <div class="narrower">
                         <p>For example, to understand the effect of the <var>population size</var> on the time it takes
-                            the
-                            disease to fully spread (<var>time elapsed</var>), you might fix <var>population size</var>
-                            at
-                            10 and <var>speed</var> at 2, and use your simulation to make a chart of <var>time
-                                elapsed</var>
-                            (on the vertical axes) as a function of <var>population size</var> (on the horizontal axis)
-                            in
-                            increments of 10 for <var>population size</var>.</p>
+                            the disease to fully spread (<var>time elapsed</var>), you might fix <var>population
+                                size</var> at 10 and <var>speed</var> at 2, and use your simulation to make a chart of
+                            <var>time elapsed</var> (on the vertical axes) as a function of <var>population size</var>
+                            (on the horizontal axis) in increments of 10 for <var>population size</var>.</p>
                         <p>Perform similar experiments to understand the effect of initial percentage of the sick and to
                             understand the effect of agent speed.</p>
                         <p>Since the results of each run are partly random, you may need to run each particular
-                            simulation
-                            several times and take an average.</p>
+                            simulation several times and take an average.</p>
                     </div>
-
                 </li>
                 <li>Create a visual graph of your findings. Do you see any patterns? Do they agree with your hypothesis?
-                    If
-                    not, make a new hypothesis. How can you study the effects of other variables with your simulations?
-                </li>
+                    If not, make a new hypothesis. How can you study the effects of other variables with your
+                    simulations? </li>
             </ol>
         </div>
         <p>This is a simplified model. There are many things you could do to make the model more realistic. For example,
-            you
-            could make the infected people heal over time, or you could add doctor sprites who can heal sick sprites.
-            But if
-            you included <em>all</em> the things that happen in real human populations in your simulation, it would slow
-            down the simulation too much to use. Updating your software or upgrading your hardware may help you include
-            more
-            details in your simulation, but you will always have to make some simplifications.</p>
+            you could make the infected people heal over time, or you could add doctor sprites who can heal sick
+            sprites. But if you included <em>all</em> the things that happen in real human populations in your
+            simulation, it would slow down the simulation too much to use. Updating your software or upgrading your
+            hardware may help you include more details in your simulation, but you will always have to make some
+            simplifications.</p>
         <div class="endnote">There was a time when weather scientists could do a good job of predicting the weather with
-            a
-            complicated model. The only problem was that the computers back then took several days to run the model, so
-            the
-            predictions weren't ready in time. Computers these days can run many complicated weather models fast enough
-            to
-            predict the weather reasonably well.</div>
+            a complicated model. The only problem was that the computers back then took several days to run the model,
+            so the predictions weren't ready in time. Computers these days can run many complicated weather models fast
+            enough to predict the weather reasonably well.</div>
         <div class="takeItFurther">
             <ol type="A">
-                <li>
-                    Here are some possible variations on this simulation that could make it more realistic. Save a copy
-                    of
-                    your work before exploring one or more of these variations:<br />
+                <li> Here are some possible variations on this simulation that could make it more realistic. Save a copy
+                    of your work before exploring one or more of these variations:<br />
                     <ul>
                         <li>Give a probability to being infected when a healthy person encounters a sick person.</li>
                         <li>Let the infected people slow down in speed.</li>
@@ -148,36 +118,26 @@
                 </li>
                 <li>Design and implement a predator-prey simulation in Snap<em>!</em>. For example, you could model an
                     environment with wolf and deer populations where the wolf prey on the deer. What are some parameters
-                    you
-                    need to incorporate into your model so you can simulate realistic fluctuations in the populations of
-                    predator and prey?</li>
-                <li>
-                    Imagine you work at a bank that wants to minimize customer wait times in line. The bank is
-                    considering
-                    two alternatives:
-                    <ul>
+                    you need to incorporate into your model so you can simulate realistic fluctuations in the
+                    populations of predator and prey?</li>
+                <li> Imagine you work at a bank that wants to minimize customer wait times in line. The bank is
+                    considering two alternatives: <ul>
                         <li>a single line where the customers stand in arrival order and wait for the next available
-                            teller,
-                            or</li>
+                            teller, or</li>
                         <li>separate lines for each teller. </li>
-                    </ul>
-                    Design and implement two simulations in Snap<em>!</em>
-                    <!--like the following linked examples (<a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=bjcsolutions&ProjectName=U5L6SingleQueue_Teacher&hideControls" target="_blank">option 1</a>, <a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=bjcsolutions&ProjectName=U5L6MultipleQueues_Teacher&hideControls" target="_blank">option 2</a>)-->
-                    to help the bank determine the <em>average wait time</em> for customers in each scenario in order to
-                    choose the best option.<br />
+                    </ul> Design and implement two simulations in Snap<em>!</em> to help the bank determine the
+                    <em>average wait time</em> for customers in each scenario in order to choose the best option.<br />
                     <img class="indent" src="/bjc-r/img/5-algorithms/img_disease-spread/single-queue.png" height="180"
                         alt="Single queue" title="Single queue" /><img
                         src="/bjc-r/img/5-algorithms/img_disease-spread/multiple-queues.png" height="180"
-                        alt="Multiple queues" title="Multiple queues" />
-                </li>
+                        alt="Multiple queues" title="Multiple queues" /> </li>
             </ol>
         </div>
     </div>
     <div class="full-bottom-bar" style="background-position: 20px 3px;">
-        <div class="bottom-nav btn-group">
-            <a class="btn btn-default backbutton arrow" style="min-width: 90px;" href="H5L2P2.html">Terug</a>
-            <a class="btn btn-default forwardbutton arrow" style="min-width:90px;" href="H5L3P1.html">Volgende</a>
-        </div>
+        <div class="bottom-nav btn-group"> <a class="btn btn-default backbutton arrow" style="min-width: 90px;"
+                href="H5L2P2.html">Terug</a> <a class="btn btn-default forwardbutton arrow" style="min-width:90px;"
+                href="H5L3P1.html">Volgende</a> </div>
     </div>
 </body>
 

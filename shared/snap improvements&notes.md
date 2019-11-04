@@ -61,6 +61,8 @@
 ## Hypothesis
 
 ### Account gegevens
+Groep:
+https://hypothes.is/groups/bVkQ57Vy/infvo-bjoc
 
 Gebruikersnaam: BJOCNL
 Wachtwoord: Beauty$ndJoy
