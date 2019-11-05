@@ -30,7 +30,7 @@ llab.paths.css_files.push('css/default.css');
 // new CSS added for new mainpage only, by Mary 1/26/16
 var url = window.location.pathname;
 if (url.slice(url.search("/bjc-r/")) == "/bjc-r/" || url == "/") {
-    llab.paths.css_files.push('../css/bjc-mainpage.css');
+    //llab.paths.css_files.push('../css/bjc-mainpage.css');
 } else {
     llab.paths.css_files.push('../css/bjc.css');
 }
