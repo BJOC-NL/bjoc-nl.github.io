@@ -37,8 +37,6 @@
 ## Andere vragen/opmerkingen
 
 
-* de "Take It Further" werkt niet meer in H1L4P1, ook in de Engelse. weghalen?
-
 * Vertaalde Projecten hebben nu een letterlijke link naar het project, dit zou netter moeten kunnen, weet niet hoe.
 
 
