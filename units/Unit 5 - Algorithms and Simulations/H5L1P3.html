@@ -4,73 +4,72 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script type="text/javascript" src="../../js+css/llab/loader.js"></script>
-    <title>Unit 5 Lab 1: Algorithms, Page 3</title>
+    <title>Hoofdstuk 5 Les 1: Algorithms, Pagina 3</title>
 </head>
 
 <body>
     <div class="full">
-        <h2>List Processing Algorithms</h2>
+        <h2>Lijst-Verwerkingsalgoritmes</h2>
         <div class="learn">
-            <p> <strong>On this page,</strong> you will test if the elements of a list are <em>distinct</em> (no
-                duplicates).<br /> <img class="indent"
-                    src="/bjc-r/img/5-algorithms/are-numbers-in-list-distinct-reporting.png"
-                    alt="are the numbers of (list {7, 47, 88, 62, 9, 11}) distinct? reporting false"
-                    title="are the numbers of (list {20, 12, 3100, 50, 12}) distinct? reporting false" /> <img
-                    class="indent" src="/bjc-r/img/5-algorithms/are-numbers-in-list-distinct-reporting-true.png"
-                    alt="are the numbers of (list {7, 47, 88, 62, 9, 11}) distinct? reporting false"
-                    title="are the numbers of (list {20, 12, 3100, 50, 12}) distinct? reporting false" /> </p>
+            <p> <strong>On this page,</strong> test je of de elementen van een lijst <em>verschillend</em> zijn (dus
+                dat er geen duplicaten zijn).<br />
+                <img class="indent" src="../../afb/h5/l1/p2b1.png" alt="" title="" />
+                <img class="indent" src="../../afb/h5/l1/p2b2.png" alt="" title="" />
+            </p>
         </div>
-        <p>Suppose you have a list of items and want to know if the elements of the list are <em>distinct</em> (unique).
-            This kind of question pops up frequently: for example, a Web search engine would want to be sure all of the
-            search results are different from each other.</p>
-        <p>Here is one algorithm to solve the problem: <div class="sidenote"> Algorithms can be expressed in natural
-                language or in <em>pseudocode</em>, text that describes the steps a program might carry out. These
-                languages for human understanding may help write the algorithm in a programming language. </div>
-            <ul>
-                <li><strong>Step 1</strong>. Compare the first item of the list with each of the later items in the list
-                    (the second item, the item, etc.). If you see the first item again, report that the numbers <em>are
-                        not</em> distinct (<code>false</code>).</li>
-                <li><strong>Step 2</strong>. If you complete Step 1 without stopping, compare the <em>second</em> item
-                    with each of the later items (the third, the, etc.). If you see the second item again, report that
-                    the numbers <em>are not</em> distinct (<code>false</code>).</li>
-                <li><strong>Step 3</strong>. Repeat Step 2 for each number in the list. Compare that item with each of
-                    the later items in the in the list.</li>
-                <li><strong>Step 4.</strong> If you complete Step 3 without finding any duplicates, report that the
-                    items <em>are</em> distinct (<code>true</code>).</li>
-            </ul>
-        </p>
-        <div class="forYouToDo" id="first">
-            <ol>
-                <li> Build a predicate that implements the above algorithm.<br /> <img class="indent"
-                        src="/bjc-r/img/5-algorithms/distinctelements.png" alt="are the numbers in () distinct?"
-                        title="are the numbers in () distinct?" /> </li>
-                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png"
-                        alt="Talk with Your Partner" title="Talk with Your Partner" /> If you doubled the length of the
-                    list, would this algorithm take the same amount of time? Twice as long? More than twice as long?
-                </li>
-            </ol>
-        </div>
-        <div class="dialogue">
-            <div><span>Alphie:</span> Our predicate tells us if the elements of a list are distinct. I want more.</div>
-            <div><span>Gamal:</span> What would you like?</div>
-            <div><span>Alphie:</span> If there are any duplicates in the list, I'd like to see what they are. That way,
-                I could remove them.</div>
-            <div><span>Betsy:</span> Ok, let's write a reporter that produces the list of duplicates in a list. </div>
-        </div>
-        <div class="forYouToDo">
-            <ol start="3">
-                <li>Build a reporter that returns all the duplicated items in a list:</li> <img class="indent"
-                    src="/bjc-r/img/5-algorithms/dupdisplay.png"
-                    alt="duplicates in (list{3,10,7,3,20,12,7}) reporting {3,7}"
-                    title="duplicates in (list{3,10,7,3,20,12,7}) reporting {3,7}" />
-            </ol>
-        </div>
-        <div class="ifTime">
-            <ol start="4">
-                <li>Build a reporter, <code>remove duplicates</code>, that takes a list as input and reports a new list
-                    that has the same elements as the input list but has no duplicate elements.</li>
-            </ol>
-        </div>
+        <p>Stel dat je een lijst met items hebt en wilt weten of de elementen van de lijst verschillend zijn (uniek).
+            Dit soort vragen komen vaak voor: een webzoekmachine wil bijvoorbeeld zeker weten dat alle zoekresultaten
+            van elkaar verschillen./p>
+            <p>Hier is één algoritme om het probleem op te lossen: <div class="sidenote"> Algoritmen kunnen worden
+                    uitgedrukt in natuurlijke taal of in <em>pseudocode</em>, tekst die de stappen beschrijft die een
+                    programma kan uitvoeren. Deze talen voor menselijk begrip kunnen helpen bij het schrijven van het
+                    algoritme in een programmeertaal. </div>
+                <ul>
+                    <li><strong>Stap 1</strong>. Vergelijk het eerste item van de lijst met elk van de latere items in
+                        de lijst (het tweede item, het item, enz.). Als je het eerste item opnieuw ziet, meld je dat de
+                        cijfers <em>niet verschillend </em> zijn (<code>onwaar</code>).</li>
+                    <li><strong>Stap 2</strong>. Als je stap 1 voltooid hebt zonder te stoppen, vergelijk je het tweede
+                        item met elk van de latere items (de derde, de, enz.). Als u het tweede item opnieuw ziet, meld
+                        je dat de cijfers <em>niet verschillend </em> zijn (<code>onwaar</code>).</li>
+                    <li><strong>Stap 3</strong>. Herhaal stap 2 voor elk nummer in de lijst. Vergelijk dat item met elk
+                        van de latere items in de lijst.</li>
+                    <li><strong>Stap 4.</strong> Als je stap 3 voltooid hebt zonder duplicaten te vinden, rapporteer dan
+                        dat de items verschillend zijn (<code>waar</code>).</li>
+                </ul>
+            </p>
+            <div class="forYouToDo" id="first">
+                <ol>
+                    <li> Bouw een predicaat dat het bovenstaande algoritme implementeert.<br /> <img height="45"
+                            class="indent" src="../../afb/h5/l1/p2b3.png" alt="" title="" /> </li>
+                    <li><img class="inline" src="../../afb/icons/PraatMetJeBuur-mini.png" alt="" title="" />
+                        Als je de lengte van de lijst zou verdubbelen, zou dit algoritme dan evenveel tijd kosten? Twee
+                        keer zo lang? Meer dan twee keer zo lang?
+                </ol>
+            </div>
+            <div class="dialogue">
+                <div><span>Alex:</span> Ons predikaat vertelt ons of de elementen van een lijst verschillend zijn. Ik
+                    wil meer.
+                </div>
+                <div><span>Yasmine:</span> Wat wil je dan?</div>
+                <div><span>Alex:</span> Als er duplicaten in de lijst staan, wil ik graag zien wat ze zijn. Op die
+                    manier kan ik ze verwijderen.</div>
+                <div><span>Bo:</span> Ok, laten we een verslaggever schrijven die de lijst met duplicaten in een lijst
+                    produceert.
+                </div>
+            </div>
+            <div class="forYouToDo">
+                <ol start="3">
+                    <li>Bouw een rapporteur die alle dubbele items in een lijst geeft:</li> <img class="indent"
+                        src="../../afb/h5/l1/p2b4.png" alt="" title="" />
+                </ol>
+            </div>
+            <div class="ifTime">
+                <ol start="4">
+                    <li>Bouw een rapporteur, <code> verwijder duplicaten </code>, die een lijst als invoer gebruiken en
+                        rapporteert een nieuwe lijst met dezelfde elementen als de invoerlijst maar zonder dubbele
+                        elementen.</li>
+                </ol>
+            </div>
     </div>
     <div class="full-bottom-bar" style="background-position: 20px 3px;">
         <div class="bottom-nav btn-group"> <a class="btn btn-default backbutton arrow" style="min-width: 90px;"
