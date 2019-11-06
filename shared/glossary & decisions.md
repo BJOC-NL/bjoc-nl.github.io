@@ -44,6 +44,10 @@ partner - buur
 
 Self-Check - Zelftest
 
+section - paragraaf
+
+paragraph - alinea
+
 ## Snap *!*
 
 to snap - plakken
@@ -142,7 +146,7 @@ This question is similar to those you will see on the AP CSP exam - Met deze vra
 
 Alphie - Alex
 
-Betsy - Robin
+Betsy - Bo
 
 Gamal - Yasmine
 
