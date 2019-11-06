@@ -424,7 +424,7 @@ img.noshadow {
 }
 
 .forYouToDo:before {
-    content: "Voor Jou Om Te Doen";
+    content: "Aan de slag";
 }
 
 /* This had been .forYouToDo#first:before but we changed it for ADA compliance. --MF, 9/26/17 */

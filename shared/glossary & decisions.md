@@ -14,6 +14,8 @@ lab - les
 
 unit - hoofdstuk
 
+screenshot - screenshot
+
 page - pagina
 
 Internet - internet
@@ -21,6 +23,12 @@ Internet - internet
 course - lessen (Throught the course - Tijdens de lessen)
 
 Input - invoer
+
+Alfred/Alphred - Alex
+
+Bertha - Bo
+
+Gamal - Yasmine
 
 slot - veld
 
