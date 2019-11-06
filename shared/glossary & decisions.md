@@ -36,6 +36,10 @@ partner - buur
 
 Self-Check - Zelftest
 
+section - paragraaf
+
+paragraph - alinea
+
 ## Snap *!*
 
 to snap - plakken
