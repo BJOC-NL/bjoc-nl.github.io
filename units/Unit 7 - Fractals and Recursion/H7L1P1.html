@@ -10,19 +10,12 @@
 <body>
     <div class="full">
         <h2>Recursive Tree</h2>
-        <div class="todo">Brian's Notes from late July 2016:
-            <ul>
-                <li>Think about adding to 6.1.1 the sentence "TREE 4 100 should do the same thing as TREE4 100" because
-                    we're really not clear enough about what the level input means.</li>
-            </ul>
-        </div>
-
         <p>The branching pattern on many plants has <strong>fractal</strong> structure: the smaller parts are like
             miniature copies of the whole plant. <br />
-            <div class="sidenoteBig">A <strong>fractal</strong> is an infinite repeating pattern made up of copies (or
-                slight variations) of the same shape. In this picture, the green branch is (essentially) the same shape
-                as
-                the entire picture.</div>
+            <div class="sidenoteBig">Een <strong>fractaal</strong> is een patroon dat zich oneindig herhaald. Het
+                bestaat uit meerdere
+                kopieën of kleine variaties van dezelfde vorm. In deze afbeelding heeft de groene tak ongeveer dezelfde
+                vorm als het hele plaatje.</div>
             <img class="noshadow" src="/bjc-r/img/7-recursion/greentree.gif" alt="Geen Afbeelding" /><br />
             In this lab, you will build a tree using <em>blocks within blocks</em> to create the branches. Each branch
             will
@@ -34,83 +27,80 @@
                 <div class="newProject"> <span class="text">"U7L1-Tree"</span><img
                         src="/bjc-r/img/icons/new-project-called.png" alt="Geen Afbeelding" /></div>
                 <li>
-                    Building the first level:
+                    Bouw het eerste niveau:
                     <ol>
                         <li>
-                            Build this <img src="/bjc-r/img/7-recursion/tree-1.png" alt="Geen Afbeelding"> block: <br />
+                            Maak dit <img src="/bjc-r/img/7-recursion/tree-1.png" alt="Geen Afbeelding"> blok: <br />
                             <img class="indent" src="/bjc-r/img/7-recursion/tree1.png" alt="Geen Afbeelding" /><br />
-                            <div class="comment">PG: suggest redoing images so that the title is <code>tree 1 size:
-                                    (size)</code>, so that it later changes the hard coded numbers into a variable
-                                <code>tree (level) size: (size)</code>. Then text needs to be brought in line.</div>
-                            This looks ridiculously simple, but it'll get more interesting soon.
+                            Dit ziet er lachwekkend simpel uit, maar het wordt straks interessanter.
                         </li>
                         <li>
-                            Point the sprite up, put the pen down, and run <img
-                                src="/bjc-r/img/7-recursion/tree-1(50).png" alt="Geen Afbeelding">. You should get a
-                            result like this: <br />
+                            Laat de sprite naar boven wijzen, zet de pen neer en voer <img
+                                src="/bjc-r/img/7-recursion/tree-1(50).png" alt="Geen Afbeelding"> uit.
+                            Het resultaat zou dit moeten zijn: <br />
                             <img class="indent" src="/bjc-r/img/7-recursion/tree-level1.png" alt="Geen Afbeelding" />
                         </li>
                         <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png"
-                                alt="Geen Afbeelding" /> Where does your sprite start?
-                            In what direction is it facing? Where does it stop?</li>
+                                alt="Geen Afbeelding" /> Waar begint je sprite? Welke kant wijst hij op? Waar stopt hij?
+                        </li>
                     </ol>
                 </li>
                 <div class="sidenote">Using <code>tree 1</code> to draw the branches in <code>tree 2</code> is using
                     <em>abstraction</em>.</div>
 
-                <li>Build <img src="/bjc-r/img/7-recursion/tree-2.png" alt="Geen Afbeelding">
-                    that
-                    uses <img src="/bjc-r/img/7-recursion/tree-1(50).png" alt="Geen Afbeelding">
-                    as its branches.<br /><img class="indent" src="/bjc-r/img/7-recursion/tree2.png"
+                <li>Bouw
+                    <img src="/bjc-r/img/7-recursion/tree-2.png" alt="Geen Afbeelding">
+                    die gebruikt maakt van
+                    <img src="/bjc-r/img/7-recursion/tree-1(50).png" alt="Geen Afbeelding">
+                    voor z'n zijtakken.<br /><img class="indent" src="/bjc-r/img/7-recursion/tree2.png"
                         alt="Geen Afbeelding" />
                 </li>
-                <li>Describe exactly the position and direction of the sprite when the first <code>tree 1</code> stops
-                    running. Why is that essential for <code>tree 2</code> to work?</li>
+                <li>Schrijf de exacte plaats en richting op van de sprite op het moment dat de eerste <code>boom 1
+                    </code> stopt. Waarom is dat belangrijk voor <code> boom 2 </code> om te werken?</li>
             </ol>
         </div>
 
-        <div class="takeNote"><strong>State transparency</strong>—putting everything (sprite, pen, etc.) back exactly as
-            it
-            was when you started—is important when blocks depend on other blocks. Usually, this means returning the
-            sprite
-            to the same position and direction, and the pen to the same color and size, as they were.</div>
-        <div class="comment">Paul and Mary want to use copy and paste here.</div>
+        <div class="takeNote"><strong>Staat-transparantie</strong> - alles (sprite, pen, enzovoort) precies terugzetten
+            zoals aan het begin - is belangrijk als je blok afhankelijk is van andere blokken. Meestal betekent dit dat
+            je de sprite op dezelfde plek en richting moet terugzetten en de pen op dezelfde kleur en grootte als aan
+            het begin.</div>
         <div class="forYouToDo">
             <ol start="4">
 
-                <li>Make a <code>tree 3</code> block that uses the <code>tree 2</code> block as branches.</li>
-
-                <li>Make a <code>tree 4</code> block that uses the <code>tree 3</code> block as branches.</li>
+                <li>Maak een <code>boom 3</code>blok dat het <code>boom 2</code>blok gebruikt als zijtakken.</li>
+                <li>Maak een <code>boom 4</code>blok dat het <code>boom 3</code>blok gebruikt als zijtakken.</li>
 
                 <li>
-                    If you like, make a <code>tree 5</code> block that uses the <code>tree 4</code> block. Running <img
-                        src="/bjc-r/img/7-recursion/tree-5(50).png" alt="Geen Afbeelding">
-                    should
-                    produce a result like this:<br />
+                    Als je het leuk vindt, maak dan ook een <code>boom 5</code>blok waarin je het
+                    <code>boom 4</code>blok gebruikt.
+                    <img src="/bjc-r/img/7-recursion/tree-5(50).png" alt="Geen Afbeelding">
+                    uitvoeren moet het volgende resultaat leveren::<br />
                     <img class="indent" src="/bjc-r/img/7-recursion/tree5.png" alt="Geen Afbeelding" />
                     <img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Geen Afbeelding" />
                 </li>
             </ol>
         </div>
 
-        <p>These blocks all look essentially the same except that <code>tree 5</code> uses <code>tree 4</code>, while
-            <code>tree 4</code> uses <code>tree 3</code>, and so on. So it makes sense to wonder if we can replace all
-            these
-            blocks with a single <code>tree</code> block, using a variable for the number that changes. </p>
-        <div class="takeNote">Using a block inside of itself is called <strong>recursion</strong>.</div>
+        <p> Deze blokken zien er allemaal hetzelfde uit, behalve dat <code>boom 5</code> gebruik maakt van
+            <code>boom 4</code>, terwijl <code>boom 4</p>code> gebruik maakt van <code>boom 3</code>, enzovoorts. We
+        kunnen ons afvragen of we al deze blokken kunnen vervangen door een enkel boomblok, waarbij een parameter het
+        veranderende aantal aangeeft.
+        </p>
+        <div class="takeNote"> Als je een blok in zichzelf gebruikt, heet dat <strong>recursie</strong>.
+        </div>
 
         <div class="forYouToDo">
             <ol start="7">
-                <li>
-                    This is the general idea for the <em>recursive</em> version of <code>tree</code>. Build it:<br />
+                <li>Hier zie je het algemene idee voor de <em>recursieve</em> recursieve versie van <code>boom</code>.
+                    Maak dit zelf:<br />
                     <img class="indent" src="/bjc-r/img/7-recursion/tree-nobase.png" alt="Geen Afbeelding" />
                 </li>
                 <li>
-                    Now run <code>tree level: 9 size: 50</code>. It doesn't work yet. All you see is: <br />
+                    Voer nu <code>boom niveau 9 grootte: 50</code> uit. Het werkt nog niet. Dit is wat je ziet: <br />
                     <img class="indent" src="/bjc-r/img/7-recursion/treebug.gif" alt="Geen Afbeelding" />
                 </li>
-                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Geen Afbeelding" /> Try
-                    to debug the script. What's going wrong?</li>
+                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Geen Afbeelding" />
+                    Probeer de fout in het script te vinden. Wat gaat er mis?</li>
             </ol>
         </div>
     </div>
