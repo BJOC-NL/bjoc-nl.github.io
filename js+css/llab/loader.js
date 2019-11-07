@@ -5,6 +5,23 @@ script.type = 'text/javascript';
 document.getElementsByTagName('head')[0].appendChild(script);
 document.getElementsByTagName('head')[0].async = true
 
+
+window.hypothesisConfig = function () {
+    return {
+        "showHighlights": false,
+        branding: {
+            appBackgroundColor: '#eee',
+            accentColor: 'black    ',
+            ctaBackgroundColor: 'grey',
+            ctaTextColor: 'white',
+            selectionFontFamily: 'arial, sans serif',
+            annotationFontFamily: 'arial, sans serif'
+        }
+
+    };
+};
+
+
 // Polyfills for older browsers
 if (!String.prototype.endsWith) {
     Object.defineProperty(String.prototype, 'endsWith', {
