@@ -7,36 +7,29 @@
     <title>Unit 5 Lab 3: Timing Experiments, Page 3</title>
 </head>
 
-
 <body>
     <h2>Classifying Algorithms</h2>
     <div class="learn">
         <p><strong>On this page</strong>, you will learn that some correct algorithms take too long to be practical.</p>
     </div>
-
     <div class="forYouToDo" id="first">
         <ol>
-            <li>
-                If it isn't already open, load the project U5L3-timer from the previous page. You will be experimenting
-                with <code>time function</code> with each of these input functions:
-                <ul>
+            <li> If it isn't already open, load the project U5L3-timer from the previous page. You will be experimenting
+                with <code>time function</code> with each of these input functions: <ul>
                     <li><img src="/bjc-r/img/3-lists/U3ImageVideoAddendum_img/Graph datapoints.png" height="40"
-                            alt="Graph datapoints: ()" title="Graph datapoints: ()" /> (as you saw on <a
-                            href="/bjc-r/cur/programming/3-lists/4-graphing/2-building-a-grapher.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc.html&novideo&noassignment"
-                            title="Unit 3 Lab 4: Building a Graphing App">Unit 3 Lab 4: Building a Graphing App</a>)
-                    </li>
-                    <li><img src="/bjc-r/img/5-algorithms/distinctelements.png" alt="are the numbers in () distinct?"
-                            title="are the numbers in () distinct?" /> (as you saw on <a
-                            href="/bjc-r/cur/programming/5-algorithms/1-searching-lists/3-comparing-search-algorithms.html?topic=nyc_bjc%2F5-algorithms.topic"
-                            title="Unit 5 Lab 1: List Processing Algorithms">Unit 5 Lab 1: List Processing
-                            Algorithms</a>)</li>
-                    <li><img class="" src="/bjc-r/img/5-algorithms/numbers-from-to.png" alt="numbers from () to ()"
-                            title="numbers from () to ()" /> (as you saw on <a
-                            href="/bjc-r/cur/programming/5-algorithms/3-timing-experiments/1-comparing-algorithms.html?topic=nyc_bjc%2F5-algorithms.topic"
-                            title="Unit 5 Lab 3: Comparing Algorithms">Unit 5 Lab 3: Comparing Algorithms</a>)</li>
-                </ul>
-                For each one, what happens to the running time if you double the size of the input?
-                <div class="endnote">What does it mean to double the size of the input for <code>numbers from () to
+                            alt="Geen Afbeelding" /> (as you saw on <a
+                            href="/bjc-r/cur/programming/3-lists/4-graphing/2-building-a-grapher.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc.html&novideo&noassignment">Unit
+                            3 Lab 4: Building a Graphing App</a>) </li>
+                    <li><img src="/bjc-r/img/5-algorithms/distinctelements.png" alt="Geen Afbeelding" /> (as you saw on
+                        <a
+                            href="/bjc-r/cur/programming/5-algorithms/1-searching-lists/3-comparing-search-algorithms.html?topic=nyc_bjc%2F5-algorithms.topic">Unit
+                            5 Lab 1: List Processing Algorithms</a>)</li>
+                    <li><img class="" src="/bjc-r/img/5-algorithms/numbers-from-to.png" alt="Geen Afbeelding" /> (as you
+                        saw on <a
+                            href="/bjc-r/cur/programming/5-algorithms/3-timing-experiments/1-comparing-algorithms.html?topic=nyc_bjc%2F5-algorithms.topic">Unit
+                            5 Lab 3: Comparing Algorithms</a>)</li>
+                </ul> For each one, what happens to the running time if you double the size of the input? <div
+                    class="endnote">What does it mean to double the size of the input for <code>numbers from () to
                         ()</code>?</div>
             </li>
         </ol>
@@ -44,40 +37,26 @@
     <p>You can classify algorithms by the amount of time they take to run.</p>
     <div class="forYouToDo">
         <ol start="2">
-            <li>
-                <a class="run" href="/bjc-r/prog/5-algorithms/U5L3-listfrom.xml" target="_blank"><img class="inline"
-                        src="/bjc-r/img/icons/load-save.png"
-                        alt="Click here to load this file. Then save it to your Snap! account."
-                        title="Click here to load this file. Then save it to your Snap! account."></a><br />Use the <img
-                    src="/bjc-r/img/5-algorithms/listfrom.png" alt="list from () to ()" title="list from () to ()" />
-                block to build the following two blocks in Snap<em>!</em>. Then, determine which block's algorithm can
-                be executed in a reasonable time, and which cannot.
-                <div class="sidenote">The list of 2-digit numbers goes from 10 to 99. There's a math operations block
-                    that can give you powers of 10.</div>
+            <li> <a class="run" href="/bjc-r/prog/5-algorithms/U5L3-listfrom.xml" target="_blank"><img class="inline"
+                        src="/bjc-r/img/icons/load-save.png" alt="Geen Afbeelding"></a><br />Use the <img
+                    src="/bjc-r/img/5-algorithms/listfrom.png" alt="Geen Afbeelding" /> block to build the following two
+                blocks in Snap<em>!</em>. Then, determine which block's algorithm can be executed in a reasonable time,
+                and which cannot. <div class="sidenote">The list of 2-digit numbers goes from 10 to 99. There's a math
+                    operations block that can give you powers of 10.</div>
                 <ol>
-                    <li><img src="/bjc-r/img/5-algorithms/1000numbers.png" alt="1000 numbers starting from ()"
-                            title="1000 numbers starting from ()" /></li>
-                    <li><img src="/bjc-r/img/5-algorithms/digitnumbers.png" alt="all () digit numbers"
-                            title="all () digit numbers" /></li>
+                    <li><img src="/bjc-r/img/5-algorithms/1000numbers.png" alt="Geen Afbeelding" /></li>
+                    <li><img src="/bjc-r/img/5-algorithms/digitnumbers.png" alt="Geen Afbeelding" /></li>
                 </ol>
             </li>
         </ol>
     </div>
-
-
-    <p>
-        To classify an algorithm, look at the number of steps it takes to complete the algorithm, compared to the size
-        of the input.
-        <ul>
-            <li>
-                <strong>Reasonable Time:</strong> If the number of steps is less than or equal to a power of the size of
-                the input, then the algorithm takes <em>polynomial time</em>.
-                <p>
-                    <em>Polynomial time</em> includes constant (<em>n</em><sup>0</sup>), sublinear, linear
-                    (<em>n</em><sup>1</sup>), quadratic (<em>n</em><sup>2</sup>), cubic (<em>n</em><sup>3</sup>), etc.
-                    functions:
-
-                    <table class="bordered" summary="list of several reasonable time efficiencies">
+    <p> To classify an algorithm, look at the number of steps it takes to complete the algorithm, compared to the size
+        of the input. <ul>
+            <li> <strong>Reasonable Time:</strong> If the number of steps is less than or equal to a power of the size
+                of the input, then the algorithm takes <em>polynomial time</em>. <p> <em>Polynomial time</em> includes
+                    constant (<em>n</em><sup>0</sup>), sublinear, linear (<em>n</em><sup>1</sup>), quadratic
+                    (<em>n</em><sup>2</sup>), cubic (<em>n</em><sup>3</sup>), etc. functions: <table class="bordered"
+                        summary="list of several reasonable time efficiencies">
                         <tr>
                             <th scope="col" style="width:20%;">algorithm efficiency</th>
                             <th scope="col" style="width:40%;">If you double the size of input,<br />the time... </th>
@@ -113,27 +92,20 @@
                 <p>It's rare to find polynomial time algorithms that take more than cubic (<em>n</em><sup>3</sup>) time.
                 </p>
                 <div class="endnote">
-                    <p><a href="#hint-between-categories" data-toggle="collapse" title="">What if algorithm takes an
-                            amount of time that's <em>between</em> two categories?</a></p>
+                    <p><a href="#hint-between-categories" data-toggle="collapse">What if algorithm takes an amount of
+                            time that's <em>between</em> two categories?</a></p>
                     <div id="hint-between-categories" class="collapse">These categories say that an algorithm takes
                         <em>at most</em> so much time. So, for example, a constant-time algorithm is also a linear-time
-                        algorithm, and also a polynomial-time algorithm
-                        . But <em>usually</em> if someone says an
+                        algorithm, and also a polynomial-time algorithm . But <em>usually</em> if someone says an
                         algorithm "takes quadratic time," they mean that it takes <em>more than</em> linear time but
                         <em>not more than</em> quadratic time.</div>
                 </div>
             </li>
-            <li>
-                <strong>Unreasonable Time:</strong> If the number of steps is more than any power of the size of the
-                input (that is, more than any polynomial function
-                ), then the algorithm takes an
-                <em>unreasonable</em> amount of time.
-                <div class="endnote">The classic example of an <em>unreasonable time</em> algorithm is one that takes
-                    <em>exponential</em> (2<sup><em>n</em></sup>) <em>time</em>. Just <em>adding 1</em> to the input
-                    size (<em>n</em>) <em>doubles</em> the number of steps!
-
-                </div>
-
+            <li> <strong>Unreasonable Time:</strong> If the number of steps is more than any power of the size of the
+                input (that is, more than any polynomial function ), then the algorithm takes an <em>unreasonable</em>
+                amount of time. <div class="endnote">The classic example of an <em>unreasonable time</em> algorithm is
+                    one that takes <em>exponential</em> (2<sup><em>n</em></sup>) <em>time</em>. Just <em>adding 1</em>
+                    to the input size (<em>n</em>) <em>doubles</em> the number of steps! </div>
                 <p>One kind of problem whose solution often ends up unreasonable is an <em>optimization</em> problem
                     (such as "find the best" or "find the smallest"). </p>
             </li>
@@ -148,15 +120,12 @@
         when you're writing a program that needs to search through a list repeatedly, you'll know that it's worthwhile
         to sort the list before the searching. Knowing about standard algorithms that already exist can help you
         construct new algorithms.</p>
-
-
     <div class="forYouToDo">
         <ol start="3">
             <li>Look at some algorithms you've built. Determine whether each algorithm runs in constant time, sublinear
                 time, linear time, quadratic time, or unreasonable time.</li>
         </ol>
     </div>
-
     <div class="ifTime">
         <ol start="4">
             <li>For Alphie's way of adding integers, create a graph with the number of integers on the horizontal and
@@ -169,15 +138,11 @@
     </div>
     <div class="forYouToDo">
         <ol start="6">
-            <li>
-                This question is similar to those you will see on the AP CSP exam.
-
-                <div class="assessment-data" type="multiplechoice" identifier="Timing of database tasks"
-                    hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri1" shuffle="true">
-                    <div class="prompt">
-                        The table below shows the computer time it takes to complete various tasks on the data of
-                        different sized towns.
-                        <p>
+            <li> This question is similar to those you will see on the AP CSP exam. <div class="assessment-data"
+                    type="multiplechoice" identifier="Timing of database tasks" hasinlinefeedback="true" maxchoices="1"
+                    responseIdentifier="ri1" shuffle="true">
+                    <div class="prompt"> The table below shows the computer time it takes to complete various tasks on
+                        the data of different sized towns. <p>
                             <table class="bordered"
                                 summary="hours required for various data management tasks for towns of various sizes">
                                 <tr>
@@ -211,44 +176,32 @@
                                     <td>100 hours</td>
                                 </tr>
                             </table>
-                        </p>
-                        Based on the information in the table, which of the following tasks is likely to take the
+                        </p> Based on the information in the table, which of the following tasks is likely to take the
                         <em><strong>longest</strong></em> amount of time when scaled up for a city of population
-                        1,000,000.
-                    </div>
+                        1,000,000. </div>
                     <div class="choice" identifier="c1">
                         <div class="text">Entering data</div>
-                        <div class="feedback">
-
-                            As the population size is multiplied by 10, the time needed for entering data is also
-                            multiplied by 10, so for a population of 1,000,000, it should take about 10&times;200=2000
-                            hours.
-                        </div>
+                        <div class="feedback"> As the population size is multiplied by 10, the time needed for entering
+                            data is also multiplied by 10, so for a population of 1,000,000, it should take about
+                            10&times;200=2000 hours. </div>
                     </div>
                     <div class="choice" identifier="c2">
                         <div class="text">Backing up data</div>
-                        <div class="feedback">
-
-                            As the population size is multiplied by 10, time needed for backing up data is multiplied by
-                            10, so for a population of 1,000,000, it should take about 10&times;50=500 hours.
-                        </div>
+                        <div class="feedback"> As the population size is multiplied by 10, time needed for backing up
+                            data is multiplied by 10, so for a population of 1,000,000, it should take about
+                            10&times;50=500 hours. </div>
                     </div>
                     <div class="choice" identifier="c3">
                         <div class="text">Searching through data</div>
-                        <div class="feedback">
-                            Searching through the data seems to go up by about 10 hours each time the population is
-                            multiplied by 10, so for a population of 1,000,000, it should take about 35 hours.
-                        </div>
+                        <div class="feedback"> Searching through the data seems to go up by about 10 hours each time the
+                            population is multiplied by 10, so for a population of 1,000,000, it should take about 35
+                            hours. </div>
                     </div>
                     <div class="choice" identifier="c4">
                         <div class="text">Sorting data</div>
-                        <div class="feedback">
-                            Correct!
-
-                            As the population size is multiplied by 10, the time needed for the sorting of data is
-                            multiplied by 100. So, for a population of 1,000,000, it should take about
-                            100&times;100=10,000 hours.
-                        </div>
+                        <div class="feedback"> Correct! As the population size is multiplied by 10, the time needed for
+                            the sorting of data is multiplied by 100. So, for a population of 1,000,000, it should take
+                            about 100&times;100=10,000 hours. </div>
                     </div>
                     <div class="responseDeclaration" identifier="ri1">
                         <div class="correctResponse" identifier="c4"></div>
@@ -265,7 +218,6 @@
                 href="H5L3P2.html">Terug</a> <a class="btn btn-default forwardbutton arrow" style="min-width:90px;"
                 href="H5L4P1.html">Volgende</a> </div>
     </div>
-
 </body>
 
 </html>
