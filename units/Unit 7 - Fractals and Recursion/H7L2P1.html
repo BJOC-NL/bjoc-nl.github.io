@@ -15,20 +15,17 @@
                 (sher-PIN-ski) gasket</a>." </div>
         <p>
             <br />
-            <img class="indent noshadow" src="/bjc-r/img/7-recursion/triangle-fractal.gif" alt="Geen Afbeelding"
-                title="triangle fractal animation levels 1 to 8" />
+            <img class="indent noshadow" src="/bjc-r/img/7-recursion/triangle-fractal.gif" alt="Geen Afbeelding" />
         </p>
         <div class="forYouToDo" id="first">
             <ol>
                 <div class="newProject"><span class="text">"U7L2-TriangleFractal"</span><img
-                        src="/bjc-r/img/icons/new-project-called.png" alt="Geen Afbeelding"
-                        title="Create a new project called U7L2-TriangleFractal" /></div>
+                        src="/bjc-r/img/icons/new-project-called.png" alt="Geen Afbeelding" /></div>
                 <li>
                     First, write a block that takes a <var>size</var> as input and draws an equilateral triangle.<br />
-                    <img class="indent" src="/bjc-r/img/7-recursion/triangle-size-40.png" alt="Geen Afbeelding"
-                        title="triangle size: (40)" />
-                    <img class="indent" src="/bjc-r/img/7-recursion/triangle-size-40-drawing.jpg" alt="Geen Afbeelding"
-                        title="triangle size: (40) drawing" />
+                    <img class="indent" src="/bjc-r/img/7-recursion/triangle-size-40.png" alt="Geen Afbeelding" />
+                    <img class="indent" src="/bjc-r/img/7-recursion/triangle-size-40-drawing.jpg"
+                        alt="Geen Afbeelding" />
                 </li>
 
             </ol>
@@ -38,39 +35,33 @@
         <p>
             <code>triangle</code> is the base case. You can modify it, or create a new block with <var>level</var> and
             <var>size</var> inputs just like <code>tree</code>:<br />
-            <img class="indent" src="/bjc-r/img/7-recursion/tri-frac-1-head.png" alt="Geen Afbeelding"
-                title="triangle fractal level: (level #) size: (size #)" />
+            <img class="indent" src="/bjc-r/img/7-recursion/tri-frac-1-head.png" alt="Geen Afbeelding" />
         </p>
         <p>
             If the level is 1, we should see only the triangle:<br />
-            <img class="indent noshadow" src="/bjc-r/img/7-recursion/tri-frac-1-level-1.png" alt="Geen Afbeelding"
-                title="Triangle fractal level 1 drawing: basic triangle" />
+            <img class="indent noshadow" src="/bjc-r/img/7-recursion/tri-frac-1-level-1.png" alt="Geen Afbeelding" />
         </p>
         <div class="comment">Paul, do you not like my click-for-comment on principle? --bh</div>
         <p>
             Otherwise, a half-size child buds at the end of each side of the parent. At level 2, it should look like
             this:<br />
-            <img class="indent noshadow" src="/bjc-r/img/7-recursion/tri-frac-1-level-2.png" alt="Geen Afbeelding"
-                title="Triangle fractal level 2 drawing: triangle with 3 smaller triangles on its vertices" />
+            <img class="indent noshadow" src="/bjc-r/img/7-recursion/tri-frac-1-level-2.png" alt="Geen Afbeelding" />
         </p>
         <p>
             And at level 3, you should see this:<br />
-            <img class="indent noshadow" src="/bjc-r/img/7-recursion/tri-frac-1-level-3.png" alt="Geen Afbeelding"
-                title="Triangle fractal level 3 drawing: triangle with 3 smaller triangles on its vertices each of which in turn have 3 smaller triangles on their vertices" />
+            <img class="indent noshadow" src="/bjc-r/img/7-recursion/tri-frac-1-level-3.png" alt="Geen Afbeelding" />
         </p>
 
         <div class="forYouToDo">
             <ol start="2">
-                <li><img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Geen Afbeelding"
-                        title="Talk with Your Partner" />
+                <li><img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Geen Afbeelding" />
                     Write the code for <code>triangle fractal</code>.</li>
                 <li>Using a <code>warp</code> block (to save time) try a big level number, like 8 or 9.</li>
                 <div class="endnote">
                     The <code>warp</code> block (in the yellow Control palette) makes the scripts inside it run faster
                     by
                     not letting any other scripts run or updating the display until it's finished.<br />
-                    <img class="indent" src="/bjc-r/img/7-recursion/tri-frac-1-in-warp.png" alt="Geen Afbeelding"
-                        title="warp{triangle fractal level:(9) size:(100)}" />
+                    <img class="indent" src="/bjc-r/img/7-recursion/tri-frac-1-in-warp.png" alt="Geen Afbeelding" />
                 </div>
             </ol>
         </div>
@@ -84,14 +75,11 @@
                 <li>
                     Try some modifications like these:<br />
                     <img class="indent" src="/bjc-r/img/7-recursion/triangle-fractal-variation01.png"
-                        alt="Geen Afbeelding"
-                        title="repeat(3){move(size) steps; turn clockwise (120) degrees; triangle fractal level:(level-1) size:(size*0.5)}" />
+                        alt="Geen Afbeelding" />
                     <img class="indent" src="/bjc-r/img/7-recursion/triangle-fractal-variation02.png"
-                        alt="Geen Afbeelding"
-                        title="repeat(3){move(size) steps; turn clockwise (120) degrees; triangle fractal level:(level-1) size:(size*0.5); turn clockwise(60) degrees}" />
+                        alt="Geen Afbeelding" />
                     <img class="indent" src="/bjc-r/img/7-recursion/triangle-fractal-variation03.png"
-                        alt="Geen Afbeelding"
-                        title="repeat(3){move(size) steps; turn counter-clockwise (30) degrees; triangle fractal level:(level-1) size:(size*0.5); turn clockwise(150) degrees}" />
+                        alt="Geen Afbeelding" />
                 </li>
             </ol>
         </div>

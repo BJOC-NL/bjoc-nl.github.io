@@ -23,8 +23,7 @@
                 slight variations) of the same shape. In this picture, the green branch is (essentially) the same shape
                 as
                 the entire picture.</div>
-            <img class="noshadow" src="/bjc-r/img/7-recursion/greentree.gif" alt="Geen Afbeelding"
-                title="fractal tree" /><br />
+            <img class="noshadow" src="/bjc-r/img/7-recursion/greentree.gif" alt="Geen Afbeelding" /><br />
             In this lab, you will build a tree using <em>blocks within blocks</em> to create the branches. Each branch
             will
             be a smaller copy of essentially the same tree.
@@ -33,16 +32,13 @@
         <div class="forYouToDo" id="first">
             <ol>
                 <div class="newProject"> <span class="text">"U7L1-Tree"</span><img
-                        src="/bjc-r/img/icons/new-project-called.png" alt="Geen Afbeelding"
-                        title="Start a New Project called U7L1-Tree" /></div>
+                        src="/bjc-r/img/icons/new-project-called.png" alt="Geen Afbeelding" /></div>
                 <li>
                     Building the first level:
                     <ol>
                         <li>
-                            Build this <img src="/bjc-r/img/7-recursion/tree-1.png" alt="Geen Afbeelding"
-                                title="tree 1 size:()"> block: <br />
-                            <img class="indent" src="/bjc-r/img/7-recursion/tree1.png" alt="Geen Afbeelding"
-                                title="tree 1 size:(size#){move(size) steps; move(-1*size) steps}" /><br />
+                            Build this <img src="/bjc-r/img/7-recursion/tree-1.png" alt="Geen Afbeelding"> block: <br />
+                            <img class="indent" src="/bjc-r/img/7-recursion/tree1.png" alt="Geen Afbeelding" /><br />
                             <div class="comment">PG: suggest redoing images so that the title is <code>tree 1 size:
                                     (size)</code>, so that it later changes the hard coded numbers into a variable
                                 <code>tree (level) size: (size)</code>. Then text needs to be brought in line.</div>
@@ -50,26 +46,23 @@
                         </li>
                         <li>
                             Point the sprite up, put the pen down, and run <img
-                                src="/bjc-r/img/7-recursion/tree-1(50).png" alt="Geen Afbeelding"
-                                title="tree 1 size:(50)">. You should get a result like this: <br />
-                            <img class="indent" src="/bjc-r/img/7-recursion/tree-level1.png" alt="Geen Afbeelding"
-                                title="tree1 result: Trunk of tree drawn" />
+                                src="/bjc-r/img/7-recursion/tree-1(50).png" alt="Geen Afbeelding">. You should get a
+                            result like this: <br />
+                            <img class="indent" src="/bjc-r/img/7-recursion/tree-level1.png" alt="Geen Afbeelding" />
                         </li>
                         <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png"
-                                alt="Geen Afbeelding" title="Talk with Your Partner" /> Where does your sprite start?
+                                alt="Geen Afbeelding" /> Where does your sprite start?
                             In what direction is it facing? Where does it stop?</li>
                     </ol>
                 </li>
                 <div class="sidenote">Using <code>tree 1</code> to draw the branches in <code>tree 2</code> is using
                     <em>abstraction</em>.</div>
 
-                <li>Build <img src="/bjc-r/img/7-recursion/tree-2.png" alt="Geen Afbeelding" title="tree 2 size:()">
+                <li>Build <img src="/bjc-r/img/7-recursion/tree-2.png" alt="Geen Afbeelding">
                     that
-                    uses <img src="/bjc-r/img/7-recursion/tree-1(50).png" alt="Geen Afbeelding"
-                        title="tree 1 size:(50)">
+                    uses <img src="/bjc-r/img/7-recursion/tree-1(50).png" alt="Geen Afbeelding">
                     as its branches.<br /><img class="indent" src="/bjc-r/img/7-recursion/tree2.png"
-                        alt="Geen Afbeelding"
-                        title="tree2 size:(size#){move(size) steps; turn counterclockwise (25) degrees; tree 1 size:(size*0.65); turn clockwise(25) degrees; turn clockwise(35) degrees; tree 1 size:(size*0.85); turn counterclockwise (35); move(-1*size) steps}" />
+                        alt="Geen Afbeelding" />
                 </li>
                 <li>Describe exactly the position and direction of the sprite when the first <code>tree 1</code> stops
                     running. Why is that essential for <code>tree 2</code> to work?</li>
@@ -91,13 +84,11 @@
 
                 <li>
                     If you like, make a <code>tree 5</code> block that uses the <code>tree 4</code> block. Running <img
-                        src="/bjc-r/img/7-recursion/tree-5(50).png" alt="Geen Afbeelding" title="tree 5 size:(50)">
+                        src="/bjc-r/img/7-recursion/tree-5(50).png" alt="Geen Afbeelding">
                     should
                     produce a result like this:<br />
-                    <img class="indent" src="/bjc-r/img/7-recursion/tree5.png" alt="Geen Afbeelding"
-                        title="tree5 result: Tree with trunk and branches" />
-                    <img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Geen Afbeelding"
-                        title="Now Is a Good Time to Save" />
+                    <img class="indent" src="/bjc-r/img/7-recursion/tree5.png" alt="Geen Afbeelding" />
+                    <img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Geen Afbeelding" />
                 </li>
             </ol>
         </div>
@@ -112,16 +103,14 @@
             <ol start="7">
                 <li>
                     This is the general idea for the <em>recursive</em> version of <code>tree</code>. Build it:<br />
-                    <img class="indent" src="/bjc-r/img/7-recursion/tree-nobase.png" alt="Geen Afbeelding"
-                        title="tree level:(level#) size:(size#){move(size) steps; turn counterclockwise (25) degrees; tree level:(level-1) size:(size*0.65); turn clockwise(25) degrees; turn clockwise(35) degrees; tree level:(level-1) size:(size*0.85); turn counterclockwise (35); move(-1*size) steps}" />
+                    <img class="indent" src="/bjc-r/img/7-recursion/tree-nobase.png" alt="Geen Afbeelding" />
                 </li>
                 <li>
                     Now run <code>tree level: 9 size: 50</code>. It doesn't work yet. All you see is: <br />
-                    <img class="indent" src="/bjc-r/img/7-recursion/treebug.gif" alt="Geen Afbeelding"
-                        title="Tree drawing never terminates, stuck at a single branch" />
+                    <img class="indent" src="/bjc-r/img/7-recursion/treebug.gif" alt="Geen Afbeelding" />
                 </li>
-                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Geen Afbeelding"
-                        title="Talk with Your Partner" /> Try to debug the script. What's going wrong?</li>
+                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Geen Afbeelding" /> Try
+                    to debug the script. What's going wrong?</li>
             </ol>
         </div>
     </div>
