@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="../../js+css/llab/loader.js"></script>
+    <title>Unit 7 Lab 1: Trees in a Forest, Page 4</title>
+    <!--This should be removed in the next revision. Please don't embed CSS on lab pages. --MF, 7/7/17-->
+    <style>
+        div.leftColumn {
+            width: 95% !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="full">
+        <h2>Self-Check: <code>Tree</code> Variations</h2>
+        <p>We took this recursive <code>tree</code> version and changed it in different ways. Your goal is to figure out
+            what we changed in the code. The original code and picture are shown below:<br />
+            <img class="indent" src="/bjc-r/img/7-recursion/quiztree.png" alt="Geen Afbeelding"
+                title="tree level:(level#) size:(size#){if(level=1){move(size) steps; move(-1*size) steps}else{move(size) steps; turn counterclockwise (15) degrees; tree level:(level-1) size:(size*0.75); turn clockwise(15) degrees; turn clockwise(15) degrees; tree level:(level-1) size:(size*0.75); turn counterclockwise (15); move(-1*size) steps}}" />
+            <img class="indent noshadow" src="/bjc-r/img/7-recursion/tree-level5.jpg" alt="Geen Afbeelding"
+                title="tree level: (5) size: (100)-Upwards facing tree with trunk and four levels of branches" />
+        </p>
+
+        <!-- Question 1 -->
+        <div class="assessment-data" type="multiplechoice" identifier="asymmetric" hasinlinefeedback="true"
+            maxchoices="1" responseIdentifier="ri1" shuffle="false">
+
+            <div class="prompt">
+                <img class="imageRight noshadow" src="/bjc-r/img/7-recursion/tree-variation-slanted.jpg"
+                    alt="Geen Afbeelding" title="Tree with trunk and four levels of branches swaying to the left" />
+                <p>
+                    Choose one:
+                </p>
+            </div>
+
+            <div class="choice" identifier="c0">
+                <div class="text">
+                    <b>We changed the turn amount between branches.</b>
+                </div>
+                <div class="feedback">
+                    Nice!
+                </div>
+            </div>
+
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <b>We changed the scaling factor (how much the length decreases each time).</b>
+                </div>
+                <div class="feedback">
+                    Notice how the branches are now tilted differently from those in the original image.
+                </div>
+            </div>
+
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    <b>We added additional recursive calls to the function and other angle stuff to make it all work
+                        out.</b>
+                </div>
+                <div class="feedback">
+                    There are still the same number of branches at each stage.
+                </div>
+            </div>
+
+            <div class="responseDeclaration" identifier="ri1">
+                <div class="correctResponse" identifier="c0"></div>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="assessment-data" type="multiplechoice" identifier="5-branches" hasinlinefeedback="true"
+            maxchoices="1" responseIdentifier="ri2" shuffle="false">
+
+            <div class="prompt">
+                <img class="imageRight noshadow" src="/bjc-r/img/7-recursion/tree-variation-extra-branches.jpg"
+                    alt="Geen Afbeelding" title="Tree with four branches instead of two splitting at each level" />
+                <p>
+                    Choose one:
+                </p>
+            </div>
+
+            <div class="choice" identifier="c0">
+                <div class="text">
+                    <b>We changed the turn amount between branches.</b>
+                </div>
+                <div class="feedback">
+                    We did change angles here, but those are not the only changes we made. Where did those extra
+                    branches
+                    come from?
+                </div>
+            </div>
+
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <b>We changed the scaling factor (how much the length decreases each time).</b>
+                </div>
+                <div class="feedback">
+                    The branch lengths look pretty similar to the original.
+                </div>
+            </div>
+
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    <b>We added additional recursive calls to the function and other angle stuff to make it all work
+                        out.</b>
+                </div>
+                <div class="feedback">
+                    Correct! There are now five recursive calls (branches).
+                </div>
+            </div>
+
+            <div class="responseDeclaration" identifier="ri2">
+                <div class="correctResponse" identifier="c2"></div>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="assessment-data" type="multiplechoice" identifier="growing-tree" hasinlinefeedback="true"
+            maxchoices="1" responseIdentifier="ri3" shuffle="false">
+
+            <div class="prompt">
+                <img class="imageRight noshadow"
+                    src="/bjc-r/img/7-recursion/tree-variation-longer-and-longer-branches.jpg" alt="Geen Afbeelding"
+                    title="Tree with longer and longer branches" />
+                <p>
+                    Choose one:
+                </p>
+            </div>
+
+            <div class="choice" identifier="c0">
+                <div class="text">
+                    <b>We changed the turn amount between branches.</b>
+                </div>
+                <div class="feedback">
+                    The angles look pretty similar to the original.
+                </div>
+            </div>
+
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <b>We changed the scaling factor (how much the length decreases each time).</b>
+                </div>
+                <div class="feedback">
+                    Right! At each stage, the branches are getting longer.
+                </div>
+            </div>
+
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    <b>We added additional recursive calls to the function and other angle stuff to make it all work
+                        out.</b>
+                </div>
+                <div class="feedback">
+                    There are the same number of branches, and the angles haven't changed.
+                </div>
+            </div>
+
+            <div class="responseDeclaration" identifier="ri3">
+                <div class="correctResponse" identifier="c1"></div>
+            </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="assessment-data" type="multiplechoice" identifier="not-shrinking-tree" hasinlinefeedback="true"
+            maxchoices="1" responseIdentifier="ri4" shuffle="false">
+
+            <div class="prompt">
+                <img class="imageRight noshadow" src="/bjc-r/img/7-recursion/tree-variation-same-size-branches.jpg"
+                    alt="Geen Afbeelding" title="Tree with same-size branches" />
+                <p>
+                    Choose one:
+                </p>
+            </div>
+
+            <div class="choice" identifier="c0">
+                <div class="text">
+                    <b>We changed the turn amount between branches.</b>
+                </div>
+                <div class="feedback">
+                    The angles look pretty similar to the original.
+                </div>
+            </div>
+
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <b>We changed the scaling factor (how much the length decreases each time).</b>
+                </div>
+                <div class="feedback">
+                    Right! At each stage, the branches are staying the same length, rather than shrinking.
+                </div>
+            </div>
+
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    <b>We added additional recursive calls to the function and other angle stuff to make it all work
+                        out.</b>
+                </div>
+                <div class="feedback">
+                    There are the same number of branches, and the angles haven't changed.
+                </div>
+            </div>
+
+            <div class="responseDeclaration" identifier="ri4">
+                <div class="correctResponse" identifier="c1"></div>
+            </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="assessment-data" type="multiplechoice" identifier="square-tree" hasinlinefeedback="true"
+            maxchoices="1" responseIdentifier="ri5" shuffle="false">
+
+            <div class="prompt">
+                <img class="imageRight noshadow" src="/bjc-r/img/7-recursion/tree-variation-right-angle-branches.jpg"
+                    alt="Geen Afbeelding" title="Tree with right angle branches" />
+                <p>
+                    Choose one:
+                </p>
+            </div>
+
+            <div class="choice" identifier="c0">
+                <div class="text">
+                    <b>We changed the turn amount between each branch.</b>
+                </div>
+                <div class="feedback">
+                    Correct! The turning angles are 90 degrees in this case.
+                </div>
+            </div>
+
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <b>We changed the scaling factor (how much the length decreases each time).</b>
+                </div>
+                <div class="feedback">
+                    It's a bit hard to tell, but the scale factor is the same as the original.
+                </div>
+            </div>
+
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    <b>We added additional recursive calls to the function and other angle stuff to make it all work
+                        out.</b>
+                </div>
+                <div class="feedback">
+                    There are the same number of branches in this tree.
+                </div>
+            </div>
+
+            <div class="responseDeclaration" identifier="ri5">
+                <div class="correctResponse" identifier="c0"></div>
+            </div>
+        </div>
+    </div>
+    <div class="full-bottom-bar" style="background-position: 20px 3px;">
+        <div class="bottom-nav btn-group"> <a class="btn disabled btn-default backbutton arrow" style="min-width: 90px;"
+                href="H7L1P3.html">Terug</a> <a class="btn btn-default forwardbutton arrow" style="min-width:90px;"
+                href="H7L1P5.html">Volgende</a> </div>
+    </div>
+
+</body>
+
+</html>

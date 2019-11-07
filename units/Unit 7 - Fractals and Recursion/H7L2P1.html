@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="../../js+css/llab/loader.js"></script>
+    <title>Unit 7 Lab 2: Recursion Projects, Page 1</title>
+</head>
+
+<body>
+    <div class="full">
+        <h2>Triangle Fractal</h2>
+        <div class="sidenote">This shape is called a "<a
+                href="https://duckduckgo.com/?q=Sierpinski+gasket&iax=1&ia=images" target="_blank">Sierpinski
+                (sher-PIN-ski) gasket</a>." </div>
+        <p>
+            <br />
+            <img class="indent noshadow" src="/bjc-r/img/7-recursion/triangle-fractal.gif" alt="Geen Afbeelding"
+                title="triangle fractal animation levels 1 to 8" />
+        </p>
+        <div class="forYouToDo" id="first">
+            <ol>
+                <div class="newProject"><span class="text">"U7L2-TriangleFractal"</span><img
+                        src="/bjc-r/img/icons/new-project-called.png" alt="Geen Afbeelding"
+                        title="Create a new project called U7L2-TriangleFractal" /></div>
+                <li>
+                    First, write a block that takes a <var>size</var> as input and draws an equilateral triangle.<br />
+                    <img class="indent" src="/bjc-r/img/7-recursion/triangle-size-40.png" alt="Geen Afbeelding"
+                        title="triangle size: (40)" />
+                    <img class="indent" src="/bjc-r/img/7-recursion/triangle-size-40-drawing.jpg" alt="Geen Afbeelding"
+                        title="triangle size: (40) drawing" />
+                </li>
+
+            </ol>
+        </div>
+
+        <h3>Growing the Triangle into the Fractal</h3>
+        <p>
+            <code>triangle</code> is the base case. You can modify it, or create a new block with <var>level</var> and
+            <var>size</var> inputs just like <code>tree</code>:<br />
+            <img class="indent" src="/bjc-r/img/7-recursion/tri-frac-1-head.png" alt="Geen Afbeelding"
+                title="triangle fractal level: (level #) size: (size #)" />
+        </p>
+        <p>
+            If the level is 1, we should see only the triangle:<br />
+            <img class="indent noshadow" src="/bjc-r/img/7-recursion/tri-frac-1-level-1.png" alt="Geen Afbeelding"
+                title="Triangle fractal level 1 drawing: basic triangle" />
+        </p>
+        <div class="comment">Paul, do you not like my click-for-comment on principle? --bh</div>
+        <p>
+            Otherwise, a half-size child buds at the end of each side of the parent. At level 2, it should look like
+            this:<br />
+            <img class="indent noshadow" src="/bjc-r/img/7-recursion/tri-frac-1-level-2.png" alt="Geen Afbeelding"
+                title="Triangle fractal level 2 drawing: triangle with 3 smaller triangles on its vertices" />
+        </p>
+        <p>
+            And at level 3, you should see this:<br />
+            <img class="indent noshadow" src="/bjc-r/img/7-recursion/tri-frac-1-level-3.png" alt="Geen Afbeelding"
+                title="Triangle fractal level 3 drawing: triangle with 3 smaller triangles on its vertices each of which in turn have 3 smaller triangles on their vertices" />
+        </p>
+
+        <div class="forYouToDo">
+            <ol start="2">
+                <li><img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Geen Afbeelding"
+                        title="Talk with Your Partner" />
+                    Write the code for <code>triangle fractal</code>.</li>
+                <li>Using a <code>warp</code> block (to save time) try a big level number, like 8 or 9.</li>
+                <div class="endnote">
+                    The <code>warp</code> block (in the yellow Control palette) makes the scripts inside it run faster
+                    by
+                    not letting any other scripts run or updating the display until it's finished.<br />
+                    <img class="indent" src="/bjc-r/img/7-recursion/tri-frac-1-in-warp.png" alt="Geen Afbeelding"
+                        title="warp{triangle fractal level:(9) size:(100)}" />
+                </div>
+            </ol>
+        </div>
+
+        <div class="ifTime">
+            <p>In order to draw the parent triangle, the sprite must turn 120&deg; between sides. For the fractal you
+                just
+                created, that turning happens <em>after</em> drawing the child, but you could turn <em>before</em> the
+                recursive call, or split the turn, with part before and part after the recursive call.</p>
+            <ol start="4">
+                <li>
+                    Try some modifications like these:<br />
+                    <img class="indent" src="/bjc-r/img/7-recursion/triangle-fractal-variation01.png"
+                        alt="Geen Afbeelding"
+                        title="repeat(3){move(size) steps; turn clockwise (120) degrees; triangle fractal level:(level-1) size:(size*0.5)}" />
+                    <img class="indent" src="/bjc-r/img/7-recursion/triangle-fractal-variation02.png"
+                        alt="Geen Afbeelding"
+                        title="repeat(3){move(size) steps; turn clockwise (120) degrees; triangle fractal level:(level-1) size:(size*0.5); turn clockwise(60) degrees}" />
+                    <img class="indent" src="/bjc-r/img/7-recursion/triangle-fractal-variation03.png"
+                        alt="Geen Afbeelding"
+                        title="repeat(3){move(size) steps; turn counter-clockwise (30) degrees; triangle fractal level:(level-1) size:(size*0.5); turn clockwise(150) degrees}" />
+                </li>
+            </ol>
+        </div>
+        <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
+            <ol type="A">
+                <li>Use <code>for</code> to make an animation that cycles through different turning angle arrangements
+                    (that
+                    is, 0&deg; and 120&deg;, then 1&deg; and 119&deg;, then 2&deg; and 118&deg;, etc.).</li>
+                <li>Experiment with the scale factor for the <var>size</var> of the recursive calls. A couple of
+                    interesting
+                    values are <span class="katex">\frac{<var>1</var>}{3}</span> and <span
+                        class="katex">\frac{<var>1</var>}{\sqrt{3}}.</li>
+            </ol>
+        </div>
+    </div>
+    <div class="full-bottom-bar" style="background-position: 20px 3px;">
+        <div class="bottom-nav btn-group"> <a class="btn disabled btn-default backbutton arrow" style="min-width: 90px;"
+                href="H7L1P5.html">Terug</a> <a class="btn btn-default forwardbutton arrow" style="min-width:90px;"
+                href="H7L2P2.html">Volgende</a> </div>
+    </div>
+</body>
+
+</html>

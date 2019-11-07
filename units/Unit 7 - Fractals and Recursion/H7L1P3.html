@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="../../js+css/llab/loader.js"></script>
+    <title>Unit 7 Lab 1: Trees in a Forest, Page 3</title>
+</head>
+
+<body>
+    <div class="full">
+        <h2>Self-Check: <code>Tree</code> Input</h2>
+        <p>
+            Each of these questions refer to this version of the <code>tree</code> block and this script that calls it.
+            Notice the blank in the <code>tree</code> <var>level</var> input slot in the calling script. Inside the
+            <code>tree</code> script, we have changed the turning angles and size scaling factors so that the left and
+            right
+            branches are the same, to make the pictures of trees easier to understand.<br />
+            <img src="/bjc-r/img/7-recursion/quiztree.png" alt="Geen Afbeelding"
+                title="tree level:(level#) size:(size#){if(level=1){move(size) steps; move(-1*size) steps}else{move(size) steps; turn counterclockwise (15) degrees; tree level:(level-1) size:(size*0.75); turn clockwise(15) degrees; turn clockwise(15) degrees; tree level:(level-1) size:(size*0.75); turn counterclockwise (15); move(-1*size) steps}}" />
+            <img class="indent" src="/bjc-r/img/7-recursion/tree-size-100-call.png" alt="Geen Afbeelding"
+                title="go to x:(0) y:(0); clear; point in direction(0); pen down; tree level:( ) size:(100)" />
+        </p>
+        <!-- Question 1 -->
+        <div class="assessment-data" type="multiplechoice" identifier="number-of-levels" hasinlinefeedback="true"
+            maxchoices="1" responseIdentifier="ri1" shuffle="false">
+
+            <div class="prompt">
+                <img class="imageRight" src="/bjc-r/img/7-recursion/tree-level5.jpg" alt="Geen Afbeelding"
+                    title="A tree with trunk and four levels of branches" />
+                <p>If this picture is drawn, what number must be in the <var>level</var> input slot?</p>
+                <p>In other words, what goes in the blank in the code above to make this image? </p>
+            </div>
+
+            <div class="choice" identifier="c0">
+                <div class="text">
+                    <b>6</b>
+                </div>
+                <div class="feedback">
+                    How many different sizes of line segment are in the picture?
+                </div>
+            </div>
+
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <b>1</b>
+                </div>
+                <div class="feedback">
+                    How many different sizes of line segment are in the picture?
+                </div>
+            </div>
+
+
+
+            <div class="choice" identifier="c5">
+                <div class="text">
+                    <b>5</b>
+                </div>
+                <div class="feedback">
+                    Nice! There are indeed five different levels present in the tree.
+                </div>
+            </div>
+            <div class="choice" identifier="c4">
+                <div class="text">
+                    <b>4</b>
+                </div>
+                <div class="feedback">
+                    How many different sizes of line segment are in the picture?
+                </div>
+            </div>
+            <div class="responseDeclaration" identifier="ri1">
+                <div class="correctResponse" identifier="c5"></div>
+            </div>
+        </div>
+
+
+        <!-- Question 2 -->
+        <div class="assessment-data" type="multiplechoice" identifier="negative-size" hasinlinefeedback="true"
+            maxchoices="1" responseIdentifier="ri2" shuffle="false">
+
+            <div class="prompt">
+                <p>What would happen if you changed the input <var>size</var> to be -100?</p>
+            </div>
+
+            <div class="choice" identifier="c0">
+                <div class="text">
+                    <b>The program will never stop running and a lot of different branches will be drawn.</b>
+                </div>
+                <div class="feedback">
+                    The program will stop. Try running walking through the function step-by-step using the given inputs.
+                </div>
+            </div>
+
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <b>It will never stop running and only a single branch will be drawn.</b>
+                </div>
+                <div class="feedback">
+                    The program will stop. Try running walking through the function step-by-step using the given inputs.
+                </div>
+            </div>
+
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    <b>It will work just as if the <var>size</var> were positive 100.</b>
+                </div>
+                <div class="feedback">
+                    Not quite. What happens when we plug in a negative value to the <code>move</code> block?
+                </div>
+            </div>
+
+            <div class="choice" identifier="c3">
+                <div class="text">
+                    <b>The image will be flipped upside down but will otherwise look the same.</b>
+                </div>
+                <div class="feedback">
+                    Nice! Inputting negative values to the move block will make the sprite move <em>backwards</em>.
+                </div>
+            </div>
+
+            <div class="choice" identifier="c4">
+                <div class="text">
+                    <b>Nothing will be drawn.</b>
+                </div>
+                <div class="feedback">
+                    Something will be drawn. Try running walking through the function step-by-step using the given
+                    inputs.
+                </div>
+            </div>
+
+            <div class="responseDeclaration" identifier="ri2">
+                <div class="correctResponse" identifier="c3"></div>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="assessment-data" type="multiplechoice" identifier="negative-levels" hasinlinefeedback="true"
+            maxchoices="1" responseIdentifier="ri3" shuffle="false">
+
+            <div class="prompt">
+                <p>What would happen if you changed the input <var>level</var> to be -4?</p>
+            </div>
+
+            <div class="choice" identifier="c0">
+                <div class="text">
+                    <b>The program will never stop running, but it will draw a tree-looking tree with more and more
+                        smaller
+                        and smaller branches.</b>
+                </div>
+                <div class="feedback">
+                    It's true that the program will never stop running. Try walking through the code step-by-step to see
+                    exactly what it draws.
+                </div>
+            </div>
+
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <b>It will never stop running, and the picture will be a leftward spiral with the sprite spinning
+                        around
+                        in midair.</b>
+                </div>
+                <div class="feedback">
+                    Correct! The function will never hit the <code>level = 1</code> case, and will only ever make the
+                    left-branch call to itself.
+                </div>
+            </div>
+
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    <b>It will work just as if the <var>size</var> were positive 4.</b>
+                </div>
+                <div class="feedback">
+                    Will the recursion ever reach level 1?</div>
+            </div>
+
+            <div class="choice" identifier="c3">
+                <div class="text">
+                    <b>The image will be flipped upside down but will otherwise look the same.</b>
+                </div>
+                <div class="feedback">
+                    Does the <var>level</var> input affect the <code>move</code> blocks?</div>
+            </div>
+
+            <div class="choice" identifier="c4">
+                <div class="text">
+                    <b>Nothing will be drawn.</b>
+                </div>
+                <div class="feedback">
+                    Something will be drawn.
+                </div>
+            </div>
+
+            <div class="responseDeclaration" identifier="ri3">
+                <div class="correctResponse" identifier="c1"></div>
+            </div>
+        </div>
+    </div>
+    <div class="full-bottom-bar" style="background-position: 20px 3px;">
+        <div class="bottom-nav btn-group"> <a class="btn disabled btn-default backbutton arrow" style="min-width: 90px;"
+                href="H7L1P2.html">Terug</a> <a class="btn btn-default forwardbutton arrow" style="min-width:90px;"
+                href="H7L1P4.html">Volgende</a> </div>
+    </div>
+
+</body>
+
+</html>

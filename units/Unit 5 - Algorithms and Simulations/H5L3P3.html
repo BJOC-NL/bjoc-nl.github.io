@@ -76,7 +76,7 @@
                     <em>Polynomial time</em> includes constant (<em>n</em><sup>0</sup>), sublinear, linear
                     (<em>n</em><sup>1</sup>), quadratic (<em>n</em><sup>2</sup>), cubic (<em>n</em><sup>3</sup>), etc.
                     functions:
-                    <!--In constant time algorithms, changing the size of the input does not change the number of steps. In linear time algorithms, changing the size of the input changes the number of steps by the same amount. In quadratic time algorithms, doubling the size of the input quadruples the number of steps, and trippling the size of the input 9-tuples the number of steps.-->
+
                     <table class="bordered" summary="list of several reasonable time efficiencies">
                         <tr>
                             <th scope="col" style="width:20%;">algorithm efficiency</th>
@@ -118,7 +118,7 @@
                     <div id="hint-between-categories" class="collapse">These categories say that an algorithm takes
                         <em>at most</em> so much time. So, for example, a constant-time algorithm is also a linear-time
                         algorithm, and also a polynomial-time algorithm
-                        <!--, and also an exponential-time algorithm-->. But <em>usually</em> if someone says an
+                        . But <em>usually</em> if someone says an
                         algorithm "takes quadratic time," they mean that it takes <em>more than</em> linear time but
                         <em>not more than</em> quadratic time.</div>
                 </div>
@@ -126,16 +126,14 @@
             <li>
                 <strong>Unreasonable Time:</strong> If the number of steps is more than any power of the size of the
                 input (that is, more than any polynomial function
-                <!--, such as an <em>exponential</em> function, 2<sup><em>n</em></sup>-->), then the algorithm takes an
+                ), then the algorithm takes an
                 <em>unreasonable</em> amount of time.
                 <div class="endnote">The classic example of an <em>unreasonable time</em> algorithm is one that takes
                     <em>exponential</em> (2<sup><em>n</em></sup>) <em>time</em>. Just <em>adding 1</em> to the input
                     size (<em>n</em>) <em>doubles</em> the number of steps!
-                    <!--Examples of exponential time algorithms include climate models or models of molecular physics.-->
+
                 </div>
-                <!--<ul>
-                        <li>If the number of steps is an <em>exponential</em> function of the size of the input (or another function larger than any polynomial), we say that the algorithm takes an <em>unreasonable</em> amount of time. For an algorithm that takes 2<sup><em>n</em></sup> time, just <em>adding 1</em> to the input size (<em>n</em>) <em>doubles</em> the number of steps!</li>
-                    </ul>-->
+
                 <p>One kind of problem whose solution often ends up unreasonable is an <em>optimization</em> problem
                     (such as "find the best" or "find the smallest"). </p>
             </li>
@@ -173,7 +171,7 @@
         <ol start="6">
             <li>
                 This question is similar to those you will see on the AP CSP exam.
-                <!-- Question 1 -->
+
                 <div class="assessment-data" type="multiplechoice" identifier="Timing of database tasks"
                     hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri1" shuffle="true">
                     <div class="prompt">
@@ -221,7 +219,7 @@
                     <div class="choice" identifier="c1">
                         <div class="text">Entering data</div>
                         <div class="feedback">
-                            <!--Entering data seems to take <img class="inline noshadow nopad" src="/bjc-r/img/5-algorithms/quizlet-entering-data.jpg" alt="population/1000" title="population/1000" /> hours, so for a population of 1,000,000, it should take about 2,000 hours.-->
+
                             As the population size is multiplied by 10, the time needed for entering data is also
                             multiplied by 10, so for a population of 1,000,000, it should take about 10&times;200=2000
                             hours.
@@ -230,7 +228,7 @@
                     <div class="choice" identifier="c2">
                         <div class="text">Backing up data</div>
                         <div class="feedback">
-                            <!--Backing up data seems to take about <img class="inline noshadow nopad" src="/bjc-r/img/5-algorithms/quizlet-backing-up.jpg" alt="5^((population/1000)-1)" title="5^((population/1000)-1)" /> hours, so for a population of 1,000,000, it should take about 125 hours.-->
+
                             As the population size is multiplied by 10, time needed for backing up data is multiplied by
                             10, so for a population of 1,000,000, it should take about 10&times;50=500 hours.
                         </div>
@@ -246,7 +244,7 @@
                         <div class="text">Sorting data</div>
                         <div class="feedback">
                             Correct!
-                            <!--Sorting the data seems to go up exponentially as the the population grows. For a population of 1,000,000, it should take about 10,000 hours.-->
+
                             As the population size is multiplied by 10, the time needed for the sorting of data is
                             multiplied by 100. So, for a population of 1,000,000, it should take about
                             100&times;100=10,000 hours.
