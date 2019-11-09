@@ -122,7 +122,7 @@ MC.prototype.render = function () {
         //$('.MultipleChoice').html(pageTemplate);
 
         /* set the question type title */
-        this.multipleChoice.find('.questionType').html('Question ' + (this.num + 1));
+        this.multipleChoice.find('.questionType').html('Vraag ' + (this.num + 1));
     }
 
     /* render the prompt */
