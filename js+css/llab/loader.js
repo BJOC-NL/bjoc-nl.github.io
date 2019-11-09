@@ -5,6 +5,17 @@ script.type = 'text/javascript';
 document.getElementsByTagName('head')[0].appendChild(script);
 document.getElementsByTagName('head')[0].async = true
 
+var Inhoudsopgave = function () {
+    document.getElementsByTagName("title")[0].innerHTML +=
+        '<a style="float:right; font-family:sans-serif !important;" href="../../index.html"> \
+        Terug naar Inhoudsopgave </a>';
+    var inhoudsopgave = document.createElement('a');
+    inhoudsopgave.href = '../../index.html';
+    inhoudsopgave.innerHTML = "Inhoudsopgave";
+    document.getElementsByTagName('title').appendChild(inhoudsopgave);
+}
+
+
 
 window.hypothesisConfig = function () {
     return {
