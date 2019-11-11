@@ -9,10 +9,6 @@ var Inhoudsopgave = function () {
     document.getElementsByTagName("title")[0].innerHTML +=
         '<a style="float:right; font-family:sans-serif !important;" href="../../index.html"> \
         Terug naar Inhoudsopgave </a>';
-    var inhoudsopgave = document.createElement('a');
-    inhoudsopgave.href = '../../index.html';
-    inhoudsopgave.innerHTML = "Inhoudsopgave";
-    document.getElementsByTagName('title').appendChild(inhoudsopgave);
 }
 
 
