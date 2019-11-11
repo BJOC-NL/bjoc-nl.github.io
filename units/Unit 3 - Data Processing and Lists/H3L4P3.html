@@ -13,7 +13,7 @@
         }
     </script>
     <link rel="stylesheet" type="text/css" href="../../js+css/css/bjc-gifffer.css">
-    <title>Hoofdstuk 3 Les 4: Data-Visualizatie-middelen maken , Pagina 3</title>
+    <title>Hoofdstuk 3 Les 4: Data-Visualisatie-middelen maken , Pagina 3</title>
 </head>
 
 <body>
@@ -21,92 +21,103 @@
 
         <h2>Je Diagram-app Verbeteren</h2>
         <div class="learn">
-            <strong>On this page</strong>, you'll work with a dataset on a classroom of 27 sixth-graders. You will
-            create a graph of height vs. weight, showing the boys and girls in different colors that also allows you to
-            examine individual datapoints to see their approximate values, like this:<br />
-            <img class="indent" src="../../bjc-r/img/3-lists/U3ImageVideoAddendum_img/GraphingDataSet.gif"
-                alt="Geen Afbeelding">
+            <strong>Op deze pagina</strong>, ga je werken met een dataset over een klass met 27 leerlingen. Je gaat een
+            diagram maken van de lengte vs. gewicht, met de jongen en meisjes in verschillende kleuren dat je ook laat
+            kijken naar individuele datapunten om hun benaderde waardes zien, zoals hieronder:
+            <br />
+            <img class="indent" src="../../afb/h3/l4/p3-v1.gif" alt="Geen Afbeelding">
         </div>
 
         <div class="forYouToDo" id="first">
             <ol>
-                <li>Load your grapher from before; it should have been saved as "U3L4-GraphingApp."</li>
+                <li>Laadd je diagrammaker van hiervoor; Hij zou opgeslagen moeten zijn als "H3L4-DiagramApp".</li>
                 <li>
-                    Look in the Variables palette for this dataset on a classroom of 27 sixth-graders: <img
-                        class="inline" src="../../bjc-r/img/5-algorithms/Gr6-age-height-weight-gender-stats.png"
-                        alt="Geen Afbeelding" />. Each data point in this set represents a person and contains
-                    <em>four</em> items:
+                    Kijk in het Variabelenpalet voor deze dataset over een klas van 27 leerlingen:
+                    <img class="inline" src="../../bjc-r/img/5-algorithms/Gr6-age-height-weight-gender-stats.png"
+                        alt="Geen Afbeelding" />.
+                    Ieder datapunt in deze set vertegenwoordigt een persoon en bevat <em>vier</em> items:
                     <ul>
                         <img src="../../bjc-r/img/3-lists/U3ImageVideoAddendum_img/persondata2.png" height="90"
                             alt="Geen Afbeelding" />
-                        <li>age in months</li>
-                        <img class="imageRight" src="../../bjc-r/img/icons/talk-with-your-partner.png"
-                            alt="Geen Afbeelding" />
-                        <li>height in centimeters</li>
-                        <li>weight in kilograms</li>
-                        <li>gender</li>
+                        <li>leeftijd in maanden</li>
+                        <img class="imageRight" src="../../afb/icons/PraatMetJeBuur.png" alt="Geen Afbeelding" />
+                        <li>lengte in centimeters</li>
+                        <li>gewicht in kilogrammen</li>
+                        <li>geslacht</li>
                     </ul>
-                    Your <img src="../../bjc-r/img/3-lists/U3ImageVideoAddendum_img/Graph datapoints.png" height="40"
-                        alt="Geen Afbeelding" /> was written to expect only <em>two</em> numbers in each datapoint as it
-                    was built with blocks like <img
-                        src="../../bjc-r/img/3-lists/U3ImageVideoAddendum_img/plotpointxGraphyGraph.png" height="42"
-                        alt="Geen Afbeelding" />. Will it even work with this dataset? Try it. What does it do?
+                    Je <img src="../../bjc-r/img/3-lists/U3ImageVideoAddendum_img/Graph datapoints.png" height="40"
+                        alt="Geen Afbeelding" /> was geschreven om alleen <em>twee</em> getallen in ieder datapunt te
+                    verwachten omdat het gebouwd was met blokken zoals
+                    <img src="../../bjc-r/img/3-lists/U3ImageVideoAddendum_img/plotpointxGraphyGraph.png" height="42"
+                        alt="Geen Afbeelding" />. Zal het überhaupt werken met deze dataset? Probeer het. Wat gebeurt
+                    er?
+
                 </li>
                 <li>
-                    Create a selector <code>age</code> which extracts the age of an input person.<br>
+                    Maak een selector <code>leeftijd</code> wat de leeftijd van neemt van een invoerpersoon.
+                    <br>
                     <img class="indent" src="../../bjc-r/img/3-lists/U3ImageVideoAddendum_img/ageperson.png"
                         height="100" alt="Geen Afbeelding" />
                 </li>
-                <li>Similarly, create selectors <code>height</code>, <code>weight</code>, <code>gender</code> which
-                    extract the height, weight and gender of an input person.</li>
+                <li>Maak op dezelfde manier selectors <code>lengte</code>, <code>gewicht</code>, <code>geslacht</code>
+                    die de lengte, gewicht en geslacht van een invoerpersoon nemen.
+                </li>
                 <li>
-                    Now use the above selectors to create custom blocks that report:
+                    Gebruik nu de selectors van hierboen om nieuwe blokken te maken die het volgende rapporteren:
                     <ul>
-                        <li><code>ages</code>&mdash;a list containing only the 27 ages</li>
-                        <li><code>heights</code>&mdash;a list containing only the 27 heights</li>
-                        <li><code>weights</code>&mdash;a list containing only the 27 weights</li>
+                        <li><code>leeftijden</code>&mdash; een lijst met alleen de 27 leeftijden</li>
+                        <li><code>lengtes</code>&mdash;een lijst met alleen de 27 lengtes</li>
+                        <li><code>gewichten</code>&mdash;een lijst met alleen de 27 gewichten</li>
                     </ul>
-                    <div class="endnote">For example: you can use the Higher Order Function <code>map</code> together
-                        with the selector <code>age</code> to extract a list of ages from the data:<br />
+                    <div class="endnote"> J
+                        Je kan bijvoorbeeld <code>map</code> gebruiken samen met de selector <code>leeftijd</code> om
+                        een lijst leeftijden te krijgen van de data:
+                        <br />
                         <img class="indent" src="../../bjc-r/img/3-lists/U3ImageVideoAddendum_img/agesdata.png"
                             height="110" alt="Geen Afbeelding" />
                     </div>
                 </li>
                 <li>
-                    <!--Did they?<div class="sidenote">You've built averaging blocks before.</div>-->
-                    Create a block that takes a list of numbers as input and reports the <em>average</em> value.
+                    Maak een blok dat de lijst van een getal neemt als invoer en de <em>gemiddelde</em> waarde
+                    rapporteert.
                 </li>
-                <li>Create a block, <code>female data</code>, using <code>keep</code>, that reports a list containing
-                    all the datapoints of only the girls, and another block, <code>male data</code>, that does the same
-                    for the boys.</li>
+                <li>Maak een blok, <code>vrouwelijke data</code>, met behulp van <code>houd</code> dat een lijst
+                    rapporteert die alle datapunten van meisjes bevat en een ander blok <code>mannelijke data</code> die
+                    hetzelfde doet voor jongens.
+                </li>
                 <li>
-                    You will need to <code>set graph scale</code> for each of these graphs. Searching through the data
-                    to find the lowest and highest values can be a nuisance. Create tools to do that for you.
+                    Je moet de <code>diagramschaal opstellen</code> voor al deze grafieken. Zoeken door de data om de
+                    laagste en hoogste waardes te vinden kan heel irritant zijn. Maak blokken die dat voor je doen.
                     <img src="../../bjc-r/img/3-lists/U3ImageVideoAddendum_img/minoflist.png" height="35"
                         alt="Geen Afbeelding" /><img
                         src="../../bjc-r/img/3-lists/U3ImageVideoAddendum_img/maxoflist.png" height="35"
                         alt="Geen Afbeelding" />
                 </li>
                 <li>
-                    You now have everything you need to create a graph of height vs. weight, showing the boys and girls
-                    in different colors that also allows you to examine individual datapoints to see their approximate
-                    values, as shown in the animation above. Build it.<br />
-                    <div class="endnote">The following blocks may help you extract the information you need from the
-                        data set.<br />
+                    Je hebt nu alles om een diagram te maken van lengte versus gewicht, met de jongens en meisjes in
+                    verschillende kleuren, wat je individuele datapunten laat bekijken om hun benaderde waardes te zien,
+                    zoals in de animatie hierboven. Bouw dit.
+                    <br />
+                    <div class="endnote">
+                        De volgende blokken kunnen je helpen om informatie te krijgen die je nodig hebt van je dataset.
+                        <br />
                         <img src="../../bjc-r/img/3-lists/U3ImageVideoAddendum_img/hintblocks.png" height="100"
                             alt="Geen Afbeelding" />
                     </div>
                 </li>
 
                 <li>
-                    <img class="imageRight" src="../../bjc-r/img/icons/talk-with-another-pair.png"
-                        alt="Geen Afbeelding" />
-                    Use the tools you have built to create a few separate graphs: age against height or weight, height
-                    against weight, separated or not separated by gender—and <em>also mark the averages</em> in each
-                    case. What can you say about this particular class of sixth-graders based on the data?<br />
-                    <div class="takeNote">Collaboration is vital to solving data driven problems because it allows the
-                        application of multiple perspectives and skill sets to gain insights and knowledge about data
-                        that may not be possible when working alone.</div>
+                    <img class="imageRight" src="../../afb/icons/PraatMetEenAnderPaar.png" alt="Geen Afbeelding" />
+                    Gebruik de blokken die je gebouwd hebt om een paar aparte diagrammen te maken: leeftijd tegen lengte
+                    of gewicht, lengte tegen gewicht, gesorteerd of niet gesorterd op geslacht en
+                    <em>laat het gemiddelde zien</em> in ieder geval. Wat kan je zeggen over deze specifieke klas
+                    gebaseerd op deze data?
+                    <br>
+                    <div class="takeNote">
+                        Samenwerken is zeer belangrijk om data-problemen op te lossen omdat het de toepassing van
+                        meerdere perspectieven en vaardigheden toelaat om inzichten en kennis te krijgen over data die
+                        je niet zou krijgen als je alleen zou werken.
+                    </div>
                 </li>
 
             </ol>
@@ -115,11 +126,11 @@
         <div class="takeItFurther">
             <ol type="A">
                 <li>
-                    The graph above shows <em>three</em> aspects of each child in the class (height, weight, and
-                    gender). Find some suitable way to give some information about the fourth element of the data (age).
-                    Pen size is one possibility, but you might find a different way.<br />
-                    <img class="indent" src="../../bjc-r/img/3-lists/U3ImageVideoAddendum_img/agebyPensize.png"
-                        alt="Geen Afbeelding" />
+                    Het diagram hiervboven laat <em>drie</em> aspecten zien van ieder kind in de klas (lengte, gewicht
+                    en geslacht). Vind een goeie manier om informatie te geven over het vierde element van de data
+                    (leeftijd). Pengrootte is een mogelijkheid maar je kan misschien ook een andere manier vinden.
+                    <br />
+                    <img class="indent" src="../../afb/h3/l4/p3-o1.png  " alt="Geen Afbeelding" />
                 </li>
             </ol>
         </div>
