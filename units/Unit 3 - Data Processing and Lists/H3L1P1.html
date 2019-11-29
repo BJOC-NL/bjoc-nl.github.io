@@ -23,8 +23,9 @@
         <div class="learn">
             <p><strong>In deze les</strong> ga je een contactenlijst maken.</p>
             <p>
-                <strong>Op deze pagina,</strong> ga je een <strong>abstracte datatype</strong> maken om <em>contact
-                    data</em> zoals (naam, adres, telefoonnummer, etc.) in op te slaan en later te kunnen bekijken.
+                <strong>Op deze pagina,</strong> ga je een <strong>abstracte datatype</strong> maken om
+                <em>contactgegevens</em> zoals naam, adres, telefoonnummer, etc. op te slaan en later te kunnen
+                bekijken.
 
             </p>
         </div>
@@ -48,8 +49,7 @@
                 wanneer
                 het project opgeslagen wordt.</div>
             <strong>Meerdere scripts</strong> door het hele programma heen <strong>gaan deze lijst gebruiken</strong>,
-            dus
-            is het niet logisch om het aan maar één script vast te maken als een lokaal variabel.
+            dus is het niet logisch om het aan maar één script vast te maken als een lokale variabele.
         </div>
 
         <h3>Het maken van de abstracte datatype</h3>
@@ -62,24 +62,24 @@
             </div>
             <div><span>Robin:</span> "In hoofdstuk 2 hebben we een <a href="../Unit 2 - Abstraction/H2L2P2.html">
                     abstracte datatype</a> <code>punt</code> gemaakt
-                om de coordinaten van ieder punt in een lijst van punten op te slaan. Nu kunnen
+                om de coördinaten van ieder punt in een lijst van punten op te slaan. Nu kunnen
                 we een abstracte datatype <code>contact</code> maken om de data voor ieder contact in onze
                 contactenlijst in op te slaan."</div>
             <div><span>Yasmine:</span> "Ja! <em>(Yasmine opent haar oude project, maar dat hoef jij niet te doen.)</em>
-                We hebben eerder een <code>punt</code> constructor gebruikt om een lijst van coordinaten te maken."
+                We hebben eerder een <code>punt</code> constructor gebruikt om een lijst van coördinaten te maken."
             </div>
             <div class="stagedir">
                 Yasmine wijst naar de code voor de <code>punt</code> constructor:<br />
                 <img class="indent" height="100" src="../../afb/h3/l1/blocks/p1-b1.png  " alt="Geen Afbeelding" />
             </div>
-            <div><span>Robin:</span> "We hebben vervolgens een selector gebruikt om een <em>x</em> of <em>y</em>
-                coordinaat te kiezen."</div>
+            <div><span>Robin:</span> "We hebben vervolgens een selector gebruikt om een <em>x</em>- of
+                <em>y</em>-coordinaat te kiezen."</div>
             <div class="stagedir">
-                Robin wijst naar de code voor de <code>coordinaten</code>selector:<br />
+                Robin wijst naar de code voor de <code>coördinaten</code>selector:<br />
                 <img class="indent" height="100" src="../../afb/h3/l1/blocks/p1-b2.png  " alt="Geen Afbeelding"> en
                 <img height="100" src="../../afb/h3/l1/blocks/p1-b3.png  " alt="Geen Afbeelding">
             </div>
-            <div><span>Yasmine:</span> "In dit project hebben we een <code>contact</code> constructor nodig en selectors
+            <div><span>Yasmine:</span> "In dit project hebben we een <code>contact</code>constructor nodig en selectors
                 om toegang te krijgen tot de naam, het adres en telefoonnummer van het contact.</div>
         </div>
 
@@ -87,7 +87,7 @@
             <ol start="4">
                 <li>
                     <div class="sidenoteBig">
-                        <strong>Shortcut:</strong> Je zou de volgende text in het "Maak een blok" venster kunnen plakken
+                        <strong>Shortcut:</strong> Je zou de volgende text in het "Maak een blok"-venster kunnen plakken
                         om het blok sneller te maken.
                         <p style="margin-left:25px;"><code>contact met naam: %naam adres: %adres
                                 telefoon: %telefoon</code>
@@ -112,19 +112,19 @@
                 <div class="endnote">
                     <p>Het is onnatuurlijk om de constructor als een invoer van de selector te gebruiken, deze
                         afbeeldingen zijn voorbeelden om te laten zien wat de selectors zouden moeten kunnen als er een
-                        contact gegeven word als invoer. In <em>jouw</em> programma zullen de selectors een item van de
+                        contact gegeven wordt als invoer. In <em>jouw</em> programma zullen de selectors een item van de
                         lijst als invoer gebruiken om het goede gedeelte van een contact terug te geven, zoals
                         hier:<br />
                         <img class="indent" src="../../afb/h3/l1/blocks/p1-b9.png" alt="Geen Afbeelding" />
                     </p>
                 </div>
                 <li>
-                    Verklaar de invoer types voor iedere selector zodat het duidelijk is dat ze een lijst (een heel
-                    contact) als invoer.<br />
+                    Bepaal de invoertypes voor iedere selector zodat het duidelijk is dat ze een lijst (een heel
+                    contact) als invoer nodig hebben.<br />
                     <img height="40" class="indent" src="../../afb/h3/l1/blocks/p1-b10.png" alt="Geen Afbeelding" />
                     <img height="40" class="indent" src="../../afb/h3/l1/blocks/p1-b11.png" alt="Geen Afbeelding" />
                     <img height="40" class="indent" src="../../afb/h3/l1/blocks/p1-b12.png" alt="Geen Afbeelding" />
-                    <div class="endnote"> Je hebt geleerd hoe je <a href="../Unit 2 - Abstraction/H2L2P1.html">Eeen
+                    <div class="endnote"> Je hebt geleerd hoe je <a href="../Unit 2 - Abstraction/H2L2P1.html">Een
                             invoertype moet specificeren</a> in Hoofdstuk 2.</div>
                 </li>
                 <li>
@@ -144,12 +144,12 @@
                                         <th scope="col">Telefoonnummer</th>
                                     </tr>
                                     <tr>
-                                        <td style="white-space: nowrap;">Bertha van der Kabarchenbok</td>
+                                        <td style="white-space: nowrap;">Bo van der Kabarchenbok</td>
                                         <td style="white-space: nowrap;">Kerkstraat 123, Amsterdam</td>
                                         <td style="white-space: nowrap;">212-555-1234</td>
                                     </tr>
                                     <tr>
-                                        <td style="white-space: nowrap;">Alfred Ypsilinti</td>
+                                        <td style="white-space: nowrap;">Alex Ypsilinti</td>
                                         <td style="white-space: nowrap;">Zuidplein 382, Assen</td>
                                         <td style="white-space: nowrap;">208-555-6789</td>
                                     </tr>
@@ -168,8 +168,8 @@
                             'watcher' op het speelveld.
 
                             <div class="endnote">
-                                Als je de 'watcher' niet kan zien op het speelveld, zorg ervoor dat het vakje
-                                <var>contactenlijst variabel</var> in het Variabelen palette aangevinkt is.
+                                Als je de 'watcher' niet kan zien op het speelveld, zorg ervoor dat het vakje bij de
+                                <var>contactenlijst</var>variabele in het Variabelenpalet aangevinkt is.
                                 <img class="inlinde" src="../../afb/h3/l1/others/p1-o3.png" alt="Geen Afbeelding" />
                             </div>
                             <ul style="list-style-type: disc;">
