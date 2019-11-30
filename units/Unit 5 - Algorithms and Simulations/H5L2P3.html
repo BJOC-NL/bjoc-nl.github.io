@@ -18,15 +18,18 @@
 
 <body>
     <div class="full">
-        <h2>Disease Spread Project</h2>
+        <h2>Ziekteverspreidingsproject</h2>
         <div class="learn">
-            <p><strong>On this page,</strong> you will model the spread of a disease in a population.</p> <img
-                class="indent" data-gifffer="/bjc-r/img/5-algorithms/img_disease-spread/disease-spread.gif" height="300"
-                alt="Geen Afbeelding" />
+            <p><strong>Op deze pagina,</strong> je gaat de verspreiding van een ziekte over een bevolking modeleren.
+            </p>
+            <img class="indent" data-gifffer="/bjc-r/img/5-algorithms/img_disease-spread/disease-spread.gif"
+                height="300" alt="Geen Afbeelding" />
         </div>
-        <p>Suppose you are a medical researcher at the Centers for Disease Control (CDC) and would like to understand
-            the factors that contribute to the spreading of a new disease across a population. In particular, you would
-            like to know the effect of population size on the rate at which the disease spreads.</p>
+        <p>Stel je voor dat je een medisch onderzoeker bent bij het Centrum voor Ziektecontrole (CZC) en dat je de
+            factoren wilt begrijpen die bijdragen aan de verspreiding van een nieuwe ziekte over een populatie. In het
+            bijzonder wil je weten wat het effect is van de bevolkingsgrootte op de snelheid waarmee de ziekte zich
+            verspreidt.
+        </p>
         <div class="
                 forYouToDo" id="first">
             <ol>
@@ -44,95 +47,112 @@
         </p>
         <div class="forYouToDo" id="second">
             <ol start="2">
-                <li>Play with the Snap<em>!</em> file <a
-                        href="/bjc-r/cur/programming/5-algorithms/2-simulation/3c-disease-spread-interactive.html"
-                        target="_blank"> linked here</a> to get a feel for the simulation program you will be writing.
+                <li>Speel met het Snap<em>!</em>-bestand (Engels)
+                    <a href="https://bjc.edc.org/bjc-r/cur/programming/5-algorithms/2-simulation/3c-disease-spread-interactive.html"
+                        target="_blank"> dat hier staat</a>
+                    om een idee te krijgen van het simulatieprogramma dat je gaat maken.
                 </li>
-                <li> Your code should:<br />
+                <li> Je code moet:<br />
                     <ul>
-                        <li>Ask the user for 3 inputs: the population size, the percentage of the population initially
-                            infected, and the speed at which the people should be moving.</li>
-                        <li>Create a single person sprite and use the <code>create a clone of myself</code> block to
-                            generate a population with the size inputted by the user.</li>
-                        <div class="sidenote">Do this on your own but if you get stuck, you can use <a
-                                href="/bjc-r/cur/programming/5-algorithms/2-simulation/3b-disease-spread-hints.html"
-                                target="_blank">this page</a> for hints.</div>
-                        <li>Make the user-specified percentage of the population sick and the rest of the population
-                            healthy.</li>
-                        <li>Have a timer measure the duration of the outbreak (until everyone is infected).</li>
-                        <li>Have the people move around with the constant speed inputted by the user.</li>
-                        <li>Make sure that when a healthy person collides with a sick person, they also becomes sick.
+                        <li>De gebruiker om 3 invoeren vragen: de bevolkingsgrootte, het percentage aanvankelijk
+                            geïnfecteerden en de snelheid waarmee de mensen moeten bewegen.
                         </li>
-                        <li>Stop the animations and the timer when the entire population becomes sick.</li>
+                        <li>Maak een sprite voor één persoon en gebruik het <code>Maak kloon van mijzelf</code>blok om
+                            een
+                            ​​populatie te genereren met de grootte die door de gebruiker is ingevoerd.
+                        </li>
+                        <div class="sidenote"> Doe dit zelfstandig maar als je er niet uit komt, gebruik dan <a
+                                href="hintH5L2P3.html" target="_blank">deze pagina</a> voor hints.</div>
+                        <li>Maak het door de gebruiker bepaalde percentage van de bevolking ziek en de rest gezond.</li>
+                        <li>Maak een timer om de duur van de uitbraak bij te houden (totdat iedereen geïnfecteerd is).
+                        </li>
+                        <li>Zorg dat de mensen bewegen met een constante snelheid die de gebruiker heeft ingevoerd.</li>
+                        <li>Zorg ervoor dat als een gezond persoon een ziek persoon raakt, hij ook ziek wordt.</li>
+                        <li>Stpo de animaties en de timer als de hele bevolking ziek is.</li>
                     </ul>
                 </li>
-                <li>Discuss how your simulation may be similar to and different from a real life disease outbreak.
-                    Identify the <em>simplifying assumptions</em> you made in this simulation.</li>
-                <li> Study the relationships between the various variables in the simulation: <ul>
-                        <li>the <var>population size</var></li>
-                        <li>the percentage of the population initially sick (<var>percent initially sick</var>)</li>
-                        <li>the <var>speed</var> at which the people move</li>
-                        <li><var>time elapsed</var> (at the point when the entire population becomes sick)</li>
+                <li>Bespreek hoe je simulatie wel en niet lijkt op en echte ziekte-uitbraak.
+                    Identificeer de <em>vereenvoudigende veronderstellingen</em> die je hebt gemaakt bij de simulatie.
+                </li>
+                <li> Bestudeer de relaties tussen de variabelen in de simulatie: <ul>
+                        <li>De <var>bevolkingsgrootte</var></li>
+                        <li>Het percentage van de bevolking dat aanvankelijk geïnfecteerd is (<var>percentage
+                                aanvankelijk ziek</var>)</li>
+                        <li>De <var>snelheid</var> waarmee de mensen bewegen.</li>
+                        <li><var>verstreken tijd</var> (wanneer de hele bevolking ziek is)</li>
                     </ul>
-                    Create a hypothesis predicting the pattern(s) that will emerge in the simulations.<br />
+                    Maak een hypothese die de patronen voorspelt die uit de simulatie komen. <br />
                     <div class="narrower">
-                        <p>For example, to understand the effect of the <var>population size</var> on the time it takes
-                            the disease to fully spread (<var>time elapsed</var>), you might fix <var>population
-                                size</var> at 10 and <var>speed</var> at 2, and use your simulation to make a chart of
-                            <var>time elapsed</var> (on the vertical axes) as a function of <var>population size</var>
-                            (on the horizontal axis) in increments of 10 for <var>population size</var>.</p>
-                        <p>Perform similar experiments to understand the effect of initial percentage of the sick and to
-                            understand the effect of agent speed.</p>
-                        <p>Since the results of each run are partly random, you may need to run each particular
-                            simulation several times and take an average.</p>
+                        <p>Om bijvoorbeeld het effect van de <var>bevolkingsgrootte</var> op de tijd om de ziekte
+                            volledig te verspreiden (<var>verstreken tijd</var>) te begrijpen, moet je misschien
+                            <var>bevolkingsgrootte</var> vast zetten op 10 en <var>snelheid</var> op 2 en je simulatie
+                            gebruiken om een diagram te maken van <var>verstreken tijd</var> (op de verticale as) als
+                            een functie van <var>bevolkingsgrootte</var> (op de horizontale as) met stappen van 10 voor
+                            de <var>bevolkingsgrootte</var>
+                        </p>
+                        <p>Voer vergelijkbare experimenten uit om de effecten van het percentage aanvankelijk
+                            geïnfecteerden en de bewegingssnelheid te begrjipen.
+                        </p>
+                        <p>Omdat de resultaten van iedere test deels willekeurig zijn moet je misschien iedere simulatie
+                            een aantal keer uitvoeren en het gemiddelde nemen.
+                        </p>
                     </div>
                 </li>
-                <li>Create a visual graph of your findings. Do you see any patterns? Do they agree with your hypothesis?
-                    If not, make a new hypothesis. How can you study the effects of other variables with your
-                    simulations? </li>
-            </ol>
-        </div>
-        <p>This is a simplified model. There are many things you could do to make the model more realistic. For example,
-            you could make the infected people heal over time, or you could add doctor sprites who can heal sick
-            sprites. But if you included <em>all</em> the things that happen in real human populations in your
-            simulation, it would slow down the simulation too much to use. Updating your software or upgrading your
-            hardware may help you include more details in your simulation, but you will always have to make some
-            simplifications.</p>
-        <div class="endnote">There was a time when weather scientists could do a good job of predicting the weather with
-            a complicated model. The only problem was that the computers back then took several days to run the model,
-            so the predictions weren't ready in time. Computers these days can run many complicated weather models fast
-            enough to predict the weather reasonably well.</div>
-        <div class="takeItFurther">
-            <ol type="A">
-                <li> Here are some possible variations on this simulation that could make it more realistic. Save a copy
-                    of your work before exploring one or more of these variations:<br />
-                    <ul>
-                        <li>Give a probability to being infected when a healthy person encounters a sick person.</li>
-                        <li>Let the infected people slow down in speed.</li>
-                        <li>Let the infected people heal either with time or by a probability.</li>
-                        <li>Let those infected and then healed become immune to the sickness.</li>
-                        <li>Introduce doctor sprites that heal the sick upon encounter.</li>
-                        <li>At the start of simulation, introduce vaccination to a given percentage of the population.
-                        </li>
-                    </ul>
+                <li>Maak een diagram van je vindingen. Zie je patronen? Komen die overeen met je hypothese? Als dat niet
+                    zo is, maak dan een nieuwe hypothese. Hoe kan je de effecten van andere variabelen bestuderen met je
+                    simulaties?
                 </li>
-                <li>Design and implement a predator-prey simulation in Snap<em>!</em>. For example, you could model an
-                    environment with wolf and deer populations where the wolf prey on the deer. What are some parameters
-                    you need to incorporate into your model so you can simulate realistic fluctuations in the
-                    populations of predator and prey?</li>
-                <li> Imagine you work at a bank that wants to minimize customer wait times in line. The bank is
-                    considering two alternatives: <ul>
-                        <li>a single line where the customers stand in arrival order and wait for the next available
-                            teller, or</li>
-                        <li>separate lines for each teller. </li>
-                    </ul> Design and implement two simulations in Snap<em>!</em> to help the bank determine the
-                    <em>average wait time</em> for customers in each scenario in order to choose the best option.<br />
-                    <img class="indent" src="/bjc-r/img/5-algorithms/img_disease-spread/single-queue.png" height="180"
-                        alt="Geen Afbeelding" /><img
-                        src="/bjc-r/img/5-algorithms/img_disease-spread/multiple-queues.png" height="180"
-                        alt="Geen Afbeelding" /> </li>
             </ol>
         </div>
+        <p> Dit is een vereenvoudigd model. Er zijn veel dingen die je kan doen om het model realistischer te maken. je
+            kunt bijvoorbeeld de besmette mensen in de loop van de tijd laten genezen, of je kan artsen toevoegen
+            die zieke mensen kunnen genezen. Maar als je <em>alle</em> dingen die in echte menselijke populaties
+            gebeuren in je simulatie opneemt, zou de simulatie te veel vertragen om te gebruiken. Het bijwerken van je
+            software of het upgraden van je hardware kan je helpen meer details in je simulatie op te nemen, maar je
+            zult altijd enkele vereenvoudigingen moeten aanbrengen.
+            <div class="endnote">
+                Er was een tijd dat weerwetenschappers het weer goed konden voorspellen met een ingewikkeld model. Het
+                enige probleem was dat de computers toen enkele dagen nodig hadden om de simulatie uit te voeren, zodat
+                de
+                voorspellingen niet op tijd klaar waren. Computers kunnen tegenwoordig veel ingewikkelde weersimulaties
+                snel genoeg uit voeren om het weer redelijk goed te voorspellen.
+            </div>
+            <div class="takeItFurther">
+                <ol type="A">
+                    <li> Hier zijn enkele mogelijke variaties op deze simulatie die het realistischer zouden kunnen
+                        maken. Sla een kopie van je werk op voordat je een of meer van deze variaties uitprobeert:<br />
+                        <ul>
+                            <li>Maak het een kans om besmet te raken wanneer een gezond persoon een zieke tegenkomt.
+                            </li>
+                            <li>Laat zieke mensen langzamer lopen. </li>
+                            <li>Laat de zieke mensen gezond worden, door tijd of door een kans.</li>
+                            <li>Laat geneze mensen immuun worden aan de ziekte.</li>
+                            <li>Introduceer artsen die zieke mensen genezen als ze elkaar raken.</li>
+                            <li>Introduceer vaccins aan het begin van de simulatie bij een bepaald percentage van de
+                                bevolking. </li>
+                        </ul>
+                    </li>
+                    <li>Ontwerp en implementeer een roofdier-prooisimulatie in Snap <em>!</em>. Je zou bijvoorbeeld een
+                        omgeving kunnen modelleren met wolf- en hertenpopulaties waar de wolf op het hert jaagt. Wat
+                        zijn enkele parameters die je in je model moet opnemen, zodat je realistische schommelingen in
+                        de
+                        populatie van roofdier en prooi kunt simuleren?
+                    </li>
+                    <li> Stel je voor dat je werkt bij een bank die de wachttijden in een wachtrij wil minimaliseren. De
+                        bank twijfelt tussen 2 mogelijkheiden:
+                        <ul>
+                            <li>Één enkele wachtij waar de klanten wachten tot er een medewerker beschikbaar is, of
+                            </li>
+                            <li>aparte wachtrijen voor iedere medewerker. </li>
+                        </ul> Ontwerp en implementeer twee simulaties in Snap<em>!</em> om de bank te helpen met het
+                        berekenen van de <em>gemiddelde wachttijd</em> voor klanten in beide scenario's zodat de bank de
+                        beste optie kan kiezen. <br />
+                        <img class="indent" src="/bjc-r/img/5-algorithms/img_disease-spread/single-queue.png"
+                            height="180" alt="Geen Afbeelding" /><img
+                            src="/bjc-r/img/5-algorithms/img_disease-spread/multiple-queues.png" height="180"
+                            alt="Geen Afbeelding" /> </li>
+                </ol>
+            </div>
     </div>
     <div class="full-bottom-bar" style="background-position: 20px 3px;">
         <div class="bottom-nav btn-group"> <a class="btn btn-default backbutton arrow" style="min-width: 90px;"

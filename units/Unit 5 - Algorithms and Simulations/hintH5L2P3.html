@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <link rel="icon" href="../../BJOC-NL-logo.png" type="image/png">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="../../js+css/llab/loader.js"></script>
+    <script type="text/javascript" src="../../js+css/gifffer.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            Gifffer();
+            Inhoudsopgave();
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../js+css/css/bjc-gifffer.css">
+    <title>Hoofdstuk 5 Les 2: Modellen en Simulaties, Pagina 3 Hints</title>
+</head>
+
+<body cz-shortcut-listen="true" style="padding-top: 43px;">
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title">Hoofdstuk 5 Les 2: Modellen en Simulaties, Pagina 3 Hints
+        </div>
+        <div class="nav navbar-nav navbar-right">
+            <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="title-small-screen">Hoofdstuk 5 Les 2: Modellen en Simulaties, Pagina 3 Hints</div>
+    <div class="full">
+        <h2> Hints voor het ziekteverspreidingsproject </h2>
+        <div class="forYouToDo">
+            Hier zijn een paar hints voor een manier om de code te schrijven:
+            <ol>
+                <li>Initialiseer de variabelen voor het bijhouden van de tijd en het aantal geïnfecteerden. Vraag de
+                    bevolkingsgrootte, het percentage aanvankelijk geïnfecteerden en de de snelheid waarmee de mensen
+                    moeten bewegen, aan de gebruiker.
+                </li>
+                <li>
+                    Houd de tijd bij totdat de hele bevolking geïnfecteerd is. <br>
+                    <img class="indent" src="./hintH5L2P3_files/timerCode.png" height="117"
+                        alt="reset timer; repeat until((infectedCounter)=(total)){set (timeElapsed) to (timer)}"
+                        title="reset timer; repeat until((infectedCounter)=(total)){set (timeElapsed) to (timer)}">
+                </li>
+                <li>
+                    Omdat je van te voren niet weet hoeveel sprites er voor de bevolking gemaakt zullen worden, moet je
+                    één sprite maken en het <code>maak een kloon van mijzelf</code>blok in Snap<em>!</em> om een
+                    bevolking ter grootte van de invoer van de gebruiker te maken.
+                    <br>
+                    <img class="indent" src="./hintH5L2P3_files/cloneCode3.png" height="84"
+                        alt="repeat(total){create a clone of (myself)}"
+                        title="repeat(total){create a clone of (myself)}">
+                </li>
+                <li>
+                    Initialiseer de klonen en geef ze een bepaald gedrag met gebruik van het <code>wanneer ik als kloon
+                        start</code>blok. <br>
+                    <img class="indent" src="./hintH5L2P3_files/cloneCode2.png" height="55"
+                        alt="when I start as a clone" title="when I start as a clone">
+                </li>
+                <li>
+                    Geef de klonen een ziek of gezond uiterlijk tijdens de initialisatie. Terwijl de klonen gemaakt
+                    worden, moet je ze een ziek uiterlijk geven totdat je het percentage aanvankelijk geïnfecteerden
+                    hebt bereikt dat de gebruiker heeft ingevoerd. <br>
+                    <img class="indent" src="./hintH5L2P3_files/ifPercentage.png" height="185"
+                        alt="switch to costume(healthy);if((infectedCounter)&lt;((total)X((percentageInitiallyInfected)/100)){switch to costume(sick);change(infectedCounter) by (1)}"
+                        title="switch to costume(healthy);if((infectedCounter)&lt;((total)X((percentageInitiallyInfected)/100)){switch to costume(sick);change(infectedCounter) by (1)}">
+                </li>
+                <li>
+                    Geef een willekeurige richting en locatie aan de klonen wanneer je ze initialiseert maar als je
+                    begint met de tijd te meten moeten de klonen in een rechte lijn bewegen met de snelheid die de
+                    gebruiker heeft ingevoerd totdat ze de rand van het speelveld raken en terug stuiteren.
+                </li>
+                <li>
+                    Als een gezonde sprite een zieke raakt moet de gezonde ziek worden. Hiervoor moet je code schrijven
+                    die een botsing met een ziek persoon detecteert:
+                    <br> <br>
+                    <div class="sidenote">
+                        Let op: om de optie <code> costume name </code> beschikbaar te hebben, moet je <em>eerst</em>
+                        een sprite selecteren in het tweede slot van het <code> van </code>blok voordat je de
+                        oranje <var> item </var>variabele erin sleept.
+                    </div>
+                    <img class="indent" src="./hintH5L2P3_files/collideWithSick.png" width="631"
+                        alt="collideWithSick?{for each (item) of (my (neighbors)){if(touching(item)? and (costume name of (item)=sick)){report(true)}};report(false)}"
+                        title="collideWithSick?{for each (item) of (my (neighbors)){if(touching(item)? and (costume name of (item)=sick)){report(true)}};report(false)}"><br>
+                    <div class="endnote"> Bouw dit blok in plaats van gebruik te maken van het <img
+                            src="./hintH5L2P3_files/touchingColor.png" height="36" alt="touching(red)?"
+                            title="touching(red)?"> blok van het Waarnemen-palet omdat Snap<em>!</em> heel traag is in
+                        het detecteren van een botsing van kleuren maar snel in het detecteren van een botsing van
+                        sprites.
+                    </div>
+                </li>
+                <li>Test je code om zeker te weten dat het werkt zoals het hoort.
+                </li>
+            </ol>
+        </div>
+    </div>
+</body>
+
+</html>
