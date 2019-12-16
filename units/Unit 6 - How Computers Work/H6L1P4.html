@@ -19,52 +19,56 @@
 <body>
     <div class="full">
         <h2>Het Softwaredomein: Libraries</h2>
-        <div class="learn"><strong>On this page</strong>, you'll learn how some programmers write <em>libraries</em> to
-            help other programmers not have to think about some messy details.</div>
-        <p>Suppose an application programmer wants a little picture to be able to move around in a screen that also has
-            other pictures in it. In Snap<em>!</em>, that's built in: import a picture as a <em>costume</em> that can be
-            attached to a sprite, and then move the picture by moving the sprite. The sprite abstraction lets a
-            programmer <em>move</em> a picture (the sprite's costume) over other pictures (the stage background, pen
-            trails, and other sprites' costumes) without thinking about all the details. Not all languages have the
-            sprite abstraction. </p>
-        <p>Other common tasks&mdash;for example, knowing where the mouse pointer is, doing arithmetic on huge numbers,
-            or managing sound&mdash;also have complex parts. If application programmers had to deal with all of these
-            details in every program, no software would ever get developed. And because many languages and applications
-            need the same abilities, it's wasteful to rewrite all that code for each one. So programmers write
-            <em>libraries</em> for other programmers to use.</p>
+        <div class="learn"><strong>Op deze pagina</strong>, ga je leren over hoe sommige programmeurs <em>libraries</em>
+            schrijven om andere programmeurs te helpen niet na te hoeven denken over slordige details.
+        </div>
+
+        <p> Stel dat een applicatieprogrammeur een klein plaatje wil kunnen verplaatsen in een scherm dat ook andere
+            afbeeldingen bevat. In Snap <em>!</em> is dat ingebouwd: importeer een afbeelding als een <em> kostuum </em>
+            die aan een sprite kan worden bevestigd en verplaats de afbeelding vervolgens door de sprite te verplaatsen.
+            Met de sprite-abstractie kan een programmeur een afbeelding (het kostuum van de sprite) over
+            andere afbeeldingen (de achtergrond van het podium, pennen en andere kostuums van sprites)
+            <em>verplaatsen </em> zonder na te denken over alle details. Niet alle talen hebben de sprite-abstractie.
+        </p>
+        <p> Andere veel voorkomende taken, weten bijvoorbeeld waar de muisaanwijzer zich bevindt, rekenen op grote
+            aantallen of geluid afspelen, hebben ook complexe onderdelen. Als applicatieprogrammeurs met al deze details
+            in elk programma te maken zouden krijgen, zou er nooit software worden ontwikkeld. En omdat veel talen en
+            toepassingen dezelfde vaardigheden gebruiken, is het verspillend om al die code voor elk programma te
+            herschrijven. Dus schrijven programmeurs <em> libraries (bibliotheken) </em> voor andere programmeurs om te
+            gebruiken.
+        </p>
+
         <div class="vocabFullWidth">
-            <p>A <strong>library</strong> is a piece of computer code written by another programmer that you can import
-                into your code without having to know any of the details of how it works.</p>
-            <p>An <strong>application program interface</strong> (API) is the documentation of what the <em>user</em> of
-                a library needs to know about its contents: a description of their purpose and their inputs and outputs,
-                but not their algorithms. An API allows two software components to communicate.</p>
+            <p> Een <strong> library </strong> is een stuk computercode geschreven door een andere programmeur die je
+                in jouw code kunt importeren zonder dat je details hoeft te weten over hoe het werkt. </p>
+            <p> Een <strong> applicatieprogramma-interface </strong> (API) is de documentatie van wat de <em> gebruiker
+                </em> van een bibliotheek moet weten over de inhoud: een beschrijving van hun doel en hun in- en
+                uitvoer, maar niet hun algoritmen. Met een API kunnen twee softwarecomponenten communiceren. </p>
         </div>
         <h3>Snap<em>!</em> Libraries</h3>
         <p>
-            <div class="comment">When tools are integrated as primitives, this text will need changes (as well as the
-                rest of the curriculum) --MF, 11/16/17</div> You've used libraries in Snap<em>!</em>, consisting of
-            blocks (procedures) that provide some useful abstraction. For example, every time you <img
-                class="inline nopadtb" src="/bjc-r/img/icons/import-tools.png" alt="Geen Afbeelding" />, you are
-            importing a library of additional procedures including <code>for</code>, <code>keep</code>,
-            <code>label</code>, <code>combine</code>, and <code>for each</code>. Snap<em>!</em> also has libraries for
-            many other things, including one for accessing different parts of words and sentences and one for
-            controlling pen color using different ways of encoding colors.<br /> <img class="indent"
-                src="/bjc-r/img/6-computers/libraries-1.png" alt="Geen Afbeelding" /><br /> <img class="indent"
-                src="/bjc-r/img/6-computers/libraries-words.png" alt="Geen Afbeelding" /> <img class="indent"
-                src="/bjc-r/img/6-computers/libraries-pen.png" alt="Geen Afbeelding" />
+            Je hebt libraries gebruikt in Snap <em>! </em>, bestaande uit blokken (procedures) die wat nuttige
+            abstractie bieden.
+            Snap<em>!</em> heeft libraries voor veel dingen, bijvoorbeeld om bij bepaalde stukken van woorden te komen
+            en om de penkleur verschillende kleurcoderingen te laten gebruiken. <br />
+            <img class="indent" src="/bjc-r/img/6-computers/libraries-1.png" alt="Geen Afbeelding" /> <br />
+            <img class="indent" src="/bjc-r/img/6-computers/libraries-words.png" alt="Geen Afbeelding" />
+            <img class="indent" src="/bjc-r/img/6-computers/libraries-pen.png" alt="Geen Afbeelding" />
         </p>
         <div class="forYouToDo" id="first">
             <ol>
-                <li>Read through the libraries listed in Snap<em>!</em> (as shown above), and choose one block that
-                    interests you and that you have never used. Build a small project that uses that block, and use your
-                    project to teach that block to some of your classmates.</li>
+                <li>Lees door de libraries die in Snap<em>!</em> staan (zoals hierboven) en kies een blok dat je leuk
+                    vindt en nooit eerder hebt gebruikt. Bouw een klein programma dat dat blok gebruiken en gebruik dat
+                    programma om je klasgenoten dat blok te leren gebruiken.
+                </li>
             </ol>
         </div>
-        <h3>Languages vs. Libraries</h3>
-        <p>Often when people compare what different programming languages can do, they are <em>really</em> comparing
-            libraries. For example, people think they like JavaScript because they can use it to program web pages, but
-            that's not a property of JavaScript. It's actually a web page <em>library</em> built into the browser that
-            lets you program web pages.</p>
+        <h3> Talen versus Libraries </h3>
+        <p> Wanneer mensen vergelijken wat verschillende programmeertalen kunnen doen, vergelijken ze
+            <em> eigenlijk </em> libraries. Mensen denken bijvoorbeeld dat ze van JavaScript houden omdat ze het
+            kunnen gebruiken om webpagina's te programmeren, maar dat is geen eigenschap van JavaScript. Het is
+            eigenlijk een webpagina <em> library </em> ingebouwd in de browser waarmee je webpagina's kunt
+            programmeren. </p>
     </div>
     <div class="full-bottom-bar" style="background-position: 20px 3px;">
         <div class="bottom-nav btn-group"> <a class="btn btn-default backbutton arrow" style="min-width: 90px;"
