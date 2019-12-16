@@ -19,74 +19,81 @@
 <body>
     <div class="full">
         <h2>Abstractie Binnen de Computer</h2>
-        <p>In Unit 4 <a
-                href="/bjc-r/cur/programming/4-internet/2-communication-protocols/3-open-protocols.html?topic=nyc_bjc%2F4-internet.topic&course=bjc4nyc.html&novideo&noassignment">A
-                Hierarchy of Open Protocols</a>, you saw that the Internet software is arranged in several levels of
-            abstraction, with application programs (like your email program) at the highest level and network hardware
-            protocols such as WiFi and Ethernet at the lowest level. Recall that <em>higher</em> levels are closer to
-            what users want to be thinking about; lower levels are closer to the way machines work. </p>
-        <p>Like the Internet, the way a computer works on the inside also has levels of abstraction.</p>
+        <p>In Hoofdstuk 4 <a href="../Unit 4 - How the Internet works/H4L2P3.html">
+                Een Hiërarchie van Open Protocollen</a>, zag je dat internetsoftware op verschillende
+            abstractieniveaus is gerangschikt, met applicatieprogramma's (zoals je e-mailprogramma) op het hoogste
+            niveau en netwerkhardwareprotocollen zoals WiFi en Ethernet op het laagste niveau. Bedenk dat <em> hogere
+            </em> niveaus dichter bij waar gebruikers over willen nadenken; lagere niveaus zijn dichter bij de manier
+            waarop machines werken. </p>
+        <p> Net zoals internet heeft de manier waarop een computer werkt ook abstractieniveaus. </p>
         <div class="learn">
-            <p><strong>In this lab,</strong> you will learn about the levels of abstraction in computer software and
+            <p><strong>In deze les,</strong> ga je leren over de verschillende abstractieniveaus in computersoftware en
                 hardware.</p>
-            <p><strong>On this page,</strong> you will learn get an overview of three groups (<em>domains</em>) of
-                levels of abstraction.</p>
+            <p><strong>Op deze pagina,</strong> ga je leren over de drie groepen (<em>domeinen</em>) van de
+                abstractieniveaus.
+            </p>
         </div>
-        <p>There are a lot of levels of abstraction in how computers work. Here they are organized into three
-            overarching domains:</p> <img class="indent noshadow" src="/bjc-r/img/6-computers/hardware-abstraction.png"
+        <p>
+            Er zijn veel abstractieniveaus in hoe computers werken. Hier zijn ze georganiseerd in drie overkoepelende
+            domeinen:</p> <img class="indent noshadow" src="/bjc-r/img/6-computers/hardware-abstraction.png"
             alt="Geen Afbeelding" />
-        <div class="endnote">Different people might draw this diagram slightly differently, so don't try to memorize all
-            the levels. The key abstraction levels to remember are software, digital computer hardware, and underlying
-            analog circuit components.</div>
-        <h3>Software Domain</h3>
-        <p> The programs you write and use are software, but underneath these programs is more software that helps them
-            work. In this lab, we'll look at four layers of abstraction in the software domain: <ul>
-                <li><strong>applications</strong> that you write and use</li>
-                <li><strong>programing languages</strong> that are used to write them</li>
-                <li><strong>libraries</strong> of useful functions that hide messy details</li>
-                <li><strong>operating systems</strong> that interface with the hardware</li>
+        <div class="endnote">
+            Verschillende mensen kunnen dit diagram iets anders tekenen, dus probeer niet alle niveaus te onthouden. De
+            belangrijkste abstractieniveaus om te onthouden zijn software, digitale computerhardware en onderliggende
+            analoge circuitcomponenten.</div>
+        <h3>Softwaredomein</h3>
+        <p> De programma's die je schrijft en gebruikt, zijn software, maar onder deze programma's bevindt zich meer
+            software die hen helpt werken. In deze les kijken we naar vier abstractielagen in het softwaredomein: <ul>
+                <li> <strong> applicaties </strong> die je schrijft en ziet </li>
+                <li> <strong> programmeertalen </strong> die worden gebruikt om ze te schrijven </li>
+                <li> <strong> libraries (bibliotheken) </strong> van handige functies die rommelige details
+                    verbergen </li>
+                <li> <strong> besturingssystemen </strong> die werken met de hardware </li>
             </ul>
         </p>
-        <p>Software is an <em>abstraction</em>&mdash;a way of thinking about the computer without thinking about how it
-            works.</p>
-        <div class="endnote">Similarly, an automobile driver is operating at a high level of abstraction when using the
-            brake pedal. As long as the engineers and mechanics designed and built the car right, drivers don't need to
-            know the details about <em>how</em> the brake system works&mdash;they just use it at a high level.</div>
+        <p> Software is een <em> abstractie </em> - een manier van denken over de computer zonder na te denken hoe deze
+            werkt. </p>
+        <div class="endnote">
+            Op dezelfde manier werkt een automobilist op een hoog abstractieniveau wanneer hij het rempedaal gebruikt.
+            Zolang de ingenieurs en monteurs de auto goed hebben ontworpen en gebouwd, hoeven bestuurders de details
+            over <em> hoe </em> het remsysteem werkt niet te weten, ze gebruiken het gewoon op een hoog niveau. </div>
         <div class="captioned"> <img class="inline" src="/bjc-r/img/6-computers/motherboard_small.jpg"
                 alt="Geen Afbeelding" />
             <div><small>Image by Wikipedia user Julianprescott2604juuly</small></div>
         </div>
-        <h3>Digital Domain</h3>
-        <p> In the software domain, each level of abstraction is a different piece of software, but the levels of
-            abstraction in the digital domain are different ways of thinking about the same physical object. The
-            circuitry inside a computer is complicated, and to make building it possible, engineers think about it at
-            several different levels of abstraction: <ul>
-                <li>The <strong>architecture</strong> is the instructions that software can send that the hardware will
-                    understand.</li>
-                <li>The computer has <strong>components</strong> (such as memory, processors, video cards, etc.) that
-                    implement the architecture.</li>
-                <li>Those components are built out of <strong>integrated circuits (chips)</strong>, which are the black
-                    rectangles that you can see on this circuit board.</li>
-                <li>Those integrated circuits are designed around <strong>logic gates</strong>, the fundamental building
-                    blocks that implement Boolean functions.</li>
-                <div class="endnote"> You learned about Boolean functions in <a
-                        href="/bjc-r/cur/programming/2-complexity/3-predicates/1-adding-questions.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment">Unit
-                        2 Lab 3: Making Decisions by Using Predicates</a>.<br /> <img class="indent"
-                        src="/bjc-r/img/blocks/and.png" alt="Geen Afbeelding" /> <img class="indent"
-                        src="/bjc-r/img/blocks/or.png" alt="Geen Afbeelding" /> <img class="indent"
-                        src="/bjc-r/img/blocks/not_small.png" alt="Geen Afbeelding" /> </div>
+        <h3>Digitale Domein</h3>
+        <p> In het softwaredomein is elk abstractieniveau een ander stuk software, maar de abstractieniveaus in het
+            digitale domein zijn verschillende manieren om over hetzelfde fysieke object na te denken. Het circuit in
+            een computer is ingewikkeld en om het bouwen mogelijk te maken, denken ingenieurs erover op verschillende
+            abstractieniveaus: <ul>
+                <li> De <strong> architectuur </strong> zijn de instructies die software kan verzenden die de hardware
+                    zal begrijpen. </li>
+                <li> De computer heeft <strong> componenten </strong> (zoals geheugen, processors,
+                    videokaarten, etc.) die de architectuur implementeren. </li>
+                <li> Die componenten zijn opgebouwd uit <strong> geïntegreerde schakelingen (chips)
+                    </strong>, de zwarte rechthoeken die u op deze printplaat kunt zien. </li>
+                <li> Die geïntegreerde schakelingen zijn ontworpen rond <strong> logische poorten
+                    </strong>, de fundamentele bouwstenen die Booleans implementeren. </li>
+                <div class="endnote"> Je hebt geleerd over Booleans in
+                    <a href="../Unit 2 - Abstraction/H2L3P1.html"> Hoofdstuk 2 Les 3: Keuzes maken met
+                        predikaten</a>.<br />
+                    <img class="indent" src="/bjc-r/img/blocks/and.png" alt="Geen Afbeelding" />
+                    <img class="indent" src="/bjc-r/img/blocks/or.png" alt="Geen Afbeelding" />
+                    <img class="indent" src="/bjc-r/img/blocks/not_small.png" alt="Geen Afbeelding" /> </div>
             </ul>
         </p>
         <h3>Analog Domain</h3>
-        <p>Logic gates, which are the lowest abstraction level of the digital domain, operate on ones and zeros. In
-            physical reality, those logic gates are built out of <strong>transistors</strong>, a type of circuit
-            component. Transitors aren't like light switches that are either on or off. There can be in-between values
-            (like "only 23% on"). So, electrical engineers have to think about the laws of electronics to design digital
-            circuits so that in-between values don't happen.</p>
+        <p>
+            Logische poorten, die het laagste abstractieniveau van het digitale domein zijn, werken met enen en nullen.
+            In de fysieke realiteit zijn die logische poorten opgebouwd uit <strong> transistors </strong>, een type
+            circuitcomponent. Transitors zijn niet zoals lichtschakelaars die aan of uit staan. Er kunnen tussenliggende
+            waarden zijn (zoals "slechts 23% aan"). Elektrotechnici moeten dus nadenken over de wetten van de
+            elektronica om digitale schakelingen te ontwerpen zodat er geen tussentijdse waarden gebeuren.</p>
         <div class="vocabFullWidth">: <strong>analog</strong> vs. <strong>digital</strong>
-            <p>Digital and analog are opposites. <strong>Digital</strong> means information that is represented as
-                <em>ones and zeros</em>. <strong>Analog</strong> means information that is represented by signals that
-                <em>vary continuously</em> (that is, including in-between values).</p>
+            <p> Digitaal en analoog zijn tegengestelden. <strong> Digitaal </strong> betekent informatie die wordt
+                weergegeven als <em> enen en nullen </em>. <strong> Analoog </strong> betekent informatie die wordt
+                weergegeven door signalen die <em> continu variëren </em> (dat wil zeggen inclusief tussenliggende
+                waarden). </p>
         </div>
     </div>
     <div class="full-bottom-bar" style="background-position: 20px 3px;">
