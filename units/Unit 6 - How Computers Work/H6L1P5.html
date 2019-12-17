@@ -19,84 +19,97 @@
 <body>
     <div class="full">
         <h2>Het Software Domein: Besturingssystemen</h2>
-        <div class="learn"><strong>On this page</strong>, you'll learn about the software that directly manages the
-            computer's hardware, the <em>operating system.</em></div>
-        <p>Your computer came with an <em>operating system</em> (OS) installed. Besturingssystemen are the underlying
-            programs that your apps interact with to communicate with the computer. For computers with keyboards, it's
-            probably Linux, macOS, or Windows. For phones and tablets, it's probably Android or iOS. </p>
-        <p> Roughly speaking, the operating system handles the basic tasks that your applications depend on, including:
+        <div class="learn"><strong>Op deze pagina</strong>, ga je leren over de software die direct de hardware van de
+            computer bestuurt, het <em>besturingsysteem.</em>
+        </div>
+        <p> Op je computer is een <em> besturingssysteem </em> ook wel Operating System (OS) in het Engels
+            geïnstalleerd. Besturingssystemen zijn de onderliggende programma's waarmee apps communiceren om de computer
+            te gebruiken. Voor computers met toetsenborden is dit waarschijnlijk Linux, macOS of Windows. Voor telefoons
+            en tablets is dit waarschijnlijk Android of iOS. </p>
+        <p> Grofweg behandelt het besturingssysteem de basistaken waarvan je applicaties afhankelijk zijn, waaronder:
             <ul>
-                <li>the window system, which allows more than one window to be open on your screen</li>
-                <li>the file manager, that displays the contents of folders and lets you select files to read or
-                    manipulate </li>
-                <li>communications with external devices like your keyboard or printer</li>
-                <li>utilities such as a simple text editor or a calculator</li>
+                <li> het venstersysteem, waarmee meer dan één venster op je scherm kan worden geopend </li>
+                <li> het bestandsbeheer, dat de inhoud van mappen weergeeft en waarmee je bestanden kunt selecteren om
+                    te openen of te bewerken </li>
+                <li> communicatie met externe apparaten zoals je toetsenbord of printer </li>
+                <li> hulpprogramma's zoals een eenvoudige teksteditor of een rekenmachine </li>
             </ul>
         </p>
-        <div class="takeNote">In a computer, there are many applications and operating system tasks all wanting to run
-            at once. Every operating system has a <em>kernel</em> that manages when all these processes run.</div>
+        <div class="takeNote"> Op een computer willen veel toepassingen en besturingssysteemtaken allemaal tegelijk
+            worden uitgevoerd. Elk besturingssysteem heeft een <em> kernel </em> die beheert wanneer al deze processen
+            worden uitgevoerd. </div>
         <div class="endnote">
-            <h3>The Kernel</h3>
-            <p> The <em>kernel</em> deals directly with hardware (keyboard, mouse, microphone, camera, hard drives,
-                memory, printer, speakers, screen, etc.). So the kernel is generally written in a low level language so
-                it can control that hardware. It handles several important tasks: <ul>
-                    <li><strong>Scheduling.</strong> The kernel has access to the time clock that's built into the
-                        hardware and lets each program run for a small amount of time (typically about 1/10 second) and
-                        then switches to the next program in line.</li>
-                    <li><strong>Security.</strong> Those many application programs may have bugs or malicious code. The
-                        kernel, which has access to the <em>memory</em> where programs and data are stored, ensures that
-                        each program is assigned a separate location in memory and doesn't interfere with other
-                        programs. The kernel also controls which data files a program can use based on <em>file
-                            protection</em> settings that users or applications specify for each file.</li>
-                    <li><strong>Input and output.</strong> Many devices can be attached to your computer. The kernel
-                        knows how the computer's hardware reads or writes to each device. Only the kernel is allowed
-                        direct access to these devices, and it carries out authorized transfers of information for the
-                        applications. </li>
+            <h3> De kernel </h3>
+            <p> De <em> kernel </em> behandelt hardware rechtstreeks (toetsenbord, muis, microfoon, camera, harde
+                schijven, geheugen, printer, luidsprekers, scherm, enz.). Dus de kernel is over het algemeen geschreven
+                in een taal op laag niveau, zodat deze de hardware kan besturen. Het behandelt verschillende
+                belangrijke taken: <ul>
+                    <li> <strong> Planning. </strong> de kernel heeft toegang tot de tijdklok die in de hardware is
+                        ingebouwd en laat elk programma voor een kleine hoeveelheid tijd draaien (meestal ongeveer 1 /
+                        10 seconden) en schakelt dan over naar het volgende programma in de rij. </li>
+                    <li> <strong> Beveiliging. </strong> Al die toepassingsprogramma's kunnen bugs of schadelijke code
+                        bevatten. De kernel, die toegang heeft tot het <em> geheugen </em> waar programma's en gegevens
+                        worden opgeslagen, zorgt ervoor dat aan elk programma een aparte locatie in het geheugen wordt
+                        toegewezen en andere programma's niet storen. De kernel bepaalt ook welke gegevensbestanden een
+                        programma kan gebruiken op basis van <em> bestandsbeveiliging </em> instellingen die gebruikers
+                        of applicaties voor elk bestand specificeren. </li>
+                    <li> <strong> Invoer en uitvoer. </strong> Veel apparaten kunnen op je computer worden aangesloten.
+                        De kernel weet hoe de hardware van de computer elk apparaat leest of schrijft. Alleen de kernel
+                        heeft directe toegang tot deze apparaten en voert geautoriseerde overdracht van informatie voor
+                        de applicaties uit. </li>
                 </ul>
             </p>
-            <p>These days, OS kernels are remarkably similar. Of the five systems listed earlier (Linux, macOS, Windows,
-                Android, and iOS), four of them (all but Windows) are based on variants of a single kernel, called Unix.
-            </p>
-            <p><a href="#hint-unix" data-toggle="collapse">Read more about Unix.</a></p>
+            <p> Tegenwoordig zijn OS-kernels opmerkelijk vergelijkbaar. Van de vijf eerder genoemde systemen (Linux,
+                macOS, Windows, Android en iOS) zijn er vier (alles op Windows na) gebaseerd op varianten van een
+                enkele kernel, Unix genaamd. </p>
+            <p><a href="#hint-unix" data-toggle="collapse">Lees meer over Unix.</a></p>
             <div id="hint-unix" class="collapse">
-                <p>("Unix" is a trademark, currently owned by The Open Group, and not all of the variants discussed here
-                    are authorized to use that name, but they all provide essentially the same program interface.) Unix
-                    was created around 1970 by Ken Thompson and Dennis Ritchie at AT&amp;T Bell Laboratories.</p>
-                <p>Prior to Unix, almost everyone thought that an operating system had to be developed for a particular
-                    computer architecture, and had to be written in the machine language of that computer, the very
-                    low-level instructions that the hardware understands directly. The first version of Unix was also
-                    written in the machine language of a particular computer, the Digital Equipment Corporation PDP-7.
-                    But the Unix developers knew that the PDP-7 wasn't the only computer in the world, and better ones
-                    would come along, so they wanted to make Unix <em>portable,</em> meaning that it could be brought to
-                    a new computer architecture without a complete rewrite. So in 1972 Dennis Ritchie invented the C
-                    programming language for that purpose. C is similar to other languages available at the time, but
-                    with one added feature: a C programmer can read or write any individual byte of the program's memory
-                    by knowing its <em>address,</em> a number that distinguishes it from other bytes. (You can see that
-                    this feature is quite the opposite from high level abstraction. It is useful only to a programmer
-                    who's thinking in detail about what's where in the computer's memory.) Unix was then rewritten in C.
+                <p> ("Unix" is een handelsmerk, momenteel eigendom van The Open Group, en niet alle hier besproken
+                    varianten zijn geautoriseerd om die naam te gebruiken, maar ze bieden allemaal in wezen dezelfde
+                    programma-interface.) Unix werd rond 1970 gecreëerd door Ken Thompson en Dennis Ritchie in AT&T
+                    Bell Laboratories. </p>
+                <p> Voorafgaand aan Unix dacht bijna iedereen dat een besturingssysteem moest worden ontwikkeld voor een
+                    bepaalde computerarchitectuur en in de machinetaal van die computer moest worden geschreven, de
+                    instructies op zeer laag niveau die die hardware direct begrijpt. De eerste versie van Unix is ​​ook
+                    geschreven in machinetaal van een bepaalde computer, de Digital Equipment Corporation PDP-7. Maar
+                    de Unix-ontwikkelaars wisten dat de PDP-7 niet de enige computer ter wereld was en dat er betere
+                    zouden komen, dus wilden ze Unix <em> draagbaar maken</em>, wat betekent dat het naar een nieuwe
+                    computerarchitectuur kan worden overgezet zonder volledige herschrijving. Dus in 1972 vond Dennis
+                    Ritchie de programmeertaal C voor dat doel uit. C is vergelijkbaar met andere talen die op dat
+                    moment beschikbaar waren, maar met één toegevoegde functie: een C-programmeur kan elke individuele
+                    byte van het geheugen van het programma lezen of schrijven door het <em> adres </em> te weten, een
+                    nummer dat het onderscheidt van andere bytes. (Je kunt zien dat deze functie het tegenovergestelde
+                    is van abstractie op hoog niveau. Het is alleen nuttig voor een programmeur die in detail nadenkt
+                    over wat zich in het geheugen van de computer bevindt.) Unix werd vervolgens herschreven in C.
                 </p>
-                <p>Because of its portability, Unix spread quickly to many computer architectures. Researchers at
-                    Berkeley developed a version, based on the AT&amp;T version, with <em>virtual memory,</em> the
-                    ability to run a program that's only partly in the computer's main memory, with the rest kept on a
-                    disk. This Berkeley version is an ancestor of Apple's besturingssystemen, macOS (since macOS 10.0)
-                    and iOS. (An Apple computer doesn't behave anything like a Unix computer, but the differences are
-                    almost all in application-level programs, not in the kernel.) Android, Google's operating system for
-                    cell phones and tablets, is based on Linux, a complete rewrite of Unix originally written by Linus
-                    Torvalds, who was, at the time, a computer science student in Finland.</p>
-                <p>The application-level programs that were part of the original Unix package have, in most systems,
-                    been replaced with rewritten programs from the Free Software Foundation's GNU (an acronym for Gnu's
-                    Not Unix) package.</p>
+                <p> Vanwege zijn draagbaarheid verspreidde Unix zich snel naar vele computerarchitecturen. Onderzoekers
+                    van Berkeley ontwikkelden een versie, gebaseerd op de AT&T-versie, met
+                    <em> virtueel geheugen </em>, de mogelijkheid om een ​​programma uit te voeren dat slechts
+                    gedeeltelijk in het hoofdgeheugen van de computer zit, terwijl de rest op een schijf wordt bewaard.
+                    Deze Berkeley-versie is een
+                    voorouder van Apple's besturingssysteem, macOS (sinds macOS 10.0) en iOS. (Een Apple-computer
+                    gedraagt ​​zich niet als een Unix-computer, maar de verschillen zitten bijna allemaal in programma's
+                    op toepassingsniveau, niet in de kernel.) Android, het besturingssysteem van Google voor mobiele
+                    telefoons en tablets, is gebaseerd op Linux, een complete herschrijving van Unix oorspronkelijk
+                    geschreven door Linus Torvalds, destijds een student informatica in Finland. </p>
+                <p> De toepassingsniveau-programma's die deel uitmaakten van het originele Unix-pakket, zijn in de
+                    meeste systemen vervangen door herschreven programma's van GNU van de Free Software Foundation (een
+                    acroniem voor Gnu's Not Unix). </p>
             </div>
         </div>
         <div class="ifTime" type="first">
             <ol>
-                <li> Explore the programs running on your computer right now. <ol>
-                        <li>Find out how to list all the programs that are running right now on your computer, and
-                            collect such a program list in a text file.</li>
-                        <li>Count how many of them are programs <em>you</em> asked the computer to run.</li>
-                        <li>Of the rest, can you figure out from the names what they do?</li>
-                        <li>Which ones are part of the operating system (not the OS kernel)?</li>
-                        <li>See if you can figure out the purpose of some oddly-named ones by doing a web search.</li>
+                <li> Ontdek nu de programma's die op je computer worden uitgevoerd. <ol>
+                        <li> Ontdek hoe je alle programma's die nu op je computer worden uitgevoerd, kunt weergeven en
+                            schrijf ze op.
+                        </li>
+                        <li> Tel hoeveel daarvan programma's zijn die <em> jij </em> aan de computer vroeg om uitgevoerd
+                            te worden.
+                        </li>
+                        <li> Kun je uit de namen achterhalen wat ze doen? </li>
+                        <li> Welke maken deel uit van het besturingssysteem ( niet de OS-kernel)? </li>
+                        <li> Kijk of je het doel van een aantal programma's met een vreemde naam kunt achterhalen door
+                            op internet te zoeken. </li>
                     </ol>
                 </li>
             </ol>
