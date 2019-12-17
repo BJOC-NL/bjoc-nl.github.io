@@ -14,30 +14,10 @@
     </script>
     <link rel="stylesheet" type="text/css" href="../../js+css/css/bjc-gifffer.css">
     <title>Unit 6 Lab 2: Data Representation and Compression, Page 5</title>
-    <script type="text/javascript" src="/bjc-r/utilities/gifffer.min.js"></script>
-    <script type="text/javascript">
-        window.onload = function () {
-            Gifffer();
-        }
-    </script>
-    <link rel="stylesheet" type="text/css" href="/bjc-r/css/bjc-gifffer.css">
 </head>
 
 <body>
     <h2>Binary Representation</h2>
-    <div class="todo">
-        <ul>
-            <li><strong>EK 2.1.1C</strong> At a higher level, bits are grouped to represent abstractions, including but
-                not limited to numbers, characters, and color.</li>
-            <li><strong>EK 2.1.1D</strong> Number bases, including binary, decimal, and hexadecimal, are used to
-                represent and investigate digital data.</li>
-            <li><strong>EK 2.1.1E</strong> At one of the lowest levels of abstraction, digital data is represented in
-                binary (base 2) using only combinations of the digits zero and one.</li>
-        </ul>
-    </div>
-
-    <div class="todo">This page has a lot of commented out text that should be read over and removed or moved. --MF,
-        12/18/17</div>
 
     <p>We've looked at how the number of bits used to represent an integer affects how big it can be. Now we turn to the
         specific way a single-word integer is encoded as bits.</p>
@@ -50,39 +30,22 @@
     <p>
         In <strong>base 10</strong>, there are ten digits (0-9), and each place is worth <em>ten</em> times as much as
         the place to its right. <br />
-        <img class="indent noshadow" src="/bjc-r/img/4-internet/decimal-places.jpg"
-            alt="place values in decimal 3761: 3 1000's 7 100's 6 10's 1 1's"
-            title="place values in decimal 3761: 3 1000's 7 100's 6 10's 1 1's" />
+        <img class="indent noshadow" src="/bjc-r/img/4-internet/decimal-places.jpg" alt="Geen Afbeelding" />
     </p>
     <p>
         In <strong>binary, base 2</strong>, there are only two digits (0 and 1), and each place is worth <em>two</em>
         times the place to its right.<br />
         <div class="sidenoteBig">The subscript 2 on 1101<sub>2</sub> means the 1101 is in base 2. Numbers are normally
             written in base 10, so a subscript 10 is only used when needed for clarity.</div>
-        <img class="indent noshadow" src="/bjc-r/img/4-internet/binary-places.jpg"
-            alt="place values in binary 1101: 1 8's 1 4's 0 2's 1 1's"
-            title="place values in binary 1101: 1 8's 1 4's 0 2's 1 1's" />
+        <img class="indent noshadow" src="/bjc-r/img/4-internet/binary-places.jpg" alt="Geen Afbeelding" />
     </p>
-
-    <!--        <div class="forYouToDo" id="first">
-			<ol>
-				<li>
-                    <img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> 
-                    Watch this Binary Timer Snap<em>!</em> program run. Write a description of the binary counter's behavior. Explain what you see going on.<br />
-                    <img class="indent" data-gifffer="/bjc-r/img/4-internet/bin-timer-preview.gif" alt="binary coutner Snap! project" title="binary coutner Snap! project" />
-                </li>
-            </ol>
-        </div>   -->
     <div class="forYouToDo" id="first">
         <ol>
             <li>
-                <img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner"
-                    title="Talk with Your Partner" />
+                <img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Geen Afbeelding" />
                 Watch this Binary Timer Snap<em>!</em> program run. Write a description of the binary counter's
                 behavior. Explain what you see going on.<br />
-                <img class="indent" data-gifffer="/bjc-r/img/4-internet/bin-timer-preview.gif"
-                    alt="A timer which shows the time both in the decimal and the binary system."
-                    title="A timer which shows the time both in the decimal and the binary system." />
+                <img class="indent" data-gifffer="/bjc-r/img/4-internet/bin-timer-preview.gif" alt="Geen Afbeelding" />
             </li>
         </ol>
     </div>
@@ -95,30 +58,17 @@
         <p class="center"> 9827 &nbsp; = &nbsp; 9 &times; 10<sup>3</sup> &nbsp;+&nbsp; 8 &times; 10<sup>2</sup>
             &nbsp;+&nbsp; 2 &times; 10<sup>1</sup> &nbsp;+&nbsp; 7 &times; 10<sup>0</sup></p>
         <p>
-            <img class="imageRight" src="/bjc-r/img/4-internet/binary-places(18).jpg"
-                alt="place values in binary 10010: 1 16's 0 8's 0 4's 1 2's 0 1's"
-                title="place values in binary 10010: 1 16's 0 8's 0 4's 1 2's 0 1's" />
+            <img class="imageRight" src="/bjc-r/img/4-internet/binary-places(18).jpg" alt="Geen Afbeelding" />
             <strong>Base 2</strong> uses the same idea but with <strong>powers of two</strong> instead of powers of ten.
             Binary place values represent the units place (2<sup>0</sup> = 1), the twos place (2<sup>1</sup> = 2), the
             fours place (2<sup>2</sup> = 4), the eights place (2<sup>3</sup> = 8), the sixteens place (2<sup>4</sup> =
             16), etc. So, for example:
         </p>
-        <p align="center">10010<sub>2</sub> &nbsp; = &nbsp; <strong>1 &times; 2<sup>4</sup></strong> &nbsp;+&nbsp; 0
+        <p>10010<sub>2</sub> &nbsp; = &nbsp; <strong>1 &times; 2<sup>4</sup></strong> &nbsp;+&nbsp; 0
             &times; 2<sup>3</sup> &nbsp;+&nbsp; 0 &times; 2<sup>2</sup> &nbsp;+&nbsp; <strong>1 &times;
                 2<sup>1</sup></strong> &nbsp;+&nbsp; 0 &times; 2<sup>0</sup> &nbsp; = &nbsp; 16 &nbsp;+&nbsp; 2 &nbsp; =
             &nbsp; 18<sub>10</sub></p>
-        <!---  <p>One convenient thing about binary is that you don't actually have to do any multiplication; just write down the place value of the places where there's a one, and add them up. (That is, multiplying by 0 always gives 0, and multiplying by 1 just gives the power of two in that place.)</p>-->
     </div>
-
-    <!--		<p>
-        	Here's a video from a different version of BJC. It cuts off just before talking about base 16. (You'll see more about reading hexadecimal soon.)<br />
-        	<img class="imageRight" src="/bjc-r/img/icons/headphones.png" alt="Set Up Your Headphones or Speakers" title="Set Up Your Headphones or Speakers" />
-        </p>
-		
-        <div class="sidenote">If your connection blocks YouTube, <a href="http://scratch.mit.edu/discuss/youtube/SqhbDWVOLvk" target="_blank">watch the video here</a>, but you only need to watch the first 3:10&mdash;up to (but not including) the part about hexadecimal.</div>
-        <div class="sidenote">There is a <strong>mistake in the video</strong> at 2:50. Do you see why? (Also, not everyone learns base 10 place values in kindergarten!)</div>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/SqhbDWVOLvk?rel=0&end=190" frameborder="0" allowfullscreen class="indent"></iframe><br />    -->
-
     <div class="takeNote">
         <p>To translate from binary (for example, 101101<sub>2</sub>) to base 10, <strong>first, write the number out on
                 paper. Then write out the binary place values</strong> by <em>doubling left from the units place</em>:
@@ -145,7 +95,7 @@
             <tr>
                 <td class="noborder" colspan="6">
                     <img class="indent noshadow" src="/bjc-r/img/8-recursive-reporters/r-to-l.png"
-                        alt="right-to-left arrow" title="right-to-left arrow" />
+                        alt="Geen Afbeelding" />
                 </td>
             </tr>
         </table>
@@ -194,7 +144,7 @@
             <tr>
                 <td class="noborder" colspan="8">
                     <img class="indent noshadow" src="/bjc-r/img/8-recursive-reporters/r-to-l.png"
-                        alt="right-to-left arrow" title="right-to-left arrow" />
+                        alt="Geen Afbeelding" />
                 </td>
             </tr>
             <tr>
@@ -224,11 +174,6 @@
         <p>Now, read the number off: 1011001<sub>2</sub> = 89<sub>10</sub>.</p>
     </div>
 
-    <!--        <p>Here's another video. (It also cuts off before talking about base 16.)</p>
-        <div class="sidenote">If your connection blocks YouTube, <a href="http://scratch.mit.edu/discuss/youtube/rVIq_bol1Es" target="_blank">watch the video here</a>, but you only need to watch the first 3:14&mdash;up to (but not including) the part about hexadecimal. </div>
-		<img class="imageRight" src="/bjc-r/img/icons/headphones-mini.png" alt="Set Up Your Headphones or Speakers" title="Set Up Your Headphones or Speakers" />
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/rVIq_bol1Es?rel=0&end=194" frameborder="0" allowfullscreen class="indent"></iframe><br />   -->
-
     <p>
         Here's a more precise description of this <em>algorithm</em> to find the base 2 representation of any positive
         integer:
@@ -236,7 +181,6 @@
             <li>First, find the largest power of two that is less than the number.</li>
             <li>Then, subtract that power of 2 from the number, keep the new number, and record a 1 in the place for
                 that power of 2.</li>
-            <!--                <div class="sidenote">You could <a href="/bjc-r/cur/programming/6-computers/1-number-representation/5-binary-counter.html?topic=nyc_bjc%2F4-internet.topic&course=bjc4nyc.html&novideo&noassignment">create a program</a> based on an algorithm like this.</div>   -->
             <div class="comment">There is <a
                     href="/bjc-r/cur/programming/6-computers/2-representation-compression/5b-binary-alternate.html"
                     target="_blank">Another Algorithm for Converting to Binary</a>.<br />(Change from a "comment" to a

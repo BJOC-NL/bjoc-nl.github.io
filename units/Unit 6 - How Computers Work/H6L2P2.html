@@ -18,40 +18,6 @@
 
 <body>
     <h2>Binary Sequences</h2>
-
-    <div class="todo">
-        <ul>
-            <li><strong>EK 2.1.1A</strong> Digital data is represented by abstractions at different levels.</li>
-            <li><strong>EK 2.1.1B</strong> At the lowest level, all digital data are represented by bits.</li>
-            <li><strong>EK 2.1.1C</strong> At a higher level, bits are grouped to represent abstractions, including but
-                not limited to numbers, characters, and color.</li>
-            <li><strong>EK 2.1.2D</strong> The interpretation of a binary sequence depends on how it is used.</li>
-            <li><strong>EK 2.1.2E</strong> A sequence of bits may represent instructions or data.</li>
-            <li><strong>EK 2.1.2F</strong> A sequence of bits may represent different types of data in different
-                contexts.</li>
-            <li><strong>EK 2.2.3K</strong> Lower-level abstractions can be combined to make higher level abstractions,
-                such as short message services (SMS) or email messages, images, audio files, and videos.</li>
-        </ul>
-    </div>
-
-    <div class="todo">
-        In case someone wants to do more with the project one day:
-        <ul>
-            <li>The color version of the project (<a class="run"
-                    href="/bjc-r/prog/6-computers/U6L1-TranslatingBinary_color.xml"
-                    target="_blank">U6L1-TranslatingBinary_color.xml</a>) breaks Snap<em>!</em> because of an unresolved
-                bug (<a href="https://github.com/jmoenig/Snap--Build-Your-Own-Blocks/issues/1873"
-                    target="_blank">#1873</a>). </li>
-            <li>The PHP script that I used to get the binary sequences for images is here: <a
-                    href="http://localhost/bjc-r/utilities/colorreader.php"
-                    target="_blank">http://localhost/bjc-r/utilities/colorreader.php</a>. Edit the $im variable
-                initialization (currently line 9) to change the path of the color file exported into a binary sequence,
-                and edit the $imbw initialization (currently line 59) to change the B&amp;W file. It would be amazing to
-                incorporate this into the project, but that would require being able to handle uploaded images or images
-                with an existing URL, and I haven't thought through that possibility yet. --MF, 11/30/17</li>
-        </ul>
-    </div>
-
     <div class="learn">
         <p><strong>On this page,</strong> you will learn more about how information is represented inside the computer
             as sequences of bits.</p>
@@ -67,9 +33,8 @@
         users of space are media files: pictures, sounds (mostly music), and video.</p>
     <p>If we could see inside the memory's bits, a section of the memory might look something like this:</p>
     <div class="blockquote">
-        <code
-            class="break">01000001001000000111001101101101011000010111001001110100001000000111000001101000011011110110111001100101001011000010000001101100011010010110101101100101001000000111100101101111011101010111001000100000011011000110000101110000011101000110111101110000001000000110111101110010001000000110010001100101011100110110101101110100011011110111000000100000011000110110111101101101011100000111010101110100011001010111001000101100001000000110001101100001011011100
-            <!--010000001110011011101000110111101110010011001010010000001101110011101010110110101100010011001010111001001110011001011000010000001110000011010010110001101110100011101010111001001100101011100110010110000100000011101000110010101111000011101000010110000100000011011010111010101110011011010010110001100101100001000000110000101101100011011000010000001101011011010010110111001100100011100110010000001101111011001100010000001110100011010000110100101101110011001110111001100101110001000000100001001110101011101000010000001110100011010000110010100100000011110100110100101101100011011000110100101101111011011100010000001101100011011110110001101100001011101000110100101101111011011100111001100100000011010010110111001110011011010010110010001100101001000000110100101110100011100110010000001101101011001010110110101101111011100100111100100100000011001000110111101101110001001110111010000100000011000110110111101101110011101000110000101101001011011100010000001110000011010010110001101110100011101010111001001100101011100110010000001101111011100100010000001100101011101100110010101101110001000000110111001110101011011010110001001100101011100100111001100101110001000000100010101100001011000110110100000100000011011000110111101100011011000010111010001101001011011110110111000100000011010000110111101101100011001000111001100100000011000010010000001100010011010010111010000100000011011110110011000100000011101000110100001100001011101000010000001101001011011100110011001101111011100100110110101100001011101000110100101101111011011100010110000100000011000010111000001110000011100100110111101110000011100100110100101100001011101000110010101101100011110010010000001100011011000010110110001101100011001010110010000100000011000010010000000100010011000100110100101110100001011000010001000100000011101110110100001101001011000110110100000100000011010010111001100100000011010100111010101110011011101000010000000100010010011110110111000100010001000000--></code>
+        <code class="break">
+            01000001001000000111001101101101011000010111001001110100001000000111000001101000011011110110111001100101001011000010000001101100011010010110101101100101001000000111100101101111011101010111001000100000011011000110000101110000011101000110111101110000001000000110111101110010001000000110010001100101011100110110101101110100011011110111000000100000011000110110111101101101011100000111010101110100011001010111001000101100001000000110001101100001011011100
     </div>
     <div class="vocab">
         <p>A <strong>binary sequence</strong> (also called a <em>bitstream</em>) is a string of ones and zeros. </p>
@@ -132,8 +97,7 @@
         </table>
         <p>As we write this in 2017, it's common to have a terabyte disk drive on your desk. Web services deal with
             petabytes or exabytes of data.</p>
-        <p><a href="#hint-target" data-toggle="collapse"
-                title="Where do these prefixes like 'tera-' and 'peta-' come from?">Where do these prefixes like "tera-"
+        <p><a href="#hint-target" data-toggle="collapse">Where do these prefixes like "tera-"
                 and "peta-" come from?</a></p>
         <div id="hint-target" class="collapse">
             <p>When we write big numbers, we put commas every three digits (counting from the right). Each group of
@@ -228,9 +192,7 @@
         <ol>
             <li>
                 <a class="run" href="/bjc-r/prog/6-computers/U6L1-TranslatingBinary.xml" target="_blank"><img
-                        class="inline" src="/bjc-r/img/icons/load-save.png"
-                        alt="Click here to load this file. Then save it to your Snap! account."
-                        title="Click here to load this file. Then save it to your Snap! account."></a>
+                        class="inline" src="/bjc-r/img/icons/load-save.png" alt="Geen Afbeelding"></a>
                 <p>
                     Take a look at these 3 custom blocks that you will use to explore binary sequences:
                     <ul>
@@ -238,14 +200,12 @@
                             A reporter that accepts a string of text as input and translates that text into a binary
                             sequence:<br />
                             <img class="indent" src="/bjc-r/img/6-computers/translate-text-to-binary.png"
-                                alt="translate text () to binary sequence"
-                                title="translate text () to binary sequence" />
+                                alt="Geen Afbeelding" />
                         </li>
                         <li>
                             A reporter that accepts a binary sequence as input and translates it into text:<br />
                             <img class="indent" src="/bjc-r/img/6-computers/translate-binary-to-text.png"
-                                alt="translate binary sequence () to text"
-                                title="translate binary sequence () to text" />
+                                alt="Geen Afbeelding" />
                         </li>
                         <li>
                             <div class="sidenoteBig">You can use the second and third inputs to control where the block
@@ -254,8 +214,7 @@
                             the stage where each 0 in the sequence becomes a white "pixel" and each 1 becomes a black
                             "pixel." <br />
                             <img class="indent" src="/bjc-r/img/6-computers/translate-binary-to-image.png"
-                                alt="translate binary sequence () to B&W image that is () pixels wide and scaled by factor of ()"
-                                title="translate binary sequence () to B&W image that is () pixels wide and scaled by factor of ()" />
+                                alt="Geen Afbeelding" />
                         </li>
                     </ul>
                 </p>
@@ -272,25 +231,21 @@
                             the input text</strong> to a short text string of your choosing. The reported binary
                         sequence will be stored in the <var>output</var> variable with quotes around it.<br />
                         <img class="indent" src="/bjc-r/img/6-computers/set-output-to-translate-text.png"
-                            alt="set (output) to (translate text (Beauty and Joy of Computing) to binary sequence)"
-                            title="set (output) to (translate text (Beauty and Joy of Computing) to binary sequence)" />
+                            alt="Geen Afbeelding" />
                     </li>
                     <li>
                         Access the output by right-clicking (or control-clicking) on the OUTPUT watcher on the stage and
                         choosing "export..." The binary sequence will download as a text file. Copy the binary sequence
                         out of the file, but not the quotes.<br />
                         <img class="indent" src="/bjc-r/img/6-computers/exporting-output-watcher.png"
-                            alt="image of output watcher on stage storing a binary sequence with the dropdown menu open and  'export...' option selected"
-                            title="image of output watcher on stage storing a binary sequence with the dropdown menu open and  'export...' option selected" />
+                            alt="Geen Afbeelding" />
                     </li>
                 </ul>
             </li>
             <div class="endnote">
                 Even Snap<em>!</em> has bugs. When you paste this data into Snap<em>!</em>, it may extend beyond the
                 edges of the box. Developers are working to fix this.<br />
-                <img class="indent" src="/bjc-r/img/6-computers/binary-sequences-bug.png"
-                    alt="image of output pasted into block and extending past the edges of the block"
-                    title="image of output pasted into block and extending past the edges of the block" />
+                <img class="indent" src="/bjc-r/img/6-computers/binary-sequences-bug.png" alt="Geen Afbeelding" />
             </div>
             <li>
                 Paste the outputted binary sequence into the <code>translate binary sequence to text</code> block and
@@ -318,9 +273,7 @@
                         class="break">00000110000000000001000110000000010000000000001100100110000011111111000001100111100000010010110011000111001111100000100110110000000001000000000000110000000000111000000011000100011000010000000100000110000110000000111111000000</code><br />
                 </p>
                 You should something like the BJC logo:<br />
-                <img class="indent" src="/bjc-r/img/web/bjc-logo.png"
-                    alt="Beauty and Joy of Computing logo: a 'b,' a 'j,' and a 'c' looking like two eyes and a nose with a smile below"
-                    title="Beauty and Joy of Computing logo: a 'b,' a 'j,' and a 'c' looking like two eyes and a nose with a smile below" />
+                <img class="indent" src="/bjc-r/img/web/bjc-logo.png" alt="Geen Afbeelding" />
             </li>
             <li>What do you get if you translate that same binary sequence into text? Why?</li>
         </ol>
@@ -337,7 +290,7 @@
     </div>
 
     <div class="endnote">
-        <a href="#hint-data-types" data-toggle="collapse" title="But different languages use data types differently">But
+        <a href="#hint-data-types" data-toggle="collapse">But
             different languages use data types differently.</a>
         <div id="hint-data-types" class="collapse">
             <p>
@@ -345,10 +298,9 @@
                 when you make a variable, you have to say what type of value it will contain, and the data type is
                 attached to the <em>variable</em>, so you can't get exact answers when the values are integers and also
                 be able to handle non-integer values of the same variable. So instead of seeing: <br />
-                <img class="indent" src="/bjc-r/img/4-internet/varfoo.png" alt="script variables (foo)"
-                    title="script variables (foo)" /><br />
+                <img class="indent" src="/bjc-r/img/4-internet/varfoo.png" alt="Geen Afbeelding" /><br />
                 you see things like:<br />
-                <img class="indent" src="/bjc-r/img/4-internet/intfoo.png" alt="integer (foo)" title="integer (foo)" />
+                <img class="indent" src="/bjc-r/img/4-internet/intfoo.png" alt="Geen Afbeelding" />
             </p>
             <p>Snap<em>!</em> has strengths that many programming languages do not, and it's very likely that your
                 <em>next</em> year's computer science class will use one of those other languages. For example, if you
