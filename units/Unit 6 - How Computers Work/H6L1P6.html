@@ -197,163 +197,186 @@
             </p>
         </div>
 
-        <h3>What's an Architecture?</h3>
-        <p>The Analytical Engine (described above) was the first programmable computer architecture. The processor in
-            the computer you are using today understands only one language, its own <em>machine language</em>&mdash;not
-            Java, not C, not Snap<em>!</em>, not Python, nor anything else. Programs written in those other languages
-            must first be translated into machine language.</p>
-        <p>The most important part of the architecture is the machine language, the set of ultra-low-level instructions
-            that the hardware understands. This language is like a contract between the hardware and the software: The
-            hardware promises to understand a set of instructions, and the software compiles programs from
-            human-friendly language into those instructions.</p>
+        <h3>Wat is een Architectuur?</h3>
+        <p>De Analytical Engine (boven beschreven) was de eerste programmeerbare computerarchitectuur.
+            De processor in de computer die je nu gebruikt begrijpt maar één taal: zijn eigen <em>machinetaal</em>, niet
+            Java, C of Snap<em>!</em>, of iets anders. Programma's die geschreven zijn in die andere talen moeten eerst
+            vertaald worden naar machinetaal. </p>
+        <p> Het belangrijkste van de architectuur is de machinetaal. De set instructies van zeer laag niveau die de
+            hardware begrijpt. Deze taal is een soort contract tussen de hardware en de software: De hardware belooft de
+            instructies te begrijpen en de software compileert programma's van mens-vriendelijke taal naar deze
+            instructies.</p>
+
         <div class="vocabFullWidth">
-            <p><strong>Machine language</strong> is the lowest-level programming language; it is directly understood by
-                the computer hardware.</p>
-            <p><strong>Architecture</strong> is an abstraction, a specification of the machine language. It also tells
-                how the processor connects to the memory. It doesn't specify the circuitry; the same architecture can be
-                built as circuitry in many different ways.</p>
+            <p><strong>Machinetaal</strong> is programmeertaal op het laagste niveau; het wordt direct begrepen door de
+                hardware.
+            </p>
+            <p><strong>Architectuur</strong> is een abstractie, een specificate van de machinetaal. Het zegt ook hoe de
+                processor verbonden is met het geheugen. Het specificeert niets van de circuits; dezelfde architectuur
+                kan op meerdere manieren worden gebouwd qua circuits.
+
         </div>
-        <p>One important part of an architecture is the number of wires that connect the processor and memory. This is
-            called the <em>width</em> of the architecture, measured in <em>bits</em> (number of wires). A wider computer
-            can process more data in one instruction.</p>
+        <p> Een belangrijk onderdeel van een architectuur is het aantal draden dat de processor en het geheugen met
+            elkaar verbindt. Dit wordt de <em> breedte </em> van de architectuur genoemd, gemeten in <em> bits </em>
+            (aantal draden). Een bredere computer kan meer gegevens in één instructie verwerken. </p>
 
         <div class="endnote">
-            <a href="#hint-machine-language" data-toggle="collapse">What does machine language look like?</a>
+            <a href="#hint-machine-language" data-toggle="collapse">Hoe ziet machinetaal eruit?</a>
             <div id="hint-machine-language" class="collapse">
                 <p>
-                    Consider the Snap<em>!</em> instruction <img class="inline nopad"
-                        src="/bjc-r/img/6-computers/set-c-to-a+b.png" alt="Geen Afbeelding" />. In a lower-level
-                    language such as C or Java, the same idea would be written as:<br />
+                    Bekijk de Snap<em>!</em>-instructie
+                    <img class="inline nopad" src="/bjc-r/img/6-computers/set-c-to-a+b.png" alt="Geen Afbeelding" />.
+                    In een taal op laag niveau zoals C of Java zou het zelfde idee geschreven als: <br />
                     <pre>c = a+b;</pre>
-                    That simple command might be translated into <em>six</em> machine language instructions (slightly
-                    simplified here):<br />
-                    <pre>movq    _c, %rcx
+                    Dat simpele commando zou vertaald kunnen worden in <em>zes</em> machinetaalinstructies (een beetje
+                    versimpeld): <br />
+                    <pre>
+movq    _c, %rcx
 movq    _b, %rdx
 movq    _a, %rsi
 movl    (%rsi), %edi
 addl    (%rdx), %edi
 movl    %edi, (%rcx)</pre>
-                    This notation, called <em>assembly language</em>, is a line-by-line equivalent to the actual numeric
-                    instruction codes but is slightly more readable.
+                    Deze notatie, <em>assembly-taal</em> genaamd, is een regel voor regel-equivalent aan de
+                    daadwerkelijke numerieke instructiecode, maar het is iets meer leesbaar.
                 </p>
-                <a href="#hint-assembly" data-toggle="collapse">What does that code mean?</a>
+                <a href="#hint-assembly" data-toggle="collapse">Wat betekent de code?</a>
                 <div id="hint-assembly" class="collapse">
-                    <p>The first three instructions load the <em>addresses</em> of the three variables into registers
-                        inside the processor. The names with percent signs, such as <code>%rcx</code>, refer to specific
-                        processor registers. <code>Movq</code> is the name of a machine language instruction. (It
-                        abbreviates "move quote," which says to move a constant value into a register. Note that
-                        <var>a</var> is a variable, but <em>the address of</em> <var>a</var> is a constant value — the
-                        variable doesn't move around in the computer's memory.)</p>
-                    <p>The next instruction, <code>movl</code> ("move long"), says to move a word from one place to
-                        another. Putting a register name in parentheses, like <code>(%rsi)</code>, means to use the
-                        memory location whose address is in the register. In this case, since the third
-                        <code>movq</code> put the address of <var>a</var> into register <code>%rsi</code>, the first
-                        <code>movl</code> says to move the variable <var>a</var> from memory into a processor register.
-                        Then the <code>addl</code> instruction says to add the variable <var>b</var> into that same
-                        register. Finally, the value in register <code>%edi</code> is moved into the memory location
-                        containing variable <var>c</var>.</p>
+                    <p>De eerste drie instructies laden de <em>adressen</em> van de drie variabelen in de registers in
+                        de processor. De namen met een percentage-teken zoals <code>%rcx</code> verwijzen naar
+                        specifieke registers.<code>Movq</code> is de naam van een machinetaalinstructie. (Het is een
+                        afkorting voor "move quote", wat betekent dat we een constante waarde in een register plaatsen.
+                        Merk op dat <var>a</var> een variabele is, maar <em>het adres van</em> <var>a</var> is een
+                        constante waarde, omdat de variabele niet wordt verplaatst in het geheugen.)</p>
+                    <p> De volgende instructie, <code>movl</code> ("move long"), zegt dat een woord van de ene plek naar
+                        de andere moet worden verplaatst. Als een registernaam tussen haakjes staat zoals
+                        <code>(%rsi</code> dan betekent dat dat we locatie in het geheugen gebruiken van wie het adres
+                        in dat register staat. Omdat de derde <code>movq</code> het adres van <var>a</var> in register
+                        <code>%rsi</code> heeft geplaatst zegt de eerste <code>movl</code> dat de variabele <var>a</var>
+                        van het geheugen in de processorregister moet worden geplaatst.
+                        De instructie <code>addl</code> zegt dat <var>b</var> moet worden toegevoegd aan hetzelfde
+                        register. Aan het einde wordt de waarde in register <code>%edi</code> in de geheugen locatie
+                        geplaatst van variabele <var>c</var>.
+                    </p>
                 </div>
-                <p>You wouldn't want to have to program in this language! And you <em>don't</em> have to; modern
-                    architectures are designed for compilers, not for human machine language programmers.</p>
+                <p>Je wil niet moeten programmeren in deze taal! En dat <em> hoeft ook niet</em> ; moderne architecturen
+                    zijn ontworpen voor compilers, niet voor machinetaalprogrammeurs.
+                </p>
             </div>
         </div>
         <div class="endnote">
-            Learn about:
+            Leer over:
             <ul>
                 <li>
-                    <a href="#hint-architecture" data-toggle="collapse">PC/Mac architecture</a>
+                    <a href="#hint-architecture" data-toggle="collapse">PC/Mac-architectuur</a>
                     <div id="hint-architecture" class="collapse">
-                        <div class="comment" style="color:grey">This has a lot of numbers in it which make it harder to
-                            read, but more importantly it's so abstract and doesn't really talk about anything familiar,
-                            which given the hint title "PC/Mac" I was expecting. Needs some work. --MF, 11/8/17</div>
-                        <p>
-                            Most computer processors (the part that carries out instructions) in desktop or laptop
-                            computers use an architecture called "x86" that was designed at Intel, a chip manufacturer.
-                            The first processor using that architecture was called the 8086, released in 1978. (The
-                            reason for the name x86 is that the first few improved versions were called 80286, 80486,
-                            and so on.) The original 8086 was a 16-bit architecture; since then 32-bit (since 1985) and
-                            64-bit (since 2003) versions have been developed. Even with all the refinements of the
-                            architecture, the new x86 processors are almost always <em>backward compatible,</em> meaning
-                            that today's versions will still run programs that were written for the original 8086.
-                        </p>
-                        <p>
-                            Why did the x86 architecture come to rule the world? The short answer is that IBM used it in
-                            their original PC, and all the later PC manufacturers followed their lead because they could
-                            run IBM-compatible software unmodified. But why did IBM choose the x86? There were arguably
-                            better competing architectures available, such as the Motorola 68000 and IBM's own 801. The
-                            PC designers argued about which to use, but in the end, what made the difference was IBM's
-                            long history of working with Intel.
-                        </p>
-                        <p>
-                            The Apple Macintosh originally used the Motorola 68000 architecture, and in 1994 Apple
-                            designed its own PowerPC architecture in a joint project with IBM and Motorola, but in 2006
-                            they, too, switched to the x86, because Intel keeps producing newer, faster versions of the
-                            x86 more often than other companies could keep up.
-                        </p>
+
+                        <p> De meeste computerprocessors (het onderdeel dat instructies uitvoert) op desktop- of
+                            laptopcomputers gebruiken een architectuur genaamd "x86" die is ontworpen door Intel, een
+                            chipfabrikant. De eerste processor die die architectuur gebruikte, heette de 8086,
+                            uitgebracht in 1978. (De reden voor de naam x86 is dat de eerste paar verbeterde versies
+                            80286, 80486, enz. Werden genoemd.) De originele 8086 was een 16-bitarchitectuur; sindsdien
+                            zijn 32-bit (sinds 1985) en 64-bit (sinds 2003) versies ontwikkeld. Zelfs met alle
+                            verfijningen van de architectuur zijn de nieuwe x86-processors bijna altijd
+                            <em> backwards compatible </em> wat betekent dat de versies van vandaag nog steeds
+                            programma's uitvoeren die zijn geschreven voor de originele 8086. </p>
+                        <p> Waarom is de x86-architectuur de wereld gaan regeren? Het korte antwoord is dat IBM het in
+                            hun oorspronkelijke pc gebruikte en dat alle latere pc-fabrikanten hun voorbeeld volgden
+                            zodat ze IBM-compatibele software ongewijzigd konden uitvoeren. Maar waarom koos IBM voor de
+                            x86? Er waren aantoonbaar beter concurrerende architecturen beschikbaar, zoals de Motorola
+                            68000 en de eigen 801 van IBM. De pc-ontwerpers hadden ruzie over wat ze moesten gebruiken,
+                            maar uiteindelijk maakte het verschil de lange geschiedenis van IBM van het werken met
+                            Intel. </p>
+                        <p> De Apple Macintosh gebruikte oorspronkelijk de Motorola 68000-architectuur en in 1994
+                            ontwierp Apple zijn eigen PowerPC-architectuur in een gezamenlijk project met IBM en
+                            Motorola, maar in 2006 schakelden ze ook over op de x86, omdat Intel nieuwere, snellere
+                            versies van de x86 blijft produceren, vaker dan andere bedrijven kunnen bijhouden. </p>
                     </div>
                 </li>
                 <li>
-                    <a href="#hint-architecture-phone" data-toggle="collapse">smartphone architecture</a>
+                    <a href="#hint-architecture-phone" data-toggle="collapse">Smartphone-architectuur</a>
                     <div id="hint-architecture-phone" class="collapse">
-                        <p>Everything about smartphone architecture is determined by the tiny size of the space inside
-                            the case. The height and width of the phone are constrained by the size of people's front
-                            pockets. <em>(Don't keep your phone in your back pants pocket. That's really bad both for
-                                the phone and for your back.)</em> The front-to-back depth of a phone could be much
-                            bigger than it is, but for some reason phone manufacturers compete on the thinness of their
-                            phones, which gives designers even less room inside.</p>
-                        <p>As a result, many components that would be separate from the processor chip in a computer are
-                            instead part of the same chip in a phone. These components may include some or all of a
-                            cellular modem, a WiFi modem, a graphics processor (another processor that specializes in
-                            parallel arithmetic on lists of numbers), memory, a GPS receiver to find your phone's
-                            physical location, circuitry to manage the power depletion and recharging of the battery,
-                            and more. These days, the chip is likely to include two, four, or even eight copies of the
-                            actual CPU, to make multicore systems. This collection of components is called a <em>system
-                                on a chip,</em> or SoC.</p>
-                        <p>Intel made an x86-based (that is, the same architecture used in PCs) low-power SoC called the
-                            Atom, which was used in a few Motorola phones and some others made by companies you've never
-                            heard of. It was made to support Android, Linux, and Windows phones.</p>
-                        <p>But the vast majority of phones use the ARM architecture, which (unlike the x86) was designed
-                            from the beginning to be a low-power architecture. The acronym stands for Advanced RISC
-                            Machine. It's available in 32-bit and 64-bit configurations.</p>
+                        <p> Alles van smartphone-architectuur wordt bepaald door de kleine ruimte in de behuizing. De
+                            hoogte en breedte van de telefoon worden beperkt door de grootte van de zakken in de kleding
+                            van
+                            mensen. <em> (Houd je telefoon niet in je achterbroekzak. Dat is echt slecht, zowel voor de
+                                telefoon als voor je rug.) </em> De voorkant-naar-achterkantdiepte van een telefoon kan
+                            veel groter zijn dan nu vaak het geval is , maar om de een of andere reden concurreren
+                            telefoonfabrikanten op de dunheid van hun telefoons, waardoor ontwerpers nog minder ruimte
+                            hebben. </p>
+                        <p> Als gevolg hiervan zijn veel componenten die gescheiden zouden zijn van de processorchip in
+                            een computer, onderdeel van de processorchip in een telefoon. Deze componenten
+                            kunnen bestaan uit een mobiele modem, een WiFi-modem, een grafische processor
+                            (een processor die is gespecialiseerd in parallel rekenen met lijsten van
+                            nummers), geheugen, een GPS-ontvanger om de fysieke locatie van je telefoon te vinden,
+                            circuits om de stroom en batterij te beheren en meer. Tegenwoordig bevat de chip
+                            waarschijnlijk twee, vier of zelfs acht kopieën van de werkelijke CPU om multicore-systemen
+                            te maken. Deze verzameling componenten wordt een <em> systeem op een chip, </em> of SoC
+                            genoemd. </p>
+                        <p> Intel heeft een x86-gebaseerde (dat wil zeggen dezelfde architectuur die op pc's wordt
+                            gebruikt) low-power SoC gemaakt genaamd de Atom, die werd gebruikt in een paar
+                            Motorola-telefoons en andere telefoons die zijn gemaakt door bedrijven waar je nog nooit van
+                            hebt
+                            gehoord. Het is gemaakt om Android-, Linux- en Windows-telefoons te ondersteunen. </p>
+                        <p> Maar de overgrote meerderheid van de telefoons gebruikt de ARM-architectuur, die (in
+                            tegenstelling tot de x86) vanaf het begin is ontworpen als een energiezuinige architectuur.
+                            Het acroniem staat voor Advanced RISC Machine. Het is beschikbaar in 32-bit- en
+                            64-bitconfiguraties. </p>
+
                         <div class="endnote">
-                            <a href="#hint-risc" data-toggle="collapse">What's a RISC?</a>
+                            <a href="#hint-risc" data-toggle="collapse">What is een RISC?</a>
                             <div id="hint-risc" class="collapse">
-                                <p>The name stands for Reduced Instruction Set Computer, as opposed to the CISC (Complex
-                                    Instruction Set Computer) architectures, including the x86. The <em>instruction
-                                        set</em> of an architecture is, as you'd guess from the name, the set of
-                                    instructions that the processor understands. A RISC has fewer instructions than a
-                                    CISC, but it's simpler in other ways also. For example, a CISC typically has more
-                                    <em>addressing modes</em> in its instructions. In the x86 architecture, the
-                                    <code>add</code> instruction can add two processor registers, or a register and a
-                                    value from the computer's memory, or a constant value built into the instruction
-                                    itself. A RISC architecture's <code>add</code> instruction just knows how to add two
-                                    registers (perhaps putting the result into a third register), and there are separate
-                                    <code>load</code> and <code>store</code> instructions that copy values from memory
-                                    to register or the other way around. Also, in a RISC architecture, all instructions
-                                    are the same length (say, 32 bits) whereas in a CISC architecture, instruction
-                                    lengths may vary. These differences matter because a RISC can be loading the next
-                                    instruction before it's finished with the previous instruction, and a RISC never has
-                                    more than one memory data reference per instruction.</p>
-                                <p>So why don't they use a RISC architecture in PCs? At one time Apple used a RISC
-                                    processor called the PowerPC in its Macintosh computers, but the vast majority of
-                                    computers sold are PCs, not Macs, and as a result Intel spends vast sums of money on
-                                    building faster and faster circuits implementing the x86 architecture. The moral is
-                                    about the interaction between different levels of abstraction: A better architecture
-                                    can be overcome by a better circuit design or better technology to cram components
-                                    into an integrated circuit.</p>
+                                <p> De naam staat voor Reduced Instruction Set Computer
+                                    (Verkleinde-Instructiesetcomputer), in tegenstelling tot de CISC-architectuur
+                                    (Complex Instruction Set Computer dus de Complexe-Instructiesetcomputer), inclusief
+                                    de x86. De <em> instructieset </em> van een architectuur is, zoals je uit de naam
+                                    kunt raden, de set instructies die de processor begrijpt. Een RISC heeft minder
+                                    instructies dan een CISC, maar is ook op andere manieren eenvoudiger. Een CISC heeft
+                                    bijvoorbeeld doorgaans meer <em> adresseermodi </em> in de instructies. In de
+                                    x86-architectuur kan de instructie <code> add </code> twee processorregisters
+                                    toevoegen, of een register en een waarde uit het geheugen van de computer, of een
+                                    constante waarde die in de instructie zelf is ingebouwd. De instructie <code> add
+                                    </code> van een RISC-architectuur weet gewoon hoe hij twee registers moet toevoegen
+                                    (misschien moet het resultaat in een derde register geplaatst worden), en er zijn
+                                    afzonderlijke <code> load </code> en <code> store </code> instructies die waarden
+                                    uit het geheugen kopiëren in een register of andersom. Ook hebben in een
+                                    RISC-architectuur alle instructies dezelfde lengte (bijvoorbeeld 32 bits), terwijl
+                                    in een CISC-architectuur de instructielengtes kunnen variëren. Deze verschillen zijn
+                                    belangrijk omdat een RISC de volgende instructie kan laden voordat deze klaar is met
+                                    de vorige instructie en een RISC nooit meer dan één geheugengegevensreferentie per
+                                    instructie heeft. </p>
+                                <p> Dus waarom gebruiken ze geen RISC architectuur in pc's? Ooit gebruikte Apple een
+                                    RISC-processor genaamd de PowerPC in zijn Macintosh-computers, maar de overgrote
+                                    meerderheid van de verkochte computers zijn pc's, geen Mac's, en als gevolg daarvan
+                                    besteedt Intel enorme bedragen aan het bouwen van snellere en snellere circuits die
+                                    de x86-architectuur implementeren. De moraal gaat over de interactie tussen
+                                    verschillende abstractieniveaus: een betere architectuur kan worden overwonnen door
+                                    een beter circuitontwerp of betere technologie om componenten in een geïntegreerd
+                                    circuit te proppen. </p>
                             </div>
                         </div>
-                        <p>The company that designed the ARM, called ARM Holdings, doesn't actually build processors.
-                            They license either the architecture design or an actual circuit design to other companies
-                            that integrate ARM processors into SoCs. Major companies that build ARM-based processor
-                            chips include Apple, Broadcom, Qualcomm, and Samsung. Smartphone manufacturers buy chips
-                            from one of these companies.</p>
+                        <p> Het bedrijf dat de ARM heeft ontworpen, genaamd ARM Holdings, bouwt eigenlijk geen
+                            processors. Ze verlenen een licentie voor het architectuurontwerp of circuitontwerp aan
+                            andere bedrijven die ARM-processors integreren in SoC's. Grote bedrijven
+                            die op ARM gebaseerde processorchips bouwen, zijn Apple, Broadcom, Qualcomm en Samsung.
+                            Fabrikanten van smartphones kopen chips van een van deze bedrijven. </p>
                     </div>
                 </li>
                 <li>
-                    <a href="#hint-architecture-iot" data-toggle="collapse">embedded architecture and the "Internet of
+                    <a href="#hint-architecture-iot" data-toggle="collapse">Ingebouwde Architectuur en het "Internet of
                         Things"</a>
                     <div id="hint-architecture-iot" class="collapse">
+                        <p> Je kunt thermostaten kopen met computers erin, koelkasten met computers erin, pluizig
+                            dierenspeelgoed met computers erin - meer en meer dingen, naarmate de tijd verstrijkt.
+                            Moderne auto's bevatten <em> meerdere </em> computers, grotendeels om veiligheidsredenen; je
+                            zou niet willen dat de remmen falen omdat de dvd-speler een probleem heeft. Het doel, zoals
+                            beschreven door onderzoekers in de informatica, is "smart dust" (slim stof), wat betekent
+                            dat veel
+                            computers onopgemerkt door een gebouw kunnen zweven. Wat heb je aan een onopgemerkte
+                            computer? Dit is een klassieke technologie voor dubbel gebruik. Het nuttige gebruik waar
+                            iedereen het over heeft, is noodhulp bij rampen; het zou een grote hulp zijn voor de
+                            brandweer om van buitenaf te weten in welke ruimtes van een gebouw mensen aanwezig zijn.
+                            Maar een ander gebruik voor deze technologie zou spioneren zijn. </p>
                         <p>You can buy thermostats with computers in them, refrigerators with computers in them, fuzzy
                             animal toys with computers in them—more and more things, as time goes on. Modern automobiles
                             have <em>several</em> computers in them, largely for safety reasons; you wouldn't want the
@@ -367,152 +390,239 @@ movl    %edi, (%rcx)</pre>
                             <img src="/bjc-r/img/6-computers/freescale_scmimx6d-sm.jpg" alt="Geen Afbeelding"><br />
                             <small><small>NXP Freescale SCM-i.MX6D chip</small></small>
                         </p>
-                        <p>For embedded computing, the main design criteria are small size and low power consumption.
-                            The chip in the picture above is based on the ARM architecture, like most cell phones.
-                            That's actually a <em>big</em> embedded-systems chip; the Kinetis KL02 MCU (micro controller
-                            unit) fits in a 2 millimeter square—less than 1/10 inch. That's still too big to float in
-                            the air like dust, but imagine it in a sticky container and thrown onto the wall.</p>
-                        <p>Someday, the spying will be even more effective (along with, we hope, treatment for diseases
-                            of the brain): <a
+                        <p> Voor ingebouwde computers zijn de belangrijkste ontwerpcriteria kleine afmetingen en een
+                            laag stroomverbruik. De chip in de bovenstaande afbeelding is gebaseerd op de
+                            ARM-architectuur,
+                            zoals de meeste mobiele telefoons. Dat is eigenlijk een <em> grote </em> chip voor
+                            ingebouwde
+                            systemen; de Kinetis KL02 MCU (microcontroller-eenheid) past in een vierkant van 2
+                            millimeter. Dat is nog steeds te groot om als stof in de lucht te
+                            zweven, maar stel je het voor op de muur in een kleverige container. </p>
+                        <p> Op een dag zal het spioneren nog effectiever zijn (samen met, hopelijk, behandeling voor
+                            hersenziekten): <a
                                 href="https://www.engadget.com/2017/05/17/arm-targets-your-brain-with-new-implantable-chips/"
-                                target="_blank">ARM targets your brain with new implantable chips</a> (Engadget,
-                            5/17/2017).</p>
-                        <p>Intel made a button-sized x86-compatible chip in 2015, but announced in 2017 that it would be
-                            discontinued, leaving only ARM and PowerPC-based processors competing in this market.</p>
+                                target="_blank">ARM richt zich op je brein met nieuwe implanteerbare chips</a>
+                            (Engadget, 5/17/2017).</p>
+                        <p> Intel maakte in 2015 een x86-compatibele chip ter grootte van een knop, maar kondigde in
+                            2017 aan dat dit zo zou zijn stopgezet, waardoor alleen ARM- en PowerPC-gebaseerde
+                            processors op de markt blijven concurreren. </p>
                     </div>
                 </li>
                 <li>
-                    <a href="#hint-architecture-hobby" data-toggle="collapse">hobbyist computer architecture</a>
+                    <a href="#hint-architecture-hobby" data-toggle="collapse">Hobby-computerarchitectuur</a>
                     <div id="hint-architecture-hobby" class="collapse">
-                        <p>In one sense, <em>any</em> architecture can be a hobbyist architecture. Even back in the days
-                            of million-dollar computers, there were software hobbyists who found ways to get into
-                            college computer labs, often by making themselves useful there. Today, there are much more
-                            powerful computers that are cheap enough that hobbyists are willing to take them apart. But
-                            there are a few computer architectures <em>specifically</em> intended for use by hobbyists.
-                        </p>
-                        <div class="comment">We DO NOT yet have permissions for this image. --MF, 12/4/17</div>
+
+                        <p> In zekere zin kan <em> elke </em> architectuur een hobby-architectuur zijn. Zelfs in
+                            de tijd van computers van een miljoen dollar waren er softwarehobbyisten die manieren vonden
+                            om naar computerlokalen op de universiteit te gaan, vaak door zichzelf daar nuttig te maken.
+                            Tegenwoordig zijn er veel meer krachtige computers die goedkoop genoeg zijn dat hobbyisten
+                            ze uit elkaar willen halen. Maar er zijn enkele computerarchitecturen <em> specifiek </em>
+                            bedoeld voor hobbyisten. </p>
                         <img class="imageRight" src="/bjc-r/img/6-computers/arduino.jpg" alt="Geen Afbeelding" />
-                        <p>By far the most popular computer specifically for hobbyists is the Arduino. It's a circuit
-                            board, not just a processor. Around the edges of the board are connectors. On the short edge
-                            on the left in the picture are the power input, which can connect to a power supply plugged
-                            into the wall or to a battery pack for a mobile device such as a robot, and a USB connector
-                            used mainly to download programs from a desktop or laptop computer. On the long edges are
-                            connectors for single wires connected to remote sensors (for light, heat, being near a wall,
-                            touching another object, etc.) or actuators (stepping motors, lights, buzzers, etc.).</p>
-                        <p>One important aspect of the Arduino design is that it's <em>free</em> ("free as in freedom").
-                            Anyone can make and even sell copies of the Arduino. This is good because it keeps the price
-                            down (the basic Arduino Uno board costs $22) and encourages innovation, but it also means
-                            that there can be incompatible Arduino-like boards. (The name "Arduino" is a trademark that
-                            can be used only by license from Arduino AG.)</p>
-                        <p>The processor in most Arduino models is an eight-bit RISC system with memory included in the
-                            chip, called the AVR, from a company called Atmel. It was designed by two (then) students in
-                            Norway, named Alf-Egil Bogen and Vegard Wollan. Although officially "AVR" doesn't stand for
-                            anything, it is widely believed to come from "Alf and Vegard's RISC." There are various
-                            versions of the AVR processor, with different speeds, memory capacities, and of course
-                            prices; there are various Arduino models using the different processors.</p>
-                        <p>Unlike most ("von Neumann architecture") computers, the AVR ("Harvard architecture")
-                            separates program memory from data memory. (It actually has <em>three</em> kinds of memory,
-                            one for the running program, one for short-term data, and one for long-term data.) Babbage's
-                            Analytical Engine was also designed with a program memory separate from its data memory.</p>
+                        <p> Veruit de meest populaire computer specifiek voor hobbyisten is de Arduino. Het is een
+                            printplaat, niet alleen een processor. Rond de randen van het bord zitten connectoren. Aan
+                            de korte rand links in de afbeelding bevindt zich de stroomingang, die kan worden
+                            aangesloten op een voeding die is aangesloten op een stopcontact of op een batterij voor een
+                            mobiel
+                            apparaat zoals een robot, en een USB-aansluiting die voornamelijk wordt gebruikt om
+                            programma's te downloaden van een desktop of laptop computer. Aan de lange randen bevinden
+                            zich connectoren voor afzonderlijke draden die zijn aangesloten op externe sensoren (voor
+                            licht, warmte, bij een muur zijn, een ander object aanraken, enz.) Of actuatoren
+                            (stappenmotoren, lichten, zoemers, enz.). </p>
+                        <p> Een belangrijk aspect van het Arduino-ontwerp is dat het <em> vrij </em> is ("vrij als
+                            in vrijheid"). Iedereen kan de Arduino maken en zelfs verkopen. Dit is goed
+                            omdat het de prijs laag houdt (het standaard Arduino Uno-bord kost $ 22) en stimuleert
+                            innovatie, maar het betekent ook dat er incompatibele Arduino-achtige boards kunnen zijn.
+                            (De naam "Arduino" is een handelsmerk dat alleen kan worden gebruikt met een licentie van
+                            Arduino AG.) </p>
+                        <p> De processor in de meeste Arduino-modellen is een 8-bit RISC-systeem met geheugen in de
+                            chip, genaamd AVR, van een bedrijf genaamd Atmel. Het werd ontworpen door twee
+                            (toenmalige) studenten in Noorwegen, Alf-Egil Bogen en Vegard Wollan genaamd. Hoewel
+                            officieel "AVR" nergens voor staat, wordt algemeen aangenomen dat het afkomstig is van " Alf
+                            en Vegard hun RISC". Er zijn verschillende versies van de AVR-processor, met verschillende
+                            snelheden, geheugencapaciteiten en natuurlijk prijzen; er zijn verschillende
+                            Arduino-modellen die de verschillende processors gebruiken. </p>
+                        <p> In tegenstelling tot de meeste ("von Neumann-architectuur") computers, scheidt de AVR
+                            ("Harvard-architectuur") programmageheugen van gegevensgeheugen. (Het heeft eigenlijk <em>
+                                drie </em> soorten geheugen, een voor het actieve programma, een voor gegevens op korte
+                            termijn en een voor gegevens op lange termijn.) De Analytical Engine van Babbage is ook
+                            ontworpen met een programmageheugen dat los staat van zijn data geheugen. </p>
+
                         <div class="endnote">
-                            <a href="#hint-Harvard" data-toggle="collapse">Why would you want more than one kind of
-                                memory?</a>
+                            <a href="#hint-Harvard" data-toggle="collapse">
+                                Waarom zou je meer dan één soort geheugen willen?
+                            </a>
                             <div id="hint-Harvard" class="collapse">
-                                <p>
-                                    There are actually two different design issues at work in this architecture. One is
-                                    all the way down in the analog domain, having to do with the kind of physical
-                                    circuitry used. There are <em>many</em> memory technologies, varying in cost, speed,
-                                    and <em>volatility:</em> volatile memory loses the information stored in it when the
-                                    device is powered off, while non-volatile memory retains the information. Here's how
-                                    memory is used in the AVR chips:
-                                    <ul>
-                                        <li>
-                                            <strong>EEPROM</strong> (512 Bytes–4kBytes) is non-volatile, and is used for
-                                            very long term data, like a file in a computer's disk, except that there is
-                                            only a tiny amount available. Programs on the Arduino have to ask explicitly
-                                            to use this memory, with an EEPROM library.
-                                            <ul>
-                                                <li>The name stands for Electrically Erasable Programmable Read-Only
-                                                    Memory, which sounds like a contradiction in terms. In the early
-                                                    days of transistor-based computers, there were two kinds of memory,
-                                                    volatile (Random Access Memory, or RAM) and nonvolatile (Read-Only
-                                                    Memory, or ROM). The values stored in an early ROM had to be built
-                                                    in by the manufacturer of the memory chip, so it was expensive to
-                                                    have a new one made. Then came Programmable Read-Only Memory (PROM),
-                                                    which was read-only once installed in a computer, but could be
-                                                    programmed, once only, using a machine that was only somewhat
-                                                    expensive. Then came EPROM, Erasable PROM, which could be erased in
-                                                    its entirety by shining a bright ultraviolet light on it, and then
-                                                    reprogrammed like a PROM. Finally there was Electrically Erasable
-                                                    PROM, which could be erased while installed in a computer, so
-                                                    essentially equivalent to RAM, except that the erasing is much
-                                                    slower than rewriting a word of RAM, so you use it only for values
-                                                    that aren't going to change often.</li>
+                                <p> Er zijn eigenlijk twee verschillende ontwerpproblemen in deze architectuur. Een
+                                    daarvan is helemaal in het analoge domein en heeft te maken met het soort fysieke
+                                    circuits
+                                    dat wordt gebruikt. Er zijn <em> veel </em> geheugentechnologieën, variërend in
+                                    kosten, snelheid en <em> vluchtigheid: </em> vluchtig geheugen verliest de
+                                    informatie die erin is opgeslagen wanneer het apparaat wordt uitgeschakeld, terwijl
+                                    niet-vluchtig geheugen de informatie behoudt. Dit is hoe geheugen wordt gebruikt in
+                                    de AVR-chips: <ul>
+                                        <li> <strong> EEPROM </strong> (512 Bytes – 4kBytes) is niet-vluchtig en wordt
+                                            gebruikt voor gegevens op zeer lange termijn, zoals een bestand op een
+                                            computer schijf, behalve dat er slechts een kleine hoeveelheid beschikbaar
+                                            is. Programma's op de Arduino moeten expliciet vragen om dit geheugen te
+                                            gebruiken, met een EEPROM-bibliotheek. <ul>
+                                                <li> De naam staat voor Electrically Erasable Programmable Read-Only
+                                                    Memory (Elektrisch-Verwijderbaar Programmeerbaar
+                                                    Alleen-te-Lezen-Geheugen), wat klinkt als een contradictio in
+                                                    terminis. In de
+                                                    begindagen van op transistor gebaseerde computers waren er twee
+                                                    soorten geheugen, vluchtig (Random Access Memory of RAM) en
+                                                    niet-vluchtig (Read-Only Memory of ROM). De waarden die in een
+                                                    vroege ROM waren opgeslagen, moesten door de fabrikant van de
+                                                    geheugenchip worden ingebouwd, dus het was duur om een ​​nieuwe te
+                                                    laten maken. Toen kwam Programmable Read-Only Memory (PROM), dat
+                                                    alleen kon worden gelezen als het eenmaal geïnstalleerd was op een
+                                                    computer, maar het kon
+                                                    worden geprogrammeerd, eenmalig, met behulp van een machine die
+                                                    slechts enigszins duur was. Toen kwam EPROM, Erasable PROM, dat in
+                                                    zijn geheel kon worden gewist door er een helder ultraviolet licht
+                                                    op te laten schijnen en vervolgens opnieuw te programmeren als een
+                                                    PROM. Eindelijk was er Electrically Erasable PROM, dat tijdens het
+                                                    installeren op een computer kon worden gewist, dus in wezen gelijk
+                                                    aan RAM, behalve dat het wissen veel langzamer is dan een iets in
+                                                    RAM herschrijven, dus je gebruikt het alleen voor waarden die niet
+                                                    van vaak gewijzigd worden. </li>
                                             </ul>
                                         </li>
-                                        <li>
-                                            <strong>SRAM</strong> (1k–4kBytes): This memory can lose its value when the
-                                            machine is turned off; in other words, it's volatile. It is used for
-                                            temporary data, like the script variables in a Snap<em>!</em> script.
+                                        <p> There are actually two different design issues at work in this architecture.
+                                            One is all the way down in the analog domain, having to do with the kind of
+                                            physical circuitry used. There are <em>many</em> memory technologies,
+                                            varying in cost, speed, and <em>volatility:</em> volatile memory loses the
+                                            information stored in it when the device is powered off, while non-volatile
+                                            memory retains the information. Here's how memory is used in the AVR chips:
                                             <ul>
-                                                <li>The name stands for Static Random Access Memory. The "Random Access"
-                                                    part differentiates it from the magnetic tape storage used on very
-                                                    old computers, in which it took a long time to get from one end of
-                                                    the tape to another, so it was only practical to write or read data
-                                                    in sequence. Today all computer memory is random access, and the
-                                                    name "RAM" really means "writable," as opposed to read-only. The
-                                                    "Static" part of the name means that, even though the memory
-                                                    requires power to retain its value, it <em>doesn't</em> require
-                                                    periodic refreshing as regular ("Dynamic") computer main memory
-                                                    does. ("Refreshing" means that every so often, the computer has to
-                                                    read the value of each word of memory and rewrite the same value, or
-                                                    else it fades away. This is a good example of computer circuitry
-                                                    whose job is to maintain the <em>digital abstraction,</em> in which
-                                                    a value is zero or one, and there's no such thing as "fading" or
-                                                    "in-between values.") Static RAM is faster but more expensive than
-                                                    dynamic RAM; that's why DRAM is used for the very large (several
-                                                    gigabytes) memories of desktop or laptop computers.</li>
+                                                <li> <strong>EEPROM</strong> (512 Bytes–4kBytes) is non-volatile, and is
+                                                    used for very long term data, like a file in a computer's disk,
+                                                    except that there is only a tiny amount available. Programs on the
+                                                    Arduino have to ask explicitly to use this memory, with an EEPROM
+                                                    library. <ul>
+                                                        <li>The name stands for Electrically Erasable Programmable
+                                                            Read-Only Memory, which sounds like a contradiction in
+                                                            terms. In the early days of transistor-based computers,
+                                                            there were two kinds of memory, volatile (Random Access
+                                                            Memory, or RAM) and nonvolatile (Read-Only Memory, or ROM).
+                                                            The values stored in an early ROM had to be built in by the
+                                                            manufacturer of the memory chip, so it was expensive to have
+                                                            a new one made. Then came Programmable Read-Only Memory
+                                                            (PROM), which was read-only once installed in a computer,
+                                                            but could be programmed, once only, using a machine that was
+                                                            only somewhat expensive. Then came EPROM, Erasable PROM,
+                                                            which could be erased in its entirety by shining a bright
+                                                            ultraviolet light on it, and then reprogrammed like a PROM.
+                                                            Finally there was Electrically Erasable PROM, which could be
+                                                            erased while installed in a computer, so essentially
+                                                            equivalent to RAM, except that the erasing is much slower
+                                                            than rewriting a word of RAM, so you use it only for values
+                                                            that aren't going to change often.</li>
+                                                    </ul>
+                                                </li>
+                                                <li> <strong>SRAM</strong> (1k–4kBytes): This memory can lose its value
+                                                    when the
+                                                    machine is turned off; in other words, it's volatile. It is used for
+                                                    temporary data, like the script variables in a Snap<em>!</em>
+                                                    script. <ul>
+                                                        <li>The name stands for Static Random Access Memory. The "Random
+                                                            Access"
+                                                            part differentiates it from the magnetic tape storage used
+                                                            on very
+                                                            old computers, in which it took a long time to get from one
+                                                            end of
+                                                            the tape to another, so it was only practical to write or
+                                                            read data
+                                                            in sequence. Today all computer memory is random access, and
+                                                            the
+                                                            name "RAM" really means "writable," as opposed to read-only.
+                                                            The
+                                                            "Static" part of the name means that, even though the memory
+                                                            requires power to retain its value, it <em>doesn't</em>
+                                                            require
+                                                            periodic refreshing as regular ("Dynamic") computer main
+                                                            memory
+                                                            does. ("Refreshing" means that every so often, the computer
+                                                            has to
+                                                            read the value of each word of memory and rewrite the same
+                                                            value, or
+                                                            else it fades away. This is a good example of computer
+                                                            circuitry
+                                                            whose job is to maintain the <em>digital abstraction,</em>
+                                                            in which
+                                                            a value is zero or one, and there's no such thing as
+                                                            "fading" or
+                                                            "in-between values.") Static RAM is faster but more
+                                                            expensive than
+                                                            dynamic RAM; that's why DRAM is used for the very large
+                                                            (several
+                                                            gigabytes) memories of desktop or laptop computers.</li>
+                                                    </ul>
+                                                </li>
+                                                <li> <strong>Flash</strong> memory (16k–256kBytes): This is the main
+                                                    memory used
+                                                    for programs and data. Flash memory is probably familiar to you
+                                                    because it's
+                                                    used for the USB sticks that function as portable external file
+                                                    storage.
+                                                    It's technically a kind of EEPROM, but with a different physical
+                                                    implementation that makes it much cheaper (so there can be more of
+                                                    it in the
+                                                    Arduino), but more complicated to use, requiring special control
+                                                    circuitry
+                                                    to maintain the digital abstraction. <ul>
+                                                        <li>"More complicated" means, for example, that changing a bit
+                                                            value
+                                                            from 1 to 0 is easy, but changing it from 0 to 1 is a much
+                                                            slower
+                                                            process that involves erasing a large block of memory to
+                                                            <em>all</em> 1 bits and then rewriting the values of the
+                                                            bits you
+                                                            didn't want to change.</li>
+                                                    </ul>
+                                                </li>
                                             </ul>
-                                        </li>
-                                        <li>
-                                            <strong>Flash</strong> memory (16k–256kBytes): This is the main memory used
-                                            for programs and data. Flash memory is probably familiar to you because it's
-                                            used for the USB sticks that function as portable external file storage.
-                                            It's technically a kind of EEPROM, but with a different physical
-                                            implementation that makes it much cheaper (so there can be more of it in the
-                                            Arduino), but more complicated to use, requiring special control circuitry
-                                            to maintain the digital abstraction.
-                                            <ul>
-                                                <li>"More complicated" means, for example, that changing a bit value
-                                                    from 1 to 0 is easy, but changing it from 0 to 1 is a much slower
-                                                    process that involves erasing a large block of memory to
-                                                    <em>all</em> 1 bits and then rewriting the values of the bits you
-                                                    didn't want to change.</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </p>
-                                <p>So, that's why there are physically different kinds of memory in the AVR chips, but
-                                    none of that completely explains the Harvard architecture, in which memory is
-                                    divided into <em>program</em> and <em>data,</em> regardless of how long the data
-                                    must survive. The main reason to have two different memory interface circuits is
-                                    that it allows the processor to read a program instruction and a data value <em>at
-                                        the same time.</em> This can in principle make the processor twice as fast,
-                                    although that much speed gain isn't found in practice.</p>
-                                <p>To understand the benefit of simultaneous instruction and data reading, you have to
-                                    understand that processors are often designed using an idea called
-                                    <em>pipelining.</em> The standard metaphor is about doing your laundry, when you
-                                    have more than one load. You wash the first load, while your dryer does nothing;
-                                    then you <em>wash the second load while drying the first load, </em>and so on until
-                                    the last load. Similarly, the processor in a computer includes circuitry to decode
-                                    an instruction, and circuitry to do arithmetic. If the processor does one thing at a
-                                    time, then at any moment either the instruction decoding circuitry or the arithmetic
-                                    circuitry is doing nothing. But if you can read the next instruction at the same
-                                    time as carrying out the previous one, all of the processor is kept busy.</p>
-                                <p>This was a long explanation, but it's still vastly oversimplified. For one thing,
-                                    it's possible to use pipelining in a von Neumann architecture also. And for another,
-                                    a <em>pure</em> Harvard architecture wouldn't allow a computer to load programs for
-                                    itself to execute. So various compromises are used in practice.</p>
+                                        </p>
+                                        <p>So, that's why there are physically different kinds of memory in the AVR
+                                            chips, but
+                                            none of that completely explains the Harvard architecture, in which memory
+                                            is
+                                            divided into <em>program</em> and <em>data,</em> regardless of how long the
+                                            data
+                                            must survive. The main reason to have two different memory interface
+                                            circuits is
+                                            that it allows the processor to read a program instruction and a data value
+                                            <em>at
+                                                the same time.</em> This can in principle make the processor twice as
+                                            fast,
+                                            although that much speed gain isn't found in practice.</p>
+                                        <p>To understand the benefit of simultaneous instruction and data reading, you
+                                            have to
+                                            understand that processors are often designed using an idea called
+                                            <em>pipelining.</em> The standard metaphor is about doing your laundry, when
+                                            you
+                                            have more than one load. You wash the first load, while your dryer does
+                                            nothing;
+                                            then you <em>wash the second load while drying the first load, </em>and so
+                                            on until
+                                            the last load. Similarly, the processor in a computer includes circuitry to
+                                            decode
+                                            an instruction, and circuitry to do arithmetic. If the processor does one
+                                            thing at a
+                                            time, then at any moment either the instruction decoding circuitry or the
+                                            arithmetic
+                                            circuitry is doing nothing. But if you can read the next instruction at the
+                                            same
+                                            time as carrying out the previous one, all of the processor is kept busy.
+                                        </p>
+                                        <p>This was a long explanation, but it's still vastly oversimplified. For one
+                                            thing,
+                                            it's possible to use pipelining in a von Neumann architecture also. And for
+                                            another,
+                                            a <em>pure</em> Harvard architecture wouldn't allow a computer to load
+                                            programs for
+                                            itself to execute. So various compromises are used in practice.</p>
                             </div>
                         </div>
                         <p>Atmel has since introduced a line of ARM-compatible 32-bit processors, and Arduino has boards
@@ -539,7 +649,7 @@ movl    %edi, (%rcx)</pre>
                             a keyboard, display, mouse, power adapter, or a case. The main expense in kit computers is
                             the display, so the Pi is designed to plug into your TV. You can buy kits that include a
                             minimal case, a keyboard, and other important add-ons for around $20. You can also buy fancy
-                            cases to make it look like any other computer, with a display, for hundreds of dollars.</p>
+                            cases to make it look like any other computer, with a display, for hundreds of dollars. </p>
                         <p>Because the Pi is intended for educational use, it comes with software, some of which is free
                             for anyone, but some of which generally costs money for non-Pi computers. One important
                             example is Mathematica, which costs over $200 for students (their cheapest price), but is
