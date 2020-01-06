@@ -489,176 +489,117 @@ movl    %edi, (%rcx)</pre>
                                                     van vaak gewijzigd worden. </li>
                                             </ul>
                                         </li>
-                                        <p> There are actually two different design issues at work in this architecture.
-                                            One is all the way down in the analog domain, having to do with the kind of
-                                            physical circuitry used. There are <em>many</em> memory technologies,
-                                            varying in cost, speed, and <em>volatility:</em> volatile memory loses the
-                                            information stored in it when the device is powered off, while non-volatile
-                                            memory retains the information. Here's how memory is used in the AVR chips:
-                                            <ul>
-                                                <li> <strong>EEPROM</strong> (512 Bytes–4kBytes) is non-volatile, and is
-                                                    used for very long term data, like a file in a computer's disk,
-                                                    except that there is only a tiny amount available. Programs on the
-                                                    Arduino have to ask explicitly to use this memory, with an EEPROM
-                                                    library. <ul>
-                                                        <li>The name stands for Electrically Erasable Programmable
-                                                            Read-Only Memory, which sounds like a contradiction in
-                                                            terms. In the early days of transistor-based computers,
-                                                            there were two kinds of memory, volatile (Random Access
-                                                            Memory, or RAM) and nonvolatile (Read-Only Memory, or ROM).
-                                                            The values stored in an early ROM had to be built in by the
-                                                            manufacturer of the memory chip, so it was expensive to have
-                                                            a new one made. Then came Programmable Read-Only Memory
-                                                            (PROM), which was read-only once installed in a computer,
-                                                            but could be programmed, once only, using a machine that was
-                                                            only somewhat expensive. Then came EPROM, Erasable PROM,
-                                                            which could be erased in its entirety by shining a bright
-                                                            ultraviolet light on it, and then reprogrammed like a PROM.
-                                                            Finally there was Electrically Erasable PROM, which could be
-                                                            erased while installed in a computer, so essentially
-                                                            equivalent to RAM, except that the erasing is much slower
-                                                            than rewriting a word of RAM, so you use it only for values
-                                                            that aren't going to change often.</li>
-                                                    </ul>
-                                                </li>
-                                                <li> <strong>SRAM</strong> (1k–4kBytes): This memory can lose its value
-                                                    when the
-                                                    machine is turned off; in other words, it's volatile. It is used for
-                                                    temporary data, like the script variables in a Snap<em>!</em>
-                                                    script. <ul>
-                                                        <li>The name stands for Static Random Access Memory. The "Random
-                                                            Access"
-                                                            part differentiates it from the magnetic tape storage used
-                                                            on very
-                                                            old computers, in which it took a long time to get from one
-                                                            end of
-                                                            the tape to another, so it was only practical to write or
-                                                            read data
-                                                            in sequence. Today all computer memory is random access, and
-                                                            the
-                                                            name "RAM" really means "writable," as opposed to read-only.
-                                                            The
-                                                            "Static" part of the name means that, even though the memory
-                                                            requires power to retain its value, it <em>doesn't</em>
-                                                            require
-                                                            periodic refreshing as regular ("Dynamic") computer main
-                                                            memory
-                                                            does. ("Refreshing" means that every so often, the computer
-                                                            has to
-                                                            read the value of each word of memory and rewrite the same
-                                                            value, or
-                                                            else it fades away. This is a good example of computer
-                                                            circuitry
-                                                            whose job is to maintain the <em>digital abstraction,</em>
-                                                            in which
-                                                            a value is zero or one, and there's no such thing as
-                                                            "fading" or
-                                                            "in-between values.") Static RAM is faster but more
-                                                            expensive than
-                                                            dynamic RAM; that's why DRAM is used for the very large
-                                                            (several
-                                                            gigabytes) memories of desktop or laptop computers.</li>
-                                                    </ul>
-                                                </li>
-                                                <li> <strong>Flash</strong> memory (16k–256kBytes): This is the main
-                                                    memory used
-                                                    for programs and data. Flash memory is probably familiar to you
-                                                    because it's
-                                                    used for the USB sticks that function as portable external file
-                                                    storage.
-                                                    It's technically a kind of EEPROM, but with a different physical
-                                                    implementation that makes it much cheaper (so there can be more of
-                                                    it in the
-                                                    Arduino), but more complicated to use, requiring special control
-                                                    circuitry
-                                                    to maintain the digital abstraction. <ul>
-                                                        <li>"More complicated" means, for example, that changing a bit
-                                                            value
-                                                            from 1 to 0 is easy, but changing it from 0 to 1 is a much
-                                                            slower
-                                                            process that involves erasing a large block of memory to
-                                                            <em>all</em> 1 bits and then rewriting the values of the
-                                                            bits you
-                                                            didn't want to change.</li>
-                                                    </ul>
+                                        <li> <strong> SRAM </strong> (1k – 4kBytes): dit geheugen kan zijn waarde
+                                            verliezen wanneer de machine wordt uitgeschakeld; met andere woorden, het is
+                                            vluchtig. Het wordt gebruikt voor tijdelijke gegevens, zoals de
+                                            scriptvariabelen in een Snap<em>!</em>-script. <ul>
+                                                <li> De naam staat voor Static Random Access Memory (Statische
+                                                    Willekeurigetoeganggeheugen). Het "Random Access"
+                                                    -gedeelte onderscheidt het van de magnetische tape-opslag die op
+                                                    zeer oude computers wordt gebruikt, waarbij het lang duurde om van
+                                                    het ene uiteinde van de tape naar het andere te gaan, dus het was
+                                                    alleen praktisch om achtereenvolgens gegevens te schrijven of lezen.
+                                                    Tegenwoordig is alle computergeheugen willekeurige toegang, en de
+                                                    naam "RAM" betekent echt "beschrijfbaar", in tegenstelling tot
+                                                    alleen-lezen. Het "statische" deel van de naam betekent dat, hoewel
+                                                    het geheugen stroom nodig heeft om zijn waarde te behouden, het <em>
+                                                        niet </em> periodiek moet worden vernieuwd, zoals het gewone
+                                                    ("dynamische") computerhoofdgeheugen dat wel doet. ("Vernieuwen"
+                                                    betekent dat de computer om de zoveel tijd de waarde van elk stuk
+                                                    in het geheugen moet lezen en dezelfde waarde moet herschrijven,
+                                                    anders verdwijnt deze. Dit is een goed voorbeeld van
+                                                    computercircuits waarvan het de taak is de <em> digitale abstractie,
+                                                    </em> te behouden waarin een waarde nul of één is en er niet zoiets
+                                                    bestaat als "vervagende" of "tussenliggende waarden".) Statische RAM
+                                                    is sneller maar duurder dan dynamische RAM; daarom wordt DRAM
+                                                    gebruikt voor de zeer grote (meerdere gigabytes) geheugens van
+                                                    desktop- of laptopcomputers. </li>
+                                            </ul>
+                                        </li>
+                                        <li> <strong> Flash </strong> geheugen (16k - 256kBytes): dit is het
+                                            hoofdgeheugen dat wordt gebruikt voor programma's en gegevens.
+                                            Flash-geheugen ken je waarschijnlijk, omdat het wordt gebruikt voor
+                                            USB-sticks die fungeren als draagbare externe bestandsopslag. Het is
+                                            technisch gezien een soort EEPROM, maar met een andere fysieke implementatie
+                                            die
+                                            het veel goedkoper maakt (dus er kan meer van zijn in de Arduino), maar
+                                            ingewikkelder om te gebruiken, waarvoor speciale besturingsschakelingen
+                                            nodig zijn om de digitale abstractie te behouden. <ul>
+                                                <li> "Meer gecompliceerd" betekent bijvoorbeeld dat het wijzigen van een
+                                                    bitwaarde van 1 naar 0 eenvoudig is, maar het wijzigen van 0 naar 1
+                                                    is een veel langzamer proces waarbij een groot geheugenblok moet
+                                                    worden veranderd naar <em> alleen </em> 1 bits en daarna moeten de
+                                                    waardes waarvan je de bits niet wil veranderen herschreven worden.
                                                 </li>
                                             </ul>
-                                        </p>
-                                        <p>So, that's why there are physically different kinds of memory in the AVR
-                                            chips, but
-                                            none of that completely explains the Harvard architecture, in which memory
-                                            is
-                                            divided into <em>program</em> and <em>data,</em> regardless of how long the
-                                            data
-                                            must survive. The main reason to have two different memory interface
-                                            circuits is
-                                            that it allows the processor to read a program instruction and a data value
-                                            <em>at
-                                                the same time.</em> This can in principle make the processor twice as
-                                            fast,
-                                            although that much speed gain isn't found in practice.</p>
-                                        <p>To understand the benefit of simultaneous instruction and data reading, you
-                                            have to
-                                            understand that processors are often designed using an idea called
-                                            <em>pipelining.</em> The standard metaphor is about doing your laundry, when
-                                            you
-                                            have more than one load. You wash the first load, while your dryer does
-                                            nothing;
-                                            then you <em>wash the second load while drying the first load, </em>and so
-                                            on until
-                                            the last load. Similarly, the processor in a computer includes circuitry to
-                                            decode
-                                            an instruction, and circuitry to do arithmetic. If the processor does one
-                                            thing at a
-                                            time, then at any moment either the instruction decoding circuitry or the
-                                            arithmetic
-                                            circuitry is doing nothing. But if you can read the next instruction at the
-                                            same
-                                            time as carrying out the previous one, all of the processor is kept busy.
-                                        </p>
-                                        <p>This was a long explanation, but it's still vastly oversimplified. For one
-                                            thing,
-                                            it's possible to use pipelining in a von Neumann architecture also. And for
-                                            another,
-                                            a <em>pure</em> Harvard architecture wouldn't allow a computer to load
-                                            programs for
-                                            itself to execute. So various compromises are used in practice.</p>
+                                        </li>
+                                    </ul>
+                                </p>
+                                <p> Daarom zijn er fysiek verschillende soorten geheugens in de AVR-chips, maar niets
+                                    daarvan verklaart de Harvard-architectuur volledig, waarin geheugen is verdeeld in
+                                    <em> programma's </em> en <em> gegevens, </em> ongeacht hoe lang de gegevens moeten
+                                    bestaan. De belangrijkste reden om twee verschillende
+                                    geheugeninterfacecircuits te hebben, is dat het de processor toestaat
+                                    tegelijkertijd een programma-instructie en een gegevenswaarde <em> te lezen.
+                                    </em> Dit kan de processor in principe twee keer zo snel maken, hoewel niet
+                                    veel snelheidswinst wordt gevonden in de praktijk. </p>
+                                <p> Om het voordeel van gelijktijdige instructie en het lezen van gegevens te begrijpen,
+                                    moet je begrijpen dat processoren vaak zijn ontworpen met behulp van een idee
+                                    genaamd <em> pipelining. </em> De standaard metafoor gaat over het doen van de was
+                                    wanneer je meer dan één lading hebt. Je wast de eerste lading, terwijl je droger
+                                    niets doet; dan was je <em> de tweede lading tijdens het drogen van de eerste
+                                        lading, </em> enzovoort tot de laatste lading. Evenzo bevat de processor in een
+                                    computer een cirtuit om een ​​instructie te decoderen en een circuit om
+                                    te rekenen. Als de processor één ding tegelijk doet, doet het
+                                    instructie-decodeercircuit of het rekencircuit op elk moment niets.
+                                    Maar als je de volgende instructie kunt lezen terwijl je de vorige uitvoert, blijft
+                                    de hele processor bezig. </p>
+                                <p> Dit was een lange verklaring, maar het is nog steeds enorm vereenvoudigd. Ten eerste
+                                    is het mogelijk om pipelining ook in een von Neumann-architectuur te gebruiken. En
+                                    daarbij, een <em> pure </em> Harvard-architectuur zou een computer niet
+                                    toestaan ​​om programma's te laden die de computer zelf uitvoert. In de praktijk
+                                    worden dus verschillende compromissen gebruikt. </p>
                             </div>
                         </div>
-                        <p>Atmel has since introduced a line of ARM-compatible 32-bit processors, and Arduino has boards
-                            using that processor but compatible with the layout of the connectors on the edges.</p>
-                        <p>One thing that has contributed to the popularity of the Arduino with hobbyists is the
-                            availability of <em>shields,</em> which are auxiliary circuit boards that plug into the side
-                            edge connectors and have the same connectors on their top side. Shields add features to the
-                            system. Examples are motor control shields, Bluetooth shields for communicating with cell
-                            phones, RFID shields to read those product tags you find inside the packaging of many
-                            products, and so on. Both the Arduino company and others sell shields.</p>
+                        <p> Atmel heeft sindsdien een reeks van ARM-compatibele 32-bits processors geïntroduceerd en
+                            Arduino heeft boards die die processor gebruiken, maar compatibel met de lay-out van de
+                            connectoren aan de randen. </p>
+                        <p> Een ding heeft bijgedragen aan de populariteit van de Arduino bij hobbyisten is de
+                            beschikbaarheid van <em> shields, </em>. Dit zijn extra printplaten die op de
+                            zijrandconnectoren worden aangesloten en dezelfde connectoren aan hun bovenkant hebben.
+                            Shields voegen functies toe aan het systeem. Voorbeelden zijn motorbesturingsshields,
+                            Bluetooth-shields voor communicatie met mobiele telefoons, RFID-shields om die
+                            productlabels te lezen die je in de verpakking van veel producten vindt, enzovoort. Zowel
+                            het bedrijf Arduino als anderen verkopen shields. </p>
                         <div class="sidenote">
-                            <small>Stack of Arduino shields</small><br />
-                            <small><small>Image by Wikimedia user Marlon J. Manrique, CC-BY-SA 2.0.</small></small>
+                            <small>Een aantal Arduino-shields</small><br />
+                            <small><small>Afbeelding van Wikimedia genruiker Marlon J. Manrique, CC-BY-SA
+                                    2.0.</small></small>
                         </div>
                         <img class="indent" src="/bjc-r/img/6-computers/arduino-shields.jpg" width="250px"
                             alt="Geen Afbeelding" />
-                        <p>A completely different hobbyist architecture is the <em>Raspberry Pi.</em> It was designed to
-                            be used like a desktop or laptop computer, but with more access to its electronics. It uses
-                            an ARM-compatible processor, like most cell phones, but instead of running phone operating
-                            system software such as Android, it runs "real" computer besturingssystemen. It ships with
-                            Linux, but people have run Windows on it.</p>
-                        <p>The main thing that makes it exciting is that it's inexpensive: different models range in
-                            price from $5 to $35. That price includes just the circuit board, as in the picture, without
-                            a keyboard, display, mouse, power adapter, or a case. The main expense in kit computers is
-                            the display, so the Pi is designed to plug into your TV. You can buy kits that include a
-                            minimal case, a keyboard, and other important add-ons for around $20. You can also buy fancy
-                            cases to make it look like any other computer, with a display, for hundreds of dollars. </p>
-                        <p>Because the Pi is intended for educational use, it comes with software, some of which is free
-                            for anyone, but some of which generally costs money for non-Pi computers. One important
-                            example is Mathematica, which costs over $200 for students (their cheapest price), but is
-                            included free on the Pi.</p>
-                        <p>Like the Arduino, the Pi supports add-on circuit boards with things like sensors and wireless
-                            communication modules.</p>
+                        <p> Een geheel andere hobbyarchitectuur is de <em> Raspberry Pi. </em> Het is ontworpen om te
+                            worden gebruikt als een desktop- of laptopcomputer, maar met meer toegang tot de
+                            elektronica. Het maakt gebruik van een ARM-compatibele processor, zoals de meeste mobiele
+                            telefoons, maar in plaats van het uitvoeren van besturingssoftware voor telefoons zoals
+                            Android, draait het "echte" computerbesturingssystemen. Het wordt geleverd met Linux, maar
+                            mensen gebruiken het ook met Windows. </p>
+                        <p> Het belangrijkste dat het speciaal maakt, is dat het goedkoop is: verschillende modellen
+                            variëren in prijs van $ 5 tot $ 35. Die prijs bevat alleen de printplaat, zoals op de
+                            afbeelding, zonder een toetsenbord, display, muis, voedingsadapter of een hoes. De grootste
+                            kostenpost in kitcomputers is het display, dus de Pi is ontworpen om op je tv aan te
+                            sluiten. Je kunt kits kopen met een minimale behuizing, een toetsenbord en andere
+                            belangrijke add-ons voor ongeveer $ 20. Je kunt ook luxe hoesjes kopen om het eruit te laten
+                            zien als elke andere computer, met een display, voor honderden dollars. </p>
+                        <p> Omdat de Pi bedoeld is voor educatief gebruik, wordt deze geleverd met software, waarvan
+                            sommige gratis is, maar waarvan sommige over het algemeen geld kost voor
+                            niet-Pi-computers. Een belangrijk voorbeeld is Mathematica, dat meer dan $ 200 kost voor
+                            studenten (hun goedkoopste prijs), maar gratis is inbegrepen op de Pi. </p>
+                        <p> Net als de Arduino ondersteunt de Pi add-on printplaten met dingen zoals sensoren en
+                            draadloze communicatiemodules. </p>
                         <div class="sidenote">
                             <small>Raspberry Pi board</small><br />
-                            <small><small>Image by Evan Amos, via Wikimedia, public domain</small></small>
+                            <small><small>Afbeelding van Evan Amos, via Wikimedia, publiek domein</small></small>
                         </div>
                         <img class="indent" src="/bjc-r/img/6-computers/raspberry-pi.jpg" width="250px"
                             alt="Geen Afbeelding" />
@@ -667,54 +608,62 @@ movl    %edi, (%rcx)</pre>
             </ul>
         </div>
         <div class="endnote">
-            <a href="#hint-architecture-general" data-toggle="collapse">Learn more about computer architecture in
-                general.</a>
+            <a href="#hint-architecture-general" data-toggle="collapse">
+                Leer meer over computerarchitectuur in het algemeen.
+            </a>
             <div id="hint-architecture-general" class="collapse">
 
-                <h4>The memory hierarchy</h4>
-                <p>For a given cost of circuit hardware, <strong>the bigger the memory, the slower it works.</strong>
-                    For this reason, computers don't just have one big chunk of memory. There will be a small number of
-                    <em>registers</em> inside the processor itself, usually between 8 and 16 of them. The "size" (number
-                    of bits) of a data register is equal to the width of the architecture.</p>
-                <p>The computer's main memory, these days, is measured in GB (gigabytes, or billions of bytes). A memory
-                    of that size can't be fast enough to keep up with a modern processor. Luckily, computer programs
-                    generally have <em>locality of reference,</em> which means that if the program has just made use of
-                    a particular memory location, it's probably going to use a nearby location next. So a complete
-                    program may be very big, but over the course of a second or so only a small part of it will be
-                    needed. Therefore, modern computers are designed with one or more <em>cache</em> memories—much
-                    smaller and therefore faster—between the processor and the main memory. The processor makes sure
-                    that the most recently used memory is copied into the cache. </p>
-                <p>One recent 64-bit x86 processor has a first level (L1) cache of 64KB (thousands of bytes) inside the
-                    processor chip, a larger but slower L2 cache of 256 KB, also inside the processor, and an L3 cache
-                    of up to 2 MB (megabytes, millions of bytes) outside the processor. Each level of cache has a copy
-                    of the most recently used parts of the next level outward: the L1 cache copies part of the L2 cache,
-                    which copies part of the L3 cache, which copies part of the main memory. Data in the L1 cache can be
-                    accessed by the processor about as fast as its internal registers, and each level outward is a
-                    little slower. Hardware in the processor handles all this complexity, so that programmers can write
-                    programs as if the processor were directly connected to the main memory.</p>
+                <h4> De Geheugenhiërarchie </h4>
+                <p> Een gegevan van circuithardware is, <strong> hoe groter het geheugen, hoe langzamer het werkt.
+                    </strong> om deze reden hebben computers niet alleen een grote hooop geheugen. Er zal een
+                    klein aantal <em> registers </em> in de processor zelf zijn, meestal tussen de 8 en 16. De "grootte"
+                    (aantal bits) van een gegevensregister is gelijk aan de breedte van de architectuur. </p>
+                <p> Het hoofdgeheugen van de computer wordt tegenwoordig gemeten in GB (gigabytes of miljarden bytes).
+                    Een geheugen van die omvang kan niet snel genoeg zijn om een ​​moderne processor bij te houden.
+                    Gelukkig hebben computerprogramma's over het algemeen <em> plaats van referentie </em>, wat betekent
+                    dat
+                    als het programma net gebruik heeft gemaakt van een bepaalde geheugenlocatie, het waarschijnlijk een
+                    nabijgelegen locatie hierna zal gebruiken. Dus een compleet programma kan heel groot zijn, maar in
+                    de loop
+                    van een seconde zal er maar een klein deel van nodig zijn. Daarom zijn moderne computers ontworpen
+                    met een of meer <em> cache </em> -geheugens - veel kleiner en daarom sneller - tussen de processor
+                    en het hoofdgeheugen. De processor zorgt ervoor dat het meest recent gebruikte geheugen naar de
+                    cache wordt gekopieerd. </p>
+                <p> Een recente 64-bit x86-processor heeft een eerste niveau (L1) cache van 64 KB (duizenden bytes) in
+                    de processorchip, een grotere maar langzamere L2-cache van 256 KB, ook in de processor, en een
+                    L3-cache van maximaal 2 MB (megabytes, miljoenen bytes) buiten de processor. Elk niveau van cache
+                    heeft een kopie van de meest recent gebruikte delen van het volgende niveau naar buiten: de L1-cache
+                    kopieert een deel van de L2-cache, die een deel van de L3-cache kopieert, die een deel van het
+                    hoofdgeheugen kopieert. Gegevens in de L1-cache zijn ongeveer even snel toegankelijk voor de
+                    processor als de interne registers en elk niveau naar buiten is iets langzamer. Hardware in de
+                    processor verwerkt al deze complexiteit, zodat programmeurs programma's kunnen schrijven alsof de
+                    processor rechtstreeks op het hoofdgeheugen is aangesloten. </p>
+
                 <h4>Second sourcing</h4>
-                <p>Intel licenses other chip manufacturers to build processors that use the same architecture as Intel's
-                    processors. Why do they do that? Wouldn't they make more money if people had to buy from Intel? The
-                    reason is that computer manufacturers, such as Dell, Apple, and Lenovo, won't build their systems
-                    around an architecture that is only available from one company. They're not worried that Intel will
-                    go out of business; the worry is that there may be a larger-than-expected demand for a particular
-                    processor, and Intel may not be able to fill orders on time. But if that processor is also available
-                    from other companies such as AMD and Cyrix, then a delay at Intel won't turn into a delay at Dell.
-                    Those other chip manufacturers may not use the same circuitry as the Intel version, as long as they
-                    behave the same at the architecture level.</p>
+                <p> Intel geeft licenties aan andere chipfabrikanten om processors te bouwen die dezelfde architectuur
+                    gebruiken als de processors van Intel. Waarom doen ze dat? Zouden ze niet meer geld verdienen als
+                    mensen alles bij Intel moesten kopen? De reden is dat computerfabrikanten, zoals Dell, Apple en
+                    Lenovo, hun systemen niet zullen bouwen rond een architectuur die slechts bij één bedrijf
+                    beschikbaar is.
+                    Ze zijn niet bang dat Intel failliet gaat; de zorg is dat er mogelijk een groter dan verwachte vraag
+                    is naar een bepaalde processor en dat Intel mogelijk niet in staat is bestellingen op tijd af te
+                    handelen. Maar als die processor ook verkrijgbaar is bij andere bedrijven zoals AMD en Cyrix, dan
+                    zal een vertraging bij Intel geen vertraging worden bij Dell. Die andere chipfabrikanten gebruiken
+                    mogelijk niet dezelfde circuits als de Intel-versie, zolang ze zich maar hetzelfde gedragen op
+                    architectuurniveau. </p>
             </div>
         </div>
         <div class="takeItFurther">
             <ol type="A">
                 <li>
-                    Learning enough about the Analytical Engine to be able to write even a <em>simple</em> program for
-                    it is quite a large undertaking. Don't try it until after the AP exam, but if you are interested,
-                    there are extensive online resources available here:
+                    Voldoende leren over de Analytical Engine om zelfs een <em> eenvoudig </em> programma te kunnen
+                    schrijven, is een behoorlijk grote onderneming. Maar als je geïnteresseerd bent, zijn hier
+                    uitgebreide online bronnen beschikbaar:
                     <ul>
                         <li><a href="http://www.fourmilab.ch/babbage/contents.html" target="_blank">The Analytical
-                                Engine Table of Contents</a></li>
+                                Engine Table of Contents (Engels) </a></li>
                         <li><a href="http://www.fourmilab.ch/babbage/emulator.html" target="_blank">Web Analytical
-                                Engine Emulator</a></li>
+                                Engine Emulator (Engels) </a></li>
                     </ul>
                 </li>
             </ol>
