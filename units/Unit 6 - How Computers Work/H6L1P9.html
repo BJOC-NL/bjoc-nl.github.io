@@ -42,23 +42,25 @@
             </div>
         </div>
         <h3>Boolean Functies</h3>
-        <p>The circuits to do computation are more interesting. They compute <em>functions,</em> just like reporters in
-            Snap<em>!</em>. Since computers do a lot of arithmetic, you might think that the basic circuit functions
-            would be addition, subtraction, multiplication, and division, but that's not the case. Of course there
-            <em>are</em> circuits to do those things, but they're made out of <em>logic gates:</em> circuits that
-            compute <strong>Boolean functions</strong>: <code>and</code>, <code>or</code>, and <code>not</code>.</p>
-        <p>The reason that Boolean functions are considered more fundamental is that their invoeren and uitvoeren can be
-            represented with a single wire going into or out from the circuit. That's not Waar about arithmetic
-            functions. If you consider a voltage on a wire as meaning 1, and no voltage as meaning 0, then you have to
-            see that an adder will have <em>three</em> possible uitvoer values, because 1+1=2, which is neither 0 nor 1.
-            By contrast, if you consider a voltage on a wire as meaning Waar, and no voltage as meaning Niet Waar, then
-            the
-            uitvoer from a Boolean function of two invoeren can still only be Waar or Niet Waar, so only one uitvoer
-            wire is
-            needed.</p>
-        <p>You saw some examples in <a href="../Unit 2 - Abstraction/H2L3P1.html"> Unit 2 Lab 3: Making Decisions by
-                Using Predicates </a>: <code>AND</code>, <code>OR</code>, and
-            <code>NOT</code>:<br />
+        <p>
+            De circuits om berekeningen uit te voeren zijn interessanter. Ze berekenen <em> functies, </em> net als
+            rapporteurs in Snap<em>!</em>. Omdat computers veel rekenen, denk je misschien dat de basiscircuitfuncties
+            optellen, aftrekken, vermenigvuldigen en delen zijn, maar dat is niet het geval. Natuurlijk <em> zijn
+            </em> er circuits om die dingen te doen, maar ze zijn gemaakt van <em> logische poorten: </em> circuits die
+            <strong> Boolean functies </strong> berekenen: <code> en </code>, <code> of </code> en <code> niet </code>.
+        </p>
+        <p>
+            De reden dat Boolean functies als fundamenteler worden beschouwd, is dat hun invoeren en uitvoeren kunnen
+            worden weergegeven met een enkele draad die het circuit in of uit gaat. Dat is niet zo voor rekenkundige
+            functies. Als je een spanning op een draad als betekenis 1 en geen spanning als betekenis 0 beschouwt, moet
+            je ervoor zorgen dat een opteller <em> drie </em> mogelijke uitvoerwaarden heeft, omdat 1 + 1 = 2, wat noch
+            0 noch 1. Als je daarentegen een spanning op een draad als Waar en geen spanning als Niet Waar beschouwt,
+            dan kan de uitvoer van een Booleaanse functie van twee invoeren nog steeds alleen Waar of Niet Waar zijn,
+            dus is slechts één uitvoerdraad nodig.
+        </p>
+        <p>
+            Je hebt een aantal voorbeelden gezien in <a href="../Unit 2 - Abstraction/H2L3P1.html"> Hoofdstuk 2 Les 3:
+                Keuzes maken met predikaten </a>: <code>EN</code>, <code>OF</code> en <code>NIET</code>:<br />
             <img class="indent" src="/bjc-r/img/6-computers/logical-operators/and-TT-reporting.png"
                 alt="Geen Afbeelding" />
             <img class="indent" src="/bjc-r/img/6-computers/logical-operators/and-TF-reporting.png"
@@ -74,25 +76,28 @@
             <img class="indent" src="/bjc-r/img/6-computers/logical-operators/not-T-reporting.png"
                 alt="Geen Afbeelding" />
             <img class="indent" src="/bjc-r/img/6-computers/logical-operators/not-F-reporting.png"
-                alt="Geen Afbeelding" /> </p>
-        <div class="endnote"> <strong>Some other ways to think about Boolean operators:</strong> It is possible to
-            emulate Boolean operations electronically and these operations are sometimes represented as truth tables
-            (either with Waar/Niet Waar or ones/zeros). <ul>
-                <li> <a href="#hint-truth-tables-and" data-toggle="collapse">A circuit emulation and truth tables for
-                        <code>and</code>.</a>
+                alt="Geen Afbeelding" />
+        </p>
+        <div class="endnote"> <strong> Andere manieren om Boolean functies te zien </strong>
+            Het is mogelijk om Booleaanse bewerkingen elektronisch te emuleren, deze bewerkingen worden soms
+            weergegeven als waarheidstabellen (met Waar / Niet Waar of enen / nullen). <Ul>
+                <li> <a href="#hint-truth-tables-and" data-toggle="collapse"> Een circuitemulatie en waarheidstabel voor
+                        <code>en</code>. </a>
                     <div id="hint-truth-tables-and" class="collapse">
-                        <p>This electric circuit shows a simplified way to emulate the Boolean operator <code>and</code>
-                            electronically. The two switches are in <em>series</em>; if both of the switches are on, the
-                            current flows and the light bulb turns on.</p>
-                        <div class="sidenote"> This symbol in the circuit diagrams represents a battery.<br /> <img
-                                src="/bjc-r/img/6-computers/LogicGates_img/Circuits/BatterySymbol.png" height="75"
-                                alt="Geen Afbeelding" /> <img
-                                src="/bjc-r/img/6-computers/LogicGates_img/Circuits/Battery.png" height="75"
-                                alt="Geen Afbeelding" /> </div> <img class="indent"
-                            data-gifffer="/bjc-r/img/6-computers/LogicGates_img/Animations/gif/AND_Animation.gif"
-                            width="333" height="250" alt="Geen Afbeelding" />
-                        <div class="sidenote">These two tables are identical. One just shows the same pattern with
-                            Waar/Niet Waar and the other with ones/zeros.</div>
+                        <p> Dit elektrische circuit toont een vereenvoudigde manier om de Boolean functie <code> en
+                            </code> elektronisch te emuleren. De twee schakelaars bevinden zich in <em> serie </em>;
+                            als beide schakelaars zijn ingeschakeld, stroomt de stroom en gaat de gloeilamp aan.
+                        </p>
+                        <div class="sidenote"> Dit symbool in het diagram staat voor een batterij.<br />
+                            <img src="../../afb/h6/l1/p9-o1.png" height="75" alt="Geen Afbeelding" />
+                            <img src="../../afb/h6/l1/p9-o2.png" height="75" alt="Geen Afbeelding" />
+                        </div>
+                        <img class="indent" data-gifffer="../../afb/h6/l1/p9-v1.gif" width="333" height="250"
+                            alt="Geen Afbeelding" />
+                        <div class="sidenote">
+                            Deze twee tabellen zijn identiek. De een laat het patroon zien met Waar/Niet Waar en de
+                            ander met enen en nullen.
+                        </div>
                         <table class="truth" summary="truth table for AND with Niet Waar/Waar">
                             <tr>
                                 <th scope="colgroup" colspan="2">invoeren</th>
@@ -101,7 +106,7 @@
                             <tr>
                                 <th scope="col" style="width:100px;">A</th>
                                 <th scope="col" style="width:100px;">B</th>
-                                <th scope="col" style="width:100px;">A <code>and</code> B</th>
+                                <th scope="col" style="width:100px;">A <code>en</code> B</th>
                             </tr>
                             <tr>
                                 <td>Niet Waar</td>
@@ -132,7 +137,7 @@
                             <tr>
                                 <th scope="col" style="width:100px;">A</th>
                                 <th scope="col" style="width:100px;">B</th>
-                                <th scope="col" style="width:100px;">A <code>and</code> B</th>
+                                <th scope="col" style="width:100px;">A <code>en</code> B</th>
                             </tr>
                             <tr>
                                 <td>0</td>
@@ -157,25 +162,28 @@
                         </table>
                     </div>
                 </li>
-                <li> <a href="#hint-truth-tables-or" data-toggle="collapse">A circuit emulation and truth tables for
-                        <code>or</code>.</a>
+                <li> <a href="#hint-truth-tables-or" data-toggle="collapse"> Een circuitemulatie en waarheidstabel voor
+                        <code>of</code>.</a>
                     <div id="hint-truth-tables-or" class="collapse">
-                        <p> This electric circuit shows a simplified way to emulate the Boolean operator <code>or</code>
-                            electronically. The two switches are in <em>parallel</em>; if either (or both) of the
-                            switches are on, the current flows and the light bulb turns on.<br /> <img class="indent"
-                                data-gifffer="/bjc-r/img/6-computers/LogicGates_img/Animations/gif/OR_Animation.gif"
-                                width="335" height="250" alt="Geen Afbeelding" /> </p>
+                        <p> Dit elektrische circuit toont een vereenvoudigde manier om de Boolean functie
+                            <code>or</code>
+                            elektronisch te emuleren. De twee schakelaars staan <em>parallel</em>; als een van de twee
+                            (of allebei) de schakelaars aan staan dan stroomt de stroom en gaat de gloeilamp aan.
+                            <br />
+                            <img class="indent" data-gifffer="../../afb/h6/l1/p9-v2.gif" width="335" height="250"
+                                alt="Geen Afbeelding" /> </p>
                         <div class="sidenoteBig">
-                            <p>As with the <code>and</code> tables, these two tables are identical except for whether
-                                they use Waar/Niet Waar or ones/zeros.</p>
-                            <p>In ordinary language, the word "or" can have two slightly different meanings.
-                                <em>Inclusive or</em> means "at least one of these": If it's raining <em>or</em> it's
-                                really cold out, you need your overcoat. (If it's both raining and cold, you'd still
-                                wear the coat.) <em>Exclusive or</em> means &quot;this or that, but not both&quot;: Eat
-                                your vegetables <em>or</em> you won't get any dessert. (You'd feel cheated if you ate
-                                the vegetables and still didn't get dessert.) In computer science (as in mathematics)
-                                the word &quot;or&quot; by itself always means inclusive or, as you can see in this
-                                truth table. If you mean &quot;exclusive or,&quot; you have to say that.</p>
+                            <p> Net als voor de <code>en</code> tabellen, zijn deze twee tabellen identiek behalve voor
+                                Waar/Nietwaar en enen en nullen. </p>
+                            <p> In normale taal betekent heeft het woord "of" twee betekenissen. <em>Inclusieve of</em>
+                                betekent "ten minste één van deze": Als het regent <em>of</em> koud is, heb je een jas
+                                nodig. (Als het regent en koud is dan heb je nog steeds een jas nodig). <em>Exclusieve
+                                    of</em> betekent het een of het ander, maar niet allebei: Eet je groente <em>of</em>
+                                je krijgt geen toetje. (Het zou niet eerlijk zijn als je je groente at en nog steeds
+                                geen toetje kreeg.) In de informatica (en in wiskunde) betekent "of" op zichzelf altijd
+                                inclusieve of, zoals je kan zien in de waarheidstabel. Als je eigenlijk exclusieve of
+                                bedoelt, moet je dat zeggen.
+                            </p>
                         </div>
                         <table class="truth bordered" summary="truth table for OR with Niet Waar/Waar">
                             <tr>
@@ -185,7 +193,7 @@
                             <tr>
                                 <th scope="col" style="width:100px;">A</th>
                                 <th scope="col" style="width:100px;">B</th>
-                                <th scope="col" style="width:100px;">A <code>or</code> B</th>
+                                <th scope="col" style="width:100px;">A <code>of</code> B</th>
                             </tr>
                             <tr>
                                 <td>Niet Waar</td>
@@ -216,7 +224,7 @@
                             <tr>
                                 <th scope="col" style="width:100px;">A</th>
                                 <th scope="col" style="width:100px;">B</th>
-                                <th scope="col" style="width:100px;">A <code>or</code> B</th>
+                                <th scope="col" style="width:100px;">A <code>of</code> B</th>
                             </tr>
                             <tr>
                                 <td>0</td>
@@ -244,15 +252,18 @@
                 <li> <a href="#hint-truth-tables-not" data-toggle="collapse">A circuit emulation and truth tables for
                         <code>not</code>.</a>
                     <div id="hint-truth-tables-not" class="collapse">
-                        <p> This electric circuit shows a simplified way to emulate the Boolean operator
-                            <code>not</code> electronically. This switch is basically a <em>circuit breaker</em>: if the
-                            switch is <em>on</em>, the current flow is broken and the light bulb turns off; if the
-                            switch is off, the current flows directly to the light bulb and the light bulb turns
-                            on.<br /> <img class="indent"
-                                data-gifffer="/bjc-r/img/6-computers/LogicGates_img/Animations/gif/NOT_Animation2.gif"
-                                width="335" height="250" alt="Geen Afbeelding" /> </p>
-                        <div class="sidenote">As with the other tables, these are identical for Waar/Niet Waar vs.
-                            ones/zeros. </div>
+                        <p>
+                            Dit elektrische circuit toont een vereenvoudigde manier om de Boolean functie
+                            <code>niet</code> elektronisch te emuleren. De schakelaar is praktisch een
+                            <em>circuitstopper</em>: als de schakelaar <em>aan</em>staat dan stroomt de stroom niet en
+                            staat de lamp uit als de schakelaar uitstaat dan stroomt de stroom naar de lamp en gaat de
+                            lamp aan. <br />
+                            <img class="indent" data-gifffer="../../afb/h6/l1/p9-v3.gif" width="335" height="250"
+                                alt="Geen Afbeelding" /> </p>
+                        <div class="sidenote">
+                            Net als voor de andere tabellen, zijn deze twee tabellen identiek behalve voor Waar/Nietwaar
+                            en enen en nullen
+                        </div>
                         <table class="truth bordered" summary="truth table for NOT with Niet Waar/Waar">
                             <tr>
                                 <th scope="col">invoer</th>
@@ -260,7 +271,7 @@
                             </tr>
                             <tr>
                                 <th scope="col" style="width:100px;">A</th>
-                                <th scope="col" style="width:100px;"><code>not</code> A</th>
+                                <th scope="col" style="width:100px;"><code>niet</code> A</th>
                             </tr>
                             <tr>
                                 <td>Niet Waar</td>
@@ -278,7 +289,7 @@
                             </tr>
                             <tr>
                                 <th scope="col" style="width:100px;">A</th>
-                                <th scope="col" style="width:100px;"><code>not</code> A</th>
+                                <th scope="col" style="width:100px;"><code>niet</code> A</th>
                             </tr>
                             <tr>
                                 <td>0</td>
@@ -293,25 +304,33 @@
                 </li>
             </ul>
         </div>
-        <h2>Logic Gates</h2>
-        <p>Inside a computer, Boolean operations are implemented in physical circuitry using logic gates. (A single gate
-            implements one of the basic functions <code>and</code>, <code>or</code>, or <code>not</code>.) Logic
+        <h2>Logische Poorten</h2>
+        <p>
+            Inside a computer, Boolean operations are implemented in physical circuitry using logic gates. (A single
+            gate implements one of the basic functions <code>and</code>, <code>or</code>, or <code>not</code>.) Logic
             circuits are often represented with drawings that help engineers see how the information will flow through a
             circuit. For example, the following diagram of a logic circuit with two gates represents the Boolean
-            expression <img class="inline" src="/bjc-r/img/6-computers/(a)or((a)and(b))-booleans.png"
-                alt="Geen Afbeelding" />. Can you see how?</p> <img class="indent noshadow"
-            src="/bjc-r/img/6-computers/(a)or((a)and(b))-gate.png" alt="Geen Afbeelding" />
+            expression
+            <img class="inline" src="/bjc-r/img/6-computers/(a)or((a)and(b))-booleans.png" alt="Geen Afbeelding" />.
+            Zie je hoe?
+        </p>
+        <img class="indent noshadow" src="../../afb/h6/l1/p9-o6.png" alt="Geen Afbeelding" />
         <div class="forYouToDo" id="first">
             <ol>
-                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Geen Afbeelding" />
-                    Look at the logic circuit drawn above. For what values of A and B will the uitvoer be
-                    <code>Waar</code>?</li>
+                <li>
+                    <img class="inline" src="../../afb/icons/PraatMetJeBuur-mini.png" alt="Geen Afbeelding" />
+                    Kijk naar het circuit hierboven, Met welke waardes voor A en B zal de uitvoer <code>Waar</code>
+                    zijn?
+                </li>
             </ol>
         </div>
-        <div class="takeNote">On the previous page, you learned about tungsten and tin, and here we're talking about
-            Boolean functions. In what sense is this less abstract? <strong>From the point of view of the chip designer,
-                logic gates are the fundamental building blocks of a digital circuit.</strong> (The actual physical chip
-            fabrication is at an even lower level of abstraction, in the analog domain.)</div>
+        <div class="takeNote">
+            On the previous page, you learned about tungsten and tin, and here we're talking about
+            Boolean functions. In what sense is this less abstract?
+            <strong>From the point of view of the chip designer, logic gates are the fundamental building blocks of a
+                digital circuit.</strong>
+            (The actual physical chip fabrication is at an even lower level of abstraction, in the analog domain.)
+        </div>
 
         <div class="forYouToDo">
             <ol start="2">
@@ -367,13 +386,11 @@
                                 <table>
                                     <tr>
                                         <td width="200">
-                                            <li><img class="inline noshadow"
-                                                    src="/bjc-r/img/6-computers/logic-gates-quiz-b.png"
+                                            <li><img class="inline noshadow" src="../../afb/h6/l1/p9-o7.png"
                                                     alt="Geen Afbeelding" /></li>
                                         </td>
                                         <td>
-                                            <li><img class="inline noshadow"
-                                                    src="/bjc-r/img/6-computers/logic-gates-quiz-a.png"
+                                            <li><img class="inline noshadow" src="../../afb/h6/l1/p9-o8.png"
                                                     alt="Geen Afbeelding" /></li>
                                         </td>
                                     </tr>
