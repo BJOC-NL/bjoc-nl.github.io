@@ -28,8 +28,8 @@
         <div class="endnote"> <a href="#hint-memory" data-toggle="collapse">Learn more about memory.</a>
             <div id="hint-memory" class="collapse">
                 <p>Memory is made out of <em>flip-flops.</em> A flip-flop is a circuit that has two stable states, on
-                    and off. An input signal can tell it to turn on, turn off, or change whatever it's state is. Once
-                    that happens, the flip-flop stays in the new state until it gets another signal. It has an output
+                    and off. An invoer signal can tell it to turn on, turn off, or change whatever it's state is. Once
+                    that happens, the flip-flop stays in the new state until it gets another signal. It has an uitvoer
                     that reflects its state: on if the flip-flop is on, off if it's off.</p>
             </div>
         </div>
@@ -39,12 +39,14 @@
             would be addition, subtraction, multiplication, and division, but that's not the case. Of course there
             <em>are</em> circuits to do those things, but they're made out of <em>logic gates:</em> circuits that
             compute <strong>Boolean functions</strong>: <code>and</code>, <code>or</code>, and <code>not</code>.</p>
-        <p>The reason that Boolean functions are considered more fundamental is that their inputs and outputs can be
-            represented with a single wire going into or out from the circuit. That's not true about arithmetic
+        <p>The reason that Boolean functions are considered more fundamental is that their invoeren and uitvoeren can be
+            represented with a single wire going into or out from the circuit. That's not Waar about arithmetic
             functions. If you consider a voltage on a wire as meaning 1, and no voltage as meaning 0, then you have to
-            see that an adder will have <em>three</em> possible output values, because 1+1=2, which is neither 0 nor 1.
-            By contrast, if you consider a voltage on a wire as meaning True, and no voltage as meaning False, then the
-            output from a Boolean function of two inputs can still only be True or False, so only one output wire is
+            see that an adder will have <em>three</em> possible uitvoer values, because 1+1=2, which is neither 0 nor 1.
+            By contrast, if you consider a voltage on a wire as meaning Waar, and no voltage as meaning Niet Waar, then
+            the
+            uitvoer from a Boolean function of two invoeren can still only be Waar or Niet Waar, so only one uitvoer
+            wire is
             needed.</p>
         <p>You saw some examples in <a href="../Unit 2 - Abstraction/H2L3P1.html"> Unit 2 Lab 3: Making Decisions by
                 Using Predicates </a>: <code>AND</code>, <code>OR</code>, and
@@ -67,7 +69,7 @@
                 alt="Geen Afbeelding" /> </p>
         <div class="endnote"> <strong>Some other ways to think about Boolean operators:</strong> It is possible to
             emulate Boolean operations electronically and these operations are sometimes represented as truth tables
-            (either with true/false or ones/zeros). <ul>
+            (either with Waar/Niet Waar or ones/zeros). <ul>
                 <li> <a href="#hint-truth-tables-and" data-toggle="collapse">A circuit emulation and truth tables for
                         <code>and</code>.</a>
                     <div id="hint-truth-tables-and" class="collapse">
@@ -82,11 +84,11 @@
                             data-gifffer="/bjc-r/img/6-computers/LogicGates_img/Animations/gif/AND_Animation.gif"
                             width="333" height="250" alt="Geen Afbeelding" />
                         <div class="sidenote">These two tables are identical. One just shows the same pattern with
-                            true/false and the other with ones/zeros.</div>
-                        <table class="truth" summary="truth table for AND with false/true">
+                            Waar/Niet Waar and the other with ones/zeros.</div>
+                        <table class="truth" summary="truth table for AND with Niet Waar/Waar">
                             <tr>
-                                <th scope="colgroup" colspan="2">inputs</th>
-                                <th scope="col">output</th>
+                                <th scope="colgroup" colspan="2">invoeren</th>
+                                <th scope="col">uitvoer</th>
                             </tr>
                             <tr>
                                 <th scope="col" style="width:100px;">A</th>
@@ -94,30 +96,30 @@
                                 <th scope="col" style="width:100px;">A <code>and</code> B</th>
                             </tr>
                             <tr>
-                                <td>False</td>
-                                <td>False</td>
-                                <td>False</td>
+                                <td>Niet Waar</td>
+                                <td>Niet Waar</td>
+                                <td>Niet Waar</td>
                             </tr>
                             <tr>
-                                <td>False</td>
-                                <td>True</td>
-                                <td>False</td>
+                                <td>Niet Waar</td>
+                                <td>Waar</td>
+                                <td>Niet Waar</td>
                             </tr>
                             <tr>
-                                <td>True</td>
-                                <td>False</td>
-                                <td>False</td>
+                                <td>Waar</td>
+                                <td>Niet Waar</td>
+                                <td>Niet Waar</td>
                             </tr>
                             <tr>
-                                <td>True</td>
-                                <td>True</td>
-                                <td>True</td>
+                                <td>Waar</td>
+                                <td>Waar</td>
+                                <td>Waar</td>
                             </tr>
                         </table>
                         <table class="truth bordered" summary="truth table for AND with zero/one">
                             <tr>
-                                <th scope="colgroup" colspan="2">inputs</th>
-                                <th scope="col">output</th>
+                                <th scope="colgroup" colspan="2">invoeren</th>
+                                <th scope="col">uitvoer</th>
                             </tr>
                             <tr>
                                 <th scope="col" style="width:100px;">A</th>
@@ -157,7 +159,7 @@
                                 width="335" height="250" alt="Geen Afbeelding" /> </p>
                         <div class="sidenoteBig">
                             <p>As with the <code>and</code> tables, these two tables are identical except for whether
-                                they use true/false or ones/zeros.</p>
+                                they use Waar/Niet Waar or ones/zeros.</p>
                             <p>In ordinary language, the word "or" can have two slightly different meanings.
                                 <em>Inclusive or</em> means "at least one of these": If it's raining <em>or</em> it's
                                 really cold out, you need your overcoat. (If it's both raining and cold, you'd still
@@ -167,10 +169,10 @@
                                 the word &quot;or&quot; by itself always means inclusive or, as you can see in this
                                 truth table. If you mean &quot;exclusive or,&quot; you have to say that.</p>
                         </div>
-                        <table class="truth bordered" summary="truth table for OR with false/true">
+                        <table class="truth bordered" summary="truth table for OR with Niet Waar/Waar">
                             <tr>
-                                <th scope="colgroup" colspan="2">inputs</th>
-                                <th scope="col">output</th>
+                                <th scope="colgroup" colspan="2">invoeren</th>
+                                <th scope="col">uitvoer</th>
                             </tr>
                             <tr>
                                 <th scope="col" style="width:100px;">A</th>
@@ -178,30 +180,30 @@
                                 <th scope="col" style="width:100px;">A <code>or</code> B</th>
                             </tr>
                             <tr>
-                                <td>False</td>
-                                <td>False</td>
-                                <td>False</td>
+                                <td>Niet Waar</td>
+                                <td>Niet Waar</td>
+                                <td>Niet Waar</td>
                             </tr>
                             <tr>
-                                <td>False</td>
-                                <td>True</td>
-                                <td>True</td>
+                                <td>Niet Waar</td>
+                                <td>Waar</td>
+                                <td>Waar</td>
                             </tr>
                             <tr>
-                                <td>True</td>
-                                <td>False</td>
-                                <td>True</td>
+                                <td>Waar</td>
+                                <td>Niet Waar</td>
+                                <td>Waar</td>
                             </tr>
                             <tr>
-                                <td>True</td>
-                                <td>True</td>
-                                <td>True</td>
+                                <td>Waar</td>
+                                <td>Waar</td>
+                                <td>Waar</td>
                             </tr>
                         </table>
                         <table class="truth bordered" summary="truth table for OR with zero/one">
                             <tr>
-                                <th scope="colgroup" colspan="2">inputs</th>
-                                <th scope="col">output</th>
+                                <th scope="colgroup" colspan="2">invoeren</th>
+                                <th scope="col">uitvoer</th>
                             </tr>
                             <tr>
                                 <th scope="col" style="width:100px;">A</th>
@@ -241,30 +243,30 @@
                             on.<br /> <img class="indent"
                                 data-gifffer="/bjc-r/img/6-computers/LogicGates_img/Animations/gif/NOT_Animation2.gif"
                                 width="335" height="250" alt="Geen Afbeelding" /> </p>
-                        <div class="sidenote">As with the other tables, these are identical for true/false vs.
+                        <div class="sidenote">As with the other tables, these are identical for Waar/Niet Waar vs.
                             ones/zeros. </div>
-                        <table class="truth bordered" summary="truth table for NOT with false/true">
+                        <table class="truth bordered" summary="truth table for NOT with Niet Waar/Waar">
                             <tr>
-                                <th scope="col">input</th>
-                                <th scope="col">output</th>
+                                <th scope="col">invoer</th>
+                                <th scope="col">uitvoer</th>
                             </tr>
                             <tr>
                                 <th scope="col" style="width:100px;">A</th>
                                 <th scope="col" style="width:100px;"><code>not</code> A</th>
                             </tr>
                             <tr>
-                                <td>False</td>
-                                <td>True</td>
+                                <td>Niet Waar</td>
+                                <td>Waar</td>
                             </tr>
                             <tr>
-                                <td>True</td>
-                                <td>False</td>
+                                <td>Waar</td>
+                                <td>Niet Waar</td>
                             </tr>
                         </table>
                         <table class="truth bordered" summary="truth table for NOT with zero/one">
                             <tr>
-                                <th scope="col">input</th>
-                                <th scope="col">output</th>
+                                <th scope="col">invoer</th>
+                                <th scope="col">uitvoer</th>
                             </tr>
                             <tr>
                                 <th scope="col" style="width:100px;">A</th>
@@ -294,8 +296,8 @@
         <div class="forYouToDo" id="first">
             <ol>
                 <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Geen Afbeelding" />
-                    Look at the logic circuit drawn above. For what values of A and B will the output be
-                    <code>true</code>?</li>
+                    Look at the logic circuit drawn above. For what values of A and B will the uitvoer be
+                    <code>Waar</code>?</li>
             </ol>
         </div>
         <div class="takeNote">On the previous page, you learned about tungsten and tin, and here we're talking about
@@ -308,9 +310,9 @@
                 <li> Review <code>AND</code>, <code>OR</code>, and <code>NOT</code> with the following questions, which
                     are similar to the type of questions you will see on the AP CSP exam.
                     <!-- Question 1 -->
-                    <div class="assessment-data" type="multiplechoice" identifier="Which expression will report TRUE?"
-                        hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri1" shuffle="false">
-                        <div class="prompt"> Which of the following expressions will report <code>true</code>? <ol
+                    <div class="assessment-data" type="multiplechoice" identifier="Which expression will report Waar?"
+                        hasinlinefeedback="Waar" maxchoices="1" responseIdentifier="ri1" shuffle="Niet Waar">
+                        <div class="prompt"> Which of the following expressions will report <code>Waar</code>? <ol
                                 style="list-style:upper-roman;">
                                 <li><img class="inline" src="/bjc-r/img/6-computers/boolean-quiz-a.png"
                                         alt="Geen Afbeelding" /> </li>
@@ -321,10 +323,11 @@
                         <div class="choice" identifier="c1">
                             <div class="text">I only</div>
                             <div class="feedback">Evaluate each part separately first, and then determine what the
-                                outermost block in each expression will report. In expression I: What does <code>(true)
-                                    and (false)</code> report? What does <code>not((true) and (false))</code> report? In
-                                expression II: What does <code>(true) or (false)</code> report? What does
-                                <code>not((true) or (false))</code> report?</div>
+                                outermost block in each expression will report. In expression I: What does <code>(Waar)
+                                    and (Niet Waar)</code> report? What does <code>not((Waar) and (Niet Waar))</code>
+                                report? In
+                                expression II: What does <code>(Waar) or (Niet Waar)</code> report? What does
+                                <code>not((Waar) or (Niet Waar))</code> report?</div>
                         </div>
                         <div class="choice" identifier="c2">
                             <div class="text">II only</div>
@@ -332,22 +335,24 @@
                         </div>
                         <div class="choice" identifier="c3">
                             <div class="text">I and II</div>
-                            <div class="feedback">Take another look at expression I. What does <code>not((true) and
-                                    (false))</code> (on the right) report to the outermost <code>and</code> block?</div>
+                            <div class="feedback">Take another look at expression I. What does <code>not((Waar) and
+                                    (Niet Waar))</code> (on the right) report to the outermost <code>and</code> block?
+                            </div>
                         </div>
                         <div class="choice" identifier="c4">
                             <div class="text">Neither I nor II</div>
-                            <div class="feedback">Take another look at expression II. What does <code>(true) and
-                                    (false)</code> (on the right) report to the outermost <code>or</code> block?</div>
+                            <div class="feedback">Take another look at expression II. What does <code>(Waar) and
+                                    (Niet Waar)</code> (on the right) report to the outermost <code>or</code> block?
+                            </div>
                         </div>
                         <div class="responseDeclaration" identifier="ri1">
                             <div class="correctResponse" identifier="c2"></div>
                         </div>
                     </div> <!-- Question 2 -->
-                    <div class="assessment-data" type="multiplechoice" identifier="Which logic gate will report TRUE?"
-                        hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri2" shuffle="false">
-                        <div class="prompt"> Which of the following logic circuits will report <code>true</code>? (T
-                            stands for <code>true</code>, and F stands for <code>false</code>.) <ol
+                    <div class="assessment-data" type="multiplechoice" identifier="Which logic gate will report Waar?"
+                        hasinlinefeedback="Waar" maxchoices="1" responseIdentifier="ri2" shuffle="Niet Waar">
+                        <div class="prompt"> Which of the following logic circuits will report <code>Waar</code>? (T
+                            stands for <code>Waar</code>, and F stands for <code>Niet Waar</code>.) <ol
                                 style="list-style:upper-roman;">
                                 <div class="sidenote">This problem is probably <em>harder</em> than something you'll see
                                     on the exam, so if you can get this one, you are doing great!</div>
