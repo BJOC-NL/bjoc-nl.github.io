@@ -304,15 +304,15 @@
                 </li>
             </ul>
         </div>
-        <h2>Logische Poorten</h2>
+        <h2>Logische poorten</h2>
         <p>
-            Inside a computer, Boolean operations are implemented in physical circuitry using logic gates. (A single
-            gate implements one of the basic functions <code>and</code>, <code>or</code>, or <code>not</code>.) Logic
-            circuits are often represented with drawings that help engineers see how the information will flow through a
-            circuit. For example, the following diagram of a logic circuit with two gates represents the Boolean
-            expression
-            <img class="inline" src="/bjc-r/img/6-computers/(a)or((a)and(b))-booleans.png" alt="Geen Afbeelding" />.
-            Zie je hoe?
+            In een computer worden Boolean functies geïmplementeerd in de fysieke circuits met behulp van logische
+            poorten.
+            (Één poort per functie) Logicacircuits worden vaak voorgesteld met tekeningen waarmee ingenieurs kunnen zien
+            hoe de informatie door het circuit loopt. Het volgende diagram van een logicacircuit met twee poorten stelt
+            de uitdrukking
+            <img class="inline" src="/bjc-r/img/6-computers/(a)or((a)and(b))-booleans.png" alt="Geen Afbeelding" />
+            voor. Zie je hoe?
         </p>
         <img class="indent noshadow" src="../../afb/h6/l1/p9-o6.png" alt="Geen Afbeelding" />
         <div class="forYouToDo" id="first">
@@ -325,22 +325,22 @@
             </ol>
         </div>
         <div class="takeNote">
-            On the previous page, you learned about tungsten and tin, and here we're talking about
-            Boolean functions. In what sense is this less abstract?
-            <strong>From the point of view of the chip designer, logic gates are the fundamental building blocks of a
-                digital circuit.</strong>
-            (The actual physical chip fabrication is at an even lower level of abstraction, in the analog domain.)
+            Op de vorige pagina leerde je over tungsten en tin, hier hebben we het over Boolean functies. Waarom is dit
+            minder abstract?
+            <strong> Vanuit het oogpunt van de chipontwerper zijn logische poorten de fundamentele bouwblokken van een
+                digitaal circuit. </strong> De eigenlijke chipfabricage is op een nog lager abstractieniveau, in het
+            analoge domein
         </div>
 
         <div class="forYouToDo">
             <ol start="2">
-                <li> Review <code>AND</code>, <code>OR</code>, and <code>NOT</code> with the following questions, which
-                    are similar to the type of questions you will see on the AP CSP exam.
+                <li> Bekijk opnieuw <code>EN</code>, <code>OF</code> en <code>NIET</code> bij de volgende vragen.
                     <!-- Question 1 -->
                     <div class="assessment-data" type="multiplechoice" identifier="Which expression will report Waar?"
                         hasinlinefeedback="Waar" maxchoices="1" responseIdentifier="ri1" shuffle="Niet Waar">
-                        <div class="prompt"> Which of the following expressions will report <code>Waar</code>? <ol
-                                style="list-style:upper-roman;">
+                        <div class="prompt">
+                            Welke van de volgende uitdrukkingen zal <code> Waar</code> rapporteren?
+                            <ol style="list-style:upper-roman;">
                                 <li><img class="inline" src="/bjc-r/img/6-computers/boolean-quiz-a.png"
                                         alt="Geen Afbeelding" /> </li>
                                 <li><img class="inline" src="/bjc-r/img/6-computers/boolean-quiz-b.png"
@@ -348,28 +348,29 @@
                             </ol>
                         </div>
                         <div class="choice" identifier="c1">
-                            <div class="text">I only</div>
-                            <div class="feedback">Evaluate each part separately first, and then determine what the
-                                outermost block in each expression will report. In expression I: What does <code>(Waar)
-                                    and (Niet Waar)</code> report? What does <code>not((Waar) and (Niet Waar))</code>
-                                report? In
-                                expression II: What does <code>(Waar) or (Niet Waar)</code> report? What does
-                                <code>not((Waar) or (Niet Waar))</code> report?</div>
+                            <div class="text">alleen I</div>
+                            <div class="feedback">
+                                Bekijk eerst elk onderdeel afzonderlijk en bepaal vervolgens wat het buitenste blok in
+                                elke uitdrukking zal rapporteren. In uitdrukking I: Wat rapporteert <code> (Waar) en
+                                    (Niet Waar) </code>? Wat rapporteert <code> niet ((Waar) en (Niet Waar)) </code>? In
+                                uitdrukking II: Wat rapporteert <code> (Waar) of (Niet Waar) </code>? Wat rapporteert
+                                <code> niet ((Waar) of (Niet Waar)) </code>?
+                            </div>
                         </div>
                         <div class="choice" identifier="c2">
-                            <div class="text">II only</div>
+                            <div class="text">alleen II</div>
                             <div class="feedback">Correct!</div>
                         </div>
                         <div class="choice" identifier="c3">
-                            <div class="text">I and II</div>
-                            <div class="feedback">Take another look at expression I. What does <code>not((Waar) and
-                                    (Niet Waar))</code> (on the right) report to the outermost <code>and</code> block?
+                            <div class="text">I en II</div>
+                            <div class="feedback"> Kijk nog een keer naar uitdrukking I. Wat rapporteert <code> niet
+                                    ((Waar) en (Niet Waar)) </code> (rechts) aan het buitenste <code>en</code>-blok?
                             </div>
                         </div>
                         <div class="choice" identifier="c4">
-                            <div class="text">Neither I nor II</div>
-                            <div class="feedback">Take another look at expression II. What does <code>(Waar) and
-                                    (Niet Waar)</code> (on the right) report to the outermost <code>or</code> block?
+                            <div class="text">Geen van beide</div>
+                            <div class="feedback"> Kijk nog een keer naar uitdrukking II. Wat rapporteert <code> (Waar)
+                                    en (Niet Waar) </code> (rechts) aan het buitenste <code>of</code>-blok?
                             </div>
                         </div>
                         <div class="responseDeclaration" identifier="ri1">
@@ -378,11 +379,10 @@
                     </div> <!-- Question 2 -->
                     <div class="assessment-data" type="multiplechoice" identifier="Which logic gate will report Waar?"
                         hasinlinefeedback="Waar" maxchoices="1" responseIdentifier="ri2" shuffle="Niet Waar">
-                        <div class="prompt"> Which of the following logic circuits will report <code>Waar</code>? (T
-                            stands for <code>Waar</code>, and F stands for <code>Niet Waar</code>.) <ol
-                                style="list-style:upper-roman;">
-                                <div class="sidenote">This problem is probably <em>harder</em> than something you'll see
-                                    on the exam, so if you can get this one, you are doing great!</div>
+                        <div class="prompt">
+                            Welke van de volgende circuits zal <code>Waar</code> rapporteren? (W staat voor
+                            <code>Waar</code> en NW staat voor <code>Niet Waar</code>.)
+                            <ol style="list-style:upper-roman;">
                                 <table>
                                     <tr>
                                         <td width="200">
@@ -398,23 +398,27 @@
                             </ol>
                         </div>
                         <div class="choice" identifier="c1">
-                            <div class="text">I only</div>
+                            <div class="text">alleen I</div>
                             <div class="feedback">Correct!</div>
                         </div>
                         <div class="choice" identifier="c2">
-                            <div class="text">II only</div>
-                            <div class="feedback">Try building both diagrams in Snap<em>!</em> similarly to the images
-                                in Question 1 above.</div>
+                            <div class="text">alleen II</div>
+                            <div class="feedback">
+                                Probeer de diagrammen in Snap<em>!</em> te bouwen net zoals in de vorige vraag.
+                            </div>
                         </div>
                         <div class="choice" identifier="c3">
                             <div class="text">I and II</div>
-                            <div class="feedback">Take another look at diagram II. What signal does the right side send
-                                to the AND gate?</div>
+                            <div class="feedback">
+                                Kijk nog eens naar diagram II. Welk signaal stuurt de rechterkant naar de EN-poort.
+
+                            </div>
                         </div>
                         <div class="choice" identifier="c4">
                             <div class="text">Neither I nor II</div>
-                            <div class="feedback">Take another look at diagram I. What signal does the left side send to
-                                the OR gate?</div>
+                            <div class="feedback">
+                                Kijk nog een keer naar diagram I. Welk signaal stuurt de linkerkant naar de OF-poort?
+                            </div>
                         </div>
                         <div class="responseDeclaration" identifier="ri2">
                             <div class="correctResponse" identifier="c1"></div>
@@ -423,21 +427,24 @@
                 </li>
             </ol>
         </div>
-        <div class="endnote"> <a href="#hint-target" data-toggle="collapse">How do engineers draw logic gates?</a>
-            <div id="hint-target" class="collapse"> <img class="imageRight"
-                    src="/bjc-r/img/6-computers/logic-gates-example-circuit.png" alt="Geen Afbeelding" /> Engineers
-                typically draw logic gates horizontally and use special shapes that represent each gate: <br /> <img
-                    class="indent" src="/bjc-r/img/6-computers/LogicGates_img/Gates/AND.png" width="151" height="80"
-                    alt="Geen Afbeelding" /> <img class="indent"
-                    src="/bjc-r/img/6-computers/LogicGates_img/Gates/OR.png" width="156" height="81"
-                    alt="Geen Afbeelding" /> <img class="indent"
-                    src="/bjc-r/img/6-computers/LogicGates_img/Gates/NOT.png" width="126" height="69"
-                    alt="Geen Afbeelding" /><br /> For example, engineers would draw the logic circuit shown at right
-                like this: <br /> <img class="indent"
-                    src="/bjc-r/img/6-computers/LogicGates_img/Circuits/notandandor.png" height="250"
-                    alt="Geen Afbeelding" /><br /> Do an <a
-                    href="https://www.google.com/search?q=logic+gate+diagrams&tbm=isch" target="_blank">image search for
-                    "logic gate diagrams"</a> to see more examples. </div>
+        <div class="endnote"> <a href="#hint-target" data-toggle="collapse">
+                Hoe tekenen ingenieurs logische poorten?</a>
+            <div id="hint-target" class="collapse">
+                <img class="imageRight" src="/bjc-r/img/6-computers/logic-gates-example-circuit.png"
+                    alt="Geen Afbeelding" />
+                Ingenieurs tekenen gewoonlijk logische poorten horizontaal en maken gebruik van speciale vormen die
+                iedere poort voorstellen: <br />
+                <img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/Gates/AND.png" width="151" height="80"
+                    alt="Geen Afbeelding" />
+                <img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/Gates/OR.png" width="156" height="81"
+                    alt="Geen Afbeelding" />
+                <img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/Gates/NOT.png" width="126" height="69"
+                    alt="Geen Afbeelding" /><br />
+                Ingenieurs teken het circuit rechts bijvoorbeeld op deze manier: <br />
+                <img class="indent" src="/bjc-r/img/6-computers/LogicGates_img/Circuits/notandandor.png" height="250"
+                    alt="Geen Afbeelding" /><br /> Zoek op afbeeldingen met de term
+                <a href="https://www.google.com/search?q=logic+gate+diagrams&tbm=isch" target="_blank">
+                    "logic gate diagrams"</a> voor meer voorbeelden. </div>
         </div>
     </div>
     <div class="full-bottom-bar" style="background-position: 20px 3px;">
