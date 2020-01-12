@@ -19,60 +19,83 @@
 <body>
     <div class="full">
         <h2>Het Analoge Domein: Transistors</h2>
-        <div class="learn"><strong>Op deze pagina</strong>, you'll learn about the transistors that implement logic gates.
+        <div class="learn"><strong>Op deze pagina</strong>, ga je leren over de implementatie van logische poorten:
+            transistors.
         </div>
         <div class="sidenote">
-            <p>The <strong>transistor</strong> is the fundamental building block of electronic circuits, where they are
-                used as on/off switches.</p> <img class="indent" src="/bjc-r/img/6-computers/transistors.jpg"
-                alt="Geen Afbeelding" /><br /> <small>Image by sv.Wikipedia user DaRy</small>
+            <p>De <strong>transistor</strong> is de fundamentele bouwsteen van elektronische circuits, waarin ze
+                gebruikt worden als aan/uit-schakelaars.
+            </p>
+            <img class="indent" src="../../afb/h6/l1/p10-o2.jpg" alt="Geen Afbeelding" /><br />
+            <small>Afbeelding van sv.Wikipedia-gebruiker DaRy</small>
         </div>
-        <p>You've learned that a wire can either have a voltage or not have a voltage on it. The reality is more
-            complicated. The on-or-off picture of a wire, a transistor, or a logic gate output is a
-            simplification&mdash;an abstraction. </p> <img class="imageLeft" height="220"
-            src="/bjc-r/img/6-computers/transistor-curve.png" alt="Geen Afbeelding" />
-        <p>This is a rough graph of the actual input-output behavior of a transistor. Don't worry about the details;
-            just notice the two blue <em>flat</em> parts of the graph. Within the "cutoff" region, small changes to the
-            input voltage do not change the output voltage at all; the output is always <em>zero</em> volts. Likewise
-            within the "saturation" region, small input changes hardly impact output voltage; the output is interpreted
-            as a <em>one</em>. This is how transistors are used as <em>switches</em> in a computer.</p>
-        <p>Transistors are versatile devices. When used in the middle, linear (pink) part of the graph, they're
-            <em>amplifiers</em>; a small variation in input voltage produces a large variation in output voltage. That's
-            how they're used to play music in a stereo. </p>
-        <div class="endnote" style="overflow: hidden;"> <a href="#hint-chart-labels" data-toggle="collapse">Why are they
-                called "cutoff," "linear," and "saturation"?</a>
-            <div id="hint-chart-labels" class="collapse">The lower region of the curve is called "cutoff" because the
-                transistor's output is <em>cut off</em> (the output is zero) for any input in that region. The upper
-                region is called "saturation" because, like a sponge that can't get any wetter, the transistor can't
-                give more output no matter how big the input. The central region is called "linear" because it behaves
-                like a linear (straight) function.</div>
+        <p>
+            Je hebt geleerd dat een draad wel of geen spanning kan dragen. De realiteit is ingewikkelder. Het beeld dat
+            een draad, transistor of logische poortuit aan of uit kan is een vereenvoudiging: een abstractie.
+        </p>
+        <img class="imageLeft" height="220" src="../../afb/h6/l1/p10-o1.png" alt="Geen Afbeelding" />
+        <p>
+            Dit is een ruwe grafiek van het werkelijke invoer-uitvoergedrag van een transistor. Maak je geen zorgen over
+            de details; let op de twee blauwe <em> platte </em> delen van de grafiek. Binnen het "afsnijding"-gebied
+            passen kleine veranderingen in de ingangsspanning de uitgangsspanning niet aan; de uitgang is
+            altijd <em> nul </em> volt. Evenzo binnen het "verzadiging"-gebied beïnvloeden kleine ingangsveranderingen
+            nauwelijks uitgangsspanning; de uitvoer wordt geïnterpreteerd als <em> 1 </em>. Dit is hoe transistors
+            worden gebruikt als <em> schakelaars </em> in een computer.
+        </p>
+        <p>
+            Transistors zijn veelzijdige apparaten. Bij gebruik in het middelste, lineaire (roze) deel van de grafiek,
+            werken ze als <em> versterkers </em>; een kleine variatie in ingangsspanning produceert een grote variatie
+            in uitgangsspanning.
+        </p>
+        <div class="endnote" style="overflow: hidden;"> <a href="#hint-chart-labels" data-toggle="collapse">
+                Waarom heten ze "afsnijding", "lineair" en "verzadiging"?
+            </a>
+            <div id="hint-chart-labels" class="collapse">
+                Het onderste gebied van de curve wordt "afsnijding" genoemd omdat de uitgang van de transistor <em>
+                    afgesneden </em> is (de uitgang is nul) voor elke ingang in dat gebied. Het bovenste gebied wordt
+                "verzadiging" genoemd omdat zoals een spons die niet natter kan worden, de transistor niet meer uitvoer
+                kan geven, ongeacht hoe groot de invoer is. Het centrale gebied wordt "lineair" genoemd omdat het zich
+                gedraagt als een lineaire (rechte) functie.
+            </div>
         </div>
-        <div class="endnote">The transistor was invented in 1947 by John Bardeen, Walter Brattain, and William Shockley
-            at Bell Laboratories, also the home of Unix. The inventors were awarded the 1956 Nobel Prize in Physics for
-            this work.</div>
-        <div class="takeNote">The digital domain is not a law of nature; circuit designers have to work at ensuring that
-            each wire in a circuit is always either fully on or fully off. The digital domain is an abstraction.</div>
-        <div class="endnote"> <a href="#hint-digital-abstraction" data-toggle="collapse">Learn more about what's below
-                the digital abstraction and how it's applied.</a>
+        <div class="endnote">
+            De transistor werd uitgevonden in 1947 door John Bardeen, Walter Brattain en William Shockley in Bell
+            Laboratories, ook het geboortehuis van Unix. De uitvinders ontvingen voor dit werk de Nobelprijs voor
+            natuurkunde in 1956.
+        </div>
+        <div class="takeNote">
+            Het digitale domein is geen natuurwet; circuitontwerpers moeten ervoor zorgen dat elke draad in een circuit
+            altijd volledig aan of volledig uit is. Het digitale domein is een abstractie.
+        </div>
+        <div class="endnote">
+            <a href="#hint-digital-abstraction" data-toggle="collapse"> Leer meer over wat zich onder de digitale
+                abstractie bevindt en hoe deze wordt toegepast. </a>
             <div id="hint-digital-abstraction" class="collapse">
-                <p>The flatness of the output at the two extremes is important because there <em>will</em> be small
-                    changes in the input. Electrical circuits have "noise," undesired changes in voltages, for reasons
-                    from the transistors getting hot to loose connections on the circuit board to cosmic rays. This is
-                    why computers use zeros and ones: a transistor has two flat regions in its input-output curve.</p>
-                <p>But the flatness of the saturated region is only approximate, and it depends on how the transistor is
-                    connected to the rest of the circuit. One example of a potential problem is <em>fanout,</em> the
-                    number of transistor inputs to which one transistor's output is connected. Beyond a certain number
-                    (it depends on the particular transistor type, but certainly ten inputs would be too many), the
-                    output voltage is reduced to the point that those inputs might not be sure whether they're getting a
-                    zero or a one. </p>
-                <p>The way a transistor really works depends on quantum physics. (We're not talking about <em>quantum
-                        computers;</em> plain old computer circuits are based on quantum effects also.) To learn more
-                    about analog-domain circuit design and what's inside a transistor, take an Electrical Engineering
-                    course. </p>
+                <p>
+                    De vlakheid van de output aan de twee uitersten is belangrijk omdat er kleine
+                    veranderingen in de input <em>zullen</em> zijn. Elektrische schakelingen hebben "ruis", ongewenste
+                    veranderingen in spanningen, vanwege vele reden van transistors die heet worden tot losse
+                    verbindingen op de printplaat en zelfs kosmische straling. Dit is de reden waarom computers nullen
+                    en enen gebruiken: een transistor heeft twee vlakke gebieden in zijn input-outputcurve.
+                </p>
+                <p>
+                    Maar de vlakheid van het verzadigde gebied is slechts een benadering en het hangt af van hoe de
+                    transistor is verbonden met de rest van het circuit. Een voorbeeld van een potentieel probleem is
+                    <em>fanout</em> , het aantal transistoringangen waarop de uitgang van een transistor is
+                    aangesloten. Voorbij een bepaald aantal (het hangt af van het specifieke transistortype, maar
+                    tien ingangen zouden zeker te veel zijn), wordt de uitgangsspanning zo ver verlaagd dat de ingangen
+                    niet zeker zijn of ze een 0 of een 1 krijgen.
+                </p>
+                <p> De manier waarop een transistor echt werkt, hangt af van kwantumfysica. (We hebben het niet over
+                    <em> kwantumcomputers; </em> gewone oude computercircuits zijn ook gebaseerd op kwantumeffecten.)
+                    Volg een cursus Elektrotechniek om meer te leren over het ontwerpen van analoge domeinen en wat zich
+                    in een transistor bevindt.
+                </p>
             </div>
         </div>
         <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
             <ol type="A">
-                <li>Research how transistors are used to implement logic gates.</li>
+                <li> Onderzoek hoe transistors gebruikt worden om logische poorten te implementeren. </li>
             </ol>
         </div>
     </div>
