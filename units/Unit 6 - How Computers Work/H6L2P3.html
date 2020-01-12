@@ -17,140 +17,127 @@
 </head>
 
 <body>
-    <h2>Representing Whole Numbers</h2>
-
-    <div class="learn">
-        <p><strong>Op deze pagina,</strong> you'll learn how computers store integers.</p>
+    <div class="full">
+        <h2>Representing Whole Numbers</h2>
+        <div class="learn">
+            <p><strong>Op deze pagina,</strong> you'll learn how computers store integers.</p>
+        </div>
+        <p>As you know, numbers show up everywhere in computer algorithms&mdash;even if numbers aren't the topic. For
+            example, the user may be interested in a picture, but that picture is an abstraction over numbers. Numbers
+            are also used to find a specific item in a list. Over the next several pages, you'll look more closely at
+            numbers inside the computer.</p>
+        <div class="forYouToDo" id="first">
+            <ol>
+                <li>
+                    <div class="sidenote">If you look at the code, you'll see that it's a recursive reporter. How does
+                        it work? You first saw recursion in <a
+                            href="/bjc-r/cur/programming/2-complexity/4-abstraction/2-fractal-art.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment">Unit
+                            2 Lab 4: Fractal Art</a>.</div> <strong></strong> The <em>factorial</em> of a positive
+                    integer <em>n </em>(written "<em>n</em>!") is the product of all the integers from 1 to <em>n</em>.
+                    For example: <div class="comment">Mary, you reduced this katex with a style tag (not proper CSS)
+                        because you couldn't figure out how to make it work with CSS. Fix this later. --MF, 12/6/17
+                    </div>
+                    <p><span class="katex indent" style="font-size: 1em;">5! = 1 \times 2 \times 3 \times 4 \times 5 =
+                            120</span></p> <a class="run" href="/bjc-r/prog/6-computers/U6L2-BigNumbers.xml"
+                        target="_blank"><img class="inline" src="/bjc-r/img/icons/load-save.png"
+                            alt="Geen Afbeelding"></a> Try out these inputs:<br />
+                    <div class="sidenote">You might see different results depending on your computer's processor.</div>
+                    <ol>
+                        <li><img src="/bjc-r/img/4-internet/bang5.png" alt="Geen Afbeelding" /> </li>
+                        <li><img src="/bjc-r/img/4-internet/bang10.png" alt="Geen Afbeelding" /></li>
+                        <li><img src="/bjc-r/img/4-internet/bang20.png" alt="Geen Afbeelding" /></li>
+                        <li><img src="/bjc-r/img/4-internet/bang30.png" alt="Geen Afbeelding" /></li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+        <p>The "e+" means "times ten to the power of" so this notation means 2.6525285981219103 &times; 10<sup>32</sup>
+            = 265,252,859,812,191,030,000,000,000,000,000.</p>
+        <h3>Fixed Width Computer Hardware</h3>
+        <div class="vocabBig">
+            <p><strong>width</strong>: the number of bits that a CPU processes at a time</p>
+            <p><strong>word</strong>: a binary sequence of that many bits</p>
+        </div>
+        <p>So why did Snap<em>!</em> display 20! in ordinary whole number representation but 30! in scientific notation?
+            Every computer model is designed with a certain<strong> width</strong>, the number of bits that the
+            processor reads from memory or writes into memory at a time. That number of bits is called a
+            <strong>word</strong>. As of 2016, most new computers are 64 bits wide. The first microcomputer, sold in
+            1971, was four bits wide!</p>
+        <div class="endnote">If you got an answer in scientific notation for 20!, you're using a 32-bit computer.</div>
+        <p>A 64-bit word represents 2<sup>64</sup> different values. We use half for negative numbers, one for zero, and
+            the rest for positives. Half of 2<sup>64</sup> (which is 2<sup>63</sup> = 9,223,372,036,854,775,808) is
+            about 9 &times; 10<sup>18</sup>. That means that the 19 digits of 20! just barely fit in a 64-bit word. But
+            the 33 digits of 30! don't. So the computer hardware reports an <em>overflow</em> error, and Snap<em>!</em>
+            computes an approximation.</p>
+        <div class="endnote"> <a href="#hint-power-2" data-toggle="collapse">Are processor widths always powers of
+                two?</a>
+            <div id="hint-power-2" class="collapse">Processor widths don't have to be a power of two. Some old
+                computers&mdash;the kind you see in old movies that filled a large room&mdash;used 12-bit, 36-bit, and
+                60-bit words. But modern personal computers started at 8 bits and the widths have been doubling with
+                each new generation.</div>
+        </div>
+        <div class="forYouToDo">
+            <ol start="2">
+                <li>Experiment in Snap<em>!</em>. What's the <em>first</em> integer whose factorial doesn't fit in a
+                    word? </li>
+            </ol>
+        </div>
+        <h3>Bignums</h3>
+        <div class="sidenote"> A multiple-word integer is called a <strong>bignum</strong>. </div>
+        <p>Why can't programming languages just use more than one word to represent an integer? They can. It's just that
+            a single machine language instruction can only add one-word numbers. A programming language must work a
+            little harder to make addition work with multiple-word values. Not all languages do this, but the
+            highest-level languages do. </p>
+        <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a> <img class="imageRight"
+                src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Geen Afbeelding" />
+            <ol type="A">
+                <li>A great example of a high-level programming language is <a
+                        href="http://groups.csail.mit.edu/mac/projects/scheme/index.html" target="_blank">Scheme</a>.
+                    You can learn it from the free, online book <a
+                        href="https://mitpress.mit.edu/sicp/full-text/book/book.html" target="_blank">Structure and
+                        Interpretation of Computer Programs</a>.</li>
+            </ol>
+        </div>
+        <div class="takeNote">The design of a programming language isn't just a question of taste; it can be a matter of
+            life and death. Between 1985 and 1987, a therapeutic X-ray machine killed four patients and seriously
+            injured two more because of several bugs in its software; one of the bugs was that a counter that was kept
+            in an eight-bit-wide variable would reach its maximum value of 127 and then <em>overflow</em> to zero
+            instead of 128. When the variable was zero, an important safety check was not performed. This would not have
+            happened if the software had been written in a better programming language.</div>
+        <div class="forYouToDo">
+            <ol start="3">
+                <div class="sidenoteBig">You can use bignums in any Snap<em>!</em> project by importing the "Infinite
+                    precision integers, exact rationals, complex" library. You learned to import libraries on the <a
+                        href="/bjc-r/cur/programming/6-computers/1-abstraction/04-software-libraries.html?topic=nyc_bjc%2F6-how-computers-work.topic&course=bjc4nyc.html&novideo&noassignment">Libraries</a>
+                    page.</div>
+                <li> Click on this block in the scripting area:<br /> <img class="indent"
+                        src="/bjc-r/img/4-internet/bignums-true.png" alt="Geen Afbeelding" /> </li>
+                <li> Now try <code>30!</code> again.<br /> <img class="indent"
+                        src="/bjc-r/img/4-internet/bang30-bignum.png" alt="Geen Afbeelding" />
+                    <div class="endnote">This (exactly correct) value is different from the (rounded off)
+                        <strong>floating point</strong> value above. (More about floating point in a moment.)</div>
+                </li>
+                <li> Try <code>200!</code>. The reported result won't fit on your screen, but you can see it this way:
+                    <img class="imageRight" src="/bjc-r/img/4-internet/script-pic.jpg" alt="Geen Afbeelding" />
+                    <ol type="a">
+                        <li>Hold down the control key; while holding it down, also hold down the shift key (it has to be
+                            in that order), and then click the <img class="inline"
+                                src="/bjc-r/img/6-computers/factorial.png" alt="Geen Afbeelding" /> block.</li>
+                        <li>In the menu that appears, click on the red "script pic with result..." item. (If a
+                            completely different menu appears, just click once outside of that menu.)</li>
+                        <li>An image will download onto your computer or open in a new tab. You should be able to zoom
+                            in on it to read the digits.</li>
+                    </ol>
+                </li>
+                <li>How many digits are there in <code>200!</code>? (Don't count by hand; you have a computer.)</li>
+            </ol>
+        </div>
     </div>
-
-    <p>As you know, numbers show up everywhere in computer algorithms&mdash;even if numbers aren't the topic. For
-        example, the user may be interested in a picture, but that picture is an abstraction over numbers. Numbers are
-        also used to find a specific item in a list. Over the next several pages, you'll look more closely at numbers
-        inside the computer.</p>
-
-    <div class="forYouToDo" id="first">
-        <ol>
-            <li>
-                <div class="sidenote">If you look at the code, you'll see that it's a recursive reporter. How does it
-                    work? You first saw recursion in <a
-                        href="/bjc-r/cur/programming/2-complexity/4-abstraction/2-fractal-art.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc.html&novideo&noassignment">Unit
-                        2 Lab 4: Fractal Art</a>.</div> <strong></strong>
-                The <em>factorial</em> of a positive integer <em>n </em>(written "<em>n</em>!") is the product of all
-                the integers from 1 to <em>n</em>. For example:
-                <div class="comment">Mary, you reduced this katex with a style tag (not proper CSS) because you couldn't
-                    figure out how to make it work with CSS. Fix this later. --MF, 12/6/17</div>
-                <p><span class="katex indent" style="font-size: 1em;">5! = 1 \times 2 \times 3 \times 4 \times 5 =
-                        120</span></p>
-                <a class="run" href="/bjc-r/prog/6-computers/U6L2-BigNumbers.xml" target="_blank"><img class="inline"
-                        src="/bjc-r/img/icons/load-save.png" alt="Geen Afbeelding"></a> Try out these
-                inputs:<br />
-                <div class="sidenote">You might see different results depending on your computer's processor.</div>
-                <ol>
-                    <li><img src="/bjc-r/img/4-internet/bang5.png" alt="Geen Afbeelding" />
-                    </li>
-                    <li><img src="/bjc-r/img/4-internet/bang10.png" alt="Geen Afbeelding" /></li>
-                    <li><img src="/bjc-r/img/4-internet/bang20.png" alt="Geen Afbeelding" /></li>
-                    <li><img src="/bjc-r/img/4-internet/bang30.png" alt="Geen Afbeelding" /></li>
-
-                </ol>
-            </li>
-        </ol>
+    <div class="full-bottom-bar" style="background-position: 20px 3px;">
+        <div class="bottom-nav btn-group"> <a class="btn btn-default backbutton arrow" style="min-width: 90px;"
+                href="H6L1P9.html">Terug</a> <a class="btn btn-default forwardbutton arrow" style="min-width:90px;"
+                href="H6L2P1.html">Volgende</a> </div>
     </div>
-
-    <p>The "e+" means "times ten to the power of" so this notation means 2.6525285981219103 &times; 10<sup>32</sup> =
-        265,252,859,812,191,030,000,000,000,000,000.</p>
-
-    <h3>Fixed Width Computer Hardware</h3>
-    <div class="vocabBig">
-        <p><strong>width</strong>: the number of bits that a CPU processes at a time</p>
-        <p><strong>word</strong>: a binary sequence of that many bits</p>
-    </div>
-    <p>So why did Snap<em>!</em> display 20! in ordinary whole number representation but 30! in scientific notation?
-        Every computer model is designed with a certain<strong> width</strong>, the number of bits that the processor
-        reads from memory or writes into memory at a time. That number of bits is called a <strong>word</strong>. As of
-        2016, most new computers are 64 bits wide. The first microcomputer, sold in 1971, was four bits wide!</p>
-    <div class="endnote">If you got an answer in scientific notation for 20!, you're using a 32-bit computer.</div>
-    <p>A 64-bit word represents 2<sup>64</sup> different values. We use half for negative numbers, one for zero, and the
-        rest for positives. Half of 2<sup>64</sup> (which is 2<sup>63</sup> = 9,223,372,036,854,775,808) is about 9
-        &times; 10<sup>18</sup>. That means that the 19 digits of 20! just barely fit in a 64-bit word. But the 33
-        digits of 30! don't. So the computer hardware reports an <em>overflow</em> error, and Snap<em>!</em> computes an
-        approximation.</p>
-
-    <div class="endnote">
-        <a href="#hint-power-2" data-toggle="collapse">Are processor
-            widths always powers of two?</a>
-        <div id="hint-power-2" class="collapse">Processor widths don't have to be a power of two. Some old
-            computers&mdash;the kind you see in old movies that filled a large room&mdash;used 12-bit, 36-bit, and
-            60-bit words. But modern personal computers started at 8 bits and the widths have been doubling with each
-            new generation.</div>
-    </div>
-
-    <div class="forYouToDo">
-        <ol start="2">
-            <li>Experiment in Snap<em>!</em>. What's the <em>first</em> integer whose factorial doesn't fit in a word?
-            </li>
-        </ol>
-    </div>
-
-    <h3>Bignums</h3>
-    <div class="sidenote"> A multiple-word integer is called a <strong>bignum</strong>. </div>
-    <p>Why can't programming languages just use more than one word to represent an integer? They can. It's just that a
-        single machine language instruction can only add one-word numbers. A programming language must work a
-        little harder to make addition work with multiple-word values. Not all languages do this, but the highest-level
-        languages do. </p>
-    <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
-        <img class="imageRight" src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Geen Afbeelding" />
-        <ol type="A">
-            <li>A great example of a high-level programming language is <a
-                    href="http://groups.csail.mit.edu/mac/projects/scheme/index.html" target="_blank">Scheme</a>. You
-                can learn it from the free, online book <a href="https://mitpress.mit.edu/sicp/full-text/book/book.html"
-                    target="_blank">Structure and
-                    Interpretation of Computer Programs</a>.</li>
-        </ol>
-
-    </div>
-
-    <div class="takeNote">The design of a programming language isn't just a question of taste; it can be a matter of
-        life and death. Between 1985 and 1987, a therapeutic X-ray machine killed four patients and seriously injured
-        two more because of several bugs in its software; one of the bugs was that a counter that was kept in an
-        eight-bit-wide variable would reach its maximum value of 127 and then <em>overflow</em> to zero instead of 128.
-        When the variable was zero, an important safety check was not performed. This would not have happened if the
-        software had been written in a better programming language.</div>
-
-    <div class="forYouToDo">
-        <ol start="3">
-            <div class="sidenoteBig">You can use bignums in any Snap<em>!</em> project by importing the "Infinite
-                precision integers, exact rationals, complex" library. You learned to import libraries on the <a
-                    href="/bjc-r/cur/programming/6-computers/1-abstraction/04-software-libraries.html?topic=nyc_bjc%2F6-how-computers-work.topic&course=bjc4nyc.html&novideo&noassignment">Libraries</a>
-                page.</div>
-            <li>
-                Click on this block in the scripting area:<br />
-                <img class="indent" src="/bjc-r/img/4-internet/bignums-true.png" alt="Geen Afbeelding" />
-            </li>
-            <li>
-                Now try <code>30!</code> again.<br />
-                <img class="indent" src="/bjc-r/img/4-internet/bang30-bignum.png" alt="Geen Afbeelding" />
-                <div class="endnote">This (exactly correct) value is different from the (rounded off) <strong>floating
-                        point</strong> value above. (More about floating point in a moment.)</div>
-            </li>
-            <li>
-                Try <code>200!</code>. The reported result won't fit on your screen, but you can see it this way:
-                <img class="imageRight" src="/bjc-r/img/4-internet/script-pic.jpg" alt="Geen Afbeelding" />
-                <ol type="a">
-                    <li>Hold down the control key; while holding it down, also hold down the shift key (it has to be in
-                        that order), and then click the <img class="inline" src="/bjc-r/img/6-computers/factorial.png"
-                            alt="Geen Afbeelding" /> block.</li>
-                    <li>In the menu that appears, click on the red "script pic with result..." item. (If a completely
-                        different menu appears, just click once outside of that menu.)</li>
-                    <li>An image will download onto your computer or open in a new tab. You should be able to zoom in on
-                        it to read the digits.</li>
-                </ol>
-            </li>
-            <li>How many digits are there in <code>200!</code>? (Don't count by hand; you have a computer.)</li>
-        </ol>
-    </div>
-
-
 </body>
 
 </html>
