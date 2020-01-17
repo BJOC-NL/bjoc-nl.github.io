@@ -18,44 +18,56 @@
 
 <body>
     <div class="full">
-        <h2>Binary Sequences</h2>
+        <h2>Binaire Reeksen</h2>
         <div class="learn">
-            <p><strong>Op deze pagina,</strong> you will learn more about how information is represented inside the
-                computer as sequences of bits.</p>
+            <p><strong>Op deze pagina,</strong> ga je leren over hoe informatie wordt weergegeven in computers als
+                reeksen van bits.
+            </p>
         </div>
-        <div class="sidenote">In many programming languages there's a convention that every text string ends with a
-            <em>null</em> byte, in which all eight bits are zero, a code that's reserved for this purpose. So our
-            "<code>Welcome...</code>" string might actually occupy 44 bytes.</div>
-        <p>So far we've been working with small chunks of data, from Boolean values (one bit) to characters (eight
-            bits). But of course some information in your computer or smartphone is much bigger than that. For starters,
-            characters aren't generally used one at a time; they're used in <em>text strings</em> such as "<code>Welcome
-                to the Beauty and Joy of Computing.</code>" These 43 characters occupy 43 bytes of computer memory. But
-            the real champion users of space are media files: pictures, sounds (mostly music), and video.</p>
-        <p>If we could see inside the memory's bits, a section of the memory might look something like this:</p>
+        <div class="sidenote">
+            In veel programmeertalen is er een conventie dat elke tekstreeks eindigt op een byte <em> null </em>, waarin
+            alle acht bits nul zijn, een reeks die is gereserveerd voor dit doel. Dus onze "<code> Welcome ... </code>"
+            -reeks kan eigenlijk 44 bytes bezetten.
+        </div>
+        <p>
+            Tot nu toe hebben we met kleine stukjes gegevens gewerkt, van Boolean waardes (één bit) tot tekens (acht
+            bits). Maar sommige informatie op je computer of smartphone is natuurlijk veel groter dan dat. Om te
+            beginnen worden karakters over het algemeen niet één voor één gebruikt; ze worden gebruikt in <em>
+                tekstreeksen </em> zoals "<code> Welkom bij de schoonheid en vreugde van programmere. </code>"
+            Deze 43 tekens beslaan 43 bytes computergeheugen. Maar de echte kampioenen van geheugengebruik
+            zijn mediabestanden: afbeeldingen, geluiden (meestal muziek) en video.
+        </p>
+        <p>
+            Als we in de bits van het geheugen kunnen kijken, zou een gedeelte van het geheugen er ongeveer zo uitzien:
+        </p>
         <div class="blockquote"> <code class="break">
                 01000001001000000111001101101101011000010111001001110100001000000111000001101000011011110110111001100101001011000010000001101100011010010110101101100101001000000111100101101111011101010111001000100000011011000110000101110000011101000110111101110000001000000110111101110010001000000110010001100101011100110110101101110100011011110111000000100000011000110110111101101101011100000111010101110100011001010111001000101100001000000110001101100001011011100
             </code>
         </div>
         <div class="vocab">
-            <p>A <strong>binary sequence</strong> (also called a <em>bitstream</em>) is a string of ones and zeros. </p>
+            <p>
+                Een <strong>binaire reeks</strong> (ookwel een <em>bitstream</em> genoemd) is eenreeks nullen en enen.
+            </p>
         </div>
-        <p>That shows just 449 bits. A 16GB cell phone has sixteen gigabytes (about 16 billion bytes) of storage, each
-            byte containing 8 bits. That's 128,000,000,000 bits. Printed on paper as ones and zeros, the 16 GB phone's
-            memory would take nearly 40,000,000 pages! The information in storage—whether it is a text message, a
-            photograph, a song, a computer program, or a list of phone numbers—looks just the same, a sequence of bits
-            that are either On or Off (one or zero).</p>
+        <p>
+            Dat toont slechts 449 bits. Een mobiele telefoon van 16 GB heeft zestien gigabyte (ongeveer 16 miljard
+            bytes) opslag, elke byte bevat 8 bits. Dat zijn 128.000.000.000 bits. Gedrukt op papier als enen en nullen,
+            zou het geheugen van de 16 GB telefoon bijna 40.000.000 pagina's in beslag nemen! De opgeslagen informatie -
+            of het nu een SMS-bericht, een foto, een liedje, een computerprogramma of een lijst met telefoonnummers is -
+            het ziet er precies hetzelfde uit, een reeks bits die Aan of Uit zijn (een of nul).
+        </p>
         <div class="endnote">
-            <h3>Sizes</h3>
-            <p> Here are a few rough examples of what kind of data would fit in how much memory:</p>
+            <h3>Groottes</h3>
+            <p> Hier zijn een paar ruwe voorbeelden van wat voor soort gegevens in hoeveel geheugen passen:</p>
             <table class="byte indent" summary="table of common data sizes">
                 <tr>
-                    <th scope="col">name</th>
-                    <th scope="col" style="width:300px;">amount</th>
-                    <th scope="col" style="width:300px;">example</th>
+                    <th scope="col">naam</th>
+                    <th scope="col" style="width:300px;">hoeveelheid</th>
+                    <th scope="col" style="width:300px;">voorbeeld</th>
                 </tr>
                 <tr>
                     <td>bit</td>
-                    <td>either a 1 or a 0</td>
+                    <td>1 of 0</td>
                     <td>1</td>
                 </tr>
                 <tr>
@@ -66,128 +78,133 @@
                 <tr>
                     <td>kilobyte</td>
                     <td>2<sup>10</sup> (1,024) bytes</td>
-                    <td>a couple of paragraphs</td>
+                    <td>een aantal alinea's</td>
                 </tr>
                 <tr>
                     <td>megabyte</td>
                     <td>2<sup>20</sup> (1,048,576) bytes</td>
-                    <td>about 1 book</td>
+                    <td>ongeveer 1 boek</td>
                 </tr>
                 <tr>
                     <td>gigabyte</td>
                     <td>2<sup>30</sup> (1,073,741,824) bytes</td>
-                    <td>a little more than 1 CD</td>
+                    <td>iets meer dan 1 CD</td>
                 </tr>
                 <tr>
                     <td>terabyte</td>
                     <td>2<sup>40</sup> (1,099,511,627,776) bytes</td>
-                    <td>about 1,500 CDs</td>
+                    <td>ongeveer 1,500 CDs</td>
                 </tr>
                 <tr>
                     <td>petabyte</td>
                     <td>2<sup>50</sup> (1,125,899,906,842,624) bytes</td>
-                    <td>about 20 million filing cabinets of text</td>
+                    <td>ongeveer 20 miljoen kasten met tekst</td>
                 </tr>
                 <tr>
                     <td>exabyte</td>
                     <td>2<sup>60</sup> (1,152,921,504,606,846,976) bytes</td>
-                    <td>about 20% of all the words ever spoken by humankind</td>
+                    <td>ongeveer 20% van alle woorden ooit uitgesproken</td>
                 </tr>
             </table>
-            <p>As we write this in 2017, it's common to have a terabyte disk drive on your desk. Web services deal with
-                petabytes or exabytes of data.</p>
-            <p><a href="#hint-target" data-toggle="collapse">Where do these prefixes like "tera-" and "peta-" come
-                    from?</a></p>
+            <p>
+                Terwijl we dit in 2017 schrijven, is het gebruikelijk om een terabyte-schijf op je bureau te hebben.
+                Webservices verwerken petabytes of exabytes aan gegevens.
+            </p>
+            <p><a href="#hint-target" data-toggle="collapse">
+                    Waar komen deze voorvoegsels zoals "tera-" en "peta-" vandaan?</a>
+            </p>
             <div id="hint-target" class="collapse">
-                <p>When we write big numbers, we put commas every three digits (counting from the right). Each group of
-                    three has a name: thousand, million, billion, and so on. So, the number 1,234,567,890 is pronounced
-                    "one billion, 234 million, 567 thousand, 890." Those group names ("thousand" and so on) also have
-                    prefix names used in metric measurements:</p>
+                <p>Wanneer we grote getallen schrijven, plaatsen we komma's om de drie cijfers (geteld vanaf de
+                    rechterkant). Elke groep van drie heeft een naam: duizend, miljoen, miljard, enzovoort. Het getal
+                    1.234.567.890 wordt dus uitgesproken als "één miljard, 234 miljoen, 567 duizend, 890." Die
+                    groepsnamen ("duizend" enzovoort) hebben ook voorvoegsels die worden gebruikt in metrische metingen:
+                </p>
                 <table class="byte indent" width="600px" summary="table of number prefixes">
                     <tr>
-                        <th scope="col">prefix</th>
-                        <th scope="col">amount</th>
-                        <th scope="col">amount as numeral</th>
+                        <th scope="col">voorvoegsel</th>
+                        <th scope="col">hoeveelheid</th>
+                        <th scope="col">hoeveelheid als getal</th>
                     </tr>
                     <tr>
                         <td>kilo-</td>
-                        <td>thousand</td>
+                        <td>duizend</td>
                         <td>1,000</td>
                     </tr>
                     <tr>
                         <td>mega-</td>
-                        <td>million</td>
+                        <td>miljoen</td>
                         <td>1,000,000</td>
                     </tr>
                     <tr>
                         <td>giga-</td>
-                        <td>billion</td>
+                        <td>miljard</td>
                         <td>1,000,000,000</td>
                     </tr>
                     <tr>
                         <td>tera-</td>
-                        <td>trillion<br /><small>(a million million)</small></td>
+                        <td>biljoen<br /><small>(een miljoen miljoen)</small></td>
                         <td>1,000,000,000,000</td>
                     </tr>
                     <tr>
                         <td>peta-</td>
-                        <td>quadrillion</td>
+                        <td>biljard</td>
                         <td>1,000,000,000,000,000</td>
                     </tr>
                     <tr>
                         <td>exa-</td>
-                        <td>quintillion<br /><small>(a billion billion)</small></td>
+                        <td>triljoen<br /><small>(een miljard miljard)</small></td>
                         <td>1,000,000,000,000,000,000</td>
                     </tr>
                 </table>
-                <p>Digits for groupings smaller than one (fractions) have metric prefixes too:</p>
+                <p> CIjfers voor getallen minder dan 1 (breuken) hebben ook voorvoegsels:</p>
                 <table class="byte indent" width="600px" summary="table of fractional number prefixes">
                     <tr>
-                        <th scope="col">prefix</th>
-                        <th scope="col">amount</th>
-                        <th scope="col">amount as fraction</th>
+                        <th scope="col">voorvoegsel</th>
+                        <th scope="col">hoeveelheid</th>
+                        <th scope="col">hoeveelheid als breuk</th>
                     </tr>
                     <tr>
                         <td>milli-</td>
-                        <td>thousandth</td>
+                        <td>duizendste</td>
                         <td>1/1,000</td>
                     </tr>
                     <tr>
                         <td>micro-</td>
-                        <td>millionth</td>
+                        <td>miljoenste</td>
                         <td>1/1,000,000</td>
                     </tr>
                     <tr>
                         <td>nano-</td>
-                        <td>billionth</td>
+                        <td>miljardste</td>
                         <td>1/1,000,000,000</td>
                     </tr>
                     <tr>
                         <td>pico-</td>
-                        <td>trillionth</td>
+                        <td>biljoenste</td>
                         <td>1/1,000,000,000,000</td>
                     </tr>
                     <tr>
                         <td>femto-</td>
-                        <td>quadrillionth</td>
+                        <td>biljardste</td>
                         <td>1/1,000,000,000,000,000</td>
                     </tr>
                     <tr>
                         <td>atto-</td>
-                        <td>quintillionth</td>
+                        <td>triljoenste</td>
                         <td>1/1,000,000,000,000,000,000</td>
                     </tr>
-                </table> The fractional names are used to measure times in the computer, such as a nanosecond memory
-                access time, or distances between wires on a chip, which are measured in nanometers.
+                </table> De breuknamen worden gebruikt om tijden in de computer te meten, zoals een nanoseconde
+                geheugentoegangstijd, of afstanden tussen draden op een chip, die worden gemeten in nanometers.
             </div>
         </div>
-        <p>"Binary sequence" is a very broad category, and often, several layers of abstraction are built on it. For
-            example, you can include a picture in an email or text message, in which case, the <em>message</em> includes
-            a <em>picture</em>, which is a kind of <em>file</em>, which is a kind of <em>bitstream</em>.</p>
+        <p> "Binaire reeks" is een brede categorie en vaak zijn er meerdere abstractieniveau's opgebouwd. Je kan
+            bijvoorbeeld een afbeelding in een email of een tekstbericht plaatsen, in dat geval bevat het
+            <em>bericht</em> een <em>afbeelding</em> wat een type <em>bestand</em> is, wat een type <em>bitstream</em>
+            is. </p>
         <div class="forYouToDo" id="first">
             <ol>
                 <li> <a class="run" href="/bjc-r/prog/6-computers/U6L1-TranslatingBinary.xml" target="_blank"><img
-                            class="inline" src="/bjc-r/img/icons/load-save.png" alt="Geen Afbeelding"></a>
+                            class="inline" src="../../afb/icons/LaadEnSlaOp.png" alt="Geen Afbeelding"></a>
                     <p> Take a look at these 3 custom blocks that you will use to explore binary sequences: <ul>
                             <li> A reporter that accepts a string of text as input and translates that text into a
                                 binary sequence:<br /> <img class="indent"
