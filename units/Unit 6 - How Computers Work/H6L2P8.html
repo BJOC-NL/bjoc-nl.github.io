@@ -18,28 +18,34 @@
 
 <body>
     <div class="full">
-        <h2>Data Compression</h2>
-        <div class="todo">There is commented out content op deze pagina that probably could be removed. --MF, 2/26/18
+        <h2>Datacompressie</h2>
+        <div class="learn"><strong>Op deze pagina,</strong> ga je leren over verschillende
+            <em>datacompressie-algoritmes</em>, zoals degene die gebruikt worden in bestandstypes voor afbeeldingen.
         </div>
-        <div class="learn"><strong>Op deze pagina,</strong> you learn about different <em>data compression
-                algorithms</em>, such as the ones used in common picture file formats.</div> <img class="imageRight"
-            src="/bjc-r/img/6-computers/bjc-logo-original.png" alt="Geen Afbeelding" />
-        <p>This picture of the BJC logo (shown right) is 158 pixels wide and 186 pixels tall, for a total of 29,388
-            pixels. The BMP (bitmap) format includes each of those pixels in the picture file, at four bytes per pixel,
-            so the file size is about 120kB.</p>
-        <h3>Lossless Compression</h3>
-        <p>That is an inefficient way to store the information. Think about the 158 pixels in the top row. The first 60
-            or so are white. Then come five pixels of yellowish orange (the top slice of the "b"). And the rest of that
-            row is white.</p>
-        <p class="indent">...<img src="/bjc-r/img/6-computers/top-row-of-pixels-in-bjc-logo.png"
-                alt="Geen Afbeelding">... </p>
-        <p>Instead of storing all 158 pixels individually, we could compress them with <em>run-length encoding</em> and
-            just store six values (three numbers and three colors):</p>
-        <div class="sidenote">Run-length encoding stores the length of each run of a single color.</div>
+        <img class="imageRight" src="../../afb/h6/l2/p8-o4.png" alt="Geen Afbeelding" />
+        <p>Deze afbeelding van het Amerikaanse BJOC-logo (aan de rechterkant) is 158 pixels breed en 186 pixels hoog, in
+            totaal 29.388 pixels. De BMP (bitmap) bevat alle pixels in het afbeeldingsbestand met 4 bytes pet pixel. Dus
+            de grootte van het bestand is ongeveer 120 KB
+        </p>
+        <h3>Compressie zonder Verlies</h3>
+        <p>Dat is een inefficiënte manier om informatie op te slaan. Als je kijkt naar de eerste 158 pixels in de
+            bovenste regel, dan zie je dat ongeveer de eerste 60 wit zijn. dan komen er 5 geel/oranje pixels (dat
+            is het bovenste deel van de "b"). en dan is de rest van de rij wit.
+        </p>
+        <p class="indent">...<img src="../../afb/h6/l2/p8-o1.png" alt="Geen Afbeelding">... </p>
+        <p> in plaats van 158 pixels individueel op te slaan kunnen we ze comprimeren met 'run-length'-versleuteling en
+            dan
+            gewoon zes waardes opslaan (3 getallen en 3 kleuren):
+
+        </p>
+        <div class="sidenote">
+            "Run-length"-versleuteling slaat de lengte van iedere "run" op van iedere kleur. Een run is hier een
+            aaneensluitende rij van pixels van een bepaalde kleur.
+        </div>
         <table class="byte indent" width="30%" summary="run length encoding for top row of BJC logo">
             <tr>
-                <th width="47%" scope="col">pixel count</th>
-                <th width="53%" scope="col">color code</th>
+                <th width="47%" scope="col">Aantal Pixels</th>
+                <th width="53%" scope="col">Kleur-code</th>
             </tr>
             <tr>
                 <td>60</td>
@@ -54,49 +60,63 @@
                 <td>FFFFFF</td>
             </tr>
         </table>
-        <p>These days, the size of one picture isn't so significant, but think about every frame of a movie, and think
-            about the time required to send the information over the Internet. Compression makes it easier to stream
-            that movie to you.</p>
+        <p>Tegenwoordig is de grootte van een afbeelding niet zo belangrijk, maar bedenk, ieder frame in een film is een
+            afbeelding en denk dan even na over het versturen van informatie via het internet. Compressie maakt het
+            makkelijker om een film te streamen.
+        </p>
         <div class="forYouToDo" id="first">
             <ol>
-                <li>Use the Color Mixer at <a href="http://www.mathsisfun.com/hexadecimal-decimal-colors.html"
-                        target="_blank">RGB colors and hexadecimal notation</a> to check the result of the hex code
-                    E5A84A.</li>
+                <li>Gebruik de Color Mixer op <a href="http://www.mathsisfun.com/hexadecimal-decimal-colors.html"
+                        target="_blank">RGB colors and hexadecimal notation</a> om te controleren wat het resultaat is
+                    van de hexadecimale code E5A84A.</li>
             </ol>
         </div>
         <div class="sidenote">
-            <p><strong>Lossless compression</strong> means that <em>no</em> information is lost.</p>
+            <p><strong>Compressie zonder verlies</strong> bedenkt dat <em>geen</em> informatie verloren gaat.
+            </p>
         </div>
-        <p>Run-length encoding is a <strong>lossless compression</strong> format; it doesn't <em>lose</em> any
-            information. The original picture can be reconstructed with every pixel exactly correct. But run-length
-            encoding doesn't do well if the picture is a photograph where every pixel may be (at least slightly)
-            different in color from its neighbors. If the length of each color run is just one pixel, both run length
-            and color will take <em>twice</em> as much space as just storing the color of each pixel. Another lossless
-            image format you may have heard of is PNG (Portable Network Graphics, pronounced "ping").</p>
-        <div class="endnote">The PNG algorithm is complicated and uses several different strategies depending on how
-            color varies in each small chunk of the image. The thing to remember is that PNG is lossless.</div>
-        <h3>Lossy Compression</h3>
+        <p> Run-Length encoding is een formaat dat comprimeert zonder verlies. Het verliest geen informatie. de
+            originele afbeelding kan gereconstrueerd worden met elke pixel exact hetzelfde. Maar het
+            run-length-algoritme
+            werkt niet goed
+            als er heel veel verschillende kleuren pixels zijn die niet opeenvolgend zijn. als de lengte van een
+            kleurreeks slechts een enkele pixel betreft en hij codeert zowel de lengte van de reeks en de kleur dan
+            heeft het 2 keer zo veel opslag nodig als wanneer je alleen de kleur van de pixel op zou slaan. een ander
+            compressie algoritme zonder verlies is PNG (Portable Network Graphics, je spreekt het uit als "ping").
+
+        </p>
+        <div class="endnote">
+            Het PNG-algoritme is ingewikkeld en gebruikt verschillende strategieën, afhankelijk van hoe de kleur
+            varieert in elk klein deel van de afbeelding. Wat je moet onthouden is, is dat PNG verliesloos is.
+        </div>
+        <h3>Lossy Compressie</h3>
         <div class="sidenote">
-            <p><strong>Lossy</strong> means that <em>some</em> information is lost.</p>
+            <p><strong>Lossy</strong> bedenkt dat <em>sommige</em> informatie verloren raakt.</p>
         </div>
-        <p><strong>Lossy compression</strong> algorithms let file sizes be even smaller, but the original picture can't
-            be perfectly reconstructed; information is <em>lost</em>. This would be terrible if these algorithms were
-            used to compress a computer program or a novel, but people's perception of images do not require extreme
-            precision. Similarly, sounds and movies can survive lossy compression without most people noticing.</p>
-        <p>The most commonly used lossy compression algorithm for pictures is called JPEG (or JPG, both pronounced "jay
-            peg" for "Joint Photographic Experts Group," the committee that invented it). Lossy algorithms usually let
-            you <em>control the degree of precision</em>. </p>
-        <p> Below are an original, uncompressed BMP and a highly compressed JPG of a picture measuring 256×192 pixels.
-            Can you tell which is which?<br /> <img class="indent" src="/bjc-r/img/6-computers/pond.bmp"
-                alt="Geen Afbeelding" /> <img src="/bjc-r/img/6-computers/pond.jpg" alt="Geen Afbeelding" /> </p>
-        <p> Here are the sizes of this picture in four different formats: <table class="byte indent" width="56%"
-                summary="compression factors example">
+        <p> <strong>Lossy compressie-algoritmen</strong> kunnen de bestandsgrootte nog kleiner maken, maar de originele
+            foto kan niet perfect worden gereconstrueerd; informatie raakt verloren. Dit zou verschrikkelijk zijn als
+            deze algoritmen werden gebruikt om een computerprogramma of een boek te comprimeren, maar om een afbeelding
+            te bekijken hoeft de afbeelding niet perfect te zijn. Evenzo kunnen geluiden en films lossy
+            compressie overleven zonder dat de meeste mensen het merken.
+        </p>
+        <p> Het meest gebruikte compressie-algoritme met verlies voor afbeeldingen wordt JPEG genoemd (of JPG, beide
+            uitgesproken als "jee-peg" voor "Joint Photographic Experts Group", de naam van de commissie die het heeft
+            uitgevonden). Met lossy algoritmen kan je meestal de <em>mate van verlies</em> aangeven.
+
+        </p>
+        <p> Hieronder staan ​​een originele, niet-gecomprimeerde BMP en een sterk gecomprimeerde JPG van een foto van
+            256 × 192 pixels. Kun je zien welke welke is? <br />
+            <img class="indent" src="../../afb/h6/l2/p8-o2.bmp" alt="Geen Afbeelding" />
+            <img src="../../afb/h6/l2/p8-o3.jpg" alt="Geen Afbeelding" />
+        </p>
+        <p> Dit zijn de groottes van deze afbeelding in vier verschillende bestandtypes: <table class="byte indent"
+                width="56%" summary="compression factors example">
                 <tr>
-                    <th scope="col">format</th>
-                    <th scope="col">size</th>
+                    <th scope="col">type</th>
+                    <th scope="col">grootte</th>
                 </tr>
                 <tr>
-                    <td style="text-align: left;">BMP encoding every pixel individually (shown above)</td>
+                    <td style="text-align: left;">BMP, slaat iedere pixel individueel op (staat hierboven)</td>
                     <td>148 kB</td>
                 </tr>
                 <tr>
@@ -104,88 +124,109 @@
                     <td>106 kB</td>
                 </tr>
                 <tr>
-                    <td style="text-align: left;">JPEG with least compression</td>
+                    <td style="text-align: left;">JPEG met minste compressie</td>
                     <td>94 kB</td>
                 </tr>
                 <tr>
-                    <td style="text-align: left;">JPEG with most compression (shown above)</td>
+                    <td style="text-align: left;">JPEG met meeste compressie (staat hierboven)</td>
                     <td>5 kB</td>
                 </tr>
             </table>
         </p>
-        <div class="vocabFullWidth"><strong>: Lossy vs. Lossless</strong>
-            <p><strong>Lossless</strong> compression (like PNG) is <em>reversible</em> (no loss in quality); you can
-                reconstruct the original data. It works by removing redundant data.</p>
-            <p><strong>Lossy</strong> compression (like JPG) is <em>not</em> fully reversible; you can only reconstruct
-                an <em>approximation</em> of the original data. It works by removing details that people aren't likely
-                to notice. </p>
+        <div class="vocabFullWidth"><strong>: Zonder of Met Verlies?</strong>
+            <p> Compressie <strong>zonder verlies</strong> (zoals PNG)is <em>omkeerbaar</em>; je kan de originele
+                gegevent herconstrueren. Deze soort compressie werkt door onnodige gegevens te verwijderen.
+            </p>
+            <p> Compressie <strong>met verlies</strong> (zoals JPG) is <em>niet</em> volledig omkeerbaar; je kan alleen
+                een benadering maken van de originele gegevens. Deze soort compressie werkt door gegevens weg te halen
+                waarvan mensen het niet zullen merken.
+            </p>
         </div>
-        <div class="todo">BH idea: We could do a FYTD where they have to run-length encode/decode something. Maybe even
-            encoding/decoding images in Snap. --MF, 11/8/17</div>
         <div class="forYouToDo">
             <ol start="2">
-                <li> These questions are similar to those you will see on the AP CSP exam.
+                <li>
                     <!-- Question 1 -->
                     <div class="assessment-data" type="multiplechoice"
                         identifier="Which is NOT an explanation of low image quality?" hasinlinefeedback="true"
                         maxchoices="1" responseIdentifier="ri1" shuffle="false">
-                        <div class="prompt">A film student is recording a movie on his smartphone. When the recording is
-                            done, he decides to save a copy on his computer. The student then notices that the saved
-                            copy is of much lower image quality than the original. Which of the following could NOT be a
-                            possible explanation for the lower image quality?</div>
+                        <div class="prompt">
+                            Een filmstudent is een film aan het opnemen met zijn telefoon. Wanneer de opname klaar is
+                            besluit hij een kopie op te slaan op zijn computer. De student merkt dan dat de opgeslagen
+                            kopie van veel lagere kwaliteiet is dan het origineel. Welke van de volgende stellingen zou
+                            NIET een mogelijke uitleg kunnen zijn voor de lagere beeldkwaliteit?
+                        </div>
                         <div class="choice" identifier="c1">
-                            <div class="text">The movie was saved using fewer bits per second than the original movie.
+                            <div class="text"> De film was opgeslagen met minder bits per seconde dan de originele film.
                             </div>
-                            <div class="feedback">This is likely what happened.</div>
+                            <div class="feedback"> Dit is waarschijnlijk wat er gebeurd is.
+
+                            </div>
                         </div>
                         <div class="choice" identifier="c2">
-                            <div class="text">The copy of the movie file was somehow corrupted in the process of saving.
+                            <div class="text"> De kopie van het bestand is op een bepaalde manier beschadigd geraakt
+                                tijdens het opslaan.
+
                             </div>
-                            <div class="feedback">This is possible, however if the file is corrupted it is unlikely to
-                                have a consistent negative impact on image quality. </div>
+                            <div class="feedback"> Dit is mogelijk maar als het bestand beschadigd is dan is het
+                                onwaarschijnlijk dat het een consistente negatieve impact op de beeldkwaliteit had.
+                            </div>
                         </div>
                         <div class="choice" identifier="c3">
-                            <div class="text">The movie was saved using a lossy compression technique.</div>
-                            <div class="feedback">This is very likely.</div>
+                            <div class="text"> De film was opgeslagen met een lossy compressiealgoritme.
+                            </div>
+                            <div class="feedback"> Dit is zeer waarschijnlijk.
+
+                            </div>
                         </div>
                         <div class="choice" identifier="c4">
-                            <div class="text">Whenever a file is saved from one place on a computer to another, some
-                                information is always lost.</div>
-                            <div class="feedback">Correct. It is possible to make exact duplicates of digital
-                                information without any loss.</div>
+                            <div class="text"> Wanneer een bestand opgeslagen wordt van de ene plek naar de andere, dan
+                                raakt er altijd wat informatie verloren.
+                            </div>
+                            <div class="feedback">Correct. Kopieën maken zonder verlies van gegevens kan gewoon.
+                            </div>
                         </div>
                         <div class="responseDeclaration" identifier="ri1">
-                            <div class="correctResponse" identifier="c4"></div>
+                            <div class="correctResponse" identifier="c4">
+
+                            </div>
                         </div>
                     </div> <!-- Question 2 -->
                     <div class="assessment-data" type="multiplechoice"
                         identifier="Which are examples of lossless transformation?" hasinlinefeedback="true"
                         maxchoices="2" responseIdentifier="ri2" shuffle="true">
-                        <div class="prompt">A visual artist is processing a digital image and overwriting the original.
-                            Which of the following describe <strong>lossless</strong> transformations of the digital
-                            image from which the original image can be recovered? <em>Choose two answers.</em></div>
+                        <div class="prompt">
+                            Een kunstenaar is een digitale afbeelding aan het bewerken en overschrijft het originele
+                            bestand. Welke van de volgende stellingen beschrijft een verandering van de afbeelding
+                            <strong>zonder verlies</strong>? <em>Kies twee antwoorden.</em>
+                        </div>
                         <div class="choice" identifier="c1">
-                            <div class="text">Creating the negative of an image, where colors are reversed and dark
-                                areas appear light.</div>
-                            <div class="feedback">Correct. This transformation is reversible and is an example of a
-                                lossless transformation.</div>
+                            <div class="text"> Het maken van de negatief van de afbeelding, hierbij worden de
+                                kleuren omgekeerd en lijken donkere gebieden dus lichter.
+                            </div>
+                            <div class="feedback">Correct. Deze transformatie is omkeerbaar.
+                            </div>
                         </div>
                         <div class="choice" identifier="c2">
-                            <div class="text">Blurring the edges of an image.</div>
-                            <div class="feedback">The blurring blends colors at the edges of the image and once colors
+                            <div class="text">Het vervagen van de randen van de afbeelding.
+                            </div>
+                            <div class="feedback"> The blurring blends colors at the edges of the image and once colors
                                 have blended it is impossible to retrieve the original RGB values of the pixels
-                                involved. </div>
+                                involved.
+                            </div>
                         </div>
                         <div class="choice" identifier="c3">
-                            <div class="text">Creating a grayscale copy of an image.</div>
-                            <div class="feedback">The grayscale of an image replaces each RGB value with their average
-                                and once colors have been averaged it is impossible to retrieve the original RGB values
-                                of the pixels.</div>
+                            <div class="text">Alle kleuren in de afbeelding vervangen door grijstinten.
+                                .</div>
+                            <div class="feedback"> Door alle kleuren te vervangen met alleen grijstinten,
+                                wordt iedere RGB-waarde vervangen met zijn gemiddelde en als dit met alle kleuren
+                                gebeurd is dan is het onmogelijk om de originele RGB-waardes terug te krijgen.
+                            </div>
                         </div>
                         <div class="choice" identifier="c4">
-                            <div class="text">Creating a vertically flipped copy of the image.</div>
-                            <div class="feedback">Correct. This transformation is reversible and is an example of a
-                                lossless transformation.</div>
+                            <div class="text"> Het verticaal omdraaien van de afbeelding.
+                            </div>
+                            <div class="feedback">Correct. Deze transformatie is omkeerbaar.
+                            </div>
                         </div>
                         <div class="responseDeclaration" identifier="ri2">
                             <div class="correctResponse" identifier="c1"></div>
