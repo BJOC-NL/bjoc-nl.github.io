@@ -21,14 +21,14 @@
     <h2>Abstracte Data Types</h2>
     <div class="learn"> <strong>Op deze pagina,</strong> ga je een abstract data-type genaamd <code>punt</code> maken om
         je eigen H2L2-TekenVorm code aangenamer is om te lezen, debuggen en gebruiken:<br /> <img class="indent"
-            src="../../afb/h2/L2/blocks/p2-b1.png" height="125" alt="Geen Afbeelding"
+            src="../../afb/h2/l2/blocks/p2-b1.png" height="125" alt="Geen Afbeelding"
             title="draw shape(list{point(-50)(20), point(-10)(120),...point(-30)(20)})" /> </div>
     <p> De naam zegt het eigenlijk al, een <strong>data-type</strong> is wat voor type de data is (getal, tekst /
         tekens, lijst, etc.). Elke programmeertaal heeft een soort <strong>primitieve</strong> (standaard
         ingebouwde) <strong>data-types</strong>. Snap<em>!</em> heeft getallen, tekst (woorden en zinnen), lijsten,
         Booleans, en nog veel meer:<br />
         <div class="sidenote">Het keuzemenu van dit blok toont alle primitieve types van Snap<em>!</em> zien.</div> <img
-            class="indent" src="../../afb/h2/L2/other/p2-o1.png" alt="Geen Afbeelding"
+            class="indent" src="../../afb/h2/l2/other/p2-o1.png" alt="Geen Afbeelding"
             title="primitive types: number, text, Boolean, list, sprite, command, reporter, predicate" />
     </p>
     <div class="takeNote">
@@ -36,9 +36,9 @@
             voor je programma, maar niet ingebouwd zit in de programmeertaal. Je bouwt dit dan terwijl je programmeert.
         </p>
         <p> In deze les bijvoorbeeld, maak je een <em>punt</em> data-type met: <ul>
-                <li><img class="inline" src="../../afb/h2/L2/blocks/p2-b2.png" title="point()()"> voor het
+                <li><img class="inline" src="../../afb/h2/l2/blocks/p2-b2.png" title="point()()"> voor het
                     <em>bouwen</em> van de ADT</li>
-                <li> <img class="inline" src="../../afb/h2/L2/blocks/p2-b3.png" alt="Geen Afbeelding" src="../../afb/"
+                <li> <img class="inline" src="../../afb/h2/l2/blocks/p2-b3.png" alt="Geen Afbeelding" src="../../afb/"
                         alt="Geen Afbeelding"> om coördinaten te <em>selecteren</em> van een punt
                 </li>
             </ul>
@@ -54,10 +54,10 @@
         <div class="stagedir">Yasmine vergezelt Bo en Alfreds <a href="./H2L2P1.html"
                 title="Processing Each Item in a List"> eindeloze discussie van de vorige pagina</a> over het
             gebruik van lijsten met coördinaten om een letter te tekenen.</div>
-        <div><span>Yasmine:</span> "Ik keek naar ons <img class="inline" src="../../afb/h2/L2/blocks/p2-b4.png">blok
+        <div><span>Yasmine:</span> "Ik keek naar ons <img class="inline" src="../../afb/h2/l2/blocks/p2-b4.png">blok
             en bedacht een manier
             om dit veel leesbaarder te maken."</div>
-        <div><span>Bo:</span> "Ja, expressies zoals <img class="inline" src="../../afb/h2/L2/blocks/p2-b5.png"
+        <div><span>Bo:</span> "Ja, expressies zoals <img class="inline" src="../../afb/h2/l2/blocks/p2-b5.png"
                 alt="Geen Afbeelding" />
             zijn moeilijk te lezen. Zelfs nadat ik het had geschreven en gebruikte om de <em>y</em> coördinaat te
             vinden, moest ik twee keer nadenken voordat ik het snapte."</div>
@@ -65,7 +65,7 @@
             om de details te verbergen. Wanneer men de <code>punt</code> ADT, gebruikt, hoef je verder niet na te
             denken over hoe punten worden weergegeven als lijst.</div>
         <div><span>Yasmine:</span> "Dat bedoel ik dus!.
-            Laten we het wat duidelijker maken. We kunnen een <img class="inline" src="../../afb/h2/L2/blocks/p2-b6.png"
+            Laten we het wat duidelijker maken. We kunnen een <img class="inline" src="../../afb/h2/l2/blocks/p2-b6.png"
                 alt="Geen Afbeelding"> blok definiëren en dat gebruiken, in
             plaats van <code>item 2 van</code>."</div>
         <div><span>Bo:</span> "Maar dat blok zou precies hetzelfde doen als <code>item 2 van</code>, dus wat
@@ -76,39 +76,39 @@
             blok."</div>
 
         <div class="stagedir"> Ze bouwen twee blokken:
-            <img height="100" src="../../afb/h2/L2/blocks/p2-b7.png" alt="Geen Afbeelding"
+            <img height="100" src="../../afb/h2/l2/blocks/p2-b7.png" alt="Geen Afbeelding"
                 title="x coordinate of (point){report item 1 of (point)}">
             en
-            <img height="100" src="../../afb/h2/L2/blocks/p2-b8.png"
+            <img height="100" src="../../afb/h2/l2/blocks/p2-b8.png"
                 title="y coordinate of (point){report item 2 of (point)}"><br />
         </div>
 
         <div> <span>Bo:"</span> Hmmm... En als we nu een <img height="40" class="inline"
-                src="../../afb/h2/L2/blocks/p2-b9.png" /> blok maken,
-            dan kunnen we <img height="56" src="../../afb/h2/L2/blocks/p2-b10.png" alt="Geen Afbeelding"
+                src="../../afb/h2/l2/blocks/p2-b9.png" /> blok maken,
+            dan kunnen we <img height="56" src="../../afb/h2/l2/blocks/p2-b10.png" alt="Geen Afbeelding"
                 title="list{point(-50)(20), point(-10)(120),...point(-30)(20)}"> schrijven in plaats van <img
-                height="56" src="../../afb/h2/L2/blocks/p1-b1.png" alt="Geen Afbeelding"
+                height="56" src="../../afb/h2/l2/blocks/p1-b1.png" alt="Geen Afbeelding"
                 title="list{list(-50)(20), list(-10)(120),...list(-30)(20)}">. Dat zou het veel duidelijker
             aangeven wat die lijst nu eigenlijk is." </div>
 
         <div class="stagedir"> Bo bouwt dit blok. Ze markeert de <var>x</var> en <var>y</var> invoervariabelen als
             getallen. <br />
-            <img height="100" src="../../afb/h2/L2/blocks/p2-b11.png" title="point(X#)(Y#){report(list(X)(Y)}" />
+            <img height="100" src="../../afb/h2/l2/blocks/p2-b11.png" title="point(X#)(Y#){report(list(X)(Y)}" />
         </div>
 
         <div class="endnote"> Typ <code>#</code> niet in de invoernaam van <code>punt</code> .
             Net zoals het <code>⋮</code> symbool bij een lijst als invoer, is <code>#</code>
             geen onderdeel van de invoer zijn naam, maar is een <strong>type-hint</strong> die je maakt wanneer je
-            <em>getal</em> selecteert als invoer-type:<br /> <img class="indent" src="../../afb/h2/L2/other/p2-o2.png"
+            <em>getal</em> selecteert als invoer-type:<br /> <img class="indent" src="../../afb/h2/l2/other/p2-o2.png"
                 height="80" alt="Geen Afbeelding" /><br /> Het invoer type
             verandert ook de vorm van het invoer-slot om aan te geven wat voor soort invoer verwacht wordt.
         </div>
     </div>
     <div class="takeNote">Het
-        <img height="40" class="inline" src="../../afb/h2/L2/blocks/p2-b9.png" title="point () ()" />
+        <img height="40" class="inline" src="../../afb/h2/l2/blocks/p2-b9.png" title="point () ()" />
         blok wordt de <strong>bouwer</strong> genoemd van dat nieuwe abstracte data-type. De <img height="40"
-            class="inline" src="../../afb/h2/L2/blocks/p2-b2.png" height="35" alt="Geen Afbeelding"> en
-        <img height="40" class="inline" src="../../afb/h2/L2/blocks/p2-b3.png" alt="Geen Afbeelding" /> blokken
+            class="inline" src="../../afb/h2/l2/blocks/p2-b2.png" height="35" alt="Geen Afbeelding"> en
+        <img height="40" class="inline" src="../../afb/h2/l2/blocks/p2-b3.png" alt="Geen Afbeelding" /> blokken
         worden de <strong>selecteerders</strong> genoemd voor de <code>punt</code> ADT, omdat ze ieder een
         component <em>selecteren</em> van een punt. </div>
     <div class="forYouToDo" id="first">
@@ -119,7 +119,7 @@
                 gebruiken binnen het <code>ga naar punt</code> blok zoals Bo en Yasmine eerder beschreven.
             </li>
             <li> <img class="imageRight" src="../../afb/icons/save-mini.png" title="Save Your Work" /> Zet
-                dat script om in een algemeen <img class="inline" src="../../afb/h2/L2/blocks/p2-b12.png"
+                dat script om in een algemeen <img class="inline" src="../../afb/h2/l2/blocks/p2-b12.png"
                     title="drawShape()"> blok dat een lijst van punten aanneemt als invoer en die vorm tekent. </li>
             </ul>
     </div>
@@ -133,9 +133,9 @@
                 <em>lijst van letters</em> als invoer aanneemt en <code>teken vorm()</code> meerdere keren
                 gebruikt om een bericht te tekenen.<br />
                 <div class="sidenoteBig"> Let op het gebruik van abstracties. Het bericht "Hi" weergeven als
-                    <img src="../../afb/h2/L2/blocks/p2-b13.png" /> verbergt al de complexiteit van de lijsten met
+                    <img src="../../afb/h2/l2/blocks/p2-b13.png" /> verbergt al de complexiteit van de lijsten met
                     coördinaten die zijn gebruikt om vormen te tekenen. </div> <img class="indent"
-                    data-gifffer="../../afb/h2/L2/videos/p2-v1.gif" alt="Geen Afbeelding"
+                    data-gifffer="../../afb/h2/l2/videos/p2-v1.gif" alt="Geen Afbeelding"
                     title="animation that shows drawing H then drawing I" />
             </li>
         </ol>
@@ -144,7 +144,7 @@
         <ol type="A">
             <li> Verander je project zodanig dat <code>teken bericht</code> de letters naast elkaar tekent, in
                 plaats van ze vervangt met een andere letter:<br /> <img class="indent"
-                    src="../../afb/h2/L2/other/p2-o3.png" />
+                    src="../../afb/h2/l2/other/p2-o3.png" />
             </li>
         </ol>
     </div>

@@ -18,7 +18,7 @@
 
 <body>
     <div class="full">
-        <h2>Verwerken van elk item in een lijst</h2> <img class="imageRight" src="../../afb/h2/L2/other/p1-o2.png"
+        <h2>Verwerken van elk item in een lijst</h2> <img class="imageRight" src="../../afb/h2/l2/other/p1-o2.png"
             height="180" alt="Geen Afbeelding" />
         <div class="learn">
             <p><strong>In deze les,</strong> ga je tools maken voor het tekenen van complexe ontwerpen van lijsten met
@@ -34,49 +34,49 @@
                     Ze kwamen erachter dat ze dit kunnen gebruiken om afbeeldingen of grafieken van data te tekenen:</p>
                 <p> Om een set data te maken om mee te beginnen, schetsten ze de letter A op ruitjespapier. Ze
                     kozen een <em>schaal</em> waarvan ze dachten dat het de afbeelding er goed uit zou laten
-                    zien.<br /> <img src="../../afb/h2/L2/other/p1-o3.png" height="300" alt="Geen Afbeelding"
+                    zien.<br /> <img src="../../afb/h2/l2/other/p1-o3.png" height="300" alt="Geen Afbeelding"
                         title="Letter A drawn of graph paper with corner coordinates" /><img
-                        src="../../afb/h2/L2/other/p1-o4.png" height="300" alt="Geen Afbeelding"
+                        src="../../afb/h2/l2/other/p1-o4.png" height="300" alt="Geen Afbeelding"
                         title="Corner coordinates (-50, 20) (-10,120), ... (-30,20)" /> <br /> Daarna noteerden ze de
                     coördinaten van elk punt, beginnend bij het pijltje en met de klok mee rond het figuur. Het
                     eerste punt is bij (-50, 20), de tweede bij (-10, 120), enzovoort.
                     <br>Daarna bouwden ze deze lijst in Snap<em>!</em> op deze manier:<br />
-                    <img height="60" src="../../afb/h2/L2/blocks/p1-b1.png" alt="Geen Afbeelding"
+                    <img height="60" src="../../afb/h2/l2/blocks/p1-b1.png" alt="Geen Afbeelding"
                         title="coordinate-list-for-A"><br />
                     Nu hebben ze een script nodig dat deze lijst gebruikt om de tekening te maken, op de manier
                     hieronder:<br />
-                    <img class="center" data-gifffer="../../afb/h2/L2/videos/p1-v1.gif" alt="Geen Afbeelding"
+                    <img class="center" data-gifffer="../../afb/h2/l2/videos/p1-v1.gif" alt="Geen Afbeelding"
                         title="sprite drawing letter A by going to each set of coordinates" /> </p>
             </div>
             <div><span>Berta:</span> "Deze lijst van coördinaten, tekent een A, dus laten we de lijst 'A' noemen."</div>
             <div class="stagedir">
                 <p>Berta klikt op <code>Maak een variabele</code>, noemt hem <code>A</code>, en bouwt
-                    <img height="70" src="../../afb/h2/L2/blocks/p1-b2.png" alt="Geen Afbeelding"
+                    <img height="70" src="../../afb/h2/l2/blocks/p1-b2.png" alt="Geen Afbeelding"
                         title="set A to {{-50,20}, {-10,120}, {10,120}, {50,20}, {30,20}, {20,50}, {-20,50}, {-30,20}}" />.
                 </p>
                 <p>Dan, klikt ze op het <code>zet</code> blok om de code te runnen.</p>
             </div>
             <div> <span>Alex:</span> "Dus, voor elk van die 8 punten, willen we dat de sprite ernaartoe beweegt.
                 Hmmm...
-                <img height="40" src="../../afb/h2/L2/blocks/p1-b3.png" height="41" alt="Geen Afbeelding" />
+                <img height="40" src="../../afb/h2/l2/blocks/p1-b3.png" height="41" alt="Geen Afbeelding" />
                 gaat niet werken, want het moet invoeren onderscheiden. We hebben een blok nodig dat <em>één</em> invoer
                 aanneemt, een punt als
-                <img height="40" src="../../afb/h2/L2/blocks/p1-b4.png" height="37" alt="Geen Afbeelding" />." </div>
+                <img height="40" src="../../afb/h2/l2/blocks/p1-b4.png" height="37" alt="Geen Afbeelding" />." </div>
             <div> <span>Berta:</span> "Dus we maken een <em>nieuw </em>blok. Laten we die <code>ga naar punt</code>
                 noemen. Dat werkt zo:
-                <img height="40" src="../../afb/h2/L2/blocks/p1-b6.png" alt="Geen Afbeelding"
+                <img height="40" src="../../afb/h2/l2/blocks/p1-b6.png" alt="Geen Afbeelding"
                     title="go to point (list (-50) (20))" />.
                 We gebruiken
-                <img src="../../afb/h2/L2/blocks/p1-b3.png" height="41" alt="Geen Afbeelding" title="go to x:() y:()" />
+                <img src="../../afb/h2/l2/blocks/p1-b3.png" height="41" alt="Geen Afbeelding" title="go to x:() y:()" />
                 of
-                <img src="../../afb/h2/L2/blocks/p1-b7.png" height="41" alt="Geen Afbeelding"
+                <img src="../../afb/h2/l2/blocks/p1-b7.png" height="41" alt="Geen Afbeelding"
                     title="glide (.5) secs to x:() y:()" />
                 <em>daar in</em>, maar we zullen de invoer moeten verwerken,
-                <img src="../../afb/h2/L2/blocks/p1-b4.png" height="37" alt="Geen Afbeelding" /> , om <code>x:</code> en
+                <img src="../../afb/h2/l2/blocks/p1-b4.png" height="37" alt="Geen Afbeelding" /> , om <code>x:</code> en
                 <code>y:</code> apart te voeden. Hmmm..". </div>
             <div> <span>Yasmine:</span> "Oh! Ik weet het! Volgens mij kunnen we <img
-                    src="../../afb/h2/L2/blocks/p1-b8.png" height="35" alt="Geen Afbeelding"> gebruiken. Geef het een
-                nummer als eerste invoer. Ik denk dat de <img class="inline" src="../../afb/h2/L2/other/p1-o1.png"
+                    src="../../afb/h2/l2/blocks/p1-b8.png" height="35" alt="Geen Afbeelding"> gebruiken. Geef het een
+                nummer als eerste invoer. Ik denk dat de <img class="inline" src="../../afb/h2/l2/other/p1-o1.png"
                     alt="Geen Afbeelding" title="rectangle with two smaller orange rectangles inside" /> gewoon aangeeft
                 dat het een lijst als tweede invoer verwacht."</div>
             <div><span>Alex:</span> "Ik vraag me af of we <em>ons</em> <code>ga naar punt</code> blok kunnen laten
@@ -94,7 +94,7 @@
             <div class="sidenote"> Heb je in de video gezien dat je veel verschillende invoer-types kunt specificeren?
                 (Tekst, nummers, Boolean, etc.) De <strong>lijst</strong> invoer-types zijn gekozen omdat een
                 <code>punt</code> een <em>lijst</em> is bestaande uit twee coördinaten.<br /> <img
-                    src="../../afb/h2/L2/other/p1-o6.png" height="150" alt="Geen Afbeelding"
+                    src="../../afb/h2/l2/other/p1-o6.png" height="150" alt="Geen Afbeelding"
                     title="Invoer types, list type selected" /> </div>
             <ol>
                 <li><a class="run"
@@ -102,20 +102,20 @@
                             class="inline" src="../../afb/icons/LaadEnSlaOp.png" alt="Geen Afbeelding"
                             title="Click here to load this file. Then save it to your Snap! account."></a><br /> Het
                     beschikt over de lijst van punten, maar je moet hun <img height="40"
-                        src="../../afb/h2/L2/blocks/p1-b9.png" alt="Geen Afbeelding"
+                        src="../../afb/h2/l2/blocks/p1-b9.png" alt="Geen Afbeelding"
                         title="go to point (point) block with list type invoer named point"> blok
                     bouwen.</li>
                 <div class="narrower">
                     <h4><strong>Specificeer je invoer-type</strong></h4> Deze animatie laat zien hoe je het invoer-type
                     van de lijst kunt specifieren. Andere invoer-types worden op dezelfde manier gespecificeerd. <img
-                        class="inline" src="../../afb/h2/L2/other/p1-o1.png" alt="Geen Afbeelding"
+                        class="inline" src="../../afb/h2/l2/other/p1-o1.png" alt="Geen Afbeelding"
                         title="list invoer type: rectangle with two smaller orange rectangles inside"><br /> <img
-                        data-gifffer="../../afb/h2/L2/videos/p1-v2.gif" height="400" alt="Geen Afbeelding"
+                        data-gifffer="../../afb/h2/l2/videos/p1-v2.gif" height="400" alt="Geen Afbeelding"
                         title="List invoer type selection" /> <br /> Nadat je de titel hebt gemaakt en de invoer
                     een naam hebt gegeven:
                     <ul>
                         <li> Klik je op de rechter pijl naast de invoernaam:<br /> <img class="indent"
-                                src="../../afb/h2/L2/other/p1-o7.png" height="125" alt="Geen Afbeelding" /> </li>
+                                src="../../afb/h2/l2/other/p1-o7.png" height="125" alt="Geen Afbeelding" /> </li>
                         <li>Kies je het data-type dat je wilt voor de invoer.</li>
                         <li>Klik je op OK.</li>
                     </ul>
@@ -127,12 +127,12 @@
         <div class="dialogue"> <a name="seta" class="anchor">&nbsp;</a>
             <div><span> Alex:"</span> Top! Nu kunnen we ons <code>ga naar punt</code> blok gebruiken voor elk punt in
                 onze lijst."</div>
-            <div><span>Berta:"</span> Ik denk dat we <img src="../../afb/h2/L2/blocks/p1-b10.png" height="68"
+            <div><span>Berta:"</span> Ik denk dat we <img src="../../afb/h2/l2/blocks/p1-b10.png" height="68"
                     alt="Geen Afbeelding"> kunnen gebruiken."</div>
             <div class="stagedir">
                 <p>Alex and Berta ontwerpen dit nieuwe script om het bezoeken van ieder punt te
                     automatiseren. </p>
-                <p><img height="120" src="../../afb/h2/L2/blocks/p1-b11.png" alt="Geen Afbeelding"
+                <p><img height="120" src="../../afb/h2/l2/blocks/p1-b11.png" alt="Geen Afbeelding"
                         title="pen down;for each(item) of (A){go to point(item)}"> </p>
                 <p>Daarna proberen ze het uit.</p>
             </div>
@@ -165,7 +165,7 @@
                 <li> Maak drie nieuwe punten en een script dat het tekenen van de letter A afmaakt. Je moet een manier
                     bedenken om aan te geven welke punten in een lijst nog niet met elkaar verbonden zijn.<br />
                     <div class="sidenote">Kies de nieuwe coördinaten zelf.</div> <img class="indent"
-                        src="../../afb/h2/L2/other/p1-o5.png" alt="Geen Afbeelding"
+                        src="../../afb/h2/l2/other/p1-o5.png" alt="Geen Afbeelding"
                         title="complete-drawing-of-letter-A">
                 </li>
             </ol>
