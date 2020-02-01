@@ -31,19 +31,16 @@
 * Privacy blijft Privacy? (H1L4) Yes
 * Section -> gedeelte? miss paragraaf ?(H1L4P4) paragraaf
 * Graphics, Debugging, screenshot? ik zou onvertaald laten (H1L3P7).
-* Feature? heb het nu vertaald als eigenschap, maar dekt neit helemaal de lading. (H1L3P7) weggehaald.
+* Feature? heb het nu vertaald als eigenschap, maar dekt niet helemaal de lading. (H1L3P7) weggehaald.
 * Dependencies -> afhankelijkheden? Klinkt raar weet niet of het helemaal correct is. (H2L1P4) (H2L3P3)
 
 ## Andere vragen/opmerkingen
 
-
 * Vertaalde Projecten hebben nu een letterlijke link naar het project, dit zou netter moeten kunnen, weet niet hoe.
 
+## Externe Bronnen
 
-
-## Externe Bronnen 
-
-* H1L4P3, Verhaal in The Guardian, 
+* H1L4P3, Verhaal in The Guardian,
 * Secties van Blown to Bits
 * Youtube video op h1l1p7
 * Videos Hoofdstuk 1
@@ -52,7 +49,7 @@
 
 * Controleer alle pagina's nog op fouten
 * Voeg overal de VOLGENDE TERUG balk toe onderaan. (Hiervoor moet ook de class="full" worden toegevoegd)
-* Alex Bo en Yasmine 
+* Alex Bo en Yasmine
 * referenties naar AP CS Exam/ Curriculum weghalen.
 * Er zijn een aantal links naar pagina's, dit zijn nu links binnen de files, e.g. `: ../../units ... /h1l3p1.html`. Dit is miss niet ideaal?
 * H2L5P2 heeft een strip, die heb ik vertaald, maar dit valt eigenlijk niet onder copyright..
@@ -60,15 +57,16 @@
 ## Hypothesis
 
 ### Account gegevens
+
 Groep:
-https://hypothes.is/groups/bVkQ57Vy/infvo-bjoc
+<https://hypothes.is/groups/bVkQ57Vy/infvo-bjoc>
 
 Gebruikersnaam: BJOCNL
 Wachtwoord: Beauty$ndJoy
 
 De code ```<script src="https://hypothes.is/embed.js" async></script>``` staat boven aan de index.
 
+## Replace
 
-##Replace
 om bvb alles tussen src=" tot en met " weg te halen doe je dit:
 src=".*?"
