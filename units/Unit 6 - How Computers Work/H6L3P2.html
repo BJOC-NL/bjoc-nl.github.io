@@ -1,128 +1,155 @@
-<!DOCTYPE html>
-<html lang="en">
+ <!DOCTYPE html>
+ <html lang="en">
 
-<head>
-    <link rel="icon" href="../../BJOC-NL-logo.png" type="image/png">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <script type="text/javascript" src="../../js+css/llab/loader.js"></script>
-    <script type="text/javascript" src="../../js+css/gifffer.min.js"></script>
-    <script type="text/javascript">
-        window.onload = function () {
-            Gifffer();
-            Inhoudsopgave();
-        }
-    </script>
-    <link rel="stylesheet" type="text/css" href="../../js+css/css/bjc-gifffer.css">
-    <title>Hoofdstuk 6 Les 3: Geschiedenis en Impact van Computers, Pagina 2</title>
-</head>
+ <head>
+     <link rel="icon" href="../../BJOC-NL-logo.png" type="image/png">
+     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+     <script type="text/javascript" src="../../js+css/llab/loader.js"> </script>
+     <script type="text/javascript" src="../../js+css/gifffer.min.js"> </script>
+     <script type="text/javascript">
+         window.onload = function () {
+             Gifffer();
+             Inhoudsopgave();
+         }
+     </script>
+     <link rel="stylesheet" type="text/css" href="../../js+css/css/bjc-gifffer.css">
+     <title> Hoofdstuk 6 Les 3: Geschiedenis en Impact van Computers, Pagina 2 </title>
+ </head>
 
-<body>
-    <div class="full">
-        <h2>Moore's Law</h2>
-        <div class="learn"><strong>Op deze pagina</strong>, you'll learn that computer processor speed and memory size
-            have approximately doubled every year or two, for over 50 years.</div> <img class="imageRight noshadow"
-            src="../../afb/h6/l3/p2-o1.png" alt="Geen Afbeelding" />
-        <p>In 1965, Gordon Moore, one of the pioneers of integrated circuits, predicted that the <strong>number of
-                transistors</strong> that could be fit on one chip would double every year. In 1975, he revised his
-            estimate to doubling every two years. This prediction is known as <strong>Moore's Law.</strong></p>
-        <div class="comment">5.2.1K Improvements in algorithms, hardware, and software increase the kinds of problems
-            and the size of problems solvable by programming. </div>
-        <p>It turns out that other important measurements have also shown roughly the same doubling behavior, such as
-            processor speed and the amount of memory that fits in a computer. Doubling hardware speed improves the size
-            of problems that you can efficiently handle.</p>
-        <p>The importance of Moore's Law isn't just that computers get bigger and faster over time; it's that engineers
-            can predict <em>how much</em> bigger and faster, which helps them plan the software and hardware development
-            projects to start today, for use five years from now.</p>
-        <div class="ifTime">
-            <ol>
-                <li> That huge computer you saw in Lab 1 was built in 1975, and it had about 1MB of memory. One 2017
-                    desktop-sized computer <em>server</em> (not a single-user computer) has up to 3TB of memory (3
-                    billion MB). Does the prediction of doubling every two years hold for these two machines? <ol>
-                        <li>How many years apart were they made?</li>
-                        <li>If memory capacity doubled every two years during that time, by about what number should you
-                            multiply the huge computer's 1MB to predict the size of memory in 2017?</li>
-                        <li>Is 3TB more than or less than you'd expect?</li>
-                    </ol>
-                </li>
-            </ol>
-        </div>
-        <h3>Limitations to Moore's Law</h3> <img class="imageRight" src="../../afb/h6/l3/p2-o2.png" height="200px"
-            alt="Geen Afbeelding" />
-        <p>For transistor counts to keep growing, the size of a transistor must keep getting smaller. But chip density
-            and processor speed have run up against an important limit: denser chips and faster signal processing both
-            generate increased <em>heat</em>. Current technology is right at the edge of generating enough heat to melt
-            the chips, destroying the computer. This is why processor chips are surrounded by metal <em>heat sinks</em>
-            (one shown right), which conduct heat away from the chip and into the air.</p>
-        <div class="takeItFurther">
-            <ol type="A">
-                <li>Heat sinks aren't solid blocks of metal; they have spikes and zigzags. Figure out or look up why.
-                </li>
-            </ol>
-        </div>
-        <p>Because of the heat problem, chip manufacturers have, at least temporarily, given up on making processors
-            faster. Instead, they are putting more than one processor on a chip. If a computation can carry out the same
-            algorithm on different parts of the data at the same time (in parallel&mdash;sort of like sprite clones all
-            running the same script at the same time), then these <em>multicore</em> chips can have an effective speed
-            much greater than the speed of a single processor. A computer you buy today is likely to have two or four
-            processors on one chip. But using multicore efficiently requires that the software be written with multicore
-            in mind.</p>
-        <div class="endnote"> <a href="#hint-target" data-toggle="collapse">Learn about limitations to Moore's Law.</a>
-            <div id="hint-target" class="collapse">
-                <p>Some time in the next decade, the size of a transistor will approach the size of an atom, but at the
-                    atomic scale, transistors won't work for various reasons. There is a more fundamental limit to the
-                    density of transistors on a chip than just heat issues. And similarly, there are fundamental
-                    limitations that affect the speed of a processor, such as the speed of electrons through a wire.</p>
-                <p>Moore's Law optimists argue that technologies other than transistors will become usable before
-                    manufacturers hit a fundamental limit. One such approach would involve using an individual electron
-                    to represent one bit. Electrons are smaller than atoms, so this technology would allow further
-                    dramatic increases in density. Another approach would use light beams rather than electric current
-                    to hold bits. But these developments are still far away.</p>
-            </div>
-        </div>
-        <div class="forYouToDo">
-            <ol start="2">
-                <li> This question is similar to those you will see on the AP CSP exam.
-                    <!-- Question 1 -->
-                    <div class="assessment-data" type="multiplechoice"
-                        identifier="Which is TRUE according to Moore's Law?" hasinlinefeedback="true" maxchoices="1"
-                        responseIdentifier="ri1" shuffle="true">
-                        <div class="prompt">As Gordon Moore observed in 1965, data show that computer processing speeds
-                            roughly double every two years. Technology companies use this observation, now known as
-                            "Moore’s Law,’ in their planning. From the following, identify which one best describes how
-                            technology companies can use Moore’s Law in planning.</div>
-                        <div class="choice" identifier="c1">
-                            <div class="text">They can expect to double their profits every two years.</div>
-                            <div class="feedback">No such thing is possible to predict using Moore’s Law.</div>
-                        </div>
-                        <div class="choice" identifier="c2">
-                            <div class="text">They can anticipate the precise dates when the latest computing
-                                advancements will be available and therefore accurately plan their products in advance.
-                            </div>
-                            <div class="feedback">No such thing is possible to predict using Moore’s Law.</div>
-                        </div>
-                        <div class="choice" identifier="c3">
-                            <div class="text">They can base their R&D (Research and Development) targets on expected
-                                future processing speeds.</div>
-                            <div class="feedback">Correct.</div>
-                        </div>
-                        <div class="choice" identifier="c4">
-                            <div class="text">They can expect their costs to double with each increase in processor
-                                speed. </div>
-                            <div class="feedback">No such thing is possible to predict using Moore’s Law.</div>
-                        </div>
-                        <div class="responseDeclaration" identifier="ri1">
-                            <div class="correctResponse" identifier="c3"></div>
-                        </div>
-                    </div>
-                </li>
-            </ol>
-        </div>
-    </div>
-    <div class="full-bottom-bar" style="background-position: 20px 3px;">
-        <div class="bottom-nav btn-group"> <a class="btn btn-default backbutton arrow" style="min-width: 90px;"
-                href="H6L3P1.html">Terug</a> <a class="btn btn-default forwardbutton arrow" style="min-width:90px;"
-                href="H6L3P3.html">Volgende</a> </div>
-    </div>
-</body>
+ <body>
+     <div class="full">
+         <h2> De Wet van Moore </h2>
+         <div class="learn"> <strong> Op deze pagina </strong> , ga je leren dat de snelheid en opslagruimte van
+             computers ongeveer verdubbeld zijn ieder jaar of twee, de afgelopen 50 jaar.
 
-</html>
+         </div>
+         <img class="imageRight noshadow" src="../../afb/h6/l3/p2-o1.png" alt="Geen Afbeelding" />
+         <p> In 1965, voorspelde Gordon Moore, een van de pionieren op het gebied van circuits, dat het
+             <strong> aantal transistors </strong> dat op één chip zou passen, ieder jaar zou verdubbelen. In 1975 paste
+             hij deze schatting aan naar iedere twee jaar. Deze voorspellling staat bekend als de
+             <strong> Wet van Moore </strong>.
+             .
+         </p>
+         <p> Het blijkt dat andere belangrijke factoren ook ongeveer dit verdubbelingsgedrag laat zien, zoals
+             processorsnelheid en opslagruimte. Verdubbeling van de snelheid verhoogt het aantal problemen dat je
+             efficiënt op kan lossen.
+         </p>
+         <p> Het belangrijke van de Wet van Moore is niet alleen dat computers groter en sneller worden over tijd; het
+             belangrijke is dat ingenieurs kunnen voorspellen <em> hoe veel </em> groter en sneller ze worden, wat helpt
+             met het plannen van software- en hardwareontwikkelingsprojecten die nu gestart worden en klaar moeten zijn
+             over vijf jaar.
+         </p>
+         <div class="ifTime">
+             <ol>
+                 <li> Die grote computer die je in Les 1 zag werd gebouwd in 1975 en had ongeveer 1 MB aan geheugen. Een
+                     kleine <em> server </em> (niet een PC) heeft nu 3 TB aan geheugen (3 miljard MB). Klopt de
+                     voorspelling van verdubbeling iedere twee jaar voor deze twee apparaten?
+                     <ol>
+                         <li> Hoeveel jaar zit er tussen de apparaten? </li>
+                         <li> Als de geheugencapaciteit iedere twee jaar verdubbelde over die tijdsperiode, met welk
+                             getal moet je dan de oude computer 1 MB vermenigvuldigen om te voorspellen hoeveel geheugen
+                             de moderne computer heeft?
+                         </li>
+                         <li> Is 3TB meer of minder dan je had verwacht? </li>
+                     </ol>
+                 </li>
+             </ol>
+         </div>
+         <h3> Beperkingen van de Wet van Moore </h3>
+         <img class="imageRight" src="../../afb/h6/l3/p2-o2.png" height="200px" alt="Geen Afbeelding" />
+         <p> Om het aantal transistor te laten groeien moet de grootte van een transistor steeds kleiner worden. Maar
+             chipdichtheid en processorsnelheid hebben een bepaalde limit bereikt: chips die dicht bij elkaar zitten en
+             hogere snelheiden zorgen allebei voor een verhoogde <em> hitte </em> . Huidige technologie zorgt nog net
+             niet
+             voor genoeg hitte om de chips te smelten, waardoor de computer kapot zou gaan. Dit is waarom chips nu
+             omgeven worden door metalen <em> koellichamen </em> (zoals hier rechts) die warmte weggeleiden van de chip
+             en de lucht in.
+         </p>
+         <div class="takeItFurther">
+             <ol type="A">
+                 <li> Koellichamen zijn geen solide blokken metaal; ze bevatten stekels en zigzagpatronen. Bedenk
+                     waarom.
+                 </li>
+             </ol>
+         </div>
+         <p>
+             Dankzij dit hitteprobleem zijn chipfabrikanten, voor nu, gestopt met het maken van snellere processoren. In
+             plaats daarvan stoppen ze meer dan één processor op een chip. Als een berekening hetzelfde algoritme kan
+             uitvoeren op verschillende delen van de data, op hetzelfde moment (dit heet in parallel, net als met de
+             sprite clones die tegelijkertijd hetzelfde script runnen), dan hebben deze <em>multicore</em> chips een
+             veel hogere snelheid dan chips met maar een enkele processor. Een computer die je vandaag de dag koopt
+             bevat waarschijnlijk twee of vier processoren op een chip. Maar multicore efficiënt gebruiken betekent dat
+             je software moet schrijven die gebruikt maakt van multicore processoren
+         </p>
+         <div class="endnote">
+             <a href="#hint-target" data-toggle="collapse"> Leer over de beperkingen van de Wet van Moore. </a>
+             <div id="hint-target" class="collapse">
+                 <p> Op een bepaald moment in het volgende decennium zal de grootte van een transistor de grootte van
+                     een atoom bereiken. Maar op die grootte zal een transistor niet werken voor een aantal redenen. Er
+                     is een meer fundamentele limiet aan de dichtheid van transistors op een chip dan de hitte.
+                     Daarnaast zijn er ook beperkingen aan de snelheid van een processor zoals de snelheid van
+                     elektronen door een draad.
+                 </p>
+                 <p>
+                     Optimisten zeggen over de Wet van Moore dat andere technologieën dan transistors bruikbaar zullen
+                     worden voordat fabrikanten op een fundamentele limiet stuiten. Een van die manieren zou gebruik
+                     maken van het idee dat een individuele elektron één bit voorstelt. Elektronen zijn kleiner dan
+                     atomen dus deze technologie zou kunnen zorgen voor een grote stijging in dichtheid. Een andere
+                     aanpak zou lichtstralen gebruiken in plaats van elektrische stroom om bits door te geven. Maar deze
+                     ideeën zijn nog lang niet ver genoeg ontwikkeld.
+                 </p>
+             </div>
+         </div>
+         <div class="forYouToDo">
+             <ol start="2">
+                 <li>
+                     <!-- Question 1 -->
+                     <div class="assessment-data" type="multiplechoice"
+                         identifier="Which is TRUE according to Moore's Law?" hasinlinefeedback="true" maxchoices="1"
+                         responseIdentifier="ri1" shuffle="true">
+                         <div class="prompt"> Zoals Gordon Moore zag in 1965, laat data uit het verleden zien dat
+                             processorsnelheiden ongeveer verdubbelden iedere twee jaar. Technologiebedrijven gebruiken
+                             deze observatie, die nu bekend staat als de "Wet van Moore", bij het plannen van projecten.
+                             Van de stellingen hieronder, vind degen die het beste beschrijft hoe deze bedrijven de Wet
+                             van Moore kunnen gebruiken.
+                         </div>
+                         <div class="choice" identifier="c1">
+                             <div class="text"> Ze kunnen verwachten dat hun winst iedere twee jaar verdubbeld. </div>
+                             <div class="feedback"> Er is geen enkele manier om zoiets te voorspellen met de Wet van
+                                 Moore. </div>
+                         </div>
+                         <div class="choice" identifier="c2">
+                             <div class="text"> Ze kunnen de precieze datum voorspellen wanneer de nieuwste
+                                 computerontwikkelingen beschikbaar zijn en daardoor hun producten plannen vantevoren.
+                             </div>
+                             <div class="feedback"> Er is geen enkele manier om zoiets te voorspellen met de Wet van
+                                 Moore. </div>
+                         </div>
+                         <div class="choice" identifier="c3">
+                             <div class="text"> Ze kunnen hun O&O (Onderzoek en Ontwikkeling) doelen baseren op
+                                 verwachte toekomstige processorsnelheden. </div>
+                             <div class="feedback"> Correct. </div>
+                         </div>
+                         <div class="choice" identifier="c4">
+                             <div class="text"> Ze kunnen verwachten dat hun kosten verdubbelen iedere keer dat de
+                                 processorsnelheid verdubbelt.
+                             </div>
+                             <div class="feedback"> Er is geen enkele manier om zoiets te voorspellen met de Wet van
+                                 Moore. </div>
+                         </div>
+                         <div class="responseDeclaration" identifier="ri1">
+                             <div class="correctResponse" identifier="c3"> </div>
+                         </div>
+                     </div>
+                 </li>
+             </ol>
+         </div>
+     </div>
+     <div class="full-bottom-bar" style="background-position: 20px 3px;">
+         <div class="bottom-nav btn-group"> <a class="btn btn-default backbutton arrow" style="min-width: 90px;"
+                 href="H6L3P1.html"> Terug </a> <a class="btn btn-default forwardbutton arrow" style="min-width:90px;"
+                 href="H6L3P3.html"> Volgende </a> </div>
+     </div>
+ </body>
+
+ </html>
