@@ -13,29 +13,29 @@
         }
     </script>
     <link rel="stylesheet" type="text/css" href="../../js+css/css/bjc-gifffer.css">
-    <title>Unit 7 Lab 1: Trees in a Forest, Page 3</title>
+    <title>Hoofdstuk 7 Les 1: Bomen in een Bos, Pagina 3</title>
 </head>
 
 <body>
     <div class="full">
-        <h2>Self-Check: <code>Tree</code> Input</h2>
-        <p>
-            Each of these questions refer to this version of the <code>tree</code> block and this script that calls it.
-            Notice the blank in the <code>tree</code> <var>level</var> input slot in the calling script. Inside the
-            <code>tree</code> script, we have changed the turning angles and size scaling factors so that the left and
-            right
-            branches are the same, to make the pictures of trees easier to understand.<br />
-            <img src="/bjc-r/img/7-recursion/quiztree.png" alt="Geen Afbeelding" />
-            <img class="indent" src="/bjc-r/img/7-recursion/tree-size-100-call.png" alt="Geen Afbeelding" />
+        <h2>Self-Check: <code>Boom</code>invoer</h2>
+        <p> Alle vragen verwijzen naar deze versie van het <code>boom</code>blok en dit script dat het aanroept. Merk op
+            dat het getal ontbreekt in het vakje voor de invoer van het <code>boom</code> <var>niveau</var>. In het
+            <code>boom</code>script hebben we de draaihoeken en de vermenigvuldigingsfactoren voor de schaalgrootte
+            aangepast. Hierdoor zijn de linker en rechter takken hetzelfde, zodat de plaatjes van de bomen makkelijker
+            te begrijpen zijn. <br />
+            <img src="../../afb/h7/l1/p3-b1.png" alt="Geen Afbeelding" />
+            <img class="indent" src="../../afb/h7/l1/p3-b2.png" alt="Geen Afbeelding" />
         </p>
         <!-- Question 1 -->
         <div class="assessment-data" type="multiplechoice" identifier="number-of-levels" hasinlinefeedback="true"
             maxchoices="1" responseIdentifier="ri1" shuffle="false">
 
             <div class="prompt">
-                <img class="imageRight" src="/bjc-r/img/7-recursion/tree-level5.jpg" alt="Geen Afbeelding" />
-                <p>If this picture is drawn, what number must be in the <var>level</var> input slot?</p>
-                <p>In other words, what goes in the blank in the code above to make this image? </p>
+                <img class="imageRight" src="../../afb/h7/l1/p3-o1.jpg" alt="Geen Afbeelding" />
+                <p>Als dit plaatje getekend wordt, welk getal moet dan in het invoer vakje voor het <var>niveau</var>
+                    staan?</p>
+                <p>Met andere woorden, wat moet er in het lege vakje hierboven staan om deze afbeelding te maken? </p>
             </div>
 
             <div class="choice" identifier="c0">
@@ -43,7 +43,7 @@
                     <b>6</b>
                 </div>
                 <div class="feedback">
-                    How many different sizes of line segment are in the picture?
+                    Hoeveel verschillende groottes hebben de lijnen in de afbeelding?
                 </div>
             </div>
 
@@ -52,18 +52,15 @@
                     <b>1</b>
                 </div>
                 <div class="feedback">
-                    How many different sizes of line segment are in the picture?
+                    Hoeveel verschillende groottes hebben de lijnen in de afbeelding?
                 </div>
             </div>
-
-
-
             <div class="choice" identifier="c5">
                 <div class="text">
                     <b>5</b>
                 </div>
                 <div class="feedback">
-                    Nice! There are indeed five different levels present in the tree.
+                    Heel goed! Er zijn inderdaad vijf verschillende niveau's in de boom.
                 </div>
             </div>
             <div class="choice" identifier="c4">
@@ -71,7 +68,7 @@
                     <b>4</b>
                 </div>
                 <div class="feedback">
-                    How many different sizes of line segment are in the picture?
+                    Hoeveel verschillende groottes hebben de lijnen in de afbeelding?
                 </div>
             </div>
             <div class="responseDeclaration" identifier="ri1">
@@ -85,52 +82,53 @@
             maxchoices="1" responseIdentifier="ri2" shuffle="false">
 
             <div class="prompt">
-                <p>What would happen if you changed the input <var>size</var> to be -100?</p>
+                <p> Wat zou er gebeuren als je de invoer voor <var>grootte</var> veranderde naar -100?
+                </p>
             </div>
 
             <div class="choice" identifier="c0">
                 <div class="text">
-                    <b>The program will never stop running and a lot of different branches will be drawn.</b>
+                    <b> Het programma zou nooit meer stoppen en er zouden veel verschillende takken worden getekend.</b>
                 </div>
                 <div class="feedback">
-                    The program will stop. Try running walking through the function step-by-step using the given inputs.
+                    Het programma zal stoppen. Probeer stap voor stap door de functie te gaan.
                 </div>
             </div>
 
             <div class="choice" identifier="c1">
                 <div class="text">
-                    <b>It will never stop running and only a single branch will be drawn.</b>
+                    <b>Hij zou nooit meer stoppen en er zou maar één tak getekend worden.</b>
                 </div>
                 <div class="feedback">
-                    The program will stop. Try running walking through the function step-by-step using the given inputs.
+                    Het programma zal stoppen. Probeer stap voor stap door de functie te gaan.
                 </div>
             </div>
 
             <div class="choice" identifier="c2">
                 <div class="text">
-                    <b>It will work just as if the <var>size</var> were positive 100.</b>
+                    <b>Het zou net zo werken als met een positieve <var>grootte</var> van 100.</b>
                 </div>
                 <div class="feedback">
-                    Not quite. What happens when we plug in a negative value to the <code>move</code> block?
+                    Niet echt. What gebeurt er als we een negative waarde geven aan het <code>neem stappen</code>blok?
                 </div>
             </div>
 
             <div class="choice" identifier="c3">
                 <div class="text">
-                    <b>The image will be flipped upside down but will otherwise look the same.</b>
+                    <b> De afbeelding wordt ondersteboven gedraaid, maar zou er voor de rest hetzelfde uitzien.</b>
                 </div>
                 <div class="feedback">
-                    Nice! Inputting negative values to the move block will make the sprite move <em>backwards</em>.
+                    Helemaal goed! Een negatieve waarde geven aan het <code>neem stappen</code>blok zorgt dat de sprite
+                    naar achteren beweegt.
                 </div>
             </div>
 
             <div class="choice" identifier="c4">
                 <div class="text">
-                    <b>Nothing will be drawn.</b>
+                    <b>Er wordt niets getekend.</b>
                 </div>
                 <div class="feedback">
-                    Something will be drawn. Try running walking through the function step-by-step using the given
-                    inputs.
+                    Er zal iets getekend worden. Probeer stap voor stap door de functie te gaan.
                 </div>
             </div>
 
@@ -144,55 +142,54 @@
             maxchoices="1" responseIdentifier="ri3" shuffle="false">
 
             <div class="prompt">
-                <p>What would happen if you changed the input <var>level</var> to be -4?</p>
+                <p> Wat gebeurt er als je de invoer voor <var>niveau</var> verandert in -4?</p>
             </div>
 
             <div class="choice" identifier="c0">
                 <div class="text">
-                    <b>The program will never stop running, but it will draw a tree-looking tree with more and more
-                        smaller
-                        and smaller branches.</b>
+                    <b> Het programma zal nooit meer stoppen, maar het zal wel een boom-achtige boom tekenen met steeds
+                        kleinere takken.
+                    </b>
                 </div>
                 <div class="feedback">
-                    It's true that the program will never stop running. Try walking through the code step-by-step to see
-                    exactly what it draws.
+                    Het is waar dat het programma nooit meer zal stoppen. Probeer stap voor stap door het programma te
+                    gaan.
                 </div>
             </div>
 
             <div class="choice" identifier="c1">
                 <div class="text">
-                    <b>It will never stop running, and the picture will be a leftward spiral with the sprite spinning
-                        around
-                        in midair.</b>
+                    <b>Hij zou nooit meer stoppen en het plaatje wordt een linksdraaiende spiraal met de sprite in de
+                        lucht draaiend. </b>
                 </div>
                 <div class="feedback">
-                    Correct! The function will never hit the <code>level = 1</code> case, and will only ever make the
-                    left-branch call to itself.
+                    Correct! De functie komt nooit bij <code>niveau = 1</code>. En zal de linkertak zichzelf aanroepen.
                 </div>
             </div>
 
             <div class="choice" identifier="c2">
                 <div class="text">
-                    <b>It will work just as if the <var>size</var> were positive 4.</b>
+                    <b> Het zou net zo werken als met een positief <var>niveau</var> van 4.</b>
                 </div>
                 <div class="feedback">
-                    Will the recursion ever reach level 1?</div>
+                    Komt de recursie ooit bij niveau 1?</div>
             </div>
 
             <div class="choice" identifier="c3">
                 <div class="text">
-                    <b>The image will be flipped upside down but will otherwise look the same.</b>
+                    <b> De afbeelding wordt ondersteboven gedraaid, maar zou er voor de rest hetzelfde uitzien. </b>
                 </div>
                 <div class="feedback">
-                    Does the <var>level</var> input affect the <code>move</code> blocks?</div>
+                    Verandert <var>niveau</var> het <code>neem stappen</code>blok?
+                </div>
             </div>
 
             <div class="choice" identifier="c4">
                 <div class="text">
-                    <b>Nothing will be drawn.</b>
+                    <b> Er wordt niets getekend. </b>
                 </div>
                 <div class="feedback">
-                    Something will be drawn.
+                    Er wordt iets getekend.
                 </div>
             </div>
 
@@ -202,7 +199,7 @@
         </div>
     </div>
     <div class="full-bottom-bar" style="background-position: 20px 3px;">
-        <div class="bottom-nav btn-group"> <a class="btn disabled btn-default backbutton arrow" style="min-width: 90px;"
+        <div class="bottom-nav btn-group"> <a class="btn  btn-default backbutton arrow" style="min-width: 90px;"
                 href="H7L1P2.html">Terug</a> <a class="btn btn-default forwardbutton arrow" style="min-width:90px;"
                 href="H7L1P4.html">Volgende</a> </div>
     </div>

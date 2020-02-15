@@ -13,7 +13,7 @@
         }
     </script>
     <link rel="stylesheet" type="text/css" href="../../js+css/css/bjc-gifffer.css">
-    <title>Unit 7 Lab 1: Trees in a Forest, Page 2</title>
+    <title>Hoofdstuk 7 Les 1: Bomen in een Bos, Pagina 2</title>
 </head>
 
 <body>
@@ -23,16 +23,15 @@
         <p>
             Het leek logisch om alle identieke genummerde boom-scripts te vervangen door een enkelvoudig recursief
             script met dezelfde structuur:<br />
-            <img src="/bjc-r/img/7-recursion/tree-2-script.png" height="267" alt="Geen Afbeelding">&nbsp;
-            <img src="/bjc-r/img/7-recursion/tree-3-script.png" height="267"
-                alt="Geen Afbeelding">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="../../afb/h7/l1/p2-b1.png" height="267" alt="Geen Afbeelding">&nbsp;
+            <img src="../../afb/h7/l1/p2-b2.png" height="267" alt="Geen Afbeelding">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             ... &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <img src="/bjc-r/img/7-recursion/recursiveTree-wo-base.png" height="267" alt="Geen Afbeelding">
+            <img src="../../afb/h7/l1/p2-b3.png" height="267" alt="Geen Afbeelding">
         </p>
 
         <p>
             Maar het werkte niet:<br />
-            <img class="indent" src="/bjc-r/img/7-recursion/treebug.gif" alt="Geen Afbeelding" />
+            <img class="indent" src="../../afb/h7/l1/p2-v1.gif" alt="Geen Afbeelding" />
         </p>
         <div class="dialogue">
             <div>
@@ -60,8 +59,8 @@
                 <p>
                     <em>Alex wijst naar de code van <code>boom 1</code> en naar de figuur die daardoor getekend wordt.
                     </em><br />
-                    <img class="indent" src="/bjc-r/img/7-recursion/tree1.png" alt="Geen Afbeelding" />
-                    <img class="indent" src="/bjc-r/img/7-recursion/tree-level1.png" alt="Geen Afbeelding" />
+                    <img height="150" class="indent" src="../../afb/h7/l1/p2-b4.png" alt="Geen Afbeelding" />
+                    <img height="100" class="indent" src="../../afb/h7/l1/p2-o1.png" alt="Geen Afbeelding" />
                 </p>
             </div>
             <div>
@@ -80,8 +79,8 @@
                 <span>Bo:</span> Laten we eens met een eenvoudige boom nagaan om uit te zoeken hoe dit "basis geval"
                 moet werken. Kijk eens naar <code>boom 3</code>met grootte 40.
                 <br />
-                <img src="/bjc-r/img/7-recursion/tree-3-script.png" alt="Geen Afbeelding">
-                <img class="indent" src="/bjc-r/img/7-recursion/tree3-call.png" alt="Geen Afbeelding" />
+                <img height="300" src="../../afb/h7/l1/p2-b2.png" alt="Geen Afbeelding">
+                <img height="100" class="indent" src="../../afb/h7/l1/p2-b5.png" alt="Geen Afbeelding" />
             </div>
             <div><span>Alex:</span> Oké, na het schoonvegen van het speelveld en naar boven richten en de pen neerzetten
                 zet de sprite 40 stappen en draait daarna 25° naar links. En dan roept hij <code>boom 2</code> aan met
@@ -94,13 +93,12 @@
             <div> <span>Yasmine:</span> Ja, en omdat <code>boom 1</code> klaar is, wordt <code>boom 2</code> beëindigd!
                 Dus het ziet er zo uit als boom 2 klaar is:
             </div>
-            <div class="stagedir"><img src="/bjc-r/img/7-recursion/tree3-drawing-partial.jpg" height="100"
-                    alt="Geen Afbeelding" /></div>
+            <div class="stagedir"><img src="../../afb/h7/l1/p2-o2.jpg" height="100" alt="Geen Afbeelding" /></div>
             <div><span>Alex:</span> Yep. En dan draait het script van <code>boom 3</code> 60° naar rechts en gebruikt
                 weer het hele scripts van <code>boom 2</code> om de andere kant te maken. Daarna draait hij 35° terug en
                 beweegt achteruit naar het allereerste begin.
             </div>
-            <div class="stagedir"><img src="/bjc-r/img/7-recursion/tree3-drawing-complete.jpg" alt="Geen Afbeelding" />
+            <div class="stagedir"><img src="../../afb/h7/l1/p2-o3.jpg" alt="Geen Afbeelding" />
             </div>
             <div><span>Bo:</span> Dus zo eindigt <code>boom 3</code>. Over dat "basisgeval" voor het recursieve
                 script… Het basis geval is het laagste niveau van de recursie, dus dat is zoals <code>boom 1</code>.
@@ -118,15 +116,13 @@
             <li> Corrigeer je recursieve <code>boom</code>-blok zodat het een basis geval bevat om te voorkomen dat het
                 script zichzelf eindeloos aanroept. Hier geven we twee manieren om dat te doen, maar er zijn er meer.
                 Gebruik wat voor jou het beste werkt. <br />
-                <img src="/bjc-r/img/7-recursion/logic-inside-recursive-tree-v1.png" width="405" height="363"
-                    alt="Geen Afbeelding">
-                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img
-                    src="/bjc-r/img/7-recursion/logic-inside-recursive-tree-v2.png" width="405" height="339"
-                    alt="Geen Afbeelding"></li>
+                <img src="../../afb/h7/l1/p2-b6.png" width="405" height="363" alt="Geen Afbeelding">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="../../afb/h7/l1/p2-b7.png" width="405"
+                    height="339" alt="Geen Afbeelding"></li>
             <li>
                 Voer <code> boom niveau: 9 en grootte: 50</code> uit. Als het nu goed werkt, zou je dit moeten
                 krijgen:<br />
-                <img class="indent" src="/bjc-r/img/7-recursion/tree-level9.jpg" alt="Geen Afbeelding" />
+                <img class="indent" src="../../afb/h7/l1/p2-o4.jpg" alt="Geen Afbeelding" />
             </li>
             <li>De tijdsduur om een boom te tekenen neemt <em>heel</em> snel toe met het aantal niveaus, dus we raden 20
                 niveaus af. Probeer maar eens de tijd voor niveau 8 tot en met 12 te meten.</li>
@@ -144,7 +140,7 @@
     </div>
 
     <div class="takeNote">
-        <img class="imageRight" src="/bjc-r/img/icons/take-turns-speaking-mini.gif" alt="Geen Afbeelding">
+        <img class="imageRight" src="../../afb/icons/take-turns-speaking-mini.gif" alt="Geen Afbeelding">
         <p> <em>Recursieve</em> scripts roepen zichtzelf aan. Om ze te laten stoppen moet er een speciaal geval zijn
             wanneer ze zichtzelf <em>niet</em> aanroepen. Dat wordt het <strong>basisgeval</strong> genoemd, een
             eenvoudigere versie van het script dat <em> het blok niet zelf aanroept</em> .
@@ -211,7 +207,7 @@
     </div>
     </div>
     <div class="full-bottom-bar" style="background-position: 20px 3px;">
-        <div class="bottom-nav btn-group"> <a class="btn disabled btn-default backbutton arrow" style="min-width: 90px;"
+        <div class="bottom-nav btn-group"> <a class="btn btn-default backbutton arrow" style="min-width: 90px;"
                 href="H7L1P1.html">Terug</a> <a class="btn btn-default forwardbutton arrow" style="min-width:90px;"
                 href="H7L1P3.html">Volgende</a> </div>
     </div>
