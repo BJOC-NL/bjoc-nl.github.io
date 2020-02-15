@@ -18,12 +18,11 @@
 
 <body>
     <div class="full">
-        <h2>The Base Case</h2>
-        <div class="sidenote">A script that contains itself is <em>recursive</em> .</div>
+        <h2>Het Basisgeval</h2>
+        <div class="sidenote"> Een script dat zichzelf bevat is <em>recursief</em>.</div>
         <p>
-            It seemed to make sense to replace all the look-alike numbered tree scripts with a single recursive script
-            with
-            the same structure:<br />
+            Het leek logisch om alle identieke genummerde boom-scripts te vervangen door een enkelvoudig recursief
+            script met dezelfde structuur:<br />
             <img src="/bjc-r/img/7-recursion/tree-2-script.png" height="267" alt="Geen Afbeelding">&nbsp;
             <img src="/bjc-r/img/7-recursion/tree-3-script.png" height="267"
                 alt="Geen Afbeelding">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -32,193 +31,184 @@
         </p>
 
         <p>
-            But it didn't work:<br />
+            Maar het werkte niet:<br />
             <img class="indent" src="/bjc-r/img/7-recursion/treebug.gif" alt="Geen Afbeelding" />
         </p>
         <div class="dialogue">
             <div>
-                <span>Betsy:</span> <strong>Aaarghhh! What's going wrong?!!</strong>
+                <span>Bo:</span>
+                <strong>Aaarghhhh! Wat gaat er mis?!!!</strong> </div>
+            <div>
+                <span>Alex:</span> Hij gaat maar door!
             </div>
             <div>
-                <span>Alphie:</span> It never stops!
+                <span>Yasmine:</span> Nadat hij naar links draaide zou hij een kleinere boom moeten maken, maar dan
+                <em>zou</em> hij moeten stoppen en naar rechts draaien en daar ook een boom maken.
             </div>
             <div>
-                <span>Gamal:</span> After it turns to the left, it should make a smaller tree, but then it's
-                <em>supposed</em> to finish and turn to the right and do a tree, there, too.
+                <span>Bo:</span> Oh ja, Yasmine! Hij gaat niet naar rechts!
             </div>
             <div>
-                <span>Betsy:</span> Oh, <em>right</em>, Gamal! It's not going <em>right</em>!
+                <span>Yasmine:</span> Yep, bij iedere recursieve aanroep naar <code>boom</code> tekent de sprite steeds
+                kleinere takken totdat hij alleen maar rondjes lijkt te draaien. Hij tekent nooit een rechter tak om de
+                boom af te maken waar hij mee bezig is.
             </div>
             <div>
-                <span>Gamal:</span> Yeah, in each recursive call to <code>tree</code>, the sprite draws smaller and
-                smaller
-                left branches until it seems to be just spinning around in one place. It never draws a right branch to
-                finish the tree it's working on.
-            </div>
-            <div>
-                <span>Alphie:</span> I get it. The original numbered <code>tree 1</code>, <code>tree 2</code>, etc.
-                blocks
-                <em>aren't</em> all the same. The first one, <code>tree 1</code>, is different; it just draws a line,
-                <em>no
-                    branches</em>, and puts the sprite back where it started.
+                <span>Alex:</span> Ik snap het. De oorspronkelijke genummerde blokken van <code>boom 1</code>,
+                <code>boom 2</code>, enzovoort, zijn niet allemaal hetzelfde. De eerste, <code>boom 1</code>, is anders:
+                hij tekent alleen een lijn zonder takken en zet de sprite terug waar hij begon.
                 <p>
-                    <em>Alphie points to the <code>tree 1</code> code and to the figure it draws.</em><br />
+                    <em>Alex wijst naar de code van <code>boom 1</code> en naar de figuur die daardoor getekend wordt.
+                    </em><br />
                     <img class="indent" src="/bjc-r/img/7-recursion/tree1.png" alt="Geen Afbeelding" />
                     <img class="indent" src="/bjc-r/img/7-recursion/tree-level1.png" alt="Geen Afbeelding" />
                 </p>
             </div>
             <div>
-                <span>Betsy:</span> <strong>So our recursive <code>tree</code> block has to do something
-                    <em>different</em>
-                    when the <var>level = 1</var>!</strong>
+                <span>Bo:</span> <strong> Dus ons blok voor de recursieve boom moet iets anders doen als
+                    <var>niveau = 1! </var></strong>
             </div>
             <div>
-                <span>Gamal:</span> Yup! It has to draw just a line without adding another branch.
+                <span>Yasmine:</span> Yep! Hij moet alleen maar een lijn tekenen zonder een andere tak toe te voegen.
             </div>
 
-            <div class="takeNote">This different version for the lowest level of a recursive script is called the
-                <strong>base case</strong>.</div>
+            <div class="takeNote"> Dit speciale geval voor het laagste niveau van een recursief programma heet het
+                <strong>basisgeval</strong>.
+            </div>
 
             <div>
-                <span>Betsy:</span> Let's think through a simple tree to figure out how this "base case" needs to work.
-                Let's look at <code>tree 3</code> with size 40.<br />
+                <span>Bo:</span> Laten we eens met een eenvoudige boom nagaan om uit te zoeken hoe dit "basis geval"
+                moet werken. Kijk eens naar <code>boom 3</code>met grootte 40.
+                <br />
                 <img src="/bjc-r/img/7-recursion/tree-3-script.png" alt="Geen Afbeelding">
                 <img class="indent" src="/bjc-r/img/7-recursion/tree3-call.png" alt="Geen Afbeelding" />
             </div>
-            <div><span>Alphie:</span> Ok, after clearing the stage, pointing up, and putting the pen down, the sprite
-                will
-                move 40 steps and then turn 25&deg; left. And then it will call <code>tree 2</code> with a smaller size.
+            <div><span>Alex:</span> Oké, na het schoonvegen van het speelveld en naar boven richten en de pen neerzetten
+                zet de sprite 40 stappen en draait daarna 25° naar links. En dan roept hij <code>boom 2</code> aan met
+                een kleinere grootte.
             </div>
-            <div><span>Betsy:</span> Right. And <code>tree 2</code>, which is almost the same, will move, turn, and then
-                call <code>tree 1</code>, which <em>just draws a line and goes back</em>. Then, <code>tree 2</code>
-                tells
-                the sprite to turn right 60&deg; and draw another little <code>tree 1</code> and.... </div>
-            <div> <span>Gamal:</span> Yeah, and because <code>tree 1</code> finishes, <em>that lets <code>tree 2</code>
-                    finish!</em> So, it'll look like this when <code>tree 2</code> finishes:</div>
+            <div><span>Bo:</span> Goed. En <code>boom 2</code> , die bijna hetzelfde is, beweegt, draait en roept dan
+                <code>boom 1</code> aan, die alleen maar een lijn tekent en terug gaat. Daarna moet de sprite van
+                <code>boom 2</code> 60° naar rechts draaien en nog een kleine <code>boom 1</code> te tekenen en….
+            </div>
+            <div> <span>Yasmine:</span> Ja, en omdat <code>boom 1</code> klaar is, wordt <code>boom 2</code> beëindigd!
+                Dus het ziet er zo uit als boom 2 klaar is:
+            </div>
             <div class="stagedir"><img src="/bjc-r/img/7-recursion/tree3-drawing-partial.jpg" height="100"
                     alt="Geen Afbeelding" /></div>
-            <div><span>Alphie:</span> Yup. And then the <code>tree 3</code> script turns right 60&deg; and uses the
-                whole
-                <code>tree 2</code> script again to create the other side. Then it'll turn back 35&deg; and move
-                backwards
-                to the very beginning.</div>
+            <div><span>Alex:</span> Yep. En dan draait het script van <code>boom 3</code> 60° naar rechts en gebruikt
+                weer het hele scripts van <code>boom 2</code> om de andere kant te maken. Daarna draait hij 35° terug en
+                beweegt achteruit naar het allereerste begin.
+            </div>
             <div class="stagedir"><img src="/bjc-r/img/7-recursion/tree3-drawing-complete.jpg" alt="Geen Afbeelding" />
             </div>
-            <div><span>Betsy:</span> So that's how <code>tree 3</code> finishes. Now, about that "base case" thing for
-                the
-                recursive <code>tree</code> script... The base case is the lowest level of the recursion, so that's like
-                the
-                <code>tree 1</code>. </div>
-            <div><span>Alphie:</span> Yeah, the <code>tree 1</code> just draws a line and doesn't try to make another
-                tree.
+            <div><span>Bo:</span> Dus zo eindigt <code>boom 3</code>. Over dat "basisgeval" voor het recursieve
+                script… Het basis geval is het laagste niveau van de recursie, dus dat is zoals <code>boom 1</code>.
             </div>
-            <div><span>Betsy:</span> So, we need our <em>recursive</em> <code>tree</code> block to draw a line at level
-                1
-                instead of making more little trees forever.</div>
+            <div><span>Alex:</span> Yep, <code>boom 1</code>. </div> tekent alleen een lijn en gaat niet nog een boom
+            maken.
         </div>
+        <div><span>Bo:</span> Dus we moeten ons <em>recursieve</em> <code>boom</code>-blok een lijn laten tekenen op
+            niveau 1 in plaats van eindeloos kleine bomen te maken.
+        </div>
+    </div>
 
-        <div class="forYouToDo" id="first">
-            <ol>
-                <li>
-                    Correct your recursive <code>tree</code> block so it includes a base case to stop the script from
-                    calling itself forever. Here are two ways you could do that, and there are more. Use whatever makes
-                    most
-                    sense to you.<br />
-                    <img src="/bjc-r/img/7-recursion/logic-inside-recursive-tree-v1.png" width="405" height="363"
-                        alt="Geen Afbeelding">
-                    &nbsp;
-                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img
-                        src="/bjc-r/img/7-recursion/logic-inside-recursive-tree-v2.png" width="405" height="339"
-                        alt="Geen Afbeelding"></li>
-                <li>
-                    Run <code>tree level: 9 size: 50</code>. If it is now working properly, you should get a result like
-                    this:<br />
-                    <img class="indent" src="/bjc-r/img/7-recursion/tree-level9.jpg" alt="Geen Afbeelding" />
-                </li>
-                <li>The time it takes to draw the tree increases <em>very</em> quickly with the number of levels, so we
-                    don't recommend trying 20 levels. But try timing level 8 through level 12.</li>
-            </ol>
-        </div>
+    <div class="forYouToDo" id="first">
+        <ol>
+            <li> Corrigeer je recursieve <code>boom</code>-blok zodat het een basis geval bevat om te voorkomen dat het
+                script zichzelf eindeloos aanroept. Hier geven we twee manieren om dat te doen, maar er zijn er meer.
+                Gebruik wat voor jou het beste werkt. <br />
+                <img src="/bjc-r/img/7-recursion/logic-inside-recursive-tree-v1.png" width="405" height="363"
+                    alt="Geen Afbeelding">
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img
+                    src="/bjc-r/img/7-recursion/logic-inside-recursive-tree-v2.png" width="405" height="339"
+                    alt="Geen Afbeelding"></li>
+            <li>
+                Voer <code> boom niveau: 9 en grootte: 50</code> uit. Als het nu goed werkt, zou je dit moeten
+                krijgen:<br />
+                <img class="indent" src="/bjc-r/img/7-recursion/tree-level9.jpg" alt="Geen Afbeelding" />
+            </li>
+            <li>De tijdsduur om een boom te tekenen neemt <em>heel</em> snel toe met het aantal niveaus, dus we raden 20
+                niveaus af. Probeer maar eens de tijd voor niveau 8 tot en met 12 te meten.</li>
+        </ol>
+    </div>
 
-        <div class="takeItFurther">
-            <ol type="A">
-                <li><strong>Analyze:</strong> <code>tree 1</code> produces just one stick. How many <em>new</em> sticks
-                    (branches) are produced by <code>tree 2</code>? Then, how many <em>new</em> ones are produced by
-                    <code>tree 3</code>? By <code>tree 4</code>? Figure out how many new twigs are added at level 10.
-                    You
-                    can now see why it would take a long time to draw level 20.</li>
-            </ol>
-        </div>
+    <div class="takeItFurther">
+        <ol type="A">
+            <li> <strong>Analyseer</strong>: <code>boom 1</code> maakt maar 1 stok. Hoeveel <em>nieuwe</em> stokken
+                (takken) worden door <code>boom 2</code> gemaakt? En hoeveel worden er door <code>boom 3</code> gemaakt?
+                Door <code>boom 4</code>? Achterhaal hoeveel nieuwe twijgen er worden toegevoegd op niveau 10. Je snapt
+                nu waarom het zo lang duurt om niveau 20 te tekenen.
+            </li>
+        </ol>
+    </div>
 
-        <div class="takeNote">
-            <img class="imageRight" src="/bjc-r/img/icons/take-turns-speaking-mini.gif" alt="Geen Afbeelding">
-            <p><em>Recursive</em> scripts call themselves. In order for them to stop, there must be some special case
-                when
-                they <em>don't</em> call themselves. We call that the <strong>base case</strong>, a simpler version of
-                the
-                script that <em>doesn't call the block itself</em>.</p>
-            <p>There is usually a <em>conditional</em> (like <code>if-else</code>) with two cases: a <em>base case</em>
-                for
-                the lowest level that stops the recursion from going on forever and a <strong>recursive case</strong>
-                that
-                calls the script itself again and again at lower levels until it reaches the base case.</p>
-            <p>When a script <em>does</em> keep recursively calling itself forever (as when the sprite was just spinning
-                around in one place), that's a bug, and we say the program is stuck in an <strong>infinite
-                    loop</strong>.
-            </p>
-        </div>
+    <div class="takeNote">
+        <img class="imageRight" src="/bjc-r/img/icons/take-turns-speaking-mini.gif" alt="Geen Afbeelding">
+        <p> <em>Recursieve</em> scripts roepen zichtzelf aan. Om ze te laten stoppen moet er een speciaal geval zijn
+            wanneer ze zichtzelf <em>niet</em> aanroepen. Dat wordt het <strong>basisgeval</strong> genoemd, een
+            eenvoudigere versie van het script dat <em> het blok niet zelf aanroept</em> .
+        </p>
+        <p> Gewoonlijk is er een <em> voorwaarde</em> (zoals <code>if-else</code>) met 2 gevallen: een
+            <em>basisgeval</em> voor het laagste niveau die voorkomt dat de recursie voor altijd doorgaat en een
+            <strong>recursief geval</strong> dat het script steeds weer aanroept totdat het basis geval bereikt wordt.
+        </p>
+        <p> Als een script zichzelf wel steeds recursief blijft aanroepen (zoals wanneer het script blijft ronddraaien
+            op dezelfde plek), is dat een bug en dan zeggen we dat het programma vastzit in een
+            <strong>oneindige lus</strong>.
+        </p>
+    </div>
 
-        <div class="forYouToDo">
-            <ol start="4">
-                <li>
-                    Add a global <var>count</var> variable, incremented first thing in the <code>tree</code> block, to
-                    record the number of times that <code>tree</code> is called when running different levels. Make a
-                    table.
-                    What pattern do you find?
-                    <table class="center bordered"
-                        summary="table showing the number of times that TREE runs (this number is labeled 'count') for a TREE of a given level">
-                        <tr>
-                            <th scope="col" style="font-weight:normal;"><var>level</var></th>
-                            <th scope="col" style="font-weight:normal;"><var>count</var></th>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>3</td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>7</td>
-                        </tr>
-                        <tr>
-                            <td>4</td>
-                            <td>?</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>etc.</td>
-                            <td>etc.</td>
-                        </tr>
-                    </table>
-                </li>
-                <div class="endnote">This is an example of exponential growth. This kind of growth for an algorithm is
-                    considered to take <em>unreasonable time</em> as you saw in <a
-                        href="/bjc-r/cur/programming/5-algorithms/3-timing-experiments/3-classifying-algorithms.html?topic=nyc_bjc%2F5-algorithms.topic&course=bjc4nyc.html&novideo&noassignment">Unit
-                        5 Lab 3: Classifying Algorithms</a>. This is why we
-                    suggested
-                    <em>against</em> trying 20 levels. </div>
-            </ol>
-        </div>
+    <div class="forYouToDo">
+        <ol start="4">
+            <li> Voeg een globale variabele <var>teller</var> toe, die als eerste wordt verhoogd in het
+                <code>boom</code>blok om het aantal keren te tellen dat <code>boom</code> wordt aangeroepen als er
+                verschillende niveaus gerund worden. Maak een tabel. Welk patroon ontdek je?
+                <table class="center bordered"
+                    summary="table showing the number of times that TREE runs (this number is labeled 'count') for a TREE of a given level">
+                    <tr>
+                        <th scope="col" style="font-weight:normal;"><var>niveau</var></th>
+                        <th scope="col" style="font-weight:normal;"><var>teller</var></th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>?</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>etc.</td>
+                        <td>etc.</td>
+                    </tr>
+                </table>
+            </li>
+            <div class="endnote">
+                Dit is een voorbeeld van exponentiële groei. Deze soort groei in een algoritme neemt <em>onredelijk</em>
+                veel tijd in beslag, zoals je zag in
+                <a href="../Unit 5 - Algorithms and Simulations/H5L3P3.html"> Hoofdstuk 5 les 3: Algoritmen
+                    classificeren</a>.
+                Dit is de reden waarom we adviseerden om niet 20 niveaus te proberen.
+            </div>
+        </ol>
+    </div>
     </div>
     <div class="full-bottom-bar" style="background-position: 20px 3px;">
         <div class="bottom-nav btn-group"> <a class="btn disabled btn-default backbutton arrow" style="min-width: 90px;"
