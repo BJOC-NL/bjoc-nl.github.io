@@ -4,8 +4,8 @@
 <head>
     <link rel="icon" href="../../BJOC-NL-logo.png" type="image/png">
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <script type="text/javascript" src="../../js+css/llab/loader.js"></script>
-    <script type="text/javascript" src="../../js+css/gifffer.min.js"></script>
+    <script type="text/javascript" src="../../js+css/llab/loader.js"> </script>
+    <script type="text/javascript" src="../../js+css/gifffer.min.js"> </script>
     <script type="text/javascript">
         window.onload = function () {
             Gifffer();
@@ -13,25 +13,26 @@
         }
     </script>
     <link rel="stylesheet" type="text/css" href="../../js+css/css/bjc-gifffer.css">
-    <title>Unit 7 Lab 2: Recursion Projects, Page 1</title>
+    <title> Hoofdstuk 7 Les 2: Recursieproject, Pagina 1</title>
 </head>
 
 <body>
     <div class="full">
-        <h2>Triangle Fractal</h2>
-        <div class="sidenote">This shape is called a "<a
-                href="https://duckduckgo.com/?q=Sierpinski+gasket&iax=1&ia=images" target="_blank">Sierpinski
-                (sher-PIN-ski) gasket</a>." </div>
+        <h2> Driehoekfractaal</h2>
+        <div class="sidenote"> Deze vorm wordt een "<a
+                href="https://duckduckgo.com/?q=Sierpinski+gasket&iax=1&ia=images" target="_blank"> Sierpinski
+                (sjer-PIN-ski) gasket</a> " genoemd. </div>
         <p>
             <br />
             <img class="indent noshadow" src="/bjc-r/img/7-recursion/triangle-fractal.gif" alt="Geen Afbeelding" />
         </p>
         <div class="forYouToDo" id="first">
             <ol>
-                <div class="newProject"><span class="text">"U7L2-TriangleFractal"</span><img
-                        src="/bjc-r/img/icons/new-project-called.png" alt="Geen Afbeelding" /></div>
+                <div class="newProject"> <span class="text"> "H7L2-Driehoekfractaal"</span> <img
+                        src="../../afb/icons/NieuwProjectSlaOp.png" alt="Geen Afbeelding" /> </div>
                 <li>
-                    First, write a block that takes a <var>size</var> as input and draws an equilateral triangle.<br />
+                    Schrijf eerst een blok dat <var> grootte</var> als invoer heeft en een gelijkhoekige driehoek
+                    tekent.<br />
                     <img class="indent" src="/bjc-r/img/7-recursion/triangle-size-40.png" alt="Geen Afbeelding" />
                     <img class="indent" src="/bjc-r/img/7-recursion/triangle-size-40-drawing.jpg"
                         alt="Geen Afbeelding" />
@@ -40,49 +41,53 @@
             </ol>
         </div>
 
-        <h3>Growing the Triangle into the Fractal</h3>
+        <h3> De Driehoek tot een Fractaal Laten Groeien.</h3>
         <p>
-            <code>triangle</code> is the base case. You can modify it, or create a new block with <var>level</var> and
-            <var>size</var> inputs just like <code>tree</code>:<br />
+            <code> driehoek </code> is het basis geval. Je kan het aanpassen, of een nieuw blok maken met invoer voor
+            <var> niveau</var> en <var> grootte</var> op dezelfde manier als <code> boom</code> : <br />
             <img class="indent" src="/bjc-r/img/7-recursion/tri-frac-1-head.png" alt="Geen Afbeelding" />
         </p>
         <p>
-            If the level is 1, we should see only the triangle:<br />
+            Als het niveau 1 is, moet alleen de driehoek te zien zijn: <br />
             <img class="indent noshadow" src="/bjc-r/img/7-recursion/tri-frac-1-level-1.png" alt="Geen Afbeelding" />
         </p>
-        <div class="comment">Paul, do you not like my click-for-comment on principle? --bh</div>
         <p>
-            Otherwise, a half-size child buds at the end of each side of the parent. At level 2, it should look like
-            this:<br />
+            Anders ontstaat er een afstammeling aan het einde van elke kant van de voorouder. Op niveau 2 moet het er zo
+            uit zien:<br />
             <img class="indent noshadow" src="/bjc-r/img/7-recursion/tri-frac-1-level-2.png" alt="Geen Afbeelding" />
         </p>
         <p>
-            And at level 3, you should see this:<br />
+            En op niveau 3 moet je dit te zien krijgen:<br />
             <img class="indent noshadow" src="/bjc-r/img/7-recursion/tri-frac-1-level-3.png" alt="Geen Afbeelding" />
         </p>
 
         <div class="forYouToDo">
             <ol start="2">
-                <li><img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Geen Afbeelding" />
-                    Write the code for <code>triangle fractal</code>.</li>
-                <li>Using a <code>warp</code> block (to save time) try a big level number, like 8 or 9.</li>
+                <li> <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Geen Afbeelding" />
+                    Schrijf de code voor <code> driehoekfractaal</code> .
+                </li>
+                <li> Gebruik het <code>warp</code>blok (om tijd te besparen) en probeer dan een hoog getal voor het
+                    niveau, zoals
+                    8 of 9.
+                </li>
                 <div class="endnote">
-                    The <code>warp</code> block (in the yellow Control palette) makes the scripts inside it run faster
-                    by
-                    not letting any other scripts run or updating the display until it's finished.<br />
+                    Het <code> warp</code> blok (in het gele Besturenpalet) voert het script dat erin staat sneller
+                    uitvoeren doordat het geen enkel ander script laat lopen of het speelveld laat updaten totdat het
+                    script in het <code>warp</code>blok klaar is. <br />
                     <img class="indent" src="/bjc-r/img/7-recursion/tri-frac-1-in-warp.png" alt="Geen Afbeelding" />
                 </div>
             </ol>
         </div>
 
         <div class="ifTime">
-            <p>In order to draw the parent triangle, the sprite must turn 120&deg; between sides. For the fractal you
-                just
-                created, that turning happens <em>after</em> drawing the child, but you could turn <em>before</em> the
-                recursive call, or split the turn, with part before and part after the recursive call.</p>
+            <p> Om de voorouder driehoek te laten tekenen moet de sprite 120° draaien tussen de zijden. Voor de fractaal
+                die je zojuist maakte, gebeurde dat draaien <em>na</em> het tekenen van de nakomeling, maar je zou ook
+                <em>vóór</em> de recursieve aanroep kunnen draaien, of je kan de draai splitsen met een deel voor en
+                een deel na de recursieve aanroep.
+            </p>
             <ol start="4">
                 <li>
-                    Try some modifications like these:<br />
+                    Probeer een paar aanpassingen zoals deze:<br />
                     <img class="indent" src="/bjc-r/img/7-recursion/triangle-fractal-variation01.png"
                         alt="Geen Afbeelding" />
                     <img class="indent" src="/bjc-r/img/7-recursion/triangle-fractal-variation02.png"
@@ -92,22 +97,22 @@
                 </li>
             </ol>
         </div>
-        <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
+        <div class="takeItFurther"> <a name="further" class="anchor"> &nbsp;</a>
             <ol type="A">
-                <li>Use <code>for</code> to make an animation that cycles through different turning angle arrangements
-                    (that
-                    is, 0&deg; and 120&deg;, then 1&deg; and 119&deg;, then 2&deg; and 118&deg;, etc.).</li>
-                <li>Experiment with the scale factor for the <var>size</var> of the recursive calls. A couple of
-                    interesting
-                    values are <span class="katex">\frac{<var>1</var>}{3}</span> and <span
-                        class="katex">\frac{<var>1</var>}{\sqrt{3}}.</li>
+                <li> Gebruik <code>herhaal </code> om een animatie te maken die door verschillende draai sets wisselt
+                    (dat houdt in: 0° en 120°, daarna 1° and 119°, dan 2° and 118°, enz.).
+                </li>
+                <li> Experimenteer met de schalingsfactor voor de
+                    <var>grootte </var> van de recursieve aanroepen. Een paar interessante waarden zijn
+                    <span class="katex"> \frac{<var> 1</var> }{3}</span> and <span class="katex"> \frac{<var>
+                            1</var> }{\sqrt{3}}.</li>
             </ol>
         </div>
     </div>
     <div class="full-bottom-bar" style="background-position: 20px 3px;">
         <div class="bottom-nav btn-group"> <a class="btn btn-default backbutton arrow" style="min-width: 90px;"
-                href="H7L1P5.html">Terug</a> <a class="btn btn-default forwardbutton arrow" style="min-width:90px;"
-                href="H7L2P2.html">Volgende</a> </div>
+                href="H7L1P5.html"> Terug</a> <a class="btn btn-default forwardbutton arrow" style="min-width:90px;"
+                href="H7L2P2.html"> Volgende</a> </div>
     </div>
 </body>
 
