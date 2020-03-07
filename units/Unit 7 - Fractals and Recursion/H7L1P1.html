@@ -25,7 +25,7 @@
                 bestaat uit meerdere kopieën of kleine variaties van dezelfde vorm. In deze afbeelding heeft de groene
                 tak ongeveer dezelfde
                 vorm als het hele plaatje.</div>
-            <img class="noshadow" src="/bjc-r/img/7-recursion/greentree.gif" alt="Geen Afbeelding" /><br />
+            <img class="noshadow" src="../../afb/h7/l1/p1-v1.gif" alt="Geen Afbeelding" /><br />
             In deze les, ga je een boom bouwen met <em>blokken binnen blokken</em> om takken te maken. Elke tak wordt in
             essentie een kleinere kopie van dezelfde boom.
         </p>
@@ -33,23 +33,25 @@
         <div class="forYouToDo" id="first">
             <ol>
                 <div class="newProject"> <span class="text">"H7L1-Boom"</span><img
-                        src="/bjc-r/img/icons/new-project-called.png" alt="Geen Afbeelding" /></div>
+                        src="../../afb/icons/NieuwProjectSlaOp.png" alt="Geen Afbeelding" /></div>
                 <li>
                     Bouw het eerste niveau:
                     <ol>
                         <li>
-                            Maak dit <img src="/bjc-r/img/7-recursion/tree-1.png" alt="Geen Afbeelding"> blok: <br />
-                            <img class="indent" src="/bjc-r/img/7-recursion/tree1.png" alt="Geen Afbeelding" /><br />
+                            Maak dit <img height="45" src="../../afb/h7/l1/p1-b2.png" alt="Geen Afbeelding"> blok:
+                            <br />
+                            <img width="300" class="indent" src="../../afb/h7/l1/p1-b1.png"
+                                alt="Geen Afbeelding" /><br />
                             Dit ziet er lachwekkend simpel uit, maar het wordt straks interessanter.
                         </li>
                         <li>
-                            Laat de sprite naar boven wijzen, zet de pen neer en voer <img
-                                src="/bjc-r/img/7-recursion/tree-1(50).png" alt="Geen Afbeelding"> uit.
+                            Laat de sprite naar boven wijzen, zet de pen neer en voer
+                            <img height="45" src="../../afb/h7/l1/p1-b3.png" alt="Geen Afbeelding"> uit.
                             Dit zou het resultaat moeten zijn:: <br />
-                            <img class="indent" src="/bjc-r/img/7-recursion/tree-level1.png" alt="Geen Afbeelding" />
+                            <img class="indent" src="../../afb/h7/l1/p1-o1.png" alt="Geen Afbeelding" />
                         </li>
-                        <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png"
-                                alt="Geen Afbeelding" /> Waar begint je sprite? Welke kant wijst hij op? Waar stopt hij?
+                        <li><img class="inline" src="../../afb/icons/PraatMetJeBuur-mini.png" alt="Geen Afbeelding" />
+                            Waar begint je sprite? Welke kant wijst hij op? Waar stopt hij?
                         </li>
                     </ol>
                 </li>
@@ -58,11 +60,11 @@
                 </div>
 
                 <li>Bouw
-                    <img src="/bjc-r/img/7-recursion/tree-2.png" alt="Geen Afbeelding">
+                    <img height="45" src="../../afb/h7/l1/p1-b4.png" alt="Geen Afbeelding">
                     die gebruikt maakt van
-                    <img src="/bjc-r/img/7-recursion/tree-1(50).png" alt="Geen Afbeelding">
-                    voor z'n zijtakken.<br /><img class="indent" src="/bjc-r/img/7-recursion/tree2.png"
-                        alt="Geen Afbeelding" />
+                    <img height="45" src="../../afb/h7/l1/p1-b3.png" alt="Geen Afbeelding">
+                    voor z'n zijtakken.<br />
+                    <img width="300" class="indent" src="../../afb/h7/l1/p1-b5.png" alt="Geen Afbeelding" />
                 </li>
                 <li>Schrijf de exacte plaats en richting op van de sprite op het moment dat de eerste <code>boom 1
                     </code> stopt. Waarom is dat belangrijk voor <code> boom 2 </code> om te werken?</li>
@@ -82,10 +84,10 @@
                 <li>
                     Als je het leuk vindt, maak dan ook een <code>boom 5</code>blok waarin je het
                     <code>boom 4</code>blok gebruikt.
-                    <img src="/bjc-r/img/7-recursion/tree-5(50).png" alt="Geen Afbeelding">
+                    <img height="45" src="../../afb/h7/l1/p1-b6.png" alt="Geen Afbeelding">
                     uitvoeren moet het volgende resultaat leveren::<br />
-                    <img class="indent" src="/bjc-r/img/7-recursion/tree5.png" alt="Geen Afbeelding" />
-                    <img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Geen Afbeelding" />
+                    <img class="indent" src="../../afb/h7/l1/p1-o2.png" alt="Geen Afbeelding" />
+                    <img class="imageRight" src="../../afb/icons/HetIsNuEenGoedMoment.png" alt="Geen Afbeelding" />
                 </li>
             </ol>
         </div>
@@ -93,8 +95,7 @@
         <p> Deze blokken zien er allemaal hetzelfde uit, behalve dat <code>boom 5</code> gebruik maakt van
             <code>boom 4</code>, terwijl <code>boom 4</code> gebruik maakt van <code>boom 3</code>, enzovoorts. We
             kunnen ons afvragen of we al deze blokken kunnen vervangen door een enkel boomblok, waarbij een parameter
-            het
-            veranderende aantal aangeeft.
+            het veranderende aantal aangeeft.
         </p>
         <div class="takeNote"> Als je een blok in zichzelf gebruikt, heet dat <strong>recursie</strong>.
         </div>
@@ -104,14 +105,14 @@
                 <li>Hier zie je het algemene idee voor de <em>recursieve</em> recursieve versie van
                     <code>boom</code>.
                     Maak dit zelf:<br />
-                    <img class="indent" src="/bjc-r/img/7-recursion/tree-nobase.png" alt="Geen Afbeelding" />
+                    <img width="600" class="indent" src="../../afb/h7/l1/p1-b7.png" alt="Geen Afbeelding" />
                 </li>
                 <li>
                     Voer nu <code>boom niveau 9 grootte: 50</code> uit. Het werkt nog niet. Dit is wat je ziet:
                     <br />
-                    <img class="indent" src="/bjc-r/img/7-recursion/treebug.gif" alt="Geen Afbeelding" />
+                    <img class="indent" src="../../afb/h7/l1/p1-v2.gif" alt="Geen Afbeelding" />
                 </li>
-                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Geen Afbeelding" />
+                <li><img class="inline" src="../../afb/icons/PraatMetJeBuur.png" alt="Geen Afbeelding" />
                     Probeer de fout in het script te vinden. Wat gaat er mis?</li>
             </ol>
         </div>
