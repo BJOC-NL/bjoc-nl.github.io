@@ -22,12 +22,12 @@
 
         <div class="learn">
             <p><strong>Op deze pagina,</strong> you will learn about a commonly used method of cryptography that is more
-                secure.</p>
+                secure. </p>
         </div>
 
         <p>The fundamental problem that cryptography is trying to solve is how to get a message to your friend that
             can't be intercepted by your enemies. Symmetric encryption has a fundamental weakness: the encryption key is
-            itself a message that needs to be send to your friend but not intercepted by your enemy.</p>
+            itself a message that needs to be send to your friend but not intercepted by your enemy. </p>
         <div class="sidenoteBig">
             The public key idea was invented and first published by Whitfield Diffie and Martin Hellman in 1976. It
             turns out that it had been invented earlier but kept secret by governments.
@@ -36,7 +36,7 @@
             from one person to another. Instead, each person has <em>two</em> keys: a private key known only to that
             person and a public key that everyone in the world is allowed to know. If Bob wants to send Alice a secret
             message, he encrypts it with Alice's public key. Then no one but Alice can decrypt it. Only her private key
-            can undo the encryption, and no one <em>can figure out</em> the private key from the public key.</p>
+            can undo the encryption, and no one <em>can figure out</em> the private key from the public key. </p>
         <img class="imageRight" src="../../bjc-r/img/icons/headphones-mini.png" alt="Geen Afbeelding" />
         <div class="sidenote">If your connection blocks YouTube, <a
                 href="http://scratch.mit.edu/discuss/youtube/YEBfamv-_do" target="_blank">watch the video here</a>, but
@@ -68,7 +68,7 @@
         </div>
         <div class="endnote">
             <a href="#hint-digital-signatures" data-toggle="collapse">It's also possible to use the <em>private</em> key
-                for encryption and the <em>public</em> key for decryption...</a>
+                for encryption and the <em>public</em> key for decryption... </a>
             <div id="hint-digital-signatures" class="collapse">That's no good for secret messages (why not?), but it's
                 useful for <strong>digital signatures</strong>. I use my private key to encrypt a message; you use my
                 public key to decrypt it. If you get a meaningful message as the result, that proves that the message
@@ -76,17 +76,17 @@
                 with my private key to sign it, then encrypt the encrypted result <em>again</em> with your public key to
                 keep it secret. You decrypt it twice, first with your private key and then with my public key.) This is
                 a nice example of <em>composition of functions:</em> the output from the first encryption is the input
-                to the second encryption.</div>
+                to the second encryption. </div>
         </div>
 
         <h3>Secure HTTP</h3>
         <p>Secure HTTP connections (those that use <strong>https://</strong> instead of <strong>http://</strong>) use a
             protocol called <em>Transport Layer Security</em> (TLS) or maybe an older version called <em>Secure Sockets
                 Layer</em> (SSL). Both are based on public key cryptography. With SSL/TLS, the site you are visiting
-            sends its public key, and your browser uses it to encrypt the information you send.</p>
+            sends its public key, and your browser uses it to encrypt the information you send. </p>
         <div class="vocabFullWidth">
             <p><strong>SSL/TLS</strong> (secure sockets layer/transport layer security) is the standard used for
-                cryptographically secured information transfer on the Internet.</p>
+                cryptographically secured information transfer on the Internet. </p>
         </div>
         <br clear="all" />
 
@@ -98,7 +98,7 @@
             allowfullscreen class="indent"></iframe>
 
         <div class="endnote">
-            <a href="#hint-open-standards" data-toggle="collapse">Open standards help security...</a>
+            <a href="#hint-open-standards" data-toggle="collapse">Open standards help security... </a>
             <div id="hint-open-standards" class="collapse">
                 <p>In order to work properly, a cryptographic function has to be easy for the private key holder to
                     invert, but hard for anyone else to invert. How do we know what "hard" means? For example, current
@@ -111,7 +111,7 @@
                     is that the method used&mdash;the cryptographic function&mdash;is openly published. This may seem
                     strange; if you want to keep secrets, shouldn't you keep the technique secret, too? But secret
                     algorithms can have weaknesses that go undiscovered until some bad guy exploits them. Open standards
-                    allow an algorithm to be studied <em>before</em> it is used in practice.</p>
+                    allow an algorithm to be studied <em>before</em> it is used in practice. </p>
             </div>
         </div>
 
@@ -119,26 +119,26 @@
         <h3>Certificate Authorities</h3>
         <div class="vocabBig">
             <p><strong>Certificate authorities</strong> issue digital certificates that verify who owns the encryption
-                keys used for secured communications.</p>
+                keys used for secured communications. </p>
         </div>
         <p>Public key cryptography doesn't solve all the problems, because an eavesdropper (say, Eve) might publish a
             fake public key pretending to be Alice. Then Bob might accidentally encrypt their message for Alice using
             the Eve's fake key, and then the Eve can read the message. In practice, this is partly fixed by relying on
             trusted third parties, called <em>Certificate Authorities</em>, to certify public keys. In your browser's
-            security options you can see all of the Certificate Authorities that it trusts.</p>
+            security options you can see all of the Certificate Authorities that it trusts. </p>
         <div class="endnote">But this just pushes the problem back a layer. How does the Certificate Authorities know
             that you are who you say you are? The problem is a little bit like how your bank knows that you who you say
             you are when you call them on the phone. Namely, they ask you questions for which they hope only you know
-            the answer.</div>
+            the answer. </div>
 
         <div class="takeItFurther">
             <ol type="A">
                 <li>Read "The Key Agreement Protocol" and "Public Keys for Private Messages" (<a
                         href="http://www.bitsbook.com/wp-content/uploads/2008/12/B2B_3.pdf#page=199"
                         target="_blank"><em>Blown to Bits</em> pages 181-183</a>) for more details on Public Key
-                    Encryption.</li>
+                    Encryption. </li>
                 <li>Do some research about modern encryption systems such as the RSA cryptosystem, which is used to do
-                    secure transactions on the Internet.</li>
+                    secure transactions on the Internet. </li>
             </ol>
         </div>
     </div>
