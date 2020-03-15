@@ -4,8 +4,8 @@
 <head>
     <link rel="icon" href="../../BJOC-NL-logo.png" type="image/png">
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <script type="text/javascript" src="../../js+css/llab/loader.js"></script>
-    <script type="text/javascript" src="../../js+css/gifffer.min.js"></script>
+    <script type="text/javascript" src="../../js+css/llab/loader.js"> </script>
+    <script type="text/javascript" src="../../js+css/gifffer.min.js"> </script>
     <script type="text/javascript">
         window.onload = function () {
             Gifffer();
@@ -13,88 +13,100 @@
         }
     </script>
     <link rel="stylesheet" type="text/css" href="../../js+css/css/bjc-gifffer.css">
-    <title>Unit 4 Lab 3: Cybersecurity, Page 2</title>
+    <title> Unit 4 Lab 3: Cybersecurity, Page 2</title>
 </head>
 
 <body>
     <div class="full">
-        <h2>Symmetric Cryptography</h2>
+        <h2> Symmetric Cryptography</h2>
         <div class="learn">
-            <p><strong>Op deze pagina,</strong> you will learn a simple method of symmetric encryption. </p>
+            <p> <strong> Op deze pagina,</strong> ga je een simpele methode voor symmetrsiche versleuteling leren. </p>
         </div>
 
 
         <p>
-            You might have used a <strong>substitution cipher</strong> to encode your message, substituting each letter
+            Je hebt misschien een <strong> vervanging-cipher</strong> gebruikt om je bericht te coderen, waarbij je
+            iedere letter in het alfabet vervangt met een andere letter. Je kan letters vervangen in elke volgorde:
+
+            You might have used a <strong> substitution cipher</strong> to encode your message, substituting each letter
             of the alphabet with some other letter. You could substitute letters in any order, like this:
-            <div class="indent fixedwidth">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
-            <div class="indent fixedwidth">PQVFUBZOTHWYELIXRNAMGDSCKJ<img class="noshadow nopad"
-                    src="../../bjc-r/img/4-internet/this-is-the-key.jpg" alt="Geen Afbeelding" /></div>
-            That's called a <strong>simple substitution cipher</strong>.
+            <div class="indent fixedwidth"> ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+            <div class="indent fixedwidth"> PQVFUBZOTHWYELIXRNAMGDSCKJ<img class="noshadow nopad"
+                    src="../../bjc-r/img/4-internet/this-is-the-key.jpg" alt="Geen Afbeelding" /> </div>
+            Dat heet een <strong> simpele vervanging-cipher</strong> .
         </p>
         <p>
-            An easier way is to just <em>shift</em> the letters in order. For example, this is a shift of 3:
-            <div class="indent fixedwidth">ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
-            <div class="indent fixedwidth">DEFGHIJKLMNOPQRSTUVWXYZABC<img class="noshadow nopad"
-                    src="../../bjc-r/img/4-internet/this-is-the-key.jpg" alt="Geen Afbeelding" /></div>
-            That's a special kind of simple substitution cipher called a <strong>Caesar Cipher</strong> (named for
-            Julius Caesar) or a <strong>shift cipher</strong>.
+            Een makkelijkere manier is om gewoon iedere letter in volgorde te <em> verschuiven</em> . Dit is
+            bijvoorbeeld
+            een verschuiving van 3:
+            <div class="indent fixedwidth"> ABCDEFGHIJKLMNOPQRSTUVWXYZ</div>
+            <div class="indent fixedwidth"> DEFGHIJKLMNOPQRSTUVWXYZABC<img class="noshadow nopad"
+                    src="../../bjc-r/img/4-internet/this-is-the-key.jpg" alt="Geen Afbeelding" /> </div>
+            Dat is een speciale soort simpele vervanging-cipher <strong> Caesarcipher</strong> genaamd, vernoemd naar
+            Julius Caesar).
         </p>
-        <div class="takeNote">Substitution ciphers are examples of <strong>symmetric encryption</strong> because they
-            use the <em>same key</em> for both encryption and decryption. There are more complicated methods of
-            symmetric encryption, but they always use the same key. </div>
-        <div class="endnote">Up through the 1970s, symmetric encryption was all people had, but they used much more
-            complicated algorithms than substitution ciphers. These days, simple substitution ciphers are used as
-            puzzles in magazines, but breaking the German Enigma cipher in World War II, which you'll learn about in
-            Unit 5, took a building full of mathematicians and computing equipment. </div>
+        <div class="takeNote"> Vervanging-ciphers zijn voorbeelden van <strong> symmetrische
+                versleuteling</strong> omdat ze dezelfde sleutel gebruiken voor versleuteling en ontcijfering. Er zijn
+            ingewikkeldere manieren voor symmetrische versleuteling.
+        </div>
+        <div class="endnote"> Tot de jaren 70 was symmetrsiche versleuteling de enige manier die er was maar ze
+            gebruikte veel ingewikkeldere algoritmes dan vervanging-ciphers. Tegenwoordig worden deze ciphers alleen
+            gebruikt voor puzzels in tijdschriften, maar voor het oplossen van de Duitse Enigma-cipher in de Tweede
+            Wereldoorlog, waar je over zal leren in Hoofdstuk 5, waren vele wiskundigen en computers voor nodig.
+        </div>
 
         <div class="forYouToDo" id="first">
             <ol>
-                <img class="inline" src="../../bjc-r/img/icons/talk-with-your-partner.png"
-                    alt="Geen Afbeelding" /><br />
-                <li>The person who receives your message has to know how to decode it. Describe an algorithm for
-                    decoding a message that was created with a Caesar (shift) cipher. </li>
+                <img class="inline" src="../../bjc-r/img/icons/talk-with-your-partner.png" alt="Geen Afbeelding" />
+                <br />
+                <li> De persoon die je bericht krijgt moet weten hoe hij het moet decoderen. Beschrijf een algoritme om
+                    berichten te decoderen die gecodeerd zijn met een Caesar-cipher
+                </li>
             </ol>
         </div>
 
         <div class="ifTime">
             <ol start="2">
-                <li>If you intercepted a message that was created with a simple substitution cipher, how might you
-                    decode it without knowing the key?</li>
-                <li>What are some ways the sender and receiver could make the encryption more secure than a simple
-                    substitution cipher?</li>
+                <li> Als je een bericht onderschept dat versleuteld is met een simpele vervanging-cipher, hoe kan je het
+                    dan decoderen zonder dat je de sleutel weet?
+                </li>
+                <li> Wat zijn manieren voor de zender en ontvanger om de versleuteling veiliger te maken dan een simpele
+                    vervanging-cipher?
+                </li>
             </ol>
         </div>
 
         <div class="takeItFurther">
             <ol type="A">
                 <li>
-                    A simple substitution cipher is relatively easy to break because some letters are used more
-                    frequently than others.
+                    Een simpele vervanging-cipher is vrij gemakkelijk om te breken omdat sommige letters vaker gebruikt
+                    worden dan andere.
+
                     <ul>
-                        <li>Read about Al-Kindi, the Arabic philosopher and mathematician who first described the
-                            frequency analysis method of code-breaking, in "Breaking Substitution Ciphers" (<a
-                                href="http://www.bitsbook.com/wp-content/uploads/2008/12/B2B_3.pdf#page=185"
-                                target="_blank"><em>Blown to Bits</em> pages 166-169</a>). </li>
-                        <li>This method is still useful today, even with better cryptography tools: <a
+                        <li> Lees over Al-Kindi, de Arabische filosoof en wiskundige die als eerste beschreef hoe je met
+                            frequentie-analyse codes kon breken in "Breaking Substitution Ciphers"
+                            (<a href="http://www.bitsbook.com/wp-content/uploads/2008/12/B2B_3.pdf#page=185"
+                                target="_blank"> <em> Blown to Bits</em> pagina's 166-169</a> ). </li>
+                        <li> Deze methode wordt tegenwoordig nog steeds gebruikt: <a
                                 href="http://www.forbes.com/sites/thomasbrewster/2015/09/03/microsoft-dumb-attacks-cracks-next-gen-cryptography/"
-                                target="_blank">How a 1200-year-old Hacking Technique Can Already Crack Tomorrow's
-                                Encrypted Vaults (Forbes, 9/3/15)</a></li>
+                                target="_blank"> How a 1200-year-old Hacking Technique Can Already Crack Tomorrow's
+                                Encrypted Vaults (Forbes, 9/3/15)</a> </li>
                     </ul>
                 </li>
 
 
-                <li>Read "Secret Keys and One-Time Pads" (<a
-                        href="http://www.bitsbook.com/wp-content/uploads/2008/12/B2B_3.pdf#page=187"
-                        target="_blank"><em>Blown to Bits</em> pages 169-173</a>) to learn about Vigenère ciphers and
-                    methods used during World War 2 and the Cold War. </li>
+                <li> Lees "Secret Keys and One-Time Pads" (<a
+                        href="http://www.bitsbook.com/wp-content/uploads/2008/12/B2B_3.pdf#page=187" target="_blank">
+                        <em> Blown to Bits</em> pages 169-173</a> ) om te leren over Vigenère-ciphers en
+                    de methodes die gebruikt werden tijdens de Tweede Wereldoorlog en de Koude Oorlog.
+                </li>
             </ol>
         </div>
     </div>
     <div class="full-bottom-bar" style="background-position: 20px 3px;">
         <div class="bottom-nav btn-group">
-            <a class="btn btn-default backbutton arrow " style="min-width: 90px;" href="H4L3P1.html">Terug</a>
-            <a class="btn btn-default forwardbutton arrow" style="min-width:90px;" href="H4L3P3.html">Volgende</a>
+            <a class="btn btn-default backbutton arrow " style="min-width: 90px;" href="H4L3P1.html"> Terug</a>
+            <a class="btn btn-default forwardbutton arrow" style="min-width:90px;" href="H4L3P3.html"> Volgende</a>
         </div>
     </div>
 </body>
