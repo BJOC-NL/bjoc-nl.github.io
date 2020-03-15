@@ -54,6 +54,7 @@
 * referenties naar AP CS Exam/ Curriculum weghalen.
 * Er zijn een aantal links naar pagina's, dit zijn nu links binnen de files, e.g. `: ../../units ... /h1l3p1.html`. Dit is miss niet ideaal?
 * H2L5P2 heeft een strip, die heb ik vertaald, maar dit valt eigenlijk niet onder copyright..
+* H4L1P1 heeft link naar extra pagina ("zoals HTML"),is nu weggehaald
 
 ## Hypothesis
 
