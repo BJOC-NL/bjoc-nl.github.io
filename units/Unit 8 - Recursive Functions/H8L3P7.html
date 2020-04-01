@@ -2,36 +2,47 @@
  <html lang="en">
 
  <head>
-     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-     <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
-     <title>Unit 8 Lab 3: Recursive Reporter Projects, Page 7</title>
+     <link rel="icon" href="../../BJOC-NL-logo.png" type="image/png">
+     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+     <script type="text/javascript" src="../../js+css/llab/loader.js"></script>
+     <script type="text/javascript" src="../../js+css/gifffer.min.js"></script>
+     <script type="text/javascript">
+         window.onload = function () {
+             Gifffer();
+             Inhoudsopgave();
+         }
+     </script>
+     <link rel="stylesheet" type="text/css" href="../../js+css/css/bjc-gifffer.css">
+     <title>Hoofdstuk 8 Les 3: Recursieverapporteurprojecten, Pagina 7</title>
  </head>
 
  <body>
-
-     <h2>Subsets and Efficiency</h2>
-     <p>
-         Here is one solution for the <code>subsets</code> block:<br />
-         <img class="indent" src="/bjc-r/img/8-recursive-reporters/subset-slow.png"
-             alt="subsets(set){if(empty?(set)){report(list{})}else{report(append(subsets(all but first of(set)))(map(item(1) of (set) in front of ()) over(subsets(all but first of(set)))))}}"
-             title="subsets(set){if(empty?(set)){report(list{})}else{report(append(subsets(all but first of(set)))(map(item(1) of (set) in front of ()) over(subsets(all but first of(set)))))}}" />
-     </p>
-
-     <p>This solution should remind you of the <code>pascal</code> block you have seen in <a
-             href="/bjc-r/cur/programming/8-recursive-reporters/3-projects/2-pascal-efficiency.html?topic=nyc_bjc%2F8-recursive-reporters.topic&course=bjc4nyc.html&novideo&noassignment"
-             title="Pascal's Triangle and Efficiency">Unit 8 Lab 3 Page 2: Pascal's Triangle and Efficiency</a>, which
-         makes two recursive calls and adds the results. The <code>pascal</code> block makes two recursive calls
-         <em>with different inputs</em>. This version of <code>subsets</code> makes <em>the same</em> recursive call
-         twice, an inefficiency that can be corrected.</p>
-     <div class="forYouToDo" id="first">
-         <ol>
-             <li>Using a <code>count</code> variable, as you did for the <code>pascal</code> block, count how many
-                 recursive calls are made to find the 64 subsets of a six-element list.</li>
-             <li>Figure out how to reduce the number of recursive calls by avoiding redundant calls.</li>
-         </ol>
+     <div class="full">
+         <h2>Subsets and Efficiency</h2>
+         <p> Here is one solution for the <code>subsets</code> block:<br /> <img class="indent"
+                 src="/bjc-r/img/8-recursive-reporters/subset-slow.png"
+                 alt="subsets(set){if(empty?(set)){report(list{})}else{report(append(subsets(all but first of(set)))(map(item(1) of (set) in front of ()) over(subsets(all but first of(set)))))}}"
+                 title="subsets(set){if(empty?(set)){report(list{})}else{report(append(subsets(all but first of(set)))(map(item(1) of (set) in front of ()) over(subsets(all but first of(set)))))}}" />
+         </p>
+         <p>This solution should remind you of the <code>pascal</code> block you have seen in <a
+                 href="/bjc-r/cur/programming/8-recursive-reporters/3-projects/2-pascal-efficiency.html?topic=nyc_bjc%2F8-recursive-reporters.topic&course=bjc4nyc.html&novideo&noassignment"
+                 title="Pascal's Triangle and Efficiency">Unit 8 Lab 3 Page 2: Pascal's Triangle and Efficiency</a>,
+             which makes two recursive calls and adds the results. The <code>pascal</code> block makes two recursive
+             calls <em>with different inputs</em>. This version of <code>subsets</code> makes <em>the same</em>
+             recursive call twice, an inefficiency that can be corrected.</p>
+         <div class="forYouToDo" id="first">
+             <ol>
+                 <li>Using a <code>count</code> variable, as you did for the <code>pascal</code> block, count how many
+                     recursive calls are made to find the 64 subsets of a six-element list.</li>
+                 <li>Figure out how to reduce the number of recursive calls by avoiding redundant calls.</li>
+             </ol>
+         </div>
      </div>
-
-
+     <div class="full-bottom-bar" style="background-position: 20px 3px;">
+         <div class="bottom-nav btn-group"> <a class="btn btn-default backbutton arrow" style="min-width: 90px;"
+                 href="H8L3P6.html"> Terug</a> <a class="btn btn-default forwardbutton arrow" style="min-width:90px;"
+                 href="H8L4P1.html"> Volgende</a> </div>
+     </div>
  </body>
 
  </html>
