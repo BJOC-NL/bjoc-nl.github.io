@@ -19,30 +19,31 @@
 
 <body>
     <div class="full">
-        <h2>Working with Recursive Reporters</h2>
-        <p>Here's Betty's code for the <code>segments in tree</code> function:</p> <img class="indent"
-            src="/bjc-r/img/8-recursive-reporters/bettycode.png"
-            alt="Geen Afbeelding"
-             />
-        <div class="takeNote">The <code>report</code> block only connects to the blocks <em>above</em> it. That's
-            because <code>report</code> returns the result of its input slot, immediately, as the output of the
-            <code>segments in tree</code> reporter block. No further code is executed in a reporter after a
-            <code>report</code> block. </div>
+        <h2>Werken met Recursieve Rapporteurs</h2>
+        <p>Dit is Bo's code voor de <code>lijnen in boom</code>-functie:</p> <img class="indent"
+            src="/bjc-r/img/8-recursive-reporters/bettycode.png" alt="Geen Afbeelding" />
+        <div class="takeNote">
+            Het <code>rapporteer</code>blok verbindt alleen aan de blokken <em>erboven</em>. Dat is omdat
+            <code>rapporteer</code> het resultaat van zijn invoer meteen doorgeeft als de uitvoer van het <code>lijnen
+                in boom</code>blok. De code na het <code>rapporteer</code>blok wordt niet meer uitgevoerd.
+        </div>
         <div class="forYouToDo" id="first">
             <ol>
-                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Geen Afbeelding"
-                         /> What is the base case in the script above? Why is it
-                    necessary? How does it work in this script?</li>
-                <li>The <code>tree</code> command had two recursive calls, but this code has only one. Why?</li>
+                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Geen Afbeelding" />
+                    Wat is het basisgeval in het script hierboven? Waarom is het nodig? Hoe werkt het?
+                </li>
+                <li>Het <code>boom</code>commando riep twee keer iets recursief aan, maar deze code maar één keer.
+                    Waarom? </li>
                 <li>
-                    <div class="sidenoteBig">Re-read the code for the triangle fractal, and use it to help you build
-                        this recursive reporter.</div> <a
-                        href="/bjc-r/cur/programming/7-recursion/2-projects/1-triangle-fractal.html?topic=nyc_bjc%2F6-recursion-trees-fractals.topic&course=bjc4nyc.html&novideo&noassignment"
-                        >In Unit 7</a>, you built a <code>triangle fractal</code> block. Build a
-                    block that reports the <em>total number of triangles</em> formed in a level <var>n</var> triangle
-                    fractal:<br /> <img class="indent" src="/bjc-r/img/8-recursive-reporters/trianglecounter.png"
-                        alt="Geen Afbeelding"
-                         />
+                    <div class="sidenoteBig"> Bekijk de code van de driehoekfractaal nog eens en gebruikt het om deze
+                        recursieve rapporteur te bouwen.
+                    </div> <a href="../Unit 7 - Fractals and Recursion/H7L2P1.html">In
+                        Hoofdstuk 7</a>, bouwde je een <code>driehoekfractaal</code>blok.
+                    Bouw een blok dat het <em>aantal driehoek</em> in een driehoekfractaal van niveau <var>n</var>
+                    rapporteert:
+                    <br />
+                    <img class="indent" src="/bjc-r/img/8-recursive-reporters/trianglecounter.png"
+                        alt="Geen Afbeelding" />
                 </li>
         </div>
         <div class="full-bottom-bar" style="background-position: 20px 3px;">
