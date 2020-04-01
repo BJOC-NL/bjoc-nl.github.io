@@ -37,15 +37,18 @@
             <div class="sidenote">Recursive <em>commands</em> can even have <em>multiple</em> recursive calls
                 (<code>tree</code> is a good example; we called <code>tree</code> <em>twice</em> from within a single
                 call to <code>tree</code>).</div> <img class="indent"
-                src="/bjc-r/img/8-recursive-reporters/rec-command.png" alt="Geen Afbeelding" alt="Geen Afbeelding" />
+                src="/bjc-r/img/8-recursive-reporters/rec-command.png"
+                alt="recursion(input){if(base case?(input){do something simple} else{do stuff; recursion(smaller input); do stuff}}"
+                title="recursion(input){if(base case?(input){do something simple} else{do stuff; recursion(smaller input); do stuff}}" />
         </p>
         <p> Recursive <em>reporters</em> have different structure because they can report <em>only one</em> value. Since
             the <code>report</code> block <em>reports</em> an answer, you'll need to build the answer before or inside
             the <code>report</code> block call. So, this isn't possible:<br />
             <div class="sidenote">You can't even build this script because you won't be allowed to connect any block
                 <em>below</em> a <code>report</code> block.</div> <img class="indent"
-                src="/bjc-r/img/8-recursive-reporters/bad-rec-reporter.png" alt="Geen Afbeelding"
-                alt="Geen Afbeelding" />
+                src="/bjc-r/img/8-recursive-reporters/bad-rec-reporter.png"
+                alt="Cannot do this: recursive reporter(input){if(base case?(input){report (something simple)} else{report something; report(recursive reporter(smaller input)); report something}}"
+                title="Cannot do this: recursive reporter(input){if(base case?(input){report (something simple)} else{report something; report(recursive reporter(smaller input)); report something}}" />
         </p>
         <div class="todo">BH suggests deleting #4-7 here. Discuss some other time? Or just dump it? I like this
             exercise. </div>
@@ -63,12 +66,14 @@
                 <li> Create a <code>letter count</code> block that takes a list of words as input and reports the total
                     number of letters in all the words. The <code>all but first of</code> block may be useful, but there
                     is more than one way to do this.<br /> <img class="indent"
-                        src="/bjc-r/img/8-recursive-reporters/lettercount.png" alt="Geen Afbeelding"
-                        alt="Geen Afbeelding" /> </li>
+                        src="/bjc-r/img/8-recursive-reporters/lettercount.png"
+                        alt="letter count(list{We, the. People, of, the, United, States}) reporting 28"
+                        title="letter count(list{We, the. People, of, the, United, States}) reporting 28" /> </li>
                 <li> Create your own version of the <code>join words</code> block. This block inputs a list and outputs
                     a string sentence, with spaces:<br /> <img class="indent"
-                        src="/bjc-r/img/8-recursive-reporters/myjoinwords.png" alt="Geen Afbeelding"
-                        alt="Geen Afbeelding" />
+                        src="/bjc-r/img/8-recursive-reporters/myjoinwords.png"
+                        alt="my join words(list{We, the. People, of, the, United, States}) reporting -We the People of the United States"
+                        title="my join words(list{We, the. People, of, the, United, States})reporting -We the People of the United States" />
                 </li>
                 <div class="todo">
                     <p>Again, I am concerned with teaching recursion as "a more complicated way to do what you already
@@ -76,7 +81,8 @@
                         more quickly <em>non-recursively</em> by using <code>combine</code>. I <em>do</em> like
                         <code>letter count</code> though because it <em>does</em> simplify the code. --MF<br /> <img
                             class="indent" src="/bjc-r/img/8-recursive-reporters/recursive-letter-count.png"
-                            alt="Geen Afbeelding" alt="Geen Afbeelding" />
+                            alt="letter count(list){if(length of list=0){report()};report(length of(item(1) of list)+(letter count(all but first of list))}"
+                            title="letter count(list){if(length of list=0){report()};report(length of(item(1) of list)+(letter count(all but first of list))}" />
                     </p>
                     <p>As noted in email, I don't think <code>letter count</code> is an exception, as Mary does. But
                         more important, I don't think students can easily compare their <code>my join words</code> with
@@ -97,8 +103,9 @@
                 <li> Build this <code>plurals</code> block, then describe how it works. (You've already built a simpler
                     version of <code>plurals</code> using <code>map</code>; we want you to see that the same problem can
                     be solved in multiple ways.)<br /> <img class="indent"
-                        src="/bjc-r/img/8-recursive-reporters/plurals.png" alt="Geen Afbeelding"
-                        alt="Geen Afbeelding" />
+                        src="/bjc-r/img/8-recursive-reporters/plurals.png"
+                        alt="plurals(words){if(empty?(words)){report(empty list)} else{report((join (item 1 of words)(s) in front of (plurals(all but first of (words)))}}"
+                        title="plurals(words){if(empty?(words)){report(empty list)} else{report((join (item 1 of words)(s) in front of (plurals(all but first of (words)))}}" />
                 </li>
             </ol>
         </div>

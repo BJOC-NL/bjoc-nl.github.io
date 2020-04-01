@@ -72,7 +72,3 @@ De code ```<script src="https://hypothes.is/embed.js" async></script>``` staat b
 
 om bvb alles tussen src=" tot en met " weg te halen doe je dit:
 src=".*?"
-
-voor alt
-alt="[^G].*?"
-alt="Geen Afbeelding"
