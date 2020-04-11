@@ -19,45 +19,48 @@
 <body>
     <div class="full">
         <h2>Sorting a List</h2>
-        <div class="sidenote">These are the top 8 baby girl names in the USA in 2014.</div>
-        <div class="todo">BH suggestion: change order of names so Abigail isn't last; could cause confusion in
-            describing sort algorithms. Leaving as is, since it affects multiple graphics, but a good fix.</div>
-        <p> Suppose we have a list names that we want to <strong>sort</strong> in alphabetical (ascending) order:<br />
-            <div class="sidenoteBig">These could be numbers instead of names or anything that can be compared and
-                ordered. Numbers and words often need to be sorted in the same list.</div> <img class="indent"
-                src="/bjc-r/img/8-recursive-reporters/unsortednames.png" alt="Geen Afbeelding"  /> <span
-                class="big">&rarr;</span> <img src="/bjc-r/img/8-recursive-reporters/sortednames.png"
-                alt="Geen Afbeelding"  />
+        <div class="sidenote"> Dit zijn de top 8 meisjesnamen in Amerika in 2014.</div>
+
+        <p> Stel dat we een lijst met namen hebben die we willen <strong>sorteren</strong> op alfabetische
+            volgorde:<br />
+            <div class="sidenoteBig"> Dit zouden ook getallen kunnen zijn of nog iets totaal anders dan vergeleken en
+                gesorteerd kan worden. Getalen en woorden moeten vaak gesorteerd worden.
+            </div>
+            <img class="indent" src="/bjc-r/img/8-recursive-reporters/unsortednames.png" alt="Geen Afbeelding" />
+            <span class="big">&rarr;</span> <img src="/bjc-r/img/8-recursive-reporters/sortednames.png"
+                alt="Geen Afbeelding" />
         </p>
-        <div class="todo">Kill the sentence about numbers and words; numbers don't sort numerically if you do a
-            lexicographic sort, so mixing the two is tricky. --bh</div>
+
         <div class="forYouToDo" id="first">
             <ol>
-                <div class="sidenote"> Try to describe the algorithm in enough detail so that someone else could use
-                    your description to sort a list.</div>
-                <li> <strong>Design</strong> a <em>recursive</em> algorithm for sorting the names. <ul>
-                        <li>First consider your general strategy; how would <em>you</em> sort a group of names,
-                            step-by-step.</li>
-                        <li>Then consider how you would tell <em>a computer</em>, which is not as smart as you and can
-                            only perform specific procedures, how to sort a list.</li>
+                <div class="sidenote"> Probeer een algoritme te beschrijven met genoeg details dat iemand anders je
+                    beschrijving zou kunnen gebruiken om een lijst te sorteren.
+                </div>
+                <li> <strong>Ontwerp</strong> een <em>recursief</em> algoritme voor het sorteren van namen. <ul>
+                        <li> Bedenk eerst een algemeen strategie; hoe zou <em>jij</em> een groep namen stap voor stap
+                            sorteren.
+                        </li>
+                        <li> Bedenk dan hoe je een <em>computer</em> zou vertellen om het te doen, die niet zo slim is
+                            als jij en alleen specifieke functies kan uitvoeren.</li>
                     </ul>
                 </li>
-                <li>Now <strong>build</strong> your algorithm: a <code>sort</code> reporter takes a list as input and
-                    outputs a new list of the same elements in alphabetical order. Test your algorithm using both names
-                    and numbers.</li>
-                <div class="endnote"> Comparing numbers and strings can be done using the same blocks, so your sorting
-                    algorithm should work equally well for names and numbers.<br /> <img class="indent"
-                        src="/bjc-r/img/8-recursive-reporters/abigailava.png" alt="Geen Afbeelding"
-                         /> <img class="indent"
-                        src="/bjc-r/img/8-recursive-reporters/num-lessthan.png" alt="Geen Afbeelding"
-                         /> </div>
-                <li>Share your sorting algorithms. Describe some similarities and differences between different sorting
-                    algorithms.</li>
+                <li><strong>Bouw</strong> nu je algoritme: een <code>sorteer</code>rapporteur met als invoer een lijst
+                    en rapporteert een nieuwe lijst van dezelfde elementen in alfabetische volgorde. Test je algoritme
+                    met namen én getallen.
+                </li>
+                <div class="endnote"> Getallen vergelijken en tekst vergelijken kan gedaan worden met dezelfde blokken,
+                    dus je sorteeralgoritme zou voor beide gevallen moeten werken.
+                    <br /> <img class="indent" src="/bjc-r/img/8-recursive-reporters/abigailava.png"
+                        alt="Geen Afbeelding" /> <img class="indent"
+                        src="/bjc-r/img/8-recursive-reporters/num-lessthan.png" alt="Geen Afbeelding" />
+                </div>
+                <li> Deel je sorteeralgoritmes met elkaar. Beschrijf de overeenkomsten en verschillen. </li>
             </ol>
         </div>
-        <p>There are many different algorithms to sort a list. Sorting algorithms give the same result, but the code and
-            efficiency can vary greatly from one algorithm to another. The next two pages highlight two frequently used
-            sorting algorithms.</p>
+        <p> Er zijn verschillende algoritmes om een lijst te sorteren. Sorteeralgoritmes geven dezelfde resultaten, maar
+            de code en efficiëntie kunnen heel erg verschillen. De volgende twee pagina's beschrijven twee
+            veelvoorkomende sorteeralgoritmes uit.
+        </p>
     </div>
     <div class="full-bottom-bar" style="background-position: 20px 3px;">
         <div class="bottom-nav btn-group"> <a class="btn btn-default backbutton arrow" style="min-width: 90px;"
