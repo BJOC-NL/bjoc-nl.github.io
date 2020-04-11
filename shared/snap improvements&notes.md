@@ -33,6 +33,7 @@
 * Graphics, Debugging, screenshot? ik zou onvertaald laten (H1L3P7).
 * Feature? heb het nu vertaald als eigenschap, maar dekt niet helemaal de lading. (H1L3P7) weggehaald.
 * Dependencies -> afhankelijkheden? Klinkt raar weet niet of het helemaal correct is. (H2L1P4) (H2L3P3)
+* Calls -> Aanroepen? de aanroep van een blok klinkt een beetje verwarrend
 
 ## Andere vragen/opmerkingen
 
