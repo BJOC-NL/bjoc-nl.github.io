@@ -19,89 +19,93 @@
  <body>
      <div class="full">
          <h2>Partition Sort</h2>
-         <p> Another commonly used sort is called a <strong>partition sort</strong>. Here's how it works: <ul>
-                 <li><strong>Step 1.</strong> In an unsorted list, select the first item in the list (<em>which probably
-                         won't be the item that should appear first after sorting</em>). This item is called a
-                     <strong>pivot</strong>.</li>
-                 <div class="todo">BH: About step 2 and its yellow box: This handwaves away the deep issue, which is
-                     that sometimes the sort key is smaller than the sort record, so two records may sort alike but not
-                     be equal. I'm not sure if this has to be addressed but maybe it should be mentioned in the TG. BK:
-                     I didn't understand what this comment means, sorry.</div>
-                 <li>
-                     <div class="sidenote">An item is "with the pivot" only if it has the same value as the pivot.</div>
-                     <strong>Step 2.</strong> For each item in the list, decide if it comes before the pivot, with the
-                     pivot, or after the pivot.
+         <p> Een ander beroemd sorteeralgoritme heet <strong>partition sort</strong>. Het werkt zo: <ul>
+                 <li><strong>Stap 1.</strong> Selecteer het eerste element in een ongesorteerde lijst (<em>dit is
+                         waarschijnlijk niet meer het eerste element na het sorteren</em>). Dit element heet het
+                     <strong>draaipunt</strong>.
                  </li>
-                 <li><strong>Step 3.</strong> Partition the data into three categories: items before the pivot, with the
-                     pivot, after the pivot. The lists before and after the pivot are unsorted.</li>
-                 <li><strong>Step 4.</strong> If there are items before the pivot, use a partition sort to put them in
-                     order. If there are items after the pivot, use a partition sort to put them in order.</li>
-                 <li><strong>Step 5.</strong>The sorted list is made from appending the three result lists together.
+
+                 <li>
+                     <div class="sidenote"> Een element is "bij het draaipunt" alleen als het dezelfde waarde als het
+                         draaipunt heeft.
+                     </div>
+                     <strong>Stap 2.</strong> Beslis voor ieder element in de lijst of het voor, na of bij het
+                     draaipunt komt.
+                 </li>
+                 <li><strong>Stap 3.</strong> Verdeel de data in drie categorieën: elementen voor het draaipunt, bij het
+                     draaipunt en na het draaipunt. De lijsten voor en na het draaipunt blijven ongesorteerd.
+                 </li>
+                 <li><strong>Stap 4.</strong> Als er elementen voor het draaipunt zijn, gebruik dan partition sort om ze
+                     te sorteren. Doe hetzelfde voor elementen na het draaipunt.
+                 </li>
+                 <li><strong>Stap 5.</strong> De gesorteerde lijst wordt gemaakt door de 3 lijsten te verbinden.
                  </li>
              </ul>
          </p>
-         <div class="takeNote">Names aren't sorted while placing them before or after a pivot. For <img
-                 src="/bjc-r/img/8-recursive-reporters/eightnames.png"
-                 alt="Geen Afbeelding"
-                  />, this is the status after the
-             first split via pivoting: the <strong>pivot</strong> is Emma, the list before the pivot is <var>{Ava,
-                 Abigail}</var>, and the list after the pivot is <var>{Olivia, Sophia, Isabella, Mia, Emily}</var>. The
-             sorting process then continues on these two smaller unsorted lists.</div>
+         <div class="takeNote"> Namen zijn niet gesorteerd voor of na het draaipunt. Voor <img
+                 src="/bjc-r/img/8-recursive-reporters/eightnames.png" alt="Geen Afbeelding" />, is dit de status na de
+             eerste splitsing:
+             het <strong>draaipunt</strong> is Emma, de lijst voor het draaipunt is <var>{Ava,
+                 Abigail}</var> en de lijst na het draaipunt is <var>{Olivia, Sophia, Isabella, Mia, Emily}</var>. Het
+             sorteerproces gaat door voor deze twee kleinere lijsten.
+         </div>
          <div class="forYouToDo" id="first">
              <ol>
-                 <li>Explore the partition sort before writing any code. With your class, stand up and form a line.
-                     Then, follow the partition sort process to put everyone in sorted order, low to high, by the number
-                     of their home address.</li>
-                 <li>How is a partition sort an example of recursion? What is the base case?</li>
+                 <li> Probeer eerst partition sort helemaal te snappen voordat je code gaat schrijven. Sta op en vorm
+                     een lijn met je klas. Volg daarna het algoritme van partition sort om iedereen te sorteren op naam.
+                 </li>
+                 <li> Waarom is partition sort een voorbeeld van recursie? Wat is het basisgeval?
+                 </li>
              </ol>
          </div>
-         <!--        <div class="sidenote">The name <strong>quicksort</strong> can refer to many different algorithms, all with the same goal: sort, quick! This page describes a standard partition sort.</div> -->
-         <!--        <p>A video of one version of partition sort can be found <a href="http://www.youtube.com/watch?v=aQiWF4E8flQ">here.</a> There are minor differences: the video uses the last item as pivot, and calls the algorithm "quick sort".</p> -->
-         <div class="todo">We may want to make our own video to show this in action. The linked video is not quite right
-             and has been killed off.</div>
-         <p>To write a <code>partition sort</code> block in Snap<em>!</em>, you'll need code for a base case, and code
-             that follows the steps of the partition sort.</p>
+
+         <p> Om een <code>partition sort</code>blok in Snap<em>!</em> te schrijven heb je code nodig voor een basisgeval
+             en code die partition sort volgt.
+         </p>
          <div class="forYouToDo">
              <ol start="3">
-                 <li> <a class="run" href="/bjc-r/prog/8-recursive-reporters/appendblock.xml"><img class="inline"
-                             src="/bjc-r/img/icons/load-save.png"
-                             alt="Geen Afbeelding"
-                             ></a><br />
-                     Examine this new project containing the <code>append</code> block (Variables menu). <img
-                         class="indent" src="/bjc-r/img/8-recursive-reporters/appendblock.png"
-                         alt="Geen Afbeelding"
-                          />
+                 <li> <a class="run"
+                         href="https://snap.berkeley.edu/snapsource/snap.html#present:Username=cfkaligula&ProjectName=verbind"><img
+                             class="inline" src="/bjc-r/img/icons/load-save.png" alt="Geen Afbeelding"></a><br />
+                     Bekijk dit nieuwe project dat het <code>verbind</code>blok bevat (in het Variabelenmenu). <img
+                         class="indent" src="/bjc-r/img/8-recursive-reporters/appendblock.png" alt="Geen Afbeelding" />
                  </li>
-                 <li>Describe what the <code>append</code> block does.</li>
+                 <li>Beschrijf wat het <code>verbind</code>blok doet.</li>
                  <li>
-                     <div class="sidenoteBig">You'll need to figure out how to place the items into the three
-                         categories, and how to create one final list to output.</div>Build the recursive reporter
-                     <code>partition sort</code>. Its output, for any list, should be the same as the output for
-                     <code>selection sort</code>.
+                     <div class="sidenoteBig"> Je moet uitvogelen hoe je elementen in drie categorieën plaatst en
+                         hoe je de uiteindelijke lijst maakt die je rapporteert.
+                     </div>
+                     Bouw de recursieve rapporteur
+                     <code>partition sort</code>. De uitvoer hiervan moet gelijk zijn aan die van <code>selection
+                         sort</code>.
                  </li>
              </ol>
          </div>
-         <div class="sidenoteBig"> <a href="#hint-1" data-toggle="collapse" class="collapsed" >Reveal an
-                 example.</a>
-             <div id="hint-1" class="collapse"> For example, let's say yesterday you had a big sorted list, and today
-                 you add a few new items, so you need to re-sort the list. A general-purpose sorting algorithm won't
-                 take advantage of the almost-in-order character of its input. But <em>insertion sort,</em> an algorithm
-                 that's slow in general, handles this special case quickly. </div>
+         <div class="sidenoteBig"> <a href="#hint-1" data-toggle="collapse" class="collapsed">
+                 Laat een voorbeeld zien.</a>
+             <div id="hint-1" class="collapse">
+                 Stel dat je gisteren een grote gesorteerde lijst had en vandaag een paar nieuwe elementen toevoegt. Je
+                 moet nu de lijst hersorteren. Een algemeent sorteeralgoritme zal geen voordeel hebben aan het feit dat
+                 de lijst al bijna helemaal gesorteerd is. Maar <em>insertion sort</em>, een algoritme dat over het
+                 algemeen heel langzaam is, is juist heel goed in dit speciale geval.
+             </div>
          </div>
-         <p>Why are there different sorting algorithms? Some sorting algorithms take longer than others to run, but even
-             an algorithm that's slow in general may be useful in special cases.</p>
+         <p> Waarom zijn er verschillende sorteeralgoritmes? Sommige sorteeralgoritmes doen er langer over dan andere,
+             maar zelfs een algoritme dat over het algemeen langzaam is, kan soms heel snel zijn.
+         </p>
          <div class="ifTime">
              <ol start="6">
                  <li>
-                     <div class="sidenote">You could also use a long list of names here.</div> Make a 500-item list of
-                     random numbers, and then sort the list using the three sorting algorithms you built in this lab.
-                     Keep track of the timings:<br /> <img class="indent"
-                         src="/bjc-r/img/8-recursive-reporters/compare-time.png"
-                         alt="Geen Afbeelding"
-                          />
+                     <div class="sidenote">
+                         Je kan ook een lange lijst van namen hier gebruiken.
+                     </div>
+                     Maak een lijst met 500 willekeurige getallen en sorteer de lijst met de drie verschillende
+                     sorteeralgoritmes die je deze Les gemaakt hebt. Houd bij hoe lang ze erover doen:
+                     <br />
+                     <img class="indent" src="/bjc-r/img/8-recursive-reporters/compare-time.png"
+                         alt="Geen Afbeelding" />
                  </li>
-                 <li>Which algorithm was fastest? Why might this type of algorithm run faster?</li>
-                 <!--<p>In that script we've renamed <code>sort</code> to <code>merge&nbsp;sort</code>, and used the name <code>your&nbsp;sort</code> for the one you wrote earlier.  <code>Biglist</code>, <code>your-time</code>, and <code>merge-time</code> are global variables.</p> <p>Most likely, mergesort will take less than four seconds, while the one you wrote earlier will take more than 15 seconds. That's because we're betting your earlier one positions one number at a time in the sorted list, whereas mergesort cuts the list into two half-size lists and sorts them separately, which is inherently more efficient. If you make the input list ten times as long, a one-at-a-time sort will take 100 times as long to compute the result, whereas mergesort will only take about 30 times as long.</p> -->
+                 <li> Wat was het snelste algoritme? Waarom zou dit algoritme het snelst zijn geweest?</li>
              </ol>
          </div>
      </div>

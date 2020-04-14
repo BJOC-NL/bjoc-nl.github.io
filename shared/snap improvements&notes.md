@@ -39,6 +39,7 @@
 
 * Vertaalde Projecten hebben nu een letterlijke link naar het project, dit zou netter moeten kunnen, weet niet hoe.
 * H6L2P5 legt uit hoe je binair moet vertalen naar decimaal maar de uitleg is best verwarrend en de pijl in de tabel staat soort van verkeerd
+* h8l2p2 gaat over partition sort, dit is geen echte sorting algoritme, miss ishet quicksort? beter naam
 
 ## Externe Bronnen
 
