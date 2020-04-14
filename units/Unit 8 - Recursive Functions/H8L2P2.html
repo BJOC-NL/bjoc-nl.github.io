@@ -29,9 +29,9 @@
                      <strong>Stap 1.</strong> In een ongesorteerde lijst, vind een manier om het voorste element te
                      vinden.
                  </li>
-                 <li><strong>Step 2.</strong> Haal dat element uit de lijst en plaats het op de eerste plek.
+                 <li><strong>Stap 2.</strong> Haal dat element uit de lijst en plaats het op de eerste plek.
                  </li>
-                 <li><strong>Step 3.</strong> Met de overige elementen, gebruik selection sort om ze te sorteren. Als er
+                 <li><strong>Stap 3.</strong> Gebruik selection sort om de overige elementen te sorteren. Als er
                      geen elementen over zijn ben je klaar.
                  </li>
              </ul>
@@ -49,54 +49,51 @@
          </p>
          <div class="forYouToDo">
              <ol start="3">
-                 <li> Bouw het <code>voorste in</code> block. Voor namen geeft dit alfabetisch de eerste naam in een
+                 <li> Bouw het <code>voorste in</code>blok. Voor namen geeft dit alfabetisch de eerste naam in een
                      lijst:
                      <br /> <img class="indent" src="/bjc-r/img/8-recursive-reporters/unsortednames.png"
                          alt="Geen Afbeelding" />
                      <img class="indent" src="/bjc-r/img/8-recursive-reporters/earliestin.png" alt="Geen Afbeelding" />
                  </li>
-                 <li>Write code that finds the <em>index</em> of the earliest item. This value is 8 for the list of
-                     names above. (You may not need this step, depending on your algorithm. See if you can do the
-                     next step without it.)</li>
-                 <li>
-                     <div class="sidenote">You may find some of your work in
-                         <a href="../Unit 5 - Algorithms and Simulations/H5L1P2.html">
-                             Unit 5 Lab 1 Page 2: Analyzing and Improving
-                             Searches</a> helpful.</div> Write code that creates a new list with the earliest item
-                     deleted. There is more than one way to do this!
+                 <li>Write code die de <em>index</em> van het voorste item vindt. Deze waarde is 8 voor de lijst met
+                     namen hierboven. (Deze stap is misschien overbodig, afhankelijk van je algoritme. Kijk of je de
+                     volgende stap zonder de index kan doen.)
                  </li>
-                 <li> Build the recursive reporter <code>selection sort</code>.<br /> <img class="indent"
+                 <li>
+                     <div class="sidenote"> Je kan een deel van het werk in
+                         <a href="../Unit 5 - Algorithms and Simulations/H5L1P2.html">
+                             Hoofdstuk 5 Les 1 Pagina 2: Analyseren en Zoekopdrachten Verbeteren</a> handing vinden.
+                     </div>
+                     Schrijf code die een nieuwe lijst aanmaakt zonder het voorste element. Er is daar maar één manier
+                     voor!
+                 </li>
+                 <li> BOuw de recursieve rapporteur <code>selection sort</code>.<br /> <img class="indent"
                          src="/bjc-r/img/8-recursive-reporters/selectionresult.png" alt="Geen Afbeelding" />
                  </li>
-                 <li>How many times does <code>selection sort</code> call itself?</li>
+                 <li>Hoe vaak roept <code>selection sort</code> zichzelf aan?</li>
              </ol>
-             <div class="saveAs"><span class="text">"U8L2-SelSort"</span><img src="/bjc-r/img/icons/save-this-as.png"
+             <div class="saveAs"><span class="text">"H8L2-SelSort"</span><img src="../../afb/icons/SlaHetOpAls.png"
                      alt="Geen Afbeelding" /></div>
          </div>
-         <div class="takeNote">Like recursive commands, recursive reporters can feel like magic, because part of the
-             code tells the recursive reporter to call itself. Recursive reporters work because each time, the new
-             call gives a <em>smaller</em> input to the same reporter, eventually reaching a base case. After the
-             base case is reached, the final result is built up piece by piece as each call reports a value to its
-             caller.</div>
+         <div class="takeNote">
+             Net als recursieve commando's, lijken recursieve rapporteurs magisch, omdat een deel van de code zichzelf
+             aanroept.
+             Recursieve rapporteurs werken omdat iedere aanroep een <em>kleinere</em> invoer gebruikt dan de vorige,
+             totdat het basisgeval bereikt wordt. Nadat het basisgeval bereikt is, wordt het resultaat beetje bij beetje
+             gebouwd omdat iedere aangeroepen rapporteur het result rapporteert aan de rapporteur die hem aangeroepen
+             heeft.
+         </div>
          <div class="takeItFurther">
              <ol type="A">
-                 <li> This<a href="/bjc-r/cur/programming/3-lists/5-big-data/yob2014.txt"> 2014 Popularity of Baby
-                         Names data file</a> contains
-                     a large list of baby names from 2014. Import the data, then build an algorithm that returns an
-                     alphabetical list of all names starting with a given letter:<br /> <img class="indent"
-                         src="/bjc-r/img/8-recursive-reporters/biglistnames.png" alt="Geen Afbeelding" />
+                 <li> Dit <a href="/bjc-r/cur/programming/3-lists/5-big-data/yob2014.txt"> bestand met de populariteit
+                         van namen in 2014</a> bevat een grote lijst van babynamen uit 2014. Importeer de data en bouw
+                     daarna een algoritme dat een alfabetische lijst met alle namen geeft, die start met een gegeven
+                     letter: <br />
+                     <img class="indent" src="/bjc-r/img/8-recursive-reporters/biglistnames.png"
+                         alt="Geen Afbeelding" />
                  </li>
-
-                 href="https://piazza.com/class/h8yx482idav52y?cid=2062" target="_blank">Piazza</a> noticed
-                 that we need to give directions for how to import this data. It turns out that capturing the
-                 data from the link given, importing and cleaning it is completely non-trivial and I don't think
-                 we have done this before in the curriculum. I recommend we make the following (huge) <a class="run"
-                     href="/bjc-r/prog/8-recursive-reporters/U8L2p2BabyNamesList.xml" target="_blank">starter
-                     file</a> available where the names are isolated and listed in
-                 popularity order, devoid of gender and number fields.
+             </ol>
          </div>
-         </ol>
-     </div>
      </div>
      <div class="full-bottom-bar" style="background-position: 20px 3px;">
          <div class="bottom-nav btn-group"> <a class="btn btn-default backbutton arrow" style="min-width: 90px;"
