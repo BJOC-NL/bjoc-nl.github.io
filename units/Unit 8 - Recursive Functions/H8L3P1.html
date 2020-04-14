@@ -18,70 +18,71 @@
 
  <body>
      <div class="full">
-         <h2>Pascal's Triangle</h2>
-         <p>In <strong>Pascal's Triangle</strong>, each number is the sum of the two numbers above it. The numbers at
-             the ends of each row are always 1.</p>
-         <div class="todo"> The HTML in this triangle needs to be cleaned up. --MF </div>
-         <p align="center"> <strong>Row 1:</strong>&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;1<br /> <strong>Row
-                 2:</strong>&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;2&nbsp;&nbsp;1<br /> <strong>Row
-                 3:</strong>&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;3&nbsp;&nbsp;3&nbsp;&nbsp;1<br /> <strong>Row
-                 4:</strong>&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;4&nbsp;&nbsp;6&nbsp;&nbsp;4&nbsp;&nbsp;1<br />
-             <strong>Row
-                 5:</strong>&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;5&nbsp;&nbsp;10&nbsp;&nbsp;10&nbsp;&nbsp;5&nbsp;&nbsp;1<br />
-             <strong>Row
-                 6:</strong>&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;6&nbsp;&nbsp;15&nbsp;&nbsp;20&nbsp;&nbsp;15&nbsp;&nbsp;6&nbsp;&nbsp;1<br />
+         <h2>Pascals Driehoek</h2>
+         <p>In <strong>Pascals Driehoek</strong>, is ieder getal de som van de twee getallen erboven. De getallen aan
+             het einde van iedere rij zijn altijd 1.
+         </p>
+
+         <p align="center"> <strong>Rij 1:</strong>&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;1<br />
+             <strong>Rij 2:</strong>&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;2&nbsp;&nbsp;1<br />
+             <strong> Rij 3:</strong>&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;3&nbsp;&nbsp;3&nbsp;&nbsp;1<br />
+             <strong> Rij 4:</strong>&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;4&nbsp;&nbsp;6&nbsp;&nbsp;4&nbsp;&nbsp;1<br />
+             <strong> Rij 5:
+             </strong>&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;5&nbsp;&nbsp;10&nbsp;&nbsp;10&nbsp;&nbsp;5&nbsp;&nbsp;1<br />
+             <strong> Rij 6:
+             </strong>&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;6&nbsp;&nbsp;15&nbsp;&nbsp;20&nbsp;&nbsp;15&nbsp;&nbsp;6&nbsp;&nbsp;1<br />
              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;︙ </p>
-         <p>For example, each 15 in Row 6 is the sum of the 5 and 10 just above it.</p>
+         <p> Iedere 15 in Rij 6 is bijvoorbeeld de som van de 5 en 10 erboven.</p>
          <div class="forYouToDo" id="first">
              <ol>
-                 <li>Write out Row 7 of Pascal's Triangle.</li>
-                 <li> Write a <code>next row</code> block that takes a row of Pascal's Triangle as its input, and
-                     reports the next row as its output:<br /> <img src="/bjc-r/img/8-recursive-reporters/nextrow.png"
-                         alt="Geen Afbeelding"
-                          /> </li>
+                 <li>Schrijf Rij 7 van Pascals Driehoek op.</li>
+                 <li> Schrijf een <code>volgende rij</code>blok dat een rij van Pascals Driehoek als invoer heeft en de
+                     volgende rij rapporteert: <br />
+                     <img src="/bjc-r/img/8-recursive-reporters/nextrow.png" alt="Geen Afbeelding" /> </li>
              </ol>
          </div>
-         <p> To refer to a specific number in Pascal's Triangle, you need to know its row and column. Rows are simple;
-             columns are more complicated because of the triangle's orientation. Here is Pascal's Triangle, aligned in
-             columns:<br />
-             <div class="todo">The alignment here is still a little messy. Some sort of tabular environment could get it
-                 more precisely right. I removed the "blockquote" environment since it italicized everything. I can't
-                 figure out how to "center" this as a block while still keeping its visible alignment. -BK<ol>
-                     <li>I would fix this, but I'm not clear what's intended... -MF</li>
-                 </ol>
-             </div>
-         </p>
-         <p class="indent"> 1&nbsp;&nbsp;&nbsp;1<br /> 1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;1<br />
-             1&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;1<br />
-             1&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;1<br />
-             1&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;10&nbsp;&nbsp;10&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;1<br />
-             1&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;15&nbsp;&nbsp;20&nbsp;&nbsp;15&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;1 </p>
-         <div class="takeNote">By convention (because it turns out to be useful), the columns in Pascal's Triangle are
-             named starting from 0, not 1. For example, the number in row 4, column 1 of Pascal's Triangle is
-             <strong>4</strong>, not 1.</div>
-         <div class="forYouToDo">
-             <ol start="3">
-                 <li>What number is in row 6, column 2 of Pascal's Triangle?</li>
-                 <li>Two numbers in row 5 are added to produce the number in row 6, column 2. What are their locations?
-                 </li>
-                 <li>To determine the number in row 14, column 5 of Pascal's Triangle, you would need to know two
-                     numbers from row 13. In which columns in row 13 are those numbers?</li>
+         <p> Om naar een specifiek getal in Pascals Driehoek te verwijzen heb je de rij en kolom van dat getal nodig.
+             Rijen zijn simpel; kolommen zijn lastiger door de vorm van de driehoek. Dit is Pascals Driehoek, verdeeld
+             in kolommen: <br />
              </ol>
-         </div>
-         <p>Pascal's Triangle counts the number of ways to pick a collection from larger collection. For more about
-             Pascal's Triangle and its uses, see <a
-                 href="/bjc-r/cur/programming/8-recursive-reporters/3-projects/extras/1-pascal-context.html"
-                 >About Pascal's Triangle page.</a></p>
-         <div class="sidenoteBig">What are the base cases? The work in earlier problems should help you figure out the
-             recursion. Try more examples if you're not sure.</div>
-         <div class="forYouToDo">
-             <ol start="6">
-                 <li>Write a <code>pascal</code> block that takes two numbers as input, <var>row</var> and
-                     <var>column</var>, and reports the value in that row and column of Pascal's Triangle.
-                     <!--                    <p>If you prefer to solve puzzles without hints, finish the block definition now. Otherwise, turn the page.</p> -->
-                 </li>
-             </ol>
-         </div>
+     </div>
+     </p>
+     <p class="indent"> 1&nbsp;&nbsp;&nbsp;1<br /> 1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;1<br />
+         1&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;1<br />
+         1&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;1<br />
+         1&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;10&nbsp;&nbsp;10&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;1<br />
+         1&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;15&nbsp;&nbsp;20&nbsp;&nbsp;15&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;1 </p>
+     <div class="takeNote"> Voor gemak starten de kolommen in Pascals Driehoek bij 0, niet 1. het getal in rij 4, kolom
+         1 is dus <strong>4</strong>, niet 1.
+     </div>
+     <div class="forYouToDo">
+         <ol start="3">
+             <li>Welk getal staat er in rij 6, kolom 2?</li>
+             <li> Twee getallen in rij 5 worden opgeteld om het getal in rij 6, kolom 2 te krijgen. Wat zijn de locaties
+                 van deze getallen?
+
+             </li>
+             <li> Om te bepalen wat het getal in rij 14, kolom 8 is van Pascals Driehoek, moet je twee getallen van rij
+                 13 weten. In welke kolommen staan deze getallen van rij 13?
+             </li>
+         </ol>
+     </div>
+     <p>Pascals Driehoek telt het aantal manieren om een verzameling van een grotere verzameling te pakken. Voor meer
+         info, zie
+         <a
+             href="https://bjc.edc.org/bjc-r/cur/programming/8-recursive-reporters/3-projects/extras/1-pascal-context.html">
+             Over Pascals Driehoek (Engels)
+         </a></p>
+     <div class="sidenoteBig"> Wat zijn de basisgevallen? Het werk in de eerdere problemen zou je moeten helpen met de
+         recursie. Probeer meer voorbeelden te bedenken als je het niet zeker weet.
+     </div>
+     <div class="forYouToDo">
+         <ol start="6">
+             <li>Schrijf een <code>pascal</code>blok dat twee getallen als invoer heeft, <var>rij</var> en
+                 <var>kolom</var> en de waarde in Pascals Driehoek op die locatie rapporteert.
+             </li>
+         </ol>
+     </div>
      </div>
      <div class="full-bottom-bar" style="background-position: 20px 3px;">
          <div class="bottom-nav btn-group"> <a class="btn btn-default backbutton arrow" style="min-width: 90px;"
