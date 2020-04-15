@@ -18,46 +18,55 @@
 
 <body>
     <div class="full">
-        <h2>Pascal's Triangle and Efficiency</h2>
-        <p> Here's one solution to the <code>pascal</code> block:<br /> <img class="indent"
+        <h2>Pascals Driehoek en Efficiëntie</h2>
+        <p> Dit is een oplossing voor het <code>pascal</code>blok: <br /> <img class="indent"
                 src="/bjc-r/img/8-recursive-reporters/pascal-script.png" alt="Geen Afbeelding" />
         </p>
-        <p>There are two base cases, the beginning and end of a row. The recursive case calculates the sum of two values
-            in the previous row.</p>
-        <p align="center"><img src="/bjc-r/img/8-recursive-reporters/pascal145.png" alt="Geen Afbeelding" /> = <img
-                src="/bjc-r/img/8-recursive-reporters/pascal134.png" alt="Geen Afbeelding" /> + <img
-                src="/bjc-r/img/8-recursive-reporters/pascal135.png" alt="Geen Afbeelding" /></p>
-        <p>You are about to figure out how many recursive calls are needed to compute a value in Pascal's Triangle.</p>
+        <p> Er zijn twee basisgevallen, het begin en het eind van een rij. De recursieve aanroep berekent de som van
+            twee
+            waardes in de vorige rij.
+        </p>
+        <p align="center">
+            <img src="/bjc-r/img/8-recursive-reporters/pascal145.png" alt="Geen Afbeelding" /> =
+            <img src="/bjc-r/img/8-recursive-reporters/pascal134.png" alt="Geen Afbeelding" /> +
+            <img src="/bjc-r/img/8-recursive-reporters/pascal135.png" alt="Geen Afbeelding" /></p>
+        <p> Je gaat nu uitvinden hoeveel recursieve aanroepen je nodig hebt om een waarde in Pascals Driehoek te
+            berekenen.
+        </p>
         <div class="forYouToDo" id="first">
             <ol>
-                <div class="sidenote">What could you insert inside the block to track this?</div>
-                <li>Modify your <code>pascal</code> block to keep count of how many times the block is executed.</li>
-                <li>How many times is the <code>pascal</code> block called when calculating <img
-                        src="/bjc-r/img/8-recursive-reporters/pascal145.png" alt="Geen Afbeelding" />? </li>
-                <li>What happens when you call <img src="/bjc-r/img/8-recursive-reporters/pascal205.png"
-                        alt="Geen Afbeelding" />?</li>
+                <div class="sidenote"> Wat kan je toevoegen aan het blok om dit bij te houden?</div>
+                <li> Pas je <code>pascal</code>blok aan om bij te houden hoe vaak het blok uitgevoerd wordt.</li>
+                <li> Hoe vaak wordt het <code>pascal</code>blok aangeroepen wanneer je
+                    <img src="/bjc-r/img/8-recursive-reporters/pascal145.png" alt="Geen Afbeelding" /> berekent? </li>
+                <li> Wat gebeurt er als je
+                    <img src="/bjc-r/img/8-recursive-reporters/pascal205.png" alt="Geen Afbeelding" /> aanroept?</li>
             </ol>
         </div>
-        <div class="sidenote">Track what <img src="/bjc-r/img/8-recursive-reporters/pascal145.png"
-                alt="Geen Afbeelding" /> actually calls to see the redundancy.</div>
-        <p>Many of the recursive calls are redundant. For example, <img
-                src="/bjc-r/img/8-recursive-reporters/pascal145.png" alt="Geen Afbeelding" /> will
-            call <img src="/bjc-r/img/8-recursive-reporters/pascal103.png" alt="Geen Afbeelding" />
-            many times, asking for the same information.</p>
+        <div class="sidenote"> Houd bij wat
+            <img src="/bjc-r/img/8-recursive-reporters/pascal145.png" alt="Geen Afbeelding" />
+            de aanroept om te zien wat overbodig is.
+        </div>
+        <p> Veel van de recursieve aanroepen zijn overbodig.
+            <img src="/bjc-r/img/8-recursive-reporters/pascal145.png" alt="Geen Afbeelding" /> zal bijvoorbeeld
+            <img src="/bjc-r/img/8-recursive-reporters/pascal103.png" alt="Geen Afbeelding" /> veel aanroepen, om iedere
+            keer dezelfde informatie te vragen.
+        </p>
         <div class="takeItFurther">
             <ol type="A">
-                <div class="sidenoteBig">This technique is called <strong>memoization</strong>. This is not a typo;
-                    there's no "r" in the word. Each recorded answer is like a "memo".</div>
-                <li>Use a list structure to keep track of already-computed values of <code>pascal</code>, so that when
-                    the same inputs are given again, the function looks up the saved value instead of making more
-                    recursive calls.</li>
-                <li>There is a direct formula for <code>pascal</code> that is often used: </li>
-                <div class="center"><span class="katex"> \text{pascal}(n,r) = \frac{n!}{r!(n-r)!}</span></div>
-                <div class="comment">PG: I'm ignoring for the moment the fact that I'm not sure we've taught enough
-                    about "quadratic time" etc. for the kids to tell.</div>
-                <p>Build a version of <code>pascal</code> that uses the formula. Compare the efficiency of this version
-                    to the recursive version, and determine whether each version runs in constant time, linear time,
-                    quadratic time, or exponential time.</p>
+                <div class="sidenoteBig">
+                    Deze techniek heet <strong>memoisatie</strong>. Omdat ieder opgeslagen antwoord een soort "memo" is.
+                </div>
+                <li> Gebruik een lijst om bij te houden welke waardes al berekent zijn, zodat als dezelfde invoer twee
+                    keer gegeven wordt, de functie de opgeslagen waarde rapporteert in plaats van weer recursieve
+                    aanroepen te doen.
+                </li>
+                <li> Er is een formule voor <code>pascal</code> die vaak gebruikt wordt: </li>
+                <div class="center"><span class="katex"> \text{pascal}(n,r) = \frac{n!}{r!(n-r)!}</span>
+                </div>
+                <p> Bouw een versie van <code>pascal</code> die deze formule gebruikt. Vergelijk hoe efficiënt deze
+                    nieuwe versie is met de oude, recursieve versie.
+                </p>
             </ol>
         </div>
     </div>
