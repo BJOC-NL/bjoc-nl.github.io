@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <link rel="icon" href="../../BJOC-NL-logo.png" type="image/png">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="../../js+css/llab/loader.js"></script>
+    <script type="text/javascript" src="../../js+css/gifffer.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            Gifffer();
+            Inhoudsopgave();
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../js+css/css/bjc-gifffer.css">
+    <title>Hoofdstuk 8 Les 1: Recursieve Rapporteurs, Pagina 3 Hints</title>
+</head>
+
+<body>
+    <h2>Hints voor Omzetten naar Binair</h2>
+
+    <p> De beste hint is dat het bouwen van de binaire string van <strong>rechts naar links</strong> moet. Omdat de
+        meest rechter bit de één kolom is en de waarde van de meest linker bit afhangt van hoeveel groot de invoer
+        is.
+    </p>
+
+    <p> De volgende oefeningen zijn hints; maak er zoveel als je nodig denkt te hebben.
+    </p>
+    <p> Onthoud dat de <strong>invoer</strong> voor je blok een <strong>getal</strong> is, dus daar voer je wiskundige
+        functies op uit; De waarde die gerapporteerd wordt door je blok is een <strong>stuk tekst</strong>, dus daar heb
+        je tekstfuncties voor nodig (zoals <code>join</code>).
+    </p>
+    <div class="forYouToDo" id="first">
+        <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner"
+            title="Talk with Your Partner" />
+        <ol>
+            <div class="sidenote"> Probeer deze berekeningen te doen zonder rekenmachine en probeer de verbanden te
+                snappen. De Try doing these calculations by hand, and look for connections. The connections may
+                help you understand how to write your code.
+            </div>
+            <li> Leg uit waarom 13 1101 is in binair.
+            </li>
+            <li>
+                Schrijf 26 in binair. Schrijf 27 in binair. Wat is het verband met deze getallen en 13 in binair?
+            </li>
+            <li>
+                Wat zijn de quotient en rest als je 27 deelt door 2?
+            </li>
+
+        </ol>
+    </div>
+
+    Vergeet niet dat je
+    <img class="inline" src="/bjc-r/img/8-recursive-reporters/quotient.png" alt="(floor) of (17/5), reporting 3"
+        title="(floor) of (17/5), reporting 3" /> en
+    <img class="inline" src="/bjc-r/img/8-recursive-reporters/mod.png" alt="(17)mod(5), reporting 2"
+        title="(17)mod(5), reporting 2" /> wil gebruiken, alleen moet je natuurlijk door 2 delen.
+</body>
+
+</html>

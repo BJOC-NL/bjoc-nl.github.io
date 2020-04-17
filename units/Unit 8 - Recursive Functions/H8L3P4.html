@@ -20,9 +20,7 @@
      <div class="full">
          <h2>Base Conversion</h2>
          <p>Here's one solution for binary conversion of non-negative integers:</p>
-         <p><img class="indent" src="/bjc-r/img/8-recursive-reporters/tobinary.png"
-                 alt="Geen Afbeelding"
-                  />
+         <p><img class="indent" src="/bjc-r/img/8-recursive-reporters/tobinary.png" alt="Geen Afbeelding" />
          </p>
          <p>If a number can be represented with only a single digit, we use it as the base case. For binary, the only
              numbers that can be represented with a single digit are 0 and 1, so we test to see if the number is less
@@ -38,24 +36,19 @@
              <div class="todo">Images should be redone so they are the same size (zoom 1.5). --MF</div>
              <ol>
                  <li> Write the <code>base7</code> block, which displays a number in base 7.<br /> <img class="indent"
-                         src="/bjc-r/img/8-recursive-reporters/base7example.png" alt="Geen Afbeelding"
-                          /> </li>
+                         src="/bjc-r/img/8-recursive-reporters/base7example.png" alt="Geen Afbeelding" /> </li>
                  <li> Generalize the pattern with a <code>base</code> block that takes the base as a second input:<br />
-                     <img class="indent" src="/bjc-r/img/8-recursive-reporters/base2.png"
-                         alt="Geen Afbeelding"
-                          /> <img class="indent"
-                         src="/bjc-r/img/8-recursive-reporters/base7.png" alt="Geen Afbeelding"
-                          /><br /> <img class="indent"
-                         src="/bjc-r/img/8-recursive-reporters/base8.png" alt="Geen Afbeelding"
-                          /> <img class="indent"
-                         src="/bjc-r/img/8-recursive-reporters/base10.png" alt="Geen Afbeelding"
-                          /><br /> </li>
+                     <img class="indent" src="/bjc-r/img/8-recursive-reporters/base2.png" alt="Geen Afbeelding" /> <img
+                         class="indent" src="/bjc-r/img/8-recursive-reporters/base7.png" alt="Geen Afbeelding" /><br />
+                     <img class="indent" src="/bjc-r/img/8-recursive-reporters/base8.png" alt="Geen Afbeelding" /> <img
+                         class="indent" src="/bjc-r/img/8-recursive-reporters/base10.png" alt="Geen Afbeelding" /><br />
+                 </li>
                  <li>
                      <div class="sidenote">Snap<em>!</em> will show this number in decimal, but you're converting to a
                          <em>number</em>, not a string of digits.</div>Write the inverse function <code>from base</code>
                      that takes a (text) string of digits and a base as inputs, and reports the corresponding
                      number.<br /> <img class="indent" src="/bjc-r/img/8-recursive-reporters/frombase.png"
-                         alt="Geen Afbeelding"  />
+                         alt="Geen Afbeelding" />
                  </li>
              </ol>
          </div>
@@ -63,10 +56,8 @@
              <ol start="4">
                  <li>Improve the <code>base</code> block so that it can go up to base 36 by using the letters
                      <code>a</code>‒<code>z</code> as digits with values 10‒35.<br /> <img class="indent"
-                         src="/bjc-r/img/8-recursive-reporters/common.png" alt="Geen Afbeelding"
-                          /> <img class="indent"
-                         src="/bjc-r/img/8-recursive-reporters/w00zy.png" alt="Geen Afbeelding"
-                          /> </li>
+                         src="/bjc-r/img/8-recursive-reporters/common.png" alt="Geen Afbeelding" /> <img class="indent"
+                         src="/bjc-r/img/8-recursive-reporters/w00zy.png" alt="Geen Afbeelding" /> </li>
                  <li>Improve the <code>from base</code> block to support bases up to 36 in the same manner.</li>
              </ol>
          </div>
