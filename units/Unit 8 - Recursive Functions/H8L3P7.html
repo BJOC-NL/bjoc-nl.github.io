@@ -18,23 +18,25 @@
 
  <body>
      <div class="full">
-         <h2>Subsets and Efficiency</h2>
-         <p> Here is one solution for the <code>subsets</code> block:<br /> <img class="indent"
-                 src="/bjc-r/img/8-recursive-reporters/subset-slow.png"
-                 alt="Geen Afbeelding"
-                  />
+         <h2>Subsets en Efficiëntie</h2>
+         <p> Hier is een oplossing voor het <code>subssets</code>blok: <br />
+             <img class="indent" src="/bjc-r/img/8-recursive-reporters/subset-slow.png" alt="Geen Afbeelding" />
          </p>
-         <p>This solution should remind you of the <code>pascal</code> block you have seen in <a
-                 href="/bjc-r/cur/programming/8-recursive-reporters/3-projects/2-pascal-efficiency.html?topic=nyc_bjc%2F8-recursive-reporters.topic&course=bjc4nyc.html&novideo&noassignment"
-                 >Unit 8 Lab 3 Page 2: Pascal's Triangle and Efficiency</a>,
-             which makes two recursive calls and adds the results. The <code>pascal</code> block makes two recursive
-             calls <em>with different inputs</em>. This version of <code>subsets</code> makes <em>the same</em>
-             recursive call twice, an inefficiency that can be corrected.</p>
+         <p> Deze oplossing zou je moeten herinneren aan het <code>pascal</code>blok dat je gezien hebt in
+             <a href="./H8L3P2.html"> Hoofdstuk 8 Les 3 Pagina 2: Pascal's Driehoek en Efficiëntie</a>,
+             die twee recursieve aanroepen maakt en de resultaten bij elkaar toevoegt. Het <code>pascal</code>blok maakt
+             twee recursieve aanroepen met <em>verschillende invoeren</em>. Deze versie van <code>subsets</code> maakt
+             <em>dezelfde</em> recursieve aanroepen twee keer. Dit is niet heel efficiënt en kan verbeterd worden.
+         </p>
          <div class="forYouToDo" id="first">
              <ol>
-                 <li>Using a <code>count</code> variable, as you did for the <code>pascal</code> block, count how many
-                     recursive calls are made to find the 64 subsets of a six-element list.</li>
-                 <li>Figure out how to reduce the number of recursive calls by avoiding redundant calls.</li>
+                 <li> Met behulp van een <code>tel</code> variabele kan je bijhouden hoeveel recursieve aanroepen je
+                     hebt gemaakt om de 64 subsets te vinden van de lijst met zes elementen. Dit heb je ook gedaan voor
+                     het <code>pascal</code>blok.
+                 </li>
+                 <li> Vind uit hoe je het aantal recursieve aanroepen kan verminderen door onnodige aanroepen te
+                     vermijden.
+                 </li>
              </ol>
          </div>
      </div>
