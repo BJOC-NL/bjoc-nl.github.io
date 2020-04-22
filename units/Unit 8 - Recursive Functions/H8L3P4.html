@@ -18,47 +18,63 @@
 
  <body>
      <div class="full">
-         <h2>Base Conversion</h2>
-         <p>Here's one solution for binary conversion of non-negative integers:</p>
+         <h2>Omzetten naar een ander Talstelsel</h2>
+         <p> Hier is een oplossing voor het omzetten naar binair van niet-negatieve getallen:</p>
          <p><img class="indent" src="/bjc-r/img/8-recursive-reporters/tobinary.png" alt="Geen Afbeelding" />
          </p>
-         <p>If a number can be represented with only a single digit, we use it as the base case. For binary, the only
-             numbers that can be represented with a single digit are 0 and 1, so we test to see if the number is less
-             than 2. If so, we report it.</p>
+         <p> Als een getal met één cijfer kan worden weergegeven, gebruiken we het als basisgeval. Bij binaire getallen
+             zijn er maar 2 getallen die met één cijfer kunnen worden weergegeven, 0 en 1. Dus we testen of een getal
+             kleiner is dan 2. Als dat zo is rapporteren we het getal.
+         </p>
          <p>
-             <div class="sidenote">It may be surprising that we don't use an arithmetic combiner, but the desired result
-                 is a <em>numeral</em>, a text string. This is why the combiner is a string operation.</div>In the
+             <div class="sidenote">
+                 Het is misschien verrassend dat we geen wiskundige combineerfunctie gebruiken, dat is omdat het
+                 gewenste resultaat een getalteken is, een stuk tekst. Dit is waarom de combineerfunctie voor tekst
+                 gebruikt wordt.
+             </div>In het recursieve geval is het meest rechtse binaire cijfer de rest wanneer we het getal door 2
+             delen. De andere cijfers komen van een recursieve aanroep op de quotient van het delen door 2. De
+             combineerfunctie is <code></code>
              recursive case, the rightmost binary digit is the remainder when dividing the number by 2. The other digits
-             come from a recursive call on the quotient when dividing by 2. The combiner is <code>join</code> because we
-             want to string the digits together.
+             come from a recursive call on the quotient when dividing by 2. The combiner is <code>voeg samen</code>
+             omdat we de cijfers samen willen voegen tot een woord.
          </p>
          <div class="forYouToDo" id="first">
-             <div class="todo">Images should be redone so they are the same size (zoom 1.5). --MF</div>
              <ol>
-                 <li> Write the <code>base7</code> block, which displays a number in base 7.<br /> <img class="indent"
-                         src="/bjc-r/img/8-recursive-reporters/base7example.png" alt="Geen Afbeelding" /> </li>
-                 <li> Generalize the pattern with a <code>base</code> block that takes the base as a second input:<br />
-                     <img class="indent" src="/bjc-r/img/8-recursive-reporters/base2.png" alt="Geen Afbeelding" /> <img
-                         class="indent" src="/bjc-r/img/8-recursive-reporters/base7.png" alt="Geen Afbeelding" /><br />
-                     <img class="indent" src="/bjc-r/img/8-recursive-reporters/base8.png" alt="Geen Afbeelding" /> <img
-                         class="indent" src="/bjc-r/img/8-recursive-reporters/base10.png" alt="Geen Afbeelding" /><br />
+                 <li> Schrijf het <code>talstelsel7</code>blok, dat het getal weergeeft in het talstelsel van 7.
+                     <br />
+                     <img class="indent" src="/bjc-r/img/8-recursive-reporters/base7example.png"
+                         alt="Geen Afbeelding" /> </li>
+                 <li> Generaliseer dit blok met een <code>talstelsel</code>blok dat het talstelsel neemt als tweede
+                     invoer:<br />
+                     <img class="indent" src="/bjc-r/img/8-recursive-reporters/base2.png" alt="Geen Afbeelding" />
+                     <img class="indent" src="/bjc-r/img/8-recursive-reporters/base7.png" alt="Geen Afbeelding" />
+                     <br />
+                     <img class="indent" src="/bjc-r/img/8-recursive-reporters/base8.png" alt="Geen Afbeelding" />
+                     <img class="indent" src="/bjc-r/img/8-recursive-reporters/base10.png" alt="Geen Afbeelding" />
+                     <br />
                  </li>
                  <li>
-                     <div class="sidenote">Snap<em>!</em> will show this number in decimal, but you're converting to a
-                         <em>number</em>, not a string of digits.</div>Write the inverse function <code>from base</code>
-                     that takes a (text) string of digits and a base as inputs, and reports the corresponding
-                     number.<br /> <img class="indent" src="/bjc-r/img/8-recursive-reporters/frombase.png"
-                         alt="Geen Afbeelding" />
+                     <div class="sidenote">
+                         Snap<em>!</em> zal het getal in decimaal laten zien, maar jij gaat het omzetten naar een
+                         <em>getal</em>, niet een woord dat bestaat uit cijfers.
+                     </div>
+                     Schrijf de omgekeerde functie <code>van talstelsel</code> dat een stuk tekst en een talstelsel als
+                     invoer neemt en daarna het bijbehorende getal rapporteert.
+                     <br />
+                     <img class="indent" src="/bjc-r/img/8-recursive-reporters/frombase.png" alt="Geen Afbeelding" />
                  </li>
              </ol>
          </div>
          <div class="ifTime">
              <ol start="4">
-                 <li>Improve the <code>base</code> block so that it can go up to base 36 by using the letters
-                     <code>a</code>‒<code>z</code> as digits with values 10‒35.<br /> <img class="indent"
-                         src="/bjc-r/img/8-recursive-reporters/common.png" alt="Geen Afbeelding" /> <img class="indent"
-                         src="/bjc-r/img/8-recursive-reporters/w00zy.png" alt="Geen Afbeelding" /> </li>
-                 <li>Improve the <code>from base</code> block to support bases up to 36 in the same manner.</li>
+                 <li> Verbeter het <code>talstelsel</code>blok zodat het tot het talstelsel van 36 werkt door de letters
+                     <code>a</code>-<code>z</code> als cijfers met waardes 10-35. <br />
+                     <img class="indent" src="/bjc-r/img/8-recursive-reporters/common.png" alt="Geen Afbeelding" />
+                     <img class="indent" src="/bjc-r/img/8-recursive-reporters/w00zy.png" alt="Geen Afbeelding" />
+                 </li>
+                 <li>
+                     Verbeter het <code>van talstelsel</code>blok op dezelfde manier.
+                 </li>
              </ol>
          </div>
      </div>

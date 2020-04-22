@@ -34,6 +34,7 @@
 * Feature? heb het nu vertaald als eigenschap, maar dekt niet helemaal de lading. (H1L3P7) weggehaald.
 * Dependencies -> afhankelijkheden? Klinkt raar weet niet of het helemaal correct is. (H2L1P4) (H2L3P3)
 * Calls -> Aanroepen? de aanroep van een blok klinkt een beetje verwarrend
+* Base 7 -> Talstelsel van 7
 
 ## Andere vragen/opmerkingen
 
