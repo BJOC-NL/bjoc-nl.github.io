@@ -18,70 +18,80 @@
 
  <body>
      <div class="full">
-         <h2> Even Numbers and <code> Keep</code> </h2>
+         <h2> Even Getallen en <code> Keep</code> </h2>
          <p>
-             We want a block that takes a list of numbers as input, and reports a list of just the <strong>
-                 even</strong> numbers from the input.
+             We willen een blok dat een lijst met getallen als invoer heeft en een lijst rapporteert met alle
+             <strong>even</strong> getallen van de invoer.
          </p>
+
          <p>
-             You already know how to write this block using the <code> keep</code> higher-order function, but let's see
-             what it looks like using recursion:<br />
+             Je weet al hoe je dit blok moet schrijven met de <code>keep</code>functie van hogere orde, maar laten we
+             eens zien hoe het eruit ziet met recursie: <br />
              <img class="indent" src="/bjc-r/img/8-recursive-reporters/evens.png" alt="Geen Afbeelding" />
          </p>
-         <p> Here there are <em> three </em> possible cases to consider, not just the usual base case or recursive case.
-             There's still a base case, namely an empty input list, in which case we report an empty list. But there are
-             <em> two </em> recursive cases, depending on whether or not the first item of the list is even. (There has
-             to be a first item, if we're not in the base case.) The green Operators blocks above take the remainder on
-             dividing the first number by 2, and see if that remainder is 0, in which case the number is even.
+
+         <p> Er zijn drie gevallen mogelijk, niet zoals gewoonlijk alleen het basisgeval en het recursieve geval.
+             Er is nog steeds een basisgeval, namelijk een lege invoerlijst, in dat geval rapporteren we een lege lijst.
+             Maar er zijn <em>twee</em> recursieve gevallen, afhankelijk van of het eerste element van de lijst even is.
+             (Er moet een eerste element zijn als dit niet het basisgeval is.) De groene blokken van het Functiesmenu
+             delen het eerste getal door 2 en kijken of de rest gelijk is aan 0 (net als bij het omreken naar binair in
+             <a href="H8L3P3.html"> Hoofdstuk 8 Les 3 Pagina 3: Omrekenen naar Binair</a>). Als de rest gelijk is aan 0
+             dan is het getal even.
          </p>
-         <p> If the first number is even, then we want to include that number in the result. So we report that number
-             <code> in front of</code> the recursive call on the rest of the numbers. If the first number isn't even,
-             then we <em> don't </em> want to include it in the result, so we simply report the value reported by the
-             recursive call.
+         <p> Als het eerste getal even is, dan hoort het getal bij het resultaat dat we rapporteren. Dus we rapporteren
+             dat getal <code>voor</code> de recursieve aanroep aan de rest van de getallen. Als het eerste getal niet
+             even is dan willen we het <em>niet</em> toevoegen aan het resultaat, dus we rapporteren alleen de waarde
+             van de recursieve aanroep.
          </p>
-         <div class="takeNote"> Like <code> plurals</code> , the <code> evens</code> code is an example of a <strong>
-                 pattern</strong> of code. There's nothing special about even numbers here. The same pattern could be
-             used to make a list of odd numbers, or numbers that end in 7, or names that start with a Z.
+         <div class="takeNote"> Net als <code> meervoud</code> , is de <code> even</code>code een voorbeeld van een
+             code<strong>patroon</strong>. Er is niks speciaals aan even getallen hier. Hetzelfde patroon kan gebruikt
+             worden om een lijst met oneven getallen te maken, of met getallen die eindigen op 7 of namen die beginnen
+             met een "z".
          </div>
          <div class="forYouToDo" id="first">
-             <p> <strong> Do the following exercises using recursion, not higher order functions. </strong>
+             <p> <strong> Gebruik bij de volgende opdrachten recursie, geen functies van hogere orde.
+                 </strong>
              </p>
              <ol>
-                 <div class="sidenote"> Try modifying the code from <code> evens</code> .
+                 <div class="sidenote"> Probeer de code van <code>even</code> aan te passen.
                  </div>
-                 <li> Write a block <code> ends-e</code> that takes a list of words as input, and reports a list of
-                     those words from the input whose last letter is e.<br />
+                 <li> Schrijf een blok <code>eindigt-e</code>dat een lijst met woorden als invoer heeft en een lijst met
+                     de woorden waarvan de laatste letter een e is, rapporteert. <br />
                      <img class="indent" src="/bjc-r/img/8-recursive-reporters/endse-ex.png" alt="Geen Afbeelding" />
                  </li>
-                 <li> Write a block <code> numbers</code> that takes a list of mixed words and numbers as input, and
-                     reports a list of just the numbers from the input list.<br />
+                 <li> Schrijf een blok <code>getallen</code> dat een lijst met woorden en getallen als invoer neemt en
+                     met alleen de getallen van die lijst rapporteert.<br />
                      <img class="indent" src="/bjc-r/img/8-recursive-reporters/numbers-ex.png" alt="Geen Afbeelding" />
                  </li>
-                 <li> Generalize the pattern to make a <code> keep</code> block.</li>
+                 <li> Generaliseer het patroon om een <code>keep</code>blok te maken.
+                 </li>
                  <div class="takeNote">
-                     If you didn't work through the <code> combine</code> block page in
-                     <a href="/bjc-r/cur/programming/5-algorithms/3-timing-experiments/1-comparing-algorithms.html">
-                         Unit 5 Lab 3 Page 1: Comparing Algorithms</a> , you'll probably want to get a sense of how that
-                     block works before starting the next problem.
+                     Als je niet met het <code>combine</code>blok van pagina
+                     <a href="../Unit 5 - Algorithms and Simulations/H5L3P1.html">
+                         Hoofdstuk 5 Les 3 Pagina 1: Algoritmes Vergelijken</a> hebt gewerkt, wil waarschijnlijk eerst
+                     kijken hoe dat blok werkt voordat je aan de volgende opdracht begint.
                  </div>
-                 <li> Write the <code> combine</code> block. <strong> Note:</strong> The base case will be a list with
-                     one item, not an empty list. </li>
+                 <li> Schrijf het <code> combine</code>blok. <strong> Merk op:</strong> Het basis geval is een lijst met
+                     één element, niet een lege lijst.
+                 </li>
              </ol>
          </div>
          <div class="takeNote">
-             Building <code> map</code> , <code> keep</code> , and <code> combine</code> is a major
-             accomplishment. Yet each of these blocks just generalizes a simple pattern. Some people think that higher
-             order functions are <strong> <em> way too hard and scary</em> </strong> for students to use, let alone
-             build. But you just did!
+             Het bouwen van <code>map</code> , <code> keep</code> , en <code> combine</code> is een grote prestatie waar
+             je trots op mag zijn. Ook al generaliseren deze blokken simpele patronen. Sommige mensen vinden functies
+             van hogere orde <strong> <em> te ingewikkeld en eng</em> </strong> voor leerlingen om te gebruiken, laat
+             staan ze te bouwen. Maar dat heb je net wel gedaan.
          </div>
          <div class="ifTime">
              <ol start="5">
-                 <li> Modify any <code> sort</code> algorithm you wrote earlier in
-                     <a href="/bjc-r/cur/programming/8-recursive-reporters/2-sorting/1-sorting-a-list.html"> Unit 8 Lab
-                         2 Page 1: Sorting a List</a> to take a comparison predicate as an input, so you can say <br />
+                 <li> Pas een <code> sorteer</code> algoritme dat je geschreven hebt in
+                     <a href="./H8L1P3.html"> Hoofdstuk 8 Les
+                         2 Pagina 1: Een Lijst Sorteren</a> aan om als invoer een eigenschap te vergelijken, zoals het
+                     groene blok hieronder: <br />
                      <img class="indent" src="/bjc-r/img/8-recursive-reporters/sortusing.png" alt="Geen Afbeelding" />
                      <br />
-                     to sort with the <em> largest</em> item coming first. </li>
+                     Op die manier kan je sorteren met het <em>grootste</em> element als eerste.
+                 </li>
              </ol>
          </div>
      </div>
