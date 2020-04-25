@@ -18,12 +18,13 @@
 
  <body>
      <div class="full">
-         <h2> Generalizing the <code> Map</code> Pattern</h2>
-         <p> Here's a version of the code for each block from the previous page.<br />
+         <h2> Het <code> Map</code> Patroon Generaliseren</h2>
+         <p> Hieronder is een manier om de blokken van de vorige pagina te maken.
+             <br />
              <img class="indent" src="/bjc-r/img/8-recursive-reporters/plurals.png" alt="Geen Afbeelding" />
              <div class="sidenote">
-                 Your <code> exaggerate word</code> block might look a lot different, but here is one
-                 version:<br />
+                 Jouw <code> overdrijf woord</code>blok ziet er misschien heel anders uit maar hier is een manier:
+                 <br />
                  <img src="/bjc-r/img/8-recursive-reporters/exaggerate-word.png" alt="Geen Afbeelding" />
              </div>
 
@@ -34,59 +35,76 @@
              <img class="indent" src="/bjc-r/img/8-recursive-reporters/exaggerate-wordlist.png" alt="Geen Afbeelding" />
          </p>
 
-         <p> <code> Plurals</code> , <code> squares</code> , and <code> exaggerate wordlist</code> look almost
-             identical:<br />
+         <p> <code>meervoud</code> , <code> kwadraten</code> , and <code> overdrijf woordenlijst</code> zijn bijna
+             identiek:
+             <br />
              <img src="/bjc-r/img/8-recursive-reporters/map-examples.png" alt="Geen Afbeelding" />
          </p>
 
          <p>
-             The only difference is the circled part above: the particular function that's applied to <code> item 1
-                 of</code> the input list. Here's a generalization of the pattern:<br /> <img class="indent"
-                 src="/bjc-r/img/8-recursive-reporters/map-start.png" alt="Geen Afbeelding" />
+             Het enige verschil is het omcirkelde deel hierboven: de functie die wordt uitgevoerd op <code>item 1
+                 van</code> de invoerlijst. Hier is een generalisatie van dit patroon: <br />
+             <img class="indent" src="/bjc-r/img/8-recursive-reporters/map-start.png" alt="Geen Afbeelding" />
          </p>
-         <p> But what do we put in the first input slot of <code> in front of</code> ?
+
+         <p> Maar wat stoppen we in het eerste invoervak van <code>voor</code> ?
          </p>
+
          <p>
-             There are two little details you have to learn to finish this definition. The first is that the
-             <code> function</code> input has to be a reporter. You already know how to set an input to be of a specific
-             type. Setting this as a reporter is no different:<br />
+             Er zijn twee kleine details die je moet weten om deze definitie af te maken. Het eerste detail is dat de
+             invoer voor <code>functie</code> een rapporteur moet zijn. Je weet al hoe je de invoer een specifiek type
+             moet maken. Het werkt op dezelfde manier:
+             <br />
              <img class="indent" src="/bjc-r/img/8-recursive-reporters/reporter-type.png" alt="Geen Afbeelding" />
          </p>
          <p>
-             The Greek letter λ that appears in the Block Editor next to the word <code> function</code> in the orange
-             oval is a type reminder, just like the︙for lists.
+             De Griekse letter λ die in het blok verschijnt naast <code>functie</code> herinnert je eraan dat functie
+             als invoertype een rapporteur heeft. Net zoals dat ︙ zegt dat <code>data</code> een lijst is.
          </p>
-         <p>
-             Now you have to know how to apply the function to <code> item 1 of data</code> . Find the <code>
-                 call</code>
-             block in the Control palette and click on its right arrowhead to give it a second input slot. Then fill it
-             in like this:<br />
+         <p> Nu moet je alleen nog maar weten hoe je de functie uitvoert op <code>item 1 van data</code>. Vind het
+             <code>roep aan</code>blok in het Besturenmenu en klik op het zwarte pijltje om het een tweede invoervak te
+             geven. Vul het dan zo in: <br />
              <img class="indent" src="/bjc-r/img/8-recursive-reporters/map.png" alt="Geen Afbeelding" /> </p>
          <p>
-             That's it! You've written <code> map</code> , a higher-order function!
+             Het is af! Je hebt nu het <code>map</code>blok gemaakt, een functie van hogere orde!
          </p>
          <p>
-             The <code> call</code> block finds empty input slots in its function input and fills them in with the given
-             input values.
+             Het <code>roep aan</code>blok vindt lege invoervakken in de functie-invoer en vult ze met de gegeven
+             invoerwaardes.
          </p>
 
-         <div class="takeNote"> Higher-order functions aren't difficult, once you understand recursion and how to
-             generalize a procedure by adding an input. They're no big deal to write! And they are very powerful to use.
+         <div class="takeNote"> Functies van hogere orde zijn niet ingewikkeld, als je recursie begrijpt en hoe je een
+             functie generaliseert door een invoer toe te voegen. Ze zijn niet moeilijk om te schrijven! Daarnaast zijn
+             ze ook heel krachtig.
          </div>
 
          <div class="forYouToDo" id="first">
              <ol>
-                 <li> Rebuild the <code> exaggerate</code> block using a call to <code> map</code> . What happens to the
-                     helper function?</li>
-                 <li> Occasionally a problem comes up that doesn't <em> exactly </em> match the <code> map</code>
-                     pattern,
-                     but comes close. In that case, you can't use <code> map</code> , but your understanding of the
-                     pattern still helps. Here's an example:<br /> <img class="indent"
-                         src="/bjc-r/img/8-recursive-reporters/odds.png" alt="Geen Afbeelding" /> <br /> Fill in the
-                     blanks: This script is just like the map pattern except for ______ (base case) and _____ (in the
-                     recursive case). </li>
-                 <li> Build the <code> pairup</code> block:<br /> <img class="indent"
-                         src="/bjc-r/img/8-recursive-reporters/pairup.png" alt="Geen Afbeelding" /> </li>
+                 <li> Bouw het <code>overdrijf</code>blok opnieuw met <code>map</code>. Wat moet je met de hulpfuncties
+                     doen?
+                 </li>
+                 <li>
+                     Soms kom je een probleem tegen dat niet <em>precies</em> het <code>map</code>patroon volgt, maar
+                     het lijkt er wel heel erg op. In dat geval kan je <code>map</code> niet gebruiken, maar het helpt
+                     je nog steeds dat je het <code>map</code>patroon begrijpt. Een voorbeeld: <br />
+                     <img class="indent" src="/bjc-r/img/8-recursive-reporters/odds.png" alt="Geen Afbeelding" />
+                     <br />
+                     Vul de lege vakken in: Dit script is net zoals het map patroon behalve __ (het basisgeval) en __
+                     (de recursieve aanroep).
+                     <p>
+                         <a href="#hint-difference" data-toggle="collapse">
+                             Antwoord
+                         </a>
+                         <div id="hint-difference" class="collapse">
+                             Dit script is net zoals het map patroon behalve <strong>het basisgeval</strong> en <strong>
+                                 de
+                                 recursieve aanroep</strong>.
+                         </div>
+                     </p>
+                 </li>
+                 <li> Bouw het <code> koppel</code>blok:<br />
+                     <img class="indent" src="/bjc-r/img/8-recursive-reporters/pairup.png" alt="Geen Afbeelding" />
+                 </li>
              </ol>
          </div>
      </div>
