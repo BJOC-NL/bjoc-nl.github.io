@@ -17,247 +17,297 @@
 </head>
 
 <body>
-    <h2>Een Onbeslisbaar Probleem</h2>
-    <div class="learn">
-        <p><strong>Op deze pagina,</strong> ga je een probleem bekijken dat geen antwoord <em>kan</em> hebben.</p>
-    </div>
-    <p>Op dit punt in de cursus heb je de frustratie ervaren van het debuggen van een programma. Het zou geweldig zijn
-        als er een algemeen foutopsporingsprogramma was dat code kon lezen en daarna bepalen of er bugs in zitten.
-        Helaas kunnen we een bewijs uit het ongerijmde gebruiken (zoals Alex, Bo en Yasmine op de vorige pagina deden)
-        om te bewijzen dat dit niet kan.
-    </p>
-    <p>Eerst gaan we ervan uit dat het mogelijk is om een functie te schrijven die bepaalt of er <em> oneindige lussen
-        </em> in een programma zijn (situaties waarin een functie voor altijd wordt uitgevoerd zonder een waarde te
-        rapporteren). Vervolgens zullen we die functie gebruiken in een programma dat speciaal is ontworpen om een
-        tegenstrijdigheid te creëren om te bewijzen dat de veronderstelling onjuist is&mdash;
-        <strong> er kan geen programma voor algemene foutopsporing bestaan </strong>. "Heeft dit programma bugs" is een
-        <em> onbeslisbaar probleem </em>; er kan nooit een algoritme worden geconstrueerd dat het voor elk programma
-        altijd correct oplost. </p>
-
-    <div class="vocabFullWidth">
-        <p>Een <strong>oneindige lus </strong> is een rij computer instructie dat zichzelf voor altijd blijft herhalen.
-        </p>
-        <p>Een <strong>onoplosbaar probleem</strong> is een probleem waarvoor geen enkel algoritme geschreven kan worden
-            om de oplossing te vinden.
-        </p>
-        <p>Een <strong>onbeslisbaar probleem</strong>is er een waarvoor geen algoritme kan worden geschreven dat altijd
-            een juiste <em> waar / niet waar beslissing </em> geeft voor elke invoerwaarde. Onbeslisbare problemen zijn
-            een subcategorie van onoplosbare problemen dat alleen problemen bevat die een ja / nee-antwoord zouden
-            moeten hebben (zoals: bevat mijn code een bug?). </p>
-    </div>
-    <h3>Aanneem dat een <code>Stopt?</code> Functie Bestaat</h3>
-    <h4><strong>De Aanname Maken</strong></h4>
-    <p>
-        <div class="sidenote">
-            We kunnen de code in <code> stopt? </code> niet weergeven; we bewijzen dat het helemaal niet kan worden
-            geschreven, ongeacht hoe het geïmplementeerd wordt.
+    <div class="full">
+        <h2>Een Onbeslisbaar Probleem</h2>
+        <div class="learn">
+            <p><strong>Op deze pagina,</strong> ga je een probleem bekijken dat geen antwoord <em>kan</em> hebben.</p>
         </div>
-        Ten eerste <em> nemen we aan </em> dat er een functie bestaat met de naam <code> stopt? </code> die bepaalt of
-        een bepaalde rapporteur een waarde in een eindige hoeveelheid tijd rapporteert. (Als dat zo is, zeggen we dat de
-        rappoorteur <em> stopt. </em>) Er zijn twee ingangen nodig: een
-        functie en een invoerwaarde voor die functie. Het rapporteert <code> waar </code> als de functie een waarde zou
-        rapporteren wanneer die invoer wordt gegeven; het rapporteert <code> niet waar </code> als de functie voor
-        altijd zou worden uitgevoerd (in een oneindige lus).
-        <br /> <img height="40" class="indent" src="../../afb/h5/l4/p2-b2.png" alt="Geen Afbeelding" />
-    </p>
-    <p>Dhe function <code>afgerond</code> bijvoorbeeld wordt niet voor altijd uitgevoerd met de invoer <var>7.5</var>;
-        het zal 8 rapporteren.
-    </p>
-    <div class="sidenote"> De grijze ring om de invoerfunctie heen betekent dat de <code>stopt?</code> de invoerfunctie
-        als data ziet in plaats van het uit te voeren. </div>
-    <p class="indent">
-        <img class="inline" src="../../afb/h5/l4/p2-b3.png" alt="Geen Afbeelding" /> omdat
-        <img height="40" class="inline" src="../../afb/h5/l4/p2-b4.png" alt="Geen Afbeelding" /> een waarde rapporteert.
-    </p>
-    <p>Stel je anderzijds voor dat we een functie hebben die in een oneindige lus komt te zitten met de invoer
-        <var>foo</var>; die zal nooit iets rapporteren (nooit stoppen).
-    </p>
-    <p class="indent"><img class="inline" src="../../afb/h5/l4/p2-b5.png" alt="Geen Afbeelding" /> omdat
-        <img height="40" class="inline" src="../../afb/h5/l4/p2-b6.png" alt="Geen Afbeelding" />
-        oneindig zich herhaalt.
-    </p>
-    <h4><strong>Het Plan voor het Bewijs Bekijken</strong></h4>
-    <p>We zullen bewijs uit het ongerijmde gebruiken om te laten zien dat de volgende vraag <em>niet</em> beantwoord kan
-        worden <em>in het algemeen</em>:</p>
+        <p>Op dit punt in de cursus heb je de frustratie ervaren van het debuggen van een programma. Het zou geweldig
+            zijn
+            als er een algemeen foutopsporingsprogramma was dat code kon lezen en daarna bepalen of er bugs in zitten.
+            Helaas kunnen we een bewijs uit het ongerijmde gebruiken (zoals Alex, Bo en Yasmine op de vorige pagina
+            deden)
+            om te bewijzen dat dit niet kan.
+        </p>
+        <p>Eerst gaan we ervan uit dat het mogelijk is om een functie te schrijven die bepaalt of er <em> oneindige
+                lussen
+            </em> in een programma zijn (situaties waarin een functie voor altijd wordt uitgevoerd zonder een waarde te
+            rapporteren). Vervolgens zullen we die functie gebruiken in een programma dat speciaal is ontworpen om een
+            tegenstrijdigheid te creëren om te bewijzen dat de veronderstelling onjuist is&mdash;
+            <strong> er kan geen programma voor algemene foutopsporing bestaan </strong>. "Heeft dit programma bugs" is
+            een
+            <em> onbeslisbaar probleem </em>; er kan nooit een algoritme worden geconstrueerd dat het voor elk programma
+            altijd correct oplost. </p>
 
-    <p class="center"><strong> Zal een bepaald computerprogramma, met een bepaalde invoer, een resultaat rapporteren in
-            een eindige hoeveelheid tijd?
-        </strong></p>
-    <div class="endnote">
-        <p>Het "computerprogramma" is de eerste invoer voor <code>stopt?</code>.
-            De 'gegeven invoer' is de tweede invoer. Wat <code>stopt</code> rapporteert is of <code>waar</code> of
-            <code>niet waar</code>: het computerprogramma zal stoppen of het zal niet stoppen.
+        <div class="vocabFullWidth">
+            <p>Een <strong>oneindige lus </strong> is een rij computer instructie dat zichzelf voor altijd blijft
+                herhalen.
+            </p>
+            <p>Een <strong>onoplosbaar probleem</strong> is een probleem waarvoor geen enkel algoritme geschreven kan
+                worden
+                om de oplossing te vinden.
+            </p>
+            <p>Een <strong>onbeslisbaar probleem</strong>is er een waarvoor geen algoritme kan worden geschreven dat
+                altijd
+                een juiste <em> waar / niet waar beslissing </em> geeft voor elke invoerwaarde. Onbeslisbare problemen
+                zijn
+                een subcategorie van onoplosbare problemen dat alleen problemen bevat die een ja / nee-antwoord zouden
+                moeten hebben (zoals: bevat mijn code een bug?). </p>
+        </div>
+        <h3>Aanneem dat een <code>Stopt?</code> Functie Bestaat</h3>
+        <h4><strong>De Aanname Maken</strong></h4>
+        <p>
+            <div class="sidenote">
+                We kunnen de code in <code> stopt? </code> niet weergeven; we bewijzen dat het helemaal niet kan worden
+                geschreven, ongeacht hoe het geïmplementeerd wordt.
+            </div>
+            Ten eerste <em> nemen we aan </em> dat er een functie bestaat met de naam <code> stopt? </code> die bepaalt
+            of
+            een bepaalde rapporteur een waarde in een eindige hoeveelheid tijd rapporteert. (Als dat zo is, zeggen we
+            dat de
+            rappoorteur <em> stopt. </em>) Er zijn twee ingangen nodig: een
+            functie en een invoerwaarde voor die functie. Het rapporteert <code> waar </code> als de functie een waarde
+            zou
+            rapporteren wanneer die invoer wordt gegeven; het rapporteert <code> niet waar </code> als de functie voor
+            altijd zou worden uitgevoerd (in een oneindige lus).
+            <br /> <img height="40" class="indent" src="../../afb/h5/l4/p2-b2.png" alt="Geen Afbeelding" />
         </p>
-        <p>Merk op dat <code>stopt?</code> zelf altijd een resultaat moet rapporteren, zelfs als het programma dat het
-            test dat niet doet. Dit is zo omdat we <em>aannemen</em> (waarvan we gaan laten zien dat het niet klopt) dat
-            <code>stopt?</code> altijd werkt, dat het altijd een antwoord rapporteert.
+        <p>Dhe function <code>afgerond</code> bijvoorbeeld wordt niet voor altijd uitgevoerd met de invoer
+            <var>7.5</var>;
+            het zal 8 rapporteren.
         </p>
-    </div>
-    <p>We <em>kunnen</em> deze vraag beantwoorden voor <em>specifieke</em> functies, maar we willen bepalen of we een
-        <em>algemene</em> test kunnen maken die ons vertelt of een bepaalde functie een waarde rapporteert voor een
-        specifieke invoer.
-    </p>
-    <div class="endnote"> <a href="#hint-general" data-toggle="collapse">Wat betekent het dat we de vraag kunnen
-            beantwoorden voor <em>specifieke</em> functies?</a>
-        <div id="hint-general" class="collapse">
-            <p> Het deel "in het algemeen" is belangrijk. Natuurlijk kunnen we de vraag beantwoorden voor bepaalde
-                programma's. Deze stopt voor elke invoer:
-                <br /> <img class="indent" src="../../afb/h5/l4/p2-b7.png" width="158" alt="Geen Afbeelding" /> </p>
-            <p> Deze stopt <em>nooit</em> voor elke invoer:<br />
-                <img class="indent" src="../../afb/h5/l4/p2-b8.png" width="158" alt="Geen Afbeelding" /> </p>
-            <p> Deze stopt <em>soms</em>&mdash;voor elke invoer behalve 87:<br />
-                <img class="indent" src="../../afb/h5/l4/p2-b9.png" width="158" alt="Geen Afbeelding" /> </p>
-            <p>Herinner je dat de vraag is of we een test kunnen maken die ons zegt of <em>elke</em> functie een waarde
-                rapporteert voor <em>elke</em> invoer.
+        <div class="sidenote"> De grijze ring om de invoerfunctie heen betekent dat de <code>stopt?</code> de
+            invoerfunctie
+            als data ziet in plaats van het uit te voeren. </div>
+        <p class="indent">
+            <img class="inline" src="../../afb/h5/l4/p2-b3.png" alt="Geen Afbeelding" /> omdat
+            <img height="40" class="inline" src="../../afb/h5/l4/p2-b4.png" alt="Geen Afbeelding" /> een waarde
+            rapporteert.
+        </p>
+        <p>Stel je anderzijds voor dat we een functie hebben die in een oneindige lus komt te zitten met de invoer
+            <var>foo</var>; die zal nooit iets rapporteren (nooit stoppen).
+        </p>
+        <p class="indent"><img class="inline" src="../../afb/h5/l4/p2-b5.png" alt="Geen Afbeelding" /> omdat
+            <img height="40" class="inline" src="../../afb/h5/l4/p2-b6.png" alt="Geen Afbeelding" />
+            oneindig zich herhaalt.
+        </p>
+        <h4><strong>Het Plan voor het Bewijs Bekijken</strong></h4>
+        <p>We zullen bewijs uit het ongerijmde gebruiken om te laten zien dat de volgende vraag <em>niet</em> beantwoord
+            kan
+            worden <em>in het algemeen</em>:</p>
+
+        <p class="center"><strong> Zal een bepaald computerprogramma, met een bepaalde invoer, een resultaat rapporteren
+                in
+                een eindige hoeveelheid tijd?
+            </strong></p>
+        <div class="endnote">
+            <p>Het "computerprogramma" is de eerste invoer voor <code>stopt?</code>.
+                De 'gegeven invoer' is de tweede invoer. Wat <code>stopt</code> rapporteert is of <code>waar</code> of
+                <code>niet waar</code>: het computerprogramma zal stoppen of het zal niet stoppen.
+            </p>
+            <p>Merk op dat <code>stopt?</code> zelf altijd een resultaat moet rapporteren, zelfs als het programma dat
+                het
+                test dat niet doet. Dit is zo omdat we <em>aannemen</em> (waarvan we gaan laten zien dat het niet klopt)
+                dat
+                <code>stopt?</code> altijd werkt, dat het altijd een antwoord rapporteert.
             </p>
         </div>
-    </div>
-    <div class="forYouToDo" id="first">
-        <ol>
-            <li> <img class="inline" src="../../afb/icons/PraatMetJeBuur.png" alt="Geen Afbeelding" />
-                <ol>
-                    <li>Beschrijf het proces van een bewijs uit het ongerijmde.</li>
-                    <li>Beschrijf wat de <code>stopt?</code>functie doet.</li>
-                    <li>Beschrijf hoe je de <code>stopt?</code>functie in dit bewijs gaat gebruiken.
-                    </li>
-                </ol>
-            </li>
-        </ol>
-    </div>
-    <h3>Laten zien hoe dit een Tegenstrijdigheid Creëert</h3>
-    <h4><strong>Een Programma maken waarvoor <code>stopt?</code> Niet Werkt</strong></h4>
-    <p> Om te bewijzen dat een dergelijke functie niet kan bestaan, moeten we een tegenstrijdigheid creëren. We moeten
-        aantonen dat er ten minste één functie en één invoer voor die functie moet zijn waarvoor <code> stopt? </code>
-        niet werkt zoals we dachten dat het werkt. Dus we kunnen een blok, <code> tester </code> maken, specifiek om
-        <code> stopt? </code> te breken: <br />
-
-        <div class="sidenoteBig"> Net zoals dat de <code>#</code> en <code>⋮</code> symbolen zijn voor invoeren als
-            <em>getallen</em> of <em>lijsten</em>, is <code>&lambda;</code> niet deel van de naam van de invoer maar een
-            <strong>type-hint</strong> die gemaakt wordt wanneer het <em>rapporteur</em> invoertype wordt
-            geselecteerd:<br />
-            <img class="indent" src="../../afb/h5/l4/p2-b11.png" alt="Geen Afbeelding" /><br />
-            Herinner je dat dat een invoertype selecteren het uiterlijk van het invoervak aanpast zodat het het aangeeft
-            welke invoer er verwacht wordt. Het invoervak voor <code>tester</code> zal een afgeronde grijze ring hebben
-            om aan te geven dat de invoer een rapporteur moet zijn:
-            <img class="inline nopadtb" src="../../afb/h5/l4/p2-b12.png" alt="Geen Afbeelding" />
+        <p>We <em>kunnen</em> deze vraag beantwoorden voor <em>specifieke</em> functies, maar we willen bepalen of we
+            een
+            <em>algemene</em> test kunnen maken die ons vertelt of een bepaalde functie een waarde rapporteert voor een
+            specifieke invoer.
+        </p>
+        <div class="endnote"> <a href="#hint-general" data-toggle="collapse">Wat betekent het dat we de vraag kunnen
+                beantwoorden voor <em>specifieke</em> functies?</a>
+            <div id="hint-general" class="collapse">
+                <p> Het deel "in het algemeen" is belangrijk. Natuurlijk kunnen we de vraag beantwoorden voor bepaalde
+                    programma's. Deze stopt voor elke invoer:
+                    <br /> <img class="indent" src="../../afb/h5/l4/p2-b7.png" width="158" alt="Geen Afbeelding" /> </p>
+                <p> Deze stopt <em>nooit</em> voor elke invoer:<br />
+                    <img class="indent" src="../../afb/h5/l4/p2-b8.png" width="158" alt="Geen Afbeelding" /> </p>
+                <p> Deze stopt <em>soms</em>&mdash;voor elke invoer behalve 87:<br />
+                    <img class="indent" src="../../afb/h5/l4/p2-b9.png" width="158" alt="Geen Afbeelding" /> </p>
+                <p>Herinner je dat de vraag is of we een test kunnen maken die ons zegt of <em>elke</em> functie een
+                    waarde
+                    rapporteert voor <em>elke</em> invoer.
+                </p>
+            </div>
         </div>
+        <div class="forYouToDo" id="first">
+            <ol>
+                <li> <img class="inline" src="../../afb/icons/PraatMetJeBuur.png" alt="Geen Afbeelding" />
+                    <ol>
+                        <li>Beschrijf het proces van een bewijs uit het ongerijmde.</li>
+                        <li>Beschrijf wat de <code>stopt?</code>functie doet.</li>
+                        <li>Beschrijf hoe je de <code>stopt?</code>functie in dit bewijs gaat gebruiken.
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+        <h3>Laten zien hoe dit een Tegenstrijdigheid Creëert</h3>
+        <h4><strong>Een Programma maken waarvoor <code>stopt?</code> Niet Werkt</strong></h4>
+        <p> Om te bewijzen dat een dergelijke functie niet kan bestaan, moeten we een tegenstrijdigheid creëren. We
+            moeten
+            aantonen dat er ten minste één functie en één invoer voor die functie moet zijn waarvoor <code> stopt?
+            </code>
+            niet werkt zoals we dachten dat het werkt. Dus we kunnen een blok, <code> tester </code> maken, specifiek om
+            <code> stopt? </code> te breken: <br />
 
-        <img class="indent" src="../../afb/h5/l4/p2-b10.png" width="500" alt="Geen Afbeelding">
-    </p>
-    <p>Het <code>herhaalt</code>blok in dit script zorgt voor een oneindige lus. Als de <code>testter</code>code in dit
-        deel van het <code>als</code>blok komt, dan zal het nooit iets rapporteren. Dus of <code>tester</code>
-        <em>zichzelf</em> zal stoppen hangt af van de uitkomst van het <code>stopt?</code>predikaat in het
-        <code>als</code>blok.
-    </p>
-    <p>Het blok
-        <img height="40" class="inline" src="../../afb/h5/l4/p2-b13.png" alt="Geen Afbeelding" /> vraagt
-        wat er gebeurt als we de ingevoerde functie (<var>rapporteur</var>) aanroepen met <em>zichzelf</em> als invoer.
-        Dit is vergelijkbaar met toen Bo een zin maakte over de zin die ze aan het maken was met de zin "De zin die ik
-        <em>nu</em> zeg is onjuist."
-    </p>
-    <div class="endnote">
-        <img class="inline" src="../../afb/icons/UiterUitagend-mini.png" alt="Geen Afbeelding" />
-        Dit <em>is</em> uitdagend. BLijf volhouden! We zijn een <em>tegenstrijdigheid aan het maken</em> om te bewijzen
-        dat de <code>stopt?</code>functie die aangeroepen wordt in <code>tester</code> niet kan bestaan.
-    </div>
-    <h4><strong>Zelf-Verwijzing gebruiken om een Tegenstrijdigheid te Maken</strong></h4>
-    <p> Om <em>precies</em> de situatie te creëren zoals wat Bo zei ("De zin die ik <em>nu</em> zeg is onjuist."),
-        gaan we <code>tester</code> aanroepen over zichzelf:
-        <br />
-        <img class="indent" src="../../afb/h5/l4/p2-b1.png" alt="Geen Afbeelding" /><br />
-        Het <code>als</code> blok in het <code>tester</code>blok zal nu vragen of <code>tester</code> zal stoppen (niet
-        voor altijd doorgaan) als het aangeroepen wordt met <code>tester</code> als invoer. Het predikaat in het
-        <code>als</code>blok zal <code>stopt? (tester) (tester)</code> zijn. <br />
-        <img src="../../afb/h5/l4/p2-b14.png" width="800" alt="Geen Afbeelding">
-    </p>
-    <p>Dus net als in de voorbeelden hierboven,</p>
-    <p class="indent">
-        <img class="inline" src="../../afb/h5/l4/p2-b15.png" alt="Geen Afbeelding" /> zou betekenen dat
-        <img class="inline" src="../../afb/h5/l4/p2-b1.png" alt="Geen Afbeelding" /> een waarde geeft.
-    </p>
-    <p class="indent">
-        <img class="inline" src="../../afb/h5/l4/p2-b16.png" alt="Geen Afbeelding" /> zou betekenen dat
-        <img class="inline" src="../../afb/h5/l4/p2-b1.png" alt="Geen Afbeelding" /> voor eeuwig blijft herhalen.
-    </p>
-    <h4><strong>De Tegenstrijdigheid Begrijpen</strong></h4>
-    <p> Wanneer we
-        <img class="inline" src="../../afb/h5/l4/p2-b1.png" alt="Geen Afbeelding" /> aanroepen, zien we een
-        tegenstrijdigheid. Om te zien hoe, kijken we naar de definitie van <code>tester</code>:<br />
-        <img class="indent" src="../../afb/h5/l4/p2-b10.png" width="500" alt="Geen Afbeelding"> </p>
-    <p> Om te laten zien dat <strong>het resultaat fout moet zijn</strong> voeren we een <em>gevalanalyse</em> uit net
-        zoals we dede op pagina 1. Kijk naar de twee mogelijke gevallen:
-        <ol>
-            <li>ALs
-                <img class="inline" src="../../afb/h5/l4/p2-b15.png" alt="Geen Afbeelding" /> dan zal
-                <code>tester</code> de eerste aanpak van de
-                <code>als</code> nemen en dus voor altijd herhalen. Dat betekent dat
-                <img class="inline" src="../../afb/h5/l4/p2-b1.png" alt="Geen Afbeelding" />
-                <em>niet</em> zal stoppen en dus geeft
-                <code>stopt?</code> het foute antwoord. </li>
-            <li>Als
-                <img class="inline" src="../../afb/h5/l4/p2-b16.png" alt="Geen Afbeelding" /> en zal <code>tester</code>
-                de
-                <code>else</code>aanpak nemen en "Het maakt niet uit welke waarde gerapporteerd wordt." rapporteren. Wat
-                betekent dat
-                <img class="inline" src="../../afb/h5/l4/p2-b1.png" alt="Geen Afbeelding" />
-                <em>wel</em>zal stoppen en dus heeft <code>stopt?</code> het weer fout.</li>
-        </ol>
-    </p>
-    <div class="endnote">Het maakt niet uit <em>welke</em> waarde <code>tester</code> rapporteert, alleen maar dat het
-        <em>een waarde</em> rapporteert, maar het maakt wel uit welke waarde <code>stopt?</code> rapporteert.
-    </div>
-    <div class="takeNote">
-        <p>Bij alles wat <code>stopt?</code> rapporteert zal het nooit overeenkomen met zichzelf bij een programma zoals
-            dit.
-            <strong>Deze tegenstrijdigheid (deze logische onmogelijkheid) betekent dat de aanname dat het mogelijk is
-                <code>stopt?</code> te maken fout is. </strong>.
-            Dit is niet alleen een claim over wat er zou gebeuren in Snap <em>! </em>. De taal die je gebruikt om een
-            computerprobleem te onderzoeken, kan de duidelijkheid of leesbaarheid van je code beïnvloeden, maar niet of
-            er een oplossing voor een probleem bestaat. Zelfs met de vooruitgang in kwantumcomputers, zullen we nooit in
-            staat zijn om een programma voor algemene foutopsporing te maken. Dit beroemde voorbeeld staat bekend als
-            het <em> stopprobleem, </em> en het feit dat het stopprobleem onbeslisbaar is, is de <em> Halting Theorem
-                (Stopstelling). </em> </p>
-    </div>
-    <div class="forYouToDo">
-        <ol start="2">
-            <li>
-                <img class="inline" src="../../afb/icons/PraatMetJeBuur.png" alt="Geen Afbeelding" />
-                Neem dit hele bewijs opnieuw samen door. Zorg ervoor dat jij en je partner het volgende begrijpen: <ol>
-                    <li> Alles uit opdracht 1 over bewijs door tegenstrijdigheid, wat <code> stopt? </code> doet en hoe
-                        <code> stopt? </code> wordt gebruikt in het bewijs. </li>
-                    <li> De basisprincipes van hoe de functie <code> tester </code> zich gedraagt (voor <em>elke</em>
-                        functie die wordt ingevoerd). </li>
-                    <li> Hoe het aanroepen van
-                        <img class="inline" src="../../afb/h5/l4/p2-b1.png" alt="Geen Afbeelding" /> leidt tot
-                        een tegenstrijdigheid. </li>
-                    <li> Wat die tegenstrijdigheid betekent in het bewijs. </li>
-                    <li> Of het stopprobleem een onoplosbaar probleem is, een onbeslisbaar probleem, of beide; en
-                        <em>why</em>.</li>
-                </ol>
-            </li>
-            <li>Schrijf een paragraaf waarin het verschil wordt uitgelegd tussen een probleem dat <em> niet </em> kan
-                worden opgelost (zoals het stopprobleem) en een probleem dat ongelooflijk veel tijd kost.
-            </li>
-        </ol>
-    </div>
-    <div class="endnote">
-        <h4> <strong> Wie bewees voor het eerst de Halting Theorem (Stopstellling)? </strong> </h4>
-        <p> Alan Turing (1912-1954) was een van de grondleggers van de informatica. Hij staat bekend om twee prestaties.
-            Ten eerste heeft hij een enorme bijdrage geleverd aan het winnen van de Tweede Wereldoorlog door een
-            wiskundige theorie en bijbehorende machine uit te vinden om de gecodeerde berichten van de Duitse
-            Enigma-machine te breken. Ten tweede was Turing samen met zijn collega Alonzo Church een oprichter van
-            <em> theoretische informatica </em>: bewijzen hoe computers <em> moeten </em> werken ongeacht de toekomstige
-            technologie. Door zijn werk aan het stopprobleem, bewees hij dat <em> dat er berekeningen zijn die nooit
-                gedaan kunnen worden </em>, ongeacht hoe groot en snel computers worden.
+            <div class="sidenoteBig"> Net zoals dat de <code>#</code> en <code>⋮</code> symbolen zijn voor invoeren als
+                <em>getallen</em> of <em>lijsten</em>, is <code>&lambda;</code> niet deel van de naam van de invoer maar
+                een
+                <strong>type-hint</strong> die gemaakt wordt wanneer het <em>rapporteur</em> invoertype wordt
+                geselecteerd:<br />
+                <img class="indent" src="../../afb/h5/l4/p2-b11.png" alt="Geen Afbeelding" /><br />
+                Herinner je dat dat een invoertype selecteren het uiterlijk van het invoervak aanpast zodat het het
+                aangeeft
+                welke invoer er verwacht wordt. Het invoervak voor <code>tester</code> zal een afgeronde grijze ring
+                hebben
+                om aan te geven dat de invoer een rapporteur moet zijn:
+                <img class="inline nopadtb" src="../../afb/h5/l4/p2-b12.png" alt="Geen Afbeelding" />
+            </div>
+
+            <img class="indent" src="../../afb/h5/l4/p2-b10.png" width="500" alt="Geen Afbeelding">
         </p>
-        <p> Toen Turing dit werk deed, waren er geen programmeerbare computers; mensen moesten fysieke machines
-            opnieuw bedraden om elk nieuw probleem op te lossen. Met krachtige programmeertalen (zoals Snap <em>! </em>)
-            kunnen we de essentie van het bewijs van Turing veel gemakkelijker zien en begrijpen omdat we functies
-            kunnen gebruiken als invoer voor andere functies, zoals u hebt gezien met <code> map </code>, <code> houd
-            </code> en <code> combine </code>. Dit bewijs was nog moeilijker voor Turing omdat hij het idee moest
-            uitvinden van een computerprogramma dat kan worden weergegeven als gegevens in de computer.
+        <p>Het <code>herhaalt</code>blok in dit script zorgt voor een oneindige lus. Als de <code>testter</code>code in
+            dit
+            deel van het <code>als</code>blok komt, dan zal het nooit iets rapporteren. Dus of <code>tester</code>
+            <em>zichzelf</em> zal stoppen hangt af van de uitkomst van het <code>stopt?</code>predikaat in het
+            <code>als</code>blok.
         </p>
-    </div>
+        <p>Het blok
+            <img height="40" class="inline" src="../../afb/h5/l4/p2-b13.png" alt="Geen Afbeelding" /> vraagt
+            wat er gebeurt als we de ingevoerde functie (<var>rapporteur</var>) aanroepen met <em>zichzelf</em> als
+            invoer.
+            Dit is vergelijkbaar met toen Bo een zin maakte over de zin die ze aan het maken was met de zin "De zin die
+            ik
+            <em>nu</em> zeg is onjuist."
+        </p>
+        <div class="endnote">
+            <img class="inline" src="../../afb/icons/UiterUitagend-mini.png" alt="Geen Afbeelding" />
+            Dit <em>is</em> uitdagend. BLijf volhouden! We zijn een <em>tegenstrijdigheid aan het maken</em> om te
+            bewijzen
+            dat de <code>stopt?</code>functie die aangeroepen wordt in <code>tester</code> niet kan bestaan.
+        </div>
+        <h4><strong>Zelf-Verwijzing gebruiken om een Tegenstrijdigheid te Maken</strong></h4>
+        <p> Om <em>precies</em> de situatie te creëren zoals wat Bo zei ("De zin die ik <em>nu</em> zeg is onjuist."),
+            gaan we <code>tester</code> aanroepen over zichzelf:
+            <br />
+            <img class="indent" src="../../afb/h5/l4/p2-b1.png" alt="Geen Afbeelding" /><br />
+            Het <code>als</code> blok in het <code>tester</code>blok zal nu vragen of <code>tester</code> zal stoppen
+            (niet
+            voor altijd doorgaan) als het aangeroepen wordt met <code>tester</code> als invoer. Het predikaat in het
+            <code>als</code>blok zal <code>stopt? (tester) (tester)</code> zijn. <br />
+            <img src="../../afb/h5/l4/p2-b14.png" width="800" alt="Geen Afbeelding">
+        </p>
+        <p>Dus net als in de voorbeelden hierboven,</p>
+        <p class="indent">
+            <img class="inline" src="../../afb/h5/l4/p2-b15.png" alt="Geen Afbeelding" /> zou betekenen dat
+            <img class="inline" src="../../afb/h5/l4/p2-b1.png" alt="Geen Afbeelding" /> een waarde geeft.
+        </p>
+        <p class="indent">
+            <img class="inline" src="../../afb/h5/l4/p2-b16.png" alt="Geen Afbeelding" /> zou betekenen dat
+            <img class="inline" src="../../afb/h5/l4/p2-b1.png" alt="Geen Afbeelding" /> voor eeuwig blijft herhalen.
+        </p>
+        <h4><strong>De Tegenstrijdigheid Begrijpen</strong></h4>
+        <p> Wanneer we
+            <img class="inline" src="../../afb/h5/l4/p2-b1.png" alt="Geen Afbeelding" /> aanroepen, zien we een
+            tegenstrijdigheid. Om te zien hoe, kijken we naar de definitie van <code>tester</code>:<br />
+            <img class="indent" src="../../afb/h5/l4/p2-b10.png" width="500" alt="Geen Afbeelding"> </p>
+        <p> Om te laten zien dat <strong>het resultaat fout moet zijn</strong> voeren we een <em>gevalanalyse</em> uit
+            net
+            zoals we dede op pagina 1. Kijk naar de twee mogelijke gevallen:
+            <ol>
+                <li>ALs
+                    <img class="inline" src="../../afb/h5/l4/p2-b15.png" alt="Geen Afbeelding" /> dan zal
+                    <code>tester</code> de eerste aanpak van de
+                    <code>als</code> nemen en dus voor altijd herhalen. Dat betekent dat
+                    <img class="inline" src="../../afb/h5/l4/p2-b1.png" alt="Geen Afbeelding" />
+                    <em>niet</em> zal stoppen en dus geeft
+                    <code>stopt?</code> het foute antwoord. </li>
+                <li>Als
+                    <img class="inline" src="../../afb/h5/l4/p2-b16.png" alt="Geen Afbeelding" /> en zal
+                    <code>tester</code>
+                    de
+                    <code>else</code>aanpak nemen en "Het maakt niet uit welke waarde gerapporteerd wordt." rapporteren.
+                    Wat
+                    betekent dat
+                    <img class="inline" src="../../afb/h5/l4/p2-b1.png" alt="Geen Afbeelding" />
+                    <em>wel</em>zal stoppen en dus heeft <code>stopt?</code> het weer fout.</li>
+            </ol>
+        </p>
+        <div class="endnote">Het maakt niet uit <em>welke</em> waarde <code>tester</code> rapporteert, alleen maar dat
+            het
+            <em>een waarde</em> rapporteert, maar het maakt wel uit welke waarde <code>stopt?</code> rapporteert.
+        </div>
+        <div class="takeNote">
+            <p>Bij alles wat <code>stopt?</code> rapporteert zal het nooit overeenkomen met zichzelf bij een programma
+                zoals
+                dit.
+                <strong>Deze tegenstrijdigheid (deze logische onmogelijkheid) betekent dat de aanname dat het mogelijk
+                    is
+                    <code>stopt?</code> te maken fout is. </strong>.
+                Dit is niet alleen een claim over wat er zou gebeuren in Snap <em>! </em>. De taal die je gebruikt om
+                een
+                computerprobleem te onderzoeken, kan de duidelijkheid of leesbaarheid van je code beïnvloeden, maar niet
+                of
+                er een oplossing voor een probleem bestaat. Zelfs met de vooruitgang in kwantumcomputers, zullen we
+                nooit in
+                staat zijn om een programma voor algemene foutopsporing te maken. Dit beroemde voorbeeld staat bekend
+                als
+                het <em> stopprobleem, </em> en het feit dat het stopprobleem onbeslisbaar is, is de <em> Halting
+                    Theorem
+                    (Stopstelling). </em> </p>
+        </div>
+        <div class="forYouToDo">
+            <ol start="2">
+                <li>
+                    <img class="inline" src="../../afb/icons/PraatMetJeBuur.png" alt="Geen Afbeelding" />
+                    Neem dit hele bewijs opnieuw samen door. Zorg ervoor dat jij en je partner het volgende begrijpen:
+                    <ol>
+                        <li> Alles uit opdracht 1 over bewijs door tegenstrijdigheid, wat <code> stopt? </code> doet en
+                            hoe
+                            <code> stopt? </code> wordt gebruikt in het bewijs. </li>
+                        <li> De basisprincipes van hoe de functie <code> tester </code> zich gedraagt (voor
+                            <em>elke</em>
+                            functie die wordt ingevoerd). </li>
+                        <li> Hoe het aanroepen van
+                            <img class="inline" src="../../afb/h5/l4/p2-b1.png" alt="Geen Afbeelding" /> leidt tot
+                            een tegenstrijdigheid. </li>
+                        <li> Wat die tegenstrijdigheid betekent in het bewijs. </li>
+                        <li> Of het stopprobleem een onoplosbaar probleem is, een onbeslisbaar probleem, of beide; en
+                            <em>why</em>.</li>
+                    </ol>
+                </li>
+                <li>Schrijf een paragraaf waarin het verschil wordt uitgelegd tussen een probleem dat <em> niet </em>
+                    kan
+                    worden opgelost (zoals het stopprobleem) en een probleem dat ongelooflijk veel tijd kost.
+                </li>
+            </ol>
+        </div>
+        <div class="endnote">
+            <h4> <strong> Wie bewees voor het eerst de Halting Theorem (Stopstellling)? </strong> </h4>
+            <p> Alan Turing (1912-1954) was een van de grondleggers van de informatica. Hij staat bekend om twee
+                prestaties.
+                Ten eerste heeft hij een enorme bijdrage geleverd aan het winnen van de Tweede Wereldoorlog door een
+                wiskundige theorie en bijbehorende machine uit te vinden om de gecodeerde berichten van de Duitse
+                Enigma-machine te breken. Ten tweede was Turing samen met zijn collega Alonzo Church een oprichter van
+                <em> theoretische informatica </em>: bewijzen hoe computers <em> moeten </em> werken ongeacht de
+                toekomstige
+                technologie. Door zijn werk aan het stopprobleem, bewees hij dat <em> dat er berekeningen zijn die nooit
+                    gedaan kunnen worden </em>, ongeacht hoe groot en snel computers worden.
+            </p>
+            <p> Toen Turing dit werk deed, waren er geen programmeerbare computers; mensen moesten fysieke machines
+                opnieuw bedraden om elk nieuw probleem op te lossen. Met krachtige programmeertalen (zoals Snap <em>!
+                </em>)
+                kunnen we de essentie van het bewijs van Turing veel gemakkelijker zien en begrijpen omdat we functies
+                kunnen gebruiken als invoer voor andere functies, zoals u hebt gezien met <code> map </code>, <code>
+                    houd
+                </code> en <code> combine </code>. Dit bewijs was nog moeilijker voor Turing omdat hij het idee moest
+                uitvinden van een computerprogramma dat kan worden weergegeven als gegevens in de computer.
+            </p>
+        </div>
     </div>
     <div class="full-bottom-bar" style="background-position: 20px 3px;">
         <div class="bottom-nav btn-group"> <a class="btn btn-default backbutton arrow" style="min-width: 90px;"
