@@ -17,121 +17,136 @@
 </head>
 
 <body>
-    <h2>Timing-Rapporteurs</h2>
-    <div class="learn">
-        <p><strong>Op deze pagina</strong>, ga je een <em>algoritme-timer</em> maken om de efficiëntie van algoritmes te
-            vergelijken.
+    <div class="full">
+        <h2>Timing-Rapporteurs</h2>
+        <div class="learn">
+            <p><strong>Op deze pagina</strong>, ga je een <em>algoritme-timer</em> maken om de efficiëntie van
+                algoritmes te
+                vergelijken.
+            </p>
+        </div>
+        <div class="sidenoteBig">De titel van deze pagina heeft twee betekenissen: Je bouwt een "timing-rapporteur" die
+            rapporteurs timet. </div>
+        <p> Snap<em>!</em> stelt ons in staat om te melden hoe lang het duurt voordat een programma is voltooid. </p>
+        <div class="forYouToDo" id="first">
+            <ol>
+                <li>Zoek in het Waarnemenpalet voor de <code>current (</code><var>date</var><code>)</code>-rapporteur.
+                    Sleep het in het scriptgebied. Selecteer van het invoermenu <var>time in milliseconds</var> (tijd in
+                    milliseconden).
+                </li>
+                <img class="indent" src="../../afb/h5/l3/p2b1.png" alt="Geen Afbeelding" />
+                <li>Klik meerdere keren op het blok. Let op de resultaten.</li>
+                <li>Open het "H5L3-RapporteurTimer"-project dat je hebt opgeslagen op de vorige pagina. </li>
+                <li>Download deze library: <a target="_blank" href="../../projecten/H5L3functiontimer.xml"
+                        download>U5L3functiontimer.xml</a>, en sleep het bestand in je Snap<em>!</em>-applicatie om het
+                    te
+                    importeren.
+                </li>
+            </ol>
+        </div>
+        <p>Aan de onderkant van het Variabelenpalet staat een block dat <code>time function</code> heet. Het pakt een
+            rapporteur (met invoeren al ingevuld), berekent het resultaat en rapporteert <em>hoe lang het duurde</em> om
+            de
+            berekeningen te doen (in milliseconden).
         </p>
-    </div>
-    <div class="sidenoteBig">De titel van deze pagina heeft twee betekenissen: Je bouwt een "timing-rapporteur" die
-        rapporteurs timet. </div>
-    <p> Snap<em>!</em> stelt ons in staat om te melden hoe lang het duurt voordat een programma is voltooid. </p>
-    <div class="forYouToDo" id="first">
-        <ol>
-            <li>Zoek in het Waarnemenpalet voor de <code>current (</code><var>date</var><code>)</code>-rapporteur.
-                Sleep het in het scriptgebied. Selecteer van het invoermenu <var>time in milliseconds</var> (tijd in
-                milliseconden).
-            </li>
-            <img class="indent" src="../../afb/h5/l3/p2b1.png" alt="Geen Afbeelding" />
-            <li>Klik meerdere keren op het blok. Let op de resultaten.</li>
-            <li>Open het "H5L3-RapporteurTimer"-project dat je hebt opgeslagen op de vorige pagina. </li>
-            <li>Download deze library: <a target="_blank" href="../../projecten/H5L3functiontimer.xml"
-                    download>U5L3functiontimer.xml</a>, en sleep het bestand in je Snap<em>!</em>-applicatie om het te
-                importeren.
-            </li>
-        </ol>
-    </div>
-    <p>Aan de onderkant van het Variabelenpalet staat een block dat <code>time function</code> heet. Het pakt een
-        rapporteur (met invoeren al ingevuld), berekent het resultaat en rapporteert <em>hoe lang het duurde</em> om de
-        berekeningen te doen (in milliseconden).
-    </p>
-    <div class="sidenoteBig">
-        Je kan het <code>lijst van</code>blok vervangen met iedere rapporteur. Je kan <code>time function</code>
-        aanpassen om te leren hoe het werkt.
-    </div>
-    <img class="indent" src="../../afb/h5/l3/p2b2.png" alt="Geen Afbeelding" />
-    <p> In dit voorbeeld duurde het 27 milliseconden om de lijst met gehele getallen van 1 tot 1000 te berekenen. (Het
-        aantal dat u ziet, hangt af van hoe snel uw computer is en welke andere programma's erop worden uitgevoerd.)</p>
-    <p> Dit is hoe <code>time function</code> werkt:<br />
-        <img class="indent" style="padding-right:40px" height="200" src="../../afb/h5/l3/p2b3.png"
-            alt="Geen Afbeelding" />
-        <ol type="i">
-            <li> Het maakt een variabele dat <var>start time</var> heet en en zet het gelijk aan de huidige tijd.</li>
-            <li> Het roept de rapporteur aan die je wil timen en negeert het resultaat.</li>
-            <li> Wanneer de rapporteur klaar is pakt het weer de huidige tijd en trekt het af van de <var> start
-                    time</var>.
-            </li>
-        </ol>
-    </p>
-    <div class="forYouToDo">
-        <ol start="5">
-            <li> Gebruik <code>time function</code> om Alex' en Bo's manieren van getallen van 1 tot <em>n</em> optellen
-                te vergelijken. Probeer het met een aantal verschillende grote getallen om te zien hoe verschillend de
-                algoritmes zijn qua tijd om de uitkomst te berekenen. <br />
-                <div class="sidenoteBig"> Alex' en Bo's algoritmes lossen hetzelfde probleem om maar zijn vrij
-                    verschillend qua efficiëntie.
-                    Stel je het verschil voor wanneer je de getallen van 1 tot 1,000,000...
+        <div class="sidenoteBig">
+            Je kan het <code>lijst van</code>blok vervangen met iedere rapporteur. Je kan <code>time function</code>
+            aanpassen om te leren hoe het werkt.
+        </div>
+        <img class="indent" src="../../afb/h5/l3/p2b2.png" alt="Geen Afbeelding" />
+        <p> In dit voorbeeld duurde het 27 milliseconden om de lijst met gehele getallen van 1 tot 1000 te berekenen.
+            (Het
+            aantal dat u ziet, hangt af van hoe snel uw computer is en welke andere programma's erop worden uitgevoerd.)
+        </p>
+        <p> Dit is hoe <code>time function</code> werkt:<br />
+            <img class="indent" style="padding-right:40px" height="200" src="../../afb/h5/l3/p2b3.png"
+                alt="Geen Afbeelding" />
+            <ol type="i">
+                <li> Het maakt een variabele dat <var>start time</var> heet en en zet het gelijk aan de huidige tijd.
+                </li>
+                <li> Het roept de rapporteur aan die je wil timen en negeert het resultaat.</li>
+                <li> Wanneer de rapporteur klaar is pakt het weer de huidige tijd en trekt het af van de <var> start
+                        time</var>.
+                </li>
+            </ol>
+        </p>
+        <div class="forYouToDo">
+            <ol start="5">
+                <li> Gebruik <code>time function</code> om Alex' en Bo's manieren van getallen van 1 tot <em>n</em>
+                    optellen
+                    te vergelijken. Probeer het met een aantal verschillende grote getallen om te zien hoe verschillend
+                    de
+                    algoritmes zijn qua tijd om de uitkomst te berekenen. <br />
+                    <div class="sidenoteBig"> Alex' en Bo's algoritmes lossen hetzelfde probleem om maar zijn vrij
+                        verschillend qua efficiëntie.
+                        Stel je het verschil voor wanneer je de getallen van 1 tot 1,000,000...
+                    </div>
+                    <img class="indent" src="../../afb/h5/l3/p2b4.png" height="60" alt="Geen Afbeelding" /><br />
+                    <img class="indent" src="../../afb/h5/l3/p2b5.png" height="60" alt="Geen Afbeelding" />
+                </li>
+                <div class="takeNote"> De efficiëntie van een algoritme maken een groot verschil. Soms is een efficiënt
+                    algoritme nodig om grote versies van een probleem op te lossen.
                 </div>
-                <img class="indent" src="../../afb/h5/l3/p2b4.png" height="60" alt="Geen Afbeelding" /><br />
-                <img class="indent" src="../../afb/h5/l3/p2b5.png" height="60" alt="Geen Afbeelding" />
-            </li>
-            <div class="takeNote"> De efficiëntie van een algoritme maken een groot verschil. Soms is een efficiënt
-                algoritme nodig om grote versies van een probleem op te lossen.
-            </div>
-            <li> In <a href="../Unit 4 - How the Internet works/H4L1P2.html"> Les 1 </a>,
-                heb je twee rapporteurs gebouwd die de positie van een element in een lijst geven:
-                <div class="vocab">
-                    <p>Een <strong>lineaire zoekopdracht</strong> betekent dat je de lijst doorzoekt voor ieder
-                        item. </p>
-                    <p>Een <strong>binaire zoekopdracht</strong> betekent dat je een <em>gesorteerde</em> lijst in twee
-                        helften verdeelt bij iedere stap. </p>
-                </div>
-                <ul>
-                    <li>
-                        De rapporteur <code>position of () in unsorted list</code> werkt voor elke lijst door
-                        element-voor-element de lijst te doorzoeken tot je een match vindt. Dit heet een
-                        <em>lineaire zoekopdracht</em> omdat het programma van het begin van de lijst in een rechte lijn
-                        zoekt tot hij een match vindt.
-                    </li>
-                    <li>The rapporteur <code>position of () in sorted list</code> werkt op gesorteerde lijsten door
-                        herhaaldelijk de lijst te verdelen in twee delen van gelijke grootte en gebruikt de middelste
-                        waar om te beslissen welke helft nu doorzochtgaat worden om de match te vinden. Dit heet een
-                        <em>binaire zoekopdracht</em> omdat binair "twee" betekent en het algoritme de lijst in twee
-                        delen verdeelt.
-                    </li>
-                </ul> Beide werken op gesorteerde lijsten. Vergelijk ze voor een aantal lange gesorteerde lijsten en
-                maak een tabel van je bevindingen. Mogelijk moet je zeer grote lijsten gebruiken, bijvoorbeeld 1000 of
-                2000 items, om betekenisvolle resultaten te krijgen. Welk algoritme is sneller?
-                <div class="endnote"> Is
-                    het andere algoritme ooit sneller?
-                </div>
-            </li>
-            <li> In de hele cursus heb je veel algoritmes gemaakt. Probeer ze de timen, hier zijn een paar voorbeelden:
-                <ul>
-                    <li><img src="../../afb/h3/l4/p2-b2.png" height="40" alt="Geen Afbeelding" />
-                        (zoals je zag bij
-                        <a href="../Unit 3 - Data Processing and Lists/H3L4P2.html">
-                            Hoofdstuk 3 Les 4: Een Diagram-app Maken</a>) </li>
-                    <li>
-                        <img src="../../afb/h5/l1/p3b3.png" height="40" alt="Geen Afbeelding" />
-                        (zoals je zag bij
-                        <a href="../Unit 5 - Algorithms and Simulations/H5L1P3.html">
-                            Hoofdstuk 5 Les 1: Lijst-Verwerkingsalgoritmes</a>)</li>
-                    <li>
-                        <img class="" src="../../afb/h5/l3/p2b6.png" height="40" alt="Geen Afbeelding" />
-                        (zoals je zag bij
-                        <a href="../Unit 5 - Algorithms and Simulations/H5L3P1.html">
-                            Hoofdstuk 5 Les 3: Algoritmes Vergelijken</a>)</li>
-                </ul>
-                <p> Time je algoritmes met invoer van verschillende grootte en beschrijf het gedrag dat je ziet. Gebruik
-                    weer grote invoeren voor betekenisvolle resultaten. </p>
-            </li>
-            <li>
-                <div class="saveAs"><span class="text">"H5L3-Timer"</span>
-                    <img src="../../afb/icons/SlaHetOpAls.png" alt="Geen Afbeelding" /></div>
-            </li>
-        </ol>
-    </div>
+                <li> In <a href="../Unit 4 - How the Internet works/H4L1P2.html"> Les 1 </a>,
+                    heb je twee rapporteurs gebouwd die de positie van een element in een lijst geven:
+                    <div class="vocab">
+                        <p>Een <strong>lineaire zoekopdracht</strong> betekent dat je de lijst doorzoekt voor ieder
+                            item. </p>
+                        <p>Een <strong>binaire zoekopdracht</strong> betekent dat je een <em>gesorteerde</em> lijst in
+                            twee
+                            helften verdeelt bij iedere stap. </p>
+                    </div>
+                    <ul>
+                        <li>
+                            De rapporteur <code>position of () in unsorted list</code> werkt voor elke lijst door
+                            element-voor-element de lijst te doorzoeken tot je een match vindt. Dit heet een
+                            <em>lineaire zoekopdracht</em> omdat het programma van het begin van de lijst in een rechte
+                            lijn
+                            zoekt tot hij een match vindt.
+                        </li>
+                        <li>The rapporteur <code>position of () in sorted list</code> werkt op gesorteerde lijsten door
+                            herhaaldelijk de lijst te verdelen in twee delen van gelijke grootte en gebruikt de
+                            middelste
+                            waar om te beslissen welke helft nu doorzochtgaat worden om de match te vinden. Dit heet een
+                            <em>binaire zoekopdracht</em> omdat binair "twee" betekent en het algoritme de lijst in twee
+                            delen verdeelt.
+                        </li>
+                    </ul> Beide werken op gesorteerde lijsten. Vergelijk ze voor een aantal lange gesorteerde lijsten en
+                    maak een tabel van je bevindingen. Mogelijk moet je zeer grote lijsten gebruiken, bijvoorbeeld 1000
+                    of
+                    2000 items, om betekenisvolle resultaten te krijgen. Welk algoritme is sneller?
+                    <div class="endnote"> Is
+                        het andere algoritme ooit sneller?
+                    </div>
+                </li>
+                <li> In de hele cursus heb je veel algoritmes gemaakt. Probeer ze de timen, hier zijn een paar
+                    voorbeelden:
+                    <ul>
+                        <li><img src="../../afb/h3/l4/p2-b2.png" height="40" alt="Geen Afbeelding" />
+                            (zoals je zag bij
+                            <a href="../Unit 3 - Data Processing and Lists/H3L4P2.html">
+                                Hoofdstuk 3 Les 4: Een Diagram-app Maken</a>) </li>
+                        <li>
+                            <img src="../../afb/h5/l1/p3b3.png" height="40" alt="Geen Afbeelding" />
+                            (zoals je zag bij
+                            <a href="../Unit 5 - Algorithms and Simulations/H5L1P3.html">
+                                Hoofdstuk 5 Les 1: Lijst-Verwerkingsalgoritmes</a>)</li>
+                        <li>
+                            <img class="" src="../../afb/h5/l3/p2b6.png" height="40" alt="Geen Afbeelding" />
+                            (zoals je zag bij
+                            <a href="../Unit 5 - Algorithms and Simulations/H5L3P1.html">
+                                Hoofdstuk 5 Les 3: Algoritmes Vergelijken</a>)</li>
+                    </ul>
+                    <p> Time je algoritmes met invoer van verschillende grootte en beschrijf het gedrag dat je ziet.
+                        Gebruik
+                        weer grote invoeren voor betekenisvolle resultaten. </p>
+                </li>
+                <li>
+                    <div class="saveAs"><span class="text">"H5L3-Timer"</span>
+                        <img src="../../afb/icons/SlaHetOpAls.png" alt="Geen Afbeelding" /></div>
+                </li>
+            </ol>
+        </div>
     </div>
     <div class="full-bottom-bar" style="background-position: 20px 3px;">
         <div class="bottom-nav btn-group"> <a class="btn btn-default backbutton arrow" style="min-width: 90px;"
