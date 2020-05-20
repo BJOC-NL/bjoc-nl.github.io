@@ -439,7 +439,7 @@ img.noshadow {
 }
 
 .ifTime:before {
-    content: "Als Er Tijd Over Is...";
+    content: "Als Er Nog Tijd Over Is...";
 }
 
 .ifTimeHide:before {
@@ -673,7 +673,7 @@ th {
 }
 
 .time:before {
-    content: "Als je weing tijd hebt, kan je overslaan...";
+    content: "Als je weinig tijd hebt, kan je overslaan...";
 }
 
 /* Compare Page Styles */
