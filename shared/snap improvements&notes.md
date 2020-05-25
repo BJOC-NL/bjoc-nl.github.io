@@ -44,6 +44,8 @@
 * h8l2p2 gaat over partition sort, dit is geen echte sorting algoritme, miss is het quicksort? beter naam
 * h8l3p3 is heel lastig, zelfs met de hints snapte ik niet precies hoe het moest. Misschien een hint geven zoals remainder is altijd 0 of 1.
 
+* je kan sneller blokken maken door % voor een woord te zetten om een invoernaam te maken.
+
 ## Externe Bronnen
 
 * H1L4P3, Verhaal in The Guardian,
