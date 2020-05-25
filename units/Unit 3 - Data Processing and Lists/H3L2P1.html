@@ -34,7 +34,7 @@
             detecteren(een hokje waar al een X of O uiterlijk in zit). Omdat elke sprite dit kon testen zonder te
             kijken naar de rest van het spelbord. Maar om overwinningen en gelijkspellen te detecteren, moeten we het
             programma leren om het de staat van <em>hele spelbord</em> te testen en niet alleen een hokje. Dus gebruiken
-            we een <em>globale variable</em>, <img src="../../afb/h3/l2/p1-b1.png" alt="Geen Afbeelding">,
+            we een <em>globale variabele</em>, <img src="../../afb/h3/l2/p1-b1.png" alt="Geen Afbeelding">,
             om bij te houden of een hokje leeg of gevuld is met een X of O.<br />
             <div class="sidenote">
                 <p>Je hebt geleerd over <strong>globale variabelen</strong> in <a
@@ -50,24 +50,24 @@
                     <strong>H3L2-BoterKaasEieren</strong> zodat je nog steeds de oude versie hebt en je de nieuwe kunt
                     bewerken.</li>
                 <li>
-                    Maak een globale variable genaamd <var>Bord</var> aan, die aan het begin van het spel een lijst
+                    Maak een globale variabele genaamd <var>Bord</var> aan, die aan het begin van het spel een lijst
                     bevat met daarin negen keer het woord "Leeg".<br />
                 </li>
             </ol>
         </div>
 
         <p>Elke sprite moet zijn eigen plek op het bord weten, zodat we het <code>item van</code> blok kunnen gebruiken
-            om daar een X of O in te zetten. Dus maken we een <em>sprite-locale variable</em> , <img
+            om daar een X of O in te zetten. Dus maken we een <em>sprite-locale variabele</em> , <img
                 class="inline nopadtb" src="../../afb/h3/l2/p1-b2.png" alt="Geen Afbeelding" /> aan, en elke
-            clone zal zijn <em>eigen versie</em> hebben van deze variable.</p>
+            clone zal zijn <em>eigen versie</em> hebben van deze variabele.</p>
         <div class="vocabFullWidth">
             <div class="sidenoteBig">
                 <p>Je hebt geleerd over <strong>script-locale variabelen</strong> in <a
                         href="../Unit 2 - Abstraction/H2L1P1.html">Hoofdstuk 2 Les 1 Pagina 1: Raad-het-getal Spel
                         verbeteren met variabelen</a>.</p>
             </div>
-            <p>Een <strong>sprite-locale variable</strong> is net als een globale variable in de zin van dat het niet
-                tot een specifiek <em>script</em> behoort(een script-locale variable wel), maar tot een specifieke
+            <p>Een <strong>sprite-locale variabele</strong> is net als een globale variabele in de zin van dat het niet
+                tot een specifiek <em>script</em> behoort(een script-locale variabele wel), maar tot een specifieke
                 <em>sprite.</em>
             </p>
         </div>
@@ -80,14 +80,14 @@
                                 href="../Unit 2 - Abstraction/H2L1P1.html">Hoofdstuk 2 Les 1 Pagina 1: Raad-het-getal
                                 Spel verbeteren met variabelen</a>.</p>
                     </div>
-                    Maak een locale (sprite)-variable aan, <var>positienummer</var>.
+                    Maak een locale (sprite)-variabele aan, <var>positienummer</var>.
                     <div class="narrower">
                         <p>
-                            Je maakt een lokale variable op een gelijke manier aan als een globale variable:
+                            Je maakt een lokale variabele op een gelijke manier aan als een globale variabele:
                             <ul>
                                 <li>Klik op <img class="inline nopadtb noshadow" src="../../afb/h3/l2/p1-b3.png"
                                         alt="Geen Afbeelding" /> in het variabelenpalet</li>
-                                <li>Selecteer "alleen voor dit object" om een lokale (sprite) variable aan te maken.
+                                <li>Selecteer "alleen voor dit object" om een lokale (sprite) variabele aan te maken.
                                 </li>
                             </ul>
                         </p>
@@ -102,7 +102,8 @@
                         <a href="#hint-1" data-toggle="collapse" class="collapsed">
                             Klik hier voor een hint voor het instellen van <var>positienummer</var>.</a>
                         <div id="hint-1" class="collapse">
-                            In de lus die clones aanmaakt, verhoog de waarde van de variable bij elke nieuwe kloon zodat
+                            In de lus die clones aanmaakt, verhoog de waarde van de variabele bij elke nieuwe kloon
+                            zodat
                             elke kloon een unieke waarde heeft.
                         </div>
                     </div>
@@ -111,7 +112,7 @@
                 </li>
                 <li>Wanneer er op een hokje geklikt wordt, vervang het invoerblokje van het hokje in de <var>bord</var>
                     lijst met een X of O.</li>
-                <li>Kijk naar de waardes van de <var>bord</var> variable terwijl je Boter-Kaas en Eieren speelt. Zorg
+                <li>Kijk naar de waardes van de <var>bord</var> variabele terwijl je Boter-Kaas en Eieren speelt. Zorg
                     ervoor dat het werkt zoals het hoort, en los eventuele bugs(= fouten) op.</li>
                 <li>
                     <img class="inline" src="../../afb/icons/SlaOpLater.png" alt="Geen Afbeelding" />

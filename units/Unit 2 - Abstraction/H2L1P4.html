@@ -20,75 +20,71 @@
     <div class="full">
         <h2>Importeer <code>Groet Spelers</code> in een ander programma</h2>
         <div class="learn">
-            <p>Wat je zult tegen komen, is dat een stukje code hebt dat in een later script
-                goed van pas komt.</p>
+            <p>Vaak is het zo dat een stukje code dat je eerder hebt geschreven van pas komt in een nieuw project.
+            </p>
             <p><strong>Op deze pagina,</strong> ga je je code <code>groet speler</code> blok kopiëren in je
                 Raad-het-getalspel, zodat je het daar kunt gebruiken.</p>
         </div>
 
         <div class="forYouToDo" id="first">
             <ol>
-                <div class="sidenote">Dit project is van <a href="../Unit 1 - Introduction to Programming/H1L2P4.html"
-                        > Hoofdstuk 1 Les 2 Pagina 4: Namen van Spelers Leren</a>.</div>
+                <div class="sidenote">Dit project is van <a href="../Unit 1 - Introduction to Programming/H1L2P4.html">
+                        Hoofdstuk 1 Les 2 Pagina 4: Namen van Spelers Leren</a>.</div>
                 <li>Open je H1L2-GroetSpelerproject, voer het een paar keer uit en bekijk je code net zo lang totdat je
-                    weer weet hoe het werkt. (Op het moment dat je wat namen in je <var>spelerslijst</var> hebt,
+                    weer weet hoe het werkt. (Op het moment dat je wat namen in je <var>spelerslijst</var> hebt staan,
                     test dan met een paar namen die wel op de lijst staan en die niet op de lijst staan.)</li>
                 <li>
-                    Fix alle problemen met <code>groet speler</code>. Op het moment dat het correct werkt,
-                    <em>exporteer</em> het. (Instructies hieronder.)
+                    Fix alle problemen met <code>groet speler</code>. Zodra het correct werkt, kan je het
+                    <em>exporteren</em>. (De instructies hiervoor staan hieronder.)
                     <div class="narrower">
                         <h4><strong>Exporteer blokken</strong></h4>
                         <ol type="a">
                             <li><strong>Kies "Blokken exporteren..."</strong> van het Snap<em>!</em> menu (<img
-                                    class="inline" src="../../afb/icons/file_button.png" alt="Geen Afbeelding"
-                                     />).</li>
+                                    class="inline" src="../../afb/icons/file_button.png" alt="Geen Afbeelding" />).</li>
                             <li><strong>Selecteer enkel de blokken die je wilt exporteren </strong> (in dit geval, enkel
-                                <code>groet speler</code>), en klik "OK." Een XML-bestand wordt nu gedownload.</li>
+                                <code>groet speler</code>), en klik op "OK." Een XML-bestand wordt nu gedownload.</li>
                             <div class="manual">De <a href="http://snap.berkeley.edu/snapsource/help/SnapManual.pdf"
-                                    target="_blank" >Snap<em>!</em> Reference Manual</a>
+                                    target="_blank">Snap<em>!</em> Reference Manual</a>
                                 vertelt meer over exporteren en importeren.</div>
                         </ol>
                     </div>
                 </li>
                 <li>
-                    En dan nu, open je je H2L1-RaadHetGetal project, en <em>importeer</em> je <code>groet speler</code>
+                    Open dan nu je H2L1-RaadHetGetal-project, en <em>importeer</em> je <code>groet speler</code>
                     blok.
                     <div class="narrower">
                         <h4><strong>Importeer blokken</strong></h4>
                         <ol type="a">
                             <li><strong>Kies "Importeer..."</strong> van het Snap<em>!</em> menu (<img class="inline"
-                                    src="../../afb/icons/file_button.png" alt="Geen Afbeelding"
-                                     />).</li>
+                                    src="../../afb/icons/file_button.png" alt="Geen Afbeelding" />).</li>
                             <li><strong>Vind het XML-bestand dat je eerder geëxporteerd hebt</strong> (waarschijnlijk in
-                                de 'download' map) en <strong>klik Openen</strong>.</li>
+                                de 'download' map) en <strong>klik op "Openen"</strong>.</li>
                             <li><strong>Vind de blokken die</strong> je wilt. Deze zullen aan het <em>eind</em> van het
                                 palet dat deze bevat verschijnen.</li>
                             <li><strong>Klik op het geïmporteerde blok om ervoor te zorgen dat alles het goed
                                     doet.</strong>
                                 (In dit voorbeeld, zul je waarschijnlijk een error tegenkomen nadat je een naam hebt
                                 ingevoerd.)</li>
-                            <img class="indent" src="../../afb/h2/l1/other/p4-o1.png" alt="Geen Afbeelding"
-                                 />
+                            <img class="indent" src="../../afb/h2/l1/other/p4-o1.png" alt="Geen Afbeelding" />
                         </ol>
                     </div>
                 </li>
-                <li><img class="inline" src="../../afb/icons/PraatMetJeBuur.png" alt="Geen Afbeelding"
-                         />
-                    Kijk naar de code voor <code>groet speler </code>. Kan je zien wat er fout gaat?</li>
+                <li><img class="inline" src="../../afb/icons/PraatMetJeBuur.png" alt="Geen Afbeelding" />
+                    Kijk naar de code voor <code>groet speler</code>. Kan je zien wat er fout gaat?</li>
             </ol>
         </div>
 
         <div class="takeNote">
             <h4><strong>Debuggen van afhankelijkheden</strong></h4>
-            <p>Soms, als je een script uit het programma haalt waarin je het hebt gebouwd en het dan ergens anders
-                probeert te gebruiken, gaat er iets fout. Het kan zijn dat het script afhankelijk is van een zelfgemaakt
+            <p>Als je een script uit het originele programma haalt en het daarna ergens anders
+                te gebruikt, gaat er soms iets fout. Het kan zijn dat het script afhankelijk is van een zelfgemaakt
                 blok dat niet bestaat in het nieuwe programma, of (zoals in dit geval) dat het script afhankelijk is van
-                een <em>globale variabele</em> dat niet gedefinieerd is in het nieuwe programma. </p>
-            <p>Om dit probleem op te lossen zodat je het geïmporteerde blok goed kunt gebruiken, zul je het globale
-                variabele moeten definiëren in je nieuwe programma. Afhankelijkheden zijn een reden om een script
-                variabele te gebruiken in plaats van een globale variabele indien mogelijk. Dit is zo omdat ze
-                gedefinieerd zijn <em>in</em> hun scripts, en niet verdwijnen wanneer je het script naar een andere plek
-                verplaatst.
+                een <em>globale variabele</em> die niet gedefinieerd is in het nieuwe programma. </p>
+            <p>Om dit probleem op te lossen zodat je het geïmporteerde blok goed kunt gebruiken, zul je de globale
+                variabele moeten definiëren in je nieuwe programma. Afhankelijkheden zijn een reden om, indien mogelijk,
+                een scriptvariabele in plaats van een globale variabele te gebruiken. Dit is zo omdat ze
+                gedefinieerd zijn <em>in</em> het script zelf in plaats van het project, daarom verdwijnen ze niet als
+                je het blok in een ander project gebruikt.
             </p>
         </div>
 
@@ -104,8 +100,7 @@
                     </div>
                 </li>
                 <div class="takeNote">
-                    <img class="imageRight" src="../../afb/h2/l1/blocks/p4-b1.png" alt="Geen Afbeelding"
-                         />
+                    <img class="imageRight" src="../../afb/h2/l1/blocks/p4-b1.png" alt="Geen Afbeelding" />
 
                     <p>Als <var>spelerslijst</var> wordt geïnitieerd elke keer wanneer het spel opnieuw start, zal het
                         spel nooit een naam onthouden. Je zult dus een ander moment nodig hebben om het spel te starten
@@ -114,24 +109,23 @@
                         starten.</p>
                 </div>
                 <li>
-                    <strong>Test en Debug.</strong> Je programma moet
+                    <strong>Test en debug.</strong> Je programma moet:
                     <ul>
                         <li>de spelers groeten en hun namen onthouden;</li>
-                        <li>het Raad-het-getalspel elke keer te starten met een nieuw <var>geheim getal</var>.</li>
+                        <li>het Raad-het-getalspel elke keer starten met een nieuw <var>geheim getal</var>.</li>
                     </ul>
-                    Fix alle problemen met je code.
+                    Fix alle problemen in je code.
                     <div class="endnote">
                         Is er een probleem met de variabele?
                         <ul>
-                            <li>Check de variabele-initialisatie (daar waar het wordt aangemaakt): Staat de code
-                                waar het hoort te staan? Doet de code datgene waarvoor het is bedoeld?</li>
+                            <li>Check de variabele-initialisatie (waar het wordt aangemaakt): Staat de code
+                                waar het hoort te staan? Doet de code waarvoor het is bedoeld?</li>
                             <li>Check waar de variabele is gebruikt: Gebruik je de variabele die je bedoelt? Gebruik je
                                 het op de manier zoals je verwacht?</li>
 
                         </ul>
                     </div>
-                    <img class="inline" src="../../afb/icons/HetIsNuEenGoedMoment.png" alt="Geen Afbeelding"
-                         />
+                    <img class="inline" src="../../afb/icons/HetIsNuEenGoedMoment.png" alt="Geen Afbeelding" />
                 </li>
             </ol>
         </div>

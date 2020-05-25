@@ -439,7 +439,7 @@ img.noshadow {
 }
 
 .ifTime:before {
-    content: "Als Er Nog Tijd Over Is...";
+    content: "Als er nog tijd over is...";
 }
 
 .ifTimeHide:before {
@@ -480,7 +480,7 @@ table.truth tr td {
 }
 
 .takeItFurther:before {
-    content: "Een Stapje Verder";
+    content: "Een stapje verder";
 }
 
 .takeNote,
