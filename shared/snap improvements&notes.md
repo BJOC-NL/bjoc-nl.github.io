@@ -45,6 +45,7 @@
 * h8l3p3 is heel lastig, zelfs met de hints snapte ik niet precies hoe het moest. Misschien een hint geven zoals remainder is altijd 0 of 1.
 
 * je kan sneller blokken maken door % voor een woord te zetten om een invoernaam te maken.
+* h2l4p2 vind de "als er nog tijd over is' een beetje vaag ook met het "als je wil".
 
 ## Externe Bronnen
 

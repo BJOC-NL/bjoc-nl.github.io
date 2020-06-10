@@ -42,7 +42,7 @@ condition - conditie
 
 partner - buur
 
-Self-Check - Zelftest
+Self-Check - Test jezelf
 
 section - paragraaf
 
