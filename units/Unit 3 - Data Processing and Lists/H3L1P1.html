@@ -23,7 +23,7 @@
         <div class="learn">
             <p><strong>In deze les</strong> ga je een contactenlijst maken.</p>
             <p>
-                <strong>Op deze pagina,</strong> ga je een <strong>abstracte datatype</strong> maken om
+                <strong>Op deze pagina,</strong> ga je een <strong>abstract datatype</strong> maken om
                 <em>contactgegevens</em> zoals naam, adres, telefoonnummer, etc. op te slaan en later te kunnen
                 bekijken.
 
@@ -39,20 +39,21 @@
                         href="https://snap.berkeley.edu/snapsource/snap.html#present:Username=cfkaligula&ProjectName=H3L1-Contactenlijst"><img
                             class="inline" src="../../afb/icons/LaadEnSlaOp.png" alt="Geen Afbeelding"></a>
                 </li>
-                <li>Maak een globaal <var>contactenlijst</var> variabele.</li>
+                <li>Maak een globale <var>contactenlijst</var> variabele.</li>
                 <li>Initialiseer <var>contactenlijst</var> als een lege lijst.</li>
             </ol>
         </div>
         <div class="takeNote">
             <h4><strong>Waarom globaal?</strong></h4>
-            <div class="sidenoteBig">Ook worden in Snap<em>!</em>, alleen globale variabelen met hun data opgeslagen
-                wanneer
-                het project opgeslagen wordt.</div>
+            <div class="sidenoteBig">
+                Ook worden in Snap<em>!</em>, alleen globale variabelen met hun data opgeslagen,
+                wanneer het project opgeslagen wordt.
+            </div>
             <strong>Meerdere scripts</strong> door het hele programma heen <strong>gaan deze lijst gebruiken</strong>,
             dus is het niet logisch om het aan maar één script vast te maken als een lokale variabele.
         </div>
 
-        <h3>Het maken van de abstracte datatype</h3>
+        <h3>Het maken van het abstracte datatype</h3>
         <div class="dialogue">
             <div class="stagedir">Robin en Yasmine zijn van plan een contactenlijst te maken in Snap<em>!</em>.</div>
             <div><span>Robin:</span> "We hebben een manier nodig om een contact toe te voegen aan onze
@@ -61,9 +62,9 @@
                 email."
             </div>
             <div><span>Robin:</span> "In hoofdstuk 2 hebben we een <a href="../Unit 2 - Abstraction/H2L2P2.html">
-                    abstracte datatype</a> <code>punt</code> gemaakt
+                    abstract datatype</a> <code>punt</code> gemaakt
                 om de coördinaten van ieder punt in een lijst van punten op te slaan. Nu kunnen
-                we een abstracte datatype <code>contact</code> maken om de data voor ieder contact in onze
+                we een abstract datatype <code>contact</code> maken om de data voor ieder contact in onze
                 contactenlijst in op te slaan."</div>
             <div><span>Yasmine:</span> "Ja! <em>(Yasmine opent haar oude project, maar dat hoef jij niet te doen.)</em>
                 We hebben eerder een <code>punt</code> constructor gebruikt om een lijst van coördinaten te maken."
@@ -144,12 +145,12 @@
                                         <th scope="col">Telefoonnummer</th>
                                     </tr>
                                     <tr>
-                                        <td style="white-space: nowrap;">Bo van der Kabarchenbok</td>
+                                        <td style="white-space: nowrap;">Bertha van der Kabarchenbok</td>
                                         <td style="white-space: nowrap;">Kerkstraat 123, Amsterdam</td>
                                         <td style="white-space: nowrap;">212-555-1234</td>
                                     </tr>
                                     <tr>
-                                        <td style="white-space: nowrap;">Alex Ypsilinti</td>
+                                        <td style="white-space: nowrap;">Alfred Ypsilinti</td>
                                         <td style="white-space: nowrap;">Zuidplein 382, Assen</td>
                                         <td style="white-space: nowrap;">208-555-6789</td>
                                     </tr>
@@ -164,8 +165,8 @@
                         <li>Zie hoe je contacten in je contactenlijst verschijnen. </li>
                         <div class="narrower">
                             Snap<em>!</em> heeft 2 verschillende manieren om lijsten in lijsten weer te geven. Je kan
-                            kiezen welke manier je ziet door met je rechter-muisknop op de <var>contactenlijst</var>
-                            'watcher' op het speelveld.
+                            kiezen op welke manier je de lijst wil weergeven door met je rechter-muisknop op de
+                            <var>contactenlijst</var> 'watcher' op het speelveld.
 
                             <div class="endnote">
                                 Als je de 'watcher' niet kan zien op het speelveld, zorg ervoor dat het vakje bij de
@@ -185,7 +186,7 @@
                         </div>
                         <li>
                             Probeer de <code>naam</code>, het <code>adres</code>, of <code>telefoonnummer</code> te
-                            selecteren van een contact in jouw lijst<br />
+                            selecteren van een contact in jouw lijst.<br />
                             <img class="indent" src="../../afb/h3/l1/blocks/p1-b13.png" alt="Geen Afbeelding" />
                         </li>
                         <img class="imageRight" src="../../afb/icons/HetIsNuEenGoedMoment.png" alt="Geen Afbeelding" />
