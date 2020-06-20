@@ -20,8 +20,9 @@
     <div class="full">        
         <h2><strong>Staafdiagrammen Maken</strong></h2>
         <div class="learn">
-            <p>Tijdens deze les maak je een datavisualisatie tool voor staafdiagrammen voor verschillende datasets. Je
-                leert de concepten abstractie en de hogere order functie <code>map</code> toe te passen. <br>
+            <p><strong>In deze les</strong> leer je een datavisualisatie tool maken voor staafdiagrammen voor
+                verschillende datasets. Je leert de concepten abstractie en de hogere order functie <code>map</code> toe
+                te passen. <br>
                 <img class="indent" src="../../afb/h3/l4/p1-o1.png" height="250" alt="Geen Afbeelding"><img
                     src="../../afb/h3/l4/p1-v1.gif" height="300" alt="Geen Afbeelding"></p>
         </div>
@@ -54,7 +55,7 @@
                                 <br>
                                 <img class="indent" src="../../afb/h3/l4/p1-b3.png" height="50" alt="Geen Afbeelding">
                                 <br></li>
-                            <li>Een <code>max van list</code> rapporteur die het grootste element van de lijst
+                            <li>Een <code>max van lijst</code> rapporteur die het grootste element van de lijst
                                 vindt.<br>
                                 <img class="indent" src="../../afb/h3/l4/p1-b4.png" height="50" alt="Geen Afbeelding">
                             </li>
@@ -92,7 +93,7 @@
                     <div class="endnote">
                         <p> Merk op dat het <code>label</code>blok geen <code>pen neer</code> nodig heeft om te
                             schrijven.
-                            Als je <code>pen neer</code> aan hebt staan bij het <code>label</code>blok krijg je
+                            Als je <code>pen neer</code> aan hebt staan bij het <code>label</code>blok, krijg je
                             misschien ongewenste effecten.
                             <br> <br>
                             Je hoeft niet in het <code>label</code>blok te kijken, maar als je dat doet, zie je iets
@@ -115,7 +116,7 @@
                 </li>
                 <li>
                     Gebruik het normale <code>label</code>blok om code te ontwikkelen voor het uitgebreide
-                    <code>label</code>blok dat een label plaatst met de ingevoerde specificaaties (tekst, grootte en
+                    <code>label</code>blok dat een label plaatst met de ingevoerde specificaties (tekst, grootte en
                     richting).
                     <br> <br>
                     <img class="indent" src="../../afb/h3/l4/p1-b9.png" height="45" alt="Geen Afbeelding">
@@ -146,7 +147,7 @@
                 </li>
                 <li>
                     Ontwikkel code voor het <code>teken staven</code>blok, die een serie van gelabelde staven moet
-                    tekenen met een een bepaalde breedte en hoogte. De serie moet starten links en doorgaan naar rechts.
+                    tekenen met een een bepaalde breedte en hoogte. De serie moet links starten en doorgaan naar rechts.
                     Om de staven en labels goed neer te zetten heb je misschien de globale variabelen
                     <var>x-origin</var> en <var>y-origin</var> nodig.
                     <br>
@@ -154,32 +155,33 @@
                     <img class="indent" src="../../afb/h3/l4/p1-o9.png" height="250" alt="Geen Afbeelding">
 
                     <div class="narrower">
-                        Merk op dat door een maximale staafhoogte mee te geven, de hoogtes van alle staven kunnen
-                        berekend worden als een breuk van de maximale staafhoogte. Met de volgende proportie kan je de
+                        Merk op dat door een maximale staafhoogte mee te geven, de hoogtes van alle staven
+                        berekend kunnen worden als een breuk van de maximale staafhoogte. Met de volgende proportie kan
+                        je de
                         staafhoogte van ieder land berekenen:
 
                         <span class="katex-block"> \frac{\text{staafhoogte land}}{\text{maximale staafhoogte}} =
                             \frac{\text{datawaarde land}}{\text{maximale datawaarde}}</span>
-                        Als de maximale staafhoogte bijvoorbeeld 240 is en je wil weten hoe hoog de staaf van de V.S>
-                        moet zijn, dan moet je eerste de hoogste waarde in de dataset vinden, wat 8715 (van China) is en
-                        de volgende berekening doen.
+                        Als de maximale staafhoogte bijvoorbeeld 240 is en je wil weten hoe hoog de staaf van de V.S.
+                        moet zijn, dan moet je eerste de hoogste waarde in de dataset vinden, 8715 (van China), en
+                        de volgende berekening doen:
                         <br />
                         <span class="katex-block"> {\text{staafhoogte V.S.}} =
-                            {\text{maximale staafhoogte .}}\frac{\text{datawaarde V.S.}}{\text{maximale datawaarde}} =
-                            {\text{240 .}}\frac{\text{5491}}{\text{8715}}\approx {\text{151}}</span>
+                            {\text{maximale staafhoogte}} \cdot \frac{\text{datawaarde V.S.}}
+                            {\text{maximale datawaarde}} =
+                            {\text{240}} \cdot \frac{\text{5491}}{\text{8715}}\approx {\text{151}}</span>
                         <br>
-                        Om de maximale datawaarde te vinden moet je eerst de lijst met waardes krijgen en dan het
-                        <code>max van lijst</code>blok gebruiken. Het volgende blok dat de selector
-                        <code>waarde van data-record</code> zal een lijst van <em>waardes</em> van de gegeven
-                        <var>data-lijst</var> geven.
+                        Om de maximale waarde te vinden, moet je eerst de lijst met waardes krijgen en dan het
+                        <code>max van lijst</code>blok gebruiken. Het blok hieronder gebruikt het blok
+                        <code>waarde van data-record</code> om een lijst met waardes uit <var>data-lijst</var> te halen.
                         <br>
                         <img class="indent" src="../../afb/h3/l4/p1-b13.png" height="45" alt="Geen Afbeelding">
                     </div>
                 </li>
                 <li>
-                    Ontwikkel code voor het <code>label verticale as</code>blok zodat het de verticale as labels geeft
-                    gebaseerd op bepaalde invoer. Voor het gemakt mag je aannemen dat de labels de verticale as altijd
-                    in 10 gelijke delen splits (met behulp van 11 markeringen) zoals hieronder:
+                    Ontwikkel code voor het <code>label verticale as</code>blok zodat het de verticale as labels geeft,
+                    gebaseerd op bepaalde invoer. Voor het gemak mag je aannemen dat de labels de verticale as altijd
+                    in 10 gelijke delen splitst (met behulp van 11 markeringen) zoals hieronder:
                     <br>
                     <img class="indent" src="../../afb/h3/l4/p1-b14.png" height="45" alt="Geen Afbeelding">
                     <img src="../../afb/h3/l4/p1-o10.png" height="250" alt="Geen Afbeelding"></li>
@@ -188,7 +190,7 @@
                     <code>Staafdiagram</code>tekenblok voor een gegeven <var>datalijst</var>invoer. Vul de lege vakken
                     in.
                     <br>
-                    <div class="sidenote"> Je kan elk blok gebruiken dat je wil in de definitie van
+                    <div class="sidenote"> Je kan elk blok gebruiken dat je nodig hebt in de definitie van
                         <code>Staafdiagram</code>.
                     </div>
                     <img class="indent" src="../../afb/h3/l4/p1-b15.png" height="180" alt="Geen Afbeelding">
@@ -244,13 +246,13 @@
                 <li>
                     <strong>Dataverwerking:</strong>
                     Kijk in het Variabelenpalet om het <code>Land-BBP-Bevolking Data</code>blok te vinden.
-                    Als je naar de inhoud kijkt vind je een lijst van lijsten met data over het BBP
+                    Als je naar de inhoud kijkt, vind je een lijst van lijsten met data over het BBP
                     (<a href="https://nl.wikipedia.org/wiki/Bruto_binnenlands_product" target="_blank"> Bruto
                         Binnenlands Product</a>) en bevolkingsgrootte voor ieder land dat je hebt bestudeerd in dit
                     project.
 
-                    <em>Verwerk</em> de data zoudat je een staafdiagram kan maken voor het BBP <strong>per
-                        capita</strong> voor ieder land.
+                    <em>Verwerk</em> de data op een manier dat je er een staafdiagram mee kan maken met het BBP
+                    <strong>per capita</strong> voor ieder land.
                     <br> <br>
                     <img class="indent" src="../../afb/h3/l4/p1-b18.png" height="200" alt="Geen Afbeelding">
                     <br> <br>

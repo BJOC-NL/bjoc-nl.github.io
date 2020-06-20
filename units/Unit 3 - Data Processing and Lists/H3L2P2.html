@@ -20,15 +20,15 @@
     <div class="full">
         <h2>Herkennen van gewonnen- en gelijkspel.</h2>
         <div class="learn">
-            <p><strong>Op deze pagina</strong> ga je je Boter-Kaas-en-Eierenproject programmeren zodat het gewonnen en
-                gelijkspel herkent.</p>
+            <p><strong>Op deze pagina</strong> ga je je Boter-Kaas-en-Eierenproject programmeren zodat overwinning en
+                gelijkspel herkend worden.</p>
         </div>
 
         <h3>Het opslaan van alle manieren om te winnen</h3>
         <p>
-            Een manier om een gewonnen spel te herkennen, moeten we eerst vaststellen wat telt als een win. We slaan
-            elke mogelijkheid voor een gewonnen spel op door middel van een lijst van drie positie getallen (een
-            <em>drietal</em>). Bijvoorbeeld, deze gewonnen drietal kan er uit zien als <img
+            Een manier om een gewonnen spel te herkennen, moeten we eerst vaststellen op welke manier je kan winnen. We
+            slaan elke mogelijkheid voor een gewonnen spel op door middel van een lijst van drie posities (een
+            <em>drietal</em>). Dit gewonnen drietal kan er bijvoorbeeld uit zien als <img
                 src="../../afb/h3/l2/p2-b1.png" alt="Geen Afbeelding"> want het gewonnen drietal is in de
             3<sup>e</sup>, 5<sup>e</sup>, en 7<sup>e</sup>
             positie:<br />
@@ -54,7 +54,7 @@
                 <li>Open je project <strong>H3L2-BoterKaasEnEieren</strong>.</li>
                 <img class="imageRight" src="../../afb/icons/save-mini.png" alt="Geen Afbeelding" />
                 <li>
-                    Maak een resultaatblok aan dat alle gewonnen drietallen in een output zet. Het ziet er ongeveer zo
+                    Maak een resultaatblok aan dat alle gewonnen drietallen rapporteert. Het ziet er ongeveer zo
                     uit:<br />
                     <img class="indent" src="../../afb/h3/l2/p2-b2.png" alt="Geen Afbeelding" />
                 </li>
@@ -63,7 +63,8 @@
 
         <h3>Één manier om te winnen controleren</h3>
         <p>We hebben een manier nodig om te achterhalen of er werkelijk een gewonnen drietal is. We gebruiken
-            <code>map</code> om iedere positie te checken in een drietal om te kijken of er een gewonnen drietal is.</p>
+            <code>map</code> om iedere positie te checken van een drietal om te kijken of er een gewonnen drietal is.
+        </p>
 
         <div class="endnote">
             <p>Je hebt geleerd over <code>map</code> in <a href="../Unit 3 - Data Processing and Lists/H3L1P4.html">
@@ -80,9 +81,9 @@
         <div class="forYouToDo">
             <ol start="4">
                 <li>Klik op <img src="../../afb/icons/green-flag_button.png" alt="Geen Afbeelding" /> om
-                    een nieuw spel te starten. Speel een spel, <em>Laat <strong>x</strong> expres winnen</em>. </li>
+                    een nieuw spel te starten. Speel een spel en <em>laat <strong>x</strong> expres winnen</em>. </li>
                 <li>
-                    Bouw het blok hieronder na, en kijk naar wat het rapporteert.<br />
+                    Bouw het blok hieronder na en kijk naar wat het rapporteert.<br />
                     <img class="indent" src="../../afb/h3/l2/p2-b3.png" alt="Geen Afbeelding"><br />
                     <div class="endnote">
                         <a href="#hint-map-item" data-toggle="collapse">Hoe werkt <code>map</code> hier?</a>
@@ -115,11 +116,9 @@
                 </li>
                 <li>
                     Gebruik dit idee om een <img src="../../afb/h3/l2/p2-b5.png" alt="Geen Afbeelding">blok te maken dat
-                    een mogelijk winnend
-                    drietal
+                    een mogelijk winnend drietal
                     (een drietal zoals <img src="../../afb/h3/l2/p2-b6.png" alt="Geen Afbeelding">) als invoer heeft en
-                    een lijst rapporteert met
-                    wat er in die drie posities staat (X, O of Leeg).
+                    een lijst rapporteert met wat er in die drie posities staat (X, O of Leeg).
                     <div class="endnote">Je hebt geleerd hoe je het invoertype (<img class="inline"
                             src="../../afb/h3/l2/p2-o3.png" alt="Geen Afbeelding">) moet specificeren in <a
                             href="../Unit 2 - Abstraction/H2L2P1.html">
@@ -127,8 +126,7 @@
                 </li>
                 <li>
                     <img class="imageRight" src="../../afb/icons/save-mini.png" alt="Geen Afbeelding" />
-                    Speel een ander spel waar speler O wint en test je Play another game where player O wins, and test
-                    your
+                    Speel een ander spel waar speler O wint en test je
                     <code>status van drietal</code>blok met het winnende drietal.
                     Fix je bugs, als die er zijn.
                 </li>
@@ -144,7 +142,7 @@
         </p>
         <p>
             Hieronder heeft Speler O bijvoorbeeld gewonnen en het <code>status van alle winnende drietallen</code>blok
-            bevat de status van ieder drietal. De computer can dit blok gebruiken om te controleren of er een winnend
+            bevat de status van ieder drietal. De computer kan dit blok gebruiken om te controleren of een winnend
             drietal alleen X of alleen O bevat.<br />
             <img class="indent noshadow" src="../../afb/h3/l2/p2-o4.png" alt="Geen Afbeelding" />
             <img class="indent noshadow" src="../../afb/h3/l2/p2-o5.png" alt="Geen Afbeelding" />
@@ -156,7 +154,7 @@
             <ol start="10">
                 <li>Gebruik <code>map</code> samen met een paar andere blokken die je gebouwd hebt om
                     <code>status van alle winnende drietallen</code> te bouwen. Het zou de status van alle winnende
-                    drietallen moeten rapporteren als een lijst lijsten, zoals hierboven.
+                    drietallen moeten rapporteren als een lijst met lijsten, zoals hierboven.
                 </li>
                 <div class="endnote">
                     <a href="#hint-status-all" data-toggle="collapse">Klik hier voor een hint voor het werken met
@@ -210,13 +208,13 @@
                         <div id="hint-tie-contains" class="collapse">
                             <img height="40" src="../../afb/h3/l2/p2-b8.png" alt="Geen Afbeelding" /></div>
                     </div>
-                    Ontwikkel een manier om te controleren of er een gelijkspel is, als dat zo is zorg dat het programma
-                    dit dan aan de speler laat weten.
+                    Ontwikkel een manier om te controleren of er een gelijkspel is, als dat zo is zorg dan dat het
+                    programma dit dan aan de speler laat weten.
                 </li>
                 <li>Speel het spel een paar keer om het gelijkspel testen te controleren en fix bugs als die er zijn.
                 </li>
                 <div class="sidenoteBig">
-                    <p>Je kan meer aan dit project werken in <a
+                    <p>Je kan verder werken aan dit project in <a
                             href="../Unit 5 - Algorithms and Simulations/H5O1P1.html"> Hoofdstuk 5, Optioneel Project:
                             Je Boter-Kaas-en-Eierenproject Herzien </a>.</p>
                 </div>
@@ -241,7 +239,7 @@
             <ol type="A">
                 <li>Je programma kan slimmer gelijkspel ontdekken. Als er nog maar één leeg vak op het bord is en de
                     speler die de volgende keer aan zet is niet zou winnen door dat vak te vullen, dan is er al sprake
-                    van gelijkspel. De uitdaging is dus dat je moet controlleren voor een winnar op een bord dat niet
+                    van gelijkspel. De uitdaging is dus dat je moet controleren voor een winner op een bord dat niet
                     het huidige <var>bord</var> is.
                 </li>
                 <li>In plaats van dat de sprite iets zegt zoals "X wint" is het veel leuker als je een dikke lijn tekent

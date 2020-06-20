@@ -24,18 +24,18 @@
             <p><strong>In deze les</strong>, ga je verder met het
                 <a href="../Unit 2 - Abstraction/H2L4P4.html">Boter-Kaas-en-Eierenproject uit Hoofdstuk 2 </a>
                 om een programma te maken wat het bordspel <em>analyseert</em>
-                en een gewonnen of gelijk spel detecteert</p>
-            <p><strong>Op deze pagina</strong>, ga je je programma voorbereiden door het spel dez zetten die gedaan
-                zijn, op te slaan.
+                en een gewonnen of gelijk spel detecteert.</p>
+            <p><strong>Op deze pagina</strong>, ga je je programma voorbereiden door gedane zetten op te slaan.
             </p>
         </div>
         <p>
             Toen je voor het eerst Boter-Kaas en Eieren maakte, was het gemakkelijk om 'illegale' zetten te
-            detecteren(een hokje waar al een X of O uiterlijk in zit). Omdat elke sprite dit kon testen zonder te
-            kijken naar de rest van het spelbord. Maar om overwinningen en gelijkspellen te detecteren, moeten we het
-            programma leren om het de staat van <em>hele spelbord</em> te testen en niet alleen een hokje. Dus gebruiken
-            we een <em>globale variabele</em>, <img src="../../afb/h3/l2/p1-b1.png" alt="Geen Afbeelding">,
-            om bij te houden of een hokje leeg of gevuld is met een X of O.<br />
+            detecteren(een hokje waar al een X of O uiterlijk in zit). Dit was zo omdat elke sprite dit kon controleren
+            zonder te kijken naar de rest van het spelbord. Maar om overwinningen en gelijkspellen te detecteren, moeten
+            we het programma leren om het de staat van <em>hele spelbord</em> te testen en niet alleen een hokje. Dus
+            gebruiken we een <em>globale variabele</em>,
+            <img src="../../afb/h3/l2/p1-b1.png" alt="Geen Afbeelding">,
+            om bij te houden of een hokje leeg of gevuld is met een X of O. <br />
             <div class="sidenote">
                 <p>Je hebt geleerd over <strong>globale variabelen</strong> in <a
                         href="../Unit 2 - Abstraction/H2L1P3.html">Hoofdstuk 2 Les 1 Pagina 3: De Score Bijhouden met
@@ -46,7 +46,7 @@
 
         <div class="forYouToDo" id="first">
             <ol>
-                <li>Open je <strong>H2L4-BoterKaasEieren</strong> project, en sla deze op als
+                <li>Open je <strong>H2L4-BoterKaasEieren</strong> project en sla deze op als
                     <strong>H3L2-BoterKaasEieren</strong> zodat je nog steeds de oude versie hebt en je de nieuwe kunt
                     bewerken.</li>
                 <li>
@@ -56,18 +56,23 @@
             </ol>
         </div>
 
-        <p>Elke sprite moet zijn eigen plek op het bord weten, zodat we het <code>item van</code> blok kunnen gebruiken
-            om daar een X of O in te zetten. Dus maken we een <em>sprite-locale variabele</em> , <img
-                class="inline nopadtb" src="../../afb/h3/l2/p1-b2.png" alt="Geen Afbeelding" /> aan, en elke
-            clone zal zijn <em>eigen versie</em> hebben van deze variabele.</p>
+        <p>
+            Elke sprite moet zijn eigen plek op het bord weten, zodat we het <code>item van</code> blok kunnen gebruiken
+            om daar een X of O in te zetten. Dus maken we een <em>sprite-locale variabele</em> ,
+            <img class="inline nopadtb" src="../../afb/h3/l2/p1-b2.png" alt="Geen Afbeelding" /> aan, en elke
+            clone zal zijn <em>eigen versie</em> hebben van deze variabele.
+        </p>
         <div class="vocabFullWidth">
             <div class="sidenoteBig">
-                <p>Je hebt geleerd over <strong>script-locale variabelen</strong> in <a
-                        href="../Unit 2 - Abstraction/H2L1P1.html">Hoofdstuk 2 Les 1 Pagina 1: Raad-het-getal Spel
-                        verbeteren met variabelen</a>.</p>
+                <p>
+                    Je hebt geleerd over <strong>script-locale variabelen</strong> in
+                    <a href="../Unit 2 - Abstraction/H2L1P1.html"> Hoofdstuk 2 Les 1 Pagina 1: Raad-het-getal Spel
+                        verbeteren met variabelen</a>.
+                </p>
             </div>
-            <p>Een <strong>sprite-locale variabele</strong> is net als een globale variabele in de zin van dat het niet
-                tot een specifiek <em>script</em> behoort(een script-locale variabele wel), maar tot een specifieke
+            <p>
+                Een <strong>sprite-locale variabele</strong> is net als een globale variabele in de zin van dat het niet
+                bij een specifiek <em>script</em> hoort (zoals een script-locale variabele), maar wel tot een specifieke
                 <em>sprite.</em>
             </p>
         </div>
@@ -85,8 +90,11 @@
                         <p>
                             Je maakt een lokale variabele op een gelijke manier aan als een globale variabele:
                             <ul>
-                                <li>Klik op <img class="inline nopadtb noshadow" src="../../afb/h3/l2/p1-b3.png"
-                                        alt="Geen Afbeelding" /> in het variabelenpalet</li>
+                                <li>Klik op
+                                    <img class="inline nopadtb noshadow" src="../../afb/h3/l2/p1-b3.png"
+                                        alt="Geen Afbeelding" />
+                                    in het variabelenpalet.
+                                </li>
                                 <li>Selecteer "alleen voor dit object" om een lokale (sprite) variabele aan te maken.
                                 </li>
                             </ul>
