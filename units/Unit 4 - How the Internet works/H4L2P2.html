@@ -40,7 +40,7 @@
         </div>
         <br />
 
-        <img class="imageRight" src="../../bjc-r/img/icons/headphones.png" alt="Geen Afbeelding" />
+        <img class="imageRight" src="../../afb/icons/ZetJeKoptelefoon.png" alt="Geen Afbeelding" />
         <div class="sidenote">If your connection blocks YouTube, <a
                 href="http://scratch.mit.edu/discuss/youtube/AYdF7b3nMto" target="_blank">watch the video here</a>.
         </div>
@@ -66,8 +66,9 @@
         <div class="forYouToDo">
             <ol>
                 <li>
-                    <a class="run" href="/bjc-r/prog/4-internet/U4L3-TCP.xml#present"><img class="inline"
-                            src="../../bjc-r/img/icons/load-save.png" alt="Geen Afbeelding"></a><br />
+                    <a class="run"
+                        href="https://snap.berkeley.edu/snapsource/snap.html#present:Username=cfkaligula&ProjectName=H4L3-TCP"><img
+                            class="inline" src="../../afb/icons/LaadEnSlaOp.png" alt="Geen Afbeelding"></a><br />
                     This project provides a simulation of unreliable data transmission by Internet Protocol.
                     <ul>
                         <li><strong>Click the green flag</strong> to initialize the <var>incoming transmission</var>
@@ -79,10 +80,11 @@
                 <div class="sidenote">In this simulation, the complete message is a string of text that is divided into
                     packets of one letter each. In reality, the packet length is not so strictly limited and messages
                     are usually much longer.</div>
-                <a class="run" href="/bjc-r/prog/4-internet/U4L3-TCP.xml"><img class="indent"
-                        src="../../bjc-r/img/4-internet/TCP.png" alt="Geen Afbeelding"></a>
+                <a class="run"
+                    href="https://snap.berkeley.edu/snapsource/snap.html#present:Username=cfkaligula&ProjectName=H4L3-TCP">
+                    <img class="indent" src="../../afb/h4/l2/U4L2P2_TCP.png" alt="Geen Afbeelding"></a>
                 <li>
-                    <img class="inline" src="../../bjc-r/img/icons/talk-with-your-partner.png" alt="Geen Afbeelding" />
+                    <img class="inline" src="../../afb/icons/PraatMetJeBuur.png" alt="Geen Afbeelding" />
                     Compare the result with what you sent. What problems do you see?
                 </li>
             </ol>
@@ -103,20 +105,21 @@
 
 
         <div class="takeItFurther">
-            <img class="imageRight" src="../../bjc-r/img/icons/tough-stuff.png" alt="Geen Afbeelding" />
+            <img class="imageRight" src="../../afb/icons/UitermateUitdagend.png" alt="Geen Afbeelding" />
             <ol type="A">
                 <li>
                     Build a simple TCP. Resolve the unreliability so that messages are received reliably despite the
                     limitations of IP packets.
                     <strong>You'll need to change</strong> the definitions of:
                     <ul>
-                        <li><img src="../../bjc-r/img/4-internet/internet-transmit.png" alt="Geen Afbeelding" /></li>
-                        <li><img src="../../bjc-r/img/4-internet/read-internet-data.png" alt="Geen Afbeelding" /></li>
+                        <li><img height="40" src="../../afb/h4/l2/p2-b1.png" alt="Geen Afbeelding" /></li>
+                        <li><img height="40" src="../../afb/h4/l2/p2-b2.png" alt="Geen Afbeelding" /></li>
                     </ul>
-                    <div class="endnote"><strong>Do <em>not</em> change</strong> the definition of <img
-                            src="../../bjc-r/img/4-internet/send-IP.png" alt="Geen Afbeelding">. That block simulates
-                        the unreliable network. You could "solve" the problem by rewriting this block to simulate a
-                        perfect network instead of an imperfect one, but that misses the point.</div>
+                    <div class="endnote"><strong>Do <em>not</em> change</strong> the definition of
+                        <img height="40" src="../../afb/h4/l2/p2-b3.png" alt="Geen Afbeelding">.
+                        That block simulates the unreliable network. You could "solve" the problem by rewriting this
+                        block to simulate a perfect network instead of an imperfect one, but that misses the point.
+                    </div>
                     To solve this problem, you'll need a way to keep track of the order of the data <em>and</em> a way
                     to re-request missing packets:
                     <ul>
