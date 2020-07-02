@@ -16,134 +16,146 @@
     <title>Hoofdstuk 4 Les 1: Betrouwbare Communicatie, 2</title>
 </head>
 
-<body>
-    <div class="full">
-        <h2>Netwerk-overtolligheid</h2>
-        <div class="learn">
-            <p><strong>Op deze pagina,</strong> you will learn how the layout of the Internet is redundant (more than
-                one path from here to there) in order to ensure reliability. </p>
-        </div>
+<body <div class="full">
+    <h2>Netwerk-overtolligheid</h2>
+    <div class="learn">
+        <p><strong>Op deze pagina,</strong> ga je leren hoe de indeling van het internet overtollig (er zijn
+            meerdere manieren om van de ene plek naar de andere te komen) om betrouwbaarheid te verzekeren.
+        </p>
+    </div>
 
-        <p>Given the enormous amount of data traveling around, the Internet needs to be reliable. We have achieved this
-            by building many <strong>redundant</strong> connections into the physical systems of the Internet. Wherever
-            information is going, there is more than one way to get there, so that if part of the Internet fails, the
-            rest remains connected even if the failed part is in the usual path from one place to another. This
-            increases the Internet's <strong>fault tolerance</strong> (ability to work around problems). And it also
-            helps the Internet <strong>scale</strong> (expand) to more devices and people. </p>
-        <div class="endnote">Internet <strong>scalability</strong> is the ability of the net to keep working even as the
-            size of the network and the amount of traffic over the network increase. The page <a
-                href="http://royal.pingdom.com/2013/01/16/internet-2012-in-numbers/" target="_blank">Internet 2012 in
-                numbers</a> has some astonishing numbers about Internet traffic from a few years ago. </div>
+    <p> Met alle gigantische hoeveelheden data die overal naar toe moeten, moet het internet betrouwbaar zijn. Hier
+        hebben we voor gezorgd door vele <strong>overtollige</strong> verbindingen te bouwen in de fysieke systemen van
+        het internet. Waar informatie ook naartoe gaat, er is altijd een andere manier om er te komen, zodat als een
+        deel van het internet uitvalt, de rest nog steeds verbonden blijft. Dit verhoogt de
+        <strong>fouttolerantie</strong> van het internet, de mogelijkheid om om heen te werken. Het helpt daarnaast ook
+        het internet <strong>uit te breiden</strong> naar meer mensen en apparaten.
+    </p>
+    <div class="endnote">Internet<strong>schaalbaarheid</strong> is de mogelijkheid van het net om te blijven werken
+        zelfs als de grootte van het netwerk of de hoeveelheid verkeer over het netwerk stijgt.
+        De pagina <a href="http://royal.pingdom.com/2013/01/16/internet-2012-in-numbers/" target="_blank"> Internet 2012
+            in numbers</a> heest een aantal verbazingwekkende getallen over internetverkeer van een aantal jaar geleden.
+    </div>
 
-        <div class="forYouToDo" id="first">
-            <ol>
-                <li>
-                    <img class="inline" src="../../afb/icons/PraatMetJeBuur.png" alt="Geen Afbeelding" />
-                    Describe what's going on in this animation. <br />
-                    <div class="vocab">
-                        <p>A <strong>redundant</strong> system is one that has back-up elements in case one part fails.
-                        </p>
-                        <p><strong>Fault tolerance</strong> is the ability of a system to work around problems. </p>
-                        <p><strong>Scalability</strong> is the ability of the Internet to keep working as it grows. </p>
-                    </div>
-                    <img class="indent" src="../../afb/h4/l1/p2-v1.gif" alt="Geen Afbeelding" />
-                </li>
-                <li>Work through the following questions. </li>
+    <div class="forYouToDo" id="first">
+        <ol>
+            <li>
+                <img class="inline" src="../../afb/icons/PraatMetJeBuur.png" alt="Geen Afbeelding" />
+                Beschrijf wat er gebeurd in deze animatie. <br />
+                <div class="vocab">
+                    <p> Een <strong>overtollig</strong> systeem bevat elementen met een back-up, in het geval dat een
+                        deel wegvalt.
+                    </p>
+                    <p><strong>Fouttolerantie</strong> is de mogelijkheid van een systeem om om problemen heen te
+                        werken. </p>
+                    <p><strong>Schaalbaarheid</strong> is de mogelijkheid van het internet om te blijven werken als het
+                        groeit </p>
+                </div>
+                <img class="indent" src="../../afb/h4/l1/p2-v1.gif" alt="Geen Afbeelding" />
+            </li>
+            <li> Maak de volgende vragen. </li>
 
-                <!-- Question 1 -->
-                <div class="assessment-data" type="multiplechoice" identifier="What is the fewest number of nodes?"
-                    hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri1" shuffle="false">
-                    <div class="prompt">
-                        <img class="imageRight" src="../../afb/h4/l1/p1-o2.png" alt="Geen Afbeelding" />
-                        In this model of a network, what is the <em>minimum</em> number of nodes (connection points)
-                        that can stop working before the sender and the receiver can't communicate? (Other than the
-                        sender or the receiver themselves, of course.)
-                    </div>
-                    <div class="choice" identifier="c1">
-                        <div class="text">1</div>
-                        <div class="feedback">
-                            There are no nodes that are vital to the system. Pick any node to stop working, and you can
-                            still find another path.
-                        </div>
-                    </div>
-                    <div class="choice" identifier="c2">
-                        <div class="text">2</div>
-                        <div class="feedback">
-                            Correct! If the node with 6 connections goes down and also either of the two to its left,
-                            the sender and receiver can't communicate.
-                        </div>
-                    </div>
-                    <div class="choice" identifier="c3">
-                        <div class="text">3</div>
-                        <div class="feedback">
-                            Try to find a smaller number of nodes that can stop working and still break communication.
-                        </div>
-                    </div>
-                    <div class="choice" identifier="c4">
-                        <div class="text">4</div>
-                        <div class="feedback">
-                            Try to find a smaller number of nodes that can stop working and still break communication.
-                        </div>
-                    </div>
-                    <div class="choice" identifier="c5">
-                        <div class="text">5</div>
-                        <div class="feedback">
-                            Try to find a smaller number of nodes that can stop working and still break communication.
-                        </div>
-                    </div>
+            <!-- Question 1 -->
+            <div class="assessment-data" type="multiplechoice" identifier="What is the fewest number of nodes?"
+                hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri1" shuffle="false">
+                <div class="prompt">
+                    <img class="imageRight" src="../../afb/h4/l1/p1-o2.png" alt="Geen Afbeelding" />
+                    Wat is het <em>minimum</em> aantal verbindingspunten in dit netwerk dat dat kan stoppen met werken
+                    voordat de zender en ontvanger niet meer kunnen communiceren? (Naast de zender en ontvanger zelf
+                    natuurlijk.)
 
-                    <div class="responseDeclaration" identifier="ri1">
-                        <div class="correctResponse" identifier="c2"></div>
+                </div>
+                <div class="choice" identifier="c1">
+                    <div class="text">1</div>
+                    <div class="feedback">
+                        Er zijn geen knooppunten die essentieel zijn voor het systeem. Bij ieder punt geldt dat als je
+                        het weghaalt er nog steeds een ander pad is.
+                    </div>
+                </div>
+                <div class="choice" identifier="c2">
+                    <div class="text">2</div>
+                    <div class="feedback">
+                        Correct! Als het knooppunt met 6 verbindingen wegvalt en ook een van de twee links ervan kunnen
+                        de zender en ontvanger niet meer communiceren.
+                        .
+                    </div>
+                </div>
+                <div class="choice" identifier="c3">
+                    <div class="text">3</div>
+                    <div class="feedback">
+                        Probeer een kleiner aantal punten te vinden die je weg kan halen waarbij communicatie nog steeds
+                        verbroken wordt.
+                    </div>
+                </div>
+                <div class="choice" identifier="c4">
+                    <div class="text">4</div>
+                    <div class="feedback">
+                        Probeer een kleiner aantal punten te vinden die je weg kan halen waarbij communicatie nog steeds
+                        verbroken wordt.
+                    </div>
+                </div>
+                <div class="choice" identifier="c5">
+                    <div class="text">5</div>
+                    <div class="feedback">
+                        Probeer een kleiner aantal punten te vinden die je weg kan halen waarbij communicatie nog steeds
+                        verbroken wordt.
                     </div>
                 </div>
 
-                <!-- Question 2 -->
-                <div class="assessment-data" type="multiplechoice" identifier="What is the maximum that can fail?"
-                    hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri2" shuffle="false">
-                    <div class="prompt">
-                        <img class="imageRight" src="../../afb/h4/l1/p1-o2.png" alt="Geen Afbeelding" />
-                        In the same model network, what is the <em>maximum</em> number of nodes that can fail and still
-                        let Sender and Receiver communicate?
-                    </div>
-                    <div class="choice" identifier="c1">
-                        <div class="text">10</div>
-                        <div class="feedback">
-                            If all 10 nodes fail, the sender and receiver can't communicate.
-                        </div>
-                    </div>
-                    <div class="choice" identifier="c2">
-                        <div class="text">9</div>
-                        <div class="feedback">
-                            If 9 nodes fail, the sender and receiver can't communicate.
-                        </div>
-                    </div>
-                    <div class="choice" identifier="c3">
-                        <div class="text">8</div>
-                        <div class="feedback">
-                            Correct! If the 4 nodes on the right and <em>also</em> the 4 nodes on the left all fail, the
-                            remaining 2 nodes in the middle will still allow the sender and receiver to communicate.
-                        </div>
-                    </div>
-                    <div class="choice" identifier="c4">
-                        <div class="text">7</div>
-                        <div class="feedback">
-                            Try to find a higher number of nodes that can stop working and still ensure communication.
-                        </div>
-                    </div>
-                    <div class="choice" identifier="c5">
-                        <div class="text">6</div>
-                        <div class="feedback">
-                            Try to find a higher number of nodes that can stop working and still ensure communication.
-                        </div>
-                    </div>
+                <div class="responseDeclaration" identifier="ri1">
+                    <div class="correctResponse" identifier="c2"></div>
+                </div>
+            </div>
 
-                    <div class="responseDeclaration" identifier="ri2">
-                        <div class="correctResponse" identifier="c3"></div>
+            <!-- Question 2 -->
+            <div class="assessment-data" type="multiplechoice" identifier="What is the maximum that can fail?"
+                hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri2" shuffle="false">
+                <div class="prompt">
+                    <img class="imageRight" src="../../afb/h4/l1/p1-o2.png" alt="Geen Afbeelding" />
+                    In het zelfde netwerk, wat is het <em>maximaal</em> aantal knooppunten dat kan wegvallen terwijl de
+                    zender en ontvanger nog steeds kunnen communiceren?
+                </div>
+                <div class="choice" identifier="c1">
+                    <div class="text">10</div>
+                    <div class="feedback">
+                        Als alle 10 de knooppunten wegvallen, kan niet meer gecommuniceerd worden.
+                    </div>
+                </div>
+                <div class="choice" identifier="c2">
+                    <div class="text">9</div>
+                    <div class="feedback">
+                        Als 9 knooppunten wegvallen, kan niet meer gecommuniceerd worden.
+                    </div>
+                </div>
+                <div class="choice" identifier="c3">
+                    <div class="text">8</div>
+                    <div class="feedback">
+                        Correct! Als de 4 rechter punten wegvallen en <em>ook</em> de 4 punten links, dan kan nog steeds
+                        gecommuniceerd worden door de 2 punten in het midden.
+                    </div>
+                </div>
+                <div class="choice" identifier="c4">
+                    <div class="text">7</div>
+                    <div class="feedback">
+                        Probeer een groter aantal punten te vinden die je weg kan halen waarbij communicatie nog steeds
+                        verbroken wordt.
+                    </div>
+                </div>
+                <div class="choice" identifier="c5">
+                    <div class="text">6</div>
+                    <div class="feedback">
+                        Probeer een groter aantal punten te vinden die je weg kan halen waarbij communicatie nog steeds
+                        verbroken wordt.
                     </div>
                 </div>
 
-            </ol>
-        </div>
+                <div class="responseDeclaration" identifier="ri2">
+                    <div class="correctResponse" identifier="c3"></div>
+                </div>
+            </div>
+
+        </ol>
+    </div>
     </div>
     <div class="full-bottom-bar" style="background-position: 20px 3px;">
         <div class="bottom-nav btn-group">
