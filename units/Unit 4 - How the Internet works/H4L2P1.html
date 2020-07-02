@@ -20,103 +20,131 @@
     <div class="full">
         <h2>Adressen in een netwerk van netwerken: IP</h2>
         <div class="learn">
-            <p><strong>In deze les,</strong> you will learn about some of the abstractions that make the Internet work.
+            <p><strong>In deze les,</strong> ga je leren over een aantal abstracties die zorgen dat het internet werkt.
+
             </p>
-            <p><strong>Op deze pagina,</strong> you will learn how machine-readable computer addresses work. </p>
+            <p><strong>Op deze pagina,</strong> ga je leren hoe voor machines leesbare computeradressen werken. </p>
         </div>
 
 
         <div class="vocabBig">
-            <p>A <strong>router</strong> is a computer that passes information from one network to another. </p>
-            <div class="endnote">Depending on where you live, you might pronounce "route" differently, but "router" is
-                always pronounced the same: like "outer."</div>
-            <p>The <strong>end to end</strong> architecture of the Internet means that routers only know how to find an
-                IP address; they don't do anything with the content of the message. Making sense of content is the job
-                of the <em>endpoint</em> computers: the sender and the receiver. </p>
+            <p> Een <strong>router</strong> is een computer die informatie van het ene naar het andere netwerk
+                doorgeeft.
+
+            </p>
+            <div class="endnote">
+                Je spreekt de "ou" in "router" anders uit dan "route", je spreekt het namelijk uit als de "ou" in
+                "hout".
+            </div>
+            <p>De <strong>end-to-end</strong>architectuur van het internet betekent dat routers alleen weten hoe ze een
+                IP-adres vinden; ze doen niks met de inhoud van het bericht. De inhoud begrijpen is het werk van de
+                computers aan de eindpunten: de ontvanger en zender.
+            </p>
         </div>
-        <p>The Internet isn't just a network of computers. It's a <em>network of networks</em>. The connection points
-            between networks are called <strong>routers</strong>, networking devices that route traffic between
-            subnetworks on the Internet. The routers only know how to pass information on to the next router or to the
-            final destination; the routers do <em>not</em> analyze what's inside each packet of data (as long as you
-            live in a country without Internet censorship). Making sense of the information happens at the destination
-            computer. This is called the <strong>end to end</strong> principle. </p>
+        <p> Het internet is niet alleen een netwerk van computers. Het is een <em>netwerk van netwerken</em>. De
+            verbindingspunten tussen netwerken heten <strong>routers</strong>, apparaten die verkeer door subnetwerken
+            van het internet begeleiden. De routers weten alleen hoe ze informatie door moeten geven aan de volgende
+            router of aan de bestemming; de routers analyseren <em>niet</em> wat er in het datapakketje zit (zolang je
+            woont in een land zonder internetcensuur).De informatie van het pakket bekijken en begrijpen gebeurt op de
+            bestemming. Dit heet het <strong>end-to-end</strong>principe.
+        </p>
+
         <div class="sidenote">
-            Image from <a href="http://jacobsschool.ucsd.edu/news/news_releases/release.sfe?id=685" target="_blank">UC
+            Afbeelding van <a href="http://jacobsschool.ucsd.edu/news/news_releases/release.sfe?id=685"
+                target="_blank">UC
                 San Diego Jacobs School of Engineering</a>.
         </div>
+
         <div> <a href="http://jacobsschool.ucsd.edu/news/news_releases/release.sfe?id=685" target="_blank">
-                <img class="indent noshadow" height="512" src="../../afb/h4/l2/p1-o1.jpg" alt="Geen Afbeelding" /></a>
+                <img class="indent noshadow" height="512" src="../../afb/h4/l2/p1-o1.jpg" alt="Geen Afbeelding" />
+            </a>
         </div>
+
         <div class="vocab">
-            <p>An <strong>IP address</strong> is a unique number assigned to each device on a computer network. </p>
-            <p><strong>Packet switching</strong> means that the Internet sends short bursts of information, not long
-                continuous strings. </p>
+            <p>Een <strong>IP-adres</strong> is een uniek getal toegewezen aan ieder apparaat op een computernetwerk.
+            </p>
+            <p><strong>Pakket wisselen</strong> betekent dat het internet korte uitbarstingen van inforamtie geeft, geen
+                lange, continue stromen.
+            </p>
         </div>
 
-        <h3>How Do Routers Know Where to Find the Computer You Want?</h3>
-        <p>Every device on the Internet has a unique <strong>Internet Protocol (IP) address</strong> (or more than one,
-            if it's a router), like a postal or email address. The Internet Protocol specifies how a router handles a
-            request for a different IP address. Each router knows the layout of its specific neighborhood of the
-            Internet and knows which way to send each message to get it a little bit closer to where it's going. The
-            fact that each router doesn't have to know the complete Internet improves scalability.
+        <h3>Hoe weten routers waar ze de computer kunnen vinden die je wil?</h3>
+        <p> Ieder apparaat op het internet heeft een uniek <strong>internetprotocoladres (IP)</strong> (of meer dan een
+            als het een router is), net zoals een woonadres of een emailadres. Het internetprotocol specificeert hoe een
+            router met een verzoek voor een ander IP-adres moet omgaan. Iedere router kent indeling van zijn specifieke
+            buurt van het internet en weet hoe het zijn berichten moet sturen om een stukje dichterbij de plek te komen
+            waar het pakket naar toe moet. Het feit dat de router niet het hele internet hoeft te kennen is goed voor de
+            schaalbaarheid van het netwerk.
         </p>
         <p>
-            Usually, there are many possible paths from one endpoint to another. This redundancy allows IP to find an
-            alternate pathway if some system in the middle doesn't respond to requests by finding an alternate pathway.
-            This is the principle of fault tolerance.
+            Normaliter zijn er veel mogelijke paden van het ene eindpunt naar het andere. Deze overtolligheid laat het
+            internetprotocol alternatieve paden te vinden als een systeem in het midden van het pad wegvalt. Dit is het
+            principe van fouttolerantie.
         </p>
 
         <p>
-            When you send a data over the Internet, the IP program in your computer divides it into <em>packets</em>
-            that it sends individually. (Each may take a different path.) This process is what makes the Internet a
-            <strong>packet switching</strong> network.
+            Wanneer je een data verzend over het internet, verdeelt het IP-programma in je computer de data in
+            <em>pakketjes</em> die het één voor één verstuurt. Ieder pakketje kan zelfs een andere route nemen. Dit
+            proces is wat het internet een <strong>pakketwissel</strong>netwerk maakt.
         </p>
 
         <div class="forYouToDo" id="first">
             <ol>
                 <img class="imageRight" src="../../bjc-r/img/icons/talk-with-your-partner.png" alt="Geen Afbeelding" />
 
-                <li>Why does the graph of the Internet look like a tangle in the middle with fireworks on the outsides?
+                <li> Waarom lijkt het diagram van het internet op een wirwar in het midden met vuurwerk aan de
+                    buitenkant?
                 </li>
-                <li>Discuss how this shape is related to how people connect to the Internet (though an Internet Service
-                    Provider, etc.). Write out a brief description and/or explain it to someone else. </li>
-                <li>Visit <a href="http://bot.whatismyipaddress.com/" target="_blank"> http://bot.whatismyipaddress.com/
-                    </a> for your current IP address.
+                <li> Bespreek hoe deze vorm verwant si aan hoe mensen verbinden aan het internet (met een
+                    internetprovider, etc.). Schrijf een korte beschrijving en/of leg het uit aan iemand anders.
                 </li>
-                <div class="sidenoteBig">You can add any IP address to the end of that URL like this:
-                    <a href="http://ipinfo.io/128.59.105.24" target="_blank"> http://ipinfo.io/128.59.105.24 </a></div>
-                <li>Visit <a href="http://ipinfo.io/" target="_blank"> http://ipinfo.io/ </a>. What information does
-                    that page give you? (You don't need to enter your email address. Just click "See more details.")
+                <li> Bezoek <a href="http://bot.whatismyipaddress.com/" target="_blank">
+                        http://bot.whatismyipaddress.com/
+                    </a> om je eigen IP-adres te weten te komen.
+                </li>
+                <div class="sidenoteBig"> Je kan een IP-adres toevoegen aan het einde van een URL zoals hier:
+                    <a href="http://ipinfo.io/128.59.105.24" target="_blank"> http://ipinfo.io/128.59.105.24 </a>
+                </div>
+                <li>Bezoek <a href="http://ipinfo.io/" target="_blank"> http://ipinfo.io/ </a>. Welke informatie geeft
+                    deze pagina je? (Je hoeft niet je emailadres in te voeren. Klik gewoon op "See more details".)
                 </li>
             </ol>
         </div>
-        <p>The amount of detailed information available from an IP address is pretty amazing (and a little scary),
-            especially when you think about the ways that information can be used. </p>
-        <div class="sidenote">Some of the information might have slight inaccuracies. IP addresses often give the
-            location of an Internet service provider, possibly at a different location. </div>
+        <p> De hoeveelheid gedetailleerde informatie beschikbaar van een IP-adres is best verrassend (en een beetje
+            eng), vooral wanneer je nadenkt over de manieren waarop die informatie gebruikt kan worden.
+        </p>
+        <div class="sidenote"> Sommige informatie bevat misschien wat onnauwkeurigheden. IP-adressen geven vaak de
+            locatie van de internetprovider, die mogelijk op een andere locatie zit. </div>
         <img class="indent" src="../../afb/h4/l2/U4L2P1_ipinfo-screenshot.png" alt="Geen Afbeelding">
 
 
         <h3>IPv4</h3>
         <img class="imageRight" src="../../afb/h4/l2/U4L2P1_ipv4.png" width="325" alt="Geen Afbeelding" />
-        <p>Each of the four numbers in a typical IP address today is an eight-bit <strong>byte</strong> with a value
-            between 0 and 255 (see right). A 32-bit IPv4 (the &quot;v&quot; stands for &quot;version&quot;) address is
-            big enough to support 2<sup>32</sup> computers. That's about four billion (4 &middot; 10<sup>9</sup>), but
-            there are more than <em>seven</em> billion people on Earth, so there aren't enough IP addresses to go
-            around. </p>
-        <div class="endnote"><strong>Why does IPv4 support 2<sup>32</sup> computers?</strong> There are 32 bits in an
-            IPv4 address (see right), and each bit can be one of two possible values (0 or 1). So, there are
-            2<sup>32</sup> possibilities with thirty-two bits. </div>
+        <p>
+            Alle vier de getallen in een IP-adres zijn 8-bit <strong>bytes</strong> met een waarde tussen 0 en 255 (zie
+            rechts). Een 32-bit IPv4-adres (de "v" staat voor "versie") is groot genoeg om 2<sup>32</sup> computers te
+            ondersteunen. Dat is ongeveer 4 miljard (4 &middot; 10<sup>9</sup>), maar er zijn meer dan <em>zeven</em>
+            miljard mensen op aarde, dus er zijn niet genoeg IP-adressen voor iedereen.
+        </p>
+        <div class="endnote">
+            <strong>Waarom ondersteunt IPv4 2<sup>32</sup> computers?</strong> Er zijn 32 bits in een IPv4-adres (zie
+            rechts), en iedere bit can twee waardes bevatten (0 of 1). Dus er zijn 2<sup>32</sup> mogelijkheden met 32
+            bits.
+        </div>
 
 
         <h3>IPv6</h3>
         <img class="imageRight" src="../../afb/h4/l2/U4L2P1_ipv6.png" width="325" height="50%" alt="Geen Afbeelding" />
-        <p>The long-term solution is to increase the length of an IP address. The new IP addresses are 128 bits wide,
-            which is enough to support 2<sup>128</sup> (about 10<sup>38</sup>) computers. </p>
-        <div class="endnote"><strong>Will this always be enough, or will we need to upgrade the addressing system
-                again?</strong> There are an estimated 10<sup>29</sup> stars in the observable universe. So even if the
-            Internet is extended to include other planets or space aliens, we'll <em>still</em> have enough addresses
-            with IPv6. </div>
+        <p>
+            De langetermijnoplossing is om de lengte van IP-adressen te vergroten. De nieuwe IP-adressen zijn 128 bits
+            groot, dat is genoeg om 2<sup>128</sup> (ongeveer 10<sup>38</sup>) computers te ondersteunen.
+        </p>
+        <div class="endnote">
+            <strong> Zal dit altijd genoeg zijn, of moeten we adressystemen nog een keer veranderen?
+            </strong> Er zijn ongeveer 10<sup>29</sup> sterren in het universum zo ver we kunnen zien. Dus zelfs als het
+            internet uitgebreid zou worden naar andere planeten, dan zouden we <em>nog steeds</em> genoeg adressen
+            hebben met IPv6.
+        </div>
 
 
 
@@ -124,7 +152,7 @@
             <ol start="5">
                 <li>
                     <img class="inline" src="../../afb/icons/PraatMetJeBuur-mini.png" alt="Geen Afbeelding" />
-                    Is your IP address in IPv4 or IPv6?<br />
+                    Is jouw IP-adres in IPv4 of IPv6?<br />
                 </li>
             </ol>
         </div>
@@ -132,28 +160,31 @@
 
         <div class="ifTime">
             <ol start="6">
-                <li>Read <a href="http://www.bitsbook.com/wp-content/uploads/2008/12/B2B_3.pdf#page=319" target="_blank"
+                <li>Lees <a href="http://www.bitsbook.com/wp-content/uploads/2008/12/B2B_3.pdf#page=319" target="_blank"
                         title="Blown to Bits: The Internet as System
-and Spirit "><em>Blown to Bits</em> pages 301-306</a>. </li>
+and Spirit "><em>Blown to Bits</em> pagina's 301-306</a>. </li>
             </ol>
         </div>
 
 
         <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
             <ol type="A">
-                <div class="endnote">Most likely, the router in your home or school uses a protocol that allows all the
-                    computers on the local network (such as in one building) to share a single IP address on the
-                    Internet, which can be cheaper. The router that creates the local network gives each computer a
-                    <em>local address</em>. For example, although the outside world may think someone's computer has IP
-                    address 108.26.181.226, that computer itself might think its address is 192.168.1.11. </div>
-                <li>Look up your current <em>local</em> IP address in your system preferences or settings. It's usually
-                    under network or Internet settings and may be listed with the computer device supporting that
-                    connection (wifi, Ethernet, wifi, Bluetooth, etc.). </li>
+                <div class="endnote">
+                    Hoogst waarschijnljk gebruikt de router in jouw huis of school een protocol dat ervoor zorgt dat
+                    alle computers in het locale netwerk (zoals in één gebouw) samen één IP-adres delen op het internet.
+                    De router dat het locale netwerk maakt geeft iedere computer een <em>locaal adres</em>. Ook al denkt
+                    de buitenwereld bijvoorbeeld dat je computers IP-adres 108.26.181.226 is, de computer zelf denk dat
+                    zijn adres 192.168.1.11 is.
+                </div>
+                <li> Zoek je huidige <em>locale</em> IP-adres op in de instellingen van je computer. Het staat vaak
+                    ergens onder de netwerk- of internetinstellingen.
+                </li>
             </ol>
-            <div class="endnote">The 192.168 <em>domain</em> (the block of IP addresses that all start with 192.168) is
-                reserved for <em>local</em> networks, but no computer on the Internet has an address in that range.
-                <!--So, the job of the router is not really as simple as the end-to-end abstraction would suggest. (The 10.0 domain is also used for local addresses.)-->
-                Another such domain is 10.0. </div>
+            <div class="endnote">
+                Het 192.168 <em>domein</em> (het blok IP-adressen dat start met 192.168) is
+                gereserveerd voor <em>locale</em> netwerken, dus geen enkele computer op het internet heeft een adres
+                dat daarmee begint.
+            </div>
         </div>
     </div>
     <div class="full-bottom-bar" style="background-position: 20px 3px;">
