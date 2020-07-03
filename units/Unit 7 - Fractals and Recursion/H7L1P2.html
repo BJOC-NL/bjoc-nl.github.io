@@ -21,7 +21,7 @@
         <h2>Het Basisgeval</h2>
         <div class="sidenote"> Een script dat zichzelf bevat is <em>recursief</em>.</div>
         <p>
-            Het leek logisch om alle identieke genummerde boom-scripts te vervangen door een enkelvoudig recursief
+            Het lijkt logisch om alle identieke genummerde boom-scripts te vervangen door een enkelvoudig recursief
             script met dezelfde structuur:<br />
             <img src="../../afb/h7/l1/p2-b1.png" height="267" alt="Geen Afbeelding">&nbsp;
             <img src="../../afb/h7/l1/p2-b2.png" height="267" alt="Geen Afbeelding">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -64,8 +64,8 @@
                 </p>
             </div>
             <div>
-                <span>Bo:</span> <strong> Dus ons blok voor de recursieve boom moet iets anders doen als
-                    <var>niveau = 1! </var></strong>
+                <span>Bo:</span> <strong> Dus ons blok voor de recursieve boom moet iets anders doen wanneer
+                    <var>niveau = 1 </var>!</strong>
             </div>
             <div>
                 <span>Yasmine:</span> Yep! Hij moet alleen maar een lijn tekenen zonder een andere tak toe te voegen.
@@ -115,12 +115,12 @@
         <ol>
             <li> Corrigeer je recursieve <code>boom</code>-blok zodat het een basis geval bevat om te voorkomen dat het
                 script zichzelf eindeloos aanroept. Hier geven we twee manieren om dat te doen, maar er zijn er meer.
-                Gebruik wat voor jou het beste werkt. <br />
+                Gebruik de manier die voor jou het beste werkt. <br />
                 <img src="../../afb/h7/l1/p2-b6.png" width="405" height="363" alt="Geen Afbeelding">
                 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img src="../../afb/h7/l1/p2-b7.png" width="405"
                     height="339" alt="Geen Afbeelding"></li>
             <li>
-                Voer <code> boom niveau: 9 en grootte: 50</code> uit. Als het nu goed werkt, zou je dit moeten
+                Voer <code> boom niveau: 9 en grootte: 50</code> uit. Als je dit correct doet, zou je dit moeten
                 krijgen:<br />
                 <img class="indent" src="../../afb/h7/l1/p2-o4.jpg" alt="Geen Afbeelding" />
             </li>
@@ -142,8 +142,8 @@
     <div class="takeNote">
         <img class="imageRight" src="../../afb/icons/take-turns-speaking-mini.gif" alt="Geen Afbeelding">
         <p> <em>Recursieve</em> scripts roepen zichtzelf aan. Om ze te laten stoppen moet er een speciaal geval zijn
-            wanneer ze zichtzelf <em>niet</em> aanroepen. Dat wordt het <strong>basisgeval</strong> genoemd, een
-            eenvoudigere versie van het script dat <em> het blok niet zelf aanroept</em> .
+            waarbij ze <em>stoppen</em>> met zichtzelf aanroepen. Dat wordt het <strong>basisgeval</strong> genoemd, een
+            eenvoudigere versie van het script dat <em> zichzelf niet aanroept</em> .
         </p>
         <p> Gewoonlijk is er een <em> voorwaarde</em> (zoals <code>if-else</code>) met 2 gevallen: een
             <em>basisgeval</em> voor het laagste niveau die voorkomt dat de recursie voor altijd doorgaat en een

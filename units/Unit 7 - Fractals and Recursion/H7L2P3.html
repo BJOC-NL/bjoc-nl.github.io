@@ -18,19 +18,21 @@
 
 <body>
     <div class="full">
-        <h2>Lévy C-boog-Fractal</h2>
+        <h2>Lévy C-boog-fractaal</h2>
         <div class="sidenote">Lévy wordt uitgesproken als "lee-vie".</div>
         <p>
-            Een andere welbekende herhalende vorm is de Lévy C-boog. Net als bij het sneeuwvlokjes algoritme, is de
-            basisvorm is een enkele lijn.<br />
+            Een andere welbekende herhalende vorm is de Lévy C-boog. Net als bij het sneeuwvlokjesalgoritme, is de
+            basisvorm een enkele lijn.<br />
             <img class="indent noshadow" src="../../afb/h7/l2/p3-o1.jpg" alt="Geen Afbeelding" />
         </p>
         <p>
             Bij elke herhaling vervangt het algoritme een rechte lijn met een gebogen lijn. Als we deze regel volgen
-            draai 45° naar links, herhaal het vorige niveau in een verkleinde vorm, draai 90° rechts, herhaal het vorige
-            niveau in een verkleinde vorm en draai nog een laatste keer 45° om terug te komen op de beginorientatie. Je
-            zal zelf uit moeten zoeken hoe veel het verkleind moet worden met elke stap om te zorgen dat hij exact in de
-            vorige herhaling past. <br />
+            krijg je de volgende regels: <br />
+            draai 45° naar links, roep het algoritme opnieuw aan met een lager niveau en een verkleinde vorm, draai 90°
+            rechts, roep het algoritme opnieuw aan met een lager niveau en een verkleinde vorm en draai nog een laatste
+            keer 45° om terug te komen op de plek waar je begon.
+            Je zal zelf uit moeten zoeken hoe veel kleiner de verkleinde vorm moet zijn met elke stap om te zorgen dat
+            de vorm exact in de vorige herhaling past. <br />
             <img class="indent noshadow" src="../../afb/h7/l2/p3-o2.jpg" alt="Geen Afbeelding" />
         </p>
         <div class="forYouToDo" id="first">
@@ -38,7 +40,7 @@
                 <li><img class="inline" src="../../afb/icons/PraatMetJeBuur.png" alt="Geen Afbeelding" />
                     De originele lijn wordt vervangen door twee andere lijnen; samen maken deze drie lijnen een driehoek
                     met een rechte hoek, waarvan de originele lijn de schuine zijde is. Als de lengte van de originele
-                    lijn wordt bepaald met de variabele <var>grootte</var> welke lengte moeten we dan doorgeven bij de
+                    lijn wordt bepaald door de variabele <var>grootte</var>, welke lengte moeten we dan doorgeven bij de
                     recursieve aanroep? Dus wat zijn de lengtes van de benen? Je kan de formule van Pythagoras
                     gebruiken: <span class="katex">a^2 + b^2 = c^2</span>.</li>
             </ol>
@@ -59,12 +61,12 @@
                             Misschien vindt je het handig om deze lijst met opdrachten uit te breiden door de stappen in
                             elk van de twee recursieve oproepen op te schrijven.
                         </div>
-                        Vergeet niet wat het algoritme voor elk recursief niveau is:
+                        Vergeet niet hoe het algoritme werkt:
                         <ul>
                             <li> draai 45 ° naar links </li>
-                            <li> roep recursief het vorige niveau aan op een kleinere formaat</li>
+                            <li> roep recursief het lagere niveau aan met een kleinere grootte</li>
                             <li> draai 90 ° naar rechts</li>
-                            <li> roep recursief het vorige niveau aan op een kleinere formaat</li>
+                            <li> roep recursief het lagere niveau aan met een kleinere grootte</li>
                             <li> draai 45 ° naar links</li>
                         </ul>
                     </div>
