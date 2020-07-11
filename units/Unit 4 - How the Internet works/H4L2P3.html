@@ -20,77 +20,91 @@
     <div class="full">
         <h2>Een hiërarchie van open protocollen</h2>
         <div class="learn">
-            <p><strong>Op deze pagina,</strong> you will learn about the communication standards used on the Internet
-                and how they work together.</p>
+            <p><strong>Op deze pagina,</strong> ga je leren over de communicatiestandaarden die gebruikt worden op het
+                internet en hoe ze samenwerken.
+            </p>
         </div>
 
         <img class="imageRight" src="../../afb/icons/take-turns-speaking-mini.gif" alt="Geen Afbeelding">
-        <p>There are billions of devices connected to the Internet, and hundreds of different <em>kinds</em> of devices:
-            laptops, tablets, phones, refrigerators, handheld credit card readers, and so on. How do they all know how
-            to find and talk to each other? <strong>Protocols</strong> (standards) ensure that the variety of devices
-            interact with each other smoothly.</p>
-        <p>There are a <em>lot</em> of protocols! The Internet was designed with several layers of <em>abstraction</em>
-            that sort the protocols according to what part of the process they support. </p>
+        <p> Er zijn miljarden apparaten verboden aan het internet en honderden verschillende <em>soorten</em> apparaten:
+            laptops, tablets, telefoons, koelkasten, enzovoort. Hoe kunnen ze elkaar allemaal vinden en met elkaar
+            praten? <strong>Protocollen</strong> (standaarden) verzekeren dat alle apparaten in de wereld zonder
+            problemen met elkaar kunnen communiceren.
+        </p>
+        <p> Er zijn <em>heelveel</em> protocollen! Het internet was ontworpen met meerdere lagen van <em>abstractie</em>
+            die de protocollen indelen afhankelijk van waar ze in het communicatieproces gebruikt worden. </p>
 
 
-        <h3>Internet Abstraction Hierarchy</h3>
-        <p>This <em>hierarchy of abstractions</em> manages the complexity of the Internet by hiding the details of lower
-            levels of the system. The highest level of abstraction includes the most general features of the Internet
-            that have to work the same across all devices. At lowers levels of abstraction, things get more
-            device-specific. </p>
+        <h3>De hiërarchie van internetabstractie</h3>
+        <p> Deze <em>hiërarchie van abstracties</em> vermindert de complexiteit van het internet door details van lagere
+            niveau's te verbergen. Het hoogste niveau van abstractie bevat de meest algemene eigenschappen van het
+            internet die samen moeten werken over alle apparaten. Hoe lager het niveau, hoe meer apparaat-specifiek.
+        </p>
         <div>
             <ul>
                 <li><strong>Application Layer Protocols</strong> are the highest level of abstraction because they<em>
                         manage how data is interpreted and displayed</em> to users. These protocols <em>give meaning to
                         the bits</em> sent by lower-level protocols; user and server computers must agree on what the
-                    bits mean, and application protocols (like HTTP) offer this.</li>
+                    bits mean, and application protocols (like HTTP) offer this.
+                </li>
+
                 <div class="endnote">
-                    Browsers use <a
-                        href="/bjc-r/cur/programming/4-internet/1-reliable-communication/1-what-is-internet.html?topic=nyc_bjc%2F4-internet.topic&course=bjc4nyc.html&novideo&noassignment">HTTP</a>
-                    (HyperText Transfer Protocol) to interpret HTML instructions for page formatting. <a
-                        href="/bjc-r/cur/programming/4-internet/1-reliable-communication/3-address-hierarchy.html?topic=nyc_bjc%2F4-internet.topic&course=bjc4nyc.html&novideo&noassignment">DNS</a>
+                    Browsers use
+                    <a href="H4L1P1.html"> HTTP </a>
+                    (HyperText Transfer Protocol) to interpret HTML instructions for page formatting.
+                    <a href="H4L1P3.html"> DNS</a>
                     (Domain Name System) converts user-friendly web addresses into IP addresses. Your email inbox may
                     use SMTP (Simple Mail Transfer Protocol) to send and IMAP (Internet Message Access Protocol) to read
                     email.
                 </div>
+
                 <li><strong>Transport Layer Protocols</strong> manage the <em>breakdown of a message into packets</em>
                     to be transmitted by lower level protocols and also the <em>reconstruction of the message from the
-                        packets</em> upon arrival.</li>
+                        packets</em> upon arrival.
+                </li>
+
                 <div class="endnote">
-                    <a
-                        href="/bjc-r/cur/programming/4-internet/2-communication-protocols/2-tcp.html?topic=nyc_bjc%2F4-internet.topic&course=bjc4nyc.html&novideo&noassignment">TCP</a>
-                    (Transmission Control Protocol) <em>simulates</em> a reliable, long-term connection between two
-                    computers by only displaying data once all packets have arrived. When speed is more important than
-                    accuracy, people use UDP (User Datagram Protocol), such as for real-time video streaming, where one
-                    missed packet doesn't matter much.
+                    <a href="H4L2P2.html">TCP</a>
+                    (Transmission Control Protocol) <em>simuleert</em> een betrouwbare langetermijnverbinding tussen
+                    twee computers door data alleen weer te geven als alle pakketjes waaruit die data bestaat,
+                    gearriveerd is. Wanneer snelheid belangrijker is dan nauwkeurigheid, gebruiken mensen UDP (User
+                    Datagram Protocol, in het Nederlands Gebruiker-datagramprotocol). UDP wordt bijvoorbeeld gebruikt
+                    als je video's kijkt of belt over het internet, hier maakt een gemist pakketje niet heelveel uit.
                 </div>
             </ul>
             <ul>
-                <li><strong>Internet Layer Protocols</strong> <em>manage the pathways that the data packets travel</em>
-                    across networks. These protocols treat the Internet like one large network even though the physical
-                    reality on the lower level is one of many tiny subnetworks.</li>
-                <div class="endnote">
-                    Every device on the Internet needs an IP address so other devices can find it. <a
-                        href="/bjc-r/cur/programming/4-internet/2-communication-protocols/1-ip.html?topic=nyc_bjc%2F4-internet.topic&course=bjc4nyc.html&novideo&noassignment">IP</a>
-                    (Internet Protocol) addresses are upgrading from IPv4 to IPv6. Routers use Internet layer protocols
-                    to detect and work around network congestion.
-                </div>
-                <li><strong>Network Interface Hardware</strong> (Link Layer): All Internet devices connect through a
-                    <em>physical interface that uses a protocol to manage the connection</em> to the local network.
-                    These local protocols are the least abstract because they deal directly with your physical hardware.
+                <li> <strong>Internet-laagprotocollen</strong> <em> zorgen voor de paden die datapakketjes nemen </em>
+                    over netwerken. Deze protocollen zien het internet als een groot netwerk, ook al zijn het eigenlijk
+                    heel veel kleine subnetwerken.
                 </li>
+
                 <div class="endnote">
-                    You may connect to the Internet with an <em>Ethernet</em> cable or perhaps a <em>WiFi</em> radio
-                    antenna inside the case of your computer. Either connects computers to a local network router which
-                    then connects to an Internet provider. Cell phones use a longer-range <em>cellular</em> connection
-                    to a phone carrier.
+                    Ieder apparaat op het internet heeft een IP-adres nodig zodat andere apparaten het kunnen vinden.
+                    <a href="H4L2P1.html">IP</a>-adressen worden nu geüpgraded van IPv4 naar IPv6. Routers gebruiken
+                    internet-laagprotocollen om verstoppingen in het netwerk te detecteren en omheen te werken.
                 </div>
+
+                <li><strong>Netwerkinterface-hardware</strong> (Linklaag): alle apparaten verbonden aan het internet
+                    zijn met elkaar verbonden met een <em>fysieke interface die een protocol gebruikt om de verbinding
+                        te verzorgen</em> aan het lokale netwerk. Deze lokale protocollen zijn het minst abstract omdat
+                    ze ze maken hebben met de fysieke hardware.
+                </li>
+
+                <div class="endnote">
+                    Je kan verbinding maken met het internet via een <em>ethernet</em>kabel of met een
+                    <em>wifi</em>-antenne binnenin je computer. Ze verbinden allebei een computer met de lokale
+                    netwerkrouter die weer verbonden is aan een internetprovider. Telefoons kunnen ook gebruik maken van
+                    een <em>cellulaire</em> verbinding die op lange afstand verbinding maakt met een
+                    telefoonmaatschappij.
+                </div>
+
             </ul>
-            <p>All four of these levels include more protocols than listed here.</p>
+            <p> De vier niveau's die hier genoemd worden bevatten nog veel meer protocollen dan hier besproken worden.
+            </p>
         </div>
 
 
-        <h3>Open Protocols</h3>
+        <h3>Open protocollen</h3>
         <p>These are all <strong>open standards</strong>: anyone can look up a protocol and code with it to make new
             hardware or software without permission. The Internet is probably the largest and most complicated artifact
             in human history, and it relies on <strong>cooperation</strong>. Despite some governments' attempts to
@@ -112,24 +126,24 @@
         <div class="forYouToDo" id="first">
             <ol>
                 <li><img class="imageRight" src="../../afb/icons/PraatMetJeBuur.png" alt="Geen Afbeelding" />
-                    Explain how each of these protocols is an abstraction. What details does each one hide?
+                    Leg uit hoe alle onderstaande protocollen abstracties zijn. Welke details verbergen ze?
                     <ul>
-                        <li><strong><a
-                                    href="/bjc-r/cur/programming/4-internet/1-reliable-communication/1-what-is-internet.html?topic=nyc_bjc%2F4-internet.topic&course=bjc4nyc.html&novideo&noassignment">HTTP</a></strong>:
-                            HyperText Transfer Protocol&mdash;the protocol that your browser uses to <em>access an HTML
-                                web page</em></li>
-                        <li><strong><a
-                                    href="/bjc-r/cur/programming/4-internet/1-reliable-communication/3-address-hierarchy.html?topic=nyc_bjc%2F4-internet.topic&course=bjc4nyc.html&novideo&noassignment">DNS</a></strong>:
-                            Domain Name System&mdash;the hierarchical addressing protocol that is
-                            <em>human-readable</em></li>
-                        <li><strong><a
-                                    href="/bjc-r/cur/programming/4-internet/2-communication-protocols/2-tcp.html?topic=nyc_bjc%2F4-internet.topic&course=bjc4nyc.html&novideo&noassignment">TCP</a></strong>:
-                            Transmission Control Protocol&mdash;the protocol that <em>assures reliable transmission</em>
-                            of data</li>
-                        <li><strong><a
-                                    href="/bjc-r/cur/programming/4-internet/2-communication-protocols/1-ip.html?topic=nyc_bjc%2F4-internet.topic&course=bjc4nyc.html&novideo&noassignment">IP</a></strong>:
-                            Internet Protocol&mdash;the hierarchical addressing protocol that <em>manages routing</em>
-                            of data between computers; we are upgrading from IPv4 to IPv6 for more addresses</li>
+                        <li><strong><a href="H4L1P1.html">HTTP</a></strong>:
+                            HyperText Transfer Protocol, het protocol dat je browser gebruikt om <em>toegang te krijgen
+                                tot een HTML webpagina</em>.
+                        </li>
+                        <li><strong><a href="H4L1P3.html">DNS</a></strong>:
+                            Domain Name System, het hiërarchische adresprotocol dat <em>leesbaar is voor
+                                mensen</em>.
+                        </li>
+                        <li><strong><a href="H4L2P2.html">TCP</a></strong>:
+                            Transmission Control Protocol, het protocol dat <em>betrouwbare verzending verzekert</em>.
+                        </li>
+                        <li><strong><a href="H4L2P1.html">IP</a></strong>:
+                            Internet Protocol, het hiërarchische adresprotocol dat de <em>route</em> van data bepaalt
+                            van de ene naar de andere computer; tegenwoordig zijn we geüpgraded van IPv4 naar IPv6 zodat
+                            we meer adressen hebben.
+                        </li>
                     </ul>
                 </li>
             </ol>
@@ -137,8 +151,8 @@
 
         <div class="ifTime">
             <ol start="2">
-                <li>Read <a href="http://www.bitsbook.com/wp-content/uploads/2008/12/B2B_3.pdf#page=327"
-                        target="_blank"><em>Blown to Bits</em> pages 309-312</a>.</li>
+                <li>Lees <a href="http://www.bitsbook.com/wp-content/uploads/2008/12/B2B_3.pdf#page=327"
+                        target="_blank"><em>Blown to Bits</em> pagina's 309-312</a>.</li>
             </ol>
         </div>
     </div>
