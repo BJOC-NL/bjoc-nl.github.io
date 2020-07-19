@@ -18,44 +18,57 @@
 
 <bodY>
     <div class="full">
-        <h2>Caesar Cipher Hints</h2>
+        <h2>Hints voor de Caesarcijfer</h2>
         <div class="forYouToDo">
-            <p>Here is an <em>example</em> algorithm for the shift cipher. Do it your way.</p>
+            <p>Hier is een <em>voorbeeld</em> van een schuifcijfer-algoritme. </p>
             <ol>
-                <li>Create and initialize (<code>set</code> to blank) three variables to store <var>inputText</var>,
-                    <var>shiftValue</var>, and <var>outputText</var>.</li>
-                <div class="sidenote"><em>Plaintext</em> (or cleartext) is normal unencrypted text.</div>
-                <li><code>Ask</code> the user to enter a <strong>plaintext</strong> message to be encoded.
-                    <code>Set</code>
-                    the <var>inputText</var> variable to the <var>answer</var> from the user.</li>
+                <li>Creëer en initialiseer (<code>maak</code> leeg) drie variabelen om dingen op te slaan
+                    <var>invoerTekst</var>,d <var>schuifWaarde</var> en <var>uitvoerTekst</var>.
+                </li>
+                <div class="sidenote">
+                    <em>Platte tekst</em> is gewoonlijk onversleutelde tekst.
+                </div>
                 <li>
-                    <code>Ask</code> the user to enter a shift value for the shift cipher. <code>If</code> their
-                    <var>answer</var> <code>is a number</code>:
+                    <code>Vraag</code> de gebruiker om een <strong>platte tekst</strong> in te voeren die versleuteld
+                    moet worden.
+
+                    <code>Maak</code> de <var>invoerTekst</var>-variable gelijk aan het <var>antwoord</var> van de
+                    gebruiker.
+                </li>
+                <li>
+                    <code>Vraag</code> de gebruiker om een schuifwaarde in te voeren voor de schuifcijfer.
+                    <code>Als</code> het antwoord <code>een getal is</code>:
                     <ul>
-                        <li><code>Set</code> the <var>shiftValue</var> variable to their <var>answer</var>. </li>
-                        <li><code>Ask</code> the user if they wish to encode or decode.</li>
-                        <li>Then call a custom procedure to encrypt or decrypt the data. Here is an <em>example</em>
-                            <code>encode</code> algorithm. You could:
+                        <li><code>Maak</code> de <var>schuifWaarde</var>-variabele gelijk aan het <var>antwoord</var>.
+                        </li>
+                        <li><code>Vraag</code> de gebruiker of ze willen versleutelen of decoderen.
+                        </li>
+                        <li> Roep dan een functie aan om de data te versleutelen of decoderen. Hier is een
+                            <em>voorbeeld</em> van een <code>versleutel</code>algoritme. Je kan:
                             <ul>
-                                <li>Use it and write a <code>decode</code> reporter block on your own.</li>
-                                <li>Modify this into a <code>encode/decode</code> block that uses negative shift values
-                                    to
-                                    decode.</li>
-                                <li>Or create your own custom procedure and ignore the example.</li>
+                                <li> dit voorbeeld nabouwen en zelf een <code>decodeer</code>algoritme schrijven.
+                                </li>
+                                <li> dit voorbeeld veranderen in een <code>versleutel/decodeer</code>blok dat een
+                                    negatieve schuifwaarde gebruikt om te decoderen.
+                                </li>
+                                <li> Of maak je eigen functie en negeer dit voorbeeld.</li>
                             </ul>
+
                             <img class="indent" src="../../afb/h4/l3/p3hints-b1.png" alt="Geen Afbeelding" />
-                            <div class="takeNote">Notice that <code>Encode</code> reporter relies on a simpler reporter,
-                                <code>Encode One Character</code>, that encodes a single character by shifting it a
-                                given
-                                amount. This abstraction makes the code easier to manage.</div>
+
+                            <div class="takeNote">
+                                Zie je hoe de <code>Versleutel</code>-rapporteur een simpelere rapporteur gebruikt,
+                                <code>Versleutel één letter</code>? Dit blok versleutelt maar één teken. Deze abstractie
+                                maakt de code makkelijker om te gebruiken.
+                            </div>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    Here are enough blocks to build <code>Encode One Character</code>:<br>
+                    Hier zijn genoeg blokken om <code>Versleutel één letter</code> te bouwen:<br>
                     <img class="indent" src="../../afb/h4/l3/p3hints-b2.png" width="537" alt="Geen Afbeelding" /><br>
                 </li>
-                <li>Check that your code works as expected.</li>
+                <li>Controleer of je code werkt zoals verwacht.</li>
             </ol>
         </div>
 
