@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <link rel="icon" href="../../BJOC-NL-logo.png" type="image/png">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="../../js+css/llab/loader.js"></script>
+    <script type="text/javascript" src="../../js+css/gifffer.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            Gifffer();
+            Inhoudsopgave();
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../js+css/css/bjc-gifffer.css">
+    <title>Hoofdstuk 6 Les 1: De Hiërarchie van Computer-abstractie, Pagina 1</title>
+</head>
+
+<body>
+    <div class="full">
+        <h2>Abstractie Binnen de Computer</h2>
+        <p>In Hoofdstuk 4 <a href="../hoofdstuk-4/H4L2P3.html">
+                Een hiërarchie van open protocollen</a>, zag je dat internetsoftware op verschillende
+            abstractieniveaus is gerangschikt, met applicatieprogramma's (zoals je e-mailprogramma) op het hoogste
+            niveau en netwerkhardwareprotocollen zoals WiFi en Ethernet op het laagste niveau. Bedenk dat <em> hogere
+            </em> niveaus dichter bij waar gebruikers over willen nadenken; lagere niveaus zijn dichter bij de manier
+            waarop machines werken. </p>
+        <p> Net zoals internet heeft de manier waarop een computer werkt ook abstractieniveaus. </p>
+        <div class="learn">
+            <p><strong>In deze les,</strong> ga je leren over de verschillende abstractieniveaus in computersoftware en
+                hardware.</p>
+            <p><strong>Op deze pagina,</strong> ga je leren over de drie groepen (<em>domeinen</em>) van de
+                abstractieniveaus.
+            </p>
+        </div>
+        <p>
+            Er zijn veel abstractieniveaus in hoe computers werken. Hier zijn ze georganiseerd in drie overkoepelende
+            domeinen:</p> <img class="indent noshadow" src="../../afb/h6/l1/p1-o1.png" alt="Geen Afbeelding" />
+        <div class="endnote">
+            Verschillende mensen kunnen dit diagram iets anders tekenen, dus probeer niet alle niveaus te onthouden. De
+            belangrijkste abstractieniveaus om te onthouden zijn software, digitale computerhardware en onderliggende
+            analoge circuitcomponenten.</div>
+        <h3>Softwaredomein</h3>
+        <p> De programma's die je schrijft en gebruikt, zijn software, maar onder deze programma's bevindt zich meer
+            software die hen helpt werken. In deze les kijken we naar vier abstractielagen in het softwaredomein: <ul>
+                <li> <strong> applicaties </strong> die je schrijft en ziet </li>
+                <li> <strong> programmeertalen </strong> die worden gebruikt om ze te schrijven </li>
+                <li> <strong> bibliotheken </strong> van handige functies die rommelige details
+                    verbergen </li>
+                <li> <strong> besturingssystemen </strong> die werken met de hardware </li>
+            </ul>
+        </p>
+        <p> Software is een <em> abstractie </em> - een manier van denken over de computer zonder na te denken hoe deze
+            werkt. </p>
+        <div class="endnote">
+            Op dezelfde manier werkt een automobilist op een hoog abstractieniveau wanneer hij het rempedaal gebruikt.
+            Zolang de ingenieurs en monteurs de auto goed hebben ontworpen en gebouwd, hoeven bestuurders de details
+            over <em> hoe </em> het remsysteem werkt niet te weten, ze gebruiken het gewoon op een hoog niveau. </div>
+        <div class="captioned"> <img class="inline" src="../../afb/h6/l1/p1-o2.jpg" alt="Geen Afbeelding" />
+            <div><small>Afbeelding van Wikipedia-gebruiker Julianprescott2604juuly</small></div>
+        </div>
+        <h3>Digitale Domein</h3>
+        <p> In het softwaredomein is elk abstractieniveau een ander stuk software, maar de abstractieniveaus in het
+            digitale domein zijn verschillende manieren om over hetzelfde fysieke object na te denken. Het circuit in
+            een computer is ingewikkeld en om het bouwen mogelijk te maken, denken ingenieurs erover op verschillende
+            abstractieniveaus: <ul>
+                <li> De <strong> architectuur </strong> zijn de instructies die software kan verzenden die de hardware
+                    zal begrijpen. </li>
+                <li> De computer heeft <strong> componenten </strong> (zoals geheugen, processors,
+                    videokaarten, etc.) die de architectuur implementeren. </li>
+                <li> Die componenten zijn opgebouwd uit <strong> geïntegreerde schakelingen (chips)
+                    </strong>, de zwarte rechthoeken die u op deze printplaat kunt zien. </li>
+                <li> Die geïntegreerde schakelingen zijn ontworpen rond <strong> logische poorten
+                    </strong>, de fundamentele bouwstenen die Booleans implementeren. </li>
+                <div class="endnote"> Je hebt geleerd over Booleans in
+                    <a href="../hoofdstuk-2/H2L3P1.html"> Hoofdstuk 2 Les 3: Keuzes maken met
+                        predikaten</a>.<br />
+                    <img height="35" class="indent" src="../../afb/h6/l1/p1-b1.png" alt="Geen Afbeelding" />
+                    <img height="35" class="indent" src="../../afb/h6/l1/p1-b2.png" alt="Geen Afbeelding" />
+                    <img height="35" class="indent" src="../../afb/h6/l1/p1-b3.png" alt="Geen Afbeelding" /> </div>
+            </ul>
+        </p>
+        <h3>Analoge Domein</h3>
+        <p>
+            Logische poorten, die het laagste abstractieniveau van het digitale domein zijn, werken met enen en nullen.
+            In de fysieke realiteit zijn die logische poorten opgebouwd uit <strong> transistors </strong>, een type
+            circuitcomponent. Transitors zijn niet zoals lichtschakelaars die aan of uit staan. Er kunnen tussenliggende
+            waarden zijn (zoals "slechts 23% aan"). Elektrotechnici moeten dus nadenken over de wetten van de
+            elektronica om digitale schakelingen te ontwerpen zodat er geen tussentijdse waarden gebeuren.</p>
+        <div class="vocabFullWidth">: <strong>analog</strong> vs. <strong>digital</strong>
+            <p> Digitaal en analoog zijn tegengestelden. <strong> Digitaal </strong> betekent informatie die wordt
+                weergegeven als <em> enen en nullen </em>. <strong> Analoog </strong> betekent informatie die wordt
+                weergegeven door signalen die <em> continu variëren </em> (dat wil zeggen inclusief tussenliggende
+                waarden). </p>
+        </div>
+    </div>
+    <div class="full-bottom-bar" style="background-position: 20px 3px;">
+        <div class="bottom-nav btn-group"> <a class="btn btn-default backbutton arrow disabled" style="min-width: 90px;"
+                href="#">Terug</a> <a class="btn btn-default forwardbutton arrow" style="min-width:90px;"
+                href="H6L1P2.html">Volgende</a> </div>
+    </div>
+</body>
+
+</html>
