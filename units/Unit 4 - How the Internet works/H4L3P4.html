@@ -21,69 +21,81 @@
         <h2>Versleutelen met een publieke sleutel</h2>
 
         <div class="learn">
-            <p><strong>Op deze pagina,</strong> you will learn about a commonly used method of cryptography that is more
-                secure. </p>
+            <p><strong>Op deze pagina,</strong> ga je leren over een veelgebruikte manier van versleutelen die zeer
+                veilig is.
+            </p>
         </div>
 
-        <p>The fundamental problem that cryptography is trying to solve is how to get a message to your friend that
-            can't be intercepted by your enemies. Symmetric encryption has a fundamental weakness: the encryption key is
-            itself a message that needs to be send to your friend but not intercepted by your enemy. </p>
+        <p> Het fundamentele probleem van cryptografie is om een bericht te versturen dat niet onderschept kan worden.
+            Symmetrische versleuteling heeft een fundamentele zwakte: de sleutel om het bericht te ontcijferen is ook
+            een bericht dat verzonden moet worden, en niet onderschept mag worden.
+        </p>
         <div class="sidenoteBig">
-            The public key idea was invented and first published by Whitfield Diffie and Martin Hellman in 1976. It
-            turns out that it had been invented earlier but kept secret by governments.
+            Het idee van een publieke sleutel is uitgevonden door Whitfield Diffie en Martin Hellman, het werd openbaar
+            gemaakt in 1976. Het was eigenlijk al veel eerder uitgevonden maar het werd geheim gehouden door de
+            overheid.
         </div>
-        <p><em>Public key cryptography</em> is a mathematical technique to avoid the need to communicate a secret key
-            from one person to another. Instead, each person has <em>two</em> keys: a private key known only to that
-            person and a public key that everyone in the world is allowed to know. If Bob wants to send Alice a secret
-            message, he encrypts it with Alice's public key. Then no one but Alice can decrypt it. Only her private key
-            can undo the encryption, and no one <em>can figure out</em> the private key from the public key. </p>
+        <p><em>Publiekesleutelcryptografie</em> is een wiskundige techniek waarbij het probleem van het verzenden van
+            een geheime sleutel ontweken wordt. In dit systeem bezit iedere persoon <em>twee</em> sleutels: een
+            privé-sleutel die alleen die persoon kent, en een publieke sleutel die iedereen mag weten. Als Bob een
+            geheim bericht naar Alice wil sturen, dan versleutelt hij het bericht met de publieke sleutel van Alice.
+            Niemand anders dan Alice kan nu dit bericht decoderen. Alleen haar privé-sleutel kan de versleuteling
+            ontdoen. Daarnaast is het ook <em>onmogelijk</em> om de privé-sleutel te weten te komen door de publieke
+            sleutel te bekijken.
+        </p>
         <img class="imageRight" src="../../afb/icons/headphones-mini.png" alt="Geen Afbeelding" />
-        <div class="sidenote">If your connection blocks YouTube, <a
-                href="http://scratch.mit.edu/discuss/youtube/YEBfamv-_do" target="_blank">watch the video here</a>, but
-            start it at 2:25. </div>
+        <div class="sidenote"> Als YouTube geblokkeerd is, <a href="http://scratch.mit.edu/discuss/youtube/YEBfamv-_do"
+                target="_blank"> kijk dan de video hier</a>, de video begint vanaf 2:25. </div>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/YEBfamv-_do?start=145&rel=0" frameborder="0"
             allowfullscreen class="indent"></iframe>
 
         <div class="ifTime">
             <ol>
-                <li>It may seem incredible that Alice can make her encryption key public and still no one except her can
-                    decrypt her message. The public key method relies on some mathematics and on some limitations on the
-                    speed of current computers. Read "Secrecy Changes Forever" (<a
+                <li> Het lijkt misschien ongeloofwaardig dat Alice haar sleutel om te versleutelen publiek kan maken,
+                    terwijl niemand anders het bericht kan decoderen. Deze techniek hangt af van wat wiskunde en een
+                    aantal beperkingen van de snelheid van computers. Lees de paragraaf "Secrecy Changes Forever" (<a
                         href="http://www.bitsbook.com/wp-content/uploads/2008/12/B2B_3.pdf#page=196"
-                        target="_blank"><em>Blown to Bits</em> pages 178-181</a>) to understand some of how this works.
+                        target="_blank"><em>Blown to Bits</em> pages 178-181</a>), om te leren hoe het werkt.
                 </li>
             </ol>
         </div>
-
-        Here is a model of public key encryption (from
-        <a href="https://commons.wikimedia.org/wiki/File:Public_key_encryption.svg" target="blank">wikimedia.org</a>)
+        Hier is een model van het systeem met publieke sleutels (van <a
+            href="https://commons.wikimedia.org/wiki/File:Public_key_encryption.svg" target="blank">wikimedia.org</a>)
         <div class="indent"><img class="noshadow" border="0" src="../../afb/h4/l3/p4-o1.png" alt="Geen Afbeelding" />
         </div>
 
+
         <div class="forYouToDo" id="third">
             <ol start="2">
-                <li>With a partner, discuss how this method is different from symmetric cryptography described on
-                    previous pages. Would you trust this method to work to send a credit card number?</li>
+                <li> Bespreek met een partner hoe deze methode anders is dan symmetrische cryptografie, de techniek die
+                    gebruikt werd op vorige pagina's. Zou je deze methode vetrouwen om een pincode te versturen?
+                </li>
             </ol>
         </div>
         <div class="endnote">
-            <a href="#hint-digital-signatures" data-toggle="collapse">It's also possible to use the <em>private</em> key
-                for encryption and the <em>public</em> key for decryption... </a>
-            <div id="hint-digital-signatures" class="collapse">That's no good for secret messages (why not?), but it's
-                useful for <strong>digital signatures</strong>. I use my private key to encrypt a message; you use my
-                public key to decrypt it. If you get a meaningful message as the result, that proves that the message
-                was encrypted with my private key. (If I want both secrecy and digital signing, I encrypt the message
-                with my private key to sign it, then encrypt the encrypted result <em>again</em> with your public key to
-                keep it secret. You decrypt it twice, first with your private key and then with my public key.) This is
-                a nice example of <em>composition of functions:</em> the output from the first encryption is the input
-                to the second encryption. </div>
+            <a href="#hint-digital-signatures" data-toggle="collapse">
+                Het is ook mogelijk om een <em>privé</em>-sleutel te gebruiken voor versleuteling en de
+                <em>publieke</em> sleutel om te decoderen...
+            </a>
+            <div id="hint-digital-signatures" class="collapse">
+                Het is niet zo handig voor geheime berichten (waarom niet?), maar het is handig voor <strong>digitale
+                    handtekeningen</strong>. Ik gebruik mijn privé-sleutel om een bericht te versleutelen; jij gebruikt
+                mijn publieke sleutel om het te decoderen. Als je een leesbaar bericht krijgt, dan bewijst dat dat het
+                bericht versleuteld was met mijn privé-sleutel. (Als ik wil dat het bericht én geheim is én digitaal
+                getekend, dan versleutel ik het bericht met mijn privé-sleutel, dan versleutel ik dit <em>nog eens</em>
+                met jouw publieke sleutel om het geheim te houden. Jij decodeert het twee keer, eerst met je eigen
+                privé-sleutel en dan nog een keer met mijn publieke sleutel.) Dit is een mooi voorbeeld van
+                <em>functie-compositie</em>: de uitvoer van de eerste versleuteling is de invoer van de tweede.
+            </div>
         </div>
 
-        <h3>Secure HTTP</h3>
-        <p>Secure HTTP connections (those that use <strong>https://</strong> instead of <strong>http://</strong>) use a
-            protocol called <em>Transport Layer Security</em> (TLS) or maybe an older version called <em>Secure Sockets
-                Layer</em> (SSL). Both are based on public key cryptography. With SSL/TLS, the site you are visiting
-            sends its public key, and your browser uses it to encrypt the information you send. </p>
+        <h3>Veilige HTTP</h3>
+        <p> Veilige HTTP-verbindingen (je herkent dit aan <strong>https://</strong> in plaats van
+            <strong>http://</strong>) gebruiken een protocol dat <em>Transport Layer Security</em> (TLS) heet.Soms
+            gebruiken ze nog een ouder protocol, <em>Secure Sockets Layer</em> (SSL). Allebei de protocollen make
+            gebruik van publieke sleutels. Met SSL/TLS, stuurt de website die je bezoekt zijn publieke sleutel en je
+            browser gebruikt die sleutel om jouw informatie te versleutelen.
+        </p>
         <div class="vocabFullWidth">
             <p><strong>SSL/TLS</strong> (secure sockets layer/transport layer security) is the standard used for
                 cryptographically secured information transfer on the Internet. </p>
