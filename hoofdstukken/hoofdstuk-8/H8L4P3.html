@@ -1,0 +1,105 @@
+ <!DOCTYPE html>
+ <html lang="nl">
+
+ <head>
+     <link rel="icon" href="../../BJOC-NL-logo.png" type="image/png">
+     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+     <script type="text/javascript" src="../../js+css/llab/loader.js"> </script>
+     <script type="text/javascript" src="../../js+css/gifffer.min.js"> </script>
+     <script type="text/javascript">
+         window.onload = function () {
+             Gifffer();
+             Inhoudsopgave();
+         }
+     </script>
+     <link rel="stylesheet" type="text/css" href="../../js+css/css/bjc-gifffer.css">
+     <title> Hoofdstuk 8 Les 4: Een Paar Makkelijken, Pagina 3</title>
+ </head>
+
+ <body>
+     <div class="full">
+         <h2> Even Getallen en <code> Keep</code> </h2>
+         <p>
+             We willen een blok dat een lijst met getallen als invoer heeft en een lijst rapporteert met alle
+             <strong>even</strong> getallen van de invoer.
+         </p>
+
+         <p>
+             Je weet al hoe je dit blok moet schrijven met de <code>keep</code>functie van hogere orde, maar laten we
+             eens zien hoe het eruit ziet met recursie: <br />
+             <img height="300" class="indent" src="../../afb/h8/l4/p3-b1.png" alt="Geen Afbeelding" />
+         </p>
+
+         <p> Er zijn drie gevallen mogelijk, niet zoals gewoonlijk alleen het basisgeval en het recursieve geval.
+             Er is nog steeds een basisgeval, namelijk een lege invoerlijst, in dat geval rapporteren we een lege lijst.
+             Maar er zijn <em>twee</em> recursieve gevallen, afhankelijk van of het eerste element van de lijst even is.
+             (Er moet een eerste element zijn als dit niet het basisgeval is.) De groene blokken van het Functiesmenu
+             delen het eerste getal door 2 en kijken of de rest gelijk is aan 0 (net als bij het omreken naar binair in
+             <a href="H8L3P3.html"> Hoofdstuk 8 Les 3 Pagina 3: Omrekenen naar Binair</a>). Als de rest gelijk is aan 0
+             dan is het getal even.
+         </p>
+         <p> Als het eerste getal even is, dan hoort het getal bij het resultaat dat we rapporteren. Dus we rapporteren
+             dat getal <code>voor</code> de recursieve aanroep aan de rest van de getallen. Als het eerste getal niet
+             even is dan willen we het <em>niet</em> toevoegen aan het resultaat, dus we rapporteren alleen de waarde
+             van de recursieve aanroep.
+         </p>
+         <div class="takeNote"> Net als <code> meervoud</code> , is de <code> even</code>code een voorbeeld van een
+             code<strong>patroon</strong>. Er is niks speciaals aan even getallen hier. Hetzelfde patroon kan gebruikt
+             worden om een lijst met oneven getallen te maken, of met getallen die eindigen op 7 of namen die beginnen
+             met een "z".
+         </div>
+         <div class="forYouToDo" id="first">
+             <p> <strong> Gebruik bij de volgende opdrachten recursie, geen functies van hogere orde.
+                 </strong>
+             </p>
+             <ol>
+                 <div class="sidenote"> Probeer de code van <code>even</code> aan te passen.
+                 </div>
+                 <li> Schrijf een blok <code>eindigt-e</code>dat een lijst met woorden als invoer heeft en een lijst met
+                     de woorden waarvan de laatste letter een e is, rapporteert. <br />
+                     <img height="130" class="indent" src="../../afb/h8/l4/p3-b2.png" alt="Geen Afbeelding" />
+                 </li>
+                 <li> Schrijf een blok <code>getallen</code> dat een lijst met woorden en getallen als invoer neemt en
+                     met alleen de getallen van die lijst rapporteert.<br />
+                     <img height="130" class="indent" src="../../afb/h8/l4/p3-b3.png" alt="Geen Afbeelding" />
+                 </li>
+                 <li> Generaliseer het patroon om een <code>keep</code>blok te maken.
+                 </li>
+                 <div class="takeNote">
+                     Als je niet met het <code>combine</code>blok van pagina
+                     <a href="../hoofdstuk-5/H5L3P1.html">
+                         Hoofdstuk 5 Les 3 Pagina 1: Algoritmes vergelijken</a> hebt gewerkt, wil waarschijnlijk eerst
+                     kijken hoe dat blok werkt voordat je aan de volgende opdracht begint.
+                 </div>
+                 <li> Schrijf het <code> combine</code>blok. <strong> Merk op:</strong> Het basis geval is een lijst met
+                     één element, niet een lege lijst.
+                 </li>
+             </ol>
+         </div>
+         <div class="takeNote">
+             Het bouwen van <code>map</code> , <code> keep</code> , en <code> combine</code> is een grote prestatie waar
+             je trots op mag zijn. Ook al generaliseren deze blokken simpele patronen. Sommige mensen vinden functies
+             van hogere orde <strong> <em> te ingewikkeld en eng</em> </strong> voor leerlingen om te gebruiken, laat
+             staan ze te bouwen. Maar dat heb je net wel gedaan.
+         </div>
+         <div class="ifTime">
+             <ol start="5">
+                 <li> Pas een <code> sorteer</code> algoritme dat je geschreven hebt in
+                     <a href="./H8L1P3.html"> Hoofdstuk 8 Les
+                         2 Pagina 1: Een Lijst Sorteren</a> aan om als invoer een eigenschap te vergelijken, zoals het
+                     groene blok hieronder: <br />
+                     <img height="40" class="indent" src="../../afb/h8/l4/p3-b4.png" alt="Geen Afbeelding" />
+                     <br />
+                     Op die manier kan je sorteren met het <em>grootste</em> element als eerste.
+                 </li>
+             </ol>
+         </div>
+     </div>
+     <div class="full-bottom-bar" style="background-position: 20px 3px;">
+         <div class="bottom-nav btn-group"> <a class="btn btn-default backbutton arrow" style="min-width: 90px;"
+                 href="H8L4P2.html"> Terug</a> <a class="btn btn-default disabled forwardbutton arrow"
+                 style="min-width:90px;" href="#"> Volgende</a> </div>
+     </div>
+ </body>
+
+ </html>

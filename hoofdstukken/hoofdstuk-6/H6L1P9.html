@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <link rel="icon" href="../../BJOC-NL-logo.png" type="image/png">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="../../js+css/llab/loader.js"></script>
+    <script type="text/javascript" src="../../js+css/gifffer.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            Gifffer();
+            Inhoudsopgave();
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../js+css/css/bjc-gifffer.css">
+    <title>Hoofdstuk 6 Les 1: De Hiërarchie van Computer-abstractie, Pagina 9</title>
+</head>
+
+<body>
+    <div class="full">
+        <h2>Het Digitale Domein: Logische Poorten</h2>
+        <div class="learn"><strong>Op deze pagina</strong>, ga je de drie Boolean functies (<code>en</code>,
+            <code>of</code>, en <code>niet</code>) weer bekijken en leren over hoe deze aan electronice circuits
+            relateren.
+
+        </div>
+        <p>
+            In een circuit met miljarden transistors, of zelfs duizenden transistors, kunnen hardwareontwerpers niet aan
+            elke individuele transistor denken. Net zoals programmeurs abstractie gebruiken, gebruiken
+            hardware-architecten abstracties, waarin een groep transistors en andere circuitelementen als één object
+            worden beschouwd. Wat voor soort objecten? Er zijn in principe twee soorten, een voor geheugen en een voor
+            berekening.
+        </p>
+        <div class="endnote"> <a href="#hint-memory" data-toggle="collapse">Leer meer over geheugen.</a>
+            <div id="hint-memory" class="collapse">
+                <p>Geheugen bestaat uit <em> flip-flops. </em> Een flip-flop is een circuit met twee stabiele
+                    toestanden, aan en uit. Een invoersignaal kan aangeven dat het moet worden ingeschakeld,
+                    uitgeschakeld of gewijzigd, ongeacht de status. Zodra dat gebeurt, blijft de flip-flop in de nieuwe
+                    status totdat hij een ander signaal krijgt. Het heeft een uitvoer die zijn status weerspiegelt: aan
+                    als de flip-flop aan is, uit als hij uit is.
+                </p>
+            </div>
+        </div>
+        <h3>Boolean Functies</h3>
+        <p>
+            De circuits om berekeningen uit te voeren zijn interessanter. Ze berekenen <em> functies, </em> net als
+            rapporteurs in Snap<em>!</em>. Omdat computers veel rekenen, denk je misschien dat de basiscircuitfuncties
+            optellen, aftrekken, vermenigvuldigen en delen zijn, maar dat is niet het geval. Natuurlijk <em> zijn
+            </em> er circuits om die dingen te doen, maar ze zijn gemaakt van <em> logische poorten: </em> circuits die
+            <strong> Boolean functies </strong> berekenen: <code> en </code>, <code> of </code> en <code> niet </code>.
+        </p>
+        <p>
+            De reden dat Boolean functies als fundamenteler worden beschouwd, is dat hun invoeren en uitvoeren kunnen
+            worden weergegeven met een enkele draad die het circuit in of uit gaat. Dat is niet zo voor rekenkundige
+            functies. Als je een spanning op een draad als betekenis 1 en geen spanning als betekenis 0 beschouwt, moet
+            je ervoor zorgen dat een opteller <em> drie </em> mogelijke uitvoerwaarden heeft, omdat 1 + 1 = 2, wat noch
+            0 noch 1. Als je daarentegen een spanning op een draad als Waar en geen spanning als Niet Waar beschouwt,
+            dan kan de uitvoer van een Booleaanse functie van twee invoeren nog steeds alleen Waar of Niet Waar zijn,
+            dus is slechts één uitvoerdraad nodig.
+        </p>
+        <p>
+            Je hebt een aantal voorbeelden gezien in <a href="../hoofdstuk-2/H2L3P1.html"> Hoofdstuk 2 Les 3:
+                Keuzes maken met predikaten </a>: <code>EN</code>, <code>OF</code> en <code>NIET</code>:<br />
+            <img height="50" class="indent" src="../../afb/h6/l1/p9-b3.png" alt="Geen Afbeelding" />
+            <img height="50" class="indent" src="../../afb/h6/l1/p9-b4.png" alt="Geen Afbeelding" />
+            <img height="50" class="indent" src="../../afb/h6/l1/p9-b5.png" alt="Geen Afbeelding" />
+            <img height="50" class="indent" src="../../afb/h6/l1/p9-b6.png" alt="Geen Afbeelding" />
+            <img height="50" class="indent" src="../../afb/h6/l1/p9-b7.png" alt="Geen Afbeelding" />
+            <img height="50" class="indent" src="../../afb/h6/l1/p9-b8.png" alt="Geen Afbeelding" />
+            <img height="50" class="indent" src="../../afb/h6/l1/p9-b9.png" alt="Geen Afbeelding" />
+            <img height="50" class="indent" src="../../afb/h6/l1/p9-b10.png" alt="Geen Afbeelding" />
+        </p>
+        <div class="endnote"> <strong> Andere manieren om Boolean functies te zien </strong>
+            Het is mogelijk om Booleaanse bewerkingen elektronisch te emuleren, deze bewerkingen worden soms
+            weergegeven als waarheidstabellen (met Waar / Niet Waar of enen / nullen). <Ul>
+                <li> <a href="#hint-truth-tables-and" data-toggle="collapse"> Een circuitemulatie en waarheidstabel voor
+                        <code>en</code>. </a>
+                    <div id="hint-truth-tables-and" class="collapse">
+                        <p> Dit elektrische circuit toont een vereenvoudigde manier om de Boolean functie <code> en
+                            </code> elektronisch te emuleren. De twee schakelaars bevinden zich in <em> serie </em>;
+                            als beide schakelaars zijn ingeschakeld, stroomt de stroom en gaat de gloeilamp aan.
+                        </p>
+                        <div class="sidenote"> Dit symbool in het diagram staat voor een batterij.<br />
+                            <img src="../../afb/h6/l1/p9-o1.png" height="75" alt="Geen Afbeelding" />
+                            <img src="../../afb/h6/l1/p9-o2.png" height="75" alt="Geen Afbeelding" />
+                        </div>
+                        <img class="indent" data-gifffer="../../afb/h6/l1/p9-v1.gif" width="333" height="250"
+                            alt="Geen Afbeelding" />
+                        <div class="sidenote">
+                            Deze twee tabellen zijn identiek. De een laat het patroon zien met Waar/Niet Waar en de
+                            ander met enen en nullen.
+                        </div>
+                        <table class="truth" summary="truth table for AND with Niet Waar/Waar">
+                            <tr>
+                                <th scope="colgroup" colspan="2">invoeren</th>
+                                <th scope="col">uitvoer</th>
+                            </tr>
+                            <tr>
+                                <th scope="col" style="width:100px;">A</th>
+                                <th scope="col" style="width:100px;">B</th>
+                                <th scope="col" style="width:100px;">A <code>en</code> B</th>
+                            </tr>
+                            <tr>
+                                <td>Niet Waar</td>
+                                <td>Niet Waar</td>
+                                <td>Niet Waar</td>
+                            </tr>
+                            <tr>
+                                <td>Niet Waar</td>
+                                <td>Waar</td>
+                                <td>Niet Waar</td>
+                            </tr>
+                            <tr>
+                                <td>Waar</td>
+                                <td>Niet Waar</td>
+                                <td>Niet Waar</td>
+                            </tr>
+                            <tr>
+                                <td>Waar</td>
+                                <td>Waar</td>
+                                <td>Waar</td>
+                            </tr>
+                        </table>
+                        <table class="truth bordered" summary="truth table for AND with zero/one">
+                            <tr>
+                                <th scope="colgroup" colspan="2">invoeren</th>
+                                <th scope="col">uitvoer</th>
+                            </tr>
+                            <tr>
+                                <th scope="col" style="width:100px;">A</th>
+                                <th scope="col" style="width:100px;">B</th>
+                                <th scope="col" style="width:100px;">A <code>en</code> B</th>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                        </table>
+                    </div>
+                </li>
+                <li> <a href="#hint-truth-tables-or" data-toggle="collapse"> Een circuitemulatie en waarheidstabel voor
+                        <code>of</code>.</a>
+                    <div id="hint-truth-tables-or" class="collapse">
+                        <p> Dit elektrische circuit toont een vereenvoudigde manier om de Boolean functie
+                            <code>or</code>
+                            elektronisch te emuleren. De twee schakelaars staan <em>parallel</em>; als een van de twee
+                            (of allebei) de schakelaars aan staan dan stroomt de stroom en gaat de gloeilamp aan.
+                            <br />
+                            <img class="indent" data-gifffer="../../afb/h6/l1/p9-v2.gif" width="335" height="250"
+                                alt="Geen Afbeelding" /> </p>
+                        <div class="sidenoteBig">
+                            <p> Net als voor de <code>en</code> tabellen, zijn deze twee tabellen identiek behalve voor
+                                Waar/Nietwaar en enen en nullen. </p>
+                            <p> In normale taal betekent heeft het woord "of" twee betekenissen. <em>Inclusieve of</em>
+                                betekent "ten minste één van deze": Als het regent <em>of</em> koud is, heb je een jas
+                                nodig. (Als het regent en koud is dan heb je nog steeds een jas nodig). <em>Exclusieve
+                                    of</em> betekent het een of het ander, maar niet allebei: Eet je groente <em>of</em>
+                                je krijgt geen toetje. (Het zou niet eerlijk zijn als je je groente at en nog steeds
+                                geen toetje kreeg.) In de informatica (en in wiskunde) betekent "of" op zichzelf altijd
+                                inclusieve of, zoals je kan zien in de waarheidstabel. Als je eigenlijk exclusieve of
+                                bedoelt, moet je dat zeggen.
+                            </p>
+                        </div>
+                        <table class="truth bordered" summary="truth table for OR with Niet Waar/Waar">
+                            <tr>
+                                <th scope="colgroup" colspan="2">invoeren</th>
+                                <th scope="col">uitvoer</th>
+                            </tr>
+                            <tr>
+                                <th scope="col" style="width:100px;">A</th>
+                                <th scope="col" style="width:100px;">B</th>
+                                <th scope="col" style="width:100px;">A <code>of</code> B</th>
+                            </tr>
+                            <tr>
+                                <td>Niet Waar</td>
+                                <td>Niet Waar</td>
+                                <td>Niet Waar</td>
+                            </tr>
+                            <tr>
+                                <td>Niet Waar</td>
+                                <td>Waar</td>
+                                <td>Waar</td>
+                            </tr>
+                            <tr>
+                                <td>Waar</td>
+                                <td>Niet Waar</td>
+                                <td>Waar</td>
+                            </tr>
+                            <tr>
+                                <td>Waar</td>
+                                <td>Waar</td>
+                                <td>Waar</td>
+                            </tr>
+                        </table>
+                        <table class="truth bordered" summary="truth table for OR with zero/one">
+                            <tr>
+                                <th scope="colgroup" colspan="2">invoeren</th>
+                                <th scope="col">uitvoer</th>
+                            </tr>
+                            <tr>
+                                <th scope="col" style="width:100px;">A</th>
+                                <th scope="col" style="width:100px;">B</th>
+                                <th scope="col" style="width:100px;">A <code>of</code> B</th>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>0</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>1</td>
+                            </tr>
+                        </table>
+                    </div>
+                </li>
+                <li> <a href="#hint-truth-tables-not" data-toggle="collapse">Een circuitemulatie en waarheidstabel voor
+                        <code>niet</code>.</a>
+                    <div id="hint-truth-tables-not" class="collapse">
+                        <p>
+                            Dit elektrische circuit toont een vereenvoudigde manier om de Boolean functie
+                            <code>niet</code> elektronisch te emuleren. De schakelaar is praktisch een
+                            <em>circuitstopper</em>: als de schakelaar <em>aan</em>staat dan stroomt de stroom niet en
+                            staat de lamp uit als de schakelaar uitstaat dan stroomt de stroom naar de lamp en gaat de
+                            lamp aan. <br />
+                            <img class="indent" data-gifffer="../../afb/h6/l1/p9-v3.gif" width="335" height="250"
+                                alt="Geen Afbeelding" /> </p>
+                        <div class="sidenote">
+                            Net als voor de andere tabellen, zijn deze twee tabellen identiek behalve voor Waar/Nietwaar
+                            en enen en nullen
+                        </div>
+                        <table class="truth bordered" summary="truth table for NOT with Niet Waar/Waar">
+                            <tr>
+                                <th scope="col">invoer</th>
+                                <th scope="col">uitvoer</th>
+                            </tr>
+                            <tr>
+                                <th scope="col" style="width:100px;">A</th>
+                                <th scope="col" style="width:100px;"><code>niet</code> A</th>
+                            </tr>
+                            <tr>
+                                <td>Niet Waar</td>
+                                <td>Waar</td>
+                            </tr>
+                            <tr>
+                                <td>Waar</td>
+                                <td>Niet Waar</td>
+                            </tr>
+                        </table>
+                        <table class="truth bordered" summary="truth table for NOT with zero/one">
+                            <tr>
+                                <th scope="col">invoer</th>
+                                <th scope="col">uitvoer</th>
+                            </tr>
+                            <tr>
+                                <th scope="col" style="width:100px;">A</th>
+                                <th scope="col" style="width:100px;"><code>niet</code> A</th>
+                            </tr>
+                            <tr>
+                                <td>0</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>0</td>
+                            </tr>
+                        </table>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <h2>Logische poorten</h2>
+        <p>
+            In een computer worden Boolean functies geïmplementeerd in de fysieke circuits met behulp van logische
+            poorten.
+            (Één poort per functie) Logicacircuits worden vaak voorgesteld met tekeningen waarmee ingenieurs kunnen zien
+            hoe de informatie door het circuit loopt. Het volgende diagram van een logicacircuit met twee poorten stelt
+            de uitdrukking
+            <img height="40" class="inline" src="../../afb/h6/l1/p9-b11.png" alt="Geen Afbeelding" />
+            voor. Zie je hoe?
+        </p>
+        <img class="indent noshadow" src="../../afb/h6/l1/p9-o6.png" alt="Geen Afbeelding" />
+        <div class="forYouToDo" id="first">
+            <ol>
+                <li>
+                    <img class="inline" src="../../afb/icons/PraatMetJeBuur-mini.png" alt="Geen Afbeelding" />
+                    Kijk naar het circuit hierboven, Met welke waardes voor A en B zal de uitvoer <code>Waar</code>
+                    zijn?
+                </li>
+            </ol>
+        </div>
+        <div class="takeNote">
+            Op de vorige pagina leerde je over tungsten en tin, hier hebben we het over Boolean functies. Waarom is dit
+            minder abstract?
+            <strong> Vanuit het oogpunt van de chipontwerper zijn logische poorten de fundamentele bouwblokken van een
+                digitaal circuit. </strong> De eigenlijke chipfabricage is op een nog lager abstractieniveau, in het
+            analoge domein
+        </div>
+
+        <div class="forYouToDo">
+            <ol start="2">
+                <li> Bekijk opnieuw <code>EN</code>, <code>OF</code> en <code>NIET</code> bij de volgende vragen.
+                    <!-- Question 1 -->
+                    <div class="assessment-data" type="multiplechoice" identifier="Which expression will report Waar?"
+                        hasinlinefeedback="Waar" maxchoices="1" responseIdentifier="ri1" shuffle="Niet Waar">
+                        <div class="prompt">
+                            Welke van de volgende uitdrukkingen zal <code> Waar</code> rapporteren?
+                            <ol style="list-style:upper-roman;">
+                                <li><img height="50" class="inline" src="../../afb/h6/l1/p9-b1.png"
+                                        alt="Geen Afbeelding" /> </li>
+                                <li><img height="50" class="inline" src="../../afb/h6/l1/p9-b2.png"
+                                        alt="Geen Afbeelding" /></li>
+                            </ol>
+                        </div>
+                        <div class="choice" identifier="c1">
+                            <div class="text">alleen I</div>
+                            <div class="feedback">
+                                Bekijk eerst elk onderdeel afzonderlijk en bepaal vervolgens wat het buitenste blok in
+                                elke uitdrukking zal rapporteren. In uitdrukking I: Wat rapporteert <code> (Waar) en
+                                    (Niet Waar) </code>? Wat rapporteert <code> niet ((Waar) en (Niet Waar)) </code>? In
+                                uitdrukking II: Wat rapporteert <code> (Waar) of (Niet Waar) </code>? Wat rapporteert
+                                <code> niet ((Waar) of (Niet Waar)) </code>?
+                            </div>
+                        </div>
+                        <div class="choice" identifier="c2">
+                            <div class="text">alleen II</div>
+                            <div class="feedback">Correct!</div>
+                        </div>
+                        <div class="choice" identifier="c3">
+                            <div class="text">I en II</div>
+                            <div class="feedback"> Kijk nog een keer naar uitdrukking I. Wat rapporteert <code> niet
+                                    ((Waar) en (Niet Waar)) </code> (rechts) aan het buitenste <code>en</code>-blok?
+                            </div>
+                        </div>
+                        <div class="choice" identifier="c4">
+                            <div class="text">Geen van beide</div>
+                            <div class="feedback"> Kijk nog een keer naar uitdrukking II. Wat rapporteert <code> (Waar)
+                                    en (Niet Waar) </code> (rechts) aan het buitenste <code>of</code>-blok?
+                            </div>
+                        </div>
+                        <div class="responseDeclaration" identifier="ri1">
+                            <div class="correctResponse" identifier="c2"></div>
+                        </div>
+                    </div> <!-- Question 2 -->
+                    <div class="assessment-data" type="multiplechoice" identifier="Which logic gate will report Waar?"
+                        hasinlinefeedback="Waar" maxchoices="1" responseIdentifier="ri2" shuffle="Niet Waar">
+                        <div class="prompt">
+                            Welke van de volgende circuits zal <code>Waar</code> rapporteren? (W staat voor
+                            <code>Waar</code> en NW staat voor <code>Niet Waar</code>.)
+                            <ol style="list-style:upper-roman;">
+                                <table>
+                                    <tr>
+                                        <td width="200">
+                                            <li><img class="inline noshadow" src="../../afb/h6/l1/p9-o7.png"
+                                                    alt="Geen Afbeelding" /></li>
+                                        </td>
+                                        <td>
+                                            <li><img class="inline noshadow" src="../../afb/h6/l1/p9-o8.png"
+                                                    alt="Geen Afbeelding" /></li>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </ol>
+                        </div>
+                        <div class="choice" identifier="c1">
+                            <div class="text">alleen I</div>
+                            <div class="feedback">Correct!</div>
+                        </div>
+                        <div class="choice" identifier="c2">
+                            <div class="text">alleen II</div>
+                            <div class="feedback">
+                                Probeer de diagrammen in Snap<em>!</em> te bouwen net zoals in de vorige vraag.
+                            </div>
+                        </div>
+                        <div class="choice" identifier="c3">
+                            <div class="text">I and II</div>
+                            <div class="feedback">
+                                Kijk nog eens naar diagram II. Welk signaal stuurt de rechterkant naar de EN-poort.
+
+                            </div>
+                        </div>
+                        <div class="choice" identifier="c4">
+                            <div class="text">Neither I nor II</div>
+                            <div class="feedback">
+                                Kijk nog een keer naar diagram I. Welk signaal stuurt de linkerkant naar de OF-poort?
+                            </div>
+                        </div>
+                        <div class="responseDeclaration" identifier="ri2">
+                            <div class="correctResponse" identifier="c1"></div>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+        </div>
+        <div class="endnote"> <a href="#hint-target" data-toggle="collapse">
+                Hoe tekenen ingenieurs logische poorten?</a>
+            <div id="hint-target" class="collapse">
+                <img class="imageRight" src="../../afb/h6/l1/p9-o9.png" alt="Geen Afbeelding" />
+                Ingenieurs tekenen gewoonlijk logische poorten horizontaal en maken gebruik van speciale vormen die
+                iedere poort voorstellen: <br />
+                <img class="indent" src="../../afb/h6/l1/p9-o3.png" width="151" height="80" alt="Geen Afbeelding" />
+                <img class="indent" src="../../afb/h6/l1/p9-o4.png" width="156" height="81" alt="Geen Afbeelding" />
+                <img class="indent" src="../../afb/h6/l1/p9-o5.png" width="126" height="69"
+                    alt="Geen Afbeelding" /><br />
+                Ingenieurs teken het circuit rechts bijvoorbeeld op deze manier: <br />
+                <img class="indent" src="../../afb/h6/l1/p9-o10.png" height="250" alt="Geen Afbeelding" /><br /> Zoek op
+                afbeeldingen met de term
+                <a href="https://www.google.com/search?q=logic+gate+diagrams&tbm=isch" target="_blank">
+                    "logic gate diagrams"</a> voor meer voorbeelden. </div>
+        </div>
+    </div>
+    <div class="full-bottom-bar" style="background-position: 20px 3px;">
+        <div class="bottom-nav btn-group"> <a class="btn btn-default backbutton arrow" style="min-width: 90px;"
+                href="H6L1P8.html">Terug</a> <a class="btn btn-default forwardbutton arrow" style="min-width:90px;"
+                href="H6L1P10.html">Volgende</a> </div>
+    </div>
+</body>
+
+</html>

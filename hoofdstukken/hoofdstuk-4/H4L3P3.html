@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <link rel="icon" href="../../BJOC-NL-logo.png" type="image/png">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="../../js+css/llab/loader.js"></script>
+    <script type="text/javascript" src="../../js+css/gifffer.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            Gifffer();
+            Inhoudsopgave();
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../js+css/css/bjc-gifffer.css">
+    <title>Hoofdstuk 4 Les 3: Cybersecurity, Pagina 3</title>
+</head>
+
+<body>
+    <div class="full">
+        <h2>Caesarcijferproject</h2>
+
+        <div class="learn"><strong>Op deze pagina,</strong> ga je werken met de Caesarcijfer. </div>
+        <p> Een Caesarcijfer (of schuifcijfer) is een simpele versleutelmethode. Iedere letter in zogenaamde "platte
+            tekst" (de nog onversleutelde tekst), verschuift de letters in het alfabet een vast aantal posities. Na de
+            'Z', gaat de verschuiving weer door aan het begin, dus bij de 'A'. Dus als we bijvoorbeeld "ABCZ123abcz" 4
+            posities verschuiven krijgen we "EFGD567efgd". Deze techniek is vernoemd naar Julius Caesar, wie over Rome
+            heerste van 49-44 voor Chr., omdat hij zijn brieven versleutelde.
+        </p>
+        <p>In dit project ga je een programma ontwikkelen dat een schuifcijfer gebruikt dat niet na de 'Z' naar de 'A'
+            verschuift. In plaats daarvan gebruiken we andere tekens zoals '[' en '{' na de 'Z' of 'z'.
+        </p>
+
+        <p> In de computer worden alle tekens van je toetsenbord (Hoofdletters, kleine letters, spaties, leestekens,
+            getallen en andere symbolen) opgeslagen getallen. Om te zorgen dat iedere computer dezelfde
+            tekens naar dezelfde getallen omzet wordt, gebruikt iedere computer Unicode, dit is het
+            standaardprotocol dat zegt welk getallen welk teken moet zijn. Over het algemeen hoeft een programmeur
+            niet te weten welk getal welk teken is, maar soms moet je een teken specificeren door het getal te noemen.
+            De tabel hieronder geeft de Unicode voor een aantal tekens.
+        </p>
+        <img class="indent" src="../../afb/h4/l3/p3-o1.jpeg" height="350" alt="Geen Afbeelding" />
+        <p>
+            Het <code>unicode waarde van</code>blok rapporteert het getal dat gebruikt wordt voor een bepaald teken:
+            <br />
+            <img class="indent" src="../../afb/h4/l3/p3-b1.png" height="52" alt="Geen Afbeelding" />
+            <br />
+            Het <code>unicode als letter</code>blok rapporteert het teken dat wordt weergegeven voor een bepaald
+            getal in Unicode:
+            <br />
+            <img class="indent" src="../../afb/h4/l3/p3-b2.png" height="52" alt="Geen Afbeelding" />
+        </p>
+
+        <div class="endnote">
+            <a href="#hint-characters" data-toggle="collapse"> Waarom zien we leestekens en symbolen zoals <strong>= ? @
+                    # ^ * {
+                </strong> of <strong>~</strong> ?</a>
+            <div id="hint-characters" class="collapse">
+                <p> Je mag aannemen dat een bepaalde set tekens een redelijke afstand verschuiven, zorgt dat de nieuwe
+                    tekens nog steeds leesbare tekens zijn, maar dit kan wel een aantal non-alfanumerieke tekens
+                    bevatten. Non-alfanumeriek betekent dat het geen letters of cijfers zijn.
+
+                </p>
+                <p> Als we bijvoorbeeld een verschuiving van 4 plaatsen gebruikten om de volgende tekst te
+                    versleutelen:</p>
+                <p class="indent"><em><strong>De slag om Arnhem was op 17 september 1944</strong></em></p>
+                <p>dan krijgen we:</p>
+                <p class="indent"><em><strong>Hi$wpek$sq$Evrliq$[ew$st$5;$witxiqfiv$5=88</strong></em></p>
+                <p>
+                    <ul>
+                        <li> Welk teken in de cijfertekst (de versleutelde versie) staat voor een spatie in de platte
+                            tekst?
+                        </li>
+                        <li> Bij deze cijfer, wordt een 1 een 5 en een 4 een 8, dus de verschuiving van 4 is duidelijke
+                            te zien. Wat wordt een 9?
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="forYouToDo" id="second">
+            <ol>
+                <li> Gebruikt met pen en papier een schuifcijfer om een kort bericht te versleutelen en daarna weer te
+                    decoderen om een gevoel te krijgen voor hoe de cijfer werkt.
+                </li>
+                <li> Ontwikkel een algoritme voor het versleutelen en decoderen dat werkt voor iedere tekst en iedere
+                    verschuiving.
+                </li>
+                <li> Probeer de schuifcijfer zelf in Snap<em>!</em> te bouwen met je algoritme, als je vastloopt, kijk
+                    dan naar deze <a href="H4L3P3hints.html">pagina voor hints </a>. </li>
+                <p>
+                    Je kan het versleutelde bericht uit Snap<em>!</em> halen door met de rechtermuisknop op de variabele
+                    te klikken waar je versleutelde bericht in zit en daarna op "exporteren..." te klikken. Hierna zal
+                    een tekstbestand worden gedownload met daarin je versleutelde bericht.
+                    <br />
+                    <img class="indent" src="../../afb/h4/l3/p3-o2.png" width="350" alt="Geen Afbeelding" />
+                </p>
+                <li> Test nu je programma. Kies samen met je partner een verschuiving voor de cijfer. Gebruik daarna je
+                    programma om een geheim bericht te versleutelen en stuur dit bericht naar je partner via
+                    bijvoorbeeld een email. Laat je partner daarna het bericht decoderen met je programma.
+                </li>
+                <div class="endnote">
+                    <a href="#hint-target" data-toggle="collapse"> Ik mis een aantal letters, waar zijn ze heen?</a>
+                    <div id="hint-target" class="collapse">
+                        Als je je versleutelde bericht niet kopieert en plakt maar op een andere manier overneemt
+                        (bijvoorbeeld door het op te schrijven of in je telefoon te typen), dan mis je een aantal tekens
+                        in je bericht. Dit komt doordat Unicode-tekens na 126 niet meer leesbaar zijn, ze symboliseren
+                        dingen zoals "verwijder". Deze tekens zie je niet in Snap<em>!</em>, dus je kan ze niet met de
+                        hand kopiëren. Als je ze dus kopieert en plakt met bijvoorbeeld "Ctrl-C" en dan "Ctrl-V", dan
+                        heb je ze wel. In opdracht A van "Een stapje verder", ontwikkel je een methode om dit probleem
+                        te omzeilen.
+                    </div>
+                </div>
+            </ol>
+        </div>
+        <div class="takeItFurther">
+            <ol type="A">
+                <li> Bouw een versie van de Caesarcijfer die niet alleen de tekens verschuift maar ook weer bij het
+                    begin van het alfabet begint, wanneer het einde is bereikt. Je wil wellicht dat je alfabet alleen
+                    leesbare tekens bevat, dus alleen de tekens in de Unicode tabel die bovenin de pagina stond.
+                </li>
+                <li> Als je een lang bericht tegenkomt dat versleuteld is met een Caesarcijfer, wat is dan een manier om
+                    het bericht te decoderen zonder dat je weet hoeveel plekken de tekens verschoven zijn? Bespreek de
+                    zwaktes van een Caesar cijfer en hoe het gemakkelijk te breken is.
+                </li>
+                <li> Doe wat onderzoek naar andere soorten cijfers die vroeger gebruikt werden. Zoek vooral naar het
+                    Vigenèrecijfer, die veel gebruikt is tijdens de Tweede Wereldoorlog. </li>
+                <li>Bedenk je eigen cijfer en bouw het in Snap<em>!</em>.</li>
+            </ol>
+        </div>
+    </div>
+    <div class="full-bottom-bar" style="background-position: 20px 3px;">
+        <div class="bottom-nav btn-group">
+            <a class="btn btn-default backbutton arrow " style="min-width: 90px;" href="H4L3P2.html">Terug</a>
+            <a class="btn btn-default forwardbutton arrow" style="min-width:90px;" href="H4L3P4.html">Volgende</a>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+ <!DOCTYPE html>
+ <html lang="nl">
+
+ <head>
+     <link rel="icon" href="../../BJOC-NL-logo.png" type="image/png">
+     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+     <script type="text/javascript" src="../../js+css/llab/loader.js"></script>
+     <script type="text/javascript" src="../../js+css/gifffer.min.js"></script>
+     <script type="text/javascript">
+         window.onload = function () {
+             Gifffer();
+             Inhoudsopgave();
+         }
+     </script>
+     <link rel="stylesheet" type="text/css" href="../../js+css/css/bjc-gifffer.css">
+     <title>Hoofdstuk 8 Les 2: Sorteren, Pagina 2</title>
+ </head>
+
+ <body>
+
+     <div class="full">
+         <h2>Selection Sort</h2>
+         <p> Een van de populairste sorteeralgoritmes heet <strong>selection sort</strong>. Dit is hoe het werkt:
+             <ul>
+                 <li>
+                     <div class="sidenote"> Het element dat vooraan komt zou de eerste naam in alfabetische volgorde
+                         kunnen zijn of het kleinste getal in een lijst.
+                     </div>
+                     <strong>Stap 1.</strong> In een ongesorteerde lijst, vind een manier om het voorste element te
+                     vinden.
+                 </li>
+                 <li><strong>Stap 2.</strong> Haal dat element uit de lijst en plaats het op de eerste plek.
+                 </li>
+                 <li><strong>Stap 3.</strong> Gebruik selection sort om de overige elementen te sorteren. Als er
+                     geen elementen over zijn ben je klaar.
+                 </li>
+             </ul>
+         </p>
+         <div class="forYouToDo" id="first">
+             <ol>
+                 <li> Probeer eerst selection sort te begrijpen voordat je code gaat schrijven. Sta op en vorm een lijn
+                     met de hele klas. Volg daarna het proces van selection sort om iedereen op naam te sorteren.
+                 </li>
+                 <li> Hoe is selection sort een voorbeeld van recursie? Wat is het basisgeval?</li>
+             </ol>
+         </div>
+
+         <p>Om een <code>selection sort</code>blok te schrijven in Snap<em>!</em>, heb je code nodig voor een basisgeval
+         </p>
+         <div class="forYouToDo">
+             <ol start="3">
+                 <li> Bouw het <code>voorste in</code>blok. Voor namen geeft dit alfabetisch de eerste naam in een
+                     lijst:
+                     <br /> <img class="indent" height="250" src="../../afb/h8/l2/p1-b1.png" alt="Geen Afbeelding" />
+                     <img class="indent" height="50" src="../../afb/h8/l2/p2-b1.png" alt="Geen Afbeelding" />
+                 </li>
+                 <li>Write code die de <em>index</em> van het voorste item vindt. Deze waarde is 8 voor de lijst met
+                     namen hierboven. (Deze stap is misschien overbodig, afhankelijk van je algoritme. Kijk of je de
+                     volgende stap zonder de index kan doen.)
+                 </li>
+                 <li>
+                     <div class="sidenote"> Je kan een deel van het werk in
+                         <a href="../hoofdstuk-5/H5L1P2.html">
+                             Hoofdstuk 5 Les 1 Pagina 2: Analyseren en zoekopdrachten verbeteren</a> handing vinden.
+                     </div>
+                     Schrijf code die een nieuwe lijst aanmaakt zonder het voorste element. Er is daar maar één manier
+                     voor!
+                 </li>
+                 <li> BOuw de recursieve rapporteur <code>selection sort</code>.<br />
+                     <img class="indent" height="250" src="../../afb/h8/l2/p2-b2.png" alt="Geen Afbeelding" />
+                 </li>
+                 <li>Hoe vaak roept <code>selection sort</code> zichzelf aan?</li>
+             </ol>
+             <div class="saveAs"><span class="text">"H8L2-SelSort"</span><img src="../../afb/icons/SlaHetOpAls.png"
+                     alt="Geen Afbeelding" /></div>
+         </div>
+         <div class="takeNote">
+             Net als recursieve commando's, lijken recursieve rapporteurs magisch, omdat een deel van de code zichzelf
+             aanroept.
+             Recursieve rapporteurs werken omdat iedere aanroep een <em>kleinere</em> invoer gebruikt dan de vorige,
+             totdat het basisgeval bereikt wordt. Nadat het basisgeval bereikt is, wordt het resultaat beetje bij beetje
+             gebouwd omdat iedere aangeroepen rapporteur het result rapporteert aan de rapporteur die hem aangeroepen
+             heeft.
+         </div>
+         <div class="takeItFurther">
+             <ol type="A">
+                 <li> Dit <a href="/bjc-r/cur/programming/3-lists/5-big-data/yob2014.txt"> bestand met de populariteit
+                         van namen in 2014</a> bevat een grote lijst van babynamen uit 2014. Importeer de data en bouw
+                     daarna een algoritme dat een alfabetische lijst met alle namen geeft, die start met een gegeven
+                     letter: <br />
+                     <img class="indent" height="250" src="../../afb/h8/l2/p2-b3.png" alt="Geen Afbeelding" />
+                 </li>
+             </ol>
+         </div>
+     </div>
+     <div class="full-bottom-bar" style="background-position: 20px 3px;">
+         <div class="bottom-nav btn-group"> <a class="btn btn-default backbutton arrow" style="min-width: 90px;"
+                 href="H8L2P1.html"> Terug</a> <a class="btn btn-default forwardbutton arrow" style="min-width:90px;"
+                 href="H8L2P3.html"> Volgende</a> </div>
+     </div>
+ </body>
+
+ </html>

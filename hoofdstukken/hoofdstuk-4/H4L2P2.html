@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <link rel="icon" href="../../BJOC-NL-logo.png" type="image/png">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="../../js+css/llab/loader.js"></script>
+    <script type="text/javascript" src="../../js+css/gifffer.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            Gifffer();
+            Inhoudsopgave();
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../js+css/css/bjc-gifffer.css">
+    <title>UHoofdstuk 4 Les 2: Communicatieprotocollen, Pagina 2</title>
+</head>
+
+<body>
+    <div class="full">
+        <h2>Betrouwbare communicatie over onbetrouwbare verbindingen: TCP</h2>
+        <div class="learn">
+            <p><strong>Op deze pagina,</strong> ga je leren over het systeem dat zorgt voor <em>betrouwbare</em>
+                communicatie op het internet.</p>
+        </div>
+
+
+        <p> Computer, servers en routers zijn vrij betrouwbaar, maar soms raakt een pakket verloren en apparaten op het
+            internet, moeten zulke fouten aankunnen. Een manier om fouten aan te pakken is om er niks om te geven. (Als
+            je een frame van een video kwijtraakt, maakt het niet uit.) Een andere manier (TCP genaamd) is om pakketjes
+            te blijven versturen totdat aangegeven wordt dat ze ontvangen zijn. <strong>TCP (Transmission Control
+                Protocol in het Nederlands, Verzendingcontroleprotocol)</strong> garandeert <em>betrouwbare</em>
+            dataverzending door bij te houden welke pakketjes succesvol ontvangen zijn, een verloren of beschadigd
+            pakkeetje wordt opnieuw verstuurd. Daarnaast wordt ook aangegeven wat de volgorde van de data is om het weer
+            in elkaar te zetten bij de ontvanger.
+        </p>
+        <div class="vocabFullWidth">
+            <p><strong>TCP/IP</strong> is a paar protocollen die voor abstractie zorgen. <strong>IP</strong> laat je
+                computer doen alsof het een <em>directe</em> verbinding heeft met een andere cmoputer.
+                <strong>TCP</strong> laat je computer doen alsof het een betrouwbare verbinding heeft met de andere
+                computer.
+            </p>
+        </div>
+        <br />
+
+        <img class="imageRight" src="../../afb/icons/ZetJeKoptelefoon.png" alt="Geen Afbeelding" />
+        <div class="sidenote">Als je connectie YouTube blokkeert, <a
+                href="http://scratch.mit.edu/discuss/youtube/AYdF7b3nMto" target="_blank">kijk de video dan hier.</a>.
+        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/AYdF7b3nMto?rel=0" frameborder="0"
+            allowfullscreen class="indent"></iframe>
+
+        <div class="takeNote">
+            <p>
+                Het end-to-end-ontwerp van TCP en IP is een abstractie:
+                <ul>
+                    <li> De computers (ook servers) aan de twee eindes van een gesprek over het internet voeren het
+                        <strong>Transmission Control Protocol</strong> (TCP) uit, in het Nederlands
+                        Verzendingscontroleprotocol. Dit protocol garandeert dat alle vezendingen in het gesprek
+                        betrouwbaar zijn.
+                    </li>
+                    <li> De routers op ieder knooppunt op het internet voeren het <strong>internetprotocol</strong>
+                        (IP) uit, dat pakketjes verzend van het ene IP-adres naar het andere.</li>
+                </ul>
+            </p>
+            <p> De routers weten niks over de berichten die ze doorsturen. De computers die de berichten sturen en
+                ontvangen zijn de enige die geïnteresseerd zijn in wat de berichten betekenen.
+            </p>
+        </div>
+
+        <div class="forYouToDo">
+            <ol>
+                <li>
+                    <a class="run"
+                        href="https://snap.berkeley.edu/snapsource/snap.html#present:Username=cfkaligula&ProjectName=H4L3-TCP"><img
+                            class="inline" src="../../afb/icons/LaadEnSlaOp.png" alt="Geen Afbeelding"></a><br />
+                    Dit project geeft een simulatie van onbetrouwbare data-transmissie door het internetprotocol.
+                    <ul>
+                        <li><strong>Klik op de groene vlag</strong> om de <var>inkomende verzending</var>
+                            variabelen te initialiseren voor het experiment.</li>
+                        <li><strong>Klik op ieder personage</strong> om een bericht in te typen om te sturen naar het
+                            andere personage.
+                        </li>
+                    </ul>
+                </li>
+                <div class="sidenote"> In deze simulatie is het hele bericht een stuk tekst dat verdeeld wordt in
+                    pakketjes van één letter. In het echt zijn pakketjes niet per se so klein en zijn berichten vaak
+                    veel groter.
+                </div>
+                <a class="run"
+                    href="https://snap.berkeley.edu/snapsource/snap.html#present:Username=cfkaligula&ProjectName=H4L3-TCP">
+                    <img class="indent" src="../../afb/h4/l2/U4L2P2_TCP.png" alt="Geen Afbeelding"></a>
+                <li>
+                    <img class="inline" src="../../afb/icons/PraatMetJeBuur.png" alt="Geen Afbeelding" />
+                    Vergelijk het resultaat met wat je verzond. Welke problemen zie je?
+
+                </li>
+            </ol>
+        </div>
+        <p> TCP voegt extra informatie toe aan ieder pakketje zodat de ontvanger kan bijhouden hoevel pakketjes er al
+            ontvangen zijn, missende pakketjes opnieuw kan aanvragen en de pakketjes in de goeie volgorde kan zetten om
+            het originele bericht te kunnen lezen. In de simulatie arriveert een pakket correct (zelfs als het niet in
+            de goede volgorde aankomt) of het arriveert nooit. Maar op het internet is het mogelijk dat een pakket
+            arriveert met <em>fouten in de data</em> dus het TCP moet controleren of er fouten in het pakket zitten en
+            aanvragen of het pakketje opnieuw verzonden kan worden.
+        </p>
+
+        <div class="ifTime">
+            <ol start="3">
+                <li>Lees <a href="http://www.bitsbook.com/wp-content/uploads/2008/12/B2B_3.pdf#page=324"
+                        target="_blank"><em>Blown to Bits</em> pages 306-309</a>.</li>
+            </ol>
+        </div>
+
+
+        <div class="takeItFurther">
+            <img class="imageRight" src="../../afb/icons/UitermateUitdagend.png" alt="Geen Afbeelding" />
+            <ol type="A">
+                <li> Bouw een simpel TCP. Los de onbetrouwbaarheid op zodat berichten betrouwbaar ontvangen worden
+                    ondanks de beperkingen van IP-pakketjes.
+                    Je moet de volgende blokken <strong>aanpassen:</strong>
+                    <ul>
+                        <li><img height="40" src="../../afb/h4/l2/p2-b1.png" alt="Geen Afbeelding" /></li>
+                        <li><img height="40" src="../../afb/h4/l2/p2-b2.png" alt="Geen Afbeelding" /></li>
+                    </ul>
+                    <div class="endnote"><strong>Pas <em>niet</em> </strong>
+                        <img height="40" src="../../afb/h4/l2/p2-b3.png" alt="Geen Afbeelding"> aan.
+                        Dat blok simuleert het onbetrouwbare netwerk. Je kan het probleem "oplossen" door dit blok te
+                        herschrijven om een perfect netwerk te maken, maar dan mis je het punt van deze opdracht.
+                    </div>
+                    Om dit probleem op te lossen heb je een manier nodig om de volgorde van de gegevens bij te houden
+                    <em>en</em> een manier om missende pakketjes opnieuw aan te vragen.
+                    <ul>
+                        <li>Los eerst het probleem op van pakketjes die in de verkeerde volgorde arriveren. Je kan extra
+                            informatie meegeven bij de data van het pakket om de ontvanger te helpen het originele
+                            bericht te maken. Dit vergt samenwerking van de zender en de ontvanger (dus je moet allebei
+                            de grijze blokken aanpassen).
+                        </li>
+                        <li> Los daarna het probleem op van pakketjes die überhaupt niet arriveren. Dut maak verzending
+                            betrouwbaar, ook al is IP niet betrouwbaar. Hiervoor moet je ook allebei de grijze blokken
+                            aanpassen.
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="full-bottom-bar" style="background-position: 20px 3px;">
+        <div class="bottom-nav btn-group">
+            <a class="btn btn-default backbutton arrow " style="min-width: 90px;" href="H4L2P1.html">Terug</a>
+            <a class="btn btn-default forwardbutton arrow" style="min-width:90px;" href="H4L2P3.html">Volgende</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
