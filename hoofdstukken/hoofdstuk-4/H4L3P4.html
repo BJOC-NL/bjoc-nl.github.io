@@ -92,65 +92,91 @@
         <h3>Veilige HTTP</h3>
         <p> Veilige HTTP-verbindingen (je herkent dit aan <strong>https://</strong> in plaats van
             <strong>http://</strong>) gebruiken een protocol dat <em>Transport Layer Security</em> (TLS) heet.Soms
-            gebruiken ze nog een ouder protocol, <em>Secure Sockets Layer</em> (SSL). Allebei de protocollen make
+            gebruiken ze nog een ouder protocol, <em>Secure Sockets Layer</em> (SSL). Allebei de protocollen maken
             gebruik van publieke sleutels. Met SSL/TLS, stuurt de website die je bezoekt zijn publieke sleutel en je
             browser gebruikt die sleutel om jouw informatie te versleutelen.
         </p>
         <div class="vocabFullWidth">
-            <p><strong>SSL/TLS</strong> (secure sockets layer/transport layer security) is the standard used for
-                cryptographically secured information transfer on the Internet. </p>
+            <p><strong>SSL/TLS</strong> (secure sockets layer/transport layer security, in het Nederlands
+                veilige-socketslaag/transportlaagbeveiliging) is de standaard die gebruikt wordt voor informatie
+                die cryptografisch beveiligd is en wordt verzonden over het internet.
+            </p>
         </div>
         <br clear="all" />
 
-        <div class="sidenote">If your connection blocks YouTube, <a
-                href="http://scratch.mit.edu/discuss/youtube/kBXQZMmiA4s" target="_blank">watch the video here</a>, but
-            start it at 4:40. </div>
+        <div class="sidenote"> Als YouTube geblokkeerd is, <a href="http://scratch.mit.edu/discuss/youtube/kBXQZMmiA4s"
+                target="_blank">kijk dan de video hier</a>, de video begint vanaf 4:40.
+        </div>
+
         <img class="imageRight" src="../../afb/icons/headphones-mini.png" alt="Geen Afbeelding" />
         <iframe width="560" height="315" src="https://www.youtube.com/embed/kBXQZMmiA4s?start=280&rel=0" frameborder="0"
             allowfullscreen class="indent"></iframe>
 
         <div class="endnote">
-            <a href="#hint-open-standards" data-toggle="collapse">Open standards help security... </a>
+            <a href="#hint-open-standards" data-toggle="collapse">Open standaarden helpen met beveiliging... </a>
             <div id="hint-open-standards" class="collapse">
-                <p>In order to work properly, a cryptographic function has to be easy for the private key holder to
-                    invert, but hard for anyone else to invert. How do we know what "hard" means? For example, current
-                    cryptographic methods rely on the difficulty of finding prime factors of very large numbers. There's
-                    no <em>proof</em> that someone won't come up with a fast way to do that, but people are pretty
-                    confident about it because the problem has been well studied by many mathematicians. (On the other
-                    hand, when <em>quantum computers</em> become practical, factorization <em>will</em> be easy, and new
-                    cryptographic methods will be needed.)</p>
-                <p>What makes it possible for mathematicians to study the difficulty of breaking Internet cryptography
-                    is that the method used&mdash;the cryptographic function&mdash;is openly published. This may seem
-                    strange; if you want to keep secrets, shouldn't you keep the technique secret, too? But secret
-                    algorithms can have weaknesses that go undiscovered until some bad guy exploits them. Open standards
-                    allow an algorithm to be studied <em>before</em> it is used in practice. </p>
+                <div class="vocabBig">
+                    <p>
+                        <strong>Ontbinden in factoren</strong> is het opdelen van een product in kleinere delen. Je
+                        kan bijvoorbeeld 15 ontbinden in de factoren 3 en 5, omdat 3×5=15.
+                    </p>
+                </div>
+                <p> Om goed te werken moet een cryptografische methode makkelijk makkelijk te gebruiken zijn voor de
+                    bezitter van de privé-sleutel en moeilijk te kraken voor alle andere mensen. Maar wat maakt
+                    "moeilijk" hier? Huidige cryptografische methods maken gebruik van het feit dat het lastig is om
+                    hele grote getallen te ontbinden in factoren. Er is geen <em>bewijs</em> dat niemand een snelle
+                    manier kan vinden om dat te doen, maar we weten vrij zeker dat het niet zal gebeuren omdat dit
+                    probleem uitgebreid is onderzocht door wiskundigen. (Aan de andere kant, wanneer
+                    <em>quantumcomputers</em> mogelijk zijn, zal ontbinden in factoren heel makkelijk zijn en hebben we
+                    nieuwe cryptografische methodes nodig.)
+                </p>
+
+                <p>
+                    Omdat de cryptografische methodes die gebruikt worden in deze standaarden, voor iedereen te bekijken
+                    zijn, kunnen wiskundigen bestuderen hoe moeilijk het is om die methodes te breken. Dit lijkt
+                    misschien vreemd, als je iets geheim wilt houden, zou je dan niet de techniek ook geheim houden?
+                    Maar algoritmes die je geheimhoudt, kunnen fouten bevatten die je niet ziet, tot dat iemand met
+                    slechte bedoelingen ze vindt. Door dat de standaarden open zijn voor iedereen, kan een algoritme
+                    bestudeerd worden <em>voordat</em> het gebruikt wordt.
+                </p>
             </div>
         </div>
 
 
-        <h3>Certificate Authorities</h3>
+        <h3>Certificaatautoriteiten</h3>
         <div class="vocabBig">
-            <p><strong>Certificate authorities</strong> issue digital certificates that verify who owns the encryption
-                keys used for secured communications. </p>
+            <p>
+                <strong>Certificaatautoriteiten</strong> geven certificaten af die verifiëren wie een bepaalde
+                sleutel bezit die gebruikt wordt voor beveiligde communicatie.
+            </p>
         </div>
-        <p>Public key cryptography doesn't solve all the problems, because an eavesdropper (say, Eve) might publish a
-            fake public key pretending to be Alice. Then Bob might accidentally encrypt their message for Alice using
-            the Eve's fake key, and then the Eve can read the message. In practice, this is partly fixed by relying on
-            trusted third parties, called <em>Certificate Authorities</em>, to certify public keys. In your browser's
-            security options you can see all of the Certificate Authorities that it trusts. </p>
-        <div class="endnote">But this just pushes the problem back a layer. How does the Certificate Authorities know
-            that you are who you say you are? The problem is a little bit like how your bank knows that you who you say
-            you are when you call them on the phone. Namely, they ask you questions for which they hope only you know
-            the answer. </div>
+        <p>
+            Versleuteling met een publieke sleutel lost niet magisch alle problemen op. Iemand die afluistert (een
+            persoon genaamd Eva, bijvoorbeeld) zou een nep publieke sleutel kunnen maken waarbij ze doet alsof ze Alice
+            is. Bob kan dan per ongeluk zijn bericht versleutelen met de neppe sleutel, terwijl het bericht voor Alice
+            bedoeld is. Eva kan dan gewoon Bobs bericht lezen. In de praktijk wordt dit probleem opgelost door gebruik
+            te maken een derde partij, genaamd <em>certificaatautoriteiten</em>, om te verzekeren of een publieke
+            sleutel echt is. In de veiligheidsinformatie van je browser kan je alle certificaatautoriteiten zien die je
+            browser vertrouwt.
+        </p>
+        <div class="endnote">
+            Maar dit verplaatst het probleem gewoon naar ee andere laag. Hoe weet de certificaatautoriteit dan hoe
+            <em>jij</em> bent wie je zegt dat je bent? Dat werkt net zoals hoe de bank checkt of jij wel bent wie je
+            zegt dat je bent. Ze stellen vragen waarop ze denken dat alleen jij de antwoorden weet.
+            Bijvoorbeeld, je pasnummer en je geboortedatum.
+        </div>
 
         <div class="takeItFurther">
             <ol type="A">
-                <li>Read "The Key Agreement Protocol" and "Public Keys for Private Messages" (<a
-                        href="http://www.bitsbook.com/wp-content/uploads/2008/12/B2B_3.pdf#page=199"
-                        target="_blank"><em>Blown to Bits</em> pages 181-183</a>) for more details on Public Key
-                    Encryption. </li>
-                <li>Do some research about modern encryption systems such as the RSA cryptosystem, which is used to do
-                    secure transactions on the Internet. </li>
+                <li>
+                    Lees "The Key Agreement Protocol" en "Public Keys for Private Messages"
+                    (<a href="http://www.bitsbook.com/wp-content/uploads/2008/12/B2B_3.pdf#page=199"
+                        target="_blank"><em>Blown to Bits</em> pagina's 181-183</a>) voor meer info over versleuteling
+                    met publieke sleutels.
+                </li>
+                <li> Doe onderzoek naar moderne versleutelmethodes zoals RSA, een methode die vooral gebruikt wordt bij
+                    digitale transacties.
+                </li>
             </ol>
         </div>
     </div>
