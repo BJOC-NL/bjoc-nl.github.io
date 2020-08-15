@@ -1,0 +1,58 @@
+dit zijn de pagina's die worden opgegeven:
+1-17 22-35 40 42-48 64 120-121 148-156 161-173 178-183 191-193 229-234 237-249 253-257  301-316
+
+dit zijn de referenties:
+1-introduction/5-intro-bits-games/3-tanya-rider.html: pages 1-4
+1-introduction/5-intro-bits-games/5-good-or-bad.html: pages 13-17
+1-introduction/5-intro-bits-games/5-good-or-bad.html: pages 4-13
+2-conditionals-abstraction-testing/5-privacy/3-privacy-affected.html: pages 22-35
+2-conditionals-abstraction-testing/5-privacy/3-privacy-affected.html: page 40
+2-conditionals-abstraction-testing/5-privacy/3-privacy-affected.html: pages 42-48
+2-conditionals-abstraction-testing/5-privacy/3-privacy-affected.html: page 64
+2-conditionals-abstraction-testing/6-encryption/2-secret-keys.html: pages 166-169
+2-conditionals-abstraction-testing/6-encryption/2-secret-keys.html: page 171
+2-conditionals-abstraction-testing/6-encryption/2-secret-keys.html: page 171
+2-conditionals-abstraction-testing/6-encryption/2-secret-keys.html: pages 169-173
+2-conditionals-abstraction-testing/6-encryption/3-public-keys.html: pages 178-181
+2-conditionals-abstraction-testing/6-encryption/3-public-keys.html: pages 181-183
+2-conditionals-abstraction-testing/6-encryption/4-who-cares-about-encryption.html: pages 161-165
+2-conditionals-abstraction-testing/6-encryption/4-who-cares-about-encryption.html: pages 191- top of 193
+3-lists/5-search-internet/2-how-searching-works.html: pages 120-121
+3-lists/5-search-internet/2-how-searching-works.html: pages 148-151
+3-lists/5-search-internet/2-how-searching-works.html: pages 151-156
+3-lists/old/5-search-and-data/5-weatherintro.html: pages 120-121
+3-lists/old/big-questions-old.html: pages 120-121
+4-internet/3-communication-protocols/1-ip.html: pages 301-306
+4-internet/3-communication-protocols/2-tcp.html: pages 306-309
+4-internet/3-communication-protocols/3-open-protocols.html: pages 309-312
+4-internet/3-communication-protocols/4-who-is-in-charge.html: pages 312-316
+4-internet/4-cybersecurity/2-cryptosecurity.html: pages 181-183
+4-internet/4-cybersecurity/OldVersion/2-secret-keys.html: pages 166-169
+4-internet/4-cybersecurity/OldVersion/2-secret-keys.html: page 171
+4-internet/4-cybersecurity/OldVersion/2-secret-keys.html: page 171
+4-internet/4-cybersecurity/OldVersion/2-secret-keys.html: pages 169-173
+4-internet/4-cybersecurity/OldVersion/3-public-keys.html: pages 178-181
+4-internet/4-cybersecurity/OldVersion/3-public-keys.html: pages 181-183
+4-internet/4-cybersecurity/OldVersion/4-who-cares-about-encryption.html: pages 161-165
+4-internet/4-cybersecurity/OldVersion/4-who-cares-about-encryption.html: pages 191-top of 193
+4-internet/4-cybersecurity/Y3version/2-symmetric_cryptography.html: pages 166-169
+4-internet/4-cybersecurity/Y3version/2-symmetric_cryptography.html: pages 169-173
+4-internet/4-cybersecurity/Y3version/4-asymmetric_cryptography.html: pages 178-181
+4-internet/4-cybersecurity/Y3version/4-asymmetric_cryptography.html: pages 181-183
+4-internet/4-cybersecurity/Y3version/6-who-cares-about-encryption.html: pages 161-165
+4-internet/4-cybersecurity/Y3version/6-who-cares-about-encryption.html: pages 191-top of 193
+4-internet/5-censorship/2-regulating-the-internet.html: pages 229-234
+4-internet/5-censorship/2-regulating-the-internet.html: pages 244-245
+4-internet/5-censorship/3-censorship.html: pages 253-257
+4-internet/5-censorship/bh/3-regulating-the-internet.html: pages 229-234
+4-internet/5-censorship/bh/3-regulating-the-internet.html: pages 244-245
+4-internet/5-censorship/bh/4-pornography.html: pages 237-249
+4-internet/old/o-weather-app/1-weatherintro.html: pages 120-121
+5-algorithms/6-copyrights-and-patents/very old/4-big-questions.html: pages 120-121
+5-algorithms/6-copyrights-and-patents/very old/btb-chapter6.html: pages 120-121
+5-algorithms/6-copyrights-and-patents/very old/media.html: pages 120-121
+5-algorithms/6-copyrights-and-patents/very old/patents.html: pages 120-121
+5-algorithms/7-copyrights-and-patents/old/4-big-questions.html: pages 120-121
+5-algorithms/7-copyrights-and-patents/old/btb-chapter6.html: pages 120-121
+5-algorithms/7-copyrights-and-patents/old/media.html: pages 120-121
+5-algorithms/7-copyrights-and-patents/old/patents.html: pages 120-121
