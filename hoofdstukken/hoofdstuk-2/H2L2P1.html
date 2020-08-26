@@ -120,7 +120,7 @@
             <div><span>Berta:"</span> Ik denk dat we <img src="../../afb/h2/l2/blocks/p1-b10.png" height="68"
                     alt="Geen Afbeelding"> kunnen gebruiken."</div>
             <div class="stagedir">
-                <p>Alex and Berta ontwerpen dit nieuwe script om het bezoeken van ieder punt te
+                <p>Alex en Berta ontwerpen dit nieuwe script om het bezoeken van ieder punt te
                     automatiseren. </p>
                 <p><img height="120" src="../../afb/h2/l2/blocks/p1-b11.png" alt="Geen Afbeelding"> </p>
                 <p>Daarna proberen ze het uit.</p>
@@ -162,26 +162,36 @@
             <div class="forYouToDo">
                 <ol start="7">
                     <li>Met deze vraag kun jij je kennis testen.
+
                         <!-- Question 1 -->
                         <div class="assessment-data" type="multiplechoice"
                             identifier="FOR EACH positive and square over 4" hasinlinefeedback="true" maxchoices="1"
                             responseIdentifier="ri1" shuffle="false">
                             <div class="prompt">
-                                <pre>inputList ← [3, -1, 2, 10, -5] FOR EACH item IN inputList { IF ( (item &gt; 0)  AND  (item * item &gt; 4) ) { DISPLAY item } } </pre>
+                                <pre>
+invoerlijst ← [3, -1, 2, 10, -5] 
+FOR EACH element IN invoerlijst 
+{ 
+    ALS ( (element > 0)  EN  (element * element > 4) ) 
+    { 
+        LAAT ZIEN element 
+    } 
+} 
+                                </pre>
                                 <br /> Wat zal er worden weergegeven als resultaat van de code hierboven? </div>
                             <div class="choice" identifier="c1">
                                 <div class="text">9, 1, 4, 100, 25</div>
-                                <div class="feedback"> These are not items from the <var>inputList</var>. What does the
-                                    <em>conditional</em> in the procedure do? </div>
+                                <div class="feedback"> Dit zijn niet de elementen van <var>invoerlijst</var>. Wat doet
+                                    de <em>voorwaarde</em> in de code? </div>
                             </div>
                             <div class="choice" identifier="c2">
                                 <div class="text">9, 100</div>
-                                <div class="feedback"> These are not items from the <var>inputList</var>. What does the
-                                    <em>conditional</em> in the procedure do? </div>
+                                <div class="feedback"> Dit zijn niet de elementen van <var>invoerlijst</var>. Wat doet
+                                    de <em>voorwaarde</em> in de code? </div>
                             </div>
                             <div class="choice" identifier="c3">
                                 <div class="text">3, 2, 10</div>
-                                <div class="feedback"> Is 2 * 2 &gt; 4 ? </div>
+                                <div class="feedback"> Is 2 * 2 > 4 ? </div>
                             </div>
                             <div class="choice" identifier="c4">
                                 <div class="text">3, 10</div>
@@ -190,11 +200,28 @@
                             <div class="responseDeclaration" identifier="ri1">
                                 <div class="correctResponse" identifier="c4"></div>
                             </div>
-                        </div> <!-- Question 2 -->
+                        </div>
+                        <!-- Question 2 -->
                         <div class="assessment-data" type="multiplechoice" identifier="Mystery Procedure"
                             hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri2" shuffle="true">
                             <div class="prompt">
-                                <pre>PROCEDURE Mystery (numberList, targetNumber) { counter ← 0 FOR EACH number IN numberList { IF (number &gt; targetNumber) { counter ← counter + 1 } } RETURN (counter) } myMathGrades ← [100, 80, 90, 80, 60, 100, 50, 100] Mystery(myMathGrades, 60) </pre>
+                                <pre>
+PROCEDURE Mysterie(getallenlijst, doelgetal) 
+{ 
+    teller ← 0 
+    FOR EACH getal IN getallenlijst 
+    { 
+        ALS (number > doelgetal) 
+        { 
+            teller ← teller + 1 
+        } 
+    } 
+    RAPPORTEER (teller) 
+}
+
+mijnWiskundecijfers ← [100, 80, 90, 80, 60, 100, 50, 100] 
+Mysterie(mijnWiskundecijfers, 60) 
+</pre>
                                 <br /> Wat wordt er teruggegeven als de code hierboven wordt uitgevoerd? </div>
                             <div class="choice" identifier="c1">
                                 <div class="text">[100, 80, 90, 80, 100, 100]</div>
@@ -210,7 +237,7 @@
                             </div>
                             <div class="choice" identifier="c4">
                                 <div class="text">60</div>
-                                <div class="feedback"> What doet de procedure? </div>
+                                <div class="feedback"> Wat doet de procedure? </div>
                             </div>
                             <div class="responseDeclaration" identifier="ri2">
                                 <div class="correctResponse" identifier="c3"></div>

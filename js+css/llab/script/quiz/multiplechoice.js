@@ -418,7 +418,7 @@ MC.prototype.getResultMessage = function (isCorrect) {
 
     /* if this attempt is correct, then we only need to return a msg */
     if (isCorrect) {
-        message = "You have successfully completed this question!";
+        message = "Je hebt de vraag goed beantwoord!";
     }
 
     return message;
