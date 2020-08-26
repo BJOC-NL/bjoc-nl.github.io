@@ -32,8 +32,8 @@
                  Deze rare naam wordt gebruikt omdat er vroeger een <em>vastkommagetal</em>notatie was voor niet-hele
                  getallen met een vast aantal getallen achter de komma. Bijvoorbeeld een vastekommagetalnotatie met 2
                  getallen achter de komma werd gebruikt om een hoevelheid geld in euro's en centen te laten zien:
-                 €82,45. Maar tegenwoord gebruiken computers altijd zwevendekommagetallen om niet-hele getallen te laten
-                 zien, zelfs voor geld.
+                 €82,45. Maar tegenwoordig gebruiken computers altijd zwevendekommagetallen om niet-hele getallen te
+                 laten zien, zelfs voor geld.
              </div>
          </div>
          <div class="takeNote">
@@ -56,7 +56,7 @@
              omdat je computer niet genoeg geheugen heeft.
          </p>
          <p>
-             Afrondfouten kunnen zorgen voor vrij onintuïtieve resultaten...
+             Afrondfouten kunnen zorgen voor niet intuïtieve resultaten...
          </p>
          <div class="forYouToDo">
              <ol start="2">
@@ -64,8 +64,8 @@
                      dan <img class="inline" src="../../afb/h6/l2/p4-o3.png" alt="Geen Afbeelding" /> . </li>
              </ol>
          </div>
-         <p> Dit is geen bug in Snap<em>!</em>, die rapporteert het resultaat dat berekent wordt volgens de hardware
-             voor een zwevendekommagetal.
+         <p> Dit is geen bug in Snap<em>!</em>, Snap<em>!</em> rapporteert netjes het resultaat dat berekent wordt
+             volgens de hardware voor een zwevendekommagetal.
          </p>
          <div class="endnote">
              <a href="#hint-roundoff" data-toggle="collapse"> Hoe kan een simpele berekening zulke foute resultaten
@@ -88,7 +88,7 @@
                  Fouten door zwevendekommmagetallen kunnen heel duur zijn en zelfs zorgen voor slachtoffers.
              </a>
              <div id="hint-killer" class="collapse">
-                 <p> Een beroemd voorbeeld is de Ariane-raket die gelanceerd werd op 4 Juni 1996. Tijdens de 37de
+                 <p> Een beroemd voorbeeld is de Ariane-raket die gelanceerd werd op 4 Juni 1996. Tijdens de 37ste
                      seconde van de vlucht, probeerde het systeem een 64-bit zwevendekommagetal om te zetten in een
                      16-bitgetal, maar in plaats daarvan werd er een overstroomfout gerapporteerd, wat werd
                      geïnterpreteerd door het navigatiesysteem als vliegdata. Dit zorgde ervoor dat de raket van zijn
@@ -97,8 +97,8 @@
                  <p> Het Patriot-raketafweersysteem dat gebruikt werd tijdens de Golfoorlog had ook last van een
                      afrondfout (Skeel 1992, U.S. GAO 1992). Het systeem gebruikte een tijdmeter die werkte met hele
                      getallen en optelde met intervallen van 0.1 secondes. Het probleem was dat de hele getallen
-                     werden omgezet in decimale getallen door de vermenigvuldigen met de binaire benadering van 0.1:
-                     0.00011001100110011001100 <sub> 2 </sub> = 209715/2097152.
+                     werden omgezet in decimale getallen door zich te vermenigvuldigen met de binaire benadering van
+                     0.1: 0.00011001100110011001100 <sub> 2 </sub> = 209715/2097152.
                  </p>
                  <p> Dit betekende dat na 100 uur (3.6 &times; 10 <sup> 6 </sup> tellen), er een fout was van </p>
                  <p class="indent">
@@ -123,7 +123,8 @@
              getal of als het resultaat niet past in (niet-bignum) een heel getal dan krijg je een
              <em>overstroomfout</em> en wordt het resultaat, vaak, omgezet in een zwevendekommagetal (zoals 30!).
          </p>
-         <p> Computerberekeningen met <em>zwevendekommagetallen</em> daarentegen is moeilijk mo precies goed te krijgen.
+         <p> Computerberekeningen met <em>zwevendekommagetallen</em> daarentegen zijn moeilijk mo precies goed te
+             krijgen.
              Voor 1985 had ieder computermodel net een ander formaat zwevendekommagetal en allemaal gaven ze foute
              antwoorden op bepaalde vragen. Deze situatie werd opgelost door de
              <a href="https://nl.wikipedia.org/wiki/IEEE_754" target="_blank"> IEEE 754 zwevendekommastandaard </a>
@@ -195,7 +196,7 @@
          </p>
          <div class="takeNote"> Op het laagste niveau van abstractie wordt <em>alles</em> in een computer weergegeven
              als een binaire reeks. Bijvoorbeeld: <ul>
-                 <li> Een Boolean waarde is een enkele bit, 0 for <code> niet waar </code> en 1 voor <code> waar
+                 <li> Een Boolean waarde is een enkele bit, 0 voor <code> niet waar </code> en 1 voor <code> waar
                      </code>. </li>
                  <li> Een stuk tekst is een reeks codes voor Unicode symbolen, waarvan iedere code wordt opgeslagen als
                      een heel getal. </li>
@@ -208,7 +209,7 @@
              <div id="hint-data-types" class="collapse">
                  <p> In goed ontworpen talen (zoals talen gebaseerd op Scheme) zit het data-type vast aan de waarde
                      zelf. In andere talen is het zo dat wanneer je een variabele aanmaakt, je moet zeggen wat voor type
-                     waarde het variabele zal bevatten. Dan zit het data-type dus vast aan de <em>variabele</em>.
+                     waarde de variabele zal bevatten. Dan zit het data-type dus vast aan de <em>variabele</em>.
 
                      <!--Zodra iemand dit uit kan leggen (zie h6l2p2) uncomment het maar
                      In well-designed languages (those based on Scheme, for example), that data type code is attached to
@@ -236,7 +237,7 @@
                      <div class="assessment-data" type="multiplechoice" identifier="Which explains the 0?"
                          hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri1" shuffle="false">
                          <div class="prompt"> Een bepaald programma gebruikt 4 bits om hele getallen weer te geven.
-                             Wanneer dat programma 9 en 7 optelt is het resultaat 0. VInd de beste verklaring voor dit
+                             Wanneer dat programma 9 en 7 optelt is het resultaat 0. Vind de beste verklaring voor dit
                              resultaat. </div>
                          <div class="choice" identifier="c1">
                              <div class="text"> Er is iets fout gegaan met de data tijdens de som door een technische
