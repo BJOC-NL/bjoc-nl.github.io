@@ -1,7 +1,8 @@
-dit zijn de pagina's die worden opgegeven:
+De pagina's die worden opgegeven:
 1-17 22-35 40 42-48 64 120-121 148-156 161-173 178-183 191-193 229-234 237-249 253-257  301-316
+Dit zijn in totaal 114 pagina's.
 
-dit zijn de referenties:
+De referenties:
 1-introduction/5-intro-bits-games/3-tanya-rider.html: pages 1-4
 1-introduction/5-intro-bits-games/5-good-or-bad.html: pages 13-17
 1-introduction/5-intro-bits-games/5-good-or-bad.html: pages 4-13
