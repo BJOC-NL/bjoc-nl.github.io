@@ -20,7 +20,7 @@
     <div class="full">
         <h2>Het Digitale Domein: Architectuur</h2>
 
-        <div class="learn"><strong>Op deze pagina</strong>, gaan we in plaats van naar software naar hardware kijken.
+        <div class="learn"><strong>Op deze pagina</strong>, gaan we in plaats van naar software, kijken naar hardware.
             Het eerste onderwerp is
             <em>architectuur,</em> wat praktisch is hoe de software de hardware ziet.</div>
 
@@ -54,7 +54,7 @@
             <h4><strong>De Difference Engine</strong></h4>
             <p>Babbage's eerste computer was de Difference Engine (Verschilmotor).Hij gebruikten tandwielen om een
                 ingewikkelde machine te ontwerpen die tabellen met getallen kon berekenen en printen (bijvoorbeld
-                tabellen van logaritme functies). Maar deze tandwielen moesten heel precies zijn en ieder tandwiel moest
+                tabellen van logaritme-functies). Maar deze tandwielen moesten heel precies zijn en ieder tandwiel moest
                 met de hand gemaakt worden. Het project werd zo duur dat de overheid de financiering stop moest zetten
                 en Babbage maakte het project nooit af.
             </p>
@@ -86,17 +86,20 @@
                     <p> In de tijd van Babbage werden dergelijke numerieke tabellen met de hand berekend door menselijke
                         wiskundigen, en ze werden met de hand gezet om te worden afgedrukt. Zowel de berekening als het
                         kopiëren naar print waren foutgevoelig, en nauwkeurige tabellen waren nodig voor doeleinden
-                        variërend van engineering tot navigatie. </p>
+                        variërend van engineering tot navigatie.
+                    </p>
                     <p> Babbage bouwde eerst een kleine Difference Engine in 1822. Deze eerste poging bewees dat een
-                        Difference Engine mogelijk was, maar het had niet de precisie (aantal cijfers voor elk getal) om
+                        Difference Engine mogelijk was, maar het had niet de precisie (aantal cijfers in elk getal) om
                         praktisch te zijn. In 1823 financierde de Britse overheid Babbage om een ​​grotere versie te
                         bouwen. Helaas konden metaalsmeden in zijn tijd niet erg precieze tandwielen in grote
                         hoeveelheden produceren; elk moest handgemaakt zijn. Dus had hij hij tien keer zijn
-                        goedgekeurde budget besteed tegen de tijd dat de overheid het project in 1842 stopzette.</p>
+                        goedgekeurde budget besteed tegen de tijd dat de overheid het project in 1842 stopzette.
+                    </p>
                     <p> In 1991 voltooide het London Science Museum een Difference Engine volgens het oorspronkelijke
                         ontwerp van Babbage met behulp van tandwielen gemaakt door moderne processen, maar op het niveau
                         van precisie dat beschikbaar was voor Babbage. Dit bewees dat Babbage in principe een werkende
-                        machine had kunnen voltooien met voldoende tijd en geld. </p>
+                        machine had kunnen voltooien met voldoende tijd en geld.
+                    </p>
                 </div>
             </p>
 
@@ -133,13 +136,13 @@
             <p>
                 <a href="#hint-analytical" data-toggle="collapse"> Leer meer over de Analytical Engine.</a>
                 <div id="hint-analytical" class="collapse">
-                    <p>De Analytical Engine, had net als moderne computers, een rekenkundige processor (genaamd de
+                    <p> De Analytical Engine, had net als moderne computers, een rekenkundige processor (genaamd de
                         "molen") en een apart geheugen (de "winkel") die 1000 getallen kon bijhouden, ieder tot en met
-                        40
-                        cijfers. De molen voerde rekenkundige handelingen uit in decimalen (met cijfers 0-9 verdeeld
+                        40 cijfers.
+                        De molen voerde rekenkundige handelingen uit in decimalen (met cijfers 0-9 verdeeld
                         over ieder tandwiel); het gebruik van "enen en nullen" kwam pas later.
                     </p>
-                    <p>De programmeertaal die gebruikt werd in de Analytical Engine had ook condities en lussen, wat
+                    <p> De programmeertaal die gebruikt werd in de Analytical Engine had ook condities en lussen, wat
                         alles is dat je nodig hebt om een algoritme te maken. (Het kon lussen maken omdat het voorwaarts
                         en achterwaarts door de ponskaarten kon gaan.)
                     </p>
@@ -172,7 +175,8 @@
                         van Ada Lovelace over zijn ontwerp. Haar aantekeningen omvatten het eerste <em> gepubliceerde
                         </em> programma voor de Analytical Engine, en daarom wordt ze algemeen beschouwd als "de eerste
                         programmeur", hoewel het bijna zeker is dat Babbage zelf verschillende voorbeeldprogramma's
-                        heeft geschreven tijdens het ontwerpen van de machine. </p>
+                        heeft geschreven tijdens het ontwerpen van de machine.
+                    </p>
                     <p> Of ze nu echt de eerste programmeur was of niet, historici zijn het erover eens dat ze iets
                         belangrijkers heeft gedaan: ze heeft het idee van <em> symbolische </em> berekening
                         (inclusief tekst, afbeeldingen, muziek, etc.) naar numerieke berekening uitgevonden. Dit
@@ -186,24 +190,26 @@
         <p>De Analytical Engine (boven beschreven) was de eerste programmeerbare computerarchitectuur.
             De processor in de computer die je nu gebruikt begrijpt maar één taal: zijn eigen <em>machinetaal</em>, geen
             Java, C of Snap<em>!</em>, of iets anders. Programma's die geschreven zijn in die andere talen moeten eerst
-            vertaald worden naar machinetaal. </p>
+            vertaald worden naar machinetaal.
+        </p>
         <p> Het belangrijkste van de architectuur is de machinetaal. De set instructies van zeer laag niveau die de
             hardware begrijpt. Deze taal is een soort contract tussen de hardware en de software: De hardware belooft de
             instructies te begrijpen en de software compileert programma's van mens-vriendelijke taal naar deze
-            instructies.</p>
+            instructies.
+        </p>
 
         <div class="vocabFullWidth">
-            <p><strong>Machinetaal</strong> is programmeertaal op het laagste niveau; het wordt direct begrepen door de
-                hardware.
+            <p><strong>Machinetaal</strong> is de programmeertaal op het laagste niveau; het wordt direct begrepen door
+                de hardware.
             </p>
             <p><strong>Architectuur</strong> is een abstractie, een specificate van de machinetaal. Het zegt ook hoe de
                 processor verbonden is met het geheugen. Het specificeert niets van de circuits; dezelfde architectuur
                 kan op meerdere manieren worden gebouwd qua circuits.
 
         </div>
-        <p> Een belangrijk onderdeel van een architectuur is het aantal draden dat de processor en het geheugen met
-            elkaar verbindt. Dit wordt de <em> breedte </em> van de architectuur genoemd, gemeten in <em> bits </em>
-            (aantal draden). Een bredere computer kan meer gegevens in één instructie verwerken. </p>
+        <p> Een belangrijk onderdeel van een architectuur is het aantal draden dat de processor met het geheugen
+            verbindt. Dit wordt de <em> breedte </em> van de architectuur genoemd, gemeten in <em> bits </em>
+            (aantal draden). Een computer met een hogere breedte kan meer gegevens in één instructie verwerken. </p>
 
         <div class="endnote">
             <a href="#hint-machine-language" data-toggle="collapse">Hoe ziet machinetaal eruit?</a>
@@ -229,14 +235,18 @@ movl    %edi, (%rcx)</pre>
                 <div id="hint-assembly" class="collapse">
                     <p>De eerste drie instructies laden de <em>adressen</em> van de drie variabelen in de registers in
                         de processor. De namen met een percentage-teken zoals <code>%rcx</code> verwijzen naar
-                        specifieke registers.<code>Movq</code> is de naam van een machinetaalinstructie. (Het is een
+                        specifieke registers.
+                        <code>Movq</code> is de naam van een machinetaalinstructie.
+                        (Het is een
                         afkorting voor "move quote", wat betekent dat we een constante waarde in een register plaatsen.
                         Merk op dat <var>a</var> een variabele is, maar <em>het adres van</em> <var>a</var> is een
-                        constante waarde, omdat de variabele niet wordt verplaatst in het geheugen.)</p>
+                        constante waarde, omdat de variabele niet wordt verplaatst in het geheugen.)
+                    </p>
                     <p> De volgende instructie, <code>movl</code> ("move long"), zegt dat een woord van de ene plek naar
                         de andere moet worden verplaatst. Als een registernaam tussen haakjes staat zoals
                         <code>(%rsi</code> dan betekent dat dat we locatie in het geheugen gebruiken van wie het adres
-                        in dat register staat. Omdat de derde <code>movq</code> het adres van <var>a</var> in register
+                        in dat register staat.
+                        Omdat de derde <code>movq</code> het adres van <var>a</var> in register
                         <code>%rsi</code> heeft geplaatst zegt de eerste <code>movl</code> dat de variabele <var>a</var>
                         van het geheugen in de processorregister moet worden geplaatst.
                         De instructie <code>addl</code> zegt dat <var>b</var> moet worden toegevoegd aan hetzelfde
@@ -244,8 +254,8 @@ movl    %edi, (%rcx)</pre>
                         geplaatst van variabele <var>c</var>.
                     </p>
                 </div>
-                <p>Je wil niet moeten programmeren in deze taal! En dat <em> hoeft ook niet</em> ; moderne architecturen
-                    zijn ontworpen voor compilers, niet voor machinetaalprogrammeurs.
+                <p> Je wil niet moeten programmeren in deze taal! En dat <em> hoeft ook niet</em> ; moderne
+                    architecturen zijn ontworpen voor compilers, niet voor machinetaalprogrammeurs.
                 </p>
             </div>
         </div>
@@ -264,18 +274,22 @@ movl    %edi, (%rcx)</pre>
                             zijn 32-bit (sinds 1985) en 64-bit (sinds 2003) versies ontwikkeld. Zelfs met alle
                             verfijningen van de architectuur zijn de nieuwe x86-processors bijna altijd
                             <em> backwards compatible </em> wat betekent dat de versies van vandaag nog steeds
-                            programma's uitvoeren die zijn geschreven voor de originele 8086. </p>
+                            programma's uitvoeren die zijn geschreven voor de originele 8086.
+                        </p>
                         <p> Waarom is de x86-architectuur de wereld gaan regeren? Het korte antwoord is dat IBM het in
                             hun oorspronkelijke pc gebruikte en dat alle latere pc-fabrikanten hun voorbeeld volgden
-                            zodat ze IBM-compatibele software ongewijzigd konden uitvoeren. Maar waarom koos IBM voor de
-                            x86? Er waren aantoonbaar beter concurrerende architecturen beschikbaar, zoals de Motorola
-                            68000 en de eigen 801 van IBM. De pc-ontwerpers hadden ruzie over wat ze moesten gebruiken,
-                            maar uiteindelijk maakte het verschil de lange geschiedenis van IBM van het werken met
-                            Intel. </p>
+                            zodat software die op een IBM computer werkt, ook op hun computer werkt. Maar waarom koos
+                            IBM voor de x86?
+                            Er waren aantoonbaar beter concurrerende architecturen beschikbaar, zoals
+                            de Motorola 68000 en de eigen 801 van IBM. De pc-ontwerpers hadden ruzie over wat ze moesten
+                            gebruiken, maar uiteindelijk maakte het verschil de lange geschiedenis van samenwerking van
+                            IBM en Intel.
+                        </p>
                         <p> De Apple Macintosh gebruikte oorspronkelijk de Motorola 68000-architectuur en in 1994
                             ontwierp Apple zijn eigen PowerPC-architectuur in een gezamenlijk project met IBM en
                             Motorola, maar in 2006 schakelden ze ook over op de x86, omdat Intel nieuwere, snellere
-                            versies van de x86 blijft produceren, vaker dan andere bedrijven kunnen bijhouden. </p>
+                            versies van de x86 blijft produceren, vaker dan andere bedrijven kunnen bijhouden.
+                        </p>
                     </div>
                 </li>
                 <li>
@@ -283,12 +297,13 @@ movl    %edi, (%rcx)</pre>
                     <div id="hint-architecture-phone" class="collapse">
                         <p> Alles van smartphone-architectuur wordt bepaald door de kleine ruimte in de behuizing. De
                             hoogte en breedte van de telefoon worden beperkt door de grootte van de zakken in de kleding
-                            van
-                            mensen. <em> (Houd je telefoon niet in je achterbroekzak. Dat is echt slecht, zowel voor de
-                                telefoon als voor je rug.) </em> De voorkant-naar-achterkantdiepte van een telefoon kan
-                            veel groter zijn dan nu vaak het geval is , maar om de een of andere reden concurreren
-                            telefoonfabrikanten op de dunheid van hun telefoons, waardoor ontwerpers nog minder ruimte
-                            hebben. </p>
+                            van mensen.
+                            <em> (Houd je telefoon niet in je achterbroekzak. Dat is echt slecht, zowel voor
+                                de telefoon als voor je rug.) </em>
+                            De dikte van een telefoon kan veel groter zijn dan nu vaak het
+                            geval is , maar om de een of andere reden concurreren telefoonfabrikanten op de dunheid van
+                            hun telefoons, waardoor ontwerpers nog minder ruimte hebben.
+                        </p>
                         <p> Als gevolg hiervan zijn veel componenten die gescheiden zouden zijn van de processorchip in
                             een computer, onderdeel van de processorchip in een telefoon. Deze componenten
                             kunnen bestaan uit een mobiele modem, een WiFi-modem, een grafische processor
@@ -301,12 +316,12 @@ movl    %edi, (%rcx)</pre>
                         <p> Intel heeft een x86-gebaseerde (dat wil zeggen dezelfde architectuur die op pc's wordt
                             gebruikt) low-power SoC gemaakt genaamd de Atom, die werd gebruikt in een paar
                             Motorola-telefoons en andere telefoons die zijn gemaakt door bedrijven waar je nog nooit van
-                            hebt
-                            gehoord. Het is gemaakt om Android-, Linux- en Windows-telefoons te ondersteunen. </p>
+                            hebt gehoord. Het is gemaakt om Android-, Linux- en Windows-telefoons te ondersteunen. </p>
                         <p> Maar de overgrote meerderheid van de telefoons gebruikt de ARM-architectuur, die (in
                             tegenstelling tot de x86) vanaf het begin is ontworpen als een energiezuinige architectuur.
                             Het acroniem staat voor Advanced RISC Machine. Het is beschikbaar in 32-bit- en
-                            64-bitconfiguraties. </p>
+                            64-bitconfiguraties.
+                        </p>
 
                         <div class="endnote">
                             <a href="#hint-risc" data-toggle="collapse">What is een RISC?</a>
@@ -329,7 +344,8 @@ movl    %edi, (%rcx)</pre>
                                     in een CISC-architectuur de instructielengtes kunnen variëren. Deze verschillen zijn
                                     belangrijk omdat een RISC de volgende instructie kan laden voordat deze klaar is met
                                     de vorige instructie en een RISC nooit meer dan één geheugengegevensreferentie per
-                                    instructie heeft. </p>
+                                    instructie heeft.
+                                </p>
                                 <p> Dus waarom gebruiken ze geen RISC architectuur in pc's? Ooit gebruikte Apple een
                                     RISC-processor genaamd de PowerPC in zijn Macintosh-computers, maar de overgrote
                                     meerderheid van de verkochte computers zijn pc's, geen Mac's, en als gevolg daarvan
@@ -337,14 +353,16 @@ movl    %edi, (%rcx)</pre>
                                     de x86-architectuur implementeren. De moraal gaat over de interactie tussen
                                     verschillende abstractieniveaus: een betere architectuur kan worden overwonnen door
                                     een beter circuitontwerp of betere technologie om componenten in een geïntegreerd
-                                    circuit te proppen. </p>
+                                    circuit te proppen.
+                                </p>
                             </div>
                         </div>
                         <p> Het bedrijf dat de ARM heeft ontworpen, genaamd ARM Holdings, bouwt eigenlijk geen
                             processors. Ze verlenen een licentie voor het architectuurontwerp of circuitontwerp aan
                             andere bedrijven die ARM-processors integreren in SoC's. Grote bedrijven
                             die op ARM gebaseerde processorchips bouwen, zijn Apple, Broadcom, Qualcomm en Samsung.
-                            Fabrikanten van smartphones kopen chips van een van deze bedrijven. </p>
+                            Fabrikanten van smartphones kopen chips van een van deze bedrijven.
+                        </p>
                     </div>
                 </li>
                 <li>
@@ -356,12 +374,12 @@ movl    %edi, (%rcx)</pre>
                             Moderne auto's bevatten <em> meerdere </em> computers, grotendeels om veiligheidsredenen; je
                             zou niet willen dat de remmen falen omdat de dvd-speler een probleem heeft. Het doel, zoals
                             beschreven door onderzoekers in de informatica, is "smart dust" (slim stof), wat betekent
-                            dat veel
-                            computers onopgemerkt door een gebouw kunnen zweven. Wat heb je aan een onopgemerkte
-                            computer? Dit is een klassieke technologie voor dubbel gebruik. Het nuttige gebruik waar
-                            iedereen het over heeft, is noodhulp bij rampen; het zou een grote hulp zijn voor de
-                            brandweer om van buitenaf te weten in welke ruimtes van een gebouw mensen aanwezig zijn.
-                            Maar een ander gebruik voor deze technologie zou spioneren zijn. </p>
+                            dat veel computers onopgemerkt door een gebouw kunnen zweven. Wat heb je aan een
+                            onopgemerkte computer? Dit is een klassieke technologie voor dubbel gebruik. Het nuttige
+                            gebruik waar iedereen het over heeft, is noodhulp bij rampen; het zou een grote hulp zijn
+                            voor de brandweer om van buitenaf te weten in welke ruimtes van een gebouw mensen aanwezig
+                            zijn. Maar een ander gebruik voor deze technologie zou spioneren zijn.
+                        </p>
 
                         <p class="indent">
                             <img src="../../afb/h6/l1/p6-o6.jpg" alt="Geen Afbeelding"><br />
@@ -369,20 +387,21 @@ movl    %edi, (%rcx)</pre>
                         </p>
                         <p> Voor ingebouwde computers zijn de belangrijkste ontwerpcriteria kleine afmetingen en een
                             laag stroomverbruik. De chip in de bovenstaande afbeelding is gebaseerd op de
-                            ARM-architectuur,
-                            zoals de meeste mobiele telefoons. Dat is eigenlijk een <em> grote </em> chip voor
-                            ingebouwde
-                            systemen; de Kinetis KL02 MCU (microcontroller-eenheid) past in een vierkant van 2
-                            millimeter. Dat is nog steeds te groot om als stof in de lucht te
-                            zweven, maar stel je het voor op de muur in een kleverige container. </p>
+                            ARM-architectuur, zoals de meeste mobiele telefoons. Dat is eigenlijk een <em> grote </em>
+                            chip voor ingebouwde systemen; de Kinetis KL02 MCU (microcontroller-eenheid) past in een
+                            vierkant van 2 millimeter. Dat is nog steeds te groot om als stof in de lucht te zweven,
+                            maar stel je het voor op de muur in een kleverige container.
+                        </p>
                         <p> Op een dag zal het spioneren nog effectiever zijn (samen met, hopelijk, behandeling voor
                             hersenziekten): <a
                                 href="https://www.engadget.com/2017/05/17/arm-targets-your-brain-with-new-implantable-chips/"
                                 target="_blank">ARM richt zich op je brein met nieuwe implanteerbare chips (Engels)</a>
-                            (Engadget, 5/17/2017).</p>
+                            (Engadget, 5/17/2017).
+                        </p>
                         <p> Intel maakte in 2015 een x86-compatibele chip ter grootte van een knop, maar kondigde in
                             2017 aan dat dit zo zou zijn stopgezet, waardoor alleen ARM- en PowerPC-gebaseerde
-                            processors op de markt blijven concurreren. </p>
+                            processors op de markt blijven concurreren.
+                        </p>
                     </div>
                 </li>
                 <li>
@@ -394,7 +413,8 @@ movl    %edi, (%rcx)</pre>
                             om naar computerlokalen op de universiteit te gaan, vaak door zichzelf daar nuttig te maken.
                             Tegenwoordig zijn er veel meer krachtige computers die goedkoop genoeg zijn dat hobbyisten
                             ze uit elkaar willen halen. Maar er zijn enkele computerarchitecturen <em> specifiek </em>
-                            bedoeld voor hobbyisten. </p>
+                            bedoeld voor hobbyisten.
+                        </p>
                         <img class="imageRight" src="../../afb/h6/l1/p6-o7.jpg" alt="Geen Afbeelding" />
                         <p> Veruit de meest populaire computer specifiek voor hobbyisten is de Arduino. Het is een
                             printplaat, niet alleen een processor. Rond de randen van het bord zitten connectoren. Aan
@@ -405,25 +425,29 @@ movl    %edi, (%rcx)</pre>
                             programma's te downloaden van een desktop of laptop computer. Aan de lange randen bevinden
                             zich connectoren voor afzonderlijke draden die zijn aangesloten op externe sensoren (voor
                             licht, warmte, bij een muur zijn, een ander object aanraken, enz.) Of actuatoren
-                            (stappenmotoren, lichten, zoemers, enz.). </p>
+                            (stappenmotoren, lichten, zoemers, enz.).
+                        </p>
                         <p> Een belangrijk aspect van het Arduino-ontwerp is dat het <em> vrij </em> is ("vrij als
                             in vrijheid"). Iedereen kan de Arduino maken en zelfs verkopen. Dit is goed
                             omdat het de prijs laag houdt (het standaard Arduino Uno-bord kost $ 22) en stimuleert
                             innovatie, maar het betekent ook dat er incompatibele Arduino-achtige boards kunnen zijn.
                             (De naam "Arduino" is een handelsmerk dat alleen kan worden gebruikt met een licentie van
-                            Arduino AG.) </p>
+                            Arduino AG.)
+                        </p>
                         <p> De processor in de meeste Arduino-modellen is een 8-bit RISC-systeem met geheugen in de
                             chip, genaamd AVR, van een bedrijf genaamd Atmel. Het werd ontworpen door twee
                             (toenmalige) studenten in Noorwegen, Alf-Egil Bogen en Vegard Wollan genaamd. Hoewel
                             officieel "AVR" nergens voor staat, wordt algemeen aangenomen dat het afkomstig is van " Alf
                             en Vegard hun RISC". Er zijn verschillende versies van de AVR-processor, met verschillende
                             snelheden, geheugencapaciteiten en natuurlijk prijzen; er zijn verschillende
-                            Arduino-modellen die de verschillende processors gebruiken. </p>
+                            Arduino-modellen die de verschillende processors gebruiken.
+                        </p>
                         <p> In tegenstelling tot de meeste ("von Neumann-architectuur") computers, scheidt de AVR
                             ("Harvard-architectuur") programmageheugen van gegevensgeheugen. (Het heeft eigenlijk <em>
                                 drie </em> soorten geheugen, een voor het actieve programma, een voor gegevens op korte
                             termijn en een voor gegevens op lange termijn.) De Analytical Engine van Babbage is ook
-                            ontworpen met een programmageheugen dat los staat van zijn data geheugen. </p>
+                            ontworpen met een programmageheugen dat los staat van zijn data geheugen.
+                        </p>
 
                         <div class="endnote">
                             <a href="#hint-Harvard" data-toggle="collapse">
@@ -501,7 +525,8 @@ movl    %edi, (%rcx)</pre>
                                             die
                                             het veel goedkoper maakt (dus er kan meer van zijn in de Arduino), maar
                                             ingewikkelder om te gebruiken, waarvoor speciale besturingsschakelingen
-                                            nodig zijn om de digitale abstractie te behouden. <ul>
+                                            nodig zijn om de digitale abstractie te behouden.
+                                            <ul>
                                                 <li> "Meer gecompliceerd" betekent bijvoorbeeld dat het wijzigen van een
                                                     bitwaarde van 1 naar 0 eenvoudig is, maar het wijzigen van 0 naar 1
                                                     is een veel langzamer proces waarbij een groot geheugenblok moet
@@ -512,14 +537,15 @@ movl    %edi, (%rcx)</pre>
                                         </li>
                                     </ul>
                                 </p>
-                                <p> Daarom zijn er fysiek verschillende soorten geheugens in de AVR-chips, maar niets
+                                <p> Daarom zijn er verschillende soorten fysiek geheugens in de AVR-chips, maar niets
                                     daarvan verklaart de Harvard-architectuur volledig, waarin geheugen is verdeeld in
                                     <em> programma's </em> en <em> gegevens, </em> ongeacht hoe lang de gegevens moeten
                                     bestaan. De belangrijkste reden om twee verschillende
                                     geheugeninterfacecircuits te hebben, is dat het de processor toestaat
                                     tegelijkertijd een programma-instructie en een gegevenswaarde <em> te lezen.
                                     </em> Dit kan de processor in principe twee keer zo snel maken, hoewel niet
-                                    veel snelheidswinst wordt gevonden in de praktijk. </p>
+                                    veel snelheidswinst wordt gevonden in de praktijk.
+                                </p>
                                 <p> Om het voordeel van gelijktijdige instructie en het lezen van gegevens te begrijpen,
                                     moet je begrijpen dat processoren vaak zijn ontworpen met behulp van een idee
                                     genaamd <em> pipelining. </em> De standaard metafoor gaat over het doen van de was
@@ -530,49 +556,61 @@ movl    %edi, (%rcx)</pre>
                                     te rekenen. Als de processor één ding tegelijk doet, doet het
                                     instructie-decodeercircuit of het rekencircuit op elk moment niets.
                                     Maar als je de volgende instructie kunt lezen terwijl je de vorige uitvoert, blijft
-                                    de hele processor bezig. </p>
+                                    de hele processor bezig.
+                                </p>
                                 <p> Dit was een lange verklaring, maar het is nog steeds enorm vereenvoudigd. Ten eerste
                                     is het mogelijk om pipelining ook in een von Neumann-architectuur te gebruiken. En
                                     daarbij, een <em> pure </em> Harvard-architectuur zou een computer niet
                                     toestaan ​​om programma's te laden die de computer zelf uitvoert. In de praktijk
-                                    worden dus verschillende compromissen gebruikt. </p>
+                                    worden dus verschillende compromissen gebruikt.
+                                </p>
                             </div>
+
                         </div>
+
                         <p> Atmel heeft sindsdien een reeks van ARM-compatibele 32-bits processors geïntroduceerd en
                             Arduino heeft boards die die processor gebruiken, maar compatibel met de lay-out van de
-                            connectoren aan de randen. </p>
+                            connectoren aan de randen.
+                        </p>
                         <p> Een ding heeft bijgedragen aan de populariteit van de Arduino bij hobbyisten is de
                             beschikbaarheid van <em> shields, </em>. Dit zijn extra printplaten die op de
                             zijrandconnectoren worden aangesloten en dezelfde connectoren aan hun bovenkant hebben.
                             Shields voegen functies toe aan het systeem. Voorbeelden zijn motorbesturingsshields,
                             Bluetooth-shields voor communicatie met mobiele telefoons, RFID-shields om die
                             productlabels te lezen die je in de verpakking van veel producten vindt, enzovoort. Zowel
-                            het bedrijf Arduino als anderen verkopen shields. </p>
+                            het bedrijf Arduino als anderen verkopen shields.
+                        </p>
                         <div class="sidenote">
                             <small>Een aantal Arduino-shields</small><br />
                             <small><small>Afbeelding van Wikimedia genruiker Marlon J. Manrique, CC-BY-SA
                                     2.0.</small></small>
                         </div>
+
                         <img class="indent" src="../../afb/h6/l1/p6-o8.jpg" width="250px" alt="Geen Afbeelding" />
+
                         <p> Een geheel andere hobbyarchitectuur is de <em> Raspberry Pi. </em> Het is ontworpen om te
                             worden gebruikt als een desktop- of laptopcomputer, maar met meer toegang tot de
                             elektronica. Het maakt gebruik van een ARM-compatibele processor, zoals de meeste mobiele
                             telefoons, maar in plaats van het uitvoeren van besturingssoftware voor telefoons zoals
                             Android, draait het "echte" computerbesturingssystemen. Het wordt geleverd met Linux, maar
-                            mensen gebruiken het ook met Windows. </p>
+                            mensen gebruiken het ook met Windows.
+                        </p>
                         <p> Het belangrijkste dat het speciaal maakt, is dat het goedkoop is: verschillende modellen
                             variëren in prijs van $ 5 tot $ 35. Die prijs bevat alleen de printplaat, zoals op de
                             afbeelding, zonder een toetsenbord, display, muis, voedingsadapter of een hoes. De grootste
                             kostenpost in kitcomputers is het display, dus de Pi is ontworpen om op je tv aan te
                             sluiten. Je kunt kits kopen met een minimale behuizing, een toetsenbord en andere
                             belangrijke add-ons voor ongeveer $ 20. Je kunt ook luxe hoesjes kopen om het eruit te laten
-                            zien als elke andere computer, met een display, voor honderden dollars. </p>
+                            zien als elke andere computer, met een display, voor honderden dollars.
+                        </p>
                         <p> Omdat de Pi bedoeld is voor educatief gebruik, wordt deze geleverd met software, waarvan
                             sommige gratis is, maar waarvan sommige over het algemeen geld kost voor
                             niet-Pi-computers. Een belangrijk voorbeeld is Mathematica, dat meer dan $ 200 kost voor
-                            studenten (hun goedkoopste prijs), maar gratis is inbegrepen op de Pi. </p>
+                            studenten (hun goedkoopste prijs), maar gratis is inbegrepen op de Pi.
+                        </p>
                         <p> Net als de Arduino ondersteunt de Pi add-on printplaten met dingen zoals sensoren en
-                            draadloze communicatiemodules. </p>
+                            draadloze communicatiemodules.
+                        </p>
                         <div class="sidenote">
                             <small>Raspberry Pi board</small><br />
                             <small><small>Afbeelding van Evan Amos, via Wikimedia, publiek domein</small></small>
@@ -587,23 +625,23 @@ movl    %edi, (%rcx)</pre>
                 Leer meer over computerarchitectuur in het algemeen.
             </a>
             <div id="hint-architecture-general" class="collapse">
-
                 <h4> De Geheugenhiërarchie </h4>
+
                 <p> Een gegeven van circuithardware is, <strong> hoe groter het geheugen, hoe langzamer het werkt.
                     </strong> om deze reden hebben computers niet alleen een grote hoop geheugen. Er zal een
                     klein aantal <em> registers </em> in de processor zelf zijn, meestal tussen de 8 en 16. De "grootte"
-                    (aantal bits) van een gegevensregister is gelijk aan de breedte van de architectuur. </p>
+                    (aantal bits) van een gegevensregister is gelijk aan de breedte van de architectuur.
+                </p>
                 <p> Het hoofdgeheugen van de computer wordt tegenwoordig gemeten in GB (gigabytes of miljarden bytes).
                     Een geheugen van die omvang kan niet snel genoeg zijn om een ​​moderne processor bij te houden.
                     Gelukkig hebben computerprogramma's over het algemeen <em> plaats van referentie </em>, wat betekent
-                    dat
-                    als het programma net gebruik heeft gemaakt van een bepaalde geheugenlocatie, het waarschijnlijk een
-                    nabijgelegen locatie hierna zal gebruiken. Dus een compleet programma kan heel groot zijn, maar in
-                    de loop
-                    van een seconde zal er maar een klein deel van nodig zijn. Daarom zijn moderne computers ontworpen
-                    met een of meer <em> cache </em> -geheugens - veel kleiner en daarom sneller - tussen de processor
-                    en het hoofdgeheugen. De processor zorgt ervoor dat het meest recent gebruikte geheugen naar de
-                    cache wordt gekopieerd. </p>
+                    dat als het programma net gebruik heeft gemaakt van een bepaalde geheugenlocatie, het waarschijnlijk
+                    een nabijgelegen locatie hierna zal gebruiken. Dus een compleet programma kan heel groot zijn, maar
+                    in de loop van een seconde zal er maar een klein deel van nodig zijn. Daarom zijn moderne computers
+                    ontworpen met een of meer <em> cache </em> -geheugens - veel kleiner en daarom sneller - tussen de
+                    processor en het hoofdgeheugen. De processor zorgt ervoor dat het meest recent gebruikte geheugen
+                    naar de cache wordt gekopieerd.
+                </p>
                 <p> Een recente 64-bit x86-processor heeft een eerste niveau (L1) cache van 64 KB (duizenden bytes) in
                     de processorchip, een grotere maar langzamere L2-cache van 256 KB, ook in de processor, en een
                     L3-cache van maximaal 2 MB (megabytes, miljoenen bytes) buiten de processor. Elk niveau van cache
@@ -612,7 +650,8 @@ movl    %edi, (%rcx)</pre>
                     hoofdgeheugen kopieert. Gegevens in de L1-cache zijn ongeveer even snel toegankelijk voor de
                     processor als de interne registers en elk niveau naar buiten is iets langzamer. Hardware in de
                     processor verwerkt al deze complexiteit, zodat programmeurs programma's kunnen schrijven alsof de
-                    processor rechtstreeks op het hoofdgeheugen is aangesloten. </p>
+                    processor rechtstreeks op het hoofdgeheugen is aangesloten.
+                </p>
 
                 <h4>Second sourcing</h4>
                 <p> Intel geeft licenties aan andere chipfabrikanten om processors te bouwen die dezelfde architectuur
@@ -625,7 +664,8 @@ movl    %edi, (%rcx)</pre>
                     handelen. Maar als die processor ook verkrijgbaar is bij andere bedrijven zoals AMD en Cyrix, dan
                     zal een vertraging bij Intel geen vertraging worden bij Dell. Die andere chipfabrikanten gebruiken
                     mogelijk niet dezelfde circuits als de Intel-versie, zolang ze zich maar hetzelfde gedragen op
-                    architectuurniveau. </p>
+                    architectuurniveau.
+                </p>
             </div>
         </div>
         <div class="takeItFurther">
