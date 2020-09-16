@@ -24,16 +24,16 @@
                 in een computer.
             </p>
             <p><strong>Op deze pagina,</strong> ga je leren over het idee van <em>bits</em> de basiseenheid van gegevens
-                in computers.
+                in een computer.
             </p>
         </div>
         <div class="vocab">
-            <p> Een <strong>bit</strong> is een enkele eenheid van data die maar twee mogelijke waardes kan hebben. We
-                beelden dit uit met 0 en 1.
+            <p> Een <strong>bit</strong> is een eenheid van data die maar twee mogelijke waardes kan hebben. We
+                beelden deze twee mogelijke waardes uit met 0 en 1.
             </p>
         </div>
-        <p> Zoals je weet verplaatst informatie zich via draden in de computer en door digitale abstractie is iedere
-            draad <em>aan</em> of <em>uit</em> en er zijn geen tussenliggende waarde mogelijk. Dit kleine beetje
+        <p> Zoals je weet verplaatst informatie in een computer zich via draden en door digitale abstractie is iedere
+            draad <em>aan</em> of <em>uit</em>, er zijn geen tussenliggende waarde mogelijk. Dit kleine beetje
             informatie noemen we een <strong>bit</strong>, de kleinst mogelijke eenheid in het digitale domein.
 
         </p>
@@ -41,22 +41,24 @@
             en 1, maar dat betekent niet dat het per se voor een getal staat. Een enkele bit kan staan voor:
 
             <ul>
-                <li>Niet Waar en Waar</li>
-                <li>Uit en Aan, om een lichtknop te simuleren</li>
-                <li>Rood en Groen, om een verkeerslicht te simuleren</li>
+                <li> Waar en Niet Waar</li>
+                <li> Aan en Uit, om een lichtknop te simuleren</li>
+                <li> Groen en Rood, om een verkeerslicht te simuleren</li>
                 <li> en nog veel meer.</li>
             </ul>
         </p>
         <p>
-            Maar wat als het verkeerslicht ook een gele waarde nodig heeft? Het is verleidelijk om te zeggen dat
-            bijvoorbeeld 0 volt op de draad rood betekent, 1 volt betekent geel en 2 volt betekent groen. Maar dan
-            zouden we alle problemen van elektrische ruis hebben waarvoor de digitale abstractie was ontworpen om te
-            voorkomen: een laag of hoog ingangssignaal wordt geïnterpreteerd als een duidelijk aan of uit, maar een
-            tussenliggende waarde wordt te gemakkelijk verkeerd geïnterpreteerd.
-            (Zie <a href="./H6L1P10.html"> Hoofdstuk 6 Les 1: Het Analoge Domein: Transistors</a>.)</p>
-        <p> In plaats daarvan gebruiken we <em> meer dan één bit </em> als we meer dan twee mogelijke waarden moeten
-            vertegenwoordigen. Dus voor het verkeerslicht kunnen we twee bits gebruiken: <table class="byte indent"
-                width="400px" summary="table of binary representation of traffic signal colors">
+            Maar wat als het verkeerslicht ook een oranje waarde nodig heeft? Het is verleidelijk om te zeggen dat
+            bijvoorbeeld 0 volt op de draad rood betekent, 1 volt betekent oranje en 2 volt betekent groen. Maar dan
+            zouden we alle problemen van elektrische ruis krijgen waarvoor de digitale abstractie juist ontworpen is om
+            te voorkomen. Het probleem met signalen met tussenliggende waardes is dat ze makkelijk verkeerd
+            geïnterpreteerd worden. Een signaal met een hoge of lage waarde wordt altijd geïnterpreteerd als een
+            duidelijke aan of uit.
+            (Zie <a href="./H6L1P10.html"> Hoofdstuk 6 Les 1: Het Analoge Domein: Transistors</a>.)
+        </p>
+        <p> In plaats van waardes tussen 0 en 1 gebruiken we om dit soort problemen op te lossen <em> meer dan één bit
+            </em>. Dus voor het verkeerslicht kunnen we twee bits gebruiken: <table class="byte indent" width="400px"
+                summary="table of binary representation of traffic signal colors">
                 <tr>
                     <th scope="col">eerste bit</th>
                     <th scope="col">tweede bit</th>
@@ -65,17 +67,17 @@
                 <tr>
                     <td style="text-align:right;">0&nbsp;</td>
                     <td style="text-align:left;">&nbsp;0</td>
-                    <td>&nbsp;rood</td>
+                    <td>&nbsp;<span style="color: red;"> rood</span></td>
                 </tr>
                 <tr>
                     <td style="text-align:right;">0&nbsp;</td>
                     <td style="text-align:left;">&nbsp;1</td>
-                    <td>&nbsp;geel</td>
+                    <td>&nbsp;<span style="color: orange;"> oranje</span></td>
                 </tr>
                 <tr>
                     <td style="text-align:right;">1&nbsp;</td>
                     <td style="text-align:left;">&nbsp;0</td>
-                    <td>&nbsp;groen</td>
+                    <td>&nbsp;<span style="color: green;"> groen</span></td>
                 </tr>
                 <tr>
                     <td style="text-align:right;">1&nbsp;</td>
@@ -85,15 +87,18 @@
             </table>
         </p>
         <p>
-            Er zijn vier mogelijke combinaties van twee bits, dus met twee bits kunnen we maximaal vier verschillende
-            waarden vertegenwoordigen, hoewel we er maar drie nodig hebben voor het verkeerslicht.</p>
+            Er zijn vier mogelijke combinaties van twee bits, dus met twee bits kunnen we vier verschillende
+            waardes vertegenwoordigen (00, 01, 10 en 11). We hebben er maar drie nodig voor het verkeerslicht dus 1
+            waarde wordt niet gebruikt.
+        </p>
         <div class="forYouToDo">
             <ol>
-                <li> Snap dat er niet meer combinaties zijn voor 2 bits.</li>
+                <li> Snap dat er niet meer combinaties zijn voor twee bits.</li>
                 <li> Schrijf alle mogelijke combinaties van <em>drie</em> bits op. Hoeveel zijn er? </li>
                 <li> Hoeveel mogelijkheden zijn er voor <em>vier</em> bits?</li>
             </ol>
         </div>
+
         <p> Ieder extra bit <em>verdubbelt</em> het aantal waardes dat je kan gebruiken. Dit betekent dat <em>complexe
                 situaties weergeven niet veel hardware kost</em>; 10 bits is genoeg voor meer dan 1000 waardes.
         </p>
@@ -105,45 +110,49 @@
             </ol>
         </div>
         <div class="vocabBig">
-            <p>Een <strong>byte</strong> is 8 bits.</p>
-            <p>Een <strong>woord</strong> is het aantal draden dat de processor verbindt met het geheugen. Vanaf 2019
-                kunnen woorden 32 of 64 bits zijn.
+            <p>Een <strong>byte</strong> is acht bits.</p>
+            <p>Een <strong>woord</strong> is het aantal draden dat de processor verbindt met het geheugen. Op dit
+                moment in 2020 is een woord 32 bits of 64 bits.
             </p>
         </div>
         <p>
-            Bits zijn niet duur, maar wat <em> wel </em> duur is, is de schakeling om de programmeur precies het
-            kleinste aantal bits voor een bepaald probleem te laten gebruiken. In plaats daarvan staan moderne computers
-            doorgaans geheugentoewijzing in slechts twee grootten toe: de <strong> byte </strong>, die is
-            gestandaardiseerd op acht bits, en het <strong> woord </strong>, waarvan de grootte bepaald wordt door het
-            aantal draden dat de processor verbindt met het geheugen. Vanaf 2017 kunnen woorden 32 bits of 64 bits breed
-            zijn.
+            BIts zijn niet duur, maar wat <em> wel </em> duur is, zijn de circuits om de programmeur precies het
+            kleinste aantal bits voor een bepaald probleem te laten gebruiken.
+            Daarom laten moderne computers je alleen bits in twee hoeveelheden gebruiken:
+            de <strong> byte </strong>, die is gelijk aan acht bits en het <strong> woord </strong>, waarvan de grootte
+            bepaald wordt door het aantal draden dat de processor van een computer verbindt met het geheugen. Op dit
+            moment in 2020 is een woord 32 bits of 64 bits.
         </p>
         <div class="takeNote">
             <div class="sidenote"> Het precieze antwoord voor 32 bits is 4,294,967,296 dus deze benadering zit best
                 dichtbij.
             </div>
             <p>
-                Hoeveel verschillende waarden kunnen in 32 bits worden weergegeven? Je hoeft het antwoord niet te
+                Hoeveel verschillende waardes kunnen in 32 bits worden weergegeven? Je hoeft het antwoord niet te
                 onthouden, omdat je het snel kunt benaderen met behulp van het feit dat 2 <sup> <small> 10 </small>
-                </sup> = 1024, dat is ongeveer 1000. Dit betekent dat elke tien bits van breedte het
+                </sup> = 1024, dat is ongeveer 1000. Dit betekent dat elke tien bits het
                 aantal waardes dat kan worden weergegeven met ongeveer 1000 vermenigvuldigt. Dus, 10 bits staan ongeveer
-                duizend waarden toe, 20 bits is ongeveer een miljoen waarden, 30 bits is ongeveer een miljard en 32
-                bits staat meer dan vier miljard waarden toe (omdat we verdubbelen het miljard nog twee keer voor het
-                verschil tussen 30 en 32).
+                1000 waardes toe, 20 bits ongeveer 1000,000 (een miljoen) waardes, 30 bits ongeveer 1000,000,000 (een
+                miljard). 32 bits staat meer dan vier miljard waardes toe, omdat we het miljard van 30 bits nog twee
+                keer
+                met 2 vermenigvuldigen.
             </p>
         </div>
-        <p> Vier miljard waardes klinkt alsof het genoeg zou moeten zijn, maar dat is niet zo als je een astronoom of
-            bankier bent. Je hebt ook geleerd in Hoofdstuk 4 dat 32 bits niet genoeg zijn om iedere computer een
-            internetadres te geven. Daarom hebben we nu 64-bitcomputers.
+
+        <p> Vier miljard waardes klinkt alsof het meer dan genoeg is voor ieder probleem dat je ooit tegen zou komen.
+            Dit is helaas niet zo als je een astronoom of bankier bent. Je hebt ook geleerd in Hoofdstuk 4 dat 32 bits
+            niet genoeg zijn om iedere computer een internetadres te geven. Daarom hebben we nu 64-bitcomputers.
         </p>
+
         <div class="forYouToDo">
             <ol start="7">
-                <li>Hoeveel verschillende waarden kunnen worden weergegeven in een 64-bitwoord? (Gebruik geen
-                    rekenmachine; gebruik de truc!)</li>
+                <li>Hoeveel verschillende waardes kunnen worden weergegeven met een 64-bitwoord? (Gebruik geen
+                    rekenmachine; gebruik het feit dat 10 bits ongeveer 1000 waardes bevat!)</li>
             </ol>
         </div>
-        <h3>Bytes en Karakters</h3>
-        <p>Het voornaamste gebruik van 8-bit bytes zijn tekstkarakters. </p>
+
+        <h3>Bytes en Tekens</h3>
+        <p>Het voornaamste gebruik van acht-bit bytes zijn tekens voor teksten. </p>
         <div class="forYouToDo">
             <ol start="8">
                 <li> Hoeveel bits heb je nodig om de 26 letters in het Engels en de tien cijfers 0-9 te
@@ -151,24 +160,26 @@
             </ol>
         </div>
         <div class="sidenote">
-            Het wijdverbreide gebruik van acht-bit ASCII is de belangrijkste historische reden waarom de acht-bit byte
-            standaard werd. (Een andere reden is dat computercircuits het gemakkelijkst kunnen omgaan met breedten die
+            Het wijdverbreide gebruik van acht-bit ASCII is de belangrijkste reden waarom de acht-bit byte de
+            standaard werd. (Een andere reden is dat computercircuits het gemakkelijkst kunnen omgaan met breedtes die
             machten van twee zijn.)
         </div>
+
         <p>
-            Computers gebruikten jarenlang zes-bit-brede karaktercodes, maar om zowel <em> HOOFDLETTERS </em> als <em>
-                kleine letters </em> en interpunctie te hebben, zijn zeven bits vereist. De eerste officieel
-            erkende karaktercodering was de zeven bits ASCII-set (American Standard Code for Information
-            Interchange). Het bevatte een optionele achtste bit voor foutdetectie, die werd overgenomen door tekens met
-            accenten in het Spaans, Frans, Duits en enkele andere Europese talen. Er is bijvoorbeeld een teken met een
-            accent in de naam van de hoofdontwikkelaar van Snap <em>! </em>, Jens Mönig, die Duits is.
+            Computers gebruikten vroeger coderingen van zes bits voor tekens , maar om zowel <em> HOOFDLETTERS
+            </em> als <em> kleine letters </em> als interpunctie te coderen, heb je zeven bits nodig. De eerste
+            officieel erkende symboolcodering was de zeven bits ASCII-set (American Standard Code for Information
+            Interchange). Het bevatte een optionele achtste bit voor foutdetectie, later werd die achtste bit gebruikt
+            voor letters met accenten die voorkomen in het schrift talen zoals Spaans, Frans, Duits. Er is bijvoorbeeld
+            een teken met een accent in de naam van de hoofdontwikkelaar van Snap <em>! </em>, Jens Mönig, die Duits is.
         </p>
         <p>
             Omdat het gebruik van computers en internet zich over de hele wereld verspreidde, wilden mensen Chinees,
-            Japans, Arabisch, Kabyle, Russisch, Tamil, enz. kunnen schrijven. De <em> Unicode </em>-set ondersteunt
-            ongeveer 1900 talen, gebruikmakend van 32 moderne alfabetten en 107 historische alfabetten die niet langer
-            in gebruik zijn. De complete Unicode-tekenset bevat 136.755 tekens.
+            Japans, Arabisch, Tifinagh, Cyrillisch, Tamil, enz. kunnen schrijven. De <em> Unicode </em>-set ondersteunt
+            daarvoor ongeveer 1900 talen, gebruikmakend van 32 moderne alfabetten en 107 alfabetten die niet langer in
+            gebruik zijn. De complete Unicode-tekenset bevat 136.755 tekens.
         </p>
+
         <div class="forYouToDo">
             <ol start="9">
                 <li> Wat is het minimum aantal bits dat nodig is om een Unicode-teken te vertegenwoordigen? </li>
@@ -178,16 +189,20 @@
                 De <em>daadwerkelijke</em> weergave van Unicode is ingewikkeld.</a>
             <div id="hint-unicode" class="collapse">
                 <p> De meest eenvoudige weergave van Unicode gebruikt één 32-bits woord per teken, wat meer dan genoeg
-                    is. Maar programmaontwikkelaars vinden dat een inefficiënt gebruik van computergeheugen, en
-                    ook, veel oude software die nog in gebruik is, werd geschreven toen acht bits per teken standaard
-                    was. Dus Unicode-tekens worden over het algemeen weergegeven in een <em> multi-byte </em> -weergave
-                    waarin de oorspronkelijke 128 ASCII-tekens één byte bezetten, terwijl andere tekens maximaal vier
-                    bytes kunnen vereisen. (Het is ook mogelijk om een reeks van meerdere bytes te gebruiken om je
-                    tekstverwerkingssoftware te laten weten dat je codes van één byte wilt gebruiken om een bepaald
-                    niet-Latijns alfabet te vertegenwoordigen.)
+                    is. Maar programmaontwikkelaars vinden dat een inefficiënt gebruik van computergeheugen,
+                    daarnaast wordt er nog steeds veel oude software gebruikt die uitgaat van acht bits per teken.
+                    Dus Unicode-tekens worden over het algemeen weergegeven in een <em> multi-byte </em> -weergave
+                    waarin de oorspronkelijke 128 ASCII-tekens acht bits gebruiken en alle nieuwe tekens 32 bits.
+                    (Het is ook mogelijk om je tekstverwerkingssoftware te laten weten dat je codes van één byte wilt
+                    gebruiken om een bepaald niet-Latijns alfabet weer te geven.)
+                    <!-- Tekst hierboven is de vertaling v hieronder, snap niet precies wat ze bedoelen met "use a multi-byte sequence".
+                        (It's also possible to use a multi-byte sequence to tell your word processing software that 
+                        you want to use one-byte or two-byte codes to represent a particular non-Latin alphabet.)
+                    -->
                 </p>
             </div>
         </div>
+
         <div class="forYouToDo" id="first">
             <ol start="10">
                 <li>
@@ -207,9 +222,10 @@
                             </div>
                         </div>
                         <div class="choice" identifier="c3">
-                            <div class="text">Wat overblijft wanneer je een positief heel getal door 2 deelt</div>
-                            <div class="feedback"> Er zijn 2 mogelijke getallen die overblijven, 0 en 1 dus een enkel
-                                bit is genoeg.
+                            <div class="text">Het getal achter de komma wanneer je een positief heel getal door twee
+                                deelt</div>
+                            <div class="feedback"> Een even getal heeft achter de komma een nul, een oneven getal heeft
+                                achter de komma 5. Er zijn dus twee mogelijke waardes en dus is één bit is genoeg.
                             </div>
                         </div>
                         <div class="choice" identifier="c4">
