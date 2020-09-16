@@ -18,8 +18,6 @@
 * Link veranderen in H2L3P1
 * In H2L2P2 hebben ze het over een 'point'  blok, maar in de NL Snap! versie zie ik niks wat daar op lijkt.
 
-# Casper 03/07/19
-
 ## Glossary toevoegingen
 
 * Discuss -> Bespreek
@@ -57,12 +55,12 @@
 
 ## TODO
 
-* Controleer alle pagina's nog op fouten
-* Voeg overal de VOLGENDE TERUG balk toe onderaan. (Hiervoor moet ook de class="full" worden toegevoegd)
-* Alex Bo en Yasmine
-* referenties naar AP CS Exam/ Curriculum weghalen.
-* Er zijn een aantal links naar pagina's, dit zijn nu links binnen de files, e.g. `: ../../units ... /h1l3p1.html`. Dit is miss niet ideaal?
-* H2L5P2 heeft een strip, die heb ik vertaald, maar dit valt eigenlijk niet onder copyright..
+* Alle "Als Youtube geblokkeerd is" hetzelfde maken.
+* Controleer alle pagina's nog op fouten.
+* namen veranderen naar Alex Bo en Yasmine
+* referenties naar AP CS Exam/ Curriculum weghalen. GEDAAN?
+* Er zijn een aantal links naar pagina's, dit zijn nu links binnen de files, e.g. `: ../../units ... /h1l3p1.html`. Dit is miss niet ideaal? GEDAAN?
+* H2L5P2 heeft een strip, die heb ik vertaald, maar dit valt eigenlijk niet onder copyright.
 * H4L1P1 heeft link naar extra pagina ("zoals HTML"),is nu weggehaald
 
 ## Hypothesis
@@ -81,3 +79,79 @@ De code ```<script src="https://hypothes.is/embed.js" async></script>``` staat b
 
 om bvb alles tussen src=" tot en met " weg te halen doe je dit:
 src=".*?"
+
+## Nieuwe BJC-site
+
+De Amerikaanse BJC-site is onlangs geüpdatet, hierbij is de UI aangepast met nieuwe lettertypes etc.
+Een aantal lessen zijn helemaal veranderd, ik zou niet zeggen dat alle aangepaste lessen beter zijn, sommige lijken het slechter uit te leggen dan de originele les. Daarnaast bevattten sommige lessen nog verwijzingen naar oude lessen die nu niet meer bestaan dus dat soort fouten moeten er ook nog uitgehaald worden bij hen.
+Ook zijn een aantal lessen verwijderd of van plek veranderd. Hieronder een lijst met de aanpassingen:
+
+### Hoofdstuk 1
+
+L1 is heel veel veranderd, een aantal titels zijn nog hetzelfde maar de inhoud lijkt daar ook heel anders.
+
+Bij les 2 is een les vooraan toegevoegd, dus H1L2P1 is nu H1L2P2 etc, alleen de laatste les, H1L2P4, is helemaal anders.
+
+L3 mist de les "Grafische Kunst".
+
+L4 en L5 zijn hetzelfde.
+
+### Hoofdstuk 2
+
+Les 1 lijkt veel hetzelfde maar inhoud is ook veel veranderd.
+
+Les 2 is helemaal anders.
+
+Les 3 heeft een aantal extra pagina's, waardoor oude pagina's een nieuwe plek hebben:
+L3P2 -> L3P5
+L3P3 -> L3P6
+L3P4 -> X
+
+L4 is helemaal anders, het heeft een nieuw onderwerp een wiskunde-library maken.
+
+L5 is hetzelfde.
+
+### Hoofdstuk 3
+
+### Hoofdstuk 4
+
+H6L2 -> H4L4
+H4L4 -> H4L3 (+ 3 nieuwe lessen erachter)
+H4L3 -> ?
+H4L5 -> ?
+
+### Hoofdstuk 5
+
+L1 is helemaal verandert,
+
+L2P2 is weg, de andere 2 lessen zijn er nog.
+
+L3 is soort van opogenomen in L1 lijkt het? Alleen zijn de lessen ook helemaal anders.
+
+L4 is nog hetzelfde.
+
+L5 is nog hetzelfde.
+
+H5O1P1 is nu H5L6P1, heel L6 gaat nu over boter-kaas-en-eieren verbeteren.
+
+### Hoofdstuk 6
+
+L1 is hetzelfde.
+
+L2 is nu H4L4.
+
+L3 is nu L2 en P3 is weg.
+
+### Hoofdstuk 7
+
+L2P4 is weg. De rest is hetzelfde.
+
+### Hoofdstuk 8
+
+L1P2 is weg, de andere 2 lessen zijn hetzelfde.
+
+Les 2 is nu een Optional Project.
+
+Les 3, de 2 lessen over Pascals driehoek is nu een Optional Project. De talstelsels omzetten is nu L2 en de subsetpagina's zijn nu L3
+
+Les 3 is nu Les 4.
