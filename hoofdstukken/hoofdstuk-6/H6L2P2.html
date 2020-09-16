@@ -25,17 +25,19 @@
             </p>
         </div>
         <div class="sidenote">
-            In veel programmeertalen is er een conventie dat elke tekstreeks eindigt op een byte <em> null </em>, waarin
-            alle acht bits nul zijn, een reeks die is gereserveerd voor dit doel. Dus onze "<code> Welcome ... </code>"
-            -reeks kan eigenlijk 44 bytes bezetten.
+            In veel programmeertalen is het een gewoonte dat elk stuk tekst eindigt op een <em> null </em>-byte: een
+            byte waarin
+            alle acht bits nul zijn. Deze null-byte wordt alleen gebruikt voor dit doel, om het einde van een tekst aan
+            te geven. Dus onze "<code> Welkom bij de schoonheid ... </code>"
+            -tekst gebruikt eigenlijk 44 bytes.
         </div>
         <p>
-            Tot nu toe hebben we met kleine stukjes gegevens gewerkt, van Boolean waardes (één bit) tot tekens (acht
+            Tot nu toe hebben we met kleine stukjes data gewerkt, van Boolean waardes (één bit) tot tekens (acht
             bits). Maar sommige informatie op je computer of smartphone is natuurlijk veel groter dan dat. Om te
-            beginnen worden karakters over het algemeen niet één voor één gebruikt; ze worden gebruikt in <em>
+            beginnen worden tekens over het algemeen niet één voor één gebruikt; ze worden gebruikt in <em>
                 tekstreeksen </em> zoals "<code> Welkom bij de schoonheid en vreugde van programmeren. </code>"
             Deze 43 tekens beslaan 43 bytes computergeheugen. Maar de echte kampioenen van geheugengebruik
-            zijn mediabestanden: afbeeldingen, geluiden (meestal muziek) en video.
+            zijn mediabestanden: afbeeldingen, geluid (meestal muziek) en video.
         </p>
         <p>
             Als we in de bits van het geheugen kunnen kijken, zou een gedeelte van het geheugen er ongeveer zo uitzien:
@@ -51,15 +53,16 @@
         </div>
         <p>
             Dat toont slechts 449 bits. Een mobiele telefoon van 16 GB heeft zestien gigabyte (ongeveer 16 miljard
-            bytes) opslag, elke byte bevat 8 bits. Dat zijn 128.000.000.000 bits. Gedrukt op papier als enen en nullen,
-            zou het geheugen van de 16 GB telefoon bijna 40.000.000 pagina's in beslag nemen! De opgeslagen informatie -
-            of het nu een SMS-bericht, een foto, een liedje, een computerprogramma of een lijst met telefoonnummers is -
-            het ziet er precies hetzelfde uit, een reeks bits die Aan of Uit zijn (een of nul).
+            bytes) aan geheugen, waar elke elke byte weer bevat 8 bits. Dat zijn 128.000.000.000 bits. Gedrukt op papier
+            als enen en nullen, zou het geheugen van de 16 GB telefoon bijna 40.000.000 pagina's in beslag nemen! De
+            opgeslagen informatie, of het nu een SMS-bericht, een foto, een liedje, een computerprogramma of een lijst
+            met telefoonnummers is, het ziet er allemaal precies hetzelfde uit: een reeks bits die Aan of Uit zijn (1 of
+            0).
         </p>
         <div class="endnote">
             <h3>Groottes</h3>
-            <p> Hier zijn een paar ruwe voorbeelden van wat voor soort gegevens in hoeveel geheugen passen:</p>
-            <table class="byte indent" summary="table of common data sizes">
+            <p> Hier zijn een paar ruwe voorbeelden van hoeveel geheugen nodig is voor bepaalde gegevens:</p>
+            <table class="byte indent" summary="tabel met gebruikelijke hoeveelheden gegevens">
                 <tr>
                     <th scope="col">naam</th>
                     <th scope="col" style="width:300px;">hoeveelheid</th>
@@ -107,7 +110,7 @@
                 </tr>
             </table>
             <p>
-                Terwijl we dit in 2017 schrijven, is het gebruikelijk om een terabyte-schijf op je bureau te hebben.
+                In 2020, is het gebruikelijk om een terabyte-geheugenschijf op je bureau te hebben.
                 Webservices verwerken petabytes of exabytes aan gegevens.
             </p>
             <p><a href="#hint-target" data-toggle="collapse">
@@ -116,10 +119,12 @@
             <div id="hint-target" class="collapse">
                 <p>Wanneer we grote getallen schrijven, plaatsen we komma's om de drie cijfers (geteld vanaf de
                     rechterkant). Elke groep van drie heeft een naam: duizend, miljoen, miljard, enzovoort. Het getal
-                    1.234.567.890 wordt dus uitgesproken als "één miljard, 234 miljoen, 567 duizend, 890." Die
-                    groepsnamen ("duizend" enzovoort) hebben ook voorvoegsels die worden gebruikt in metrische metingen:
+                    1.234.567.890 wordt dus uitgesproken als "één miljard tweehonderdvierendertig miljoen
+                    vijfhonderdzevenenzestigduizend achthonderdnegentig".
+                    Die groepsnamen ("duizend" enzovoort) hebben ook voorvoegsels die worden gebruikt in metrische
+                    metingen:
                 </p>
-                <table class="byte indent" width="600px" summary="table of number prefixes">
+                <table class="byte indent" width="600px" summary="tabel met getalvoorvoegsels">
                     <tr>
                         <th scope="col">voorvoegsel</th>
                         <th scope="col">hoeveelheid</th>
@@ -156,7 +161,7 @@
                         <td>1,000,000,000,000,000,000</td>
                     </tr>
                 </table>
-                <p> CIjfers voor getallen minder dan 1 (breuken) hebben ook voorvoegsels:</p>
+                <p> Cijfers voor getallen minder dan 1 (breuken) hebben ook voorvoegsels:</p>
                 <table class="byte indent" width="600px" summary="table of fractional number prefixes">
                     <tr>
                         <th scope="col">voorvoegsel</th>
@@ -193,111 +198,135 @@
                         <td>triljoenste</td>
                         <td>1/1,000,000,000,000,000,000</td>
                     </tr>
-                </table> De breuknamen worden gebruikt om tijden in de computer te meten, zoals een nanoseconde
-                geheugentoegangstijd, of afstanden tussen draden op een chip, die worden gemeten in nanometers.
+                </table>
+                <p> De breuknamen worden gebruikt om tijden in de computer te meten, zoals een nanoseconde
+                    geheugentoegangstijd, of afstanden tussen draden op een chip, die worden gemeten in nanometers.
+                </p>
             </div>
         </div>
-        <p> "Binaire reeks" is een brede categorie en vaak zijn er meerdere abstractieniveau's opgebouwd. Je kan
+        <p> "Binaire reeks" is een brede categorie en vaak zijn er meerdere abstractieniveau's bovenop gebouwd. Je kan
             bijvoorbeeld een afbeelding in een email of een tekstbericht plaatsen, in dat geval bevat het
-            <em>bericht</em> een <em>afbeelding</em> wat een type <em>bestand</em> is, wat een type <em>bitstream</em>
+            <em>bericht</em> een <em>afbeelding</em> wat een soort <em>bestand</em> is, wat een <em>bitstream</em>
             is. </p>
         <div class="forYouToDo" id="first">
             <ol>
                 <li> <a class="run"
                         href="https://snap.berkeley.edu/snapsource/snap.html#present:Username=cfkaligula&ProjectName=H6L1-%20BinairVertalen"
-                        target="_blank"><img class="inline" src="../../afb/icons/LaadEnSlaOp.png"
-                            alt="Geen Afbeelding"></a>
-                    <p> Bekijk de drie volgende blokken; deze zul je gebruiken om binaire reeksen te verkennen: <ul>
+                        target="_blank"><img class="inline" src="../../afb/icons/LaadEnSlaOp.png" alt="Geen Afbeelding">
+                    </a>
+                    <p> Bekijk de drie volgende blokken; deze zul je gebruiken om binaire reeksen te verkennen:
+                        <ul>
                             <li> Een resultaat-blok dat een stuk tekst als invoer neemt en het vertaalt naar een binaire
                                 reeks:
-                                <br /> <img class="indent" src="../../afb/h6/l2/p2-b1.png" alt="Geen Afbeelding" />
+                                <br /> <img height="40" class="indent" src="../../afb/h6/l2/p2-b1.png"
+                                    alt="Geen Afbeelding" />
                             </li>
                             <li> Een resultaat-blok dat een binaire reeks als invoer neemt en het naar tekst
                                 vertaalt:<br />
-                                <img class="indent" src="../../afb/h6/l2/p2-b2.png" alt="Geen Afbeelding" /> </li>
+                                <img height="40" class="indent" src="../../afb/h6/l2/p2-b2.png" alt="Geen Afbeelding" />
+                            </li>
                             <li>
-                                <div class="sidenoteBig">Je kan het tweede en derde invoerveld gebruiken om in te perken
+                                <div class="sidenoteBig">Je kan het tweede en derde invoerveld gebruiken om te bepalen
                                     waar het blok op een nieuwe regel begint en ook om de grootte van de getekende
                                     afbeelding te bepalen.
-                                </div> Een commando-blok dat een binaire reeks als invoer neemt en er een zwart-wit
+                                </div>
+                                Een commando-blok dat een binaire reeks als invoer neemt en er een zwart-wit
                                 plaatje mee tekent in het speelveld, met voor iedere 0 een witte pixel en voor iedere 1
                                 een zwarte.
-                                <br /> <img class="indent" src="../../afb/h6/l2/p2-b3.png" alt="Geen Afbeelding" />
+                                <br />
+                                <img height="60" class="indent" src="../../afb/h6/l2/p2-b3.png" alt="Geen Afbeelding" />
                             </li>
                         </ul>
                     </p>
                 </li>
-                <li> Het vertalen van een kort stukje tekst naar een binaire reeks <ul>
-                        <div class="sidenote"> De aanhalingstekens maken Snap<em>!</em> duidelijk dat de binaire reeks
-                            moet worden opgeslagen zoals hij ingevoerd is. Zonder deze beschouwt Snap<em>!</em> de
-                            binaire reeks als een nummer, waardoor het de nullen aan het begin van het getal zou
-                            verwijderen, wat de interpretatie van de reeks veranderd doordat het begin van de bits en de
-                            bytes ook is veranderd.</div>
+                <li> Het vertalen van een kort stukje tekst naar een binaire reeks.
+                    <ul>
+                        <div class="sidenote"> De aanhalingstekens vertellen aan Snap<em>!</em> dat de binaire reeks
+                            moet worden opgeslagen zoals hij ingevoerd is. Zonder de aanhalingstekens ziet
+                            Snap<em>!</em> de binaire reeks als een nummer, waardoor het de nullen aan het begin van de
+                            reeks zou verwijderen. Zonde die nullen verandert de betekenis van de binaire reeks.
+                        </div>
                         <li> Vind de <code>maak (</code><var>uitvoer</var><code>) naar...</code> instructie en
                             <strong>verander de tekstinvoer</strong> naar een kort stukje tekst naar keuze. De
                             gerapporteerde binaire reeks zal worden opgeslagen in de <var>uitvoer</var> variabele met de
-                            aanhalingstekens aan weerszijden.<br /> <img class="indent" src="../../afb/h6/l2/p2-b4.png"
-                                alt="Geen Afbeelding" />
+                            aanhalingstekens aan weerszijden.<br /> <img height="50" class="indent"
+                                src="../../afb/h6/l2/p2-b4.png" alt="Geen Afbeelding" />
                         </li>
-                        <li> De uitvoer is te zien met een rechtermuisklik of ctrl-klik op de UITVOER-kijker
-                            rechtsboven in het speelveld en door een opeenvolgende klik op "export..." zal de binaire
+                        <li> De uitvoer is te zien met een rechtermuisklik of Ctrl-klik op de UITVOER-kijker
+                            rechtsboven in het speelveld en door daarna te klikken op "export..." zal de binaire
                             reeks als een tekstdocument gedownload worden. Kopieer enkel de binaire reeks uit het
                             bestand, niet de aanhalingstekens. <br /> <img class="indent"
-                                src="../../afb/h6/l2/p2-b5.png" alt="Geen Afbeelding" /> </li>
+                                src="../../afb/h6/l2/p2-b5.png" alt="Geen Afbeelding" />
+                        </li>
                     </ul>
                 </li>
-                <div class="endnote"> Zelfs Snap<em>!</em> heeft bug. Wanneer je data in Snap<em>!</em> plakt kan de
-                    tekst buiten de randen van diens veld vallen. De makers proberen dit nog op te lossen.<br /> <img
-                        class="indent" src="../../afb/h6/l2/p2-b6.png" alt="Geen Afbeelding" />
+
+                <div class="endnote"> Zelfs Snap<em>!</em> heeft bugs. Wanneer je data in Snap<em>!</em> plakt kan de
+                    tekst buiten de randen van het invoerveld vallen. De makers van Snap<em>!</em> proberen dit probleem
+                    nog op te lossen.<br />
+                    <img class="indent" src="../../afb/h6/l2/p2-b6.png" alt="Geen Afbeelding" />
                 </div>
+
                 <li> Plak de binaire reeks van de uitvoer in het <code>vertaal binaire reeks naar tekst</code> blok en
-                    voer het geheel uit (dit kan heel even duren).<ul>
+                    voer het geheel uit (dit kan even duren).<ul>
                         <li>Is de uitvoer gelijk aan je oorspronkelijke ingevoerde tekst? (Zo niet, dan kan het zijn dat
                             je de aanhalingstekens hebt meegekopieerd of dat je een bit gaandeweg verloren bent.) </li>
-                        <li> Als je de tekst correct teruggekregen hebt, probeer dan wat aanpassingen te maken in de
+                        <li> Als je de tekst correct teruggekregen hebt, probeer dan wat aanpassingen te maken aan de
                             binaire reeks: <ul>
                                 <li>Wat gebeurt er met de tekst als je één bit aanpast?</li>
                                 <li>En wat gebeurt er als je ergens midden in de reeks een bit toevoegt?</li>
-                                <li>En wat als je er een in het begin toevoegt?</li>
+                                <li>En wat als je er een aan het begin toevoegt?</li>
                             </ul>
                         </li>
                     </ul>
                 </li>
-                <li>Ga terug naar je geëxporteerde tekstbestand en kopieer je oorspronkelijke binaire reeks opnieuw
+
+                <li> Ga terug naar je geëxporteerde tekstbestand en kopieer je oorspronkelijke binaire reeks opnieuw
                     (<em>zonder</em> de aanhalingstekens). Plak dit vervolgens in het <code>vertaal binaire reeks naar
                         zwart-witte afbeelding</code> blok en voer het uit. De kans is echter klein dat je iets zinvols
-                    ziet. Waarom is dit zo?</li>
+                    ziet. Waarom is dit zo?
+                </li>
                 <li> Plak de onderstaande binaire reeks in <code>vertaal binaire reeks naar
-                        zwart-witte afbeelding</code> met <var>14</var> pixels ingesteld in het tweede invoerveld:<br />
-                    <p class="indent"><code
-                            class="break">00000110000000000001000110000000010000000000001100100110000011111111000001100111100000010010110011000111001111100000100110110000000001000000000000110000000000111000000011000100011000010000000100000110000110000000111111000000</code><br />
+                        zwart-witte afbeelding</code> met <var>14</var> pixels ingesteld in het tweede invoerveld:
+                    <br />
+                    <p class="indent">
+                        <code
+                            class="break">00000110000000000001000110000000010000000000001100100110000011111111000001100111100000010010110011000111001111100000100110110000000001000000000000110000000000111000000011000100011000010000000100000110000110000000111111000000
+                        </code>
+                        <br />
                     </p> De uitvoer hiervan zou eruit moeten zien als het BJC-logo:<br /> <img class="indent"
                         src="../../afb/h6/l2/p2-b7.png" alt="Geen Afbeelding" />
                 </li>
-                <li>Wat gebeurt er als je diezelfde binaire reeks naar tekst vertaalt? En waarom, denk je?</li>
+                <li> Wat gebeurt er als je diezelfde binaire reeks naar tekst vertaalt? Waarom denk je dat dit gebeurt?
+                </li>
             </ol>
         </div>
+
         <div class="takeNote">
             <p>Dus als afbeeldingen, muziek en woorden er allemaal hetzelfde uitzien (<em>allemaal binaire reeksen</em>)
                 in het geheugen, hoe kan het dan dat de computer ze van elkaar kan onderscheiden? Stel dat je de binaire
                 reeks 01000001 in het geheugen hebt: hoe zou deze dan geïnterpreteerd moeten worden? Als het nummer 65,
-                of eerder de letter A? Of misschien een tint in donkerrood, of misschien zelfs nog iets anders..?</p>
+                of eerder de letter A? Of misschien een tint in donkerrood, of misschien zelfs nog iets anders..?
+            </p>
 
-            <p>De betekenis van een binaire reeks hangt af van de context waarin hij gebruikt wordt. Maar wat is die
-                "context" eigenlijk? En hoe weet een programmeertaal als wat hij een ingevoerd stuk tekst interpreteren
-                moet? Of het een heel getal, een stukje tekst, een afbeelding of iets anders is, daar kan de taal achter
-                komen dankzij een ander stukje van de reeks. Dat stukje vertelt het programma wat het <strong>data
-                    type</strong> van die sequence is.</p>
+            <p> De betekenis van een binaire reeks hangt af van de context waarin hij gebruikt wordt. Maar wat is die
+                "context" eigenlijk? En hoe weet een programmeertaal hoe hij een ingevoerd stuk tekst moet
+                interpreteren? Of het een heel getal, een stukje tekst, een afbeelding of iets anders is, daar kan de
+                taal achter komen dankzij een ander stukje van de reeks. Dat stukje vertelt het programma wat het
+                <strong>data type</strong> van die reeks is.
+            </p>
         </div>
-        <div class="endnote"> <a href="#hint-data-types" data-toggle="collapse">Maar net zoals programeertalen onderling
-                verschillen, verschilt ook hun gebruik van de data types.</a>
+
+        <div class="endnote"> <a href="#hint-data-types" data-toggle="collapse">Maar net zoals dat programeertalen
+                onderling verschillen, verschilt ook hun gebruik van de data types.</a>
+
             <div id="hint-data-types" class="collapse">
-                <p> In 'hogere' programmeertalen van hoger niveau, zit de code voor het soort data-type vast aan de
+                <p> In programmeertalen van hoger niveau, zit de code voor het soort data-type vast aan de
                     waarde. Wanneer je variabelen aanmaakt in talen van lager niveau moet je zeggen welk type waarde het
-                    zal bevatten en het data-type zal dan vastzitten aan het <em>variabele</em>.
+                    zal bevatten en het data-type zal dan vastzitten aan de <em>variabele</em>.
 
                 </p>
-                <p>Snap<em>!</em> heeft pluspunten die veel andere talen niet hebben en het is zeer waarschijnlijk dat
+                <p> Snap<em>!</em> heeft voordelen die veel andere talen niet hebben en het is zeer waarschijnlijk dat
                     je <em>volgende</em> informaticacursus een van deze andere talen zal gebruiken.
                 </p>
             </div>
@@ -312,23 +341,23 @@
                         <div class="prompt">
                             Een bepaald online verkoopbedrijf gebruikt 9-bit binaire reeksen om ieder product dat
                             verkocht wordt te identificeren. Omdat verwacht wordt dat het het aantal verkochte producten
-                            zal stijgen wil het bedrijf 10-bit binaire reeksen gaan gebruiken. Welke van de onderstaande
-                            stellingen hieronder beschrijven het beste de gevolgen van de 10-bit reeksen gebruiken
-                            in plaats van de 9-bit reeksen?
+                            zal stijgen, wil het bedrijf 10-bit binaire reeksen gaan gebruiken. Welke van de
+                            onderstaande stellingen hieronder beschrijven het beste de gevolgen van de 9-bit reeksen
+                            vervangen door 10-bit reeksen?
                         </div>
                         <div class="choice" identifier="c1">
-                            <div class="text"> Twee meer producten kunnen uniek geïdentificeerd worden. </div>
+                            <div class="text"> Er kunnen twee producten meer geïdentificeerd worden. </div>
                             <div class="feedback">
                                 Bereken het aantal producten dat je kan identificeren voor en na de aanpassing.
                             </div>
                         </div>
                         <div class="choice" identifier="c2">
-                            <div class="text"> Tien meer producten kunnen uniek geïdentificeerd worden.</div>
+                            <div class="text"> Er kunnen tien producten meer geïdentificeerd worden.</div>
                             <div class="feedback"> Bereken het aantal producten dat je kan identificeren voor en na de
                                 aanpassing. </div>
                         </div>
                         <div class="choice" identifier="c3">
-                            <div class="text">Twee keer zoveel producten kunnen uniek geïdentificeerd worden.</div>
+                            <div class="text"> Er kunnen twee keer zoveel producten geïdentificeerd worden.</div>
                             <div class="feedback">Correct. Eerst konden 2<sup>9</sup>=512 producten geïdentificeerd
                                 worden en nu 2<sup>10</sup>=1024 producten.</div>
                         </div>
@@ -357,7 +386,7 @@
                             invoer en vertaalt het naar de binaire variant van dat getal. Dit blok gebruikt recursie.
                             Waarom is recursie hier handig? </li>
                         <li><code>translate text to Unicode list</code> neemt een stukje tekst als invoer en geeft een
-                            lijst van ieder karakter zijn Unicode-waarde terug. Waarom is het handig om hier een lijst
+                            lijst met Unicode-waardes van ieder karakter terug. Waarom is het handig om hier een lijst
                             te gebruiken, denk je?
                         </li>
                     </ul>
