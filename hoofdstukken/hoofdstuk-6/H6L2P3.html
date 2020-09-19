@@ -20,32 +20,39 @@
     <div class="full">
         <h2>Het Representeren van Hele Getallen</h2>
         <div class="learn">
-            <p><strong>Op deze pagina,</strong> , ga je leren hoe computers gehele getallen opslaan.</p>
+            <p><strong>Op deze pagina,</strong>, ga je leren hoe computers gehele getallen opslaan.</p>
         </div>
-        <p>Zoals je wel weet, komen getallen overal voor in algoritmes- zelfs als getallen niet het onderwerp
-            zijn. De gebruiker kan bijvoorbeeld geïnteresseerd zijn in een plaatje, maar dat plaatje is een abstractie
-            van getallen. Getallen worden ook gebruikt om een specifiek item in een lijst te vinden. De komende
-            pagina's, zal je dieper ingaan op getallen in de computer.
+        <p>Zoals je wel weet, komen getallen overal voor in algoritmes, zelfs als getallen niet het onderwerp
+            zijn. De gebruiker kan bijvoorbeeld geïnteresseerd zijn in een plaatje, maar dat plaatje is een abstractie,
+            de gegevens waaruit de afbeelding bestaat zijn getallen. Getallen worden ook gebruikt om een specifiek
+            element in een lijst te vinden. De komende pagina's, zal je dieper ingaan op getallen in de computer.
         </p>
         <div class="forYouToDo" id="first">
             <ol>
                 <li>
+
                     <div class="sidenote">
-                        Als je naar de code kijkt zul je zien dat het een recursief resultaatblok is. Hoe werkt het? Je
+                        Als je naar de code kijkt zul je zien dat het blok recursie gebruikt. Hoe werkt het? Je
                         hebt recursie voor het eerste gezien in
                         <a href="../hoofdstuk-2/H2L4P2.html"> Hoofdstuk 2 Les 4: Fractale kunst </a>.
                     </div>
+
                     De <em>faculteit</em> van een positief geheel getal <em>n</em> (geschreven als <em>"n!"</em>) is het
                     product van alle gehele getallen van 1 tot en met <em>n</em>. Bijvoorbeeld:
-                    <p><span class="katex indent" style="font-size: 1em;">5! = 1 \times 2 \times 3 \times 4 \times 5 =
-                            120</span></p>
+                    <p> <span class="katex indent" style="font-size: 1em;">5! = 1 \times 2 \times 3 \times 4 \times 5 =
+                            120</span>
+                    </p>
+
                     <a class="run"
                         href="https://snap.berkeley.edu/snapsource/snap.html#present:Username=cfkaligula&ProjectName=H6L2-GroteGetallen"
                         target="_blank">
                         <img class="inline" src="../../afb/icons/LaadEnSlaOp.png" alt="Geen Afbeelding"></a>
-                    Probeer deze invoeren uit:<br />
-                    <div class="sidenote"> Je krijgt wellicht andere resultaten afhankelijk van de processor van je
-                        computer. </div>
+                    Probeer deze invoeren uit: <br />
+                    <div class="sidenote">
+                        Je krijgt wellicht andere resultaten afhankelijk van de processor van je
+                        computer.
+                    </div>
+
                     <ol>
                         <li><img src="../../afb/h6/l2/p3-o1.png" alt="Geen Afbeelding" /> </li>
                         <li><img src="../../afb/h6/l2/p3-o3.png" alt="Geen Afbeelding" /></li>
@@ -55,7 +62,8 @@
                 </li>
             </ol>
         </div>
-        <p> De "e+" betekent "tien keer de macht van" dus deze notatie betekent 2.6525285981219103 &times;
+
+        <p> De "e+" betekent "tien keer de macht van" dus deze notatie betekent 2.6525285981219103 ×
             10<sup>32</sup> = 265,252,859,812,191,030,000,000,000,000,000.
 
         </p>
@@ -64,34 +72,41 @@
             <p><strong>breedte</strong>: Het aantal bits dat een CPU kan verwerken tegelijkertijd</p>
             <p><strong>woord</strong>: een binaire reeks van een bepaald aantal bits</p>
         </div>
+
         <p>
-            Dus waarom toonde Snap<em>!</em> 20! in natuurlijke gehele getallen representatie maar 30! in
-            wetenschappelijke notatie? Elk computer model is ontworpen met een bepaalde <strong>breedte</strong>, het
+            Dus waarom toonde Snap<em>!</em> het resultaat van 20! in natuurlijke hele getallen maar dat van 30!
+            in wetenschappelijke notatie? Elke computer is ontworpen met een bepaalde <strong>breedte</strong>, het
             aantal bits dat de processor tegelijk van het geheugen leest of in het geheugen schrijft. Dat aantal bits
             wordt een <strong>woord</strong> genoemd. Sinds 2016 hebben de meeste nieuwe computers een breedte van 64
             bits. De eerste microcomputer, verkocht in 1971, was 4 bits breed!
         </p>
+
         <div class="endnote">
             Als je een antwoord krijgt in wetenschappelijke notatie voor 20!, gebruik je een 32-bit computer.
         </div>
-        <p>Een 64-bit woord representeert 2<sup>64</sup> verschillende waardes. We gebruiken half voor negatieve
-            getallen, een voor nul, en de rest voor positieve getallen. De helft van 2<sup>64</sup> ( dat is
-            2<sup>63</sup> = 9,223,372,036,854,775,808) is ongeveer 9 × 10<sup>18</sup>. Dat betekent dat de 19 cijfers
-            van 20! maar net passen in een 64-bit woord. Maar de 33 cijfers van 30! niet. Daarom geeft de computer aan
-            dat er een <em>overflow error</em> is, en berekent Snap<em>!</em> een benadering.
+
+        <p>Een 64-bit woord representeert 2<sup>64</sup> verschillende waardes. De helft van die waardes worden gebruikt
+            om negatieve getallen weer te geven, één waarde voor 0 en de rest voor positieve getallen.
+            De helft van 2<sup>64</sup> ( wat 2<sup>63</sup> = 9,223,372,036,854,775,808 is) is ongeveer 9 ×
+            10<sup>18</sup>. 20! is ongeveer 2.4 × 10<sup>18</sup> en past dus nog net in een 64-bit
+            woord. Maar 30! is te groot, 2.6 × 10<sup>33</sup> is veel groter dan in een 64-bit woord past. Daarom geeft
+            de computer aan dat er een <em>overflow error</em> is, en berekent
+            Snap<em>!</em> een benadering.
         </p>
+
         <div class="endnote"> <a href="#hint-power-2" data-toggle="collapse">
                 Zijn processor breedtes altijd machten van twee?</a>
             <div id="hint-power-2" class="collapse">
                 Processor breedtes hoeven niet machten van twee te zijn. Sommige oude computers, degenen die je in oude
                 films ziet die een grote kamer vullen, gebruikten 12-bit, 36-bit, en 60-bit woorden. Maar moderne
-                persoonlijke computers starten met 8-bits en de breedtes zijn verdubbeld met elke nieuwe generatie.
+                persoonlijke computers begonnen met 8-bits en de breedtes zijn daarna verdubbeld met elke nieuwe
+                generatie.
             </div>
         </div>
         <div class="forYouToDo">
             <ol start="2">
                 <li> Experimenteer in Snap<em>!</em>. Wat is het <em>eerste</em> hele getal waarvan de faculteit niet in
-                    een woord past?
+                    een 64-bit woord past?
                 </li>
             </ol>
         </div>
@@ -100,23 +115,26 @@
             Een heel getal dat uit meerdere woorden bestaat noemen we een <strong>bignum</strong>. Dit is een afkorting
             voor 'big number', wat 'groot getal' betekent.
         </div>
+
         <p>
             Waarom kunnen programmeertalen niet gewoon meer dan een woord gebruiken om een heel getal te representeren?
-            Dat kunnen ze. Het is gewoon zo dat een enkele machine taal instructie alleen een-woord getallen kan
-            toevoegen. Een programmeertaal moet een beetje harder werken om toevoegingen te maken met meerdere-woord
-            waardes. Niet alle talen doen dit, maar de hoogste-level talen doen het.
+            Dat kunnen ze. Het probleem is dat een instructie in machinetaal alleen kan werken met getallen van één
+            woord. Een programmeertaal moet een beetje harder werken om te werken te maken met waardes war meerdere
+            woorden voor nodig zijn. Niet alle talen doen dit, maar de talen van het hoogste niveau wel.
         </p>
+
         <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a> <img class="imageRight"
                 src="../../afb/icons/UiterUitagend-mini.png" alt="Geen Afbeelding" />
             <ol type="A">
-                <li>Een geweldig voorbeeld van een high-level programmeertaal is
+                <li>Een geweldig voorbeeld van een programmeertaal van hoog niveau is
                     <a href="http://groups.csail.mit.edu/mac/projects/scheme/index.html" target="_blank">Scheme</a>.
-                    Je kunt het leren met het gratis online book
-                    <a href="https://mitpress.mit.edu/sicp/full-text/book/book.html" target="_blank">Structure and
+                    Je kunt deze taal leren met het gratis online book
+                    <a href="https://mitpress.mit.edu/sicp/full-text/book/book.html" target="_blank"> Structure and
                         Interpretation of Computer Programs </a>.
                 </li>
             </ol>
         </div>
+
         <div class="takeNote">
             Het ontwerp van een programmeertaal is niet alleen een kwestie van smaak; het een kan een zaak van leven of
             dood zijn. Tussen 1985 en 1987 doodde een therapeutisch röntgenapparaat vier patiënten en bracht serieuze
@@ -146,7 +164,9 @@
                 </li>
                 <li> Probeer <code>200!</code>. Het gerapporteerde resultaat past niet op je scherm, maar je kan op het
                     deze manier zien:
+
                     <img height="200" class="imageRight" src="../../afb/h6/l2/p3-o9.jpg" alt="Geen Afbeelding" />
+
                     <ol type="a">
                         <li> Hou de Controltoets ingedrukt; terwijl je dit doet hou je de Shifttoets ingedrukt (het moet
                             in die volgorde) en daarna klik je op het
@@ -161,7 +181,9 @@
                             de getallen te lezen.
                         </li>
                     </ol>
+
                 </li>
+
                 <li> Hoeveel getallen zitten er in <code>200!</code> (Tel dit niet met de hand; je hebt een computer).
                 </li>
             </ol>
