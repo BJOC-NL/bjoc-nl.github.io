@@ -19,8 +19,8 @@
 <body>
     <div class="full">
         <h2>Binaire Representatie</h2>
-        <p> We hebben gezien hoe het aantal bits dat gebruikt wordt om een heel getal weer te geven, bepaald hoe groot
-            het getal kan zijn. Nu gaan we kijken hoe een integer precies versleuteld wordt als bits.
+        <p> We hebben gezien hoe het aantal bits dat gebruikt wordt om een heel getal weer te geven, bepaalt hoe groot
+            het getal kan zijn. Nu gaan we kijken hoe een heel getal precies weergegeven wordt met bits.
         </p>
         <p>
             <div class="sidenote"> Het woord "bit" is een afkorting voor
@@ -30,7 +30,7 @@
             Vanwege digitale abstractie gebruiken computers er maar 2, dit heet dus het binaire talstelsel.
 
         </p>
-        <p> In het <strong>decimale talstelsel 10</strong>,zijn er 10 cijfers (0-9) en iedere plek is <em>tien</em> keer
+        <p> In het <strong>decimale talstelsel</strong>,zijn er 10 cijfers (0-9) en iedere plek is <em>tien</em> keer
             zoveel waard als de plek rechts ervan.
 
         </p>
@@ -104,9 +104,10 @@
                             alt="Geen Afbeelding" /> </td>
                 </tr>
             </table>
-            <p> Dit betekent dat het getal, in het decimale talstelsel 32 + 8 + 4 + 1 = 45 is. Dus, 101101<sub>2</sub> =
+            <p> Dit betekent dat het getal, in het decimale talstelsel 1 + 4 + 8 + 32 = 45 is. Dus, 101101<sub>2</sub> =
                 45<sub>10</sub>. </p>
         </div>
+
         <div class="forYouToDo">
             <ol start="2">
                 <li> Vertaal deze binaire getallen naar het decimale talstelsel: <ol>
@@ -118,29 +119,51 @@
                 </li>
             </ol>
         </div>
+
         <h3>Schrijven in Binaire Notatie</h3>
         <div class="takeNote">
-            <p> Om te vertalen van het decimale talstelsel naar binair, schrijven we eerst waarde van de binaire plekken
-                op door de waarde van de rechterpositie te verdubbelen. Totdat je een waarde krijgt die groter
-                is dan het getal dat je wil gaan omschrijven. Bedenk daarna "ik kan er 64 vanaf halen dus ik schrijf
-                een 1 daar en dan blijft er 25 over (89-64). Ik schrijf een 0 bij 32 omdat ik alleen 25 over heb. Ik kan
-                wel 16 eraf halen en dan blijft er 9 over, dus de bit voor 16 wordt ook 1. Dan zijn de laatste bits die
-                1 worden 8 en 1 (9 = 8 + 1). "
+            <p> Om te vertalen van het decimale talstelsel naar binair, schrijven we eerst de waardes van de binaire
+                plekken van rechts naar links op door de waarde van de rechterpositie te verdubbelen, dus 1, 2, 4, 8
+                enzovoort. Dit doe je totdat je een waarde krijgt die groter is dan het getal dat je wil gaan
+                opschrijven in binair. Als voorbeeld gaan we het getal 89 omschrijven naar binair, als je deze stap goed
+                gevolgd hebt dan heb je nu een tabel zoals hieronder.
             </p>
+
+            <table class="byte indent" summary="translation process from base 10 to base 2">
+                <tr>
+                    <td class="noborder" colspan="8"> <img class="indent noshadow" src="../../afb/h6/l2/p5-o6-o7.png"
+                            alt="Geen Afbeelding" /> </td>
+                </tr>
+                <tr>
+                    <th scope="col">128</th>
+                    <th scope="col">64</th>
+                    <th scope="col">32</th>
+                    <th scope="col">16</th>
+                    <th scope="col">8</th>
+                    <th scope="col">4</th>
+                    <th scope="col">2</th>
+                    <th scope="col">1</th>
+                </tr>
+            </table>
+
+            <p>
+                Bedenk nu "ik kan 64 van 89 aftrekken, dus ik schrijf een 1 daaronder en dan blijft
+                er 25 over (89-64). Ik schrijf nu een 0 bij 32 omdat ik niet 32 van 25 af kan trekken omdat 32 groter
+                dan 25 is. Ik kan wel 16 eraf halen en dan blijft er 9 over, dus de bit voor 16 wordt ook 1. Als we dit
+                proces blijven herhalen dan zien we dat de bits ook 1 worden 8 en 1 (25-16 = 9, 9 - 8 = 1, 1-1 = 0). "
+            </p>
+
             <div class="sidenoteBig"> Bij beide manier van vertalen schrijf altijd de plek van de waardes van rechts
                 naar links (net als met eenheden, tientallen, honderdtallen, etc.) en de nummers zelfs van links naar
                 rechts.
             </div>
+
             <table class="remainders indent" summary="list of remainders after each step of process">
                 <tr>
                     <td> <s>89</s><br /> <s>25</s><br /> <s>9</s><br /> <s>1</s><br /> 0 </td>
                 </tr>
             </table>
             <table class="byte indent" summary="translation process from base 10 to base 2">
-                <tr>
-                    <td class="noborder" colspan="8"> <img class="indent noshadow" src="../../afb/h6/l2/p5-o6-o7.png"
-                            alt="Geen Afbeelding" /> </td>
-                </tr>
                 <tr>
                     <th scope="col" style="font-weight:normal;">128</th>
                     <th scope="col">64</th>
@@ -164,24 +187,29 @@
             </table><br clear="all" />
             <p>Lees nu het getal af: 1011001<sub>2</sub> = 89<sub>10</sub>.</p>
         </div>
+
         <p> Hieronder staat een meer precieze beschrijving van dit <em>algoritme</em> om de binaire representatie van
             elk positief heel getal te vinden:
             <ol type="a">
-                <li>Vind eerst de grootste macht van die die kleiner is dan het getal.</li>
-                <li>Trek daarna die macht af van het getal en onthoud het nieuwe getal en schrijf een 1 op.
+                <li> Vind eerst de <strong>grootste</strong> macht van twee die <em>kleiner</em> is dan het getal dat je
+                    om wil schrijven naar
+                    binair. </li>
+                <li> Trek daarna die macht af van het getal en schrijf een 1 op. Onthoud het nieuwe getal.
                 </li>
-                <li> Vind dan de op éen na grootste macht van 2 voor het getal en als het kleiner is dan het nieuwe
-                    getal: <ul>
-                        <li>Trek het dan af van het nieuwe getal, onthoud het nieuwe getal en schrijf weer een 1 op.
-                        </li>
-                        <li>Als dat niet zo is, schrijf dan een nul op.</li>
-                    </ul> Herhaal deze stap met de volgende macht van 2 tot je een bit hebt voor de eenheden (als je dat
-                    hebt zou er niks meer over moeten zijn van het originele getal).
+                <li> Vind dan de op éen na grootste macht van 2 voor het originele getal en als het kleiner is dan het
+                    nieuwe getal: <ul>
+                        <li> Als het kleiner is dan het nieuwe getal, trek het dan af van het nieuwe getal, onthoud het
+                            nieuwe getal en schrijf weer een 1 op. </li>
+                        <li> Als het groter is dan het nieuwe getal, schrijf dan een nul op. </li>
+                    </ul>
+                    Herhaal deze stap met de volgende macht van 2 tot je een bit hebt tot je getal gelijk is aan 0 de
+                    eenheden.
                 </li>
             </ol>
         </p>
         <p> De rij enen en nullen die je overhoudt is de binaire versie van je originele getal.
         </p>
+
         <div class="forYouToDo">
             <ol start="3">
                 <li> Schrijf deze getallen in het decimale talstelsel om naar binair: <ol>
@@ -195,6 +223,7 @@
                 </li>
             </ol>
         </div>
+
     </div>
     <div class="full-bottom-bar" style="background-position: 20px 3px;">
         <div class="bottom-nav btn-group"> <a class="btn btn-default backbutton arrow" style="min-width: 90px;"
