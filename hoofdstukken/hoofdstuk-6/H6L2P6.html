@@ -20,13 +20,14 @@
     <div class="full">
         <h2>Het Hexadecimale Talstelsel </h2>
 
-
-        <p>Lange reeksen aan enen en nullen typen is onhandig en gemakkelijk om fouten mee te maken. Een efficientere
+        <p> Lange reeksen aan enen en nullen typen is onhandig en gemakkelijk om fouten mee te maken. Een efficientere
             methode om te gebruiken is het <em>hexadecimale talstelsel</em> (tellen met machten van 16). <em>Één</em>
-            hexadecimaal getal staat voor een heel getal tussen 0 en 15. Dus 8 cijfers in binair kunnen vertaald worden
-            in twee cijfers in hexadecimaal, wat veel handiger is voor mensen.
-
+            hexadecimaal getal staat voor een heel getal tussen 0 en 15. Dus 4 cijfers in binair kunnen vertaald worden
+            in één cijfer in hexadecimaal en één byte is gelijk aan twee hexadecimale cijfers. Één hexadecimaal
+            getal is veel makkelijker te typen voor mensen en omdat 16 deelbaar is door 2 is het makkelijk om te zetten
+            in binaire getallen.
         </p>
+
         <table class="byte center" summary="table comparing base two and base 16 place values">
             <tr>
                 <th scope="colgroup" colspan="12" style="text-align:center; font-weight:normal;"> Acht bits in
@@ -64,7 +65,10 @@
                 <td style="color:red" colspan="4">zestien-plek</td>
                 <td style="color:blue" colspan="4">een-plek</td>
             </tr>
-        </table><br />
+        </table>
+
+        <br />
+
         <table class="byte center" summary="table showing 121 in base two and base 16">
             <tr>
                 <th scope="colgroup" colspan="8" style="text-align:center; font-weight:normal;">
@@ -85,9 +89,12 @@
                 <td style="color:blue" colspan="4">9</td>
             </tr>
         </table>
+
         <p>
-            <div class="sidenoteBig"> Deze notatie gebruikt maar 1 cijfer per plek. Maar we moeten 0 tot en met 15
+            <div class="sidenoteBig">
+                Deze notatie gebruikt maar 1 cijfer per plek. Maar we moeten 0 tot en met 15
                 kunnen weergeven met 1 karakter, we gebruiken 0-9 voor 0-9 en voor de overige getallen gebruiken we A-F:
+
                 <table class="byte" summary="values of hex digits A-F">
                     <tr>
                         <th scope="col" style="font-weight:normal;">10</th>
@@ -106,26 +113,31 @@
                         <td>F</td>
                     </tr>
                 </table>
-            </div> In <strong>hexadecimale notatie</strong>, zijn er 16 cijfers (0-9 en A-F) en iedere plek is
+            </div>
+
+            In <strong>hexadecimale notatie</strong>, zijn er 16 cijfers (0-9 en A-F) en iedere plek is
             <em>zestien</em> keer zoveel waard als de positie rechts ervan. Één hexadecimaal cijfer heeft 16 mogelijke
             waardes, dat is gelijk aan vier binaire cijfers (bits).
             <br />
             <img class="indent noshadow" src="../../afb/h6/l2/p6-o1.jpg" alt="Geen Afbeelding" />
         </p>
 
-        <p>Dit staat voor <span class="katex" style="font-size: 1em;">3 \times 256 + 11\times 16 +7\times 1</span> of
-            951. </p>
+        <p> Dit staat voor <span class="katex" style="font-size: 1em;">3 \times 256 + 11\times 16 +7\times 1</span> of
+            951.
+        </p>
+
         <div class="forYouToDo" id="first">
             <ol>
                 <li> <img class="imageRight" src="../../afb/icons/PraatMetJeBuur.png" alt="Geen Afbeelding" />
-                    Bekijk dit Snap<em>!</em>-programma met een Hexadecimale en Binaire Timer . De bovenste rij telt
-                    binair, de
-                    middelste in decimaal en de onderste in hexadecimaal. Beschrijf het gedrag van de hexadecimale
-                    teller. <br />
+                    Bekijk dit Snap<em>!</em>-programma met een hexadecimale, decimale en binaire teller . De bovenste
+                    rij telt binair, de middelste in decimaal en de onderste in hexadecimaal. Beschrijf het gedrag van
+                    de hexadecimale teller. <br />
                     <img class="indent" data-gifffer="../../afb/h6/l2/p6-v1.gif" alt="Geen Afbeelding" /> </li>
             </ol>
         </div>
-        <h3> Hexadecimale Notatie Lezen</h3>
+
+        <h3>Hexadecimale Notatie Lezen</h3>
+
         <div class="endnote">
             <p>
                 <strong>Het hexadecimale talstelsel</strong> gebruikt <strong>machten van zestien</strong> in plaats van
@@ -137,11 +149,13 @@
             <p align="center">3B<sub>16</sub> &nbsp; = &nbsp; 3 &times; 16<sup>1</sup> &nbsp;+&nbsp; 11 &times;
                 16<sup>0</sup> &nbsp; = &nbsp; 48 &nbsp;+&nbsp; 11 &nbsp; = &nbsp; 59<sub>10</sub></p>
         </div>
+
         <div class="takeNote">
             <p> Om te vertalen van hexadecimaal naar decimaal, schrijf je eerst de cijfers op papier. Dan schrijf je de
                 waardes van de hexadecimale plekken op: begin rechts met 1, dan 16, dan 256 etc. Iedere nieuwe plek zal
                 16 keer zoveel waard zijn als de plek rechts ervan.
             </p>
+
             <div class="sidenote"> Onthoud: A-F staan voor de getallen na 9: <table class="byte"
                     summary="values of hex digits A-F">
                     <tr>
@@ -162,6 +176,7 @@
                     </tr>
                 </table>
             </div>
+
             <table class="byte indent" summary="translation process from hex to base 10">
                 <tr>
                     <th scope="col" style="font-weight:normal;">7</th>
@@ -178,36 +193,61 @@
                         <img class="noshadow" src="../../afb/h6/l2/p6-o4-o5.png" alt="Geen Afbeelding" /> </td>
                 </tr>
             </table>
-            <p>So, 7B3<sub>16</sub> = (7 × 256) + (11 × 16) + (3 × 1) = 1792 + 176 + 3 = 1971<sub>10</sub>.</p>
+
+            <p> Dus, 7B3<sub>16</sub> = (7 × 256) + (11 × 16) + (3 × 1) = 1792 + 176 + 3 = 1971<sub>10</sub>.
+            </p>
         </div>
+
         <div class="forYouToDo">
             <ol start="2">
+
                 <div class="sidenoteBig"> FF<sub>16</sub><br /> = (15 × 16<sup>1</sup> + 15 ×
-                    16<sup>0</sup>)<sub>10</sub><br /> = (15 × 16 + 15)<sub>10</sub><br /> = 255<sub>10</sub> </div>
-                <li>Vertaal deze hexadecimale getallen naar decimale notatie: <ol>
+                    16<sup>0</sup>)<sub>10</sub><br /> = (15 × 16 + 15 × 1)<sub>10</sub><br /> = 255<sub>10</sub> </div>
+                <li> Vertaal deze hexadecimale getallen naar decimale notatie: <ol>
                         <li>AF<sub>16</sub></li>
                         <li>5D<sub>16</sub></li>
                         <li>18<sub>16</sub></li>
                         <li>3E8<sub>16</sub></li>
                     </ol>
+
                     <div class="endnote">
                         Een getal zoals 11 betekent <em>elf</em> in gebruikelijke, decimale notatie maar het betekent
                         <em>drie</em> als het een binair getal is of <em>zeventien</em> in hexadecimale notatie. De
                         enige manier waarop je weet dat "18" hierboven niet <em>achttien</em> betekent is door de kleine
                         "16" rechtsonder die zegt dat het hexadecimaal is.
                     </div>
+
                 </li>
             </ol>
         </div>
+
         <h3> Hexadecimaal Schrijven </h3>
+
         <div class="takeNote">
-            <p>Om te vertalen van decimaal naar hexadecimaal schrijf eerst de waardes van de hexadecimale plekken op
+            <p>Om te vertalen van decimaal naar hexadecimaal schrijf je eerst de waardes van de hexadecimale plekken op
                 door met zestien te vermenigvuldigen met de waarde rechts ervan tot je een waarde krijgt die groter is
-                dan je getal. Schrijf bijvoorbeeld machten van zestien tot 4096, als je getal 299 bedenk dan "Mijn getal
-                is kleiner dan 4096, dus ik hou die plek leeg. Maar ik kan één kee 256 aftrekken, dus ik schrijf daar
-                een 1. Dan is er 43 over. Nu kan ik twee keer 16 aftrekken en dan is er 11 over. 11 is B in
-                hexadecimaal"
+                dan je getal. Als voorbeeld gaan we 299 omschrijven naar hexadecimal, hiervoor schrijven we de machten
+                van zestien op tot 4096. Je krijgt zo de tabel hieronder.
             </p>
+            <table class="byte" summary="translation process from base 10 to base 16">
+                <tr>
+                    <td class="noborder" colspan="4"> <img class="indent noshadow" src="../../afb/h6/l2/p6-o4-o5.png"
+                            alt="Geen Afbeelding" /> </td>
+                </tr>
+                <tr>
+                    <th scope="col" style="font-weight:normal;">4096</th>
+                    <th scope="col" style="font-weight:normal;">256</th>
+                    <th scope="col" style="font-weight:normal;">16</th>
+                    <th scope="col" style="font-weight:normal;">1</th>
+                </tr>
+            </table>
+
+            <p>
+                Bedenk dan "Mijn getal is kleiner dan 4096, dus ik hou die plek leeg. Maar ik kan één keer 256 aftrekken
+                van 299, dus ik schrijf daar een 1. Dan is er 43 over, want 299-256=43. Nu kan ik twee keer 16 aftrekken
+                en dan is er 11 over. 11 is B in hexadecimaal"
+            </p>
+
             <table class="remainders indent" summary="list of remainders after each step of process">
                 <tr>
                     <td><s>299</s></td>
@@ -222,11 +262,8 @@
                     <td>0</td>
                 </tr>
             </table>
+
             <table class="byte" summary="translation process from base 10 to base 16">
-                <tr>
-                    <td class="noborder" colspan="4"> <img class="indent noshadow" src="../../afb/h6/l2/p6-o4-o5.png"
-                            alt="Geen Afbeelding" /> </td>
-                </tr>
                 <tr>
                     <th scope="col" style="font-weight:normal;">4096</th>
                     <th scope="col" style="font-weight:normal;">256</th>
@@ -240,8 +277,11 @@
                     <td>B</td>
                 </tr>
             </table>
-            <p>Lees nu het nummer af: 12B<sub>16</sub> = 299<sub>10</sub>.</p>
+
+            <p> Lees nu het nummer af: 12B<sub>16</sub> = 299<sub>10</sub>.
+            </p>
         </div>
+
         <div class="forYouToDo">
             <ol start="3">
                 <li>Vertaal deze <strong>decimale getallen</strong> naar <strong>hexadecimaal</strong>.
@@ -254,10 +294,12 @@
                 </li>
             </ol>
         </div>
+
         <p> Merk op dat de algoritmes voor het vertalen van binair naar decimaal hetzelfde is als het algoritme voor het
             vertalen van hexadecimaal naar decimaal. Deze algortimes kunnen gebruikt worden om <em>elk</em> talstelsel
             te vertalen.
         </p>
+
         <div class="ifTime">
             <ol start="4">
                 <li> <img class="imageRight" src="../../afb/icons/PraatMetJeBuur.png" alt="Geen Afbeelding" />
