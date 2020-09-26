@@ -20,20 +20,19 @@
      <div class="full">
          <h2> Zwevendekommagetallen </h2>
          <div class="learn">
-             <p> <strong>
-                     Op deze pagina, </strong> ga je leren hoe computers niet-hele getallen opslaan.
+             <p> <strong> Op deze pagina, </strong> ga je leren hoe computers niet-hele getallen opslaan.
              </p>
          </div>
          <p>
-             De manier waarop computers getallen op slaan die niet heel zijn heet <strong> zwevendekommagetal </strong>.
+             De manier waarop computers getallen op slaan die niet heel zijn heet <strong>zwevendekommagetal</strong>.
          </p>
          <div class="endnote"> <a href="#hint-float" data-toggle="collapse"> Waar komt die rare naam vandaan? </a>
              <div id="hint-float" class="collapse">
-                 Deze rare naam wordt gebruikt omdat er vroeger een <em>vastkommagetal</em>notatie was voor niet-hele
+                 Deze rare naam wordt gebruikt omdat er vroeger een <em>vastkommagetal-</em>notatie was voor niet-hele
                  getallen met een vast aantal getallen achter de komma. Bijvoorbeeld een vastekommagetalnotatie met 2
-                 getallen achter de komma werd gebruikt om een hoevelheid geld in euro's en centen te laten zien:
-                 €82,45. Maar tegenwoordig gebruiken computers altijd zwevendekommagetallen om niet-hele getallen te
-                 laten zien, zelfs voor geld.
+                 getallen achter de komma werd gebruikt om een hoevelheid geld in euro's en centen te laten zien. Omdat
+                 geldbedragen altijd maar 2 getallen achter de komma hebben. Maar tegenwoordig gebruiken computers
+                 altijd zwevendekommagetallen om niet-hele getallen te laten zien, zelfs voor geld.
              </div>
          </div>
          <div class="takeNote">
@@ -56,12 +55,12 @@
              omdat je computer niet genoeg geheugen heeft.
          </p>
          <p>
-             Afrondfouten kunnen zorgen voor niet intuïtieve resultaten...
+             Afrondfouten kunnen zorgen voor onintuïtieve resultaten...
          </p>
          <div class="forYouToDo">
              <ol start="2">
                  <li> Probeer <img class="inline" src="../../afb/h6/l2/p4-o2.png" alt="Geen Afbeelding" /> en
-                     dan <img class="inline" src="../../afb/h6/l2/p4-o3.png" alt="Geen Afbeelding" /> . </li>
+                     dan <img class="inline" src="../../afb/h6/l2/p4-o3.png" alt="Geen Afbeelding" />. </li>
              </ol>
          </div>
          <p> Dit is geen bug in Snap<em>!</em>, Snap<em>!</em> rapporteert netjes het resultaat dat berekent wordt
@@ -71,18 +70,22 @@
              <a href="#hint-roundoff" data-toggle="collapse"> Hoe kan een simpele berekening zulke foute resultaten
                  geven? </a>
              <div id="hint-roundoff" class="collapse">
-                 Deze resultaten lijken verrassend omdat een breuk zoals 0.2 exact kan worden vertegenwoordigd <em>in
-                     decimalen</em> (in tegenstelling tot ⅓). Maar <em> binair</em> kunnen alleen breuken waarvan de
-                 noemer (het onderste getal) exact vertegenwoordigd worden. Dus 2/16 kan wel, maar 2/10 niet. De notatie
-                 van het zwevendekommagetal van 0.2 is net te groot, net zoals voor 0.4. twee net te grote waardes op
-                 tellen zorgt voor een fout die net groot genoeg is dat je de een te hoge waarde krijgt.
+                 Deze resultaten lijken verrassend omdat een breuk zoals 2/10, exact kan worden opgeschreven <em>in
+                     decimalen</em>, als 0.2 namelijk (in tegenstelling tot ⅓). Maar met <em>binaire</em> getallen
+                 kunnen alleen breuken waarbij de noemer (het onderste getal) 2 is, exact worden weergegeven. Dus 2/16
+                 kan wel, maar 2/10 niet.
+                 Het afgeronde getal waarmee in binair 0.2 wordt weergegeven is net ietsje groter dan 0.2, Dit geldt ook
+                 voor het afgeronde getal van 0.4, samen zijn deze 2 afrondfouten zo groot dat de optelsom van 0.2 en
+                 0.4 niet meer klopt.
              </div>
          </div>
          <p>
              Hoe goed de hardware ook is, bepaalde soorten berekeningen geven waarschijnlijk grove fouten met
-             zwevendekommagetallen. Een simpel voorbeeld is twee getallen van elkaar aftrekken die bijna dezelfde waarde
-             hebben. Het correcte antwoord ligt in de buurt van nul en als de getallen dicht genoeg bij elkaar liggen
-             zal het <em>onderstromen</em> en wordt nul gerapporteerd.
+             zwevendekommagetallen. Een simpel voorbeeld is twee getallen van elkaar aftrekken die heel dicht bij elkaar
+             liggen. Het correcte antwoord ligt in dat geval in de buurt van nul en als de getallen dicht genoeg bij
+             elkaar liggen zal door afrondfouten het resultaat van de berekening <em>onderstromen</em>. Dit betekent dat
+             het gerapporteerde resultaat <em>lager</em> ligt dan het daadwerkelijke resultaat. Dus bij de aftreksom 2 -
+             2.0001 wordt dan 0 gerapporteerd in plaats van 0.0001.
          </p>
          <div class="endnote"> <a href="#hint-killer" data-toggle="collapse">
                  Fouten door zwevendekommmagetallen kunnen heel duur zijn en zelfs zorgen voor slachtoffers.
@@ -111,7 +114,7 @@
                      leven.
                  </p>
                  <p> <small>
-                         From <em> Analoge en Digitale Conversie (Engels) </em> , door Wikibooks bijdragers,
+                         Overgenomen van <em> Analoge en Digitale Conversie (Engels) </em> , door Wikibooks bijdragers,
                          <a href="https://en.wikibooks.org/wiki/Analog_and_Digital_Conversion/Fixed_Wordlength_Effects"
                              target="_blank">
                              https://en.wikibooks.org/wiki/Analog_and_Digital_Conversion/Fixed_Wordlength_Effects
@@ -119,40 +122,48 @@
                  </p>
              </div>
          </div>
-         <p> Computerberekeningen met <em>hele getallen</em> zijn simpel. Of je krijgt een precies correct heel
+         <p> Computerberekeningen met <em>hele getallen</em> zijn simpel: of je krijgt een correct, heel
              getal of als het resultaat niet past in (niet-bignum) een heel getal dan krijg je een
-             <em>overstroomfout</em> en wordt het resultaat, vaak, omgezet in een zwevendekommagetal (zoals 30!).
+             <em>overstroomfout</em> en wordt het resultaat, als het goed is, omgezet in een zwevendekommagetal (zoals
+             bij 30!).
          </p>
-         <p> Computerberekeningen met <em>zwevendekommagetallen</em> daarentegen zijn moeilijk mo precies goed te
-             krijgen.
-             Voor 1985 had ieder computermodel net een ander formaat zwevendekommagetal en allemaal gaven ze foute
-             antwoorden op bepaalde vragen. Deze situatie werd opgelost door de
-             <a href="https://nl.wikipedia.org/wiki/IEEE_754" target="_blank"> IEEE 754 zwevendekommastandaard </a>
-             die nu door iedere computerfabrikant gebruikt wordt.
+         <p> Computerberekeningen met <em>zwevendekommagetallen</em> daarentegen zijn moeilijk om precies goed te
+             krijgen. Voor 1985 had ieder computermodel een ander formaat zwevendekommagetal en allemaal gaven ze
+             foute antwoorden op bepaalde vragen. Deze situatie werd opgelost door de <a
+                 href="https://nl.wikipedia.org/wiki/IEEE_754" target="_blank"> IEEE 754 zwevendekommastandaard </a> die
+             nu door iedere computerfabrikant gebruikt wordt.
          </p>
          <div class="endnote"> <a href="#hint-alternatives" data-toggle="collapse">
-                 Er zijn alternatieve voor zwevende komma's. </a>
+                 Er zijn alternatieven voor zwevende komma's. </a>
              <div id="hint-alternatives" class="collapse">
                  Als de kleine fouten die veroorzaakt worden door zwevendekommagetallen onacceptabel blijken te zijn in
                  bepaalde gevallen, dan kan een programma ervoor kiezen alternatie notaties te gebruiken:
                  <ul>
-                     <li> <strong> Exacte Rationale getallen. </strong> Twee bignums, een voor de noemer en een voor de
+                     <li> <strong> Exacte Rationale getallen. </strong> Twee bignums, één voor de noemer en één voor de
                          teller, kunnen gebruikt worden om een breuk precies te noteren.
                      </li>
-                     <li> <strong> Binair gecodeerde decimalen. </strong> Een decimaal getal dat genoteerd kan worden
-                         met vier bits, met een aantal vierbitcominaties voor een minteken en een komma. Een aantal
-                         decimale cijfers van een bepaalde lengte kunnen gebruikt worden om een decimaal bignums te
-                         maken, die precies een breuk noteert met een eindig aantal decimale getallen. Dit ontwijkt het
-                         0.2+0.4-probleem, maar werkt niet voor problemen met ⅓.
+                     <li> <strong> Binair gecodeerde decimalen. </strong> Een decimaal getal kan genoteerd worden
+                         met vier bits, de niet gebruikte bit-combinaties kunnen gebruikt worden voor voor een minteken
+                         en een komma. Een reeks van deze decimale cijfers kan gebruikt
+                         worden om een decimaal getal weer te geven. Je kan zo ook een breuk in decimalen weergeven dat
+                         precies een breuk noteert met een eindig aantal
+                         van deze binair-gecodeerde decimalen. Dus stel dat we de code 1110 voor . gebruiken, dan is
+                         1.32 gelijk aan <code>0001 1110 0011 0010</code>.
+                         Dit voorkomt het 0.2+0.4-probleem, maar werkt niet voor breuken die in decimaal een oneindige
+                         reeks cijfers nodig hebben zoals ⅓.
                      </li>
-                     <li> <strong> Decimale zwevendekommagetallen. </strong> Als de binaire notatie wordt uitgebreid met
-                         een vier-bitgetal voor "tot de 10de macht van" kunnen decimale getallen met de
-                         wetenschappelijke notatie genoteerd kunnen worden.
+                     <li> <strong> Decimale zwevendekommagetallen. </strong> Als de notatie met binair gecodeerde
+                         decimalen van hierboven wordt uitgebreid met een bit-combinatie die zegt "keer tien tot de
+                         macht" kunnen decimale getallen met de wetenschappelijke notatie genoteerd kunnen worden. Dus
+                         stel dat de code voor "keer tien tot de macht" gelijk is aan <code>1111</code>, dan is 2.5e+4
+                         gelijk aan: <code>0010 1110 0101 1111 0100</code>. (We hebben gezien in de vorige les dat e+
+                         gelijk is aan "keer tien tot de macht")
                      </li>
                  </ul>
              </div>
          </div>
-         <p> Zonder bignums wordt een resultaat dat te groot is voor een heel getal, omgezet in een zwevendekommagetal
+
+         <p> Zonder bignums wordt een resultaat dat te groot is voor een heel getal, omgezet in een zwevendekommagetal.
              <br />
              <img class="indent" src="../../afb/h6/l2/p4-o4.png" alt="Geen Afbeelding" />
          </p>
@@ -162,17 +173,20 @@
                      <img src="../../afb/h6/l2/p4-o5.png" alt="Geen Afbeelding" /> </li>
              </ol>
          </div>
-         <p> <strong> Wat gebeurt er? </strong> Ook al is 200! vrij groot het is niet "oneindig". Het resultaat wordt
-             veroorzaakt door de limiet van de grootte van zwevendekommagetallen. Als het resultaat van de berekening
-             groter is dan kan worden opgeslagen dan geeft de computer als resultaat een speciale code die de taal
-             interpreteert als Oneindig of ∞.
+
+         <p> <strong> Wat gebeurt er? </strong> Ook al is 200! vrij groot het is niet "oneindig". Het foute resultaat
+             wordt veroorzaakt door de limiet van de grootte van zwevendekommagetallen. Als het resultaat van de
+             berekening groter is dan kan worden opgeslagen dan rapporteert de computer een speciale code
+             die de taal interpreteert als Oneindig of ∞.
          </p>
+
          <div class="endnote">
-             Voor zwevendekommagetallen zijn er speciale codes voor oneindig, -oneindig (kleiner dan elke eindige
+             Voor zwevendekommagetallen zijn er speciale codes voor oneindig, -oneindig (kleiner dan elke andere
              waarde) en "Niet een Getal" (afgekort als NaN in het Engels) dat gebruikt wordt als resultaat voor een
              illegale berekening zoals 0/0. <br />
              <img class="indent" src="../../afb/h6/l2/p4-o6.png" alt="Geen Afbeelding" />
          </div>
+
          <div class="takeItFurther">
              <ol type="A">
                  <li> Stel je een <em>decimaal</em> zwevendekommagetal voor met één significant getal en een
@@ -187,6 +201,7 @@
                  </li>
              </ol>
          </div>
+
          <p> <strong> Hoe weet een programmeertaal of het een bitreeks moet interpreteren als een heel getal, een
                  zwevendekommagetal, een stuk tekst of iets anders? </strong>
              Programmeertalen doen dit op verschillende manieren, maar er is altijd een aantal <em>extra</em> bits die
@@ -194,22 +209,32 @@
              geïnterpreteerd moet worden.
 
          </p>
+
          <div class="takeNote"> Op het laagste niveau van abstractie wordt <em>alles</em> in een computer weergegeven
              als een binaire reeks. Bijvoorbeeld: <ul>
                  <li> Een Boolean waarde is een enkele bit, 0 voor <code> niet waar </code> en 1 voor <code> waar
                      </code>. </li>
-                 <li> Een stuk tekst is een reeks codes voor Unicode symbolen, waarvan iedere code wordt opgeslagen als
+                 <li> Een stuk tekst is een reeks codes voor Unicode-symbolen, waarvan iedere code wordt opgeslagen als
                      een heel getal. </li>
                  <li> Lijsten en blokken zijn ook voorbeelden van binaire reeksen. </li>
              </ul>
          </div>
+
          <div class="endnote">
              <a href="#hint-data-types" data-toggle="collapse"> Maar verschillende talen gebruiken data-types op andere
                  manieren. </a>
              <div id="hint-data-types" class="collapse">
                  <p> In goed ontworpen talen (zoals talen gebaseerd op Scheme) zit het data-type vast aan de waarde
-                     zelf. In andere talen is het zo dat wanneer je een variabele aanmaakt, je moet zeggen wat voor type
-                     waarde de variabele zal bevatten. Dan zit het data-type dus vast aan de <em>variabele</em>.
+                     zelf, dit zijn talen met <em>dynamische waardes</em>. In andere talen is het zo dat wanneer je een
+                     variabele aanmaakt, je moet zeggen wat voor type
+                     waarde de variabele zal bevatten. Dan zit het data-type dus vast aan de <em>variabele</em>, talen
+                     met dit systeem zijn talen met <em>statische waardes</em>. Stel je wilt een variabele <var>x</var>
+                     de waarde 5 geven, in een taal met dynamische waardes zou dat er zo uit kunnen zien: <br>
+                     <code> x = 5; </code> <br>
+                     In een taal met statische waardes ziet dat er zo uit: <br>
+                     <code> Getal x;</code><em>x wordt aangemaakt als een Getal-variabele.</em> <br>
+                     <code> x = 5;</code> <em>x krijgt de waarde 5.</em><br>
+
 
                      <!--Zodra iemand dit uit kan leggen (zie h6l2p2) uncomment het maar
                      In well-designed languages (those based on Scheme, for example), that data type code is attached to
@@ -226,7 +251,7 @@
                      -->
                  </p>
                  <p>Snap<em>!</em> heeft pluspunten die veel andere talen niet hebben en het is zeer waarschijnlijk dat
-                     je <em>volgende</em> informaticacursus een van deze andere talen zal gebruiken.
+                     je bij je <em>volgende</em> informaticacursus een taal met statische waardes zal leren gebruiken.
                  </p>
              </div>
          </div>
@@ -253,9 +278,8 @@
                          </div>
                          <div class="choice" identifier="c3">
                              <div class="text"> Dit resultaat werd veroorzaakt door een overstroomfout. </div>
-                             <div class="feedback"> Correct. 9+7=16, wat niet kan worden uitgedrukt met 4 bits.
-
-                                 0=(0000) <sub> 2 </sub> is laagste getalen en 15=(1111) <sub> 2 </sub> het hoogste wat
+                             <div class="feedback"> Correct. 9+7=16, 16 kan niet worden uitgedrukt met 4 bits.
+                                 0=(0000) <sub>2</sub> is het laagste getal en 15=(1111) <sub>2</sub> het hoogste wat
                                  uitgedrukt kan worden met een 4-bitsysteem.
                                  16=(10000) <sub> 2 </sub> zorgt voor een overstroomfout. </div>
                          </div>
