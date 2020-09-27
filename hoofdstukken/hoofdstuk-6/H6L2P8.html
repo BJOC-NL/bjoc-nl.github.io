@@ -19,29 +19,34 @@
 <body>
     <div class="full">
         <h2>Datacompressie</h2>
+
         <div class="learn"><strong>Op deze pagina,</strong> ga je leren over verschillende
             <em>datacompressie-algoritmes</em>, zoals degene die gebruikt worden in bestandstypes voor afbeeldingen.
         </div>
+
         <img class="imageRight" src="../../afb/h6/l2/p8-o4.png" alt="Geen Afbeelding" />
-        <p>Deze afbeelding van het Amerikaanse BJOC-logo (aan de rechterkant) is 158 pixels breed en 186 pixels hoog, in
-            totaal 29.388 pixels. De BMP (bitmap) bevat alle pixels in het afbeeldingsbestand met 4 bytes pet pixel. Dus
-            de grootte van het bestand is ongeveer 120 KB
+
+        <p> Deze afbeelding van het Amerikaanse BJOC-logo (aan de rechterkant) is 158 pixels breed en 186 pixels hoog,
+            in totaal 29.388 pixels. De BMP (bitmap) bevat alle pixels in het afbeeldingsbestand met 4 bytes per pixel.
+            Dus de grootte van het bestand is ongeveer 120 KB.
         </p>
+
         <h3>Compressie zonder Verlies</h3>
-        <p>Dat is een inefficiënte manier om informatie op te slaan. Als je kijkt naar de eerste 158 pixels in de
-            bovenste regel, dan zie je dat ongeveer de eerste 60 wit zijn. dan komen er 5 geel/oranje pixels (dat
+        <p> Een BMP-bestand is een inefficiënte manier om informatie op te slaan. Als je kijkt naar de eerste 158 pixels
+            in de bovenste regel, dan zie je dat ongeveer de eerste 60 wit zijn. dan komen er 5 geel/oranje pixels (dat
             is het bovenste deel van de "b"). en dan is de rest van de rij wit.
         </p>
-        <p class="indent">...<img src="../../afb/h6/l2/p8-o1.png" alt="Geen Afbeelding">... </p>
-        <p> in plaats van 158 pixels individueel op te slaan kunnen we ze comprimeren met 'run-length'-versleuteling en
-            dan
-            gewoon zes waardes opslaan (3 getallen en 3 kleuren):
-
+        <p class="indent">
+            ...<img src="../../afb/h6/l2/p8-o1.png" alt="Geen Afbeelding">...
+        </p>
+        <p> in plaats van 158 pixels individueel op te slaan kunnen we ze samendrukken met 'run-length'-versleuteling en
+            dan gewoon zes waardes opslaan (3 getallen en 3 kleuren):
         </p>
         <div class="sidenote">
             "Run-length"-versleuteling slaat de lengte van iedere "run" op van iedere kleur. Een run is hier een
             aaneensluitende rij van pixels van een bepaalde kleur.
         </div>
+
         <table class="byte indent" width="30%" summary="run length encoding for top row of BJC logo">
             <tr>
                 <th width="47%" scope="col">Aantal Pixels</th>
@@ -60,10 +65,12 @@
                 <td>FFFFFF</td>
             </tr>
         </table>
-        <p>Tegenwoordig is de grootte van een afbeelding niet zo belangrijk, maar bedenk, ieder frame in een film is een
-            afbeelding en denk dan even na over het versturen van informatie via het internet. Compressie maakt het
+
+        <p> Tegenwoordig is de grootte van een afbeelding niet zo belangrijk, maar bedenk, ieder frame in een film is
+            een afbeelding en denk dan even na over het versturen van informatie via het internet. Compressie maakt het
             makkelijker om een film te streamen.
         </p>
+
         <div class="forYouToDo" id="first">
             <ol>
                 <li>Gebruik de Color Mixer op <a href="http://www.mathsisfun.com/hexadecimal-decimal-colors.html"
@@ -71,27 +78,33 @@
                     van de hexadecimale code E5A84A.</li>
             </ol>
         </div>
+
         <div class="sidenote">
             <p><strong>Compressie zonder verlies</strong> bedenkt dat <em>geen</em> informatie verloren gaat.
             </p>
         </div>
-        <p> Run-Length encoding is een formaat dat comprimeert zonder verlies. Het verliest geen informatie. de
+
+        <p> Run-Length-versleuteling is een formaat dat gegevens samendrukt zonder verlies. Het verliest geen
+            informatie. De
             originele afbeelding kan gereconstrueerd worden met elke pixel exact hetzelfde. Maar het
-            run-length-algoritme
-            werkt niet goed
-            als er heel veel verschillende kleuren pixels zijn die niet opeenvolgend zijn. als de lengte van een
-            kleurreeks slechts een enkele pixel betreft en hij codeert zowel de lengte van de reeks en de kleur dan
-            heeft het 2 keer zo veel opslag nodig als wanneer je alleen de kleur van de pixel op zou slaan. Een ander
-            compressie algoritme zonder verlies is PNG (Portable Network Graphics, je spreekt het uit als "ping").
+            run-length-algoritme werkt niet goed als er heel veel verschillende kleuren pixels zijn die niet
+            opeenvolgend zijn. als de lengte van een kleurreeks slechts een enkele pixel betreft en de versleuteling
+            codeert zowel de lengte van de reeks en de kleur dan heeft het 2 keer zo veel opslag nodig als wanneer je
+            alleen de kleur van de pixel op zou slaan. Een ander compressie algoritme zonder verlies is PNG (Portable
+            Network Graphics, je spreekt het uit als "ping").
 
         </p>
+
         <div class="endnote">
             Het PNG-algoritme is ingewikkeld en gebruikt verschillende strategieën, afhankelijk van hoe de kleur
             varieert in elk klein deel van de afbeelding. Wat je moet onthouden is, is dat PNG verliesloos is.
         </div>
+
         <h3>Lossy Compressie</h3>
         <div class="sidenote">
-            <p><strong>Lossy</strong> bedenkt dat <em>sommige</em> informatie verloren raakt.</p>
+            <p>
+                <strong>Lossy</strong> bedenkt dat <em>sommige</em> informatie verloren raakt.
+            </p>
         </div>
         <p> <strong>Lossy compressie-algoritmen</strong> kunnen de bestandsgrootte nog kleiner maken, maar de originele
             foto kan niet perfect worden gereconstrueerd; informatie raakt verloren. Dit zou verschrikkelijk zijn als
@@ -134,12 +147,12 @@
             </table>
         </p>
         <div class="vocabFullWidth"><strong>: Zonder of Met Verlies?</strong>
-            <p> Compressie <strong>zonder verlies</strong> (zoals PNG)is <em>omkeerbaar</em>; je kan de originele
+            <p> Compressie <strong>zonder verlies</strong> (zoals PNG) is <em>omkeerbaar</em>; je kan de originele
                 gegevens herconstrueren. Deze soort compressie werkt door onnodige gegevens te verwijderen.
             </p>
-            <p> Compressie <strong>met verlies</strong> (zoals JPG) is <em>niet</em> volledig omkeerbaar; je kan alleen
-                een benadering maken van de originele gegevens. Deze soort compressie werkt door gegevens weg te halen
-                waarvan mensen het niet zullen merken.
+            <p> Lossy Compressie, dus compressie <strong>met verlies</strong> (zoals JPG) is <em>niet</em> volledig
+                omkeerbaar; je kan alleen een benadering maken van de originele gegevens. Deze soort compressie werkt
+                door gegevens weg te halen waarvan mensen het niet zullen merken.
             </p>
         </div>
         <div class="forYouToDo">
@@ -159,13 +172,11 @@
                             <div class="text"> De film was opgeslagen met minder bits per seconde dan de originele film.
                             </div>
                             <div class="feedback"> Dit is waarschijnlijk wat er gebeurd is.
-
                             </div>
                         </div>
                         <div class="choice" identifier="c2">
                             <div class="text"> De kopie van het bestand is op een bepaalde manier beschadigd geraakt
                                 tijdens het opslaan.
-
                             </div>
                             <div class="feedback"> Dit is mogelijk maar als het bestand beschadigd is dan is het
                                 onwaarschijnlijk dat het een consistente negatieve impact op de beeldkwaliteit had.
@@ -190,7 +201,8 @@
 
                             </div>
                         </div>
-                    </div> <!-- Question 2 -->
+                    </div>
+                    <!-- Question 2 -->
                     <div class="assessment-data" type="multiplechoice"
                         identifier="Which are examples of lossless transformation?" hasinlinefeedback="true"
                         maxchoices="2" responseIdentifier="ri2" shuffle="true">
@@ -201,7 +213,7 @@
                         </div>
                         <div class="choice" identifier="c1">
                             <div class="text"> Het maken van de negatief van de afbeelding, hierbij worden de
-                                kleuren omgekeerd en lijken donkere gebieden dus lichter.
+                                kleuren omgekeerd en worden donkere kleuren lichter en lichtere kleuren donkerder.
                             </div>
                             <div class="feedback">Correct. Deze transformatie is omkeerbaar.
                             </div>
