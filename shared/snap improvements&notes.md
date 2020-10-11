@@ -113,6 +113,10 @@ L5 is hetzelfde.
 
 ### Hoofdstuk 3
 
+L1 is L2
+
+L1P3, nu L2P2, heeft een extra "Take it Further".
+
 ### Hoofdstuk 4
 
 H6L2 -> H4L4

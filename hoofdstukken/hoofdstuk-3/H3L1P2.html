@@ -30,14 +30,14 @@
 
         <div class="forYouToDo" id="first">
             <ol>
-                <li>Als het nog niet open staat, open dan je H3L1-Contactenlijst project.</li>
+                <li>Als het nog niet open staat, open dan je H3L1-Contactenlijst project van de vorige pagina.</li>
                 <li>
                     Maak een "Voeg Contact Toe"-knop.
                     <ol>
 
                         <li>Zorg dat het script aan de gebruiker vraagt voor zijn contactgegevens
                             en voeg deze informatie dan toe aan <var>contactenlijst</var> met behulp van de
-                            <code>contact</code>constructor.</li>
+                            <code>contact</code>-constructor.</li>
 
                         <div class="narrower">
                             <h4><strong>Informatie verzamelen van de gebruiker.</strong></h4>
@@ -48,8 +48,9 @@
                                     <li>
                                         <strong>Je <em>kan</em> verschillende <code>vraag</code>- en
                                             <code>antwoord</code>blokken gebruiken, samen met scriptvariabelen</strong>.
-                                        Om te vragen naar ieder stukje informatie en dit op te slaan tot je alle
-                                        informatie hebt om een <code>contact</code> te maken.<br />
+                                        Je vraagt dan voor ieder stuk informatie een voor een en slaat het ook een voor
+                                        een op. Pas als je alle informatie hebt maak je een <code>contact</code> aan.
+                                        <br />
                                         <img height="40" class="indent" src="../../afb/h3/l1/blocks/p2-b1.png"
                                             alt="Geen Afbeelding" />
                                     </li>
@@ -73,15 +74,15 @@
                                     <p>
                                         Je zou een algemener <img height="40" class=""
                                             src="../../afb/h3/l1/blocks/p2-b5.png" alt="Geen Afbeelding" />
-                                        hulpblok kunnen maken (nog een abstractie) om in de andere hulpblokken te
-                                        gebruiken in plaats van iedere keer het <code>vraag</code>- en
+                                        hulpblok kunnen maken (nog een abstractie) die je gebruikt in de 3 hulpblokken
+                                        hierboven. Dan hoef je niet 3 keer het <code>vraag</code>- en
                                         <code>antwoord</code>script opnieuw te schrijven.
                                     </p>
                                 </div>
                             </p>
                         </div>
                         <li><strong>Test en debug. </strong>Voeg een paar zelfverzonnen mensen toe aan je
-                            <var>contactenlijst</var>. Zorg dat alles zoals verwacht werkt.</li>
+                            <var>contactenlijst</var>. Zorg dat alles naar wens werkt.</li>
                     </ol>
                 </li>
                 <div class="endnote">
@@ -112,12 +113,12 @@
                     </p>
                 </div>
                 <li>
-                    Maak een "Maak Lijst Leeg"-knop die van je <var>contactenlijst</var> weer een lege lijst kan maken.
+                    Maak een "Maak Lijst Leeg"-knop die van je <var>contactenlijst</var> weer een lege lijst maakt.
                     <ol>
                         <li>
-                            Zorg dat het script vraagt of de gebruiker zeker weet of ze de lijst willen verwijderen.
-                            <div class="endnote">Bijvoorbeeld: door "Maak lijst leeg" aan te klikken zou aan de
-                                gebruiker kunnen <code>vragen</code> "Typ 'c' om de lijst leeg te maken, klik op elke
+                            Zorg dat het script vraagt of de gebruiker zeker weet of de lijst verwijderd mag worden.
+                            <div class="endnote">Bijvoorbeeld door "Maak lijst leeg" aan te klikken zou je aan de
+                                gebruiker kunnen <code>vragen</code> "Typ 'l' om de lijst leeg te maken, klik op elke
                                 andere knop om terug te gaan."</div>
                         </li>
                         <li><strong>Debug.</strong> Zorg dat de knop reageert zoals verwacht bij beide keuzes.</li>

@@ -22,7 +22,7 @@
         <div class="learn">
 
             <p>
-                <strong>Op deze pagina,</strong> programmeer je een code voor een "Find Contact" knop, om contacten in
+                <strong>Op deze pagina,</strong> programmeer je code voor een "Vind Contact"-knop, om contacten in
                 een lijst te vinden .<br />
                 <img class="indent" src="../../afb/h3/l1/blocks/p3-b1.png" alt="Geen Afbeelding" />
             </p>
@@ -30,16 +30,16 @@
 
         <p>Hoe meer contacten je toevoegt aan je lijst, hoe moeilijker het wordt om de naam die je zoekt te vinden.
             Het bouwen van een zoekfunctie is daarom essentieel om snel de gewenste informatie te vinden.
-            Lijsten, het toevoegen en verwijderen van gegevens uit lijsten en het doorzoeken van lijsten zijn veel
-            voorkomende functies in programma's.
+            Het toevoegen en verwijderen van gegevens uit lijsten en het doorzoeken van lijsten zijn
+            functies die in veel programma's.
             <div class="forYouToDo" id="first">
                 <ol>
-                    <li>Als het niet al open staat, open jouw H3L1-Contactenlijst-project.</li>
+                    <li>Als het niet al open staat, open dan je H3L1-Contactenlijst-project.</li>
                     <li>
                         Maak een <img height="40" src="../../afb/h3/l1/blocks/p3-b2.png" alt="Geen Afbeelding" />
-                        blok dat een stuk tekst als invoer gebruikt, en dan een lijst van contacten doorgeeft waarbij de
-                        namen dat stuk tekst bevatten, of een lege lijst als het stuk tekst in geen enkele naam voorkomt
-                        in <var>contactenlijst</var>.
+                        blok dat een stuk tekst als invoer gebruikt, en dan een lijst van alle contacten wiens naam in
+                        dat stuk tekst staat. Als geen enkele naam van een contact in het stuk tekst staat, dan
+                        rapporteert het blok een lege lijst.
                         <div class="narrower">
                             <strong>Gebruik deze blokken:</strong>
                             <ol type="a">
@@ -55,7 +55,7 @@
                                 </div>
                                 <li><img height="40" class="inline" src="../../afb/h3/l1/blocks/p3-b4.png"
                                         alt="Geen Afbeelding">,
-                                    die alleen de items doorgeeft die de functie waarmaakt.
+                                    die alleen de items doorgeeft die de functie waar maakt.
                                 </li>
                                 <li><img height="40" class="inline" src="../../afb/h3/l1/blocks/p3-b5.png"
                                         alt="Geen Afbeelding" />,
@@ -70,7 +70,9 @@
                         </div>
                     </li>
                     <li>
-                        Maak een "Vind Contact"-knop.
+                        Maak een "Vind Contact"-knop waarbij je gebruik maakt van het <img height="40"
+                            src="../../afb/h3/l1/blocks/p3-b2.png" alt="Geen Afbeelding" />
+                        blok dat je net gemaakt hebt.
                         <ol>
                             <li>Maak het script, vraag de gebruiker naar welk contact je moet zoeken en laat de sprite
                                 <code>doorgeven</code> welke contacten overeen komen.</li>
@@ -88,20 +90,21 @@
                     <li>
                         Maak een "Verwijder Contact"-knop.
                         <ol>
-                            <li>Verplaats de "Verwijder Contact" knop naar het speelveld.</li>
-                            <li>Maak het script en vraag de gebruiker: "Voer de contact naam(/namen) in die je wil
+                            <li> Zet de "Verwijder Contact"-knop op het speelveld.</li>
+                            <li> Maak het script en vraag de gebruiker: "Voer de contactnaam of -namen in die je wil
                                 verwijderen".</li>
-                            <li>Daarna gebruik je je <code>Vind Contact</code> blok om alle overeenkomende contacten te
+                            <li>Daarna gebruik je je <code>Vind Contact</code>-blok om alle overeenkomende contacten te
                                 vinden.</li>
-                            <li>Geef de gebruiker de lijst met overeenkomende contacten en vraag om bevestiging om ze te
-                                verwijderen (zodat de gebruiker niet per ongeluk zijn contacten verwijderd).</li>
+                            <li>Geef de gebruiker de lijst met overeenkomende contacten en vraag of ze zeker weten dat
+                                ze deze contacten willen verwijderen. (zodat de gebruiker niet per ongeluk zijn
+                                contacten kan verwijderen).</li>
                             <li>Als de gebruiker bevestigt dat hij de contacten wil verwijderen, vervang dan
-                                de <var>contactenlijst</var> met een lijst van alle namen die <em>niet</em> overeenkomen
-                                met de ingevoerde naam.</li>
+                                de <var>contactenlijst</var> met een nieuwe lijst met alle namen die <em>niet</em>
+                                overeenkomen met de ingevoerde naam.</li>
                         </ol>
                     </li>
-                    <li>Pas je "Verwijder Contact" script zo aan dat het zijn gebruiker laat kiezen welk contact
-                        hij/zij wilt verwijderen wanneer <code>Vind</code> er meer dan één doorgeeft.</li>
+                    <li>Pas je "Verwijder Contact"-script zo aan dat de gebruiker kan kiezen welk contact
+                        hij/zij wilt verwijderen als er meerdere contacten zijn gevonden met dezelfde naam.</li>
                 </ol>
             </div>
     </div>
