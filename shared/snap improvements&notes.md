@@ -35,6 +35,8 @@
 * Base 7 -> Talstelsel van 7
 * Helper function -> Hulpfunctie
 
+* h3l4p1 origin -> origine? weet niet of dit een term in de wiskunde heeft
+
 ## Andere vragen/opmerkingen
 
 * Vertaalde Projecten hebben nu een letterlijke link naar het project, dit zou netter moeten kunnen, weet niet hoe.
@@ -56,12 +58,8 @@
 ## TODO
 
 * Alle "Als Youtube geblokkeerd is" hetzelfde maken.
-* Controleer alle pagina's nog op fouten.
-* namen veranderen naar Alex Bo en Yasmine
-* referenties naar AP CS Exam/ Curriculum weghalen. GEDAAN?
 * Er zijn een aantal links naar pagina's, dit zijn nu links binnen de files, e.g. `: ../../units ... /h1l3p1.html`. Dit is miss niet ideaal? GEDAAN?
 * H2L5P2 heeft een strip, die heb ik vertaald, maar dit valt eigenlijk niet onder copyright.
-* H4L1P1 heeft link naar extra pagina ("zoals HTML"),is nu weggehaald
 
 ## Hypothesis
 
