@@ -48,6 +48,8 @@
 * h2l4p2 vind de "als er nog tijd over is' een beetje vaag ook met het "als je wil".
 * alle "Als Youtube geblokkeerd is" consistent maken.
 
+* h3l5p2 ik kan de "oranje cluster" niet goed vinden, het zijn of alle oranje punten, of de 2 puntjes uruguay en argentinie. miss bedoelen ze de rode cluster?
+
 ## Externe Bronnen
 
 * H1L4P3, Verhaal in The Guardian,
