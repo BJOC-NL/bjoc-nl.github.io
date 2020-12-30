@@ -13,7 +13,7 @@
         }
     </script>
     <link rel="stylesheet" type="text/css" href="../../js+css/css/bjc-gifffer.css">
-    <title>UHoofdstuk 4 Les 2: Communicatieprotocollen, Pagina 2</title>
+    <title>Hoofdstuk 4 Les 2: Communicatieprotocollen, Pagina 2</title>
 </head>
 
 <body>
@@ -24,20 +24,19 @@
                 communicatie op het internet.</p>
         </div>
 
-
-        <p> Computer, servers en routers zijn vrij betrouwbaar, maar soms raakt een pakket verloren en apparaten op het
-            internet, moeten zulke fouten aankunnen. Een manier om fouten aan te pakken is om er niks om te geven. (Als
-            je een frame van een video kwijtraakt, maakt het niet uit.) Een andere manier (TCP genaamd) is om pakketjes
-            te blijven versturen totdat aangegeven wordt dat ze ontvangen zijn. <strong>TCP (Transmission Control
-                Protocol in het Nederlands, Verzendingcontroleprotocol)</strong> garandeert <em>betrouwbare</em>
-            dataverzending door bij te houden welke pakketjes succesvol ontvangen zijn, een verloren of beschadigd
-            pakkeetje wordt opnieuw verstuurd. Daarnaast wordt ook aangegeven wat de volgorde van de data is om het weer
-            in elkaar te zetten bij de ontvanger.
+        <p> Computer, servers en routers zijn vrij betrouwbaar, maar soms raakt een pakket verloren. Zulke fouten moet
+            het internet aankunnen. Een manier om fouten aan te pakken is om er niks om te geven. (Als
+            je één frame van een video kwijtraakt, maakt het niet heel veel uit.) Een andere manier (TCP genaamd) is om
+            pakketjes te blijven versturen totdat aangegeven wordt dat ze ontvangen zijn.
+            <strong>TCP (Transmission Control Protocol in het Nederlands, Verzendingcontroleprotocol)</strong>
+            garandeert <em>betrouwbare</em> dataverzending door bij te houden welke pakketjes succesvol ontvangen zijn,
+            een verloren of beschadigd pakkeetje wordt opnieuw verstuurd. Daarnaast wordt ook aangegeven wat de volgorde
+            van de data is om het weer in de goede volgorde elkaar te zetten bij de ontvanger.
         </p>
         <div class="vocabFullWidth">
-            <p><strong>TCP/IP</strong> is a paar protocollen die voor abstractie zorgen. <strong>IP</strong> laat je
-                computer doen alsof het een <em>directe</em> verbinding heeft met een andere computer.
-                <strong>TCP</strong> laat je computer doen alsof het een betrouwbare verbinding heeft met de andere
+            <p><strong>TCP en IP</strong> zijn een paar protocollen die voor abstractie zorgen. Met <strong>IP</strong>
+                doet je computer alsof het een <em>directe</em> verbinding heeft met een andere computer.
+                Met <strong>TCP</strong> doet je computer alsof het een betrouwbare verbinding heeft met een andere
                 computer.
             </p>
         </div>
@@ -55,11 +54,11 @@
 
         <div class="takeNote">
             <p>
-                Het end-to-end-ontwerp van TCP en IP is een abstractie:
+                Het end-to-endprincipe van TCP en IP is een abstractie:
                 <ul>
-                    <li> De computers (ook servers) aan de twee eindes van een gesprek over het internet voeren het
+                    <li> De computers aan de twee eindes van een gesprek over het internet voeren het
                         <strong>Transmission Control Protocol</strong> (TCP) uit, in het Nederlands
-                        Verzendingscontroleprotocol. Dit protocol garandeert dat alle vezendingen in het gesprek
+                        Verzendingsbeheerprotocol. Dit protocol garandeert dat alle verzendingen in het gesprek
                         betrouwbaar zijn.
                     </li>
                     <li> De routers op ieder knooppunt op het internet voeren het <strong>internetprotocol</strong>
@@ -100,18 +99,18 @@
                 </li>
             </ol>
         </div>
-        <p> TCP voegt extra informatie toe aan ieder pakketje zodat de ontvanger kan bijhouden hoevel pakketjes er al
-            ontvangen zijn, missende pakketjes opnieuw kan aanvragen en de pakketjes in de goeie volgorde kan zetten om
-            het originele bericht te kunnen lezen. In de simulatie arriveert een pakket correct (zelfs als het niet in
+        <p> TCP voegt extra informatie toe aan ieder pakketje zodat de ontvanger kan bijhouden hoeveel pakketjes er al
+            ontvangen zijn, missende pakketjes opnieuw kan aanvragen en de pakketjes in de goeie volgorde kan
+            terugzetten. In de simulatie hierboven arriveert een pakket correct (zelfs als het niet in
             de goede volgorde aankomt) of het arriveert nooit. Maar op het internet is het mogelijk dat een pakket
             arriveert met <em>fouten in de data</em> dus het TCP moet controleren of er fouten in het pakket zitten en
-            aanvragen of het pakketje opnieuw verzonden kan worden.
+            vragen of het pakketje opnieuw verzonden kan worden.
         </p>
 
         <div class="ifTime">
             <ol start="3">
                 <li>Lees <a href="http://www.bitsbook.com/wp-content/uploads/2008/12/B2B_3.pdf#page=324"
-                        target="_blank"><em>Blown to Bits</em> pages 306-309</a>.</li>
+                        target="_blank"><em>Blown to Bits</em> pagina's 306-309</a>.</li>
             </ol>
         </div>
 
