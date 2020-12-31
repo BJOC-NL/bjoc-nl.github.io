@@ -10,7 +10,7 @@
 
 ## ALGEMEEN
 
-* In H2L1P3 <a href="<http://snap.berkeley.edu/snapsource/help/SnapManual.pdf">   Manual vertalen?
+* In H2L1P3 <a href="<http://snap.berkeley.edu/snapsource/help/SnapManual.pdf">   Manual</a> vertalen?
 
 ## 14/05 SVT
 
@@ -49,6 +49,7 @@
 * alle "Als Youtube geblokkeerd is" consistent maken.
 
 * h3l5p2 ik kan de "oranje cluster" niet goed vinden, het zijn of alle oranje punten, of de 2 puntjes uruguay en argentinie. miss bedoelen ze de rode cluster?
+* h4l3(p1) willen we miss alleen 'coderen-decoderen' of 'versleutelen-ontcijferen' gebruiken. De 1ste is handig omdat decoderen duidelijk het tegenovergestelde is van coderen, maar de 2e zijn wat makkelijkere woorden die wel minder duidelijk tegenovergestelden zijn.
 
 ## Externe Bronnen
 
