@@ -60,7 +60,8 @@
 
 ## TODO
 
-* Alle "Als Youtube geblokkeerd is" hetzelfde maken.
+* Titels zorgen dat alleen eerste woord een hoofdletter heeft.
+* Alle "Als Youtube geblokkeerd is" hetzelfde maken. GEDAAN
 * Er zijn een aantal links naar pagina's, dit zijn nu links binnen de files, e.g. `: ../../units ... /h1l3p1.html`. Dit is miss niet ideaal? GEDAAN?
 * H2L5P2 heeft een strip, die heb ik vertaald, maar dit valt eigenlijk niet onder copyright.
 
