@@ -16,83 +16,97 @@
     <title>Hoofdstuk 1 Optionele Projecten, Pagina 2</title>
 </head>
 
-<!-- https://bjc.edc.org/March2019/bjc-r/cur/programming/1-introduction/optional-projects/2-clock.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment -->
-
 <body>
-    <h2>Bouw je eigen klok</h2>
-    <div class="learn">
-        <strong>In dit project,</strong> ga je een klok modelleren die de tijd op dit moment weergeeft. Je gaat code
-        schrijven die zorgt dat de secondewijzer, minutenwijzer en uurwijzer correct draaien en de tijd bijhouden.
-        <br />
-        <img class="indent" src="../../afb/h1/o1/p2-v1.gif" alt="Geen Afbeelding" />
+    <div class="full">
+        <h2>Bouw je eigen klok</h2>
+        <div class="learn">
+            <strong>In dit project,</strong> ga je een klok modelleren die de tijd op dit moment weergeeft. Je gaat code
+            schrijven die zorgt dat de secondewijzer, minutenwijzer en uurwijzer correct draaien en de tijd bijhouden.
+            <br />
+            <img class="indent" src="../../afb/h1/o1/p2-v1.gif" alt="Geen Afbeelding" />
+        </div>
+
+        <div class="forYouToDo" id="first">
+            <ol>
+                <li> Om een klok te bouwen moet je uit zien te vinden hoeveel graden de secondewijzer iedere seconde
+                    moet
+                    draaien. Hoeveel moeten de minutenwijzer iedere minuut draaien en de uurwijzer ieder uur?
+                </li>
+                <li>
+                    <a class="run"
+                        href="https://snap.berkeley.edu/snap/snap.html#present:Username=cfkaligula&ProjectName=BouwJeEigenKlok"
+                        target="_blank">
+                        <img class="inline" src="../../afb/icons/LaadEnSlaOp.png" alt="Geen Afbeelding"></a>
+                    <br />
+                    Dit project geeft je drie sprites met uiterlijken voor de secondewijzer, minutenwijzer en uurwijzer.
+                    De
+                    rode secondewijzer heeft ook een geluidsbestand voor het tikken van de klok genaamd "Tick".
+                </li>
+
+                <div class="endnote">
+                    De volgende blokken kan je gebruiken om je code te schrijven voor de secondewijzer.
+                    <br />
+                    <img class="indent" src="../../afb/h1/o1/p2-b1.png" height="40" alt="Geen Afbeelding" />
+                    <img src="../../afb/h1/o1/p2-b2.png" height="40" alt="Geen Afbeelding" />
+                    <br />
+                    In het Waarnemen-menu kan je blokken vinden die de huidige tijd rapporteren. Als bijvoorbeeld de
+                    huidige
+                    tijd <strong>16:50:11</strong> is, dan rapporteren deze blokken:
+                    <br />
+                    <img class="indent" src="../../afb/h1/o1/p2-b3.png" height="45" alt="Geen Afbeelding" />
+                    <img src="../../afb/h1/o1/p2-b4.png" height="45" alt="Geen Afbeelding" />
+                    <img src="../../afb/h1/o1/p2-b5.png" height="45" alt="Geen Afbeelding" />
+                </div>
+
+                <li> Probeer zelf code te schrijven voor iedere sprite, waarbij je ze vertelt waar ze naar toe moeten
+                    wijzen
+                    op dat moment. Kijk alleen naar
+                    <a href="./H1O1P2-hints.html" target="_blank"> Hints om je eigen klok te bouwen </a> als je echt
+                    vastzit.
+                </li>
+            </ol>
+        </div>
+
+        <div class="takeItFurther">
+            <ol type="A">
+                <li>
+                    Bij de meeste klokken met wijzers, beweegt de uurwijzer constant, in plaats van dat hij bij ieder
+                    nieuw
+                    uur verspringt. De uurwijzer wijst bijvoorbeeld naar een plek tussen 12 en 1 als de tijd
+                    <strong>12:26:36</strong> is. Probeer dit ook te implementeren.
+                    <br />
+                    <img class="indent" src="../../afb/h1/o1//p2-o1.png" alt="Geen Afbeelding" /><br />
+                </li>
+                <li>
+                    Kies of teken uiterlijken voor de wijzers en klok om een eigen stijlvolle klok te maken. Je kan zelf
+                    een
+                    afbeelding tekenen of zoeken op internet, je kan een programma gebruiken zoals Photoshop om de
+                    afbeelding aan te passen zodat hij de goeie vorm heeft. Je moet niet vergeten bij de instellingen
+                    van de
+                    uiterlijken het draaipunt op de goeie plek te zetten.
+                    <br />
+                    <img class="indent" src="../../afb/h1/o1//p2-o2.png" height="215" alt="Geen Afbeelding" />
+                </li>
+                <li>
+                    Maak een wekker die invoer gebruikt van de gebruiker en geluid maakt als de tijd om is. Je zal een
+                    variabele moeten maken in het Variabelen-menu om de invoer van de gebruiker op te slaan.
+                    <br />
+                    <img class="indent" src="../../afb/h1/o1//p2-o3.png" height="120" alt="Geen Afbeelding" />
+                </li>
+                <li>
+                    Bouw een "grootvaders klok" met een slinger als mechaniek. Of een "koekoeksklok" die een animatie
+                    met
+                    een vogel afspeelt op bepaalde momenten.
+                </li>
+            </ol>
+        </div>
     </div>
-
-    <div class="forYouToDo" id="first">
-        <ol>
-            <li> Om een klok te bouwen moet je uit zien te vinden hoeveel graden de secondewijzer iedere seconde moet
-                draaien. Hoeveel moeten de minutenwijzer iedere minuut draaien en de uurwijzer ieder uur?
-            </li>
-            <li>
-                <a class="run"
-                    href="https://snap.berkeley.edu/snap/snap.html#present:Username=cfkaligula&ProjectName=BouwJeEigenKlok"
-                    target="_blank">
-                    <img class="inline" src="../../afb/icons/LaadEnSlaOp.png" alt="Geen Afbeelding"></a>
-                <br />
-                Dit project geeft je drie sprites met uiterlijken voor de secondewijzer, minutenwijzer en uurwijzer. De
-                rode secondewijzer heeft ook een geluidsbestand voor het tikken van de klok genaamd "Tick".
-            </li>
-
-            <div class="endnote">
-                De volgende blokken kan je gebruiken om je code te schrijven voor de secondewijzer.
-                <br />
-                <img class="indent" src="../../afb/h1/o1/p2-b1.png" height="40" alt="Geen Afbeelding" />
-                <img src="../../afb/h1/o1/p2-b2.png" height="40" alt="Geen Afbeelding" />
-                <br />
-                In het Waarnemen-menu kan je blokken vinden die de huidige tijd rapporteren. Als bijvoorbeeld de huidige
-                tijd <strong>16:50:11</strong> is, dan rapporteren deze blokken:
-                <br />
-                <img class="indent" src="../../afb/h1/o1/p2-b3.png" height="45" alt="Geen Afbeelding" />
-                <img src="../../afb/h1/o1/p2-b4.png" height="45" alt="Geen Afbeelding" />
-                <img src="../../afb/h1/o1/p2-b5.png" height="45" alt="Geen Afbeelding" />
-            </div>
-
-            <li> Probeer zelf code te schrijven voor iedere sprite, waarbij je ze vertelt waar ze naar toe moeten wijzen
-                op dat moment. Kijk alleen naar
-                <a href="./H1O1P2hint.html" target="_blank"> Hints om je eigen klok te bouwen </a> als je echt vastzit.
-            </li>
-        </ol>
+    <div class="full-bottom-bar" style="background-position: 20px 3px;">
+        <div class="bottom-nav btn-group"><a class="btn btn-default backbutton arrow " style="min-width: 90px;"
+                href="H1O1P1.html">Terug</a><a style="min-width:90px;" class=" btn btn-default forwardbutton arrow"
+                href="H1O1P3.html">Volgende</a>
+        </div>
     </div>
-
-    <div class="takeItFurther">
-        <ol type="A">
-            <li>
-                Bij de meeste klokken met wijzers, beweegt de uurwijzer constant, in plaats van dat hij bij ieder nieuw
-                uur verspringt. De uurwijzer wijst bijvoorbeeld naar een plek tussen 12 en 1 als de tijd
-                <strong>12:26:36</strong> is. Probeer dit ook te implementeren.
-                <br />
-                <img class="indent" src="../../afb/h1/o1//p2-o1.png" alt="Geen Afbeelding" /><br />
-            </li>
-            <li>
-                Kies of teken uiterlijken voor de wijzers en klok om een eigen stijlvolle klok te maken. Je kan zelf een
-                afbeelding tekenen of zoeken op internet, je kan een programma gebruiken zoals Photoshop om de
-                afbeelding aan te passen zodat hij de goeie vorm heeft. Je moet niet vergeten bij de instellingen van de
-                uiterlijken het draaipunt op de goeie plek te zetten.
-                <br />
-                <img class="indent" src="../../afb/h1/o1//p2-o2.png" height="215" alt="Geen Afbeelding" />
-            </li>
-            <li>
-                Maak een wekker die invoer gebruikt van de gebruiker en geluid maakt als de tijd om is. Je zal een
-                variabele moeten maken in het Variabelen-menu om de invoer van de gebruiker op te slaan.
-                <br />
-                <img class="indent" src="../../afb/h1/o1//p2-o3.png" height="120" alt="Geen Afbeelding" />
-            </li>
-            <li>
-                Bouw een "grootvaders klok" met een slinger als mechaniek. Of een "koekoeksklok" die een animatie met
-                een vogel afspeelt op bepaalde momenten.
-            </li>
-        </ol>
-    </div>
-
 
 </body>
 

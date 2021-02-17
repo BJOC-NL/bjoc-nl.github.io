@@ -17,60 +17,76 @@
 </head>
 
 <body>
-    <h2>The Game of Pong</h2>
-    <div class="learn">
-        <strong>In this project,</strong> you are going to model a computer game called Pong, first developed by Atari
-        in 1972. You will write the code for the paddle which will allow it to move up and down based on user keyboard
-        input and also write the code for the ball which will allow it to bounce every time it hits a wall or the
-        paddle.<br />
-        <img class="indent" src="../../bjc-r/img/1-introduction/Pong_img/pongAnimation.gif" width="325"
-            alt="Geen Afbeelding" />
-    </div>
+    <div class="full">
+        <h2>The Game of Pong</h2>
+        <div class="learn">
+            <strong>In this project,</strong> you are going to model a computer game called Pong, first developed by
+            Atari
+            in 1972. You will write the code for the paddle which will allow it to move up and down based on user
+            keyboard
+            input and also write the code for the ball which will allow it to bounce every time it hits a wall or the
+            paddle.<br />
+            <img class="indent" src="../../bjc-r/img/1-introduction/Pong_img/pongAnimation.gif" width="325"
+                alt="Geen Afbeelding" />
+        </div>
 
-    <div class="forYouToDo" id="first">
-        <ol>
-            <li>
-                <img class="imageRight" src="../../bjc-r/img/icons/talk-with-your-partner.png" alt="Geen Afbeelding" />
-                Discuss with your partner the mathematics behind the ball bouncing off the paddle. How does the initial
-                direction of the ball as it hits the paddle relate to the final direction of the ball as it bounces off
-                the paddle? The following diagram may help. <br />
-                <img class="indent" src="../../bjc-r/img/1-introduction/Pong_img/Bounce.png" height="346"
-                    alt="Geen Afbeelding" />
-            </li>
-            <li>Create the paddle and the ball sprites and give them their costumes (filled rectangle and circle).</li>
-            <div class="sidenote">Do this on your own but if you get stuck, look at these <a
-                    href="/bjc-r/cur/programming/1-introduction/optional-projects/3b-pong-hints.html"
-                    target="_blank">hints for the Game of Pong</a> on how to proceed.</div>
-            <li>Write the code to have the paddle move up and down when the user presses the up arrow and down arrow
-                keys. Don't let the paddle move beyond the edges of the stage.</li>
-            <li>Write the code to start the ball moving when green flag is clicked and to bounce off the stage edges and
-                the paddle. Note that there is a built in block to bounce off the edges.</li>
-        </ol> 
-    </div>
+        <div class="forYouToDo" id="first">
+            <ol>
+                <li>
+                    <img class="imageRight" src="../../afb/icons/PraatMetJeBuur.png" alt="Geen Afbeelding" />
+                    Discuss with your partner the mathematics behind the ball bouncing off the paddle. How does the
+                    initial
+                    direction of the ball as it hits the paddle relate to the final direction of the ball as it bounces
+                    off
+                    the paddle? The following diagram may help. <br />
+                    <img class="indent" src="../../bjc-r/img/1-introduction/Pong_img/Bounce.png" height="346"
+                        alt="Geen Afbeelding" />
+                </li>
+                <li>Create the paddle and the ball sprites and give them their costumes (filled rectangle and circle).
+                </li>
+                <div class="sidenote">Do this on your own but if you get stuck, look at these <a
+                        href="H1O1P3-hints.html" target="_blank">hints for the Game of Pong</a> on how to proceed.</div>
+                <li>Write the code to have the paddle move up and down when the user presses the up arrow and down arrow
+                    keys. Don't let the paddle move beyond the edges of the stage.</li>
+                <li>Write the code to start the ball moving when green flag is clicked and to bounce off the stage edges
+                    and
+                    the paddle. Note that there is a built in block to bounce off the edges.</li>
+            </ol> 
+        </div>
 
-    <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
-        <ol type="A">
-            <li>
-                Add scoring to your game. Every time the paddles bounces off the ball, the player should earn a point
-                and every time the ball hits the right wall, the player should lose a point. You can create a variable
-                to keep track of the score.<br />
-                <img class="indent" src="../../bjc-r/img/1-introduction/Pong_img/ScoreVariable.png" height="200"
-                    alt="Geen Afbeelding" />
-            </li>
-            <li>
-                Create a second paddle to allow the game to become multiplayer game. Adjust your code to accommodate
-                keyboard input from two users.<br />
-                <img class="indent" src="../../bjc-r/img/1-introduction/Pong_img/TwoPlayer.png" width="325"
-                    alt="Geen Afbeelding" />
-            </li>
-            <li>
-                Create a second paddle (or use the one from part B if you did that) and let this paddle be driven
-                automatically by the computer for a "human versus computer" version of the game. Hint: You can automate
-                the second paddle by using the following block from the Sensing menu:<br />
-                <img class="indent" src="../../bjc-r/img/1-introduction/Pong_img/yPositionofBallSensing.png"
-                    alt="Geen Afbeelding" />
-            </li>
-        </ol>
+        <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
+            <ol type="A">
+                <li>
+                    Add scoring to your game. Every time the paddles bounces off the ball, the player should earn a
+                    point
+                    and every time the ball hits the right wall, the player should lose a point. You can create a
+                    variable
+                    to keep track of the score.<br />
+                    <img class="indent" src="../../bjc-r/img/1-introduction/Pong_img/ScoreVariable.png" height="200"
+                        alt="Geen Afbeelding" />
+                </li>
+                <li>
+                    Create a second paddle to allow the game to become multiplayer game. Adjust your code to accommodate
+                    keyboard input from two users.<br />
+                    <img class="indent" src="../../bjc-r/img/1-introduction/Pong_img/TwoPlayer.png" width="325"
+                        alt="Geen Afbeelding" />
+                </li>
+                <li>
+                    Create a second paddle (or use the one from part B if you did that) and let this paddle be driven
+                    automatically by the computer for a "human versus computer" version of the game. Hint: You can
+                    automate
+                    the second paddle by using the following block from the Sensing menu:<br />
+                    <img class="indent" src="../../bjc-r/img/1-introduction/Pong_img/yPositionofBallSensing.png"
+                        alt="Geen Afbeelding" />
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="full-bottom-bar" style="background-position: 20px 3px;">
+        <div class="bottom-nav btn-group"><a class="btn btn-default backbutton arrow " style="min-width: 90px;"
+                href="H1O1P2.html">Terug</a><a style="min-width:90px;" class=" btn btn-default forwardbutton arrow"
+                href="H1O1P4.html">Volgende</a>
+        </div>
     </div>
 
 
