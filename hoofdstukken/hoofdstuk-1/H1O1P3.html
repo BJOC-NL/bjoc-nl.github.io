@@ -18,66 +18,66 @@
 
 <body>
     <div class="full">
-        <h2>The Game of Pong</h2>
+        <h2>Het Spel Pong</h2>
         <div class="learn">
-            <strong>In this project,</strong> you are going to model a computer game called Pong, first developed by
-            Atari
-            in 1972. You will write the code for the paddle which will allow it to move up and down based on user
-            keyboard
-            input and also write the code for the ball which will allow it to bounce every time it hits a wall or the
-            paddle.<br />
-            <img class="indent" src="../../bjc-r/img/1-introduction/Pong_img/pongAnimation.gif" width="325"
-                alt="Geen Afbeelding" />
+            <strong>In dit project,</strong> ga je een computerspel genaamd Pong namaken, voor het eerst ontwikkeld door
+            Atari in 1972. Je gaat code schrijven voor het batje waardoor het omhoog en omlaag kan bewegen, gebaseerd
+            op invoer van een toetsenbord. Je gaat ook code schrijven voor de bal waardoor hij heen en weer kan
+            stuiteren als hij tegen een muur of batje botst.
+            <br />
+            <img class="indent" src="../../afb/h1/o1/p3-v1.gif" width="325" alt="Geen Afbeelding" />
         </div>
 
         <div class="forYouToDo" id="first">
             <ol>
                 <li>
                     <img class="imageRight" src="../../afb/icons/PraatMetJeBuur.png" alt="Geen Afbeelding" />
-                    Discuss with your partner the mathematics behind the ball bouncing off the paddle. How does the
-                    initial
-                    direction of the ball as it hits the paddle relate to the final direction of the ball as it bounces
-                    off
-                    the paddle? The following diagram may help. <br />
-                    <img class="indent" src="../../bjc-r/img/1-introduction/Pong_img/Bounce.png" height="346"
-                        alt="Geen Afbeelding" />
+                    Bespreek met je buur de wiskunde achter het stuiteren van de bal tegen het batje. Wat is de relatie
+                    tussen de startrichting van de bal als hij het batje raakt en de eindrichting als de bal er vanaf
+                    stuitert? Het volgende diagram helpt misschien.
+                    <br />
+                    <img class="indent" src="../../afb/h1/o1/p3-b1.png" height="346" alt="Geen Afbeelding" />
                 </li>
-                <li>Create the paddle and the ball sprites and give them their costumes (filled rectangle and circle).
+
+                <li> Maak sprites voor het batje en de bal en geef ze een uiterlijk. Voor het batje is het uiterlijk een
+                    rechthoek en voor de bal een cirkel.
                 </li>
-                <div class="sidenote">Do this on your own but if you get stuck, look at these <a
-                        href="H1O1P3-hints.html" target="_blank">hints for the Game of Pong</a> on how to proceed.</div>
-                <li>Write the code to have the paddle move up and down when the user presses the up arrow and down arrow
-                    keys. Don't let the paddle move beyond the edges of the stage.</li>
-                <li>Write the code to start the ball moving when green flag is clicked and to bounce off the stage edges
-                    and
-                    the paddle. Note that there is a built in block to bounce off the edges.</li>
+
+                <div class="sidenote">
+                    Doe deze opdracht zelfstandig, maar als je vastzit kan je kijken naar <a href="H1O1P3-hints.html"
+                        target="_blank">Hints voor het spel Pong</a>.
+                </div>
+
+                <li> Schrijf de code om het batje omhoog en -laag te bewegen wanneer de gebruiker op de toets voor
+                    pijltje omhoog of pijltje omlaag drukt. Laat het batje niet verder bewegen dan de rand van het
+                    scherm.
+                </li>
+
+                <li> Schrijf de code om het balletje te laten bewegen wanneer er op de groene vlag geklikt wordt en om
+                    van de hoeken van het scherm en het batje te stuiteren. Er is al een blok om van de hoeken van het
+                    scherm af te stuiteren.
+                </li>
             </ol> 
         </div>
 
         <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
             <ol type="A">
-                <li>
-                    Add scoring to your game. Every time the paddles bounces off the ball, the player should earn a
-                    point
-                    and every time the ball hits the right wall, the player should lose a point. You can create a
-                    variable
-                    to keep track of the score.<br />
-                    <img class="indent" src="../../bjc-r/img/1-introduction/Pong_img/ScoreVariable.png" height="200"
-                        alt="Geen Afbeelding" />
+                <li> Voeg een scorebord toe aan je spel. Iedere keer als de bal het batje raakt, moet de speler een punt
+                    krijgen en als hij de bal mist, dus als de bal de rechter muur raakt, dan verliest hij een punt. Je
+                    kan een variabele maken om de score bij te houden.
+                    <br />
+                    <img class="indent" src="../../afb/h1/o1/p3-o2.png" height="200" alt="Geen Afbeelding" />
                 </li>
-                <li>
-                    Create a second paddle to allow the game to become multiplayer game. Adjust your code to accommodate
-                    keyboard input from two users.<br />
-                    <img class="indent" src="../../bjc-r/img/1-introduction/Pong_img/TwoPlayer.png" width="325"
-                        alt="Geen Afbeelding" />
+                <li> Maak een tweede batje om het spel voor meerder spelers te maken. Pas de code aan dat de invoer
+                    werkt
+                    voor twee spelers.
+                    <br />
+                    <img class="indent" src="../../afb/h1/o1/p3-o1.png" width="325" alt="Geen Afbeelding" />
                 </li>
-                <li>
-                    Create a second paddle (or use the one from part B if you did that) and let this paddle be driven
-                    automatically by the computer for a "human versus computer" version of the game. Hint: You can
-                    automate
-                    the second paddle by using the following block from the Sensing menu:<br />
-                    <img class="indent" src="../../bjc-r/img/1-introduction/Pong_img/yPositionofBallSensing.png"
-                        alt="Geen Afbeelding" />
+                <li> Maak een tweede batje (of gebruik degene van hierboven) en laat dit batje bestuurd worden door de
+                    computer. Hint: Je kan het tweede batje automatiseren met het blok hieronder van het Waarnemen-menu.
+                    <br />
+                    <img class="indent" src="../../afb/h1/o1/p3-b2.png" alt="Geen Afbeelding" />
                 </li>
             </ol>
         </div>
