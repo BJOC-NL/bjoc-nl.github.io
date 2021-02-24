@@ -2,48 +2,60 @@
 <html lang="en">
 
 <head>
+    <link rel="icon" href="../../BJOC-NL-logo.png" type="image/png">
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <script type="text/javascript" src="/March2019/bjc-r/llab/loader.js"></script>
-    <title>Unit 1 Optional Projects, Page 3 Hint</title>
+    <script type="text/javascript" src="../../js+css/llab/loader.js"> </script>
+    <script type="text/javascript" src="../../js+css/gifffer.min.js"> </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            Gifffer();
+            Inhoudsopgave();
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../js+css/css/bjc-gifffer.css">
+    <title> Hoofdstuk 1 Optionele Projecten, Pagina 3 Hints</title>
 </head>
 
 <body>
     <h2>Hints voor het spel Pong</h2>
     <div class="forYouToDo" id="first">
         <ol>
-            <li><a class="run" href="/March2019/bjc-r/prog/1-introduction/U1L5-pong-student.xml" target="_blank"><img
-                        class="inline" src="/March2019/bjc-r/img/icons/load-save.png" alt="Geen Afbeelding"></a><br />
-                Examine the
-                starter file where a rectangular paddle sprite and a circular ball sprite have been created for you.
+            <li> <a class="run" href="/March2019/bjc-r/prog/1-introduction/U1L5-pong-student.xml" target="_blank">
+                    <img class="inline" src="../../afb/icons/LaadEnSlaOp.png" alt="Geen Afbeelding">
+                </a>
+                <br />
+                Bekijk het startproject waar een rechthoekige sprite voor het batje en een ronde sprite voor de bal al
+                zijn gemaakt.
             </li>
-            <li>
-                Write the code for the paddle first. The paddle should be allowed to move only up and down near the
-                right edge of the screen. When the user presses the up/down arrow keys on the keyboard, the paddle
-                should move up or down a certain amount but it should never wander off the edges of the screen. You may
-                find the following blocks useful.<br />
+
+            <li> Schrijf de code voor het batje eerst. Het batje mag alleen omhoog en -laag bewegen bij de rechterkant
+                van het scherm. Wanneer de gebruiker op de pijltjes omhoog/omlaag drukt, moet het batje een bepaalde
+                hoeveelheid omhoog of omlaag gaan. Het batje moet alleen nooit buiten het scherm komen. De volgende
+                blokken zijn misschien handig.
+                <br />
                 <img class="indent" src="/March2019/bjc-r/img/1-introduction/Pong_img/PaddleCodeHint.png" width="400"
                     alt="Geen Afbeelding" />
             </li>
-            <li>
-                The code for the ball is a bit trickier due to the paddle bounce.
-                Initialize the ball to appear in the middle of the screen and give it a random direction. Then check if
-                the ball is at the edge of the screen or is touching the paddle. In each case the ball needs to bounce.
-                Snap<em>!</em> already provides you with a block for bouncing off the edges of the screen.
+
+            <li> De code voor de bal is iets lastiger omdat het moet stuiteren van het batje. Zorg dat de bal begint in
+                het begin van het scherm en geef hem een willekeurige startrichting waarheen de bal begint te bewegen.
+                Controleer daarna of de bal bij de hoek van het scherm is of het batje aanraakt. In beide gevallen moet
+                de bal stuiteren. Snap<em>!</em> bevat al een blok om van de hoeken van het scherm te stuiteren.
                 <br />
                 <img class="indent" src="/March2019/bjc-r/img/1-introduction/Pong_img/edgeBounce.png" width="161"
                     alt="Geen Afbeelding" />
                 <br />
-                You can write the code for the ball bouncing off the paddle by realizing that the ball bounces from the
-                paddle with the negative of the direction at which it hits the paddle. Remember that in Snap<em>!</em>
-                positive angles are measured clockwise from the 0&deg;, up direction, and negative angles are measured
-                counterclockwise from the 0&deg;, up direction.<br />
+                Je kan de code schrijven voor het stuiteren van de bal door je te bedenken dat de bal van het batje
+                stuitert met precies de tegenovergestelde richting waarmee hij aankomt. Onthoud dat in Snap<em>!</em>
+                positieve hoeken met de klok mee van boven beginnen en negative hoeken tegen de klok in.
+                <br />
                 <img class="indent" src="/March2019/bjc-r/img/1-introduction/Pong_img/Bounce.png" height="346"
                     alt="Geen Afbeelding" />
 
                 <img src="/March2019/bjc-r/img/1-introduction/Pong_img/Directions.png" width="517"
                     alt="Geen Afbeelding" />
                 <br />
-                Now write the code for the ball. You may find the following blocks useful.
+                Schrijf nu de code voor de bal, de volgende blokken zijn waarschijnlijk handig.
                 <br />
                 <img class="indent" src="/March2019/bjc-r/img/1-introduction/Pong_img/BallCodeHint.png" width="400"
                     alt="Geen Afbeelding" />
