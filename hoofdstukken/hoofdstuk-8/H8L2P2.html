@@ -20,12 +20,13 @@
 
      <div class="full">
          <h2>Selection sort</h2>
+         <div class="sidenote"> Het element dat vooraan komt zou de eerste naam in alfabetische volgorde
+             kunnen zijn of het kleinste getal in een lijst.
+         </div>
          <p> Een van de populairste sorteeralgoritmes heet <strong>Selection Sort</strong>. Dit is hoe het werkt:
              <ul>
                  <li>
-                     <div class="sidenote"> Het element dat vooraan komt zou de eerste naam in alfabetische volgorde
-                         kunnen zijn of het kleinste getal in een lijst.
-                     </div>
+
                      <strong>Stap 1.</strong> In een ongesorteerde lijst, vind een manier om het voorste element te
                      vinden.
                  </li>
@@ -51,44 +52,46 @@
              <ol start="3">
                  <li> Bouw het <code>voorste in</code>blok. Voor namen geeft dit alfabetisch de eerste naam in een
                      lijst:
-                     <br /> <img class="indent" height="250" src="../../afb/h8/l2/p1-b1.png" alt="Geen Afbeelding" />
+                     <br />
+                     <img class="indent" height="250" src="../../afb/h8/l2/p1-b1.png" alt="Geen Afbeelding" />
                      <img class="indent" height="50" src="../../afb/h8/l2/p2-b1.png" alt="Geen Afbeelding" />
                  </li>
                  <li> Schrijf code die de <em>index</em> van het voorste item vindt. Deze waarde is 8 voor de lijst met
                      namen hierboven. (Deze stap is misschien overbodig, afhankelijk van je algoritme. Kijk of je de
                      volgende stap zonder de index kan doen.)
                  </li>
-                 <li>
-                     <div class="sidenote"> Je kan een deel van het werk in
-                         <a href="../hoofdstuk-5/H5L1P2.html">
-                             Hoofdstuk 5 Les 1 Pagina 2: Analyseren en zoekopdrachten verbeteren</a> handing vinden.
-                     </div>
-                     Schrijf code die een nieuwe lijst aanmaakt zonder het voorste element. Er is daar maar één manier
+
+                 <div class="sidenote"> Je kan een deel van het werk in
+                     <a href="../hoofdstuk-5/H5L1P2.html">
+                         Hoofdstuk 5 Les 1 Pagina 2: Analyseren en zoekopdrachten verbeteren</a> handing vinden.
+                 </div>
+                 <li> Schrijf code die een nieuwe lijst aanmaakt zonder het voorste element. Er is daar maar één manier
                      voor!
                  </li>
                  <li> Bouw de recursieve rapporteur <code>Selection Sort</code>.<br />
                      <img class="indent" height="250" src="../../afb/h8/l2/p2-b2.png" alt="Geen Afbeelding" />
                  </li>
-                 <li>Hoe vaak roept <code>Selection Sort</code> zichzelf aan?</li>
+                 <li>Hoe vaak roept <code>Selection Sort</code> zichzelf aan?
+                 </li>
              </ol>
-             <div class="saveAs"><span class="text">"H8L2-SelSort"</span><img src="../../afb/icons/SlaHetOpAls.png"
-                     alt="Geen Afbeelding" /></div>
+             <div class="saveAs">
+                 <span class="text">"H8L2-SelSort"</span>
+                 <img src="../../afb/icons/SlaHetOpAls.png" alt="Geen Afbeelding" />
+             </div>
          </div>
          <div class="takeNote">
              Net als recursieve commando's, lijken recursieve rapporteurs magisch, omdat een deel van de code zichzelf
-             aanroept.
-             Recursieve rapporteurs werken omdat iedere aanroep een <em>kleinere</em> invoer gebruikt dan de vorige,
-             totdat het basisgeval bereikt wordt. Nadat het basisgeval bereikt is, wordt het resultaat beetje bij beetje
-             gebouwd omdat iedere aangeroepen rapporteur het result rapporteert aan de rapporteur die hem aangeroepen
-             heeft.
+             aanroept. Recursieve rapporteurs werken omdat iedere aanroep een <em>kleinere</em> invoer gebruikt dan de
+             vorige, totdat het basisgeval bereikt wordt. Nadat het basisgeval bereikt is, wordt het resultaat beetje
+             bij beetje gebouwd omdat iedere aangeroepen rapporteur het result rapporteert aan de rapporteur die hem
+             aangeroepen heeft.
          </div>
          <div class="takeItFurther">
              <ol type="A">
                  <li> Dit <a href="/bjc-r/cur/programming/3-lists/5-big-data/yob2014.txt"> bestand met namen en hun
                          populariteit in 2014</a> bevat een grote lijst van babynamen uit 2014. Importeer de data en
                      bouw daarna een algoritme dat een alfabetische lijst met alle namen geeft, die alleen namen geeft
-                     die starten met een
-                     gegeven letter:
+                     die starten met een gegeven letter:
                      <br />
                      <img class="indent" height="250" src="../../afb/h8/l2/p2-b3.png" alt="Geen Afbeelding" />
                  </li>

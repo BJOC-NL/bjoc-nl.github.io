@@ -22,42 +22,47 @@
         <div class="forYouToDo" id="first">
             <p>
                 <div class="sidenote">Je spreekt 9! uit als "negen faculteit", niet <em>NEGEN!</em></div> De faculteit
-                functie <em>n</em>! is het product van de getallen van 1 tot <em>n</em>, dus 1×2×3...×n.
+                functie <em>n!</em> is het product van de getallen van 1 tot <em>n</em>, dus 1×2×3...×n.
             </p>
             <ol>
                 <li> De waarde van 9! is 362,880. Vind zelf de waarde van 10!. </li>
-                <div class="sidenoteBig">Vergeet niet Bo's advies: <em>basis gevallen zijn belangrijk!</em></div>
+                <div class="sidenoteBig">Vergeet niet Bo's advies: <em>basisgevallen zijn belangrijk!</em></div>
                 <li> Beschrijf het verband tussen 37! en 36!.</li>
                 <li> Gebruik deze ideeën om een <code>faculteit</code>blok te maken met een recursieve rapporteur. </li>
             </ol>
         </div>
-        <p> Recursieve <em>commando's</em> hebben vaan zo'n structuur, met meerdere commando's in de recursieve aanroep:
 
-            <div class="sidenote">Recursieve <em>commando's</em> kunnen <em>meerdere</em> recursieve aanroepen
+        <div class="sidenote">Recursieve <em>commando's</em> kunnen <em>meerdere</em> recursieve blokken aanroepen
+            (<code>boom</code> is een goed voorbeeld; ieder <code>boom</code>blok roept <em>twee keer</em>
+            <code>boom</code> aan.
+        </div>
 
-                (<code>boom</code> is een goed voorbeeld; we roepen <code>boom</code> <em>twee keer</em> aan vanuit een
-                enkele aanroep naar <code>boom</code>).
-            </div>
+        <p> Recursieve <em>commando's</em> hebben vaak zo'n structuur, met meerdere commando's in de recursieve aanroep:
             <img height="250" class="indent" src="../../afb/h8/l1/p3-b1.png" alt="Geen Afbeelding" />
         </p>
-        <p> Recursieve <em>rapporteurs</em> hebben verschillende structuren omdat ze maar een waarde kunnen rapporteren.
-            Omdat het <code>rapporteer</code>blok een antwoord <em>rapporteert</em> Moet je het antwoord voor of in de
-            aanroep van het <code>rapporteer</code>blok bouwen. Dus dit is niet mogelijk: <br />
-            <div class="sidenote"> Je kan dit script niet eens bouwen omdat je geen blok onder een
-                <code>rapporteer</code>blok mag zetten.
-            </div>
+
+        <div class="sidenote"> Je kan dit script niet eens bouwen omdat je geen blok onder een
+            <code>rapporteer</code>blok mag zetten.
+        </div>
+
+        <p> Recursieve <em>rapporteurs</em> hebben verschillende structuren omdat ze maar één waarde kunnen rapporteren.
+            Omdat het <code>rapporteer</code>blok een antwoord <em>rapporteert</em>, moet je het antwoord vooraf maken
+            of in de aanroep van het <code>rapporteer</code>blok bouwen. Dus wat hieronder staat, is niet mogelijk:
+            <br />
+
             <img height="300" class="indent" src="../../afb/h8/l1/p3-b2.png" alt="Geen Afbeelding" />
         </p>
+
         <div class="forYouToDo">
-            <p>Programma's die tekst verwerken tellen het aantal woorden en letters in documenten. Je kan het aantal
+            <p> Programma's die tekst verwerken, tellen het aantal woorden en letters in documenten. Je kan het aantal
                 letters in een groep woorden tellen met een recursieve rapporteur.
             </p>
 
             <ol start="4">
                 <li> De groep woorden <strong>"die zich in Nederland bevinden"</strong> heeft 26 letters.
                     Hoeveel letters bevat <strong>"Allen die zich in Nederland bevinden"</strong>?</li>
-                <li>Recursie heeft altijd een basisgeval nodig om het script te stoppen. Watvoor soort basisgeval kunnen
-                    we in deze situatie gebruiken?
+                <li>Recursie heeft altijd een basisgeval nodig om het script te stoppen. Wat voor soort basisgeval
+                    kunnen we in deze situatie gebruiken?
                 </li>
                 <li> Maak een <code>letterteller</code>blok dat een lijst van woorden als invoer heeft en het totaal
                     aantal letters in alle woorden rapporteert. Het <code>alles, behalve de eerste van</code>blok kan
@@ -71,12 +76,13 @@
                 </li>
             </ol>
         </div>
-        <p>De lijstfuncties <code>alles, behalve de eerste van</code> en <code>voor</code> worden vaak gebruikt in
+
+        <p> De lijstfuncties <code>alles, behalve de eerste van</code> en <code>voor</code> worden vaak gebruikt in
             recursieve rapporteurs.
         </p>
         <div class="forYouToDo">
             <ol start="8">
-                <li> Bouw dit <code>meervoud</code>blok, beschrijf dan hoe het werkt. (Je hebt al een makkelijkere
+                <li> Bouw dit <code>meervoud</code>blok, beschrijf daarna hoe het werkt. (Je hebt al een makkelijkere
                     versie van <code>meervoud</code> gebouwd met behulp van <code>map</code>; we willen dat je snapt
                     dat je hetzelfde probleem op meerdere manieren kan oplossen.)
                     <br />
