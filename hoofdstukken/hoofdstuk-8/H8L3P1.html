@@ -77,15 +77,26 @@
                  </li>
              </ol>
          </div>
-         <p>Pascals Driehoek telt het aantal manieren om een verzameling van een grotere verzameling te pakken. Voor
-             meer info, zie
-             <a
-                 href="https://bjc.edc.org/bjc-r/cur/programming/8-recursive-reporters/3-projects/extras/1-pascal-context.html">
+         <p>Pascals Driehoek telt het aantal manieren om een verzameling van een grotere verzameling te pakken. Stel je
+             hebt 3 vruchten: een appel, een banaan en een citroen, we korten deze even af naar A, B en C. We kunnen nu
+             een kleinere groep uit deze verzameling pakken. De kleine verzameling heeft 0 vruchten, het klinkt
+             misschien gek, maar er is maar één manier om geen vruchten te pakken.
+             Stel je wil 1 vrucht pakken uit deze verzameling, dan zijn er 3 mogelijkheden, alleen A, alleen B of alleen
+             C. Stel dat je er 2 wil pakken, dan zijn er ook 3 mogelijkheden: AB, AC of BC. Als je er 3 wil pakken is er
+             maar één mogelijkheid, alledrie. Deze 4 mogelijkheden kan je aflezen in Pascals Driehoek op de 4e rij:
+             1,3,3,1. De rij geeft aan hoe groot je verzameling, de eerste rij voor een verzameling van 0 elementen, de
+             tweede rij voor 1, de derde voor 3 etc. De positie in de rij zegt hoeveel je wil pakken. Je moet niet
+             vergeten dat de rij en positie bij 0 begint. Stel dus dat je 6 vruchten hebt en je wil weten hoeveel
+             mogelijkheden er zijn om er 4 te pakken, kijken we in de 7e rij op de 5e positie. Op die positie staat het
+             getal 15. Je kan dit altijd zelf narekenen, al wordt dit voor grote getallen wel heel lastig.
+             <!--   Voor meer info, zie <a
+                 href="https://bjc.edc.rg/bjc-r/cur/programming/8-recursive-reporters/3-projects/extras/1-pascal-context.html">
                  Over Pascals Driehoek (Engels)
-             </a></p>
-         <div class="sidenoteBig"> Wat zijn de basisgevallen? Het werk in de eerdere problemen zou je moeten helpen met
-             de
-             recursie. Probeer meer voorbeelden te bedenken als je het niet zeker weet.
+             </a>
+            -->
+         </p>
+         <div class="sidenoteBig"> Wat zijn de basisgevallen? Je projecten van de vorige lessen zou je moeten helpen met
+             de recursie. Probeer Pascals driehoek verder uit te rekenen als je het niet zeker weet.
          </div>
          <div class="forYouToDo">
              <ol start="6">

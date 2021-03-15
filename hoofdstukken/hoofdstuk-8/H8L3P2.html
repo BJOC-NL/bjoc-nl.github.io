@@ -23,8 +23,7 @@
             <img height="250" class="indent" src="../../afb/h8/l3/p2-b1.png" alt="Geen Afbeelding" />
         </p>
         <p> Er zijn twee basisgevallen, het begin en het eind van een rij. De recursieve aanroep berekent de som van
-            twee
-            waardes in de vorige rij.
+            twee waardes in de vorige rij.
         </p>
         <p align="center">
             <img height="40" src="../../afb/h8/l3/p2-b2.png" alt="Geen Afbeelding" /> =
@@ -45,7 +44,8 @@
         </div>
         <div class="sidenote"> Houd bij wat
             <img height="40" src="../../afb/h8/l3/p2-b2.png" alt="Geen Afbeelding" />
-            de aanroept om te zien wat overbodig is.
+            allemaal aanroept om te zien wat overbodig is. Een aanroep is overbodig als die aanroep al een keer gedaan
+            is.
         </div>
         <p> Veel van de recursieve aanroepen zijn overbodig.
             <img height="40" src="../../afb/h8/l3/p2-b2.png" alt="Geen Afbeelding" /> zal bijvoorbeeld
@@ -57,7 +57,7 @@
                 <div class="sidenoteBig">
                     Deze techniek heet <strong>memoïsatie</strong>. Omdat ieder opgeslagen antwoord een soort "memo" is.
                 </div>
-                <li> Gebruik een lijst om bij te houden welke waardes al berekent zijn, zodat als dezelfde invoer twee
+                <li> Gebruik een lijst om bij te houden welke waardes al berekend zijn, zodat als dezelfde invoer twee
                     keer gegeven wordt, de functie de opgeslagen waarde rapporteert in plaats van weer recursieve
                     aanroepen te doen.
                 </li>
