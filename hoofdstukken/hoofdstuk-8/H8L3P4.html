@@ -29,15 +29,21 @@
          <p>
              <div class="sidenote">
                  Het is misschien verrassend dat we geen wiskundige combineerfunctie gebruiken, dat is omdat het
-                 gewenste resultaat een tekst van getallen is. Dit is waarom de combineerfunctie voor tekst
+                 gewenste resultaat een stukje tekst van getallen is. Dit is waarom de combineerfunctie voor tekst
                  gebruikt wordt.
-             </div>In het recursieve geval is het meest rechtse binaire cijfer de rest wanneer we het getal door 2
-             delen. De andere cijfers komen van een recursieve aanroep op de quotient van het delen door 2. De
-             combineerfunctie is <code>voeg samen</code> omdat we de cijfers samen willen voegen tot een woord.
+             </div>
+
+             In het recursieve geval is het meest rechtse binaire cijfer de rest wanneer we het getal door 2
+             delen. Neem als voorbeeld 7, in binair is dit 111, het meest rechtse binaire cijfer is dus 1. We kunnen 7
+             3x door 2 delen, we houden dan nog 1 over, de rest is dus 1.
+             Je kan deze techniek blijven herhalen met het resultaat van de breuk. Dat is in dit voorbeeld 3, 3 delen
+             door 2 geeft 1 en als rest ook 1. 1 delen door 2 geeft 0 en als rest 1. Het antwoordt is dus 111.
+             De combineerfunctie die we gebruiken voor de recursieve aanroep is <code>voeg samen</code> omdat we de
+             cijfers samen willen voegen tot een woord.
          </p>
          <div class="forYouToDo" id="first">
              <ol>
-                 <li> Schrijf het <code>talstelsel7</code>blok, dat het getal weergeeft in het talstelsel van 7.
+                 <li> Schrijf een <code>talstelsel7</code>blok, dat het getal weergeeft in het talstelsel van 7.
                      <br />
                      <img height="50" class="indent" src="../../afb/h8/l3/p4-b2.png" alt="Geen Afbeelding" />
                  </li>
@@ -55,6 +61,7 @@
                          Snap<em>!</em> zal het getal in decimaal laten zien, maar jij gaat het omzetten naar een
                          <em>getal</em>, niet een woord dat bestaat uit cijfers.
                      </div>
+
                      Schrijf de omgekeerde functie <code>van talstelsel</code> dat een stuk tekst en een talstelsel als
                      invoer neemt en daarna het bijbehorende getal rapporteert.
                      <br />
@@ -64,8 +71,20 @@
          </div>
          <div class="ifTime">
              <ol start="4">
-                 <li> Verbeter het <code>talstelsel</code>blok zodat het tot het talstelsel van 36 werkt door de letters
-                     <code>a</code>-<code>z</code> als cijfers met waardes 10-35. <br />
+                 <div class="sidenote">
+                     Voor het talstelsel van 12 tel je bijvoorbeeld zo: 1, 2, ..., 9, a, b, 10, 11, ..., 19, 1a, 1b, 20,
+                     etc.
+                     a<sub>12</sub> is dus 10<sub>10</sub>, b<sub>12</sub> is 11<sub>10</sub> en 10<sub>12</sub> is
+                     12<sub>10</sub>.
+                     <!--
+                     1a is 10 + a = 12 + 10 = 22 en 20 = 2x10 = 2x12 = 24.
+                     -->
+
+                 </div>
+                 <li>
+                     Verbeter het <code>talstelsel</code>blok zodat het tot het talstelsel van 36 werkt door de letters
+                     <code>a</code>-<code>z</code> te gebruiken voor de getallen 10-35.
+                     <br />
                      <img height="50" class="indent" src="../../afb/h8/l3/p4-b7.png" alt="Geen Afbeelding" />
                      <img height="50" class="indent" src="../../afb/h8/l3/p4-b9.png" alt="Geen Afbeelding" />
                  </li>

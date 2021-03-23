@@ -19,29 +19,29 @@
  <body>
      <div class="full">
          <h2> Even getallen en <code>keep</code> </h2>
-         <p>
-             We willen een blok dat een lijst met getallen als invoer heeft en een lijst rapporteert met alle
-             <strong>even</strong> getallen van de invoer.
+
+         <p> We willen een blok bouwen dat een lijst met getallen als invoer heeft en een lijst rapporteert met alle
+             <strong>even</strong> getallen uit de invoerlijst.
          </p>
 
-         <p>
-             Je weet al hoe je dit blok moet schrijven met de <code>keep</code>functie van hogere orde, maar laten we
-             eens zien hoe het eruit ziet met recursie: <br />
+         <p> Je weet al hoe je dit blok moet schrijven met de <code>keep</code>functie van hogere orde, maar laten we
+             eens kijken hoe het eruit ziet met recursie: <br />
              <img height="300" class="indent" src="../../afb/h8/l4/p3-b1.png" alt="Geen Afbeelding" />
          </p>
 
          <p> Er zijn drie gevallen mogelijk, niet alleen het basisgeval en het recursieve geval.
              Er is nog steeds een basisgeval, namelijk een lege invoerlijst, in dat geval rapporteren we een lege lijst.
              Maar er zijn <em>twee</em> recursieve gevallen, afhankelijk van of het eerste element van de lijst even is.
-             (Er moet een eerste element zijn als dit niet het basisgeval is.) De groene blokken van het Functiesmenu
-             delen het eerste getal door 2 en kijken of de rest gelijk is aan 0 (net als bij het omreken naar binair in
-             <a href="H8L3P3.html"> Hoofdstuk 8 Les 3 Pagina 3: Omrekenen naar Binair</a>). Als de rest gelijk is aan 0
-             dan is het getal even.
+             (Er moet een eerste element zijn als we niet met het basisgeval te maken hebben.) De groene blokken van het
+             Functiesmenu
+             delen het eerste getal door 2 en kijken of de rest van deze breuk gelijk is aan 0 (net als bij het omreken
+             naar binair in <a href="H8L3P3.html"> Hoofdstuk 8 Les 3 Pagina 3: Omrekenen naar Binair</a>). Als de rest
+             gelijk is aan 0 dan is het getal even.
          </p>
-         <p> Als het eerste getal even is, dan hoort het getal bij het resultaat dat we rapporteren. Dus we rapporteren
-             dat getal <code>voor</code> de recursieve aanroep aan de rest van de getallen. Als het eerste getal niet
-             even is dan willen we het <em>niet</em> toevoegen aan het resultaat, dus we rapporteren alleen de waarde
-             van de recursieve aanroep.
+         <p> Als het eerste getal even is, dan willen we het getal toevoegen aan het resultaat dat we rapporteren. Dus
+             we zetten dat getal <code>voor</code> de overige getallen in de recursieve aanroep. Als het eerste
+             getal niet even is dan willen we het <em>niet</em> toevoegen aan het resultaat, dus we rapporteren alleen
+             de waarde van de recursieve aanroep voor de overige getallen.
          </p>
          <div class="takeNote"> Net als <code> meervoud</code> , is de <code> even</code>code een voorbeeld van een
              code<strong>patroon</strong>. Er is niks speciaals aan even getallen hier. Hetzelfde patroon kan gebruikt
@@ -53,25 +53,32 @@
                  </strong>
              </p>
              <ol>
-                 <div class="sidenote"> Probeer de code van <code>even</code> aan te passen.
+
+                 <div class="sidenote">
+                     Probeer de code van <code>even</code> aan te passen.
                  </div>
+
                  <li> Schrijf een blok <code>eindigt-e</code>dat een lijst met woorden als invoer heeft en een lijst met
-                     de woorden waarvan de laatste letter een e is, rapporteert. <br />
+                     de woorden waarvan de laatste letter een e is, rapporteert.
+                     <br />
                      <img height="130" class="indent" src="../../afb/h8/l4/p3-b2.png" alt="Geen Afbeelding" />
                  </li>
                  <li> Schrijf een blok <code>getallen</code> dat een lijst met woorden en getallen als invoer neemt en
-                     met alleen de getallen van die lijst rapporteert.<br />
+                     met alleen de getallen van die lijst rapporteert.
+                     <br />
                      <img height="130" class="indent" src="../../afb/h8/l4/p3-b3.png" alt="Geen Afbeelding" />
                  </li>
                  <li> Generaliseer het patroon om een <code>keep</code>blok te maken.
                  </li>
+
                  <div class="takeNote">
                      Als je niet met het <code>combine</code>blok van pagina
-                     <a href="../hoofdstuk-5/H5L3P1.html">
-                         Hoofdstuk 5 Les 3 Pagina 1: Algoritmes vergelijken</a> hebt gewerkt, wil waarschijnlijk eerst
-                     kijken hoe dat blok werkt voordat je aan de volgende opdracht begint.
+                     <a href="../hoofdstuk-5/H5L3P1.html"> Hoofdstuk 5 Les 3 Pagina 1: Algoritmes vergelijken</a>
+                     hebt gewerkt, wil waarschijnlijk eerst kijken hoe dat blok werkt voordat je aan de volgende
+                     opdracht begint.
                  </div>
-                 <li> Schrijf het <code> combine</code>blok. <strong> Merk op:</strong> Het basis geval is een lijst met
+
+                 <li> Schrijf het <code>combine</code>blok. <strong>Let op:</strong> Het basis geval is een lijst met
                      één element, niet een lege lijst.
                  </li>
              </ol>
@@ -84,13 +91,13 @@
          </div>
          <div class="ifTime">
              <ol start="5">
-                 <li> Pas een <code> sorteer</code> algoritme dat je geschreven hebt in
+                 <li> Pas een <code>sorteer</code> algoritme aan dat je geschreven hebt in
                      <a href="./H8L1P3.html"> Hoofdstuk 8 Les
-                         2 Pagina 1: Een Lijst Sorteren</a> aan om als invoer een eigenschap te vergelijken, zoals het
+                         2 Pagina 1: Een Lijst Sorteren</a> om als invoer een eigenschap te vergelijken, zoals het
                      groene blok hieronder: <br />
                      <img height="40" class="indent" src="../../afb/h8/l4/p3-b4.png" alt="Geen Afbeelding" />
                      <br />
-                     Op die manier kan je sorteren met het <em>grootste</em> element als eerste.
+                     Op die manier kan je sorteren zodat het <em>grootste</em> element vooraan komt te staan.
                  </li>
              </ol>
          </div>

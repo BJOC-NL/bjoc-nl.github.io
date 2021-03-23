@@ -50,6 +50,8 @@
 
 * h3l5p2 ik kan de "oranje cluster" niet goed vinden, het zijn of alle oranje punten, of de 2 puntjes uruguay en argentinie. miss bedoelen ze de rode cluster?
 * h4l3(p1) willen we miss alleen 'coderen-decoderen' of 'versleutelen-ontcijferen' gebruiken. De 1ste is handig omdat decoderen duidelijk het tegenovergestelde is van coderen, maar de 2e zijn wat makkelijkere woorden die wel minder duidelijk tegenovergestelden zijn.
+* h8l3p5, moet je recursief alle combinates van een bepaalde grootte geven. Dit is vrij lastig en het lukt mij zelf ook maar half. Ik zou hier graat wat hints geven maar ik heb geen idee wat ze als antwoord zouden willen.
+* ik vind zelf optionele projecten nogal naar klinken, "Naar eigen keuze" vind ik mooier
 
 ## Externe Bronnen
 
