@@ -17,113 +17,139 @@
 </head>
 
 <body>
-    <h2>Modeling Language: Plurals, Part 1</h2>
+    <div class="full">
+        <h2>Taal modeleren: Meervoudsvormen, deel 1</h2>
+        <div class="learn">
+            Siri en andere robots zijn geprogrammeerd om taal te genereren. Siri spreekt; some robots schrijven.
+            Jij heb een programma ontwikkeld <code>kletspraat</code>, dat schrijft. Nu kan je de computer zijn
+            taalcapaciteiten verder ontwikkelen met een rapporteurblok, <code>meervoud</code>, dat een zelfstandig
+            naamwoord als invoer heeft en op de juiste manier het meervoud als uitvoer geeft. <br />
+            <img src="../../afb/" />
+            <img src="../../afb/" />
+            <br />
+            Een woord in het meervoud zetten voelt bijna automatisch voor een mens, maar dit is niet zo makkelijk als
+            het lijkt: een computer heeft een algoritme nodig om deze taak uit te voeren.
 
-    <div class="learn">
-        Siri and other robots are programmed to generate language. Siri speaks; some robots write. You have developed a
-        program, <code>gossip</code>, that writes. Now, you can extend the computer's abilities with language by
-        developing a reporter block, <code>plural</code>, that takes a noun as input and correctly spells and outputs
-        the plural. <br />
-        <img src="../../afb/" />
-        <img src="../../afb/" /> <br /> Spelling a plural can seem almost automatic for a person, but it is not simple:
-        a computer needs an algorithm to do that task.
-    </div>
 
-    <div class="forYouToDo" id="first">
-        <div class="sidenote">This project uses blocks already loaded for you from Snap<em>!</em>'s "Words, sentences"
-            library. You can load a library from the File menu <img src="../../afb/" .</div> <ol>
-            <li>
-                To do this project, you will need to use the new blocks <img src="../../afb/" />, which you used in Unit
-                1 Lab 2, Gossip and Greet.<br />
-                <a class="run" href="/bjc-r/prog/2-complexity/U2-project-plural.xml"><img class="inline"
-                        src="../../afb/"></a><br />
-                Try all its expressions (the nine one-line scripts) and experiment with their inputs until you are sure
-                you understand what they do. For each expression, say what that script does <em>in general</em> not just
-                what it does with this particular input. (Example: <img src="../../afb/"> reports <em>y</em>, but you
-                want to say what <code>last letter of</code> will report if, say, <code>2017</code> is its input.)
-            </li>
-            <div class="endnote">You won't need <img src="../../afb/" Linguists use evidence like this to understand the
-                    history of a language.</div> <div class="sidenote">
-                Choose the <em>reporter</em> button when you make <code>plural</code>.<br />
-                <img src="../../afb/" />
+        </div>
+        <div class="forYouToDo" id="first">
+            <div class="sidenote">
+                Dit project gebruikt blokken die al voor je gemaakt zij in Snap<em>!</em>'s "Words,
+                sentences"-bibliotheek. Je kan een bibliotheek laden via het Bestandsmenu <img
+                    src="../../afb/icons/file_button.png" style="height:1.6em;" alt="Geen Afbeelding" /> onder het kopje
+                "Bibliotheken..."
             </div>
-            <li>Here's one way to start building the <code>plural</code> block. Build this much and test it out on at
-                least "day" and "boss" and "medicine," to make sure it works correctly for those. If it does not, edit
-                and fix it. <br /> <img class="indent" src="../../afb/" /></li>
-            <li><strong>Debugging: </strong> Try to find words for which this version of <code>plural</code> does
-                <em>not</em> work correctly. List the words you find. <em>Organize that list</em>, sorting the words
-                into categories according to their last letter. For example, it will get wrong some words that end with
-                the letter <em>h</em>. Try to find many words it gets wrong. </li>
-            <li>
-                <strong><em>Save your list.</em></strong>
-                <ul>
-                    <li>Create a Snap<em>!</em> list like this <img src="../../afb/"> containing <em>all</em> of your
-                        words.</li>
-                    <li>
-                        <div class="saveAs"><span class="text">"U2-Plural"</span><img src="../../afb/" /> <em>Save your
-                                file</em>. You will need this list. </div>
-                    </li>
-                </ul>
-            </li>
+            <ol>
+                <li> To do this project, you will need to use the new blocks <img src="../../afb/" />, which you used in
+                    Unit 1 Lab 2, Gossip and Greet.
+                    <br />
+                    <a class="run" href="/bjc-r/prog/2-complexity/U2-project-plural.xml">
+                        <img class="inline" src="../../afb/icons/LaadEnSlaOp.png">
+                    </a>
+                    <br /> Probeer alle
 
-            <div class="takeNote">
-                <p><strong>Debugging: </strong>To write code that works, you want to try to find situations in which it
-                    does <em>not</em> work. "Breaking it" requires thinking of wild and exceptional cases, even
-                    including inputs that are incorrect in some way, like this example, which has a space at the end.
-                    <img src="../../afb/" /></p>
-            </div>
+                    Try all its expressions (the nine one-line
+                    scripts) and
+                    experiment with their inputs until you are sure you understand what they do. For each expression,
+                    say what that script does <em>in general</em> not just what it does with this particular input.
+                    (Example: <img src="../../afb/"> reports <em>y</em>, but you want to say what <code>last letter
+                        of</code> will report if, say, <code>2017</code> is its input.)
+                </li>
 
-            <li>
-                <code>plural</code> should now work correctly for "day" and "boss" and "medicine," but it probably
-                doesn't yet work correctly for the word "box"<br />
-                <img class="indent" src="../../afb/" />.
-                <p> Edit your <code>plural</code> block to make it work for words that end with x. <em>Test</em> it to
-                    make sure it does work properly.</p>
-            </li>
-            <img class="imageRight" src="../../afb/" />
+                <div class="endnote">Je zal
+                    <img src="/March2019/bjc-r/img/2-complexity/join-t-all-but-first-letter-of-when-343x33.png"
+                        style="height:2.6em;" alt="Geen Afbeelding" />
+                    niet nodig hebben voor dit project, maar je vindt het misschien interessant om het te proberen met
+                    de woorden "when", "where", "what", "wherefore". Taalkundigen gebruiken bewijs zoals dit om de
+                    geschiedenis van taal te begrijpen.
+                </div>
+
+                <div class="sidenote">
+                    Choose the <em>reporter</em> button when
+                    you make <code>plural</code>.<br /> <img src="../../afb/" />
+                </div>
+
+                <li> Here's one way to start building the <code>plural</code> block. Build this much and test it out on
+                    at least "day" and "boss" and "medicine," to make sure it works correctly for those. If it does not,
+                    edit and fix it. <br /> <img class="indent" src="../../afb/" />
+                </li>
+                <li> <strong>Debugging: </strong> Try to find words for which this version of <code>plural</code> does
+                    <em>not</em> work correctly. List the words you find. <em>Organize that list</em>, sorting the words
+                    into categories according to their last letter. For example, it will get wrong some words that end
+                    with the letter <em>h</em>. Try to find many words it gets wrong.
+                </li>
+                <li> <strong><em>Save your list.</em></strong>
+                    <ul>
+                        <li>Create a Snap<em>!</em> list like this <img src="../../afb/"> containing <em>all</em> of
+                            your words.</li>
+                        <li>
+                            <div class="saveAs"><span class="text">"U2-Plural"</span><img src="../../afb/" /> <em>Save
+                                    your file</em>. You will need this list. </div>
+                        </li>
+                    </ul>
+                </li>
+
+                <div class="takeNote">
+                    <p><strong>Debugging: </strong>To write code that works, you want to try to find situations in which
+                        it does <em>not</em> work. "Breaking it" requires thinking of wild and exceptional cases, even
+                        including inputs that are incorrect in some way, like this example, which has a space at the
+                        end. <img src="../../afb/" /></p>
+                </div>
+
+                <li> <code>plural</code> should now work correctly for "day" and "boss" and "medicine," but it probably
+                    doesn't yet work correctly for the word "box"<br /> <img class="indent" src="../../afb/" />.
+                    <p>
+                        Edit your <code>plural</code> block to make it work for words that end with x. <em>Test</em> it
+                        to make sure it does work properly.
+                    </p>
+                </li>
+
+                <img class="imageRight" src="../../afb/" />
             </ol>
         </div>
 
-        <p>You can do the same for conjugating verbs in Spanish or some other language you choose. See the Take It
-            Further section at the bottom.</p>
-        <p>The next two steps are worth learning—very useful for <em>testing</em> <code>plural</code> and in more
-            advanced work later on—but not essential for <em>building</em> <code>plural</code>.</p>
+        <p> You can do the same for conjugating verbs in Spanish or some other language you choose. See the Take It
+            Further section at the bottom.
+        </p>
+        <p> The next two steps are worth learning—very useful for <em>testing</em> <code>plural</code> and in more
+            advanced work later on—but not essential for <em>building</em> <code>plural</code>.
+        </p>
 
         <div class="forYouToDo">
             <ol start="6">
-                <li>
-                    Use <code>map</code> to test <em>all</em> the words on your list. Leave the slot in
+                <li> Use <code>map</code> to test <em>all</em> the words on your list. Leave the slot in
                     <code>plural</code> <strong>empty</strong>, as you see here. The <code>map</code> block inserts each
                     element of the list into that slot and reports a list of the results.<img src="../../afb/">
-                    <p>For now, don't worry about the words it still gets wrong, as long as it works for "day," "boss,"
-                        "medicine," and "box." </p>
+                    <p>
+                        For now, don't worry about the words it still gets wrong, as long as it works for "day," "boss,"
+                        "medicine," and "box."
+                    </p>
                 </li>
                 <li>In your <code>map</code> script, replace <code>plural</code> with<img src="../../afb/">. Try it. Now
-                    explain what the <code>map</code> block does, <em>in general</em>. </li>
-                <li>
-                    Experiment with<br />
-                    <img src="../../afb/"><br />
-                    and<br />
-                    <img src="../../afb/"><br />
-                    to see what they do. Again, leave the slot in <code>last letter of</code> <strong>empty</strong>, as
-                    you see here. That is the placeholder for <code>keep</code> to test each word the list. Explain what
-                    the <code>keep</code> block does.
+                    explain what the <code>map</code> block does, <em>in general</em>.
+                </li>
+                <li> Experiment with<br /> <img src="../../afb/"><br /> and<br /> <img src="../../afb/"><br /> to see
+                    what they do. Again, leave the slot in <code>last letter of</code> <strong>empty</strong>, as you
+                    see here. That is the placeholder for <code>keep</code> to test each word the list. Explain what the
+                    <code>keep</code> block does.
                 </li>
             </ol>
         </div>
 
         <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
             <ol type="A">
-                <li>
-                    If you know another language, build a block that takes a pronoun and verb as input and outputs the
-                    correct form of that verb. For example:<br />
-                    <img src="../../afb/" />
-                    <img src="../../afb/" />
+                <li> If you know another language, build a block that takes a pronoun and verb as input and outputs the
+                    correct form of that verb. For example:<br /> <img src="../../afb/" /> <img src="../../afb/" />
                 </li>
-
             </ol>
         </div>
 
+    </div>
+    <div class="full-bottom-bar" style="background-position: 20px 3px;">
+        <div class="bottom-nav btn-group"><a class="btn btn-default backbutton arrow" style="min-width: 90px;"
+                href="H2O1P3.html">Terug</a><a style="min-width:90px;" class="btn btn-default forwardbutton arrow"
+                href="H2O1P5.html">Volgende</a> </div>
+    </div>
 </body>
 
 </html>
