@@ -51,7 +51,8 @@
 * h3l5p2 ik kan de "oranje cluster" niet goed vinden, het zijn of alle oranje punten, of de 2 puntjes uruguay en argentinie. miss bedoelen ze de rode cluster?
 * h4l3(p1) willen we miss alleen 'coderen-decoderen' of 'versleutelen-ontcijferen' gebruiken. De 1ste is handig omdat decoderen duidelijk het tegenovergestelde is van coderen, maar de 2e zijn wat makkelijkere woorden die wel minder duidelijk tegenovergestelden zijn.
 * h8l3p5, moet je recursief alle combinates van een bepaalde grootte geven. Dit is vrij lastig en het lukt mij zelf ook maar half. Ik zou hier graat wat hints geven maar ik heb geen idee wat ze als antwoord zouden willen.
-* ik vind zelf optionele projecten nogal naar klinken, "Naar eigen keuze" vind ik mooier
+* ik vind zelf de term "optionele projecten" nogal naar klinken, "Naar eigen keuze" vind ik mooier
+* H2O1P3 zegt dat er nog latere pagina's komen waar dit programma uitgebreid wordt maar geloof ik is dit niet zo, misschien gewoon zeggen dat we een mastermind assisten maken?
 
 ## Externe Bronnen
 
@@ -67,6 +68,8 @@
 * Alle "Als Youtube geblokkeerd is" hetzelfde maken. GEDAAN
 * Er zijn een aantal links naar pagina's, dit zijn nu links binnen de files, e.g. `: ../../units ... /h1l3p1.html`. Dit is miss niet ideaal? GEDAAN?
 * H2L5P2 heeft een strip, die heb ik vertaald, maar dit valt eigenlijk niet onder copyright.
+* H2O1P3 project, verander vlakken naar mogelijke kleuren, en goeie woorden, "y" is nu bvb geel. geel en groen kunnen ook niet bestaan.
+* H2O1P3 show value blok bestaat niet?
 
 ## Hypothesis
 
