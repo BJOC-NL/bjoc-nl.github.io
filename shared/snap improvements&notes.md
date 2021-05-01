@@ -70,6 +70,8 @@
 * H2L5P2 heeft een strip, die heb ik vertaald, maar dit valt eigenlijk niet onder copyright.
 * H2O1P3 project, verander vlakken naar mogelijke kleuren, en goeie woorden, "y" is nu bvb geel. geel en groen kunnen ook niet bestaan.
 * H2O1P3 show value blok bestaat niet?
+* H3O1P3 wat zijn constructor en selector?
+* soms is het nu data-type, soms datatype
 
 ## Hypothesis
 
