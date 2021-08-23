@@ -72,6 +72,7 @@
 * H2O1P3 show value blok bestaat niet?
 * H3O1P3 wat zijn constructor en selector?
 * soms is het nu data-type, soms datatype
+* sla alle projecten op, zodat als er iets met mijn accoutn gebeurt, we die projecten nog hebben.
 
 ## Hypothesis
 

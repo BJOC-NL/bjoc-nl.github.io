@@ -34,8 +34,6 @@ slot - veld
 
 (stage) background - speelveld
 
-stage - speelveld
-
 loop - lus
 
 condition - conditie
@@ -66,7 +64,11 @@ command(block) - opdracht(blok)
 
 C-shapedblock - hapblok
 
+hat blocks - kopblokken
+
 scripting area - werkblad
+
+stage - speelveld
 
 project file - bestand (Snap heeft niet echt het concept van meerdere bestanden in een project)
 

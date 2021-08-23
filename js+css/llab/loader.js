@@ -8,7 +8,7 @@ document.getElementsByTagName('head')[0].async = true
 var Inhoudsopgave = function () {
     document.getElementsByTagName("title")[0].innerHTML +=
         '<a style="float:right; padding:10px;  font-family:sans-serif !important;" href="../../index.html" class="blbtn"> \
-        Terug naar de Inhoudsopgave </a>';
+        Terug naar de inhoudsopgave </a>';
 }
 
 
