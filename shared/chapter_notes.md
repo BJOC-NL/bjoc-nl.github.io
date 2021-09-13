@@ -6,6 +6,8 @@ uitleggen wat een script is (een groep blokken die aan elkaar vast zitten?)
 
 buur -> partner?
 
+in snap heten nieuwe sprites niet meer Sprite maar Object, overal aanpassen? vooral H1L5 levert dit problemen op.
+
 ## Hoofdstuk 1
 
 ### Les 3
@@ -47,3 +49,15 @@ Stap D, c (laatste punt), ik heb zelf geen idee hoe dit werkt.
 #### Pagina 1
 
 dingen is miss wel heel informeel, gegevens?
+
+#### Pagina 2
+
+HIV is misschien niet zo'n handig voorbeeld. Wellicht, iets als "of je man of vrouw bent"
+
+vereisen van een bevelschrift? wat is dat? wat heeft dat met de macht van de staat te maken
+
+#### Pagina 3
+
+tanya's verhaal, wellicht niet de huidige koers van dollar naar euro bijzetten, die raakt heel snel gedateerd.
+
+tanyas verhaal nog eens goed doorheen, veel zinnen lopen niet lekker. duurt wel lang, dus nog bewaren voor later
