@@ -19,79 +19,107 @@
 <body>
     <div class="full">
         <h2>Pas je molen aan</h2>
-        <div class="learn"> <strong>Op deze pagina,</strong> ga je je bestaande <code>molen</code> blok aanpassen zodat
-            je het kunt gebruiken om verschillende vormen te tekenen.<br /> <img class="indent"
-                src="../../afb/h1/H1L3/overig/H1L3P4-o1.png" alt="Geen Afbeelding" /> </div>
+
+        <div class="learn">
+            <strong>Op deze pagina,</strong> ga je je bestaande <code>molen</code> blok aanpassen zodat
+            je het kunt gebruiken om verschillende vormen te tekenen.
+            <br />
+            <img class="indent" src="../../afb/h1/H1L3/overig/H1L3P4-o1.png" alt="Geen Afbeelding" />
+        </div>
+
         <h3>Meerdere invoer toevoegen</h3>
-        <p>Bedenk hoe je je originele script <em>generalizeerde</em>: je voegde een invoer variabele toe genaamd
+        <p>
+            Bedenk hoe je je originele script <em>generalizeerde</em>: je voegde een invoer variabele toe genaamd
             <var>branches</var> die de hoeken van de sprite regelde. Door <em>meer</em> invoer variabelen toe te voegen,
-            kun je andere aspecten van je programma generaliseren...</p>
+            kun je andere aspecten van je programma generaliseren...
+        </p>
         <div class="forYouToDo" id="first">
             <ol>
                 <li>Als je het nog niet hebt geopend, open dan je H1L3-Molen project.</li>
-                <li> Experimenteer met de invoer voor het <em>tweede</em> <code>zet</code> blok in je <code>molen</code>
-                    blok zoals hieronder.<br />
+                <li> Experimenteer met de invoer voor het <em>tweede</em> <code>neem stappen</code>-blok in je
+                    <code>molen</code> blok zoals hieronder.
+                    <br />
                     <ol>
-                        <li> <img class="inline" src="../../afb/icons/PraatMetJeBuur.png" alt="Geen Afbeelding" /> Maak
-                            eerst een voorspelling. Wat denk je dat er zal
-                            gebeuren? </li> <img class="indent" src="../../afb/h1/H1L3/blocks/H1L3P4-b1.png"
-                            alt="Geen Afbeelding" />
-                        <li>Probeer dan verschillende getallen tussen -100 en 0 in te voeren.</li>
-                        <li> <img class="inline" src="../../afb/icons/PraatMetJeBuur-mini.png" alt="Geen Afbeelding" />
-                            Wat gebeurde er? Op wat voor manier is het vergelijkbaar
-                            met hoe je het voorspelde? Hoe beïnvloedt deze invoer-waarde het gedrag van de sprite?<br />
+                        <li> <img class="inline" src="../../afb/icons/PraatMetJeBuur.png" alt="Geen Afbeelding" />
+                            Maak eerst een voorspelling. Wat denk je dat er zal gebeuren?
+                        </li>
+                        <img class="indent" src="../../afb/h1/H1L3/blocks/H1L3P4-b1.png" alt="Geen Afbeelding" />
+                        <li>Probeer dan verschillende getallen tussen -100 en 0 als invoer.</li>
+                        <li>
+                            <img class="inline" src="../../afb/icons/PraatMetJeBuur-mini.png" alt="Geen Afbeelding" />
+                            Wat gebeurde er? Komt het overeen met wat je voorspeld had? Hoe beïnvloedt deze invoerwaarde
+                            het gedrag van de sprite?
+                            <br />
                             <img class="indent" data-gifffer="../../afb/h1/H1L3/videos/H1L3P4-v1.gif" height="200"
-                                alt="Geen Afbeelding" /> </li>
+                                alt="Geen Afbeelding" />
+                        </li>
                     </ol>
                 </li>
+
+                <div class="sidenote">
+                    Bekijk opnieuw hoe je een invoer moet toevoegen bij <a href="./H1L3P3.html">Hoofdstuk 1 Les 3
+                        Pagina 3: Blokken met invoer</a> , als dat nodig is.
+                </div>
+
                 <li>
-                    <div class="sidenote">Bekijk opnieuw hoe je een invoer moet toevoegen bij
-                        <a href="./H1L3P3.html">Hoofdstuk 1 Les 3 Pagina 3: Blokken met invoer</a> , als dat nodig is.
-                    </div> Voeg een <em>tweede invoer-variabele</em> toe om de hoeveelheid "backing up" te regelen die
-                    de sprite doet voor elke draai door de volle 360&deg;. <ol>
-                        <li>Bewerk je <code>molen</code> blok, klik dan op het "+" teken aan het eind om een
-                            invoer<strong>label</strong> toe te voegen (<strong>Kies "titel text"</strong>). Type
-                            <code>backup:</code> zoals hieronder en klik "OK".</li> <img class="indent"
-                            src="../../afb/h1/H1L3/overig/H1L3P4-o7.png" alt="Geen Afbeelding" />
-                        <li>Klik dan weer op het "+" teken aan het eind om <em>nog een keer</em> een
-                            invoer<strong>variabele</strong> toe te voegen (<strong>Kies "invoer naam"</strong>) en
-                            noem het <var>backup</var>.</li>
-                        <li>Sleep de <var>backup</var> variabele weg, plaats het daar waar het hoort in de
-                            <code>molen</code> code en druk op "OK" of "Toevoegen."</li>
-                        <li>Zorg dat het nieuwe invoerbalkje in het <code>molen</code>blok zich gedraagt zoals je hem
+                    Voeg een <em>tweede invoer-variabele</em> toe om de hoeveelheid "backing up" te regelen die
+                    de sprite doet voor elke draai door de volle 360&deg;.
+                    <ol>
+                        <li> Open het script van je <code>molen</code>-blok om het te bewerken, klik dan op het "+"
+                            teken aan het eind van de naam van het blok om een
+                            invoer<strong>label</strong> toe te voegen (<strong>Kies "Titel"</strong> in plaats van
+                            "Invoernaam"). Typ <code>backup:</code> zoals hieronder en klik op "OK".
+                        </li>
+                        <img class="indent" src="../../afb/h1/H1L3/overig/H1L3P4-o7.png" alt="Geen Afbeelding" />
+                        <li> Klik dan weer op het "+" teken aan het eind om nog een een invoer<strong>variabele</strong>
+                            toe te voegen (<strong>Kies "Invoernaam"</strong>) en noem het <var>backup</var>.
+                        </li>
+                        <li> Sleep de <var>backup</var> variabele weg, plaats het daar waar het hoort in de
+                            <code>molen</code> code en druk op "OK" of "Toevoegen."
+                        </li>
+                        <li> Zorg dat het nieuwe invoerbalkje in het <code>molen</code>blok zich gedraagt zoals je hem
                             hierboven hebt aangepast.
                         </li>
                     </ol>
                 </li>
-                <div class="sidenote">Gebruik een Operator-blok.</div>
-                <li>Verander het <code>molen</code> script zodanig dat het een <em>positieve</em> waarde accepteert
-                    (tussen 0 en 100) voor <var>backup</var>.</li>
+                <li>Verander het <code>molen</code>-script zodanig dat het een <em>positieve</em> waarde accepteert
+                    (tussen 0 en 100) voor <var>backup</var>.
+                </li>
+
+                <div class="sidenote">
+                    Gebruik een Operator-blok zoals <img height="35" src="../../afb/h1/H1L3/blocks/h1l3p4-b6.png"
+                        alt="Geen Afbeelding" /> .
+                </div>
             </ol>
         </div> <img class="inline" src="../../afb/icons/DraaiDeRollenOm.png" alt="Geen Afbeelding" />
         <div class="takeNote">
             <h4><strong>Debugging Tip: Organiseer je code</strong></h4>
             <p> Een goede manier om bugs in de eerste instantie te voorkomen, is om je code te organiseren door
-                blokken die je niet gebruikt of nodig hebt te verwijderen. Onderstaand vind je voorbeelden van rommelige
-                code en netjes georganiseerde code met opmerkingen. Als je terugkomt naar een project na een paar dagen,
-                welke code denk je dan dat het makkelijkst is om te debuggen?<br /> <img class="indent"
-                    src="../../afb/h1/H1L3/overig/H1L3P4-o8.png" width="550" alt="Geen Afbeelding" /><br /> <img
-                    class="indent" src="../../afb/h1/H1L3/overig/H1L3P4-o9.png" width="550" alt="Geen Afbeelding" />
+                blokken die je niet gebruikt of niet nodig hebt te verwijderen. Hieronder staan voorbeelden van
+                rommelige code en netjes georganiseerde code met opmerkingen.
+                welke code denk je dat het makkelijkst is om te debuggen als je er een paar dagen niet aan gewerkt hebt?
+                <br />
+                <img class="indent" src="../../afb/h1/H1L3/overig/H1L3P4-o8.png" width="550" alt="Geen Afbeelding" />
+                <br />
+                <img class="indent" src="../../afb/h1/H1L3/overig/H1L3P4-o9.png" width="550" alt="Geen Afbeelding" />
             </p>
-            <p> Je kunt de <strong>opruimen</strong> optie gebruiken door met je rechtermuisknop in het script gedeelte
+            <p> Je kunt de <strong>opruimen</strong>-optie gebruiken door met je rechtermuisknop in het werkblad
                 te klikken en je blokken te organiseren en (verticaal) goed te zetten. Je kunt ook blokken of scripts
-                verwijderen door ze uit het script gedeelte te slepen en terug in de palettes te plaatsen aan de
-                linkerkant of door op de "verwijderen" optie te klikken in het drop-down menu zoals je hieronder ziet.
+                verwijderen door ze uit het werkblad te slepen en terug in de paletten te zetten aan de
+                linkerkant of door op de "verwijderen" optie te klikken in het menu zoals je hieronder ziet.
                 Let op dat dit dus anders is dan de "verwijder blok definitief", deze optie verwijdert permanent je
-                speciaal aangemaakte blok en alles wat daarbij hoort binnen je project.<br /> <img class="indent"
-                    data-gifffer="../../afb/h1/H1L3/videos/H1L3P4-v2.gif" height="500" alt="Geen Afbeelding" />
+                speciaal aangemaakte blok en alles wat daarbij hoort binnen je project.
+                <br />
+                <img class="indent" data-gifffer="../../afb/h1/H1L3/videos/H1L3P4-v2.gif" height="500"
+                    alt="Geen Afbeelding" />
             </p>
         </div>
         <div class="forYouToDo">
             <ol start="5">
-                <li> Voeg een andere invoer toe genaamd <var>grootte</var> om de invoer naar het <em>eerste</em>
-                    <code>zet</code> blok te regelen.<br /> <img class="indent"
+                <li> Voeg een andere invoer toe genaamd <var>grootte</var> om de invoer voor het <em>eerste</em>
+                    <code>neem stappen</code> blok te regelen.<br /> <img class="indent"
                         src="../../afb/h1/H1L3/blocks/H1L3P4-b2.png" width="700" alt="Geen Afbeelding" /> </li>
-                <li> Probeer verschillende invoeren uit in je <code>molen</code>programma...<br /> <img class="indent"
+                <li> Probeer verschillende invoeren uit in je <code>molen</code>script...<br /> <img class="indent"
                         src="../../afb/h1/H1L3/blocks/H1L3P4-b3.png" height="50" alt="Geen Afbeelding" /> <img
                         class="indent" src="../../afb/h1/H1L3/overig/H1L3P4-o2.png" alt="Geen Afbeelding" /><br /> <img
                         class="indent" src="../../afb/h1/H1L3/blocks/H1L3P4-b4.png" height="50" alt="Geen Afbeelding" />
@@ -102,26 +130,39 @@
                         class="indent" src="../../afb/h1/H1L3/overig/H1L3P4-o4.png" alt="Geen Afbeelding" /> <img
                         class="indent" src="../../afb/h1/H1L3/overig/H1L3P4-o5.png" alt="Geen Afbeelding" />
                 </li>
-                <div class="endnote">Je wilt misschien de invoerwaarde reduceren voor de <code>wacht</code>blokken
-                    binnen het <code>molen</code>script zodat je niet zo lang hoeft te wachten tussen de testen.</div>
+
+
             </ol>
-        </div> <img class="inline" src="../../afb/icons/HetIsNuEenGoedMoment.png" alt="Geen Afbeelding" />
+            <div class="endnote">
+                Je kan de invoerwaarde verminderen voor de <code>wacht</code>blokken
+                in het <code>molen</code>script zodat je niet zo lang hoeft te wachten terwijl je dingen aan het
+                testen bent.
+            </div>
+        </div>
+
+        <img class="inline" src="../../afb/icons/HetIsNuEenGoedMoment.png" alt="Geen Afbeelding" />
+
         <div class="ifTime">
             <ol start="8">
-                <li>Vind invoeren voor <code>molen</code> die het resultaat doet lijken op een cirkel.</li>
+                <li>Vind invoeren voor <code>molen</code> waarvoor het resultaat op een cirkel lijkt.</li>
             </ol>
         </div>
         <div class="takeItFurther">
             <ol type="A">
-                <li> Maak een foto die meer op een échte molen lijkt:<br /> <img
-                        src="../../afb/h1/H1L3/overig/H1L3P4-o6.png" height="210" alt="Geen Afbeelding" /><br />
-                    <small>Copyright 2010 <a href="http://asubtlerevelry.com/a-pinwheel-tutorial-the-easiest-ever/"
-                            target="_blank">Victoria Hudgins</a>. Used by permission.</small>
-                    <p>(Sla je project eerst op; je zult het <code>molen</code> blok die je nu hebt later nog nodig
-                        hebben.)</p>
-                    <p>Het hoeft niet precies op de foto te lijken. Maar elke arm van de molen zijn in feite twee
-                        driehoeken. Misschien vind je het <img src="../../afb/h1/H1L3/blocks/H1L3P4-b5.png"
-                            alt="Geen Afbeelding" /> blok handig.</p>
+                <li> Maak een nieuw script waarmee je een molen probeert te tekenen die meer op een échte molen lijkt:
+                    <br />
+                    <img src="../../afb/h1/H1L3/overig/H1L3P4-o6.png" height="210" alt="Geen Afbeelding" />
+                    <br />
+                    <small>Copyright 2010
+                        <a href="http://asubtlerevelry.com/a-pinwheel-tutorial-the-easiest-ever/"
+                            target="_blank">Victoria Hudgins</a>. Met toestemming gebruikt.</small>
+                    <p> (Sla je project eerst op; je zult het <code>molen</code>blok die je al hebt gemaakt in de
+                        toekomst nog nodig hebben.)
+                    </p>
+                    <p> Het hoeft niet precies op de foto te lijken. Maar elke arm van de molen in de afbeelding is in
+                        feite twee driehoeken. Het <img src="../../afb/h1/H1L3/blocks/H1L3P4-b5.png"
+                            alt="Geen Afbeelding" />blok komt waarschijnlijk van pas.
+                    </p>
                 </li>
             </ol>
         </div>
