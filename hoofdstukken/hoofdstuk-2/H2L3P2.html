@@ -23,11 +23,13 @@
             <p><strong>Op deze pagina</strong>, ga je predikaten gebruiken met het <code>houd</code> blok om items
                 binnen een lijst te houden die specifieke karakteristieken hebben.</p>
         </div>
-        <p>Zoals je weet, kunnen predikaten gebruikt worden met voorwaardes om te beslissen wanneer iets
+        <p> Zoals je weet, kunnen predikaten gebruikt worden met voorwaardes om te beslissen wanneer iets
             <em>gedaan</em> moet worden; ze kunnen ook gebruikt worden met het <code>houd</code> blok om te beslissen
-            welke dingen te <em>bewaren</em>. Het <img class="inline" src="../../afb/h2/l3/blocks/p2-b1.png" />blok
-            neemt een lijst en een predikaat als input, en het meldt een nieuwe lijst met alleen maar items van de
-            lijst die de conditie als 'waar' heeft gekregen van het predikaat.</p>
+            welke dingen <em>bewaard</em> moeten worden. Het <img class="inline"
+                src="../../afb/h2/l3/blocks/p2-b1.png" />blok
+            heeft als invoer een lijst en een predikaat, en het geeft een nieuwe lijst terug met alle items van de
+            lijst die aan de voorwaarde van het predikaat voldoen.
+        </p>
         <p> Bijvoorbeeld, de volgende expressie vindt woorden van de <var>woordenlijst</var> <strong>waarvan de eerste
                 letter een 'v' is</strong>. Het <em>lege invoervakje</em> is waar elk item van de lijst heen gaat om
             te beslissen of deze bewaard wordt of niet.<br> <img class="indent" src="../../afb/h2/l3/blocks/p2-b2.png">
@@ -61,19 +63,21 @@
                     dus ook het <code>keep items</code>blok gebruiken.
             </ol>
         </div>
-        <p>Het eerste voorbeeld houdt inputs van een bepaalde <em>lengte</em>; van elk woord in de lijst wordt gevraagd
+        <p>Het eerste voorbeeld houdt invoeren van een bepaalde <em>lengte</em>; van elk woord in de lijst wordt
+            gevraagd
             of de lengte '5' is, en alleen degene met 5 tekens worden gerapporteerd. Het tweede voorbeeld houdt
             invoeren die <em>geen getallen</em> zijn; van elk item in deze lijst wordt gevraagd "Is dit item
             <em>geen</em> getal?" en alleen de elementen die geen getallen zijn worden gemeld.</p>
         <div class="forYouToDo">
             <ol start="3">
-                <li> Run <code>initieer lijsten</code>, en gebruik dan je nieuwe predikaten samen met <code>houd</code>
-                    om deze vragen te beantwoorden: <ol>
+                <li> Run <code>initialiseer lijsten</code>, en gebruik dan je nieuwe predikaten samen met
+                    <code>houd</code> om deze vragen te beantwoorden:
+                    <ol>
                         <li>Hoeveel 12-letterige woorden zijn er in <var>woordenlijst</var>?</li>
                         <li>Hoeveel 15-letterige woorden zijn er in <var>woordenlijst</var>?</li>
                         <li>Hoeveel 17-letterige woorden zijn er in <var>woordenlijst</var>?</li>
-                        <li> Hoeveel items in de <var>getallenlijst</var> zijn: <ol
-                                style="list-style-type: lower-roman">
+                        <li> Hoeveel items in de <var>getallenlijst</var> zijn:
+                            <ol style="list-style-type: lower-roman">
                                 <li>Even?</li>
                                 <li>Tussen de 25 en 75?</li>
                                 <li>Even getallen die groter zijn dan nul?</li>

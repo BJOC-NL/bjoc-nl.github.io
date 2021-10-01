@@ -36,7 +36,7 @@ slot - veld
 
 loop - lus
 
-condition - conditie
+condition - voorwaarde
 
 partner - buur
 
