@@ -61,3 +61,20 @@ vereisen van een bevelschrift? wat is dat? wat heeft dat met de macht van de sta
 tanya's verhaal, wellicht niet de huidige koers van dollar naar euro bijzetten, die raakt heel snel gedateerd.
 
 tanyas verhaal nog eens goed doorheen, veel zinnen lopen niet lekker. duurt wel lang, dus nog bewaren voor later
+
+## Hoofdstuk 2
+
+### Les 2
+
+#### Pagina 2
+
+Er staat dat er 2 bugs in zitten, er wordt niet verteld wat deze zijn. Ik geloof dat ik ze weet.
+
+    * Aan het einde van het tekenenen van de A moet hij weer terug naar het beginpunt. Anders is de onderkant van de linkerpoot open.
+    * Aan het begin staat de Sprite nog op locatie (0,0) als hij daarna naar de eerste coördinaat gaat komt er een extra lijn te staan. Je moet dus pas beginnen met tekenen als hij bij de eerste coordinaat is.
+
+Bij punt 6 staan er 3 vragen en ik weet niet echt het antwoord op deze vragen. Wellicht bij de tweede vraag "om alleen stippen neer te zetten" en de derde "omdat ga naar sneller is".
+
+#### Pagina 3
+
+Ik weet niet wat ze bedoelen met "ghost effect resetten". Ik kan me niet herinneren wat dit deed.

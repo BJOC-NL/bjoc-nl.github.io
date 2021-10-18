@@ -54,21 +54,22 @@
                             src="../../afb/icons/SlaHetOpAls.png" alt="Geen Afbeelding" /></div>
                 </li>
 
-                <div class="takeNote">Zorg dat je je project <strong>opnieuw opslaat onder een andere naam</strong> met
+                <div class="takeNote">
+                    Zorg dat je je project <strong>opnieuw opslaat onder een andere naam</strong> met
                     "H2" in de documentnaam. Als je dit werk opslaat onder de oude naam, zal Snap<em>!</em> je project
                     overschrijven. Gebruik &quot;Opslaan als...&quot; om het nieuwe bestand op te slaan onder een nieuwe
-                    naam. Als je een ouder project laadt en op het punt staat een grote verandering door te voeren,
-                    probeer er dan een gewoonte van te maken het <em>eerst op te slaan, voordat je iets verandert</em>.
+                    naam. Als je een oud project laadt en grote aanpassingen wil maken,
+                    probeer er dan een gewoonte van te maken dit project <em>eerst op te slaan onder een nieuwe naam,
+                        voordat je iets verandert</em>.
                 </div>
 
                 <li>Maak een globale variabele genaamd <var>score</var>. Hieronder staat hoe je dat doet.</li>
                 <div class="narrower">
                     <h4><strong>Maak een globale variabele</strong></h4>
                     <ol type="a">
-                        <li><strong>Klik
-                                <img class="inline" src="../../afb/h2/l1/other/p3-o1.png" alt="Geen Afbeelding" />
-                                aan in het Variabelen-palet.</strong>
-                            (Het is geen blok; je kan dit niet in je script-gedeelte slepen .)
+                        <li><strong>Klik op <img class="inline" src="../../afb/h2/l1/other/p3-o1.png"
+                                    alt="Geen Afbeelding" /> in het Variabelen-palet.</strong>
+                            (Het is geen blok; je kan dit niet in je script-gedeelte slepen.)
                         </li>
                         <li>
                             <strong>Typ de naam</strong> van je variabele. In dit geval, is het <var>score</var>.
@@ -78,12 +79,11 @@
                 </div>
                 <div class="sidenoteBig	"> Je kunt <img class="inline nopadtb" src="../../afb/h2/l1/blocks/p3-b1.png"
                         height="26" alt="Geen Afbeelding" /> of <img src="../../afb/h2/l1/blocks/p3-b2.png" height="40"
-                        alt="Geen Afbeelding"> gebruiken. In pseudocode ziet deze code
-                    er zo uit:
+                        alt="Geen Afbeelding"> gebruiken. In pseudocode ziet deze code er zo uit:
                     <pre>score &leftarrow; score + 1</pre>
                 </div>
-                <li> Gebruik de <var>score</var> variabele om de score van de speler bij te houden: <ol>
-                        <li>Zet <var>score</var> op 0 in het begin van het spel.</li>
+                <li> Gebruik de <var>score</var>variabele om de score van de speler bij te houden: <ol>
+                        <li>Zet <var>score</var> op 0 bij de start van het spel.</li>
                         <li>Zorg dat het programma de score <code>verhoogt</code> met 1, wanneer de sprite wordt
                             aangeklikt.</li>
                     </ol>
@@ -99,14 +99,16 @@
                     stopt het spel nooit, maar dat ga je veranderen! Kies een score waarbij je vindt dat de speler
                     gewonnen heeft.
                 </li>
-                <li> Gebruik een voorwaarde om te besluiten of de speler die score heeft bereikt. Als dit het geval
-                    is: <ol>
+                <li> Gebruik een voorwaarde om te besluiten of de speler die score bereikt heeft. Als de speler deze
+                    score bereikt, moet je een aantal dingen doen:
+                    <ol>
                         <li>Zorg dat Alonzo stopt met rondspringen.</li>
                         <li>Zorg dat Alonzo weer tevoorschijn komt. (Je moet dan het ghost effect resetten.)</li>
                         <li>Feliciteer de speler voor een paar seconden.</li>
                     </ol>
                 </li> <img class="imageRight" src="../../afb/icons/HetIsNuEenGoedMoment.png" alt="Geen Afbeelding" />
-                <li><strong>Test en debug.</strong> Speel het spel om de beurt, en fix bugs.<br />
+                <li><strong>Test en debug.</strong> Speel het spel om de beurt, en fix bugs.
+
                     <div class="takeNote">
                         <h4><strong>Debug-Tip: weergeven van variabelen</strong></h4>
                         <p>Globale variabelen hebben check-boxes die de weergave van de variabele-kijker aan en uit
@@ -115,6 +117,7 @@
                             alt="Geen Afbeelding" /><img class="indent" src="../../afb/h2/l1/other/p3-o3.png"
                             height="300" alt="Geen Afbeelding" />
                     </div>
+
                 </li>
             </ol>
         </div>
