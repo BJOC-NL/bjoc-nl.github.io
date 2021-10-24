@@ -25,53 +25,66 @@
         </div>
         <p> Zoals je weet, kunnen predikaten gebruikt worden met voorwaardes om te beslissen wanneer iets
             <em>gedaan</em> moet worden; ze kunnen ook gebruikt worden met het <code>houd</code> blok om te beslissen
-            welke dingen <em>bewaard</em> moeten worden. Het <img class="inline"
+            welke dingen <em>bewaard</em> moeten worden. Het <img class="inline" height="40"
                 src="../../afb/h2/l3/blocks/p2-b1.png" />blok
             heeft als invoer een lijst en een predikaat, en het geeft een nieuwe lijst terug met alle items van de
             lijst die aan de voorwaarde van het predikaat voldoen.
         </p>
-        <p> Bijvoorbeeld, de volgende expressie vindt woorden van de <var>woordenlijst</var> <strong>waarvan de eerste
-                letter een 'v' is</strong>. Het <em>lege invoervakje</em> is waar elk item van de lijst heen gaat om
-            te beslissen of deze bewaard wordt of niet.<br> <img class="indent" src="../../afb/h2/l3/blocks/p2-b2.png">
+        <p> De volgende expressie bijvoorbeeld vindt woorden van de <var>woordenlijst</var> <strong>waarvan de eerste
+                letter een 'v' is</strong>. Het <em>lege invoervakje</em> in het predikaat is waar elk item van de lijst
+            wordt neergezet om te controleren of dat item aan de voorwaarde voldoet.
+            <br>
+            <img class="indent" height="50" src="../../afb/h2/l3/blocks/p2-b2.png">
         </p>
+
         <div class="takeNote">
-            <p>Jij schrijft het predikaat dat zorgt voor het controleren en <strong><code>houd</code> voert dit
+            <p> Jij schrijft het predikaat dat zorgt voor het controleren en <strong><code>houd</code> voert dit
                     predikaat uit op ieder item in de invoerlijst. Daarna rapporteert het de items die aan je predikaat
                     voldoen, in andere woorden de items die je predikaten <code>waar</code>maken.</strong>
             </p>
-            <p>Let op dat het lege invoergedeelte in het predikaat <em>noodzakelijk</em> is wanneer je <code>houd</code>
-                gebruikt. Dit is waar het item van de lijst naartoe gaat elke keer wanneer er een vraag wordt gesteld.
+            <p> Let op dat het lege invoergedeelte in het predikaat <em>noodzakelijk</em> is wanneer je
+                <code>houd</code> gebruikt. Dit is waar het item van de lijst naartoe gaat elke keer wanneer er een
+                vraag wordt gesteld.
             </p>
         </div>
+
         <div class="forYouToDo" id="first">
             <ol>
                 <li> <a class="run"
                         href="https://snap.berkeley.edu/snapsource/snap.html#present:Username=cfkaligula&ProjectName=H2L3-DataHouden"
-                        target="_blank"><img class="inline" src="../../afb/icons/LaadEnSlaOp.png"></a><br /> Exporteer
-                    je nieuwe predikaten (<code>tussen?</code>, <code>deelbaar?</code>, <code>even?</code>, en misschien
-                    ook <code>integer?</code>) van je project <a href="./H2L3P1.html">Hoofdstuk 2 Les 3 Pagina 1: Wat is
-                        een predikaat?</a> en importeer deze dan naar je nieuwe project en sla dit op. Om te herhalen
-                    hoe je blokken importeert en exporteert, kun je kijken naar <a href="./H2L1P4.html">Hoofdstuk 2 Les
-                        1 Pagina 4: Importeer Groet Speler in een ander programma</a>.
+                        target="_blank"> <img class="inline" src="../../afb/icons/LaadEnSlaOp.png"></a>
+                    <br />
+                    Exporteer je nieuwe predikaten (<code>tussen?</code>, <code>deelbaar?</code>, <code>even?</code>, en
+                    misschien ook <code>heel getal?</code>) van je project <a href="./H2L3P1.html"> Hoofdstuk 2 Les 3
+                        Pagina 1: Wat is een predikaat?</a> en importeer deze dan naar je nieuwe project en sla dit op.
+                    Om te herhalen hoe je blokken importeert en exporteert, kun je kijken naar <a href="./H2L1P4.html">
+                        Hoofdstuk 2 Les 1 Pagina 4: Importeer Groet Speler in een ander programma</a>.
                 </li>
-                <li><img class="inline" src="../../afb/icons/PraatMetJeBuur.png" /> Experimenteer met deze voorbeelden
-                    van <code>houd</code>. Bespreek en schrijf een uitleg op van wat deze expressies
-                    doen.<br /> <img class="indent" src="../../afb/h2/l3/others/p2-o1.png"><br /> <img class="indent"
-                        src="../../afb/h2/l3/others/p2-o2.png"> </li>
-                <div class="endnote"> Deze les is gemaakt toen het <code>keep items</code>blok nog niet bestond. In
-                    plaats van het <code>houd items zodat</code>blok dat nu speciaal voor deze les gemaakt is, kan je
-                    dus ook het <code>keep items</code>blok gebruiken.
+                <li> <img class="inline" src="../../afb/icons/PraatMetJeBuur.png" /> Experimenteer met de voorbeelden
+                    die al in het project staan. Bespreek en schrijf een uitleg op van wat deze blokken doen.
+                    <br />
+                    <img class="indent" src="../../afb/h2/l3/others/p2-o1.png">
+                    <br />
+                    <img class="indent" src="../../afb/h2/l3/others/p2-o2.png"> </li>
+                <div class="endnote">
+                    Deze les is gemaakt toen het <code>keep items</code>blok nog niet bestond. In plaats van het
+                    <code>houd items zodat</code>blok dat nu speciaal voor deze les gemaakt is, kan je dus ook het
+                    <code>keep items</code>blok gebruiken.
             </ol>
         </div>
+
         <p>Het eerste voorbeeld houdt invoeren van een bepaalde <em>lengte</em>; van elk woord in de lijst wordt
-            gevraagd
-            of de lengte '5' is, en alleen degene met 5 tekens worden gerapporteerd. Het tweede voorbeeld houdt
+            gevraagd of de lengte '5' is, en alleen degene met 5 tekens worden gerapporteerd. Het tweede voorbeeld houdt
             invoeren die <em>geen getallen</em> zijn; van elk item in deze lijst wordt gevraagd "Is dit item
-            <em>geen</em> getal?" en alleen de elementen die geen getallen zijn worden gemeld.</p>
+            <em>geen</em> getal?" en alleen de elementen die geen getallen zijn worden gemeld.
+        </p>
+
         <div class="forYouToDo">
             <ol start="3">
-                <li> Run <code>initialiseer lijsten</code>, en gebruik dan je nieuwe predikaten samen met
-                    <code>houd</code> om deze vragen te beantwoorden:
+                <li> Voer het blok <code>initialiseer lijsten</code> uit dat al in het project staat. Dit zorgt dat de
+                    globale variabelen <var>woordenlijst</var> en <var>getallenlijst</var> gevuld worden. Bouw dan
+                    nieuwe predikaten en gebruik je eerder gemaakte predikaten samen met <code>houd</code> om deze
+                    vragen te beantwoorden:
                     <ol>
                         <li>Hoeveel 12-letterige woorden zijn er in <var>woordenlijst</var>?</li>
                         <li>Hoeveel 15-letterige woorden zijn er in <var>woordenlijst</var>?</li>
@@ -87,14 +100,15 @@
                 </li>
             </ol>
         </div>
+
         <div class="ifTime">
             <ol start="4">
-                <li> Als je een <code>integer?</code> predikaat hebt gemaakt, gebruik dan je nieuwe predikaten samen met
-                    <code>houd</code> om te kijken hoeven getallen in de <var>getallenlijst</var>: <ol>
-                        <li>integers zijn,</li>
-                        <li>integers tussen 25 en 75 zijn;</li>
-                        <li>geen integers zijn;</li>
-                        <li>oneven integers zijn;</li>
+                <li> Als je een <code>heel getal?</code> predikaat hebt gemaakt, gebruik dan je nieuwe predikaten samen
+                    met <code>houd</code> om te kijken hoeven getallen in de <var>getallenlijst</var>: <ol>
+                        <li>hele getallen zijn,</li>
+                        <li>hele getallen tussen 25 en 75 zijn;</li>
+                        <li>geen hele getallen zijn;</li>
+                        <li>oneven hele getallen zijn;</li>
                     </ol>
             </ol>
         </div>

@@ -78,3 +78,9 @@ Bij punt 6 staan er 3 vragen en ik weet niet echt het antwoord op deze vragen. W
 #### Pagina 3
 
 Ik weet niet wat ze bedoelen met "ghost effect resetten". Ik kan me niet herinneren wat dit deed.
+
+### Les 3
+
+#### Pagina 1
+
+Ik vind dat er niet goed uitgelegd wordt wat leerlingen moeten maken bij Aan De Slag. Er staat iets met ga naar muis x en muis y, maar dat je bijvoorbeeld pen neer en verander pen kleur moet gebruiken staat er niet. Ik zou zelf zoiets toevoegen van "deze 2 blokken zal je ten minste nodig hebben".
