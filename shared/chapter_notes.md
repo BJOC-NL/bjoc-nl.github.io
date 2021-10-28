@@ -84,3 +84,11 @@ Ik weet niet wat ze bedoelen met "ghost effect resetten". Ik kan me niet herinne
 #### Pagina 1
 
 Ik vind dat er niet goed uitgelegd wordt wat leerlingen moeten maken bij Aan De Slag. Er staat iets met ga naar muis x en muis y, maar dat je bijvoorbeeld pen neer en verander pen kleur moet gebruiken staat er niet. Ik zou zelf zoiets toevoegen van "deze 2 blokken zal je ten minste nodig hebben".
+
+### Les 4
+
+#### Pagina 4
+
+In het engels heet deze les Building a Tic-Tac-Toe Board, dus niet "boter kaas en eieren bouwen", ik weet nog geen goeie vertaling hiervoor.
+
+Er stond eerst "in dit project dat een jaar duurt ..." dat heb ik al weggehaald want dat is wel heel specifiek, maar ik vind nog steeds het hele "in dit project"stuk ( de eerste zin) niet echt nodig.
