@@ -92,3 +92,9 @@ Ik vind dat er niet goed uitgelegd wordt wat leerlingen moeten maken bij Aan De 
 In het engels heet deze les Building a Tic-Tac-Toe Board, dus niet "boter kaas en eieren bouwen", ik weet nog geen goeie vertaling hiervoor.
 
 Er stond eerst "in dit project dat een jaar duurt ..." dat heb ik al weggehaald want dat is wel heel specifiek, maar ik vind nog steeds het hele "in dit project"stuk ( de eerste zin) niet echt nodig.
+
+### Les 5
+
+#### Pagina 3
+
+Deze pagina gaat puur over de Amerikaanse grondwet, wat een beetje raar is in Nederland. Pagina 2 ging ook al over de Amerikaanse wet, misschien goed om uit te zoeken wat hiervan klopt voor de Nederlandse versie.

@@ -18,80 +18,100 @@
 
 <body>
     <div class="full">
-        <h2>Modeling Language: Plurals, Part 2</h2>
-        <p>You can improve <code>plural</code> to work correctly with more words. If the project is not already open,
-            please reload it. (The suggested file name was <code>U2-Plural</code>.) </p>
+        <h2>Taal modeleren: Meervoudsvormen, deel 2</h2>
+        <p> Je kan <code>meervoud</code> verbeteren door voor meer woorden te werken. Als je het project nog niet open
+            hebt staan, zorg daar dan voor. (De projectnaam is als het goed is <code>H2-Meervoud</code>.)
+        </p>
 
         <div class="forYouToDo" id="first">
             <ol>
                 <li>
-                    <strong>Abstraction: </strong> Make a <img src="../../afb/"> on just one category, words that end
-                    with
-                    the letter <strong>h</strong>.
+                    <strong>Abstractie: </strong> Maak een <img height="35" src="../../afb/h2/o1/p5-b1.png"> dat werkt
+                    voor één
+                    categorie woorden,
+                    woorden die eindigen op de letter <strong>h</strong>.
+
                     <ul>
-                        <li>Start with a <code>list</code> of the words you want it to work for.</li>
-                        <li>This specialist block should work correctly for words that fit its specialty <img
-                                src="../../afb/"> because the <code>plural</code> block should never give words to
-                            <code>plural-h</code> unless those words end with <strong>h</strong>. </li>
-                        <li>Test <img src="../../afb/"> with a variety of words to make sure it works the way you want.
-                            Then
-                            use <code>map</code> to test it on the entire <code>list</code> you made earlier.</li>
+                        <li> Start met een <code>lijst</code> met woorden waarvan je wil dat het correct het meervoud
+                            kan
+                            geven.</li>
+                        <li> Dit gespecialiseerde blok zou moeten werken voor alle woorden van zijn specialiteit
+                            <img height="45" src="../../afb/h2/o1/p5-b2.png">,
+                            <img height="45" src="../../afb/h2/o1/p5-b3.png">,
+                            <img height="45" src="../../afb/h2/o1/p5-b4.png">,
+                            omdat het <code>meervoud</code>blok nooit een woord aan
+                            <code>meervoud-h</code> geeft behalve als dat woord eindigt op een <strong>h</strong>.
+                        </li>
+                        <li> Test <img height="35" src=" ../../afb/h2/o1/p5-b1.png"> met een verschillende groep woorden
+                            om zeker te weten dat hij doet wat je wil. Gebruik daarna <code>map</code> om op de hele
+                            <code>lijst</code> te testen
+                            die je al gemaakt hebt bij de vorige pagina.
+                        </li>
                     </ul>
 
                 </li>
                 <div class="takeNote">
-                    <p><strong>Abstraction: </strong> Language often has special cases. In English, the plurals of some
-                        nouns
-                        add <em>s</em>; some add <em>es</em>; nouns like <em>calf</em> and <em>fly</em> become
-                        <em>calves</em> and <em>flies</em>, changing their final letters before adding <em>es</em>. And
-                        more. For a programming task this complex, it's (generally) best to break it into parts, handle
-                        each
-                        part separately with its own procedure (its own block), and then have the "top-level" block—in
-                        this
-                        case, <code>plural</code>, itself—use those specialists. That is, instead of coding every little
-                        detail directly in <code>plural</code>, it is cleaner and clearer to make <code>plural</code>
-                        look
-                        something like this.</p>
-                    <p><img class="indent" src="../../afb/"></p>
-                    <p>Showing<a name="abstraction" class="anchor">&nbsp;</a>the <em>structure</em> of the method—just
-                        the
-                        overall strategy—in the "top-level" block and leaving the details to separate blocks is one part
-                        of
-                        an important computer science idea called <strong>abstraction</strong>. Abstraction keeps your
-                        code
-                        clear, readable, and more easily debugged. It will also help your code be more flexible. </p>
+                    <p><strong>Abstractie: </strong> Taal heeft vaak uitzonderingen. In het Engels eindigen de
+                        meervoudsvormen van sommige woorden op <em>s</em>, sommige op <em>es</em> en woorden zoals
+                        <em>calf</em> en <em>fly</em> worden <em>calves</em> en <em>flies</em>, waarbij hun laatste
+                        letter verandert voordat <em>es</em> wordt toegevoegd. Er zijn zo nog veel meer uitzonderingen.
+                        Voor een programmeertaak zo complex als deze, is het vaak een goed idee om het probleem op de
+                        breken in stukjes. We maken voor ieder probleemstukje zijn eigen gespecialiseerde blok en een
+                        special "manager"-blok maakt dan gebruik van die gespecialiseerde blokken. In dit geval is dit
+                        managerblok <code>meervoud</code>. In plaats van dat we dus iedere uitzondering direct in
+                        <code>meervoud</code> bouwen, is het veel overzichtelijker en opgeruimder om
+                        <code>meervoud</code> er ongeveer zo uit te laten zien.
+                        <br>
+                        <img class="indent" height="300" src="../../afb/h2/o1/p5-b6.png">
+                        <br>
+                        De <em>structuur</em> van een methode laten zien, eigenlijk de strategie, in het managerblok en
+                        de details overlaten aan aparte blokken is deel van een belangrijk begrip binnen de informatica
+                        genaamd <strong>abstractie</strong>. Abstractie houdt je code overzichtelijk, leesbaar en
+                        makkelijker te debuggen. Het maakt je code ook flexibeler.
+                    </p>
                 </div>
-                <li> When you trust your new specialist block, edit <code> plural</code> to use the specialist. Test
-                    (you
-                    can use <code>map</code>) to make sure <code>plural</code> still works for all the words it used to
-                    work
-                    for, as well as the new ones.</li>
-                <li> Create <code>plural-y</code> to handle words like
-                    <img src="../../afb/"> and
-                    <img src="../../afb/">
+                <li> Als je je nieuwe gespecialiseerde blok vertrouwt, pas dan <code>meervoud</code> aan om dit blok te
+                    gebruiken. Test of <code>meervoud</code> nog steeds werkt voor alle woordeen waar het voorheen voor
+                    werkte en ook voor de nieuwe woorden. Je kan voor het testen <code>map</code> gebruiken.
                 </li>
-                <p>Remember, any specialist can make mistakes if it's asked to do a job that isn't its specialty. <img
-                        src="../../afb/"> </p>
-                <p>Make sure <code>plural</code> gives it only the job it knows how to handle correctly.</p>
-                <img class="imageRight" src="../../afb/" />
+                <li> Maak <code>meervoud-y</code> om woorden zoals
+                    <img height="45" src="../../afb/h2/o1/p5-b7.png"> en
+                    <img height="45" src="../../afb/h2/o1/p5-b8.png"> aan te kunnen.
+                </li>
+                <p> Onthoud dat een specialist fouten maakt als hij een taak krijgt waarin hij niet gespecialiseerd
+                    is. <img height="45" src="../../afb/h2/o1/p5-b9.png">
+                </p>
+                <p> Zorg dat <code>meervoud</code> alleen taken geeft aan <code>meervoud-y</code> die het aankan.
+                </p>
+                <img class="imageRight" src="../../afb/icons/HetIsNuEenGoedMoment.png" />
             </ol>
         </div>
 
 
         <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
             <ol type="A">
-                <li>Because you know what <img src="../../afb/">
+                <li> Omdat je weet wat <img height="80" src="../../afb/h2/o1/p4-b15.png" alt="Geen Afbeelding"> doet,
+                    kan je, als je wil, alleen de gespecialiseerde lijst als invoer gebruiken om <code>meervoud</code>
+                    of <code>meervoud-h</code> te testen. Op deze manier:
+                    <img height="100" src="../../afb/h2/o1/p5-b10.png" alt="Geen Afbeelding">
                 </li>
-                <li>Extend <code>plural</code> to handle another special case. Use a special-purpose block for your
-                    special case to keep <code>plural</code> from becoming cluttered.
+                <li> Breid <code>meervoud</code> uit om met nog een uitzondering om te gaan. Je mag zelf bedenken welke.
+                    Gebruik een gespecialiseerd blok voor deze uitzondering zodat <code>meervoud</code> netjes blijft.
                 </li>
-                <li>Right now, if <code>plural</code> is given a word with a space at the end, it leaves that space in
-                    the plural, like this: <img src="../../afb/">. You already have a block that <em>specializes</em> in
-                    making plurals of words that <em>don't</em> have a space at the end. <em>Use</em> it.</li>
-                <li><strong>Surprise!</strong> Once <code>plural</code> works for a single space at the end of a word,
-                    try giving it <img src="../../afb/">. That works!! But why?!</li>
+                <li> Als <code>meervoud</code> nu een woord krijgt met een spatie aan het einde, blijft die spatie in
+                    het de meervoudsvorm, zoals dit: d<img height="45" src="../../afb/h2/o1/p5-b11.png">.
+
+                    Vind een manier om dit op te lossen zodat het resultaat <img height="45"
+                        src="../../afb/h2/o1/p5-b12.png"> is. Je hebt al een blok dat <em>gespecialiseerd</em> is in
+                    meervoudsvormen van woorden die <em>niet</em> op een spatie eindigen. <em>Gebruik die</em>.
+
+                </li>
+                <li> <strong>Verrassing!</strong> Als <code>meervoud</code> eenmaal werkt met een enkele spatie op het
+                    einde, probeer dan eens <img height="35" src="../../afb/h2/o1/p5-b13.png"> uit te voeren. Werkt dat
+                    ook meteen? Zo ja, waarom?! Zo niet, probeer dan te zorgen dat het ook werkt.
+                </li>
             </ol>
-            <img class="inline" src="../../afb/" />
+            <img class="inline" src="../../afb/icons/HetIsNuEenGoedMoment.png" />
         </div>
     </div>
     <div class="full-bottom-bar" style="background-position: 20px 3px;">
