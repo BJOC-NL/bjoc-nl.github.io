@@ -29,11 +29,15 @@
 
         <div class="forYouToDo" id="first">
             <ol>
-                <li>Als het nog niet open staat, open dan je H3L1-Contactenlijst project van de vorige pagina.</li>
+                <li> Als het nog niet open staat, open dan je H3L1-Contactenlijst project van de vorige pagina.</li>
                 <li>
-                    Maak een "Voeg Contact Toe"-knop.
+                    Bouw de code voor de "Voeg Contact Toe"-knop.
                     <ol>
-
+                        <li>We willen dat code wordt uitgevoerd als de knop aangeklikt wordt. Hiervoor kan je het <img
+                                height="40" src="../../afb/h3/l1/blocks/p2-b6.png" alt="Geen Afbeelding" />blok
+                            gebruiken. Alle code onder dit blok wordt uitgevoerd als er op de sprite (in dit geval de
+                            "Voeg Contact Toe"-knop) geklikt wordt.
+                        </li>
                         <li>Zorg dat het script aan de gebruiker vraagt voor zijn contactgegevens
                             en voeg deze informatie dan toe aan <var>contactenlijst</var> met behulp van de
                             <code>contact</code>-constructor.</li>
@@ -46,27 +50,27 @@
                                 <ul>
                                     <li>
                                         <strong>Je <em>kan</em> verschillende <code>vraag</code>- en
-                                            <code>antwoord</code>blokken gebruiken, samen met scriptvariabelen</strong>.
-                                        Je vraagt dan voor ieder stuk informatie een voor een en slaat het ook een voor
-                                        een op. Pas als je alle informatie hebt maak je een <code>contact</code> aan.
+                                            <code>antwoord</code>blokken gebruiken uit het Waarnemen-palet. Je kan dan
+                                            de antwoorden van de gebruiker opslaan in scriptvariabelen</strong>.
+                                        Je vraagt dan een voor een voor ieder stuk informatie en slaat ze ook een voor
+                                        een op. Pas als je alle informatie hebt maak je een <code>contact</code> met de
+                                        constructier die je toevoegt aan <code>contactenlijst</code>.
                                         <br />
                                         <img height="40" class="indent" src="../../afb/h3/l1/blocks/p2-b1.png"
                                             alt="Geen Afbeelding" />
                                     </li>
                                     <li>
-                                        <strong><em>Een andere manier</em> die ervoor zorgt dat je script
+                                        <strong><em> Een andere manier</em> die ervoor zorgt dat je script
                                             overzichtelijker wordt, is <em>abstractie:</em> Maak hulpblokken</strong>
-                                        (zoals
-                                        <img height="35" src="../../afb/h3/l1/blocks/p2-b3.png" alt="Geen Afbeelding" />
-                                        en <img height="35" src="../../afb/h3/l1/blocks/p2-b4.png"
-                                            alt="Geen Afbeelding" />) die
-                                        de gebruiker om een stukje informatie vragen en het andwoord doorgeven
-                                        aan het <code>contact</code>blok.<br />
-                                        <img height="60" class="indent" src="../../afb/h3/l1/blocks/p2-b2.png"
-                                            alt="Geen Afbeelding" /><br />
-                                        Ieder van deze hulpblokken <code>vraagt</code> aan de gebruiker een specifieke
-                                        vraag (bijvoorbeeld: "Wat is het adres van dit contact?") en rapporteert
-                                        vervolgens het gegeven <code>antwoord</code>.
+                                        (zoals <img height="35" src="../../afb/h3/l1/blocks/p2-b3.png"
+                                            alt="Geen Afbeelding" /> en <img height="35"
+                                            src="../../afb/h3/l1/blocks/p2-b4.png" alt="Geen Afbeelding" />) die de
+                                        gebruiker om een stukje informatie vragen en het andwoord doorgeven aan het
+                                        <code>contact</code>blok.<br /> <img height="60" class="indent"
+                                            src="../../afb/h3/l1/blocks/p2-b2.png" alt="Geen Afbeelding" /><br /> Ieder
+                                        van deze hulpblokken <code>vraagt</code> aan de gebruiker een specifieke vraag
+                                        (bijvoorbeeld: "Wat is het adres van dit contact?") en rapporteert vervolgens
+                                        het gegeven <code>antwoord</code>.
                                     </li>
                                 </ul>
                                 <div class="endnote">
@@ -112,7 +116,8 @@
                     </p>
                 </div>
                 <li>
-                    Maak een "Maak Lijst Leeg"-knop die van je <var>contactenlijst</var> weer een lege lijst maakt.
+                    Bouw de code voor de "Maak Lijst Leeg"-knop die van je <var>contactenlijst</var> weer een lege lijst
+                    maakt.
                     <ol>
                         <li>
                             Zorg dat het script vraagt of de gebruiker zeker weet of de lijst verwijderd mag worden.
@@ -129,9 +134,10 @@
 
         <div class="ifTime">
             <ol start="4">
-                <li>De vragen van de sprites zullen misschien verstopt zitten achter jouw <var>contactenlijst</var>,
+                <li> De vragen van de sprites zullen misschien verstopt zitten achter jouw <var>contactenlijst</var>,
                     gebruik de <code>verstop-variabele</code>- en <code>laat variabele zien</code>knoppen om de
-                    <var>contactenlijst</var> te verstoppen tot het einde van ieder sprite's script.</li>
+                    <var>contactenlijst</var> te verstoppen tot het einde van ieder sprite's script.
+                </li>
             </ol>
         </div>
     </div>

@@ -38,16 +38,18 @@
                         href="https://snap.berkeley.edu/snapsource/snap.html#present:Username=cfkaligula&ProjectName=H3L1-Contactenlijst"><img
                             class="inline" src="../../afb/icons/LaadEnSlaOp.png" alt="Geen Afbeelding"></a>
                 </li>
-                <li>Maak een globale <var>contactenlijst</var> variabele.</li>
+                <li>Maak een globale variabele genaamd <var>contactenlijst</var>.</li>
                 <li>Initialiseer <var>contactenlijst</var> als een lege lijst.</li>
             </ol>
         </div>
         <div class="takeNote">
             <h4><strong>Waarom globaal?</strong></h4>
+
             <div class="sidenoteBig">
-                Ook worden in Snap<em>!</em>, alleen globale variabelen met hun data opgeslagen,
+                Daarnaast worden in Snap<em>!</em> alleen waardes van globale variabelen opgeslagen,
                 wanneer het project opgeslagen wordt.
             </div>
+
             <strong>Meerdere scripts</strong> door het hele programma heen <strong>gaan deze lijst gebruiken</strong>,
             dus is het niet logisch om het aan maar één script vast te maken als een lokale variabele.
         </div>
@@ -60,22 +62,24 @@
             <div><span>Yasmine:</span> "Elk contact zal een lijst worden met iemands naam, telefoonnummer, adres en
                 email."
             </div>
-            <div><span>Robin:</span> "In Hoofdstuk 2 hebben we een <a href="../hoofdstuk-2/H2L2P2.html">
-                    abstract datatype</a> <code>punt</code> gemaakt
-                om de coördinaten van ieder punt in een lijst van punten op te slaan. Nu kunnen
-                we een abstract datatype <code>contact</code> maken om de data voor ieder contact in onze
-                contactenlijst in op te slaan."</div>
-            <div><span>Yasmine:</span> "Ja! <em>(Yasmine opent haar oude project, maar dat hoef jij niet te doen.)</em>
-                We hebben eerder een <code>punt</code>-constructor gebruikt om een lijst van coördinaten te maken."
+            <div><span>Robin:</span> "In Hoofdstuk 2 hebben we een <a href="../hoofdstuk-2/H2L2P2.html"> abstract
+                    datatype</a> <code>punt</code> gemaakt om de coördinaten van ieder punt in een lijst van punten op
+                te slaan. Nu kunnen we een abstract datatype <code>contact</code> maken om de data voor ieder contact in
+                onze contactenlijst in op te slaan."
+            </div>
+            <div><span>Yasmine:</span> "Ja! We hebben toen een <code>punt</code>-constructor gebruikt om een lijst van
+                coördinaten te maken."
             </div>
             <div class="stagedir">
-                Yasmine wijst naar de code voor de <code>punt</code>-constructor:<br />
+                Yasmine bekijkt de code voor de <code>punt</code>-constructor nog eens:
+                <br />
                 <img class="indent" height="100" src="../../afb/h3/l1/blocks/p1-b1.png  " alt="Geen Afbeelding" />
             </div>
-            <div><span>Robin:</span> "We hebben vervolgens een selector gebruikt om een <em>x</em>- of
+            <div><span>Robin:</span> "We hebben daarna een selector gebruikt om een <em>x</em>- of
                 <em>y</em>-coördinaat te kiezen."</div>
             <div class="stagedir">
-                Robin wijst naar de code voor de <code>coördinaten</code>selector:<br />
+                Robin bekijkt de code voor de <code>coördinaat</code>selectors:
+                <br />
                 <img class="indent" height="100" src="../../afb/h3/l1/blocks/p1-b2.png  " alt="Geen Afbeelding"> en
                 <img height="100" src="../../afb/h3/l1/blocks/p1-b3.png  " alt="Geen Afbeelding">
             </div>
@@ -112,31 +116,35 @@
                     <img class="indent" height="75" src="../../afb/h3/l1/blocks/p1-b8.png" alt="Geen Afbeelding">
                 </li>
                 <div class="endnote">
-                    <p>Het is onnatuurlijk om de constructor als een invoer van de selector te gebruiken, deze
+                    <p>Het is niet netjes om de constructor als een invoer van de selector te gebruiken, zoals gedaan
+                        wordt in bovenstaande afbeeldingen. Deze
                         afbeeldingen zijn voorbeelden om te laten zien wat de selectors zouden moeten kunnen als er een
-                        contact gegeven wordt als invoer. In <em>jouw</em> programma zullen de selectors een item van de
-                        lijst als invoer gebruiken om het goede gedeelte van een contact terug te geven, zoals
-                        hier:<br />
+                        contact gegeven wordt als invoer. In <em>jouw</em> programma zal de invoer een item van de
+                        contactenlijst zijn, zoals hier:
+                        <br />
                         <img class="indent" height="50" src="../../afb/h3/l1/blocks/p1-b9.png" alt="Geen Afbeelding" />
                     </p>
                 </div>
                 <li>
-                    Bepaal de invoertypes voor iedere selector zodat het duidelijk is dat ze een lijst (een heel
-                    contact) als invoer nodig hebben.<br />
+                    Verander de invoertypes voor iedere selector zodat het duidelijk is dat ze een lijst (een heel
+                    contact) als invoer nodig hebben.
+                    <br />
                     <img height="40" class="indent" src="../../afb/h3/l1/blocks/p1-b10.png" alt="Geen Afbeelding" />
                     <img height="40" class="indent" src="../../afb/h3/l1/blocks/p1-b11.png" alt="Geen Afbeelding" />
                     <img height="40" class="indent" src="../../afb/h3/l1/blocks/p1-b12.png" alt="Geen Afbeelding" />
-                    <div class="endnote"> Je hebt geleerd hoe je <a href="../hoofdstuk-2/H2L2P1.html">Een
-                            invoertype moet specificeren</a> in Hoofdstuk 2.</div>
+
+                    <div class="endnote">
+                        Je hebt geleerd hoe je <a href="../hoofdstuk-2/H2L2P1.html"> Een invoertype moet
+                            specificeren</a> in Hoofdstuk 2.
+                    </div>
                 </li>
                 <li>
-                    Kijk of je blokken samen kunnen werken, debug de bugs die je vindt.
+                    Kijk of je blokken werken, debug de problemen die je vindt.
                     <ol>
-                        <li>Als eerste maak je een constructor (met invoerwaardes) in iedere selector (zoals hierboven)
+                        <li> Als eerste maak je een constructor (met invoerwaardes) in iedere selector (zoals hierboven)
                             om te kijken of ze het goede stukje van een contact terugrapporteren.</li>
-                        <li>
-                            Vervolgens gebruik je je <code>contact</code>-constructor om een paar contacten <code>toe te
-                                voegen</code> aan je contactenlijst.
+                        <li> Vervolgens gebruik je je <code>contact</code>-constructor om een paar contacten <code>toe
+                                te voegen</code> aan je contactenlijst.
                             <div class="endnote">
                                 Je kan de volgende voorbeelden gebruiken of je eigen contacten verzinnen.
                                 <table class="bordered" summary="3 voorbeeldcontacten">
@@ -167,27 +175,30 @@
                         <div class="narrower">
                             Snap<em>!</em> heeft 2 verschillende manieren om lijsten in lijsten weer te geven. Je kan
                             kiezen op welke manier je de lijst wil weergeven door met je rechter-muisknop op de
-                            <var>contactenlijst</var> 'watcher' op het speelveld.
+                            <var>contactenlijst</var>-variabele op het speelveld te klikken.
 
                             <div class="endnote">
-                                Als je de 'watcher' niet kan zien op het speelveld, zorg ervoor dat het vakje bij de
+                                Als je de variabele niet kan zien op het speelveld, zorg ervoor dat het vakje bij de
                                 <var>contactenlijst</var>variabele in het Variabelenpalet aangevinkt is.
                                 <img class="inlinde" src="../../afb/h3/l1/others/p1-o3.png" alt="Geen Afbeelding" />
                             </div>
                             <ul style="list-style-type: disc;">
                                 <li>
-                                    <strong>Lijstweergave</strong> voor <var>contactenlijst</var> 'watcher':<br />
+                                    <strong>Lijstweergave</strong> voor <var>contactenlijst</var>:
+                                    <br />
                                     <img class="indent" src="../../afb/h3/l1/others/p1-o1.png" alt="Geen Afbeelding" />
                                 </li>
                                 <li>
-                                    <strong>Tabelweergave</strong> voor <var>contactenlijst</var> 'watcher':<br />
+                                    <strong>Tabelweergave</strong> voor <var>contactenlijst</var>:
+                                    <br />
                                     <img class="indent" src="../../afb/h3/l1/others/p1-o2.png" alt="Geen Afbeelding" />
                                 </li>
                             </ul>
                         </div>
                         <li>
                             Probeer de <code>naam</code>, het <code>adres</code>, of <code>telefoonnummer</code> te
-                            selecteren van een contact in jouw lijst.<br />
+                            selecteren van een contact in jouw lijst.
+                            <br />
                             <img class="indent" height="50" src="../../afb/h3/l1/blocks/p1-b13.png"
                                 alt="Geen Afbeelding" />
                         </li>
