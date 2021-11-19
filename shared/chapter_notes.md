@@ -98,3 +98,9 @@ Er stond eerst "in dit project dat een jaar duurt ..." dat heb ik al weggehaald 
 #### Pagina 3
 
 Deze pagina gaat puur over de Amerikaanse grondwet, wat een beetje raar is in Nederland. Pagina 2 ging ook al over de Amerikaanse wet, misschien goed om uit te zoeken wat hiervan klopt voor de Nederlandse versie.
+
+### Optionele Projecten
+
+#### Pagina 4
+
+Er is een Import Tools stap, maar er wordt niet gezegd wat je moet importeren, Voor nu weggelaten.

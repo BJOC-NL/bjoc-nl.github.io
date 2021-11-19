@@ -21,21 +21,21 @@
 
         <h2>Een diagram-app maken</h2>
         <div class="learn"><strong>Op deze pagina</strong>, leer je hoe je waarden kunt schalen zodat je elke
-            dataset
-            in het Snap <em>! </em> -speelveld kunt plotten. Blokken om de berekeningen uit te voeren, zijn al voor je
-            geschreven, maar als je wilt, kan je ze onderzoeken om te zien hoe ze werken.
+            dataset in het Snap <em>!</em>-speelveld kunt plotten. Blokken om de berekeningen uit te voeren, zijn al
+            voor je geschreven, maar als je wilt, kan je ze onderzoeken om te zien hoe ze werken.
         </div>
         <p>
-            Een enkel punt plotten, als je zijn coördinaten hebt, zou zo simpel moeten zijn:
+            Een enkel punt plotten, als je zijn coördinaten hebt, kan je zo doen:
             <br />
             <img class="indent" src="../../afb/h3/l4/p2-b1.png" height="225" alt="Geen Afbeelding" />
         </p>
-        <p>Dan kan je een lijst datapunten plotten door een blok zoals
+        <p>Je kan dan een lijst datapunten plotten door een nieuw blok te maken met bijvoorbeeld de naam
             <img src="../../afb/h3/l4/p2-b2.png" height="40" alt="Geen Afbeelding" />
-            te maken net zoals je deed in Hoofdstuk 2 Les 2. Afhankelijk van het type diagram dat je wil, kan je de
+            net zoals je eerder gedaan hebt in Hoofdstuk 2 Les 2. De invoer van dit blok zou een lijst met datapunten
+            moeten zijn. Afhankelijk van het type diagram dat je wil, kan je de
             punten wel of niet verbinden.
         </p>
-        <p>Dat lijkt alles te zijn wat je nodig hebt. Maar wat als de <em>schaal</em> van je data niet past op het
+        <p> Dat lijkt alles te zijn wat je nodig hebt. Maar wat als de <em>schaal</em> van je data niet past op het
             Snap<em>!</em>-speelveld (tussen -240 en 240 in de <em>x</em>)-richting en tussen -180 en 180 in de
             <em>y</em>-richting)? Wat als je bijvoorbeeld de populariteit van een babynaam over tijd wil plotten, zoals
             hieronder?
@@ -44,15 +44,15 @@
             <img src="../../afb/h3/l4/p2-o2.png" height="250" alt="Geen Afbeelding" />
         </p>
         <p>De jaren kunnen niet geplot worden op de horizontale as omdat de waardes buiten Snap<em>!</em>'s speelveld
-            vallen. De percentages 0, 0.1, 0.2, 0.3 etc. zijn zo dicht bij elkaar dat ze allemaal hetzelfde lijken.
-            Je zou het verschil in populariteit tussen 1960 en 1980 niet kunnen zien.
+            vallen (1930-2010). De percentages 0, 0.1, 0.2, 0.3 etc. liggen zo dicht bij elkaar dat ze allemaal
+            hetzelfde lijken. Je zou zo het verschil in populariteit tussen 1960 en 1980 niet kunnen zien.
             We hebben een manier nodig om te <em>wisselen</em> tussen Snap<em>!</em>
-            <strong>speelveld-coördinaten</strong> en de echte waardes, die we <strong>diagram-coördinaten</strong>
-            zullen noemen, voor een gegeven set datapunten.
+            <strong>speelveld-coördinaten</strong> en de echte waardes van een set datapunten, die we
+            <strong>diagram-coördinaten</strong> zullen noemen, .
         </p>
 
         <div class="takeNote"> Een goede diagrammaker moet de gebruiker de <strong>schaal</strong> van het scherm laten
-            bepalen, om aan te geven waar de aandacht op moet worden gericht - waar moet worden ingezoomd.
+            bepalen, om aan te geven waar de aandacht op moet worden gericht; waar moet worden ingezoomd.
         </div>
 
         <div class="forYouToDo" id="first">
@@ -70,12 +70,14 @@
                             weten.
                         </li>
                         <li>
-                            De volgende twee blokken rapporteren de <em>speelveld</em></strong>-coördinaten van een punt
-                            als de <strong><em>diagram</em></strong>-coördinaten van een punt gegeven zijn.
+                            De volgende twee blokken nemen als invoer de <strong><em>diagram</em></strong>-coördinaten
+                            van een punt en rapporteren de <em>speelveld</em></strong>-coördinaten die daarbij horen.
+
                             Experimenteer met de invoer van deze blokken zodat ze 0 rapporteren.
                             <br />
                             <img src="../../afb/h3/l4/p2-b3.png" height="40" alt="Geen Afbeelding" />
-                            <img src="../../afb/h3/l4/p2-b4.png" height="40" alt="Geen Afbeelding" /><br />
+                            <img src="../../afb/h3/l4/p2-b4.png" height="40" alt="Geen Afbeelding" />
+                            <br />
                             Hoe is de invoer gerelateerd aan de diagramschaal?
                         </li>
                         <li> Gebruik <img src="../../afb/h3/l4/p2-b5.png" height="50" alt="Geen Afbeelding" /> met
@@ -149,8 +151,8 @@
                     (Voor dit diagram wil je dat de punten verbonden worden. Voor de data op de volgende pagina wil je
                     dat niet. Zorg er dus voor dat dit makkelijk is aan te passen in dit blok)
                     Pas het toe op <code>DerekData1927tot2015</code>. De punten van je diagram kunnen wel of niet
-                    verbonden zijn en de assen zullen geen labels hebben, maar verder moet het lijken op de diagram
-                    hierboven.
+                    verbonden zijn en de assen zullen geen labels hebben, maar verder moet het lijken op het diagram
+                    bij stap 3.
                     <br />
                     <img class="indent" src="../../afb/h3/l4/p2-o5.png" height="250" alt="Geen Afbeelding" />
                     <img src="../../afb/h3/l4/p2-o6.png" height="250" alt="Geen Afbeelding" />
@@ -163,8 +165,8 @@
         <div class="ifTime">
             <ol start="7">
                 <li>
-                    Bedenk een manier om je diagram-app te vertellen dat hij de punten wel of niet moet verbinden voor
-                    ieder diagram dat je maakt. Je wil hiervoor een Boolean-invoer gebruiken om aan te geven of de
+                    Bedenk een manier om je diagram-app te vertellen dat hij de punten in het diagram wel of niet moet
+                    verbinden. Je wil hiervoor een Boolean-invoer gebruiken om aan te geven of de
                     punten verbonden moeten zijn of niet.
                     <br />
                     <img class="indent" src="../../afb/h3/l4/p2-b15.png" height="50" alt="Geen Afbeelding" />

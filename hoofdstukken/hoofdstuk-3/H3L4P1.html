@@ -20,7 +20,7 @@
     <div class="full">        
         <h2><strong>Staafdiagrammen maken</strong></h2>
         <div class="learn">
-            <p><strong>In deze les</strong> leer je een datavisualisatie tool maken met staafdiagrammen voor
+            <p><strong>In deze les</strong> leer je een datavisualisatie-tool maken met staafdiagrammen voor
                 verschillende datasets. Je past abstractie en <code>map</code>, een functie van hogere
                 orde, toe.
                 <br>
@@ -34,13 +34,15 @@
                         href="http://www.ucsusa.org/global_warming/science_and_impacts/science/each-countrys-share-of-co2.html#.WVqJI9PytE5"
                         target="_blank">link</a>(Engels). <ol>
                         <li>Welke landen hebben de hoogste uitstoot van koolstofdioxide (CO<sub>2</sub>)?</li>
-                        <li>Welke landen hebben de hoogste uitstoot CO<sub>2</sub> per hoofd van de bevolking (per
+                        <li>Welke landen hebben de hoogste uitstoot CO<sub>2</sub> per capita (per
                             persoon) ?</li>
-                        <li>Welke van deze meetingen is volgens jou een betere indicator voor de bijdrage van een land
+                        <li>Welke van deze metingen is volgens jou een betere indicator voor de bijdrage van een land
                             aan de wereldwijde milieuvervuiling?</li>
                     </ol>
-                    <div class="takeNote"> Je kan kennis en inzicht vergaren door met anderen te praten en door vragen
-                        en hypotheses te stellen. </div>
+                    <div class="takeNote">
+                        Je kan kennis en inzicht vergaren door met anderen te praten en door vragen
+                        en hypotheses te stellen.
+                    </div>
                 </li>
                 <li> <a class="run"
                         href="https://snap.berkeley.edu/snapsource/snap.html#present:Username=cfkaligula&ProjectName=H3L4-StaafDiagram">
@@ -81,7 +83,7 @@
                         Dit diagram kan je helpen om te begrijpen hoe de gegeven informatie bepaalt hoe en waar de
                         <em>horizontale</em> en <em>verticale</em> assen getekend worden. Omdat je alleen positieve
                         waardes in de grafiek zet raken de assen elkaar in de linkeronder hoek. Die hoek heet
-                        <strong>de origin</strong> en heeft als
+                        <strong>de oorsprong</strong> en heeft als
                         coördinaten <var>(x0,y0) </var>zoals je kan zien in het diagram. Er moeten op dit moment nog
                         geen labels of markeringen zijn.
                         <!-- Weet niet waarom deze zin hierin staat:
@@ -91,16 +93,19 @@
                         <img class="indent" src="../../afb/h3/l4/p1-o2.png" height="200" alt="Geen Afbeelding">
                     </div>
 
-                    Zorg er ook voor in het <code>teken assen</code>blok dat de coördinaten van de origin in globale
-                    variabelen <var>x-origin</var> en <var>y-origin</var> opgeslagen worden. In de komende stappen van
-                    dit project gaan andere blokken deze informatie gebruiken om de staven en labels goed te plaatsen.
+                    Zorg er ook voor in het <code>teken assen</code>blok dat de coördinaten van de oorsprong in globale
+                    variabelen <var>x-oorsprong</var> en <var>y-oorsprong</var> opgeslagen worden. In de komende stappen
+                    van dit project gaan andere blokken deze informatie gebruiken om de staven en labels goed te
+                    plaatsen.
                     <br>
                     <img class="indent" src="../../afb/h3/l4/p1-b6.png" height="100" alt="Geen Afbeelding">
                     <img src="../../afb/h3/l4/p1-b7.png" height="75" alt="Geen Afbeelding">
                 </li>
 
-                <li> Bekijk het normale <code>label</code>blok dat inbegrepen zit bij het startproject. Probeer de
-                    locatie en richting van de teken-sprite te veranderen.
+                <li> Bekijk het normale <code>label</code>blok dat inbegrepen zit bij het startproject. Je moet
+                    waarschijnlijk bij het Instellingen-menu (<img src="../../afb/icons/settings.png">) "JavaScript
+                    extensions" aanzetten. Probeer te kijken of je de locatie en richting van de teken-sprite kan
+                    veranderen.
                     <br>
                     <img class="indent" src="../../afb/h3/l4/p1-b8.png" height="45" alt="Geen Afbeelding">
 
@@ -133,15 +138,15 @@
 
                 <li>
                     Maak het uitgebreidere <code>label</code>blok af, degene met een invoerveld voor de richting. Het
-                    werkt nu exact zoals het simpele <code>label</code>blok, het volgt alleen de richting nog niet. De
-                    richting van het label is gelijk aan de richting van de sprite die het label tekent, dus door de
-                    richting van de sprite aan te passen kan je die van het label aanpassen.
+                    hoort exact te werken zoals het simpele <code>label</code>blok, het kan alleen ook de richting van
+                    het label bepalen. De richting van het label is gelijk aan de richting van de sprite die het label
+                    tekent, dus door de richting van de sprite aan te passen kan je die van het label aanpassen.
                     <br>
                     <img class="indent" src="../../afb/h3/l4/p1-b9.png" height="45" alt="Geen Afbeelding">
                     <img src="../../afb/h3/l4/p1-o3.png" height="100" alt="Geen Afbeelding">
                     <br>
                     De invoer voor de richting van het <code>label</code>blok moet Snap<em>!</em> 's conventie voor
-                    richtingen volgen. Het volgt de wijzers van de klok alleen gaat het in plaats van 0 tot 12 van 0
+                    richtingen volgen. Het volgt de wijzers van de klok alleen gaat het in plaats van 0 tot 12 van 0 tot
                     360. (0<sup>o</sup> omhoog, 90<sup>o</sup> rechts, 180<sup>o</sup> omlaag, 270<sup>o</sup> links).
                     Test je nieuwe <code>label</code> met deze vier richtingen en controleer dat je het resultaat eruit
                     ziet als de linkerhelft van de afbeelding hieronder.
@@ -174,7 +179,7 @@
                     Ontwikkel code voor het <code>teken staven</code>blok, dat een serie van gelabelde staven moet
                     tekenen met een bepaalde breedte en hoogte. De serie moet links starten en doorgaan naar rechts.
                     Om de staven en labels goed neer te zetten heb je waarschijnlijk de globale variabelen
-                    <var>x-origin</var> en <var>y-origin</var> nodig.
+                    <var>x-oorsprong</var> en <var>y-oorsprong</var> nodig.
                     <br>
                     <img class="indent" src="../../afb/h3/l4/p1-b12.png" height="60" alt="Geen Afbeelding">
                     <img class="indent" src="../../afb/h3/l4/p1-o9.png" height="250" alt="Geen Afbeelding">
@@ -248,8 +253,8 @@
                     <img class="indent" src="../../afb/h3/l4/p1-o11.png" height="300" alt="Geen Afbeelding">
                 </li>
                 <li>
-                    Je programma moet algemeen genoeg zijn om ook bruikbaar te zijn voor een andere set data (die ook in
-                    je startbestand zit):
+                    Je programma moet algemeen genoeg zijn om ook bruikbaar te zijn voor een andere dataset. Er zit nog
+                    een andere dataset in dit project genaamd "CO2 Uitstoot per capita":
                     <br>
                     <img class="indent" src="../../afb/h3/l4/p1-b17.png" height="45" alt="Geen Afbeelding">
                     <br>
@@ -264,8 +269,8 @@
                             \frac{\text{8715 Miljoen ton}}{\text{1.337 Miljard personen}} =
                             {\text{6.52 tonnen per persoon}}
                         </span>
-                        Deze waardes zijn al gegeven in het startbestand als
-                        <code>CO<sub>2</sub> Uitstoot per capita Data</code>.
+                        Deze waardes zijn al berekend in de dataset <code>CO<sub>2</sub> Uitstoot per capita
+                            Data</code>.
                     </div>
 
                     <img class="imageRight" src="../../afb/icons/PraatMetJeBuur.png" alt="Geen Afbeelding">
@@ -304,8 +309,8 @@
                 </li>
                 <li>
                     Verzamel nu zelf data in je klas of van het internet over een onderwerp dat je interessant vindt en
-                    dat makkelijk gevisualiseerd kan worden in een staafdiagram. Gebruik je Snap<em>!</em>programma om
-                    de data te visualiseren. Deel je werk met je klasgenoten.
+                    dat makkelijk gevisualiseerd kan worden in een staafdiagram. Gebruik je Snap<em>!</em>-programma om
+                    de data te visualiseren. Vertel wat je gedaan hebt aan je klasgenoten.
                 </li>
             </ol>
         </div>
@@ -315,15 +320,15 @@
                 <li>
                     Soms is het handiger om je staafdiagram te presenteren met horizontale staven in plaats van
                     verticale. Pas je code aan zodat het een invoer neemt die het type diagram aangeeft (horizontaal of
-                    verticaal) dat gegenereerd moet worden.
+                    verticaal) en ook zo'n soort diagram genereert.
                     <br>
                     <img class="indent" src="../../afb/h3/l4/p1-o13.png" height="300" alt="Geen Afbeelding">
                 </li>
                 <li>
-                    Histogrammen laten <em>numerieke</em> data zien gegroepeerd in bereiken (genaamd vakken) en geplot
-                    als staven. Het histogram hieronder laat bijvoorbeeld het aantal studenten zien in iedere
-                    leeftijdsgroep op een zomerkamp. Leer over histogrammen en maak een datavisualisatie-programma in
-                    Snap<em>!</em> om histogrammen te laten zien.
+                    Histogrammen laten <em>numerieke</em> data zien gegroepeerd in bereiken (vaal "bins" genoemd,
+                    "emmers" in het Engels) en geplot als staven. Het histogram hieronder laat bijvoorbeeld het aantal
+                    studenten zien in iedere leeftijdsgroep op een zomerkamp. Leer over histogrammen en maak een
+                    datavisualisatie-programma in Snap<em>!</em> om histogrammen te laten zien.
                     <br>
                     <img class="indent" src="../../afb/h3/l4/p1-o14.png" height="250" alt="Geen Afbeelding"></li>
             </ol>
