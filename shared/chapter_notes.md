@@ -8,6 +8,15 @@ buur -> partner?
 
 in snap heten nieuwe sprites niet meer Sprite maar Object, overal aanpassen? vooral H1L5 levert dit problemen op.
 
+. en , met getallen moet consistent zijn dus 1.000 is duizend en 1,5 is anderhalf, dit is Nederlandse notatie. In Snap is het helaas andersom, daar gebruiken ze internationale notatie. Daar is 1.5 anderhalf, ik heb het nu zo gedaan dat als ik het over getallen in Snap heb dat ik 1.5 gebruik en voor getallen daarbuiten 1,5.
+
+Handig voor vervangen:
+([0-9]),([0-9])
+$1.$2
+
+([0-9])\.([0-9])
+$1,$2
+
 ## Hoofdstuk 1
 
 ### Les 3
