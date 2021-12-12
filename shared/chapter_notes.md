@@ -104,3 +104,11 @@ Deze pagina gaat puur over de Amerikaanse grondwet, wat een beetje raar is in Ne
 #### Pagina 4
 
 Er is een Import Tools stap, maar er wordt niet gezegd wat je moet importeren, Voor nu weggelaten.
+
+## Hoofdstuk 4
+
+### Les 1
+
+#### Pagina 1
+
+Er staat een link naar <http://bjc.berkeley.edu/website/privacy.html>, die website bestaat niet meer.
