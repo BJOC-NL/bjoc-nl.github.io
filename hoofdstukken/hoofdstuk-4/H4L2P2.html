@@ -26,15 +26,16 @@
 
         <p> Computer, servers en routers zijn vrij betrouwbaar, maar soms raakt een pakket verloren. Zulke fouten moet
             het internet aankunnen. Een manier om fouten aan te pakken is om er niks om te geven. (Als
-            je één frame van een video kwijtraakt, maakt het niet heel veel uit.) Een andere manier (TCP genaamd) is om
-            pakketjes te blijven versturen totdat aangegeven wordt dat ze ontvangen zijn.
+            je één frame van een video kwijtraakt, maakt het bijvoorbeeld niet heel veel uit.) Een andere manier (TCP
+            genaamd) is om pakketjes te blijven versturen totdat aangegeven wordt dat ze ontvangen zijn.
             <strong>TCP (Transmission Control Protocol in het Nederlands, Verzendingcontroleprotocol)</strong>
             garandeert <em>betrouwbare</em> dataverzending door bij te houden welke pakketjes succesvol ontvangen zijn,
             een verloren of beschadigd pakkeetje wordt opnieuw verstuurd. Daarnaast wordt ook aangegeven wat de volgorde
             van de data is om het weer in de goede volgorde elkaar te zetten bij de ontvanger.
         </p>
+
         <div class="vocabFullWidth">
-            <p><strong>TCP en IP</strong> zijn een paar protocollen die voor abstractie zorgen. Met <strong>IP</strong>
+            <p> <strong>TCP en IP</strong> zijn een paar protocollen die voor abstractie zorgen. Met <strong>IP</strong>
                 doet je computer alsof het een <em>directe</em> verbinding heeft met een andere computer.
                 Met <strong>TCP</strong> doet je computer alsof het een betrouwbare verbinding heeft met een andere
                 computer.
@@ -57,8 +58,8 @@
                 Het end-to-endprincipe van TCP en IP is een abstractie:
                 <ul>
                     <li> De computers aan de twee eindes van een gesprek over het internet voeren het
-                        <strong>Transmission Control Protocol</strong> (TCP) uit, in het Nederlands
-                        Verzendingsbeheerprotocol. Dit protocol garandeert dat alle verzendingen in het gesprek
+                        <strong>Transmission Control Protocol</strong> (TCP) uit (in het Nederlands
+                        Verzendingsbeheerprotocol). Dit protocol garandeert dat alle verzendingen in het gesprek
                         betrouwbaar zijn.
                     </li>
                     <li> De routers op ieder knooppunt op het internet voeren het <strong>internetprotocol</strong>
@@ -75,7 +76,8 @@
                 <li>
                     <a class="run"
                         href="https://snap.berkeley.edu/snapsource/snap.html#present:Username=cfkaligula&ProjectName=H4L3-TCP"><img
-                            class="inline" src="../../afb/icons/LaadEnSlaOp.png" alt="Geen Afbeelding"></a><br />
+                            class="inline" src="../../afb/icons/LaadEnSlaOp.png" alt="Geen Afbeelding"></a>
+                    <br />
                     Dit project geeft een simulatie van onbetrouwbare data-transmissie door het internetprotocol.
                     <ul>
                         <li><strong>Klik op de groene vlag</strong> om de <var>inkomende verzending</var>
@@ -85,10 +87,13 @@
                         </li>
                     </ul>
                 </li>
-                <div class="sidenote"> In deze simulatie is het hele bericht een stuk tekst dat verdeeld wordt in
-                    pakketjes van één letter. In het echt zijn pakketjes niet per se so klein en zijn berichten vaak
+
+                <div class="sidenote">
+                    In deze simulatie is het hele bericht een stuk tekst dat verdeeld wordt in
+                    pakketjes van één letter. In het echt zijn pakketjes niet per se zo klein en zijn berichten vaak
                     veel groter.
                 </div>
+
                 <a class="run"
                     href="https://snap.berkeley.edu/snapsource/snap.html#present:Username=cfkaligula&ProjectName=H4L3-TCP">
                     <img class="indent" src="../../afb/h4/l2/U4L2P2_TCP.png" alt="Geen Afbeelding"></a>
@@ -101,16 +106,18 @@
         </div>
         <p> TCP voegt extra informatie toe aan ieder pakketje zodat de ontvanger kan bijhouden hoeveel pakketjes er al
             ontvangen zijn, missende pakketjes opnieuw kan aanvragen en de pakketjes in de goeie volgorde kan
-            terugzetten. In de simulatie hierboven arriveert een pakket correct (zelfs als het niet in
-            de goede volgorde aankomt) of het arriveert nooit. Maar op het internet is het mogelijk dat een pakket
+            terugzetten. In de simulatie hierboven arriveert een pakket correct (niet per se in de goede volgorde) of
+            het arriveert nooit. Dus als we een 'B' versturen komt er óf een 'B' aan of niks, het is niet mogelijk dat
+            er een 'C' arriveert. Maar op het internet is zoiets wel mogelijk. Het kan zo maar zijn dat een pakket
             arriveert met <em>fouten in de data</em> dus het TCP moet controleren of er fouten in het pakket zitten en
             vragen of het pakketje opnieuw verzonden kan worden.
         </p>
 
         <div class="ifTime">
             <ol start="3">
-                <li>Lees <a href="http://www.bitsbook.com/wp-content/uploads/2008/12/B2B_3.pdf#page=324"
-                        target="_blank"><em>Blown to Bits</em> pagina's 306-309</a>.</li>
+                <li> Lees <a href="http://www.bitsbook.com/wp-content/uploads/2008/12/B2B_3.pdf#page=324"
+                        target="_blank"><em>Blown to Bits</em> pagina's 306-309</a>.
+                </li>
             </ol>
         </div>
 
@@ -118,18 +125,21 @@
         <div class="takeItFurther">
             <img class="imageRight" src="../../afb/icons/UitermateUitdagend.png" alt="Geen Afbeelding" />
             <ol type="A">
-                <li> Bouw een simpel TCP. Los de onbetrouwbaarheid op zodat berichten betrouwbaar ontvangen worden
-                    ondanks de beperkingen van IP-pakketjes.
-                    Je moet de volgende blokken <strong>aanpassen:</strong>
+                <li> Bouw een simpele versie van TCP na. Los de onbetrouwbaarheid op zodat berichten betrouwbaar
+                    ontvangen worden ondanks de beperkingen van IP-pakketjes. Je moet de volgende blokken
+                    <strong>aanpassen:</strong>
                     <ul>
                         <li><img height="40" src="../../afb/h4/l2/p2-b1.png" alt="Geen Afbeelding" /></li>
                         <li><img height="40" src="../../afb/h4/l2/p2-b2.png" alt="Geen Afbeelding" /></li>
                     </ul>
-                    <div class="endnote"><strong>Pas <em>niet</em> </strong>
-                        <img height="40" src="../../afb/h4/l2/p2-b3.png" alt="Geen Afbeelding"> aan.
+
+                    <div class="endnote">
+                        <strong>Pas <em>niet</em> </strong> <img height="40" src="../../afb/h4/l2/p2-b3.png"
+                            alt="Geen Afbeelding"> aan.
                         Dat blok simuleert het onbetrouwbare netwerk. Je kan het probleem "oplossen" door dit blok te
                         herschrijven om een perfect netwerk te maken, maar dan mis je het punt van deze opdracht.
                     </div>
+
                     Om dit probleem op te lossen heb je een manier nodig om de volgorde van de gegevens bij te houden
                     <em>en</em> een manier om missende pakketjes opnieuw aan te vragen.
                     <ul>
@@ -138,9 +148,9 @@
                             bericht te maken. Dit vergt samenwerking van de zender en de ontvanger (dus je moet allebei
                             de grijze blokken aanpassen).
                         </li>
-                        <li> Los daarna het probleem op van pakketjes die überhaupt niet arriveren. Dut maak verzending
-                            betrouwbaar, ook al is IP niet betrouwbaar. Hiervoor moet je ook allebei de grijze blokken
-                            aanpassen.
+                        <li> Los daarna het probleem op van pakketjes die überhaupt niet arriveren. Dit maak verzending
+                            betrouwbaar, ook al is IP alleen niet betrouwbaar. Hiervoor moet je ook allebei de
+                            grijze blokken aanpassen.
                         </li>
                     </ul>
                 </li>
