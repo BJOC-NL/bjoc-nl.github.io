@@ -1,5 +1,9 @@
 ﻿# Opmerkingen
 
+Voeg toe welke hoofdstukken wat van het nationaal curriculum leren.
+
+Sommige links naar websites zijn vertaald sommige niet, wat te doen? ben zelf tegen omdat het dan een nederlandse pagina lijkt.
+
 commando-blok heet nu opdrachtblok in Snap, moet dit in de tekst + afbeeldingen aanpassen.
 
 uitleggen wat een script is (een groep blokken die aan elkaar vast zitten?)
@@ -121,3 +125,9 @@ Er is een Import Tools stap, maar er wordt niet gezegd wat je moet importeren, V
 #### Pagina 1
 
 Er staat een link naar <http://bjc.berkeley.edu/website/privacy.html>, die website bestaat niet meer.
+
+### Les 4
+
+#### Pagina 1
+
+Niet blij met de eerste 2 zinnen, gemeenschappen en saamhorigheid zijn in het Engels "community".

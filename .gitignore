@@ -1,2 +1,3 @@
 .vscode/settings.json
-timesheet.txt
+timesheet*.txt
+timesheet-parser.py
