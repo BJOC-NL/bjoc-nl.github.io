@@ -25,34 +25,41 @@
                     alt="Geen Afbeelding" /> <img class="indent" src="../../afb/h5/l1/p3b2.png" alt="Geen Afbeelding" />
             </p>
         </div>
-        <p>Stel dat je een lijst met items hebt en wilt weten of de elementen van de lijst verschillend zijn (uniek).
+        <p>Stel dat je een lijst met elementen hebt en wilt weten of de elementen van de lijst verschillend zijn
+            (uniek).
             Dit soort vragen komen vaak voor: een webzoekmachine wil bijvoorbeeld zeker weten dat alle zoekresultaten
             van elkaar verschillen.</p>
         <p>
             Hier is één algoritme om het probleem op te lossen:
             <div class="sidenote">
                 Algoritmen kunnen worden uitgedrukt in natuurlijke taal of in <em>pseudocode</em>, tekst die de
-                stappen beschrijft die een programma kan uitvoeren. Deze tekst die makelijk voor mensen te begrijpen
+                stappen beschrijft die een programma moet uitvoeren. Deze tekst die makkelijk voor mensen te begrijpen
                 is kan helpen voor het schrijven van het algoritme in een programmeertaal.
             </div>
             <ul>
-                <li><strong>Stap 1</strong>. Vergelijk het eerste item van de lijst met alle latere items in
-                    de lijst (het tweede item, het derde item, enz.). Als je het eerste item opnieuw ziet, meld je dat
-                    de
-                    cijfers <em>niet verschillend </em> zijn (<code>onwaar</code>).</li>
+                <li><strong>Stap 1</strong>. Vergelijk het eerste element van de lijst met alle latere elementen in
+                    de lijst (het tweede, het derde, enz.). Als je het eerste element opnieuw ziet, meld
+                    je dat de cijfers <em>niet verschillend </em> zijn (<code>onwaar</code>).
+                </li>
                 <li><strong>Stap 2</strong>. Als je stap 1 voltooid hebt zonder te stoppen, vergelijk je het tweede
-                    item met alle latere items (de derde, de vierde, enz.). Als je het tweede item opnieuw ziet, meld
-                    je dat de cijfers <em>niet verschillend </em> zijn (<code>onwaar</code>).</li>
-                <li><strong>Stap 3</strong>. Herhaal stap 2 voor elk nummer in de lijst. Vergelijk dat item met elk
-                    van de latere items in de lijst.</li>
-                <li><strong>Stap 4.</strong> Als je stap 3 voltooid hebt zonder duplicaten te vinden, rapporteer dan
-                    dat de items verschillend zijn (<code>waar</code>).</li>
+                    element met alle latere element (de derde, de vierde, enz.). Als je het tweede element opnieuw ziet,
+                    meld
+                    je dat de cijfers <em>niet verschillend </em> zijn (<code>onwaar</code>).
+                </li>
+                <li><strong>Stap 3</strong>. Herhaal stap 2 voor elk element in de lijst. Vergelijk dat element met elk
+                    van de latere elementen in de lijst.
+                </li>
+                <li><strong>Stap 4.</strong> Als je stap 3 voltooid hebt zonder dubbelen te vinden, rapporteer dan
+                    dat de elementen verschillend zijn (<code>waar</code>).
+                </li>
             </ul>
         </p>
         <div class="forYouToDo" id="first">
             <ol>
-                <li> Bouw een predikaat dat het bovenstaande algoritme implementeert.<br /> <img height="45"
-                        class="indent" src="../../afb/h5/l1/p3b3.png" alt="Geen Afbeelding" /> </li>
+                <li> Bouw een predikaat dat het bovenstaande algoritme implementeert.
+                    <br />
+                    <img height="45" class="indent" src="../../afb/h5/l1/p3b3.png" alt="Geen Afbeelding" />
+                </li>
                 <li><img class="inline" src="../../afb/icons/PraatMetJeBuur-mini.png" alt="Geen Afbeelding" /> Als
                     je de lengte van de lijst zou verdubbelen, zou dit algoritme dan evenveel tijd kosten? Twee keer
                     zo lang? Meer dan twee keer zo lang?
@@ -60,22 +67,22 @@
         </div>
         <div class="dialogue">
             <div><span>Alex:</span> Ons predikaat vertelt ons of de elementen van een lijst verschillend zijn. Ik
-                wil meer. </div>
+                wil nog iets meer informatie hebben. </div>
             <div><span>Yasmine:</span> Wat wil je dan?</div>
-            <div><span>Alex:</span> Als er duplicaten in de lijst staan, wil ik graag zien wat ze zijn. Op die
-                manier kan ik ze verwijderen.</div>
-            <div><span>Bo:</span> Ok, laten we een verslaggever schrijven die de lijst met duplicaten in een lijst
-                produceert. </div>
+            <div><span>Alex:</span> Als er duplicaten in de lijst staan, wil ik graag zien welke getallen het zijn. Op
+                die manier kan ik ze verwijderen.</div>
+            <div><span>Bo:</span> Oké, laten we een rapporteur schrijven die de lijst met duplicaten in een lijst
+                rapporteert. </div>
         </div>
         <div class="forYouToDo">
             <ol start="3">
-                <li>Bouw een rapporteur die alle dubbele items in een lijst geeft:</li> <img class="indent"
-                    src="../../afb/h5/l1/p3b4.png" alt="Geen Afbeelding" />
+                <li>Bouw een rapporteur die alle dubbele elementen in een lijst geeft:</li>
+                <img class="indent" src="../../afb/h5/l1/p3b4.png" alt="Geen Afbeelding" />
             </ol>
         </div>
         <div class="ifTime">
             <ol start="4">
-                <li>Bouw een rapporteur, <code>verwijder duplicaten</code>, die een lijst als invoer gebruikt en
+                <li>Bouw een rapporteur, <code>verwijder dubbelen</code>, die een lijst als invoer gebruikt en
                     diezelfde lijst maar zonder dubbele elementen rapporteert.
                 </li>
             </ol>

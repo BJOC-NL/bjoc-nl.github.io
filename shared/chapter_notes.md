@@ -131,3 +131,19 @@ Er staat een link naar <http://bjc.berkeley.edu/website/privacy.html>, die websi
 #### Pagina 1
 
 Niet blij met de eerste 2 zinnen, gemeenschappen en saamhorigheid zijn in het Engels "community".
+
+## Hoofdstuk 5
+
+### Les 1
+
+#### Pagina 1
+
+Ik weet niet goed hoe je als je de sprite kan laten wachten tot een blok is aageklikt. ik heb nu een variabele aangemaakt die staat normaal op 0, als een blok aangeklikt wordtword die variabele op 1 gezet. de sprite wacht met werken tot die variabele op 1 staat en zodra dat gebeurt gaat ie door. Zie project H5L1-RaadHetGetal-oefen. Het is me daar gelukt om de strategie te implementeren maar dit voelt niet als de bedoelde manier...
+
+### Les 2
+
+#### Pagina 2
+
+Er is een "test-project" dat eerst alleen uitgevoerd kon worden zonder de code te zien. voor een of andere reden werkt dit niet meer, dus heb nu gewoon het project gelinkt waarbij je wel de code kan zien.  Je kan het testen door "&hideControls" aan de URL te plakken. Het is niet echt handig dat hierdoor leerlingen "het antwoord" al kunnen zien.
+
+Bij H5L2P3 werkt dit wel??

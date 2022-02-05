@@ -24,30 +24,34 @@
                 algoritme de lijst doorzoekt.</p>
         </div>
         <h3> Zoeken in Ongesorteerde Data</h3>
-        <p>Wanneer je naar een item zoekt in <em> ongesorteerde</em> data, moet je alle items checken totdat je de
-            gezochte
-            waarde vindt.</p>
+        <p>Wanneer je naar een specifiek element zoekt in <em> ongesorteerde</em> data, moet je alle elementen checken
+            totdat je de
+            gezochte waarde vindt.</p>
         <img class="imageRight" src="../../afb/h5/l1/p2b2.png" alt="Geen Afbeelding" />
         <div class="forYouToDo" id="first">
             <ol>
                 <li> Bouw een <code>positie van getal in ongesorteerde lijst</code>blok dat aangeeft wat de eerste
-                    locatie van een getal in een ongesorteerde lijst is. Als het getal niet gevonden kan worden, dan
-                    rapporteert het blok "Niet In Lijst" (of "NIL", als je
-                    dat liever hebt).<br />
+                    locatie van een specifiek getal in een ongesorteerde lijst is. Als het getal niet gevonden kan
+                    worden, dan
+                    rapporteert het blok "Niet in lijst" (of "NIL", als je
+                    dat liever hebt).
+                    <br />
                     <img class="indent" src="../../afb/h5/l1/p2b1.png" alt="Geen Afbeelding" />
                 </li>
             </ol>
         </div>
-        <div class="endnote">Het zoeken in ongesorteerde data kan lang duren als er heel veel data is, maar voor een
+        <div class="endnote">
+            Het zoeken in ongesorteerde data kan lang duren als er heel veel data is, maar voor een
             lijst met weinig data gaat het heel snel.
-
         </div>
+
         <h3>Zoeken in Gesorteerde Data</h3>
         <p> Als je naar een nummer aan het zoeken bent in <em> gesorteerde</em> data heb je al meer informatie. Stel
             je voor dat je een gesorteerde lijst hebt en je wil achter de locatie van een getal komen.
         </p>
-        <div class="endnote"> Normaal gesproken zijn gesorteerde lijsten van laag naar hoog gesorteerd. Je gaat een blok
-            maken dat een lijst van nummers sorteert in Hoofdstuk 8, <a href="../hoofdstuk-8/H8L2P1.html">Een Lijst
+        <div class="endnote"> Normaal gesproken zijn gesorteerde lijsten van laag naar hoog gesorteerd. Je gaat nog een
+            blok maken dat een lijst van getallen sorteert in Hoofdstuk 8, <a href="../hoofdstuk-8/H8L2P1.html">Een
+                Lijst
                 Sorteren</a>.
         </div>
         <div class="dialogue">
@@ -59,22 +63,24 @@
             </div>
             <img class="imageRight" src="../../afb/h5/l1/p2b3.png" height="350" alt="Geen Afbeelding" />
             <div> <span>Alex: </span> Maar bij dat spel raadde de computer een getal dat wij hadden gekozen. Nu willen
-                we een getal vinden in een lijst en daarvan de positie rapporteren. Het zou zo moeten werken: <br />
-                <img class="indent" src="../../afb/h5/l1/p2b4.png" alt="Geen Afbeelding" /> </div>
+                we een getal vinden in een lijst en daarvan de positie rapporteren. Het zou zo moeten werken:
+                <br />
+                <img class="indent" src="../../afb/h5/l1/p2b4.png" alt="Geen Afbeelding" />
+            </div>
             <div><span>Bo: </span> Ja maar het <em> voelt </em> nog steeds hetzelfde. Het zou dezelfde opbouw moeten
-                hebben.</div>
+                hebben.
+            </div>
         </div>
         <div class="takeNote">
             Bo's laatste opmerking is een manier van <strong>abstractie</strong>. Bo merkte op dat <code>positie in
-                gesorteerde lijst</code> en
-            <a href="../hoofdstuk-5/H5L1P1.html"> Raad-nummer-algoritme</a>
+                gesorteerde lijst</code> en het <a href="../hoofdstuk-5/H5L1P1.html"> Raad-het-getal-algoritme</a>
             over het algemeen dezelfde structuur zouden moeten hebben.
         </div>
         <div class="forYouToDo">
             <ol start="2">
                 <li>Door het toepassen van de strategie van het raadspel kan je nu een blok schrijven dat zegt wat:
                     <ul>
-                        <li>De <em>positie</em> van een item in een gesorteerde lijst is.</li>
+                        <li>De <em>positie</em> van een element in een gesorteerde lijst is.</li>
                         <li>Het <em>aantal keer raden</em> die nodig waren om het getal te vinden.</li> <img
                             class="indent" src="../../afb/h5/l1/p2b5.png" height="50" alt="Geen Afbeelding" /> <img
                             class="indent" src="../../afb/h5/l1/p2o1.png" height="150" alt="Geen Afbeelding" />
@@ -83,8 +89,8 @@
                         pakt.</div>
                 </li>
                 <li> Bouw dan een <code>positie in gesorteerde lijst</code>blok dat de positie van een getal
-                    rapporteert in een lijst gesorteerd van laag naar hoog, als het niet in de lijst staat rapporteert
-                    het 0. (Opmerking: Deze taak is identiek aan de vorige alleen in plaats van dat het de positie
+                    rapporteert in een lijst gesorteerd van laag naar hoog. Als het niet in de lijst staat, rapporteert
+                    het blok 0. (Opmerking: Deze taak is identiek aan de vorige alleen in plaats van dat het de positie
                     "zegt", wordt die nu "gerapporteerd". )
                     <br /> <img class="indent" src="../../afb/h5/l1/p2b4.png" alt="Geen Afbeelding" /><br />
                     <img class="indent" src="../../afb/h5/l1/p2b6.png" alt="Geen Afbeelding" /><br />
@@ -92,7 +98,7 @@
                 <li> Vergelijk <code>positie in gesorteerde lijst</code> met <code>positie in ongesorteerde
                         lijst</code>: <ol>
                         <li> Welke werkt sneller voor grote invoer? </li>
-                        <li>Welke heeft meer blokken in de code?</li>
+                        <li>Welk blok bevat meer blokken?</li>
                     </ol>
                 </li>
             </ol>
@@ -105,8 +111,8 @@
                     <table class="bordered center"
                         summary="tabel met het aantal gissen om het laatste getal te vinden in een gesorteerde lijst">
                         <tr>
-                            <th scope="col" style="white-space: nowrap;">Lengte van de Lijst</th>
-                            <th scope="col" style="white-space: nowrap;">Aantal Gissen</th>
+                            <th scope="col" style="white-space: nowrap;">Lengte van de lijst</th>
+                            <th scope="col" style="white-space: nowrap;">Aantal gissen</th>
                         </tr>
                         <tr>
                             <td>3</td>
