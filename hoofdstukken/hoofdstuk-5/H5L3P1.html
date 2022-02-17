@@ -25,37 +25,42 @@
                 andere.
             </p>
             <p> <strong>Op deze pagina,</strong> ga je twee algoritmes vergelijken voor het optellen van de getallen van
-                1
-                tot een bepaald invoergetal (zoals hieronder).
-                <br /> <img class="indent" src="../../afb/h5/l3/p1b1.png" alt="Geen Afbeelding" /> </p>
+                1 tot een bepaald invoergetal (zoals in de afbeelding hieronder).
+                <br />
+                <img class="indent" height="55" src="../../afb/h5/l3/p1b1.png" alt="Geen Afbeelding" />
+            </p>
         </div>
         <div class="dialogue">
             <div class="stagedir"> Alex en Bo zijn een algoritme aan het maken dat een positief, heel getal als invoer
-                heeft
-                en de som van alle hele getalle tot dat invoergetal bij elkaar optelt, zoals hier: <br />
-                <img class="indent" src="../../afb/h5/l3/p1b2.png" alt="Geen Afbeelding" /><br />
+                heeft en de som van alle hele getalle tot dat invoergetal bij elkaar optelt, zoals hier:
+                <br />
+                <img class="indent" height="55" src="../../afb/h5/l3/p1b2.png" alt="Geen Afbeelding" />
+                <br />
                 Deze verschillende aanpakken hebben altijd dezelfde uitkomst voor dezelfde invoer. Alex en Bo bespreken
-                hun
-                aanpak:
+                hun aanpak:
             </div>
-            <div><span>ALex: </span> Ik heb twee nieuwe blokken gemaakt. Eerst heb ik een rapporteur gemaakt om alle
+
+            <div><span>Alex: </span> Ik heb twee nieuwe blokken gemaakt. Eerst heb ik een rapporteur gemaakt om alle
                 getallen tussen twee getallen in een lijst te zetten, inclusief de 2 getallen, daarna gebruik ik
-                <code>combine</code> om de lijst op te tellen.
+                <code>combineer</code> om de lijst op te tellen.
             </div>
+
             <div class="narrower">
                 <p> Het <img height="40" class="inline" src="../../afb/h5/l3/p1b3.png" alt="Geen Afbeelding" />blok
-                    heeft
-                    als
-                    invoer een operatie (met <em>twee</em> lege invoervakken) en een lijst, het rapporteert slecht één
-                    resultaat (dus niet een lijst): de combinatie van de elementen in de lijst nadat de gegeven operatie
-                    is
-                    uitgevoerd. Bijvoorbeeld: <br />
-                    <div class="sidenote"> Lees dit als "combineer de elementen van de lijst {5,6,2,3} door op te
-                        tellen".
-                    </div> <img class="indent" src="../../afb/h5/l3/p1b4.png" alt="Geen Afbeelding" />
+                    heeft als invoer een lijst en een operatie (met <em>twee</em> lege invoervakken). Het rapporteert
+                    slecht één resultaat (dus niet een lijst): de combinatie van de elementen in de lijst nadat de
+                    gegeven operatie is uitgevoerd. Bijvoorbeeld:
+                    <br />
+
+                    <div class="sidenote"> Je kan dit lezen als "combineer de elementen van de lijst {5,6,2,3} door op
+                        te tellen".
+                    </div>
+
+                    <img class="indent" height="50" src="../../afb/h5/l3/p1b4.png" alt="Geen Afbeelding" />
                 </p>
+
                 <div class="takeNote">
-                    <div class="sidenoteBig"><code>Combine</code> is een <em>functie van hogere orde</em>.
+                    <div class="sidenoteBig"><code>combineer</code> is een <em>functie van hogere orde</em>.
                         Dit betekent dat het een functie is die als invoer een functie heeft. Je hebt al een aantal
                         functies
                         van hogere orde gezien:
@@ -64,55 +69,59 @@
                         <code>map</code> (in <a href="../hoofdstuk-3/H3L1P4.html"> Hoofdstuk 3
                             Les 1
                         </a>). </div>
-                    <p>Jij kiest een operatie en <code>combine</code> voert die operatie uit door alle items in de
-                        invoerlijst te <em>combineren</em> en rapporteert dan de uitkomst.</p>
-                    <p>Merk op dat de functie die gebruikt wordt om de items te <em>combineren</em> altijd twee lege
-                        invoervakken heeft.
-                        Niet alleen <code>map</code> maar ook <code>houd</code> hadden maar één leeg vak in hun
-                        invoerfunctie maar <code>combine</code> heeft er twee.
+                    <p> Jij kiest een operatie en <code>combineer</code> voert die operatie uit door alle items in de
+                        invoerlijst te <em>combineren</em> en rapporteert dan de uitkomst.
+                    </p>
+                    <p> Merk op dat de functie die gebruikt wordt om de items te <em>combineren</em> altijd twee lege
+                        invoervakken heeft. <code>map</code> en <code>houd</code> hadden maar één leeg vak in hun
+                        invoerfunctie maar <code>combineer</code> heeft er twee.
                     </p>
                 </div>
-                <div class="endnote"> In tegenstelling tot <code>map</code> en <code>houd</code>, wordt
-                    <code>combine</code>
-                    vooral gebruikt samen met deze <em>vijf</em> functies: <br />
+                <div class="endnote">
+                    In tegenstelling tot <code>map</code> en <code>houd</code>, wordt <code>combineer</code> vooral
+                    gebruikt samen met deze <em>vijf</em> functies:
+                    <br />
                     <img height="40" class="indent" src="../../afb/h5/l3/p1b5.png" alt="Geen Afbeelding" />
                     <img height="40" src="../../afb/h5/l3/p1b6.png" alt="Geen Afbeelding" />
                     <img height="40" src="../../afb/h5/l3/p1b7.png" alt="Geen Afbeelding" />
                     <img height="40" src="../../afb/h5/l3/p1b8.png" alt="Geen Afbeelding" />
-                    <img height="40" src="../../afb/h5/l3/p1b9.png" alt="Geen Afbeelding" /> <br />
-
-                    Voor blokken die je zelf zou schrijven zijn er maar 2 waarschijnlijke kandidaten: <br />
+                    <img height="40" src="../../afb/h5/l3/p1b9.png" alt="Geen Afbeelding" />
+                    <br />
+                    Voor blokken die je zelf zou schrijven zijn er maar 2 waarschijnlijke kandidaten:
+                    <br />
                     <img height="40" class="indent" src="../../afb/h5/l3/p1b10.png" alt="Geen Afbeelding" />
-                    <img height="40" src="../../afb/h5/l3/p1b11.png" alt="Geen Afbeelding" /> <br />
+                    <img height="40" src="../../afb/h5/l3/p1b11.png" alt="Geen Afbeelding" />
+                    <br />
+
                     <a data-toggle="collapse" href="#hint-3">Waarom zijn het er zo weinig?</a>
+
                     <div id="hint-3" class="collapse"> De functie moet <em>associatief</em> zijn, wat betekent dat het
-                        niet
-                        uitmaakt in welke volgorde de items staan;
-                        (7&thinsp;+&thinsp;8)&thinsp;+&thinsp;1 is hetzelfde als
-                        7&thinsp;+&thinsp;(8&thinsp;+&thinsp;1),
-                        maar (7&thinsp;−&thinsp;8)&thinsp;−&thinsp;1 is niet hetzelfde als
+                        niet uitmaakt in welke volgorde de items staan; (7&thinsp;+&thinsp;8)&thinsp;+&thinsp;1 is
+                        hetzelfde als 7&thinsp;+&thinsp;(8&thinsp;+&thinsp;1), maar
+                        (7&thinsp;−&thinsp;8)&thinsp;−&thinsp;1 is niet hetzelfde als
                         7&thinsp;−&thinsp;(8&thinsp;−&thinsp;1).
                         Dus <img height="45" src="../../afb/h5/l3/p1b12.png" alt="Geen Afbeelding"> is dubbelzinnig.
                     </div>
                 </div>
             </div>
-            <div class="stagedir"> Alex laat zijn werk zien:<br />
-                <img src="../../afb/h5/l3/p1b13.png" alt="Geen Afbeelding" /><br />
-                <img height="120" src="../../afb/h5/l3/p1b14.png" alt="Geen Afbeelding" /> </div>
+
+            <div class="stagedir"> Alex laat zijn werk zien:
+                <br />
+                <img height="200" src="../../afb/h5/l3/p1b13.png" alt="Geen Afbeelding" />
+                <br />
+                <img height="120" src="../../afb/h5/l3/p1b14.png" alt="Geen Afbeelding" />
+            </div>
+
             <div><span>Bo: </span> Goed gedaan! Ik denk dat het ook op een andere manier kan.</div>
             <div><span>Alex: </span> Cool. Hoe dan?</div>
             <div><span>Bo: </span> Ik zat na te denken over opsommingen en ik bedacht me dat 1 + 13 = 14, 2 + 12 = 14 en
-                3 +
-                11
-                = 14...</div>
+                3 + 11 = 14...</div>
             <div><span>Alex: </span> Dus je was aan het tellen tot veertien? </div>
             <div><span>Bo: </span> Ja, ik schreef de lijst van 1 tot 13 en toen schreef ik dezelfde getallen in
-                omgekeerde
-                volgorde, onder de eerste lijst zoals dit:
+                omgekeerde volgorde, onder de eerste lijst zoals dit:
             </div>
             <div class="stagedir">Bo schrijft op het bord:</div>
-            <table class="additiontable center"
-                summary="setup for 13 simultaneous additions: the numbers 1 through 13 added to the numbers 13 through 1"
+            <table class="additiontable center" summary="13 sommen: getallen 1 tot 13 opgeteld bij de getallen 13 tot 1"
                 role="presentation">
                 <tr>
                     <td>1</td>
@@ -145,7 +154,7 @@
                     <td>1</td>
                 </tr>
             </table>
-            <div><span>Bo: </span> Toen somde ik op naar beneden en kreeg ik 13 veertiens:</div>
+            <div><span>Bo: </span> Toen somde ik op naar beneden en kreeg ik 13 veertiens: </div>
             <table class="additiontable center"
                 summary="13 simultaneous additions each showing a total of 14: the numbers 1 through 13 added to the numbers 13 through 1"
                 role="presentation">
@@ -227,27 +236,24 @@
                     <div class="sidenoteBig">Gebruik voor Alex’s methode, het blok <code>numbers from () tot ()</code>
                         in het Variabelenpalet.
                     </div> Implementeer een <code>som-van-1-tot</code>-algoritme.
-                    Je kan Alex' methode gebruiken (met gebruik van <code>combine</code> om <code>sum</code> te bouwen),
+                    Je kan Alex' methode gebruiken (met gebruik van <code>combineer</code>),
                     je kan Bo's formule gebruiken of je kan het op je eigen manier doen.
                     <br />
                     <div class="saveAs inline"><span class="text">"H5L3-RapporteurTimer"</span>
                         <img src="../../afb/icons/SlaHetOpAls.png" alt="Geen Afbeelding" /></div>
                 </li>
                 <li>Werk met een ander team om Alex' en Bo's algoritmes te vergelijken met een groot aantal invoeren.
-                    Bepaal
-                    welke efficiënter is (welke is er sneller).
+                    Bepaal welke efficiënter is (welke is sneller).
                 </li>
                 <li> In de vorige stap heb je met experimenten bepaald welk algoritme sneller is. Je kan dit ook doen
                     door
                     <em>logisch te redeneren</em> om te bewijzen dat het ene algoritme sneller is dan het andere: <ol>
                         <li>Als je de getallen van 1 tot 100 optelt, hoeveel rekenkundige operaties (+, &ndash;,
-                            &times;,
-                            &divide;) zal je dan nodig hebben om Bo's algoritme uit te voeren? </li>
+                            &times;, &divide;) zal je dan nodig hebben om Bo's algoritme uit te voeren? </li>
                         <li>Hoeveel rekenkundige operaties zal Alex' methode gebruiken?</li>
                         <li>En als je de getallen van 1 tot 1000 optelt?</li>
-                        <li>Zijn de aantallen operaties logisch als je ze vergelijkt met de uitkmosten van de
-                            experimenten
-                            van de vorige stap?
+                        <li>Zijn de aantallen operaties logisch als je ze vergelijkt met de uitkomsten van de
+                            experimenten van de vorige stap?
                         </li>
                     </ol>
                 </li>

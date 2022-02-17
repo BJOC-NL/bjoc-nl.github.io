@@ -147,3 +147,15 @@ Ik weet niet goed hoe je als je de sprite kan laten wachten tot een blok is aage
 Er is een "test-project" dat eerst alleen uitgevoerd kon worden zonder de code te zien. voor een of andere reden werkt dit niet meer, dus heb nu gewoon het project gelinkt waarbij je wel de code kan zien.  Je kan het testen door "&hideControls" aan de URL te plakken. Het is niet echt handig dat hierdoor leerlingen "het antwoord" al kunnen zien.
 
 Bij H5L2P3 werkt dit wel??
+
+### Les 3
+
+#### Pagina 1
+
+Er staat dat combineer met - dubbelzinnig is, er wordt geimpliceerd dat dit slecht is, maar ik zou graag uitleggen waarom dit slecht is.
+
+### Les 4
+
+#### Pagina 1
+
+Namen zijn beetje ouderwets, Adam, Eva, Dominiek.
