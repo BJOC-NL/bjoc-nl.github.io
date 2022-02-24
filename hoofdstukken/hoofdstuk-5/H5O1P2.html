@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="../../BJOC-NL-logo.png" type="image/png">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="../../js+css/llab/loader.js"></script>
+    <script type="text/javascript" src="../../js+css/gifffer.min.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            Gifffer();
+            Inhoudsopgave();
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../js+css/css/bjc-gifffer.css">
+    <title>Hoofdstuk 5 Optioneel project, Pagina 2</title>
+</head>
+
+<body>
+    <div class="full">
+        <h2>Een computerspeler maken</h2>
+        <div class="learn">
+            <p><strong>Op deze pagina</strong>, ga je de computer tegen een menselijke speler laten spelen.</p>
+        </div>
+
+        <p> Het spel werkt nu zo dat twee personen omstebeurt spelen. Maar eigenlijk heb je geen computer nodig om de
+            zetten van spelers bij te houden. Je kan immers zelf herkennen wanneer iemand gewonnen heeft. We willen nu
+            dat een persoon een potje kan spelen tegen een computerspeler die uit zichzelf zetten doet. Om het iets
+            makkelijker te maken, nemen we aan dat de mensenlijke speler altijd mag beginnen en daarom X is. De computer
+            is dus altijd O.
+        </p>
+        <p> Eerst maak je een computerspeler die <em>willekeurige</em> zetten op het bord doet. (Hij zal niet heel goed
+            speler, maar daar zullen we later voor zorgen zodra we alle benodigde code hebben.) Zodra het programma
+            beslist heeft welke zet het wil doen, gebruik je <code>zend signaal</code> om de kloon met het bijbehorende
+            positienummer van uiterlijk te veranderen. (Voor de menselijke speler doen we dit met <code>wanneer ik
+                aangeklikt word</code>, maar dit kan niet met de computerspeler omdat die niet kan klikken op de
+            vierkanten.)
+
+
+            <div class="endnote">
+                Als het goed is weet je nog dat klonen tijdelijke kopieën van een sprite zijn. Je hebt over ze geleerde
+                <a href="../hoofdstuk-4/H4L4P4.html">Hoofdstuk 2 Les 4 Pagina 4: Boter, kaas en
+                    eieren bouwen</a>.
+            </div>
+            <div class="takeNote">
+                <img class="indent" height="50" src="../../afb/h5/o1/p2-b1.png" alt="Geen Afbeelding" />
+                <img class="indent" height="60" src="../../afb/h5/o1/p2-b2.png" alt="Geen Afbeelding" />
+                <img class="indent" height="60" src="../../afb/h5/o1/p2-b3.png" alt="Geen Afbeelding" /><br />
+                <p> <code>Zend signaal</code> stuurt een bericht aan alle sprites in het project. Ieder script dat
+                    begint met <code>wanneer ik ontvang</code> met het passende bericht in het invoervak, zal uitgevoerd
+                    worden.
+                </p>
+                <p> De <code>signaal</code>-rapporteur kan je zien als je in het <code>wanneer ik ontvang</code> als
+                    invoer kiest voor "elk signaal" en daarna <code>wanneer ik ontvang</code> uitklapt met
+                    het pijltje aan de rechterkant van het blok. <code>signaal</code> rapporteert de waarde van het
+                    signaal dat ontvangen is.
+
+                </p>
+            </div>
+
+            <div class="forYouToDo" id="first">
+                <ol>
+                    <li>Open je H5-BoterKaasEnEieren-project als je dit nog niet gedaan had.</li>
+
+                    <li> Na de code voor X' beurt, gebruik <code>zend signaal</code> met een willekeurig getal tussen 1
+                        en 9 als bericht. (Het bijbehorende vierkant zal gevuld worden met een O, zodra je de code voor
+                        het ontvangen van het bericht hebt geschreven.)
+                    </li>
+                    <div class="sidenoteBig">
+                        <a href="#hint-when-i-receive" data-toggle="collapse">
+                            Klik hier voor een hint over het <code>wanneer ik ontvang</code>-script.
+                        </a>
+                        <div id="hint-when-i-receive" class="collapse">
+                            <img height="70" src="../../afb/h5/o1/p2-b4.png" alt="Geen Afbeelding">
+                        </div>
+                    </div>
+                    <li>
+                        Maak dan een <code>wanneer ik ontvang</code>-script dat <var>elk signaal</var> als invoer
+                        accepteert. Als het <var>positienummer</var> van de kloon overeenkomt met het
+                        <code>signaal</code>, voer dan de zet van de computer uit in dit vierkant en controleer of er
+                        wellicht iemand gewonnen heeft of dat er een gelijkspel is
+                    </li>
+
+                    <div class="takeNote">
+                        In plaats van dat je de code kopieert uit het script met <code>wanneer ik aangeklikt
+                            wordt</code> naar <code>wanneer ik ontvang</code>, kan je een nieuw blok maken en daar de
+                        code in zetten. Je zet dan dit blok in beide scripts. Dit is een van de vele vormen van
+                        <em>abstractie</em> bij programmeren: heb nooit twee kopieën van hetzelfde stuk code. In plaats
+                        daarvan is het beter om dit in een aparte functie te zetten en twee keer die functie aan te
+                        roepen.
+
+
+                    </div>
+
+                    <div class="narrower">
+                        Als je computer het verkeerde uiterlijk gebruikt bij het negende vierkant, dan kan dat komen
+                        omdat je oudersprite hetzelfde <var>positienummer</var> heeft. Pas de code van <code>maak
+                            bord</code> aan zodat het positienummer van de ouder niet een getal tussen de 1 en 9 is.
+                    </div>
+
+                    <li> Speel omstebeurt met je partner boter, kaas en eieren en los probelem op die je tegenkomt
+                        tijdens het spelen.
+                    </li>
+
+
+                </ol>
+            </div>
+
+            <p> Zorg dat de computer geen willekeurige zetten meer doet, geef hem een strategie. In tegenstelling tot
+                mensen zijn niet alle vierkanten bij boter, kaas en eieren gelijk. Zetten in het midden (5) of in een
+                hoek (1, 3, 7 en 9) zijn beter dan zetten aan de rand (2, 4, 6 en 8).
+                <br />
+                <img class="indent noshadow" src="../../afb/h5/o1/p2-o1.png" alt="Geen Afbeelding" />
+            </p>
+
+            <div class="forYouToDo">
+                <ol start="5">
+                    <li>
+                        <img class="imageRight" src="../../afb/icons/PraatMetEenAnderPaar.png" alt="Geen Afbeelding" />
+                        Waarom zou het beter zijn om in het midden of in de hoeken te spelen? Bedenk een korte logische
+                        uitleg. Vergelijk je uitleg met die van andere leerlingen.
+                        <br>
+                    </li>
+                    <li> Maak een <img class="inline" height="35" src="../../afb/h5/o1/p2-b5.png"
+                            alt="Geen Afbeelding" /> blok dat
+                        rapprteert wat de beste positie op het bord die nog niet gevuld is.
+                        Gebruik het als invoer voor je <code>zend signaal</code> instructie, in plaats van
+                        <code>willekeurig getal</code>.
+
+
+                        <div class="endnote">
+                            <a href="#hint-empty" data-toggle="collapse">
+                                Klik hier voor een hint over <code>beste lege vierkant</code>.
+                            </a>
+                            <div id="hint-empty" class="collapse"><img class="indent" height="40"
+                                    src="../../afb/h5/o1/p2-b6.png" alt="Geen Afbeelding">
+                            </div>
+                        </div>
+                    </li>
+                    <li> Speel weer omstebeurt potjes tegen de computer. Controleer goed dat de computerspeler alleen
+                        vierkanten aan de rand pakt als alle vierkanten in het midden en in de hoeken al bezet zijn.
+                    </li>
+                    <img class="inline" src="../../afb/icons/HetIsNuEenGoedMoment.png" alt="Geen Afbeelding" />
+                </ol>
+            </div>
+
+    </div>
+    <div class="full-bottom-bar" style="background-position: 20px 3px;">
+        <div class="bottom-nav btn-group"> <a class="btn btn-default backbutton arrow" style="min-width: 90px;"
+                href="H5O1P1.html">Terug</a> <a class="btn btn-default forwardbutton arrow" style="min-width:90px;"
+                href="H5O1P3.html">Volgende</a> </div>
+    </div>
+
+</body>
+
+</html>
