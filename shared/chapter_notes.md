@@ -1,18 +1,26 @@
 ﻿# Opmerkingen
 
-Voeg toe welke hoofdstukken wat van het nationaal curriculum leren.
-
 Sommige links naar websites zijn vertaald sommige niet, wat te doen? ben zelf tegen omdat het dan een nederlandse pagina lijkt.
 
-commando-blok heet nu opdrachtblok in Snap, moet dit in de tekst + afbeeldingen aanpassen.
-
-uitleggen wat een script is (een groep blokken die aan elkaar vast zitten?)
+"Les" is heel verwarrend, pagina's dringen bij leerlingen ook niet echt door miss in de inhoudsopgavezetten.
 
 buur -> partner?
 
 in snap heten nieuwe sprites niet meer Sprite maar Object, overal aanpassen? vooral H1L5 levert dit problemen op.
 
 . en , met getallen moet consistent zijn dus 1.000 is duizend en 1,5 is anderhalf, dit is Nederlandse notatie. In Snap is het helaas andersom, daar gebruiken ze internationale notatie. Daar is 1.5 anderhalf, ik heb het nu zo gedaan dat als ik het over getallen in Snap heb dat ik 1.5 gebruik en voor getallen daarbuiten 1,5.
+
+## TODO
+
+houd is nu vertaaald naar nederlands en heet behoud, dus zoek waar keep/houd staat en verander naar behoud
+
+Verander "animatie" naar "video" voor de video's waar iets voorgedaan wordt.
+
+Voeg toe welke hoofdstukken wat van het nationaal curriculum leren.
+
+commando-blok heet nu opdrachtblok in Snap, moet dit in de tekst + afbeeldingen aanpassen.
+
+uitleggen wat een script is (een groep blokken die aan elkaar vast zitten?)
 
 Handig voor vervangen:
 ([0-9]),([0-9])
@@ -73,7 +81,7 @@ vereisen van een bevelschrift? wat is dat? wat heeft dat met de macht van de sta
 
 tanya's verhaal, wellicht niet de huidige koers van dollar naar euro bijzetten, die raakt heel snel gedateerd.
 
-tanyas verhaal nog eens goed doorheen, veel zinnen lopen niet lekker. duurt wel lang, dus nog bewaren voor later
+tanya's verhaal nog eens goed doorheen, veel zinnen lopen niet lekker. duurt wel lang, dus nog bewaren voor later
 
 ## Hoofdstuk 2
 
@@ -91,6 +99,8 @@ Bij punt 6 staan er 3 vragen en ik weet niet echt het antwoord op deze vragen. W
 #### Pagina 3
 
 Ik weet niet wat ze bedoelen met "ghost effect resetten". Ik kan me niet herinneren wat dit deed.
+
+toekkomst-casper: ghost effect is dat het  transparant wordt. idee is dat ghost effect  toeneemt als je op alaonzo klikt, als je het spel reset. moet dit dus ook gereset worden.
 
 ### Les 3
 

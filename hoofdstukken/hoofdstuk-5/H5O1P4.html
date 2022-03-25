@@ -25,246 +25,261 @@
             </p>
         </div>
 
-        <p> You'll set up a <img src="/March2019/bjc-r/img/5-algorithms/next-move.png" alt="Geen Afbeelding"> block so
-            you can broadcast to all the clones the position where the computer will move. As before, only the clone
-            with the matching <var>position number</var> will make the move.</p>
-        <p> The code for <code>next move for computer</code> will implement the three strategy rules:
+        <p> Je gaat een <img src="../../afb/h5/o1/p4-b1.png" height="35" alt="Geen Afbeelding">-blok maken zodat je naar
+            alle klonen een signaal kan uitzenden met de positie waar de computer zijn zet wil doen. Alleen de kloon met
+            het bijbehorende <var>positienummer</var> zal veranderen naar een O, net als voorheen.
+        </p>
+
+        <p> De code voor <code>volgende zet van computer </code> zal de drie strategieregels implementeren:
+
             <ul>
-                <li>Rule 1: If I (the computer, player O) can win; do so.</li>
-                <li>Rule 2: If my opponent (the human, player X) can win; block them.</li>
-                <li>Final rule: Otherwise, just pick the best empty square.</li>
+                <li>Regel 1: Als ik (de computer, O) kan winnen, doe dat.</li>
+                <li>Regel 2: Als mijn tegenstander (de persoon, X) kan winnen, blokkeer de winnende zet.</li>
+                <li>Laatste regel: Anders vullen we het beste lege vierkant.</li>
             </ul>
         </p>
         <div class="endnote">
-            You will build the <code>next move for computer</code> block using two new blocks: <code>can win now?</code>
-            and <code>winning square</code>, which aren't written yet. To start building <code>next move for
-                computer</code>, you'll make the other two blocks, but they won't really do anything. They'll just be
-            for setting up the code for <code>next move for computer</code>, and you'll make them do what they're meant
-            to later.
+            Je gaat het <code>volgende zet van computer</code>-blok bouwen met behulp van twee nieuwe blokken: <code>kan
+                nu winnen?</code> en <code>winnend vierkant</code>, die nog niet bestaan. Om <code>volgende zet van
+                computer</code> te bouwen moet je eerst de twee andere blokken maken, maar je hoeft ze nog niks te laten
+            We zullen ze alleen gebruiken om <code>volgende zet van computer</code> op te zetten en je gaat
+            ze pas later echt implementeren.
         </div>
 
         <div class="forYouToDo" id="first">
             <ol>
-                <li>If it isn't open already, open your U5-TicTacToe project.</li>
+                <li>Open je H5-BoterKaasEnEieren-project als je dat nog niet gedaan had.</li>
                 <li>
-                    Create these two new blocks for implementing the strategy rules. For now, make
-                    <code>can win now?</code> report <code>false</code> no matter what. Don't put code inside
-                    <code>winning
-                        square</code> yet.<br />
-                    <img class="indent" src="/March2019/bjc-r/img/5-algorithms/can-player-win-now.png"
-                        alt="Geen Afbeelding" />
-                    <img class="indent" src="/March2019/bjc-r/img/5-algorithms/winning-square-for-player.png"
-                        alt="Geen Afbeelding" />
+                    Maak deze twee nieuwe blokken aan om de strategie te implementeren. Zorg er eerst voor dat <code>kan
+                        speler ... nu winnen?</code> altijd <code>niet waar</code> rapporteert. Zet nog geen code in
+                    <code>winnend vierkant voor speler ...</code>.
+                    <br />
+                    <img class="indent" height="40" src="../../afb/h5/o1/p4-b3.png" alt="Geen Afbeelding" />
+                    <img class="indent" height="40" src="../../afb/h5/o1/p4-b2.png" alt="Geen Afbeelding" />
+
 
                     <div class="endnote">
-                        <strong>Why make <code>can win now?</code> report <code>false</code>?</strong>
-                        That way, the computer will skip rules 1 and 2 and just default to the final rule, and so you
-                        can continue using your program as you build and test these two new blocks.
+                        Waarom moet <code>kan speler ... nu winnen?</code> altijd <code>niet waar</code> rapporteren?
+                        Op die manier slaat de computer regels 1 en 2 over en gaat ie automatisch naar de laatste regel.
+                        Op die manier kan je je programma blijven gebruiken terwijl je deze twee nieuwe blokken test.
                     </div>
                 </li>
-                <li>Now, create the <img src="/March2019/bjc-r/img/5-algorithms/next-move.png" alt="Geen Afbeelding">
-                    block that implements the strategy rules using these two new blocks,
-                    and use it as the input to <code>broadcast</code> instead of <code>best empty square</code>. </li>
+
+                <li> Maak nu het <img src="../../afb/h5/o1/p4-b1.png" height="35" alt="Geen Afbeelding">-blok
+                    dat de strategie uitvoert met behulp van deze twee nieuwe blokken. Gebruik deze strategie als invoer
+                    voor <code>zend signaal</code> in plaats van <code>beste lege vierkant</code>
+                </li>
+
                 <div class="endnote">
-                    <a href="#hint-rules" data-toggle="collapse">Click for a hint about implementing
-                        the strategy rules.</a>
+                    <a href="#hint-rules" data-toggle="collapse">
+                        Klik hier voor een hint over het implementeren van de strategie.
+                    </a>
                     <div id="hint-rules" class="collapse">
-                        <p>Use your <img class="inline" src="/March2019/bjc-r/img/5-algorithms/best-empty-square.png"
-                                alt="Geen Afbeelding" /> block too.</p>
-                        <a href="#hint-bigger" data-toggle="collapse">Click for a bigger hint
-                            about implementing the strategy rules.</a>
+                        <p>
+                            Gebruik ook je <img class="inline" height="35" src="../../afb/h5/o1/p2-b5.png"
+                                alt="Geen Afbeelding" />-blok.
+
+                        </p>
+                        <a href="#hint-bigger" data-toggle="collapse">
+                            Klik hier voor nog een hint over het implementeren van de strategie.
+                        </a>
                         <div id="hint-bigger" class="collapse">
-                            <img class="indent"
-                                src="/March2019/bjc-r/img/5-algorithms/next-move-for-computer-definition.png"
-                                alt="Geen Afbeelding" />
+                            <img class="indent" height="300" src="../../afb/h5/o1/p4-b9.png" alt="Geen Afbeelding" />
                         </div>
                     </div>
                 </div>
-                <li> Play a game against the computer, and make sure that your game still works.</li>
+
+                <li> Speel een potje tegen de computer en zorg ervoor dat je project nog steeds werkt.</li>
             </ol>
         </div>
 
-        <p> You can check <code>status of all winning triples</code> for a triple that will allow the computer player to
-            win on the next turn, but you will not be able to tell the <em>position</em> of the square where that player
-            will move. To make that possible, you will need to initialize the spaces in the <var>board</var> variable
-            with the numbers 1 to 9 instead of nine copies of the word "Empty." Then <img class="inline"
-                src="/March2019/bjc-r/img/5-algorithms/winning-square-for-player.png" alt="Geen Afbeelding" /> can
-            select the position number out of the winning triple.
+        <p> Je kan <code>status van alle winnende drietallen</code> gebruiken om te controleren voor een drietal waarmee
+            de computer de
+            volgende beurt kan winnen, maar je weet nog niet welk vierkant de computer gaat bezetten. Om dat mogelijk te
+            maken moet je de vierkanten in <var>bord</var> initialisern met de getallen 1 tot en met 9 in plaats van
+            negen keer het woord "Leeg". Dan kan <img class="inline" height="35" src="../../afb/h5/o1/p4-b2.png"
+                alt="Geen Afbeelding" /> de positie van het winnende drietal vinden.
         </p>
 
         <div class="forYouToDo">
             <ol start="5">
                 <li>
-                    Change the initialization instruction for the <var>board</var> variable to a list of the numbers
-                    from 1 to 9.
+                    Verander de initialisatie van <var>bord</var> zodat het nu een lijst van getallen van 1 tot en met 9
+                    is.
                     <div class="endnote">
-                        You can type the numbers out by hand or just use <img class="inline"
-                            src="/March2019/bjc-r/img/blocks/numbers-from-to.png" alt="Geen Afbeelding" />. (You'd need
-                        to Import Tools to use this in another project.)
+                        Je kan handmatig de getallen typen of gebruikmaken van
+                        <img class="inline" height="35" src="../../afb/h5/o1/p4-b4.png" alt="Geen Afbeelding" />.
                     </div>
                 </li>
-                <li><strong>Debugging.</strong> Play a game. Identify the parts of your code that cause the problems,
-                    and come up with a solution.
+                <li><strong>Debuggen.</strong> Speel een potje. Zoek stukken van de code die nog probleme veroorzaken
+                    en zoek er oplossingen voor.
                     <div class="endnote">
-                        <p><a href="#hint-tie-bug-fix" data-toggle="collapse"> Click for a
-                                hint about how to fix the errors.</a></p>
+                        <p><a href="#hint-tie-bug-fix" data-toggle="collapse">
+                                Klik hier voor een hint om de fouten op te lossen.</a></p>
                         <div id="hint-tie-bug-fix" class="collapse">
-                            <img class="indent" src="/March2019/bjc-r/img/blocks/is-a-number.png"
-                                alt="Geen Afbeelding" />
+                            <img class="indent" height="35" src="../../afb/h5/o1/p4-b5.png" alt="Geen Afbeelding" />
                         </div>
                     </div>
                 </li>
             </ol>
         </div>
 
-        <p> Now you'll begin working on the <img class="inline"
-                src="/March2019/bjc-r/img/5-algorithms/winning-square-for-player.png" alt="Geen Afbeelding" /> and <img
-                class="inline" src="/March2019/bjc-r/img/5-algorithms/can-player-win-now.png" alt="Geen Afbeelding" />
-            blocks. The <code>can win now?</code> block can just check if there is a
-            winning square by checking the results of <code>winning square</code>, so you'll code <code>winning
-                square</code> first.
+        <p> Nu ga je werken aan de
+            <img class="inline" height="35" src="../../afb/h5/o1/p4-b2.png" alt="Geen Afbeelding" />-
+            en <img class="inline" height="35" src="../../afb/h5/o1/p4-b3.png" alt="Geen Afbeelding" />blokken.
+            Het <code>kan ... nu winnen?</code>blok kan gewoon kijken of er een winnend vierkant is door naar het
+            resultaat van <code>winnend vierkant</code> te kijken, dus je moet eerst <code>winnend vierkant</code>
+            bouwen.
         </p>
-        <p> You'll begin by building a <img class="inline"
-                src="/March2019/bjc-r/img/5-algorithms/winning-triple-for-player.png" alt="Geen Afbeelding" /> block to
-            identify the contents of the three squares on the board where the player could win on their next turn. Then,
-            <code>winning square</code> will select the correct position out of that triple.
+
+        <p> Je begint door eerst een <img class="inline" height="35" src="../../afb/h5/o1/p4-b6.png"
+                alt="Geen Afbeelding" />blok te bouwen om de drie vierkanten te vinden waarmee de speler de volgende
+            beurt zou kunnen
+            winnen. Daarna zal <code>winnend vierkant</code> het vierkant selecteren dat nog ingevuld moet worden uit
+            het drietal.
             <br />
-            <img class="indent" src="/March2019/bjc-r/img/5-algorithms/winning-triple-for-player-reporting.png"
-                alt="Geen Afbeelding" />
-            <img class="indent" src="/March2019/bjc-r/img/5-algorithms/winning-square-for-player-o-reporting.png"
-                alt="Geen Afbeelding" />
+            <img class="indent" height="120" src="../../afb/h5/o1/p4-b7.png" alt="Geen Afbeelding" />
+            <img class="indent" height="50" src="../../afb/h5/o1/p4-b8.png" alt="Geen Afbeelding" />
         </p>
 
         <div class="forYouToDo">
             <ol start="7">
                 <li>
-                    <img class="inline" src="/March2019/bjc-r/img/icons/talk-with-your-partner.png"
-                        alt="Geen Afbeelding" />
-                    How could you use one or more of the blocks that you have to determine if a player can win on their
-                    next turn?
+                    <img class="inline" src="../../afb/icons/PraatMetJeBuur.png" alt="Geen Afbeelding" />
+                    Hoe zou je een of meer blokken die je hebt gemaakt kunnen gebruiken om erachter te komen of een
+                    speler de volgende beurt kan winnen?
                     <br />
-                    <img class="indent" src="/March2019/bjc-r/img/5-algorithms/board.png" alt="Geen Afbeelding">
-                    <img class="indent" src="/March2019/bjc-r/img/5-algorithms/possible-winning-triples.png"
-                        alt="Geen Afbeelding">
-                    <img class="indent" src="/March2019/bjc-r/img/5-algorithms/status-of-all-winning-triples.png"
-                        alt="Geen Afbeelding">
-                    <img class="indent" src="/March2019/bjc-r/img/5-algorithms/wonp-x.png" alt="Geen Afbeelding">
-
+                    <img class="indent" height="40" src="../../afb/h5/o1/p1-b1.png" alt="Geen Afbeelding">
+                    <img class="indent" height="40" src="../../afb/h5/o1/p1-b2.png" alt="Geen Afbeelding">
+                    <img class="indent" height="40" src="../../afb/h5/o1/p1-b3.png" alt="Geen Afbeelding">
+                    <img class="indent" height="40" src="../../afb/h5/o1/p1-b4.png" alt="Geen Afbeelding">
                     <div class="endnote">
-                        You don't have to program it yet. Just talk about what you could do.
+                        Je hoeft het nog niet te bouwen. Bespreek alleen wat je zou kunnen doen.
                     </div>
                 </li>
                 <li>
-                    Create a <img src="/March2019/bjc-r/img/5-algorithms/winning-triple-for-player.png"
-                        alt="Geen Afbeelding"> block. It should report the
-                    first triple it finds that contains a place where the player could win.
+                    Maak een <img height="35" src="../../afb/h5/o1/p4-b6.png" alt="Geen Afbeelding">blok. Het moet het
+                    eerste drietal rapporteren dat het vindt dat een vierkant bevat waarmee de speler kan winnen.
+
                     <div class="endnote">
-                        You may find it helpful to invent these blocks:
+                        Het is misschien handig om deze blokken te maken:
                         <br />
-                        <img class="indent" src="/March2019/bjc-r/img/5-algorithms/opponent-to-o-reporting.png"
-                            alt="Geen Afbeelding" />
-                        <img class="indent" src="/March2019/bjc-r/img/5-algorithms/how-many-x-in-x-5-x-reporting.png"
-                            alt="Geen Afbeelding" />
-                        <p> <a href="#hint-winning-triple" data-toggle="collapse">Click here for a hint about
-                                <code>winning triple</code>.</a>
+                        <img class="indent" height="45" src="../../afb/h5/o1/p4-b10.png" alt="Geen Afbeelding" />
+                        <img class="indent" height="45" src="../../afb/h5/o1/p4-b11.png" alt="Geen Afbeelding" />
+                        <p> <a href="#hint-winning-triple" data-toggle="collapse">
+                                Klik hier voor een hint over <code>winnend drietal</code>.
+                            </a>
                         </p>
                         <div id="hint-winning-triple" class="collapse">
-                            <img class="indent"
-                                src="/March2019/bjc-r/img/5-algorithms/winning-triple-for-player-hint.png"
-                                alt="Geen Afbeelding" />
-                            <p> You learned about using <code>keep</code> with predicates in <a
-                                    href="../hoofdstuk-2/H2L3P2.html">Unit
-                                    2 Lab 3 Page 2: <code>Keep</code>ing Items from a List</a>.
+                            <img class="indent" height="200" src="../../afb/h5/o1/p4-b12.png" alt="Geen Afbeelding" />
+                            <p>
+                                Je hebt geleerd over <code>behoud</code> met predikaten in <a
+                                    href="../hoofdstuk-2/H2L3P2.html">Hoofdstuk 2 Les 3 Pagina 2:
+                                    <code>Houd</code> items van lijsten</a>.
                             </p>
-                            <p> <a href="#hint-winning-triple2" data-toggle="collapse">Click here for
-                                    another hint about <code>winning triple</code>.</a></p>
+                            <p>
+                                <a href="#hint-winning-triple2" data-toggle="collapse">Klik hier voor nog een hint over
+                                    <code>winnend drietal</code>. </a>
+                            </p>
+
                             <div id="hint-winning-triple2" class="collapse">
-                                The player must appear twice in the triple, but the opponent must not appear at all.
+                                De speler zelf moet twee keer in het drietal staan en de tegenstander mag er niet in
+                                voorkomen.
                             </div>
                         </div>
                     </div>
                 </li>
-                <li>Play part of a game, and then test <code>winning triple</code> for both inputs (X and O). Play a
-                    little more, and then test them both again. Fix any bugs.</li>
-                <li>What does <code>winning triple</code> report if there is no winning triple?</li>
-                <li>Now write the code inside the <img
-                        src="/March2019/bjc-r/img/5-algorithms/winning-square-for-player.png" alt="Geen Afbeelding">
-                    block. Make sure it works even if there is no winning square. </li>
+                <li> Speel weer een potje voor een stukje test daarna <code>winnend drietal</code> voor alle mogelijke
+                    invoeren (X en O). Speel verder en test ze opnieuw. Fix bugs als je ze tegenkomt.
+                </li>
+                <li> Wat rapporteert <code>winnend drietal</code> als er geen winnend drietal is?
+                </li>
+                <li> Bouw nu de code voor het <img src="../../afb/h5/o1/p4-b2.png" height="35"
+                        alt="Geen Afbeelding">blok. Zorg dat het ook werkt als er geen winnend drietal is.
+                </li>
                 <div class="endnote">
-                    <a href="#hint-winning-square" data-toggle="collapse">Click for a hint about
-                        <code>winning square</code>.</a>
+                    <a href="#hint-winning-square" data-toggle="collapse">
+                        Klik hier voor een hint over <code>winnend drietal</code>.</a>
                     <div id="hint-winning-square" class="collapse">
-                        <img class="indent" src="/March2019/bjc-r/img/blocks/is-a-number.png" alt="Geen Afbeelding" />
-                        <img class="indent" src="/March2019/bjc-r/img/blocks/is-a-list.png" alt="Geen Afbeelding" />
+                        <img class="indent" height="45" src="../../afb/h5/o1/p4-b13.png" alt="Geen Afbeelding" />
+                        <img class="indent" height="45" src="../../afb/h5/o1/p4-b14.png" alt="Geen Afbeelding" />
                     </div>
                 </div>
 
-                <li> Play part of a game, test <code>winning square</code> for both players, and fix any bugs.</li>
-                <li> Implement <img class="inline" src="/March2019/bjc-r/img/5-algorithms/can-player-win-now.png"
-                        alt="Geen Afbeelding" /> using your <code>winning
-                        square</code> block.</li>
+                <li> Speel een potje voor een stukje, test <code>winnend drietal</code> voor beide spelers en fix bugs
+                    als die er zijn.
+                </li>
+                <li> Implementeer <img height="35" class="inline" src="../../afb/h5/o1/p4-b3.png"
+                        alt=" Geen Afbeelding" /> met behulp van je <code>winnend drietal</code>blok.
+                </li>
 
-                <li>Play several games against the program. Fix any bugs. Make sure computer is using three rules.</li>
+                <li> Speel een aantal potjes tegen het programma. Fix alle bugs die je tegenkomt. Controleer of de
+                    computer alle drie de regels van de strategie gebruikt. </li>
             </ol>
         </div>
 
         <div class="ifTime">
             <ol start="15">
-                <li>Modify the program so that the computer can play either X or O. When the game starts, ask the human
-                    player to choose X or O.</li>
-                <li>Create a way for the player to decide whether they want to play against another human or against the
-                    computer.</li>
+                <li> Pas het programma aan zodat de computer zowel als X als O kan spelen. Als het spel begint moet je
+                    de menselijke speler vragen of hij X of O wil zijn.
+                </li>
+                <li> Verzin een manier zodat je kan kiezen of je tegen een ander persoon of tegen de computer wil
+                    spelen.
+                </li>
             </ol>
         </div>
 
         <div class="takeItFurther">
             <ol type="A">
-                <li>Play against the computer, and find a strategy that lets you win the game. (This isn't trivial; just
-                    the computer rules you already have are pretty good.)</li>
-                <li>
-                    Program more rules to make the computer a better player. This will involve looking more than one
-                    move ahead. There are various ways to do it, and what follows is just one suggestion.
+                <li> Speel tegen de computer en zoek een strategie waarmee je zelf altijd van de computer wint. (Dit is
+                    zo makkelijk als je misschien denkt; de strategie van de computer is best goed.)
+                </li>
+                <li> Maak nog meer regels om de computer een beter speler te maken. Hiervoor moet hij meerdere beurten
+                    vooruit kijken. Hier zijn meerdere manieren voor, hieronder staat een manier uitgelegd.
                     <ol type="a">
                         <li>
-                            It's not good enough just to look for a winning move for yourself two moves from now. If you
-                            can see such a move, so can your opponent, who'll move to block you. So what you have to
-                            find is a <em>fork: </em>two triples in which you have one appearance and your opponent has
-                            none, and which have a free square in common. This is much easier to see with a
-                            picture:
+                            Je bent nog niet verzekerd van de overwinnign als je een winnende zet voor jezelf kan vinden
+                            2 beurten van te voren. Als jij hem kan zien, dan kan je tegenstander dat ook en die gaat je
+                            blokkeren. Je moet eigenlijk op zoek naar een <em>tweesprong:</em>: twee drietallen die een
+                            vrij vakje delenen waar
+                            jij één keer in voorkomt en je tegenstander niet. Zo'n tweesprong kan je zien in de
+                            afbeelding hieronder:
+
                             <br />
-                            <img class="indent" src="/March2019/bjc-r/img/hof/fork.png" alt="Geen Afbeelding" />
+                            <img class="indent" src="../../afb/h5/o1/p4-o1.png" alt="Geen Afbeelding" />
                             <br />
                             <div class="endnote">
-                                Player X opened the game with the standard opening move, in the center. Player O
-                                responded poorly, on the top edge, and is therefore about to lose the game. Player X
-                                played in the top left corner. Player O had to respond in the bottom right corner in
-                                order to block an immediate win for player X. It's player X's turn. There is no winning
-                                combination with two Xs, nor with two Os. But player X can find <em>two</em> winning
-                                combinations, the ones marked with the red lines, both of which have one X and two free
-                                squares, <em>with one of the free squares in common</em>. In the picture, the common
-                                square is 4, the left edge square, and so that's where Player X should move.
+                                Speler X begon het potje met een standaard openingszet: in het midden. Speler O
+                                reageerde
+                                met een matige zet, op de bovenste rij, en staat daardoor op het punt te verliezen.
+                                Speler X deed daarna een zet in de linkerbovenhoek. Speler O deed daarop een zet in de
+                                rechteronderhoek. zodat X niet meteen zou winnen. Het is nu X' beurt. Er is geen drietal
+                                met twee X'en of twee O's. Speler X kan wel <em>twee</em> drietallen vinden waarmee nog
+                                te winnen valt, deze zijn gemarkeerd door de rode lijn in de afbeelding hierboven. Beide
+                                drietallen hebben één X en twee lege vierkanten, daarnaast overlappen de drietallen bij
+                                een leeg vierkant. Het overlappende vierkant is nummer 4, het linker vierkant in de
+                                middelste rij, dit is dus waar Speler X zijn volgende zet moet doen.
                             </div>
                         </li>
-                        <li>Find all the triples (that is, report a <em>list of triples</em>) in which the computer has
-                            one square and the other two are empty, and store then in a variable called
-                            <var>singles</var>.
+                        <li>
+                            Vind alle drietallen (rapporteer dus een <em>lijst van drietallen</em>) waarbij de computer
+                            één vierkant heeft en de andere twee leeg zijn, sla deze op in een variabele genaamd
+                            <var>enkelen</var>.
                         </li>
                         <li>
-                            Make one big list of all the letters and numbers from the triples:<br />
-                            <img class="indent" src="/March2019/bjc-r/img/hof/ttt-flatten.png"
-                                alt="Geen Afbeelding" /><br />
-                            You don't have the <code>append</code> block in your palette, but it's in one of the
-                            Snap<em>!</em> libraries. Click on the file menu icon, and choose "Libraries...", then
-                            choose
-                            "List utilities" from the menu that appears.
+                            Maak een grote lijst van alle letters en getallen van de drietallen:
+                            <br>
+                            <img class="indent" src="../../afb/h5/o1/p4-b15.png" alt="Geen Afbeelding" />
+                            <br />
+
                         </li>
-                        <div class="endnote">"Atom" is a technical term for a value that isn't a list. A list contains a
-                            bunch of items, just as a molecule contains a bunch of atoms.</div>
-                        <li>Now find a number that appears more than once in <code>atoms</code>.</li>
+                        <div class="endnote">"Atoom" is een technische term voor een waarde die geen lijst is. Een lijst
+                            bevat een aantal elementen, net zoals dat een molecuul een aantal atomen bevat.
+                        </div>
+                        <li> Zoek nu naar een getal dat meerder ekeren voorkomt in<code>atomen</code>.</li>
                         <div class="endnote">
-                            You wrote a <code>duplicates in</code> block in
-                            <a href="H5L1P3.html"> Unit 5 Lab 1 Page 3: List Processing
-                                Algorithms</a>.
+                            Je hebt al een <code>dubbelen</code>-blok geschreven in
+                            <a href="H5L1P3.html"> Hoofdstuk 5 Les 1 Pagina 3: Algoritmes om lijsten te verwerken</a>.
                         </div>
 
                     </ol>
