@@ -81,8 +81,7 @@
 Groep:
 <https://hypothes.is/groups/bVkQ57Vy/infvo-bjoc>
 
-Gebruikersnaam: BJOCNL
-Wachtwoord: Beauty$ndJoy
+Gebruikersnaam en ww op te vragen bij Ramon (@moorlag)
 
 De code ```<script src="https://hypothes.is/embed.js" async></script>``` staat boven aan de index.
 
