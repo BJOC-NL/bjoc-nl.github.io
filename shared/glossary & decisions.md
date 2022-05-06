@@ -20,9 +20,11 @@ page - pagina
 
 Internet - internet
 
-course - lessen (Throught the course - Tijdens de lessen)
+course - lessen (Throughout the course - Tijdens de lessen)
 
-Input - invoer
+input - invoer
+
+input field - invoervak
 
 Alfred/Alphred - Alex
 
@@ -46,7 +48,13 @@ section - paragraaf
 
 paragraph - alinea
 
+return - teruggeven
+
+stage - speelveld
+
 ## Snap *!*
+
+costume - uiterlijk
 
 to snap - plakken
 
@@ -60,7 +68,7 @@ hat blocks - hoedblokken
 
 reporter - resultaatblok
 
-command(block) - opdracht(blok)
+command(block) - commandoblok
 
 C-shapedblock - hapblok
 
@@ -72,7 +80,7 @@ stage - speelveld
 
 project file - bestand (Snap heeft niet echt het concept van meerdere bestanden in een project)
 
-report - rapporteer
+report - rapporteren
 
 broadcast - zend signaal
 
@@ -97,8 +105,6 @@ dataset
 URL
 
 app
-
-Content met ```<div class="todo"></div>``` wordt niet op webpagina getoond, is in feite commentaar van ontwikkelaars/gebruikers en hoeft niet vertaald
 
 account
 
