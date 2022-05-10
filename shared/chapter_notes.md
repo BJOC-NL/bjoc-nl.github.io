@@ -1,10 +1,20 @@
 ﻿# Opmerkingen
 
+h1l3p5 importeer tools onnodig.
+
+afbeelding met veel tekst h1l5p2 moet onderste 200 -200 zijn
+
+h1l3p7 polygon -> veelhoek
+
+hoofdletters weg bij Praat Met Partner etc.
+
 van amerikaanse teacher guide de tijd per les opschrijven. kan parsen.
 
 antwoorden project opslaan
 
 toetsing in teachers guide
+
+toetsen en antwoorden verplaatsen naar Forum
 
 glossary fixen
 
