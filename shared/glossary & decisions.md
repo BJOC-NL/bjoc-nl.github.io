@@ -40,7 +40,7 @@ loop - lus
 
 condition - voorwaarde
 
-partner - buur
+partner - partner
 
 Self-Check - Test jezelf
 
