@@ -1,5 +1,15 @@
 ﻿# Opmerkingen
 
+van amerikaanse teacher guide de tijd per les opschrijven. kan parsen.
+
+antwoorden project opslaan
+
+toetsing in teachers guide
+
+glossary fixen
+
+snap knop op hoofdpagina
+
 Sommige links naar websites zijn vertaald sommige niet, wat te doen? ben zelf tegen omdat het dan een nederlandse pagina lijkt.
 
 "Les" is heel verwarrend, pagina's dringen bij leerlingen ook niet echt door miss in de inhoudsopgavezetten.
