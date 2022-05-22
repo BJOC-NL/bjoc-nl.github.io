@@ -8,17 +8,7 @@ h1l3p7 polygon -> veelhoek
 
 hoofdletters weg bij Praat Met Partner etc.
 
-van amerikaanse teacher guide de tijd per les opschrijven. kan parsen.
-
-antwoorden project opslaan
-
-toetsing in teachers guide
-
 toetsen en antwoorden verplaatsen naar Forum
-
-glossary fixen
-
-snap knop op hoofdpagina
 
 Sommige links naar websites zijn vertaald sommige niet, wat te doen? ben zelf tegen omdat het dan een nederlandse pagina lijkt.
 
