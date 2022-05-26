@@ -2,91 +2,93 @@
 
 ## Algemene termen
 
+Alfred/Alphred - Alex
+
+Bertha - Bo
+
+background/stage - speelveld
+
+box - sectie
+
 computer science - informatica
 
-predicate - predikaat
+condition - voorwaarde
 
-sites - websites
+course - lessen (Throughout the course - Tijdens de lessen)
 
 dataset - dataset
 
-lab - les
-
-unit - hoofdstuk
-
-screenshot - screenshot
-
-page - pagina
-
-Internet - internet
-
-course - lessen (Throughout the course - Tijdens de lessen)
+Gamal - Yasmine
 
 input - invoer
 
 input field - invoervak
 
-Alfred/Alphred - Alex
+Internet - internet
 
-Bertha - Bo
-
-Gamal - Yasmine
-
-slot - veld
-
-(stage) background - speelveld
+lab - les
 
 loop - lus
 
-condition - voorwaarde
-
-partner - buur
-
-Self-Check - Test jezelf
-
-section - paragraaf
+page - pagina
 
 paragraph - alinea
 
+partner - buur
+
+predicate - predikaat
+
 return - teruggeven
 
-stage - speelveld
+screenshot - screenshot
+
+section - paragraaf
+
+Self-Check - Test jezelf
+
+sites - websites
+
+slot - veld
+
+stage/background - speelveld
+
+unit - hoofdstuk
 
 ## Snap *!*
 
-costume - uiterlijk
+? -  staartblokken
 
-to snap - plakken
-
-palette - palet
-
-sprite - sprite (niet te vertalen)
-
-hat blocks - hoedblokken
-
-- staartblokken
-
-reporter - resultaatblok
-
-command(block) - commandoblok
+broadcast - zend
 
 C-shapedblock - hapblok
 
+command(block) - commandoblok
+
+costume - uiterlijk
+
+hat blocks - hoedblokken
+
 hat blocks - kopblokken
 
-scripting area - werkblad
+initialize - initialiseren
 
-stage - speelveld
+list - lijst
+
+palette - palet
 
 project file - bestand (Snap heeft niet echt het concept van meerdere bestanden in een project)
 
 report - rapporteren
 
-broadcast - zend signaal
+reporter - resultaatblok
 
-list - lijst
+scripting area - werkblad
 
-initialize - initialiseren
+(to) snap - plakken
+
+sprite - sprite (niet te vertalen)
+
+stage - speelveld
 
 ## Voorbeelden
 
