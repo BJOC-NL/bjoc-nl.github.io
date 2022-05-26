@@ -38,6 +38,8 @@ partner - buur
 
 predicate - predikaat
 
+report - rapporteren
+
 return - teruggeven
 
 screenshot - screenshot
