@@ -189,3 +189,9 @@ Namen zijn beetje ouderwets, Adam, Eva, Dominiek.
 #### Pagina 2
 
 dvd branden is niet echt van deze tijd, staat bij kopje video's. misschien gewoon iets dat je ze op internet zete?
+
+#### Pagina 3
+
+"Microsoft Word heeft bijvoorbeeld een programmeertaal ingebouwd die "Word-macro's" wordt genoemd", die taal heet eigenlijk VBA volgens mij, Visual Basic for Applications. dus dit klopt niet, je schrijft er macro's mee, maar die term kennen leerlingen natuurlijk niet.
+
+rare zin:  programmeurs van 3D-videogames hebben nog steeds alle snelheid nodig die ze kunnen krijgen omdat hun programma's de snelheid van moderne computers belasten.
