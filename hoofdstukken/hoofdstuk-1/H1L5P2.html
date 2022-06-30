@@ -20,55 +20,54 @@
     <div class="full">
         <h2>Sprite die een sprite volgt</h2>
         <div class="learn">
-            <p><strong>Op deze pagina,</strong> ga je het script aanpassen zodat de sprites niet voor altijd blijven
-                bewegen, maar alleen <code> herhalen tot</code> ze elkaar aanraken. </p>
+            <p><strong>Op deze pagina</strong> ga je het script van de tweede sprite zo aanpassen dat de sprites niet permanent blijven
+                bewegen, maar de bewegingen zich alleen <code> herhalen tot</code> de sprites elkaar raken. </p>
         </div>
         <div class="forYouToDo" id="first">
             <ol>
-                <li> Pas de code van Sprite(2) aan zodat hij naar Sprite wijst totdat hij Sprite aanraakt. (De
-                    instructies en animatie hieronder laten zien hoe.)
+                <li> Pas de code van Sprite(2) aan zodat hij naar Sprite wijst totdat hij Sprite aanraakt. De
+                    instructies en animatie hieronder laten zien hoe.
                     <ol>
                         <li>Selecteer Sprite(2) door op zijn knop te klikken onder het speelveld.</li>
-                        <li>Vervang het <code>herhaal</code> blok met een <code>herhaal tot </code> blok.</li>
-                        <li> Sleep <img height="35" src="../../afb/h1/l5/blocks/H1L5P2-b1.png" alt="Geen Afbeelding">
-                            in de zeshoekige ruimte in het <code>herhaal tot</code> blok. Stel het blok in zodat het
-                            blijft herhalen totdat het <var>Sprite</var> <code> aanraakt</code>.
+                        <li>Vervang het <code>herhaal</code>blok door een <code>herhaal_tot</code>blok.</li>
+                        <li> Ga naar het Waarnemen-palet en sleep <img height="35" src="../../afb/h1/l5/blocks/H1L5P2-b1.png" alt="Geen Afbeelding">  
+                            in de zeshoekige ruimte van het <code>herhaal_tot</code>blok. <br/>
+                            Stel het blok in om de beweging te herhalen, totdat de eerste Sprite geraakt wordt.<br/>
                             <br />
                             <img data-gifffer="../../afb/h1/l5/videos/H1L5P2-v1.gif" alt="Geen Afbeelding" />
                         </li>
                     </ol>
+                </li><br/>
+                <li> Doe hetzelfde voor de eerste Sprite. Vervang de code zodat hij alleen je muis volgt totdat hij Sprite(2) raakt.
                 </li>
-                <li> Doe hetzelfde voor Sprite. Vervang de code zodat hij alleen je muis volgt totdat hij <var>
-                        Sprite(2)</var> <code> aanraakt</code>.
-                </li>
-                <li> Test je programma om te kijken of het doet wat je wil:
+                <li> Test je programma om te kijken of het doet wat je wilt:
                     <ul>
-                        <li>Als je klikt op <img src="../../afb/icons/green-flag_button.png" style="height:1.6em;"
-                                alt="Geen Afbeelding" />, zou Sprite (de grijze) je muis moeten volgen en Sprite(2)
+                        <li>Als je klikt op de groene vlag, zou de eerste Sprite je muis moeten volgen en Sprite(2)
                             zou naar Sprite moeten wijzen.
                         </li>
-                        <li>Als je Sprite voldoende dichtbij Sprite(2) zet, zouden beide Sprites moeten stoppen met
+                        <li>Als je Sprite voldoende dichtbij Sprite(2) brengt, zouden beide sprites moeten stoppen met
                             bewegen.
                         </li>
                     </ul>
                 </li>
-                <li> Tot zover <em> wijst</em> Sprite(2) naar Sprite, maar hij <em> beweegt </em> niet naar Sprite toe.
-                    Voeg een regel code toe aan het script van Sprite(2) zodat hij Sprite achtervolgt. Dit is het idee:
-                    <br />
+                <li> Tot nu toe wijst Sprite(2) naar Sprite, maar hij <em>beweegt</em> niet naar Sprite <em>toe</em>.<br/>
+                    Voeg een regel code toe aan het script van Sprite(2) zodat hij Sprite achtervolgt.  <br/>
+                    Dit is het idee:
+                    <br/> <br/>
                     <img width="300" class="indent" src="../../afb/h1/l5/overig/H1L5P2-o1.png" alt="Geen Afbeelding">
 
-                    <div class="sidenote">
-                        Vul het invoerveld in het <code> neem _ stappen</code> blok met een laag getal
-                        (waarschijnlijk minder dan 1) zodat Sprite(2) niet te snel bij Sprite is.
+                    <div class="sidenoteBig">
+                        Vul een laag getal in bij het invoerveld van het <code> neem .. stappen</code> blok
+                        (waarschijnlijk minder dan 1), zodat Sprite(2) niet te snel bij Sprite is.
                     </div>
 
-                </li>
+                </li> <br/>
                 <li>Test je programma een paar keer. </li>
-                <img class="inline" src="../../afb/icons/DraaiDeRollenOm.png" alt="Geen Afbeelding" />
+                <img class="inline" src="../../afb/icons/DraaiDeRollenOm-mini.png" alt="Geen Afbeelding" />
                 <li>
-                    <p> Op dit moment, als de sprites elkaar tegenkomen, stoppen ze alleen maar. Zorg dat ze een praatje
-                        maken wanneer ze stoppen. Dit kan je doen door code toe te voegen aan het script van Sprite(2).
-                        Bedenk zelf wat ze moeten zeggen.
+                    <p> Als de sprites elkaar tegenkomen, stoppen ze op dit moment alleen maar. Laat ze nu ook een praatje
+                        maken als ze stoppen. Je kan dit doen door code toe te voegen aan het script van Sprite(2).
+                        Bedenk zelf wat ze moeten zeggen.<br/><br/>
                     </p>
 
                     <div class="sidenoteBig"> Sprite(2) doet dingen zelf. Hij vertelt ook aan Sprite wanneer hij wat
@@ -77,23 +76,21 @@
 
                     <img width="400" class="inline" src="../../afb/h1/l5/blocks/H1L5P2-b2.png" alt="Geen Afbeelding" />
                 </li>
-            </ol>
-            <div class="endnote"> Om te voorkomen dat de twee sprites vast zitten tegen elkaar, zonder kans om te
-                bewegen, hebben de sprites wat ruimte tussen elkaar en wat tijd los van elkaar nodig voordat de
-                achtervolging
-                begint. Blokken zoals deze kunnen hierbij van pas komen.
-                <br />
+            </ol><br/>
+            <div class="endnote"> Om te voorkomen dat de twee sprites aan elkaar vast komen te zitten en niet meer kunnen bewegen, hebben de sprites wat ruimte tussen elkaar nodig en wat extra tijd voordat de achtervolging begint. Blokken zoals deze helpen daarbij. <br/>
+                <br/>
                 <img class="indent" src="../../afb/h1/l5/overig/H1L5P2-o2.png" height="70" alt="Geen Afbeelding" />
             </div>
-            <img class="imageRight" src="../../afb/icons/HetIsNuEenGoedMoment.png" alt="Geen Afbeelding" />
+            
         </div>
+        <img class="inline" src="../../afb/icons/save-mini.png" alt="Geen Afbeelding" /> Het is nu een goed moment om je werk op te slaan.
         <div class="ifTime">
             <ol start="7">
                 <li> Geef de sprites een ander uiterlijk. <div class="endnote">Je kan een plaatje van het internet
-                        gebruiken door het plaatje in het Uiterlijken-menu te slepen van de Sprite.</div>
+                        gebruiken door het plaatje in het Uiterlijken-menu te slepen van de Sprite. Zorg wel voor een .png plaatje zonder achtergrondkleur.</div>
                 </li>
-                <li> Verander de achtergrond van het speelveld.
-                    <br />
+                <li> Verander ook de achtergrond van het speelveld.
+                    <br /><br/>
                     <img class="indent" data-gifffer="../../afb/h1/l5/videos/H1L5P2-v2.gif" height="400"
                         alt="Geen Afbeelding" />
                 </li>
