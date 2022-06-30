@@ -18,37 +18,37 @@
 
 <body>
     <h2> Hints om je eigen klok te bouwen</h2>
-
-    <p> Op de klok staat er om de 6&deg; een streepje. Dit is zo omdat er 360&deg; in een cirkel zitten en 60 seconden
+    <div class="endnote">
+    <p> Op een klok staat om de 6&deg; een streepje. Dit is zo omdat er 360&deg; in een cirkel zitten en 60 seconden
         in een minuut, dus 360&deg; / 60 = 6&deg;.
     </p>
+</div>
+<div class="forYouToDo" id="first">
+    <ol>
+        <li>
+            Schrijf nu de code voor de secondewijzer. Zet eerst deze sprite in het midden van het scherm en zorg er voor dat
+        hij bovenaan staat, met daaronder de minutenwijzer en uurwijzer. Laat de wijzer nu in de goeie richting wijzing,
+        gebaseerd op de <code>huidige_<em>seconde</em></code>; 6&deg; voor iedere seconde.
+        </li>
+        <img class="indent" src="../../afb/h1/o1/p2hint-b1.png" width="420" alt="Geen Afbeelding" /><br /><br />
 
-    <p>
-        Schrijf nu de code voor de secondewijzer. Zet eerst de sprite in het midden van het scherm en zorg er voor dat
-        hij vooraan staat, boven de minutenwijzer en uurwijzer. Laat de wijzer nu in de goeie richting wijzing,
-        gebaseerd op de <code>huidige seconde</code>: 6&deg; voor iedere seconde.
-        <br />
-        <img class="indent" src="../../afb/h1/o1/p2hint-b1.png" width="420" alt="Geen Afbeelding" />
-    </p>
-
-    <p>
-        Het is waarschijnlijk handig om te onthouden dat in Snap<em>!</em> positieve hoeken met de klok mee berekend
+        <li>
+        Het is handig om te onthouden dat in Snap! positieve hoeken <em>met de klok mee</em> berekend
         worden vanaf 0&deg;, omhoog:
         <br />
         <img class="indent noshadow" src="../../afb/h1/o1/p2hint-o1.png" width="303" alt="Geen Afbeelding" />
-    </p>
-
-    <p> In de code voor de secondewijzer moet je ook zorgen dat het "tik"-geluid van de klok afgespeeld wordt. Het
-        <code>wacht 1 seconde</code>-blok zorgt ervoor dat er een pauze is nadat het geluid afgespeeld wordt en dat het
-        geluid maar één keer per seconde afgespeeld wordt.
-    </p>
-    <div class="forYouToDo" id="first">
-        <ol>
-            <li> Schrijf nu de code voor de minutenwijzer en de uurwijzer zelf. De code zal heel erg lijken op die van
-                de secondewijzer. Vergeet niet dat alleen de secondewijzer geluid maakt.
-            </li>
-        </ol>
-    </div>
+        /li><br />
+    
+        <li> In de code voor de secondewijzer moet je ook zorgen dat het tikgeluid van de klok afgespeeld wordt. Het
+        <code>wacht_1_sec.</code>blok zorgt ervoor dat er een pauze valt na het afspelen van het geluid en dat het
+        geluid maar één keer per seconde klinkt.
+        </li><br />
+        
+        <li> Schrijf nu zelf de code voor de minutenwijzer en de uurwijzer. De code zal heel erg lijken op die van de 
+            secondewijzer. Vergeet niet dat alleen de secondewijzer geluid maakt.
+        </li>
+     </ol>
+</div>
 
 
 </body>
