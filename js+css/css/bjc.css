@@ -447,7 +447,7 @@ img.noshadow {
 }
 
 .learn {
-    background-color: #fcc7c2;
+    background-color: #ebf5fb;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -485,7 +485,7 @@ table.truth tr td {
 
 .takeNote,
 endHOM {
-    background-color: #fcc589;
+    background-color: #fddab4;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -529,7 +529,7 @@ endHOM {
 
 .vocabFullWidth {
     background-color: #D3D3D3;
-    width: 100%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
