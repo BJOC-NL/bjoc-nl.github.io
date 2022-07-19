@@ -473,7 +473,7 @@ table.truth tr td {
 }
 
 .takeItFurther {
-    background-color: #e4cde3;
+    background-color: #b4d4ec;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -508,7 +508,7 @@ endHOM {
 
 .vocab,
 .vocabBig {
-    background-color: #D3D3D3;
+    background-color: #e5e3e3;
     font-size: .9em;
     float: right;
     margin-right: 20px;
@@ -528,7 +528,7 @@ endHOM {
 }
 
 .vocabFullWidth {
-    background-color: #D3D3D3;
+    background-color: #e9e7e7;
     width: 95%;
     margin-left: auto;
     margin-right: auto;
