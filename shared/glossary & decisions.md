@@ -34,7 +34,7 @@ page - pagina
 
 paragraph - alinea
 
-partner - buur
+partner - partner
 
 predicate - predikaat
 

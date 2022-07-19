@@ -22,33 +22,35 @@
         <div class="learn"><strong>Op deze pagina</strong>, ga je nadenken over waarom er verschillende programmeertalen
             zijn en kijken naar de manieren waarop de talen verschillen.
         </div>
+
         <p> JavaScript, Python, Snap<em>!</em>, C++, Java, Scheme, Prolog... Waarom zijn er zoveel programmeertalen?
             Waarom kiezen we niet gewoon de beste, of ontwerpen we een nieuwe, en houden we ons daar aan?
         </p>
-        <p> Sommige talen hebben zeer beperkte doelen; deze worden <em> special-purpose (speciaal-doel) </em> talen
-            genoemd.
-            Microsoft Word heeft bijvoorbeeld een programmeertaal ingebouwd die "Word-macro's" wordt genoemd en die
-            alleen is bedoeld voor het genereren van gegevens en opmaak in een document. Net zo is HTML (Hypertext
-            Markup Language) alleen voor het structureren van webpagina's. </p>
-        <p> <em> General-purpose (Algemeen-doel) </em> talen hebben geen specifiek doel voor ogen. In zekere zin zijn
+        <p> Sommige talen hebben zeer beperkte doelen; deze worden <em> Special-Purpose (Speciaal-Doel) </em> talen
+            genoemd. Microsoft Word heeft bijvoorbeeld een programmeertaal ingebouwd die "Word-macro's" wordt genoemd en
+            die alleen is bedoeld voor het genereren van gegevens en opmaak in een document. HTML (Hypertext
+            Markup Language) is op dezelfde manier alleen bedoeld voor het structureren van webpagina's.
+        </p>
+        <p> <em> General-Purpose (Algemeen-Doel) </em> talen hebben geen specifiek doel voor ogen. In zekere zin zijn
             deze talen allemaal hetzelfde: als een programma in één van deze talen kan worden uitgedrukt, kan het in
-            alle talen worden uitgedrukt. Verschillende basisfuncties zijn opgenomen in bijna alle talen, waaronder
-            rekenkundige functies (<code> + </code>, <code> - </code>, <code> * </code>, <code> ÷ </code>) en
+            alle andere talen ook worden uitgedrukt. Verschillende basisfuncties zijn opgenomen in bijna al deze talen,
+            waaronder rekenkundige functies (<code> + </code>, <code> - </code>, <code> × </code>, <code> ÷ </code>) en
             Boolean-functies (<code> en </code>, <code> of </code>, <code> niet </code>). De verschillen tussen zulke
             talen gaan meestal over <em>abstractieniveaus. </em>
         </p>
 
         <h3>Talen op hoog en laag niveau</h3>
         <img class="imageRight noshadow" src="../../afb/h6/l1/p3-o1.png" width="400" alt="Geen Afbeelding" />
-        <p>Een <em>taal op hoog niveau</em>(zoals Snap <em>! </em> of Schema) bevat veel ingebouwde abstracties waarmee
+        <p> Een <em>taal op hoog niveau</em>(zoals Snap <em>! </em> of Schema) bevat veel ingebouwde abstracties waarmee
             je je gemakkelijker kunt concentreren op het probleem dat je wilt oplossen in plaats van op hoe
             de computer werkt. Een <em> taal op laag niveau </em> (zoals C) heeft minder abstracties, waardoor je
             veel moet weten over de architectuur van je computer om een programma te schrijven.
         </p>
 
         <h4> <strong> Waarom gebruiken programmeurs talen op hoog niveau? </strong> </h4>
-        <p> Talen op hoog niveau kunnen <em> veiligere </em> programma's produceren - die minder snel bugs
-            hebben - omdat de abstracties rommelige details wegwerken waarover programmeurs kunnen struikelen.
+        <p> Talen op hoog niveau kunnen <em> veiligere </em> programma's produceren. Veilig in de zin dat de programma's
+            minder snel bugs bevatten, omdat de abstracties rommelige details wegwerken waarover programmeurs kunnen
+            struikelen.
         </p>
         <div class="endnote">
             <p> Talen op hoog niveau verminderen bugs in geheugengebruik. Oudere talen op laag niveau vereisten dat de
@@ -66,7 +68,7 @@
 
         <p> Talen op hoog niveau kunnen programmeren ook gemakkelijker maken omdat ze meer abstracties bevatten. Een
             voorbeeld hiervan is een <em>functie van hogere orde</em> (zoals <code>map</code>, <code>keep</code>,
-            <code>combine</code> en <code>for each</code>) die de programmeur kortere en opgeruimdere code laten
+            <code>combine</code> of <code>for each</code>) die de programmeur kortere en opgeruimdere code laten
             schrijven.
         </p>
         <div class="forYouToDo" id="first">
@@ -138,13 +140,17 @@
                 </li>
             </ol>
         </div>
-        <p> In C kan je dit op de lange manier doen: <br />
-            <img height="200" class="indent" src="../../afb/h6/l1/p3-b1.png" alt="Geen Afbeelding" /><br />
-            maar met C kun je geen uitdrukking nemen (zoals
+        <p> Dee code uit de vraag hierboven op de uitgebreide manier kunnen uitwerken in C:
+            <br />
+            <img height="200" class="indent" src="../../afb/h6/l1/p3-b1.png" alt="Geen Afbeelding" />
+            <br />
+            maar met C kun je geen uitdrukking zoals
             <img height="40" class="inline" src="../../afb/h6/l1/p3-b8.png" alt="Geen Afbeelding" /> of
             <img height="40" class="inline" src="../../afb/h6/l1/p3-b9.png" alt="Geen Afbeelding" />)
-            en het in een functie van hogere orde zoals <code> map </code> plakken: <br />
-            <img height="50" class="indent" src="../../afb/h6/l1/p3-b4.png" alt="Geen Afbeelding" /> </p>
+            in een functie van hogere orde zoals <code> map </code> plakken:
+            <br />
+            <img height="50" class="indent" src="../../afb/h6/l1/p3-b4.png" alt="Geen Afbeelding" />
+        </p>
 
 
         <h4><strong>Waarom gebruiken programmeurs talen op laag niveau?</strong></h4>
@@ -161,35 +167,37 @@
                     in één stap kan toevoegen. Vier miljard - ongeveer tien cijfers - is een algemene limiet voor gehele
                     getallen. Programmeurs die Java, JavaScript, Python, C of C ++ gebruiken, denken misschien dat deze
                     limiet onvermijdelijk is. Maar programmeurs die talen op een echt hoog niveau gebruiken, zoals
-                    Scheme of Common Lisp, weten dat ze kunnen rekenen op getallen met miljoenen of miljarden cijfers,
-                    alleen beperkt door de grootte van het geheugen van de computer. Zoals je later zult zien, heeft
+                    Scheme of Common Lisp, weten dat ze kunnen rekenen met getallen met miljoenen of miljarden cijfers,
+                    beperkt alleen door de grootte van het geheugen van de computer. Zoals je later zult zien, heeft
                     Snap<em>!</em> een bibliotheek waarmee dit ook mogelijk is.
                 </p>
                 <p> Mensen zeggen vaak dat verschillende programmeertalen goed zijn voor verschillende soorten
                     programma's, maar behalve voor 3D-videoverwerking (volgende paragraaf) is het moeilijk voor te
-                    stellen een toepassing die moeilijker zou zijn met zaken als garbage-collection (afvalinzameling) of
+                    stellen dat eer een een toepassing is die geen voordeel zou hebben met zaken als garbage-collection
+                    (afvalinzameling) of
                     functies van een hogere orde. Er zijn slechts enkele gevallen waarin mensen opzettelijk talen
                     ontwerpen met functies
                     die voor sommige toepassingen misschien niet gewenst zijn. Hier is een voorbeeld: in Snap<em>!</em>,
-                    wordt een tekstreeks van alleen cijfers als een getal beschouwd; je kunt ermee rekenen. In een taal
-                    voor leerlingen maakt expliciete conversie tussen datatypes het alleen maar moeilijker om te
-                    beginnen met programmeren. Maar de meeste talen die niet bedoeld zijn voor beginners, houden de twee
-                    gegevenstypen gescheiden.
+                    wordt een tekstreeks van alleen cijfers als een getal beschouwd'; je kunt ermee rekenen. In een taal
+                    bedoeld om te leren programmeren zoals Snap<em>!</em>, zou het alleen maar ingewikkeld zijn als als
+                    gebruik gemaakt zou moeten worden van type-conversie. Maar de meeste talen die niet bedoeld zijn
+                    voor beginners, houden de twee gegevenstypen duidelijker gescheiden.
                 </p>
                 <p> <em> Programmeurs denken misschien dat abstractie te langzaam is. </em> Dit was vroeger waar, en
-                    programmeurs van 3-D Videogames hebben nog steeds alle snelheid nodig die ze kunnen krijgen omdat
+                    programmeurs van 3D-videogames hebben nog steeds alle snelheid nodig die ze kunnen krijgen omdat
                     hun programma's de snelheid van moderne computers belasten. Daarom schrijven ze vaak een deel van
-                    hun programma's, het deel dat afbeeldingen op het scherm zet, in machinetaal, puur voor de
-                    snelheid.
+                    hun programma's in machinetaal, dit is vaak het deel dat afbeeldingen op het scherm zet. Dit doen ze
+                    puur voor de snelheid.
                     Maar de meeste programmeurs schrijven applicaties die computers helemaal niet belasten. Wanneer je
                     een e-mail of sms-bericht verzendt, is de beperkende factor hoe snel je kunt typen, niet hoe snel je
-                    computer programma's kan uitvoeren.
+                    computer het programma kan uitvoeren.
                 </p>
-                <p> <em> Legacy-code. </em> Programmeurs in de industrie moeten bijna nooit een programma vanaf het
-                    begin schrijven. Veel vaker onderhouden ze een programma dat iemand jaren geleden schreef, en die
+                <p> <em> Legacy-code. </em> Programmeurs in het bedrijfsleven hoeven bijna nooit een programma vanaf
+                    niks schrijven. Veel vaker onderhouden ze een programma dat iemand jaren geleden schreef, en die
                     persoon werkt misschien niet eens meer voor dat bedrijf. Op de lange termijn is het misschien beter
                     om het programma in een modernere taal te herschrijven, maar op de korte termijn is er geen tijd om
-                    dat te doen, zodat ze uiteindelijk de bestaande code in de bestaande programmeertaal wijzigen.
+                    dat te doen, zodat ze uiteindelijk toevoegingen aan de bestaande code in de huidige programmeertaal
+                    schrijven.
                 </p>
             </div>
         </div>
@@ -207,31 +215,32 @@
                         objectcode </em>) als resultaat. Eenmaal geproduceerd, kan het programma in machinetaal
                     zo vaak uitgevoerd worden als je wil, zonder dat het originele programma opnieuw moet worden
                     gecompileerd. Als je de broncode aanpast, moet je natuurlijk wel opnieuw het programma compileren.
-
                 </p>
+
                 <p> Een <em> interpreter </em> is een programma dat een programma op hoog of laag niveau als invoer
                     gebruikt en machinetaalinstructies uitvoert. Het vertalen gebeurt pas als de regels code nodig zijn
                     om het programma uit te voeren.
                     Het produceert dus geen los programma in machinetaal en zal de code de volgende keer als het wordt
-                    uitgevoerd opnieuw moeten herhalen.
+                    uitgevoerd opnieuw regel voor regel moeten vertalen naar machinetaal.
                 </p>
 
                 <p> <a href="#hint-compilers-better" data-toggle="collapse">Betekent dat dat compilers beter zijn?</a>
                     <div id="hint-compilers-better" class="collapse">
-                        <p> Dat <em> zou </em> zo kunnen zijn, maar het probleem is dat als je programma schrijft, je
+                        <p> Dat <em> zou </em> zo kunnen zijn, maar het probleem is dat als je je programma schrijft, je
                             vaak het programma moet testen en <em> debuggen</em>.
                             Tijdens het debuggen kan een interpreter helpen door informatie te
-                            verstrekken over de voortgang van het programma, zoals de visuele stepping-functie in Snap
-                            <em>!</em>. Daarnaast kan je met een interpreter kleine veranderingen in het programma maken
-                            zonder dat je iedere keer een compiler hoeft uit te voeren. In Snap <em>! </em> kan je
-                            bijvoorbeeld een blok naar een script slepen terwijl het blok actief is. Een compiler zou
-                            daar niet mee om kunnen gaan. </p>
+                            verstrekken over de voortgang van het programma, een voorbeeld is de de visuele
+                            stepping-functie in Snap<em>!</em>. Daarnaast kan je met een interpreter kleine
+                            veranderingen in het programma maken zonder dat je iedere keer een compiler hoeft uit te
+                            voeren. In Snap <em>! </em> kan je bijvoorbeeld een blok naar een script slepen terwijl het
+                            blok actief is. Een compiler zou daar niet mee om kunnen gaan.
+                        </p>
                         <p> Voor professionele programmeurs is de beste regeling om <em> beide </em> te hebben een
                             interpreter en een compiler voor dezelfde taal. De programmeur schrijft en debugt het
                             programma met behulp van een interpreter, en zodra ze zeker weten dat het werkt, compileren
                             ze het. Dan kan de compiler langzaam zijn gang gaan en veel moeite stoppen in het
-                            <em>optimaliseren</em> van
-                            het programma in machinetaal, zodat je het snelste mogelijke gecompileerde programma krijgt.
+                            <em>optimaliseren</em> van de machinetaalcode, zodat je het snelste mogelijke
+                            gecompileerde programma krijgt.
                         </p>
                     </div>
                 </p>
@@ -338,7 +347,7 @@
         <h3> Parallellisme </h3>
         <p> Een reden om nieuwe programmeertalen te maken is om het eenvoudiger te maken om <em> parallelle </em>
             programma's te schrijven. Dat zijn programma's die meer dan één processor tegelijkertijd kunnen gebruiken.
-            Tegenwoordig hebben computers en smartphones in 2020 <em> multicore </em> processorchips met mogelijk 2, 4
+            Tegenwoordig hebben computers en smartphones na 2020 <em> multicore </em> processorchips met wel 2, 4
             of 8 processors die allemaal tegelijkertijd code draaien. (Het aantal processors zal in de loop van de tijd
             nog verder toenemen.) Grote bedrijven zoals Google gebruiken nog meer parallellisme; ze hebben clusters van
             duizenden computers, die allemaal hetzelfde programma uitvoeren.
