@@ -1,3 +1,4 @@
 .vscode/settings.json
 timesheet*.txt
 timesheet-parser.py
+.DS_Store

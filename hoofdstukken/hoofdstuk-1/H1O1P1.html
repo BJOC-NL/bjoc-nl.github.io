@@ -21,18 +21,15 @@
         <h2> Lijntekeningen van sprites</h2>
 
         <div class="learn">
-            <p> <strong> In dit project,</strong> ga je het beroemde kinderspeelgoed <em> Etch A
-                    Sketch</em> <sup> &reg</sup> simuleren.</p>
+            <p> <strong> In dit project</strong> ga je het beroemde kinderspeelgoed <a href="https://nl.wikipedia.org/wiki/Etch_A_Sketch" target="_blank">Etch A Sketch</a> <sup> &reg</sup> simuleren.</p>
             <img class="indent" src="../../afb/h1/o1/p1-o1.png" width="320" alt="Geen Afbeelding" />
         </div>
 
         <div class="forYouToDo" id="first">
             <ol>
                 <li> Klik op het interactieve lijntekeningprogramma om ermee te spelen.
-                    Gebruik de pijltjestoetsen en de spatiebalk om te zien wat ze doen.
+                    Gebruik de pijltjestoetsen en de spatiebalk om te zien wat ze doen. <br/><br/>
                 </li>
-            </ol>
-
             <iframe style="
         width: 600px;
         height: 450px;
@@ -40,58 +37,49 @@
         margin: 0;
         padding: 0;"
                 src="https://snap.berkeley.edu/snapsource/snap.html#present:Username=bjcsolutions&amp;ProjectName=U1L2p1%20Sprite%20Line%20Art%20(answer%20file)&amp;hideControls">
-            </iframe>
-        </div>
-
-
-
-        <p>
-            Hier zijn wat blokken die misschien handig zijn voor de volgende opdrachten.
-            <br />
-            <img src="../../afb/h1/o1/p1-b1.png" width="900" alt="Geen Afbeelding" />
-        </p>
-
-        <div class="endnote">
-            Om te blokken te vinden die je nodig zal hebben, kan je kijken naar ade kleur van het blok. De groene
-            blokken
-            vind je bijvoorbeeld in het groene Pen-menu.
-            <br />
-            <img class="indent" src="../../afb/h1/o1/p1-o3.png" alt="Geen Afbeelding" />
-        </div>
-
-        <div class="forYouToDo">
-            <ol start="2">
+            </iframe><br/><br/>
+            <li>
+                Hier zijn wat blokken die handig kunnen zijn voor de opdrachten.
+                
+                <br/><br/>
+                <img src="../../afb/h1/o1/p1-b1.png" width="900" alt="Geen Afbeelding" />
+                <br/><br/>
+                <div class="endnote">
+                    Om de blokken te vinden die je nodig hebt, kijk je naar de kleur van het blok. De groene blokken vind je bijvoorbeeld 
+                    in het groene Pen-menu. <br />
+                    <img class="indent" src="../../afb/h1/o1/p1-o3.png" alt="Geen Afbeelding" />
+                </div><br/>
+            </li>
                 <li>
-                    Hier zijn een paar dingen die je kan doen aan het begin van je programma <code> wanneer groene vlag
-                        wordt aangeklikt</code> :
-
+                    Deze blokken gebruik je voor een paar handige opdrachten aan het begin van je programma (wanneer de groene vlag
+                        wordt aangeklikt):
                     <ul>
-                        <li> Verwijder alle vorige tekeningen</li>
-                        <li> Plaats de teken-sprite in het midden van het scherm</li>
-                        <li> Wijs naar boven </li>
-                        <li> Maak de pen waarmee getekend wordt een bepaalde kleur en grootte</li>
-                        <li> Zet de pen neer om te tekenen</li>
-                    </ul>
+                        <li> Verwijder alle vorige tekeningen: <code>wissen</code></li>
+                        <li> Plaats de teken-sprite in het midden van het scherm: <code>ga_naar_x:.. y..</code></li>
+                        <li> Wijs naar boven: <code>wijs_naar_richting ..</code></li>
+                        <li> Maak de pen waarmee getekend wordt een bepaalde kleur en grootte: <code>maak_penkleur/pengrootte</code></li>
+                        <li> Zet de pen neer om te tekenen: <code>pen_neer</code></li>
+                    </ul><br/>
                 </li>
-
-                <li> Schrijf code die de tekeningen verwijderd <code> als de spatiebalk ingedrukt wordt</code> door de
-                    gebruiker.</li>
-
+               <li>Verken de dropdown menu's uit de eerste drie oranje 'wanneer' besturingsblokken.</li><br/>
+                <li> Schrijf code die de tekeningen verwijdert <code>wanneer_spatiebalk_wordt_ingedrukt</code> door de
+                    gebruiker.</li><br/>
                 <li>
-                    Nu ben je klaar om code te schrijven voor wat er moet gebeuren als de pijltjestoetsen ingedrukt
+                    Nu ben je klaar om code te schrijven voor wat er moet gebeuren wanneer de pijltjestoetsen ingedrukt
                     worden.
-                    Dit is wat er moet gebeuren <code> als de rechter pijltjestoets ingedrukt wordt</code> door de
+                    Dit is wat er moet gebeuren <code>wanneer_de-rechter-pijltjestoets_wordt_ingedrukt</code> door de
                     gebruiker.
                     <ul>
                         <li> Wijs naar rechts</li>
-                        <li> Beweeg een bepaald aantal stappen, bijvoorbeeld 10, in die richting</li>
+                        <li> Beweeg een bepaald aantal stappen, bijvoorbeeld 10, in die richting</li><br/>
                     </ul>
                 </li>
-                <li> Schrijf nu code voor de andere pijltjestoetsen.</li>
+                <li> Schrijf nu code voor de andere pijltjestoetsen.</li><br/>
             </ol>
         </div>
 
-        <div class="endnote"> Dit is hoe Snap<em> !</em> hoeken als richtingen ziet: <br />
+        <div class="endnote"> <strong>Dit is hoe Snap! hoeken als richtingen ziet</strong> <br />
+
             <ul>
                 <li> 0&deg; is omhoog </li>
                 <li> 90&deg; is naar rechts </li>
@@ -107,33 +95,27 @@
         </div>
 
         <div class="takeItFurther"> <a name="further" class="anchor"> &nbsp;</a>
-            <ol type="A">
+            <ol type="a">
                 <li>
-                    Op dit moment tekent het programma door ook al houdt het scherm op. Pas je code aan zodat er alleen
-                    getekend wordt als de teken-sprite binnen het scherm is: -240 tot 240 in the x-richting
-                    (horizontaal) en
-                    -180 tot 180 in the y-richting (verticaal). Je kan een blok zoals hieronder maken om de
-                    bewegingsruimte
-                    van een sprite te beperken.
+                    Op dit moment tekent het programma door, ook al houdt het scherm op. Pas je code aan zodat er alleen
+                    getekend wordt als de teken-sprite zich binnen het scherm bevindt: -240 tot 240 in the x-richting
+                    (horizontaal) en -180 tot 180 in the y-richting (verticaal). Hieronder een voorbeeld van een blok dat de
+                    bewegingsruimte van een sprite beperkt.
                     <br />
                     <img class="indent" src="../../afb/h1/o1/p1-b2.png" height="72" alt="Geen Afbeelding" />
                 </li>
                 <li>
-                    Geef de gebruiker een aantal mogelijkheden voor verschillende kleuren. Als de "1"-toets bijvoorbeeld
-                    wordt ingedrukt, wordt de penkleur zwart en als de "2"-toets wordt ingedrukt wordt ie rood. Je kan
-                    wellicht ook zorgen dat als een bepaalde toets wordt ingedrukt, het <code>pen omhoog</code>- of
-                    <code>pen neer</code>-blok wordt ingedrukt.
+                    Geef de gebruiker een aantal kleur-opties. Als bijvoorbeeld de 1-toets wordt ingedrukt, wordt de penkleur 
+                    zwart en als de 2-toets wordt ingedrukt kleurt hij rood. Denk ook aan mogelijkheden voor <code>pen_omhoog
+                    </code> of <code>pen_neer</code> acties.
                 </li>
                 <li> Geef de gebruiker de mogelijkheid om diagonale lijnen te tekenen. Schrijf code om de sprite
-                    bijvoorbeeld te bewegen met een hoek van 45&deg;, 135&deg;, 225&deg; of 315&deg;, met behulp van de
-                    "w"-, "s"-, "a"- en "q"-toetsen.
+                     te bewegen met een hoek van bijvoorbeeld 45&deg;, 135&deg;, 225&deg; of 315&deg;, via de
+                    w-, s-, a- en q-toetsen.
 
                 </li>
-                <li> Maak nu een prachtig kunstwerk met je tekenprogramma. Maak een screenshot van je werk en maak een
-                    soort
-                    kunstgallerij met de hele klas. Je kan ze wellicht online zetten zodat ander klassen of scholen het
-                    ook
-                    kunnen zien.
+                <li> Ga aan het tekenen in je nieuwe tekenprogramma. Maak een screenshot van je werk en verzamel alles in een 
+                    klassengalerij. Je kan alles ook online zetten voor uitwisseling met andere klassen of scholen.
                 </li>
             </ol>
         </div>

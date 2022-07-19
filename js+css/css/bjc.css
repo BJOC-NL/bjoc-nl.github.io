@@ -447,7 +447,7 @@ img.noshadow {
 }
 
 .learn {
-    background-color: #fcc7c2;
+    background-color: #ebf5fb;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -473,7 +473,7 @@ table.truth tr td {
 }
 
 .takeItFurther {
-    background-color: #e4cde3;
+    background-color: #acd9fc;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -485,7 +485,7 @@ table.truth tr td {
 
 .takeNote,
 endHOM {
-    background-color: #fcc589;
+    background-color: #fddab4;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -508,7 +508,7 @@ endHOM {
 
 .vocab,
 .vocabBig {
-    background-color: #D3D3D3;
+    background-color: #e5e3e3;
     font-size: .9em;
     float: right;
     margin-right: 20px;
@@ -528,8 +528,8 @@ endHOM {
 }
 
 .vocabFullWidth {
-    background-color: #D3D3D3;
-    width: 100%;
+    background-color: #e9e7e7;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
