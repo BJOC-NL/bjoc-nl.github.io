@@ -35,25 +35,25 @@
         </p>
         <img class="imageLeft" height="220" src="../../afb/h6/l1/p10-o1.png" alt="Geen Afbeelding" />
         <p>
-            Dit is een ruwe grafiek van het werkelijke invoer-uitvoergedrag van een transistor. Maak je geen zorgen over
-            de details; let op de twee blauwe <em> platte </em> delen van de grafiek. Binnen het "afsnijding"-gebied
-            passen kleine veranderingen in de ingangsspanning de uitgangsspanning niet aan; de uitgang is
-            altijd <em> nul </em> volt. Evenzo binnen het "verzadiging"-gebied beïnvloeden kleine ingangsveranderingen
-            nauwelijks uitgangsspanning; de uitvoer wordt geïnterpreteerd als <em> 1 </em>. Dit is hoe transistors
+            Dit is een geschetste grafiek van het daadwerkelijke invoer-uitvoergedrag van een transistor. Kijk voral
+            naar de twee blauwe <em> platte </em> delen van de grafiek. Binnen het "afsnijding"-gebied passen kleine
+            veranderingen in de invoerspanning, de uitvoerspanning niet aan; de uitvoer is altijd <em> nul </em>.
+            Hetzelfde geldt voor het "verzadiging"-gebied, de uitvoer is altijd <em>1</em>. Dit is hoe transistors
             worden gebruikt als <em> schakelaars </em> in een computer.
         </p>
         <p>
             Transistors zijn veelzijdige apparaten. Bij gebruik in het middelste, lineaire (roze) deel van de grafiek,
-            werken ze als <em> versterkers </em>; een kleine variatie in ingangsspanning produceert een grote variatie
-            in uitgangsspanning.
+            werken ze als <em> versterkers </em>; een kleine variatie in invoerspanning produceert een grote variatie
+            in uitvoerspanning.
         </p>
         <div class="endnote" style="overflow: hidden;"> <a href="#hint-chart-labels" data-toggle="collapse">
                 Waarom heten ze "afsnijding", "lineair" en "verzadiging"?
             </a>
             <div id="hint-chart-labels" class="collapse">
-                Het onderste gebied van de curve wordt "afsnijding" genoemd omdat de uitgang van de transistor <em>
-                    afgesneden </em> is (de uitgang is nul) voor elke ingang in dat gebied. Het bovenste gebied wordt
-                "verzadiging" genoemd omdat zoals een spons die niet natter kan worden, de transistor niet meer uitvoer
+                Het onderste gebied van de curve wordt "afsnijding" genoemd omdat de uitvoer van de transistor <em>
+                    afgesneden </em> wordt (de uitvoer kan niet lager dan nul) voor elke invoer in dat gebied. Het
+                bovenste gebied wordt
+                "verzadiging" genoemd omdat, zoals een spons die niet natter kan worden, de transistor niet meer uitvoer
                 kan geven, ongeacht hoe groot de invoer is. Het centrale gebied wordt "lineair" genoemd omdat het zich
                 gedraagt als een lineaire (rechte) functie.
             </div>
@@ -61,7 +61,7 @@
         <div class="endnote">
             De transistor werd uitgevonden in 1947 door John Bardeen, Walter Brattain en William Shockley in Bell
             Laboratories, ook het geboortehuis van Unix. De uitvinders ontvingen voor dit werk de Nobelprijs voor
-            natuurkunde in 1956.
+            Natuurkunde in 1956.
         </div>
         <div class="takeNote">
             Het digitale domein is geen natuurwet; circuitontwerpers moeten ervoor zorgen dat elke draad in een circuit
@@ -71,26 +71,24 @@
             <a href="#hint-digital-abstraction" data-toggle="collapse"> Leer meer over wat zich onder de digitale
                 abstractie bevindt en hoe deze wordt toegepast. </a>
             <div id="hint-digital-abstraction" class="collapse">
-                <p>
-                    De vlakheid van de uitvoer aan de twee uitersten is belangrijk omdat er kleine veranderingen in de
+                <p> De vlakheid van de uitvoer aan de twee uitersten is belangrijk omdat er kleine veranderingen in de
                     invoer <em>zullen</em> zijn. Elektrische schakelingen hebben "ruis" in de vorm van ongewenste
                     veranderingen in spanningen. Deze ruis wordt veroorzaakt door verschillende zaken, van transistors
                     die heet worden tot losse verbindingen op de printplaat en zelfs kosmische straling. Dit is de reden
                     waarom computers nullen en enen gebruiken: een transistor heeft twee vlakke gebieden in zijn
                     invoer-uitvoergrafiek.
                 </p>
-                <p>
-                    Maar de vlakheid van het verzadigde gebied is slechts een benadering en het hangt af van hoe de
+                <p> Maar de vlakheid van het verzadigde gebied is slechts een benadering en het hangt af van hoe de
                     transistor is verbonden met de rest van het circuit. Een voorbeeld van een potentieel probleem is
                     <em>fanout</em>, het aantal transistoringangen waarop de uitgang van een transistor is
                     aangesloten. Voorbij een bepaald aantal (het hangt af van het specifieke transistortype, maar
-                    tien ingangen zouden zeker te veel zijn), wordt de uitgangsspanning zo ver verlaagd dat de ingangen
+                    tien ingangen zouden zeker te veel zijn), wordt de uitvoerspanning zo ver verlaagd dat de ingangen
                     niet zeker zijn of ze een 0 of een 1 krijgen.
                 </p>
                 <p> De manier waarop een transistor echt werkt, hangt af van kwantumfysica. (We hebben het niet over
-                    <em> kwantumcomputers; </em> gewone oude computercircuits zijn ook gebaseerd op kwantumeffecten.)
-                    Volg een cursus Elektrotechniek om meer te leren over het ontwerpen van analoge domeinen en wat zich
-                    in een transistor bevindt.
+                    <em> kwantumcomputers; </em> gewone traditionele computercircuits zijn ook gebaseerd op
+                    kwantumeffecten.) Volg een cursus Elektrotechniek om meer te leren over het ontwerpen van analoge
+                    domeinen en wat zich in een transistor bevindt.
                 </p>
             </div>
         </div>

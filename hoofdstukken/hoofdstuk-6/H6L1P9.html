@@ -37,32 +37,34 @@
                     toestanden: aan en uit. Een invoersignaal kan aangeven dat de flip-flop moet worden ingeschakeld,
                     uitgeschakeld of gewijzigd, ongeacht de toestand op dat moment. Zodra dat gebeurt, blijft de
                     flip-flop in de nieuwe status totdat hij een ander signaal krijgt. De uitvoer van de flip-flop is
-                    altijd gelijk aan zijn toestand op dat moment: aan
-                    als de flip-flop aan is, uit als hij uit is.
+                    altijd gelijk aan zijn toestand op dat moment: <em>aan</em>
+                    als de flip-flop aan is, <em>uit</em>> als hij uit is.
                 </p>
             </div>
         </div>
         <h3>Boolean Functies</h3>
         <p>
-            De circuits om berekeningen uit te voeren zijn interessanter dan de circuits voor geheugen. Ze berekenen
+            De circuits om berekeningen uit te voeren zijn interessanter dan de geheugencircuits. Ze berekenen
             <em> functies, </em> net als
             rapporteurs in Snap<em>!</em>. Omdat computers veel rekenen, denk je misschien dat de basiscircuitfuncties
             optellen, aftrekken, vermenigvuldigen en delen zijn, maar dat is niet het geval. Natuurlijk <em> zijn
-            </em> er circuits om die dingen te doen, maar ze zijn gemaakt van <em> logische poorten: </em> circuits die
-            <strong> Boolean functies </strong> berekenen: <code> en </code>, <code> of </code> en <code> niet </code>.
+            </em> er circuits om die dingen te doen, maar ze zijn opgebouwd uit een andere groep basisfuncties, <em>
+                logische poorten: </em> circuits die <strong> Boolean functies </strong> berekenen: <code> en </code>,
+            <code> of </code> en <code> niet </code>.
         </p>
         <p>
             De reden dat Boolean functies als fundamenteel worden beschouwd, is dat hun invoeren en uitvoeren kunnen
             worden weergegeven met een enkele draad die het circuit in of uit gaat. Dat is niet zo voor rekenkundige
-            functies. Als over een draad een spanning loopt, zeggen we dat er een waarde van 1 is, als er geen stroom
+            functies.
+            Als over een draad een spanning loopt, zeggen we dat er een waarde van 1 is, als er geen stroom
             over de draad loopt, is de waarde 0. Stel je wil met deze draden iets bouwen dat waardes kan optellen, dan
-            je ervoor zorgen dat die opteller <em> drie </em> mogelijke uitvoerwaarden heeft. De mogelijke sommen zijn
-            0+0=0, 1+0=1 en 1+1=2, Dus de drie mogelijke uitvoerwaarden zijn 0, 1 en 2. Om dan het getal 2 uit te moeten
-            drukken in binair zouden 2 uitvoerdraden nodig zijn, aangezien 2 in binair 10 is, dus een draad met een
-            spanning en een draad zonder spanning.
-            Als je daarentegen een spanning op een draad als Waar en geen spanning als Niet Waar beschouwt,
-            dan kan de uitvoer van een Booleaanse functie van twee invoeren nog steeds alleen Waar of Niet Waar zijn,
-            dus is slechts één uitvoerdraad nodig.
+            moet je ervoor zorgen dat die opteller <em> drie </em> mogelijke uitvoerwaarden heeft. De mogelijke sommen
+            zijn namelijk 0+0=0, 1+0=1 en 1+1=2, De drie mogelijke uitvoerwaarden zijn dus 0, 1 en 2. Om dan het getal 2
+            uit te kunnen drukken in binair zouden 2 uitvoerdraden nodig zijn, aangezien 2 in binair 10 is, dus een
+            draad met en een draad zonder spanning.
+            We kunnen spanning op een draad ook als Waar en geen spanning als Niet Waar zien, zoals met Boolean
+            functies. Boolean functies hebben altijd maar 2 mogelijke uitkomsten: Waar en Niet Waar, dus is slechts één
+            uitvoerdraad nodig.
         </p>
         <p>
             Je hebt een aantal voorbeelden gezien in <a href="../hoofdstuk-2/H2L3P1.html"> Hoofdstuk 2 Les 3:
@@ -76,14 +78,14 @@
             <img height="50" class="indent" src="../../afb/h6/l1/p9-b9.png" alt="Geen Afbeelding" />
             <img height="50" class="indent" src="../../afb/h6/l1/p9-b10.png" alt="Geen Afbeelding" />
         </p>
-        <div class="endnote"> <strong> Andere manieren om Boolean functies te zien </strong>
-            Het is mogelijk om Booleaanse bewerkingen elektronisch te emuleren, deze bewerkingen worden soms
+        <div class="endnote"> <strong> Andere manieren om Boolean functies weer te geven </strong>
+            Het is mogelijk om Booleaanse bewerkingen elektronisch te na te maken, deze bewerkingen worden soms
             weergegeven als waarheidstabellen (met Waar / Niet Waar of enen / nullen). <Ul>
                 <li> <a href="#hint-truth-tables-and" data-toggle="collapse"> Een circuitemulatie en waarheidstabel voor
                         <code>en</code>. </a>
                     <div id="hint-truth-tables-and" class="collapse">
                         <p> Dit elektrische circuit toont een vereenvoudigde manier om de Boolean functie <code> en
-                            </code> elektronisch te emuleren. De twee schakelaars bevinden zich in <em> serie </em>;
+                            </code> elektronisch na te maken. De twee schakelaars bevinden zich in <em> serie </em>;
                             als beide schakelaars zijn ingeschakeld, stroomt de stroom en gaat de gloeilamp aan.
                         </p>
                         <div class="sidenote"> Dit symbool in het diagram staat voor een batterij.<br />
@@ -323,8 +325,9 @@
             </ol>
         </div>
         <div class="takeNote">
-            Op de vorige pagina leerde je over tungsten en tin, hier hebben we het over Boolean functies. Waarom is dit
-            minder abstract?
+            Op de vorige pagina leerde je over tungsten en tin, hier hebben we het over Boolean functies. Waarom is het
+            tweede
+            abstracter?
             <strong> Vanuit het oogpunt van de chipontwerper zijn logische poorten de fundamentele bouwblokken van een
                 digitaal circuit. </strong> De eigenlijke chipfabricage is op een nog lager abstractieniveau, in het
             analoge domein

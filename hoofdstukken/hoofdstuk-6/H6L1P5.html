@@ -22,22 +22,26 @@
         <div class="learn"><strong>Op deze pagina</strong>, ga je leren over de software die direct de hardware van de
             computer bestuurt, het <em>besturingssysteem.</em>
         </div>
-        <p> Op je computer is een <em> besturingssysteem </em>, Operating System (OS) in het Engels,
+        <p> Op je computer staat een <em> besturingssysteem </em>, Operating System (OS) in het Engels,
             geïnstalleerd. Een besturingssysteem is een onderliggend programma waarmee apps communiceren om de
             computer te gebruiken. Bij computers en laptops zijn de meest voorkomende besturingssystemen Linux, macOS en
             Windows. Bij telefoons en tablets zijn dit Android en iOS. </p>
         <p> Grofweg behandelt het besturingssysteem de basistaken waarvan alle programma's afhankelijk zijn, waaronder:
             <ul>
-                <li> het venstersysteem, waarmee meer dan één venster op je scherm kan worden geopend; </li>
+                <li> het venstersysteem, waarmee meer dan één programma op je scherm kan worden bekeken tegelijkertijd;
+                </li>
                 <li> het bestandsbeheer, dat de inhoud van mappen weergeeft en waarmee je bestanden kunt selecteren om
                     te openen of te bewerken; </li>
-                <li> communicatie met externe apparaten zoals een toetsenbord of printer; </li>
+                <li> de communicatie met externe apparaten zoals een toetsenbord of printer; </li>
                 <li> hulpprogramma's zoals een eenvoudige teksteditor of een rekenmachine; </li>
             </ul>
         </p>
-        <div class="takeNote"> Op een computer willen veel programma's en besturingssysteemtaken allemaal tegelijk
+        <div class="takeNote">
+            Op een computer willen veel programma's en besturingssysteemtaken allemaal tegelijk
             worden uitgevoerd. Elk besturingssysteem heeft een <em> kernel </em> die beheert wanneer al deze processen
-            worden uitgevoerd. </div>
+            worden uitgevoerd.
+        </div>
+
         <div class="endnote">
             <h3> De kernel </h3>
             <p> De <em> kernel </em> bestuurt rechtstreeks hardware (toetsenbord, muis, microfoon, camera, harde
@@ -47,13 +51,13 @@
                     <li> <strong> Planning. </strong> de kernel heeft toegang tot de klok die in de hardware is
                         ingebouwd en laat elk programma voor een kleine hoeveelheid tijd draaien (meestal ongeveer 1/10
                         seconden) en schakelt dan over naar het volgende programma in de wachtrij. </li>
-                    <li> <strong> Beveiliging. </strong> Al die toepassingsprogramma's kunnen bugs of schadelijke code
-                        bevatten. De kernel, die toegang heeft tot het <em> geheugen </em> waar programma's en gegevens
-                        worden opgeslagen, zorgt ervoor dat aan elk programma een aparte locatie in het geheugen wordt
-                        toegewezen en andere programma's niet gestoord worden. De kernel bepaalt ook welke
-                        bestanden een
-                        programma kan aanpassen en bekijken op basis van de <em> bestandsbeveiliging </em>-instellingen
-                        die gebruikers of applicaties voor elk bestand specificeren. </li>
+                    <li> <strong> Beveiliging. </strong> Al de toepassingsprogramma's die uitgeoverd worden, kunnen bugs
+                        of schadelijke code bevatten. De kernel, die toegang heeft tot het <em> geheugen </em> waar
+                        programma's en gegevens worden opgeslagen, zorgt ervoor dat aan elk programma een aparte locatie
+                        in het geheugen wordt toegewezen en andere programma's niet gestoord worden. De kernel bepaalt
+                        ook welke bestanden door een programma aangepast en bekeken kunnen worden op basis van de <em>
+                            bestandsbeveiliging </em>-instellingen die gebruikers of applicaties voor elk bestand
+                        specificeren. </li>
                     <li> <strong> Invoer en uitvoer. </strong> Veel apparaten kunnen op je computer worden aangesloten.
                         De kernel weet hoe de computer elk apparaat moet gebruiken. Alleen de kernel
                         heeft directe toegang tot deze apparaten en voert geautoriseerde overdracht van informatie voor
@@ -62,44 +66,43 @@
             </p>
             <p> Tegenwoordig zijn OS-kernels opmerkelijk vergelijkbaar. Van de vijf eerder genoemde systemen (Linux,
                 macOS, Windows, Android en iOS) zijn er vier (alles op Windows na) gebaseerd op varianten van een
-                enkele kernel, Unix genaamd. </p>
+                enkele kernel, Unix genaamd.
+            </p>
             <p><a href="#hint-unix" data-toggle="collapse">Lees meer over Unix.</a></p>
             <div id="hint-unix" class="collapse">
                 <p> ("Unix" is een handelsmerk, momenteel eigendom van The Open Group, en niet alle
                     varianten op Unix die op deze pagina besproken worden, mogen die naam gebruiken, maar ze bieden
-                    allemaal in wezen dezelfde
-                    programma-interface.) Unix werd rond 1970 gecreëerd door Ken Thompson en Dennis Ritchie in AT&T
-                    Bell Laboratories.
+                    allemaal in wezen dezelfde programma-interface.) Unix werd rond 1970 gecreëerd door Ken Thompson en
+                    Dennis Ritchie in AT&T Bell Laboratories.
                 </p>
                 <p> Voorafgaand aan Unix dacht bijna iedereen dat een besturingssysteem moest worden ontwikkeld voor een
                     bepaalde computerarchitectuur en in de machinetaal van die computer moest worden geschreven, de
-                    instructies op zeer laag niveau die die hardware direct begrijpt. De eerste versie van Unix is ​​ook
+                    instructies op zeer laag niveau die die hardware direct begrijpt. De eerste versie van Unix is ook
                     geschreven in machinetaal voor één specifieke computer, de Digital Equipment Corporation PDP-7. Maar
                     de Unix-ontwikkelaars wisten dat de PDP-7 niet de enige computer ter wereld was en dat er in de
-                    toekomst betere computers gemaakt zouden worden, dus wilden ze Unix <em> draagbaar maken</em>. Dit
-                    betekent dat het naar een nieuwe computerarchitectuur kan worden overgezet zonder dat het programma
-                    helemaal opnieuw moet worden geschreven.
-                    Dus in 1972 vond Dennis Ritchie de programmeertaal C voor dat doel uit. C is vergelijkbaar met
-                    andere talen die op dat moment beschikbaar waren, maar met één toegevoegde functie: in
-                    C kan elke individuele byte van het geheugen van het programma gelezen of overschreven worden
-                    als je het <em> adres </em> weet. Het adres is een soort identificatie-nummer voor een byte net
-                    zoals een woonadres in het echt een identificatie is voor een huis.
-                    (Je kunt zien dat deze functie het tegenovergestelde is van abstractie op hoog niveau. Het is alleen
-                    nuttig voor een programmeur die in detail nadenkt over wat zich in het geheugen van de computer
-                    bevindt.) Unix werd vervolgens herschreven in C.
+                    toekomst betere computers gemaakt zouden worden, dus wilden ze Unix <em> draagbaar maken</em>.
+                    Draagbaar betekent dat het naar een nieuwe computerarchitectuur kan worden overgezet zonder dat het
+                    programma helemaal opnieuw moet worden geschreven. Dus in 1972 vond Dennis Ritchie de
+                    programmeertaal C voor dat doel uit. C is vergelijkbaar met andere talen die op dat moment
+                    beschikbaar waren, maar met één toegevoegde functie: in C kan elke individuele byte van het geheugen
+                    van het programma gelezen of overschreven worden als je het <em> adres </em> weet. Het adres is een
+                    soort identificatie-nummer voor een byte net zoals een woonadres in het echt een identificatie is
+                    voor een huis. (Je kunt zien dat deze functie het tegenovergestelde is van abstractie op hoog
+                    niveau. Het is alleen nuttig voor een programmeur die in detail nadenkt over wat zich in het
+                    geheugen van de computer bevindt.) Unix werd vervolgens herschreven in C.
                 </p>
-                <p> Vanwege deze draagbaarheid verspreidde Unix zich snel naar andere computerarchitecturen.
-                    Onderzoekers van Berkeley ontwikkelden een versie, gebaseerd op de AT&T-versie, maar met
-                    <em> virtueel geheugen </em>. Dit maakt het mogelijk om een ​​programma uit te voeren dat slechts
+                <p> Vanwege deze draagbaarheid werd Unix al snel overgenomen door andere computerarchitecturen.
+                    Onderzoekers van Berkeley ontwikkelden een nieuwe versie, gebaseerd op de AT&T-versie, maar met
+                    <em> virtueel geheugen </em>. Dit maakt het mogelijk om een programma uit te voeren dat slechts
                     gedeeltelijk in het hoofdgeheugen van de computer staat.
                     Deze Berkeley-versie is een voorouder van Apple's besturingssysteem, macOS (sinds macOS 10.0) en
-                    iOS. (Een Apple-computer gedraagt ​​zich niet als een Unix-computer, maar de verschillen zitten
+                    iOS. (Een Apple-computer gedraagt zich niet exact als een Unix-computer, maar de verschillen zitten
                     bijna allemaal in programma's op toepassingsniveau, niet in de kernel.) Android, het
                     besturingssysteem van Google voor mobiele telefoons en tablets, is gebaseerd op Linux, een complete
                     herschrijving van Unix oorspronkelijk geschreven door Linus Torvalds, destijds een student
                     informatica in Finland.
                 </p>
-                <p> De toepassingsniveau-programma's die deel uitmaakten van het originele Unix-pakket, zijn in de
+                <p> De toepassingsprogramma's die deel uitmaakten van het originele Unix-pakket, zijn in de
                     meeste systemen vervangen door herschreven programma's van GNU van de Free Software Foundation (een
                     acroniem voor Gnu's Not Unix).
                 </p>
@@ -107,7 +110,7 @@
         </div>
         <div class="ifTime" type="first">
             <ol>
-                <li> Ontdek nu de programma's die op je computer worden uitgevoerd. <ol>
+                <li> Ontdek de programma's die op dit moment op je computer worden uitgevoerd. <ol>
                         <li> Ontdek hoe je alle programma's kunt weergeven die nu op je computer worden uitgevoerd.
                             Schrijf ze daarna allemaal op.
                         </li>
