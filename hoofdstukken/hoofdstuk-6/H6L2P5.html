@@ -46,8 +46,9 @@
         <div class="forYouToDo" id="first">
             <ol>
                 <li> <img class="inline" src="../../afb/icons/PraatMetJeBuur.png" alt="Geen Afbeelding" />
-                    Kijk hoe dt Snap<em>!</em>-progamma met een Binary Timer wordt uitgevoerd.
-                    Beschrijf het gedrag van de binaire teller. Leg uit wat je ziet. <br />
+                    Kijk even hoe dit Snap<em>!</em>-progamma wordt uitgevoerd.
+                    Beschrijf het gedrag van de binaire teller. Leg uit wat je ziet.
+                    <br />
                     <img class="indent" data-gifffer="../../afb/h6/l2/p5-v1.gif" alt="Geen Afbeelding" /> </li>
             </ol>
         </div>
@@ -120,7 +121,7 @@
             </ol>
         </div>
 
-        <h3>Schrijven in Binaire Notatie</h3>
+        <h3>Schrijven in binaire notatie</h3>
         <div class="takeNote">
             <p> Om te vertalen van het decimale talstelsel naar binair, schrijven we eerst de waardes van de binaire
                 plekken van rechts naar links op door de waarde van de rechterpositie te verdubbelen, dus 1, 2, 4, 8
@@ -129,7 +130,7 @@
                 gevolgd hebt dan heb je nu een tabel zoals hieronder.
             </p>
 
-            <table class="byte indent" summary="translation process from base 10 to base 2">
+            <table class="byte indent" summary="omzetten van decimaal naar binair">
                 <tr>
                     <td class="noborder" colspan="8"> <img class="indent noshadow" src="../../afb/h6/l2/p5-o6-o7.png"
                             alt="Geen Afbeelding" /> </td>
@@ -146,19 +147,19 @@
                 </tr>
             </table>
 
-            <p>
-                Bedenk nu "ik kan 64 van 89 aftrekken, dus ik schrijf een 1 daaronder en dan blijft
+            <p> Bedenk nu "ik kan 64 van 89 aftrekken, dus ik schrijf een 1 daaronder en dan blijft
                 er 25 over (89-64). Ik schrijf nu een 0 bij 32 omdat ik niet 32 van 25 af kan trekken omdat 32 groter
                 dan 25 is. Ik kan wel 16 eraf halen en dan blijft er 9 over, dus de bit voor 16 wordt ook 1. Als we dit
-                proces blijven herhalen dan zien we dat de bits ook 1 worden 8 en 1 (25-16 = 9, 9 - 8 = 1, 1-1 = 0). "
+                proces blijven herhalen dan zien we dat de bits ook 1 worden voor 8 en 1 (25-16 = 9, 9 - 8 = 1, 1-1 =
+                0). "
             </p>
 
-            <div class="sidenoteBig"> Bij beide manier van vertalen schrijf altijd de plek van de waardes van rechts
-                naar links (net als met eenheden, tientallen, honderdtallen, etc.) en de nummers zelfs van links naar
-                rechts.
+            <div class="sidenoteBig">
+                Bij beide manier van vertalen schrijf je altijd de plek van de waardes van rechts naar links (net als
+                met eenheden, tientallen, honderdtallen, etc.) en de nummers zelfs van links naar rechts.
             </div>
 
-            <table class="remainders indent" summary="list of remainders after each step of process">
+            <table class="remainders indent" summary="lijst met rest bij iedere stap van het proces">
                 <tr>
                     <td> <s>89</s><br /> <s>25</s><br /> <s>9</s><br /> <s>1</s><br /> 0 </td>
                 </tr>
@@ -191,19 +192,18 @@
         <p> Hieronder staat een meer precieze beschrijving van dit <em>algoritme</em> om de binaire representatie van
             elk positief heel getal te vinden:
             <ol type="a">
-                <li> Vind eerst de <strong>grootste</strong> macht van twee die <em>kleiner</em> is dan het getal dat je
-                    om wil schrijven naar
-                    binair. </li>
+                <li> Vind de <strong>grootste</strong> macht van twee die <em>kleiner</em> is dan het getal dat je
+                    om wil schrijven naar binair.
+                </li>
                 <li> Trek daarna die macht af van het getal en schrijf een 1 op. Onthoud het nieuwe getal.
                 </li>
-                <li> Vind dan de op éen na grootste macht van 2 voor het originele getal en als het kleiner is dan het
-                    nieuwe getal: <ul>
-                        <li> Als het kleiner is dan het nieuwe getal, trek het dan af van het nieuwe getal, onthoud het
+                <li> Vind dan de op-één-na-grootste macht van 2 voor het originele getal en: <ul>
+                        <li> Als het kleiner is dan het nieuwe getal, trek het af van het nieuwe getal, onthoud het
                             nieuwe getal en schrijf weer een 1 op. </li>
                         <li> Als het groter is dan het nieuwe getal, schrijf dan een nul op. </li>
                     </ul>
-                    Herhaal deze stap met de volgende macht van 2 tot je een bit hebt tot je getal gelijk is aan 0 de
-                    eenheden.
+                    Herhaal deze stap met de volgende macht van 2 tot er geen machten van twee meer over zijn, als het
+                    goed is, is het getal gelijk aan 0 geworden.
                 </li>
             </ol>
         </p>

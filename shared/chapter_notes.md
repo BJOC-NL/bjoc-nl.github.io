@@ -195,3 +195,17 @@ dvd branden is niet echt van deze tijd, staat bij kopje video's. misschien gewoo
 "Microsoft Word heeft bijvoorbeeld een programmeertaal ingebouwd die "Word-macro's" wordt genoemd", die taal heet eigenlijk VBA volgens mij, Visual Basic for Applications. dus dit klopt niet, je schrijft er macro's mee, maar die term kennen leerlingen natuurlijk niet.
 
 rare zin:  programmeurs van 3D-videogames hebben nog steeds alle snelheid nodig die ze kunnen krijgen omdat hun programma's de snelheid van moderne computers belasten.
+
+### Les 2
+
+#### Pagina 2
+
+Onderaan bij "als er tijd over is: "Hoe wordt dit gebruikt?", ik weet niet wat hiermee bedoeld wordt.
+
+#### Pagina 3
+
+Er staat een sidenote: "Je krijgt wellicht andere resultaten afhankelijk van de processor van je computer." Ik vind dit vooral verwarrend, kan beter weg.
+
+#### Pagina 6
+
+laatste vraag onderaan, welk probleme heb je met boven de 36? ik zie het niet. het probleme is dat je dan 0-9 en a-z gebruikt.
